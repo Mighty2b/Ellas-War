@@ -65,7 +65,7 @@ if($paquet->getlvl() == 0) {
 		echo '<div class="ligne gauche">L\'eau est la ressource la plus utilisée 
 					sur le jeu. Beaucoup de bâtiments de production et la plupart des 
 					unités en consomment.
-		<br/>Construisez un total de <b>8 puits</b> afin de maintenir vos stocks d\'eau.';
+		<br/>Construisez un total de <b>10 puits</b> afin de maintenir vos stocks d\'eau.';
 	
 		if($paquet->check_etape() == true) {
 			echo '<br/><br/></div><div class="ligne centrer"><a href="javascript:etape_suivante();" class="titre_tab">Passer à l\'étape suivante</a>';
