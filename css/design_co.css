@@ -1120,11 +1120,18 @@ tr.int_tab_taux1 {
   float:left;
   margin-right:10px;
   margin-bottom:10px;
+  width:150px;
 }
 
 .avatar_messagerie2 {
   position:relative;
   float:left;
+}
+
+.bloc_messagerie {
+	position:relative;
+	float:left;
+	width:520px;
 }
 
 .arbre_bloc_noir {

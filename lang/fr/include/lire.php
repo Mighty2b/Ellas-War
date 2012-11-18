@@ -58,7 +58,10 @@
 	}
 	?>
 		</div></div>
-		<?=$mp->message; ?></td>
+		<div class="bloc_messagerie">
+			<?=$mp->message; ?>
+		</div>
+		</td>
 	</tr>
 </table>
 <br/>
