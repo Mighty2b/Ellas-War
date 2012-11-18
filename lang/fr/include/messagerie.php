@@ -28,7 +28,7 @@ else {
 	echo '<form action="#" method="post" enctype="multipart/form-data">
 				<div class="droite ligne80">
 				<a class="centre_armee2" href="#" onclick="affiche_cache(\'recherche_mp\');"><img src=\'images/joueurs/search.png\' alt="Rechercher"/></a>
-				<img src="images/joueurs/messagebox_critical.png" alt="Tout selectionner" title="Tout selectionner" onclick="select_tout_mp();" class="supr_messagerie"/>
+				<img src="images/joueurs/messagebox_critical.png" alt="Tout selectionner" title="Tout selectionner" onclick="cocher2('.sizeof($messages).');" class="supr_messagerie"/>
 				<input type="image" src="images/joueurs/supprimer_mp.png" alt="Supprimer les MP selectionnés" />
 				</div>';
 
@@ -54,7 +54,7 @@ echo '<table class="tableau80 centrer_tableau">
 	<th class="titre_mess"></th>
 	<th class="titre_mess"></th>
 	</tr>';
-
+$i=1;
 foreach($messages as $mps) {
 	$num_mess++;
 	if(!empty($mps->timestamp_lecture))
@@ -73,8 +73,9 @@ echo'<tr class="tableau_fond'.($num_mess%2).'">
 	<td><a href="profilsjoueur-'.$mps->exp.'" class="non_souligne">'.$mps->expediteur.'</a></td>
 	<td>'.$date.' '.date('\à H\hi', $mps->timestamp).'</td>
 	<td><input type="checkbox" name="suppr_mp[]" value="'.$mps->id.'" class="select_tout_mp"/></td>
-	<td><img src="images/joueurs/suppr.png" alt="supprimer le message privé" class="supr_messagerie" onclick="javascript:suppr_mp('.$mps->id.');"/></td>
+	<td><img src="images/joueurs/suppr.png" alt="supprimer le message privé" id="dest'.$i.'" onclick="javascript:suppr_mp('.$mps->id.');"/></td>
 	</tr>';
+	$i++;
 }
 echo '</table><br/>';
 }
