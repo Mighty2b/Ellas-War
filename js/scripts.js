@@ -613,6 +613,10 @@ function info_case(btn, x, y) {
    });
 }
 
-function select_tout_mp() {
-	$(".select_tout_mp").attr('checked', true);
+function select_tout_mp(nb) {
+	if(nb > 0) {
+		for(var a=1;a<=nb;a++) {
+			document.getElementById("message_"+a).checked=true;
+		}
+	}
 }
