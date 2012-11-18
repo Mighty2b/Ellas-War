@@ -1,7 +1,17 @@
 <?php
 
 if(!empty($_GET['var1'])) {
-	$paquet = new EwPaquet('valider_contrat', array($_GET['var1']));
+	if(!empty($_GET['var2'])) {
+		if($_GET['var2'] == 'valider') {
+			$paquet = new EwPaquet('valider_contrat', array($_GET['var1']));
+		}
+		else {
+			$paquet = new EwPaquet('annuler_contrat', array($_GET['var1']));
+		}
+	}
+	else {
+		$paquet = new EwPaquet('info_contrats');
+	}
 }
 else {
 	$paquet = new EwPaquet('info_contrats');

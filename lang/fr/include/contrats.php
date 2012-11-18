@@ -14,33 +14,31 @@ else {
 		<td>&nbsp;Récompense&nbsp;</td>
 	</tr>';
 	
-	foreach($liste_contrats as $donnnees1) {
+	foreach($liste_contrats as $do) {
 		$req = '';
 			
-		if(!empty($donnnees1['drachme'])) {
-			$req .=' '.$donnnees1['drachme'].' '.imress('drachme');
+		if(!empty($do->drachme)) {
+			$req .=' '.$do->drachme.' '.imress('drachme');
 		}
 		
-		if(!empty($donnnees1['gold'])) {
-			$req .=' '.$donnnees1['gold'].' '.imress('gold');
+		if(!empty($do->gold)) {
+			$req .=' '.$do->gold.' '.imress('gold');
 		}
 		
 		echo '<tr>
-		<td>&nbsp;'.ucfirst($donnnees1['alliance1']).'&nbsp;</td>
-		<td>&nbsp;'.$donnnees1['alliance2'].'&nbsp;</td>
-		<td>&nbsp;'.date('d/m/Y',$donnnees1['debut']).'&nbsp;</td>
-		<td>&nbsp;'.date('d/m/Y',$donnnees1['fin']).'&nbsp;</td>
+		<td>&nbsp;'.ucfirst($do->alliance1).'&nbsp;</td>
+		<td>&nbsp;'.$do->alliance2.'&nbsp;</td>
+		<td>&nbsp;'.date('d/m/Y',$do->debut).'&nbsp;</td>
+		<td>&nbsp;'.date('d/m/Y',$do->fin).'&nbsp;</td>
 		<td align=\'right\'>&nbsp;'.$req.'&nbsp;</td>
 		<td>&nbsp;';
 
-		$reponse5 = query("SELECT count(*) as nb_g FROM guerre_resultat WHERE vainqueur='".$_SESSION['joueur'] -> alliance -> id."' AND (attaquant='".$donnnees1['client']."' or defenseur='".$donnnees1['client']."') AND debut>'".$donnnees1['date_d']."'");
-		$donnnees5 = mysql_fetch_array($reponse5);
 
-		if(empty($donnnees5['nb_g'])) {
+		if($do->possible == false) {
 			echo '&nbsp;</td></tr>';
 		}
 		else {
-			echo '<a href="javascript:affiche_menu_alliance(16, '.$donnnees1['id'].', 0);">Valider</a>&nbsp;</td>
+			echo '<a href="Contrats-'.$do->id.'-valider">Valider</a>&nbsp;</td>
 			</tr>';
 		}
 	}
@@ -83,7 +81,7 @@ if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
 		<td>&nbsp;'.$s.'&nbsp;</td>
 		<td>&nbsp;'.date('d/m/Y',$donnnees['date_d']).'&nbsp;</td>
 		<td>&nbsp; '.$req.'&nbsp;</td>
-		<td>&nbsp;<a href=\'Contrats-'.$donnnees['id'].'\'>Annuler</a>&nbsp;</td>
+		<td>&nbsp;<a href=\'Contrats-'.$donnnees['id'].'-annuler\'>Annuler</a>&nbsp;</td>
 		</tr>';
 	}
 		echo '</table>';
