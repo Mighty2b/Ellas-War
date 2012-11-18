@@ -4,7 +4,10 @@ if(empty($_POST['recherche'])) {
 	$_POST['recherche'] = '';
 }
 
-if(!empty($_GET['var1']) && $_GET['var1'] == 'supprimer' 
+if(!empty($_POST['suppr_mp'])) {
+	$paquet = new EwPaquet('supprimer_mp', array($_POST['suppr_mp']));
+}
+elseif(!empty($_GET['var1']) && $_GET['var1'] == 'supprimer' 
 	 && !empty($_GET['var2'])) {
 	$paquet = new EwPaquet('supprimer_mp_envoi', array($_GET['var2']));
 }

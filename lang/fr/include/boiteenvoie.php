@@ -47,6 +47,7 @@ echo '<table class="tableau80 centrer_tableau">
 	<th class="titre_mess">Titre</th>
 	<th class="titre_mess">Destinataire</th>
 	<th class="titre_mess">Date</th>
+	<th class="titre_mess"></th>
 	<th class="titre_mess"></th></tr>';
 
 foreach($messages as $mps) {
@@ -66,6 +67,7 @@ echo'<tr class="tableau_fond'.($num_mess%2).'">
 	<td class="gauche"><a href="lire-'.$mps->id.'">'.stripslashes(stripslashes($mps->titre)).'</a></td>
 	<td><a href="profilsjoueur-'.$mps->dest.'" class="non_souligne">'.$mps->destinataire.'</a></td>
 	<td>'.$date.' '.date('\à H\hi', $mps->timestamp).'</td>
+	<td><input type="checkbox" name="suppr_mp['.$mps->id.']" value="" /></td>
 	<td><img src="images/joueurs/suppr.png" alt="supprimer le message privé" class="supr_messagerie" onclick="javascript:suppr_mp('.$mps->id.');"/></td>
 	</tr>';
 }
