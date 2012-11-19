@@ -5,7 +5,7 @@ if(empty($liste_contrats) or sizeof($liste_contrats) == 0) {
 }
 else {
 
-	echo '<table>
+	echo '<table class="centrer_tableau">
 	<tr class=\'titre_tab\'>
 		<td>&nbsp;Investigateur&nbsp;</td>
 		<td>&nbsp;Cible&nbsp;</td>
@@ -48,8 +48,8 @@ else {
 
 //Les contrats de mon alliance	
 if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
-	echo '<br/><div class="titre3">Vos contrats</div>
-	<table>
+	echo '<br/><h2 class="centrer">Vos contrats</h2>
+	<table class="centrer_tableau">
 	<tr class=\'titre_tab\'>
 		<td>&nbsp;Cible&nbsp;</td>
 		<td>&nbsp;Confidentiel&nbsp;</td>
@@ -68,18 +68,18 @@ if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
 
 		$req = '';
 
-		if(!empty($do->some_d)) {
-			$req.=' '.$do->some_d.' <img src="images/drachme.jpg" alt="drachmes">';
+		if(!empty($do->drachme)) {
+			$req.=' '.$do->drachme.' <img src="images/drachme.jpg" alt="drachmes">';
 		}
 		
-		if(!empty($do->some_o)) {
-			$req.=' '.$do->some_o.' <img src="images/or.jpg" alt="or">';
+		if(!empty($do->gold)) {
+			$req.=' '.$do->gold.' <img src="images/or.jpg" alt="or">';
 		}
 		
 		echo '<tr>
 		<td>&nbsp;'.ucfirst($do->nom).'&nbsp;</td>
 		<td>&nbsp;'.$s.'&nbsp;</td>
-		<td>&nbsp;'.date('d/m/Y',$do->date_d).'&nbsp;</td>
+		<td>&nbsp;'.date('d/m/Y',$do->date).'&nbsp;</td>
 		<td>&nbsp; '.$req.'&nbsp;</td>
 		<td>&nbsp;<a href=\'Contrats-'.$do->id.'-annuler\'>Annuler</a>&nbsp;</td>
 		</tr>';
