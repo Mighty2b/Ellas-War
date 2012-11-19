@@ -34,7 +34,7 @@ else {
 		<td>&nbsp;';
 
 
-		if($do->possible == false) {
+		if($do->peut_valider == false) {
 			echo '&nbsp;</td></tr>';
 		}
 		else {
@@ -58,8 +58,8 @@ if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
 		<td>&nbsp;&nbsp;</td>
 	</tr>';
 
-	foreach($mes_contrats as $donnnees) {
-		if(empty($donnnees['silence'])) {
+	foreach($mes_contrats as $do) {
+		if(empty($do->silence)) {
 			$s='Non';
 		}
 		else {
@@ -68,20 +68,20 @@ if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
 
 		$req = '';
 
-		if(!empty($donnnees['some_d'])) {
-			$req.=' '.$donnnees['some_d'].' <img src="images/drachme.jpg" alt="drachmes">';
+		if(!empty($do->some_d)) {
+			$req.=' '.$do->some_d.' <img src="images/drachme.jpg" alt="drachmes">';
 		}
 		
-		if(!empty($donnnees['some_o'])) {
-			$req.=' '.$donnnees['some_o'].' <img src="images/or.jpg" alt="or">';
+		if(!empty($do->some_o)) {
+			$req.=' '.$do->some_o.' <img src="images/or.jpg" alt="or">';
 		}
 		
 		echo '<tr>
-		<td>&nbsp;'.ucfirst($donnnees['nom']).'&nbsp;</td>
+		<td>&nbsp;'.ucfirst($do->nom).'&nbsp;</td>
 		<td>&nbsp;'.$s.'&nbsp;</td>
-		<td>&nbsp;'.date('d/m/Y',$donnnees['date_d']).'&nbsp;</td>
+		<td>&nbsp;'.date('d/m/Y',$do->date_d).'&nbsp;</td>
 		<td>&nbsp; '.$req.'&nbsp;</td>
-		<td>&nbsp;<a href=\'Contrats-'.$donnnees['id'].'-annuler\'>Annuler</a>&nbsp;</td>
+		<td>&nbsp;<a href=\'Contrats-'.$do->id.'-annuler\'>Annuler</a>&nbsp;</td>
 		</tr>';
 	}
 		echo '</table>';
