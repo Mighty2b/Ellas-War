@@ -69,11 +69,11 @@ if(!empty($mes_contrats) && sizeof($mes_contrats) > 0) {
 		$req = '';
 
 		if(!empty($do->drachme)) {
-			$req.=' '.$do->drachme.' <img src="images/drachme.jpg" alt="drachmes">';
+			$req.=' '.$do->drachme.' '.imress('drachme');
 		}
 		
 		if(!empty($do->gold)) {
-			$req.=' '.$do->gold.' <img src="images/or.jpg" alt="or">';
+			$req.=' '.$do->gold.' '.imress('gold');
 		}
 		
 		echo '<tr>
