@@ -53,6 +53,7 @@ echo '<table class="tableau80 centrer_tableau">
 	<th class="titre_mess"></th>
 	<th class="titre_mess"></th></tr>';
 
+$i=1;
 foreach($messages as $mps) {
 	$num_mess++;
 	if(!empty($mps->timestamp_lecture))
