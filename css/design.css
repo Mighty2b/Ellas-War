@@ -702,3 +702,18 @@ input.permalien {
 	width:630px;
 }
 
+.laurier1 {
+	width:25px;
+	height:13px;
+	text-align:center;
+	position:relative;
+	float:left;
+}
+
+.laurier2 {
+	position:absolute;
+	text-align:right;
+	font-size:0.7em;
+	width:23px;
+	margin-top:11px;
+}

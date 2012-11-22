@@ -59,7 +59,42 @@
 <div class="fb-like" style="width:100px;" data-href="'.SITE_URL.'/profilsalliance-'.$all->id.'" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 	</td></tr>
 	</table></div><br/>';
-			
+
+ echo '<div style="margin-left:302px;">
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille1.'</div>
+ 	<img src="images/alliance/mini-laurier-indigo.png" alt="Trophée du massacre incompréhensible" title="Trophée du massacre incompréhensible" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille2.'</div>
+ 	<img src="images/alliance/mini-laurier-noir.png" alt="Trophée de l\'orgueil naïf" title="Trophée de l\'orgueil naïf" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille3.'</div>
+ 	<img src="images/alliance/mini-laurier-bleu.png" alt="Trophée de la loyauté" title="Trophée de la loyauté" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille4.'</div>
+ 	<img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la crutauté" title="Trophée de la crutauté" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille5.'</div>
+ 	<img src="images/alliance/mini-laurier-bronze.png" alt="Trophée de l\'honneur destructeur" title="Trophée de l\'honneur destructeur" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille6.'</div>
+ 	<img src="images/alliance/mini-laurier-argent.png" alt="Trophée de l\'archarnement divin" title="Trophée de l\'archarnement divin" />
+</div>
+<div class="laurier1">
+ 	 <div class="laurier2">'.$all->medaille7.'</div>
+ 	<img src="images/alliance/mini-laurier.png" alt="Trophée du conflit titanesque" title="Trophée du conflit titanesque" />
+</div>
+
+ <br/>	
+ <br/>	
+ 
+ 		</div>';
+ 
 	if(!empty($all->lien)) {
 		echo '<br/>
 		<div class="centrer">
