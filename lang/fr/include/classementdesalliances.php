@@ -7,6 +7,7 @@ $page_lvl = '<a href="classementdesalliances-1-lvl" class=\'titre_tab\'>Niveau</
 $page_xp	= '<a href="classementdesalliances-1-xp" class=\'titre_tab\'>XP</a>';
 $page_vic	= '<a href="classementdesalliances-1-vic" class=\'titre_tab\'>Victoires</a>';
 $page_def	=	'<a href="classementdesalliances-1-def" class=\'titre_tab\'>Défaites</a>';
+$page_tro = '<a href="classementdesalliances-1-trophee" class=\'titre_tab\'>Trophées</a>';
 
 echo '<h1>Classement des alliances</h1>';
 
@@ -78,6 +79,9 @@ elseif($type == 'vic') {
 elseif($type == 'def') {
 	$page_def	=	'<span class="jaune">Défaites</span>';
 }
+elseif($type == 'trophee') {
+	$page_tro	=	'<span class="jaune">Trophées</span>';
+}
 else {
 	$page_lvl = '<span class="jaune">Niveau</span>';
 }
@@ -91,6 +95,7 @@ echo '</div>
 <td>&nbsp;'.$page_chef.'&nbsp;</td>
 <td>&nbsp;'.$page_mbs.'&nbsp;</td>
 <td>&nbsp;'.$page_lvl.'&nbsp;</td>
+<td>&nbsp;'.$page_tro.'&nbsp;</td>
 <td>&nbsp;'.$page_xp.'&nbsp;</td>
 <td>&nbsp;'.$page_vic.'&nbsp;</td>
 <td>&nbsp;'.$page_def.'&nbsp;</td></tr>';
@@ -106,6 +111,7 @@ echo'<tr class="tableau_fond'.($i%2).'">
 	<td>&nbsp;<a href=\'profilsjoueur-'.$donnees->chef.'\' class="sans_soulign">'.$donnees->login.'</a></td>
 	<td class="centrer">&nbsp;'.$donnees->nbmembre.'</td>
 	<td class="centrer">&nbsp;'.$donnees->level.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees.'</td>
 	<td>&nbsp;'.nbf(round($donnees->xp)).'</td>
 	<td class="centrer">&nbsp;'.$donnees->victoires.'</td>
 	<td class="centrer">&nbsp;'.$donnees->defaites.'</td>
