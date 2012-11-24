@@ -61,10 +61,10 @@ if(sizeof($election) > 0) {
   }
 
   echo '<br/>
-	  <div id="devenir_candidat" style="display:none">
+	  <div id="devenir_candidat" style="display:none" class="centrer">
 		  <form method="post" action="#">
-			  <textarea placeholder="Votre programme" required="required" class="form1" name="programme">'.$mon_programme.'</textarea><br/>
-			  <input type="image" alt="Valider" src="fr/images/boutons/valider.jpg" />
+			  <textarea placeholder="Votre programme" required="required" class="form_retirer" name="programme" style="width:600px;height:150px;margin-bottom:5px;">'.$mon_programme.'</textarea><br/>
+			  <div class="bouton_classique"><input class="bouton_classique2" type="submit" value="VALIDER" /></div>
 		  </form>
 	  </div>
   </div>';
