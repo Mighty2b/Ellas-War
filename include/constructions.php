@@ -4,6 +4,7 @@ include('lang/'.LANG.'/donnees/batiments.php');
 
 $constructions = $paquet->get_batiments();
 $prod_bonus = $paquet->get_bonus_prod();
+$liste_autels = $paquet->liste_autels();
 
 //Les infos sur les logements
 $placen_nb = $paquet->get_placen_nb();
@@ -31,9 +32,34 @@ $i=0;
 	echo'<tr class="tableau_fond2"><td colspan="5"></td></tr>';
 
 	echo '<tr class="tableau_fond'.($i%2).'">
-	<td class="gauche">&nbsp;<a href="'.trad_to_page('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.trad_to_page($value -> nom2).'">'.$batiments[$value -> nom2]['nom'].'</a>&nbsp;</td>
-	<td class="centrer">&nbsp;'.nbf($value -> nb).'&nbsp;</td>
-	<td class="centrer">&nbsp;'.nbf($value -> terrain*$value -> nb).'&nbsp;</td>
+	<td class="gauche">&nbsp;<a href="'.trad_to_page('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.trad_to_page($value -> nom2).'">'.$batiments[$value -> nom2]['nom'].'</a>&nbsp;';
+	
+	if($bat == 'hall') {
+			if(!empty($liste_autels->sacrifice_hera)) {
+				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'.trad_to_page('Statues').'-'.
+						 $statues_donnees['sacrifice_hera']['url'].'">'.$statues_donnees['sacrifice_hera']['nom'].'</a>';
+			}
+			
+			if(!empty($liste_autels->defense_gaia)) {
+				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'.trad_to_page('Statues').'-'.
+						 $statues_donnees['defense_gaia']['url'].'">'.$statues_donnees['defense_gaia']['nom'].'</a>';
+			}
+			
+			if(!empty($liste_autels->strategie_hippodamos)) {
+				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'.trad_to_page('Statues').'-'.
+						 $statues_donnees['strategie_hippodamos']['url'].'">'.$statues_donnees['strategie_hippodamos']['nom'].'</a>';
+			}
+			
+			if(!empty($liste_autels->sauvegarde_ombre)) {
+				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'.trad_to_page('Statues').'-'.
+						 $statues_donnees['sauvegarde_ombre']['url'].'">'.$statues_donnees['sauvegarde_ombre']['nom'].'</a>';
+			}
+	}
+	
+	echo '
+	</td>
+	<td class="centrer" valign="top">&nbsp;'.nbf($value -> nb).'&nbsp;</td>
+	<td class="centrer" valign="top">&nbsp;'.nbf($value -> terrain*$value -> nb).'&nbsp;</td>
 	<td>&nbsp;';
 			if(!empty($value -> proddrachme)) {
 				echo nbf(floor($value -> nb*$value -> proddrachme*$prod_bonus->drachme)).' '.imress('drachme');

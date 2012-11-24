@@ -28,4 +28,11 @@ $temples_donnees  = array(
 	'poseidon' => array('nom' => 'Temple de Poseidon', 'description' => 'Grâce à Poseidon, vos unités de cavaleries coûtent moins chères. Il pourra aussi construire un mur autour de votre cité pour repousser vos ennemis. En tant que dieu des océans il augmentera la production de vos puits.')
 	);
 
+$statues_donnees = array(
+	'sacrifice_hera' => array('nom' => 'Sacrifice d\'Héra', 'url' => 'sacrifice_hera'),
+	'defense_gaia' => array('nom' => 'Défense de Gaia', 'url' => 'defense_gaia'),
+	'strategie_hippodamos' => array('nom' => 'Stratégie d\'Hippodamos', 'url' => 'strategie_hippodamos'),
+	'sauvegarde_ombre' => array('nom' => 'Sauvegarde des ombres', 'url' => 'sauvegarde_ombre')
+);
+
 ?>
