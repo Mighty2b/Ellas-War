@@ -1,5 +1,8 @@
 <?php
 
+$paquet = new EwPaquet('get_def_mur');
+$def_mur = $paquet->getRetour();
+
 include('lang/'.LANG.'/donnees/unites.php');
 include('lang/'.LANG.'/donnees/batiments.php');
 
@@ -131,23 +134,22 @@ foreach($constructions as $bat => $value) {
 	}
 }
 
-if(!empty($_SESSION['joueur'] -> mur)) {
+if($def_mur >  0) {
 	if($i != 0) {
 			$tab_bat .= '<tr class="tableau_fond2"><td colspan="4"></td></tr>';
 	}
-  $def = $_SESSION['joueur'] -> get_def_mur();
 	$tab_bat .= '<tr class="tableau_fond'.($i%2).'">
 <td class="gauche">&nbsp;<a href="Temples-poseidon" class="centre_armee">Mur de Poseidon</a>&nbsp;</td>
 <td class="droite">&nbsp;1&nbsp;</td>
 <td class="droite">&nbsp;0&nbsp;</td>
-<td class="droite">&nbsp;'.nbf($def).' '.img('images/attaques/bouclier.png', 'defense').'&nbsp;</td>
+<td class="droite">&nbsp;'.nbf($def_mur).' '.img('images/attaques/bouclier.png', 'defense').'&nbsp;</td>
 		</tr>';
 		$nb				+= 1;
 		$terrain	+= 0;
-		$defense	+= $def;
+		$defense	+= $def_mur;
 		$i++;
 }
-	
+
 if(!empty($tab_bat)) {
 $tab_bat .= '<tr class="tableau_fond2"><td colspan="4"></td></tr>';
 
