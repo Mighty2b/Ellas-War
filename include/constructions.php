@@ -59,7 +59,28 @@ $i=0;
 	echo '
 	</td>
 	<td class="centrer" valign="top">&nbsp;'.nbf($value -> nb).'&nbsp;</td>
-	<td class="centrer" valign="top">&nbsp;'.nbf($value -> terrain*$value -> nb).'&nbsp;</td>
+	<td class="centrer" valign="top">&nbsp;'.nbf($value -> terrain*$value -> nb).'&nbsp;';
+	
+	if($bat == 'hall') {
+			if(!empty($liste_autels->sacrifice_hera)) {
+				echo '<br/>&nbsp;80&nbsp;';
+			}
+			
+			if(!empty($liste_autels->defense_gaia)) {
+				echo '<br/>&nbsp;80&nbsp;';
+			}
+			
+			if(!empty($liste_autels->strategie_hippodamos)) {
+				echo '<br/>&nbsp;80&nbsp;';
+			}
+			
+			if(!empty($liste_autels->sauvegarde_ombre)) {
+				echo '<br/>&nbsp;80&nbsp;';
+			}
+	}
+	
+	echo '	
+	</td>
 	<td>&nbsp;';
 			if(!empty($value -> proddrachme)) {
 				echo nbf(floor($value -> nb*$value -> proddrachme*$prod_bonus->drachme)).' '.imress('drachme');
