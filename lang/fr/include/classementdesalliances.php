@@ -102,7 +102,7 @@ echo '</div>
 
 foreach($classement as $donnees) {
 	if($i != 0) {
-			echo'<tr class="tableau_fond2"><td colspan="8"></td></tr>';
+			echo'<tr class="tableau_fond2"><td colspan="9"></td></tr>';
 	}
 
 echo'<tr class="tableau_fond'.($i%2).'">
