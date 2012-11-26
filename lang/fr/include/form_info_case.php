@@ -47,6 +47,30 @@ if(!empty($info->id_c) && $info->id_c == $paquet->getid()) {
 	}
 	
 	echo '</table><br/></div>';
+	print_r($info);
+	if($info->id_x == $info->cap_x && $info->id_y == $info->cap_y) {
+		echo '<table>';
+		for($i=1;$i<=4;$i++) {
+			$case = 'unite'.$i;
+			echo '<tr>
+			<td align=\'left\' rowspan="2" valign="top">
+				<a href="#" title="'.$info->unite->$case->description.'" ><b>'.$info->unite->$case->nom.'</b></a>
+			</td>
+			<td class="centrer">'.$donnees4['prix'].' <img src="images/gold.png" alt="Prix en or" title="Prix en or" /></td>
+			<td class="droite">'.$donnees4['attaque'].' '.img('images/dague.png', 'attaque').'</td>
+			<td class="droite">'.$donnees4['defense'].' '.img('images/bouclier.png', 'défense').'</td>
+			</tr>
+			<tr>
+			<td class="centrer" colspan="3" valign="middle">
+				<form method="post" action="partie-'.$do['id_b'].'">
+					<input type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' class="form" placeholder="0" />
+					<input type="image" name="bouton" src="fr/images/boutons/engager.png" style="margin-bottom:-6px;"/>
+				</form>
+			</td>
+			</tr>';
+		}
+		echo '</table>';
+	}
 }
 else {
 	echo '<div class="ligne centrer">
