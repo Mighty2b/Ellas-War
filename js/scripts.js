@@ -628,3 +628,32 @@ function annuler_depart_urgent() {
 	   });
    $("#sortie_urgence").hide("slow");
 }
+
+function achat_unite(btn, x, y, unite) {
+  var nb = $("#engager_"+unite).val();
+
+   $.ajax({
+     type: "GET",
+     url: "form/info_case.php",
+     data: "btn=" + btn + "&x=" + x + "&y=" + y + "&unite=" + unite + "&nb=" + nb,
+     success: function(msg){ $("#info_btn").show("slow"); $("#info_btn").html(msg);info_carte(btn); }
+   });
+}
+
+function deplacer_unite(btn, x, y) {
+  var unite1 = $("#unite1").val();
+  var unite2 = $("#unite2").val();
+  var unite3 = $("#unite3").val();
+  var unite4 = $("#unite4").val();
+  var dest   = $("#destination").val();
+
+   $.ajax({
+     type: "GET",
+     url: "form/info_case.php",
+     data: "btn=" + btn + "&x=" + x + "&y=" + y + "&unite1=" + unite1 + 
+           "&unite2=" + unite2 + "&unite3=" + unite3 + "&unite4=" + unite4 + 
+           "&destination=" + dest,
+     success: function(msg){ $("#info_btn").show("slow"); $("#info_btn").html(msg);info_carte(btn); }
+   });
+}
+

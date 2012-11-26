@@ -1,5 +1,7 @@
 <?php
 
+$paquet->display();
+
 if(!empty($info->id_c) && $info->id_c == $paquet->getid()) {
 	if($info->id_x == $info->cap_x && $info->id_y == $info->cap_y) {
 		echo '
@@ -47,27 +49,78 @@ if(!empty($info->id_c) && $info->id_c == $paquet->getid()) {
 	}
 	
 	echo '</table><br/></div>';
-	print_r($info);
+
+if($info->unite1 > 0 or $info->unite2 > 0 or $info->unite3 > 0 or $info->unite4 > 0) {
+	echo '<div class="ligne centrer" id="btn_deplacer">
+	<b>Attaquer/Déplacer</b>
+	<br/>
+	<form method="POST" action="partie-'.$info->id_b.'">
+	<table class="centrer_tableau">
+	<tr class=\'titre_tab\'>
+		<td>&nbsp;Nom&nbsp;</td>
+		<td>&nbsp;Attaque&nbsp;</td>
+		<td>&nbsp;Défense&nbsp;</td>
+		<td></td>
+	</tr>';
+
+	for($i=1;$i<=4;$i++) {
+			$case = 'unite'.$i;
+		if(!empty($info->$case)) {
+			echo '<tr>
+			<td align=\'left\'>
+				&nbsp;<a href="#" title="'.$info->unite->$case->description.'" ><b>'.$info->unite->$case->nom.'</b></a>
+			</td>
+			<td class="droite">'.$info->unite->$case->attaque.' '.img('images/attaques/dague.png', 'attaque').'</td>
+			<td class="droite">'.$info->unite->$case->defense.' '.img('images/attaques/bouclier.png', 'défense').'</td>
+			<td>
+				<input type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' placeholder="0" class="form_retirer" id="unite'.$i.'" /> / <a class="lien_faq" href="javascript:engager_nb(\'unite'.$i.'\', '.$info->$case.');">'.$info->$case.'</a>
+			</td>
+			</tr>';
+		}
+		else {
+			echo '<input type=\'hidden\' name=\'unite'.$i.'\' value="0" />';
+		}
+		$i++;
+	}
+	echo '</table><br/>
+	<input type="hidden" name="depart" value="'.$info->id_x.';'.$info->id_y.'" />
+	Destination : <select name="destination" class="form_retirer" id="destination">';
+
+	//On récupere les cases des environs
+	foreach($info->possible as $case) {
+			echo '<option value="'.$case->x.';'.$case->y.'">&nbsp;'.$case->x.';'.$case->y.'&nbsp;</option>';
+	}
+	echo '</select><br/><br/>
+<div class="bouton_classique"><input class="bouton_classique2" 
+																		 type="button" 
+																		 value="Envoyer" 
+																		 type="image" 
+																		 src="fr/images/boutons/envoyer.png" 
+																		 onclick="deplacer_unite('.$_GET['btn'].', '.$_GET['x'].', '.$_GET['y'].');"/></div>
+	</form>
+	</div>';
+	}
+	
 	if($info->id_x == $info->cap_x && $info->id_y == $info->cap_y) {
 		echo '<table>';
 		for($i=1;$i<=4;$i++) {
 			$case = 'unite'.$i;
-			echo '<tr>
-			<td align=\'left\' rowspan="2" valign="top">
+			echo '<form method="post" action="partie-'.$info->id_b.'"><tr>
+			<td align=\'left\' valign="middle">
 				<a href="#" title="'.$info->unite->$case->description.'" ><b>'.$info->unite->$case->nom.'</b></a>
 			</td>
-			<td class="centrer">'.$donnees4['prix'].' <img src="images/gold.png" alt="Prix en or" title="Prix en or" /></td>
-			<td class="droite">'.$donnees4['attaque'].' '.img('images/dague.png', 'attaque').'</td>
-			<td class="droite">'.$donnees4['defense'].' '.img('images/bouclier.png', 'défense').'</td>
-			</tr>
-			<tr>
-			<td class="centrer" colspan="3" valign="middle">
-				<form method="post" action="partie-'.$do['id_b'].'">
-					<input type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' class="form" placeholder="0" />
-					<input type="image" name="bouton" src="fr/images/boutons/engager.png" style="margin-bottom:-6px;"/>
-				</form>
+			<td class="centrer">
+				'.$info->unite->$case->prix.' <img src="images/ress/gold.png" alt="Prix en or" title="Prix en or" />
 			</td>
-			</tr>';
+			<td class="droite">'.$info->unite->$case->attaque.' '.img('images/attaques/dague.png', 'attaque').'</td>
+			<td class="droite">'.$info->unite->$case->defense.' '.img('images/attaques/bouclier.png', 'défense').'</td>
+			<td class="centrer" valign="middle">	
+					<input id="engager_unite'.$i.'" type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' class="form_retirer" placeholder="0" />
+			</td><td>
+<div class="bouton_classique"><input class="bouton_classique2" type="button" value="Engager" type="image" src="fr/images/boutons/envoyer.png" onclick="achat_unite('.$_GET['btn'].', '.$_GET['x'].', '.$_GET['y'].', \''.$case.'\');" /></div>
+				
+			</td>
+			</tr></form>';
 		}
 		echo '</table>';
 	}

@@ -16,6 +16,7 @@ echo '</div></div>
 
 <script type="text/javascript">
 	info_carte('.$_GET['var1'].');
+	info_case('.$_GET['var1'].', 0, 0);
 </script>';
 
 ?>
