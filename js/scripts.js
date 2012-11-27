@@ -185,13 +185,6 @@ var menu = $("#historique_num"+id);
 		menu.addClass("ouvert");
 		menu.show("slow");
 	}
-	
-	$.ajax({
-		type: "POST",
-		url: "form/voir_archive.php",
-		data: "id="+id/*,
-		success: function(msg){ alert(msg); }*/
-	});
 }
 
 function voir_archive(id) {
