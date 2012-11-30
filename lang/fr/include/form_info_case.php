@@ -1,5 +1,11 @@
 <?php
 
+if(empty($info->id_c)) {
+	echo '<div class="ligne centrer">
+	<b>Case inoccupée</b> ('.$info->id_x.';'.$info->id_y.')<br/><br/>
+	</div>';
+}
+
 $paquet->display();
 
 if(!empty($info->id_c) && $info->id_c == $paquet->getid()) {
