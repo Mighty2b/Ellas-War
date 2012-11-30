@@ -1,6 +1,14 @@
 <?php
 
-if(empty($info->id_c)) {
+echo '<div class="ligne centrer"><b>Actions disponibles :</b> '.$paquet->getRetour(2).'</div>
+<div id="interieur_btn">';
+
+if(!empty($info->id_c)) {
+	echo '<div class="ligne centrer">
+	<b>'.$info->login.'</b> ('.$info->id_x.';'.$info->id_y.')<br/><br/>
+	</div>';
+}
+else {
 	echo '<div class="ligne centrer">
 	<b>Case inoccupée</b> ('.$info->id_x.';'.$info->id_y.')<br/><br/>
 	</div>';
@@ -138,5 +146,7 @@ else {
 			<br/><br/><br/>
 			</div>';
 }
+
+echo '</div>';
 
 ?>
