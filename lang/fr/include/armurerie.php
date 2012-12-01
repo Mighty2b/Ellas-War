@@ -2,6 +2,7 @@
 <?php
 
 $paquet->display();
+$bonus_unites = $paquet->bonus_unites();
 
 if($possible == true) {
   $prix = array('',
@@ -39,8 +40,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     <div class="ligne_quart centrer minititre_armurerie" id="h_cavalerie_dis">Cavalerie à distance</div>
   </div>
 <?php
-  for($j=1;$j<=4;$j++)
-  {
+  for($j=1;$j<=4;$j++) {
 ?>
   <div class="ligne bloc_armurerie" id="bloc_amurerie_<?=$j; ?>">
   <br/>
@@ -49,12 +49,11 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>+5% en attaque</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">10000 <?=imress('raisin'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'1']))
-			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'1']);
+      $var = $j.'1';
+      if(!empty($bonus_unites->$var)) {
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
 			}
-			else
-			{
+			else {
         echo '<td colspan="2"><a href="Armurerie-'.$j.'1">Obtenir</a>';
       }
       ?>
@@ -64,12 +63,11 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>+5% en défense</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">50000 <?=imress('marbre'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'2']))
-			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'2']);
+      $var = $j.'2';
+      if(!empty($bonus_unites->$var)) {
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
 			}
-			else
-			{
+			else {
         echo '<td colspan="2"><a href="Armurerie-'.$j.'2">Obtenir</a>';
       }
       ?>
@@ -79,12 +77,11 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>-5% en solde</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">1000 <?=imress('vin'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'3']))
-			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'3']);
+      $var = $j.'3';
+      if(!empty($bonus_unites->$var)) {
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
 			}
-			else
-			{
+			else {
         echo '<td colspan="2"><a href="Armurerie-'.$j.'3">Obtenir</a>';
       }
       ?>
@@ -94,12 +91,11 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>-5% en coût</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">1000 <?=imress('gold'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'4']))
-			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'4']);
+      $var = $j.'4';
+      if(!empty($bonus_unites->$var)) {
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
 			}
-			else
-			{
+			else {
         echo '<td colspan="2"><a href="Armurerie-'.$j.'4">Obtenir</a>';
       }
       ?>
@@ -132,9 +128,9 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>+5% en attaque</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">10000 <?=imress('raisin'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'1']))
+      if(!empty($bonus_unites[$j.'1']))
 			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'1']);
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'1']);
 			}
 			else
 			{
@@ -147,9 +143,9 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>+5% en défense</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">50000 <?=imress('marbre'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'2']))
+      if(!empty($bonus_unites[$j.'2']))
 			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'2']);
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'2']);
 			}
 			else
 			{
@@ -162,9 +158,9 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>-5% en solde</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">1000 <?=imress('vin'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'3']))
+      if(!empty($bonus_unites[$j.'3']))
 			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'3']);
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'3']);
 			}
 			else
 			{
@@ -177,9 +173,9 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
       <td>-5% en coût</td>
       <td class="droite"><?=$prix[$j]; ?></td><td class="droite">1000 <?=imress('gold'); ?></td>
       <?php
-      if(!empty($_SESSION['joueur'] -> bonus_unites[$j.'4']))
+      if(!empty($bonus_unites[$j.'4']))
 			{
-				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $_SESSION['joueur'] -> bonus_unites[$j.'4']);
+				echo '<td>Fin : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'4']);
 			}
 			else
 			{

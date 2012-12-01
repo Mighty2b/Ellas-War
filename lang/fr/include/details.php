@@ -306,8 +306,8 @@ $prod_or .=' '.plus_valeur($value -> nb*$value -> prodor/$temps).' '.img('images
 			$conso_or.='- '.nbf($cotisation->gold/$temps).' '.img('images/ress/or.jpg', 'or').' Cotisation<br/>';
 		}
 
-		if(!empty($_SESSION['joueur'] -> alliance) && ($_SESSION['joueur'] -> cotise_volontaire)) {
-			$conso_dra.='-  '.floor(($_SESSION['joueur'] -> cotise_volontaire*$prod_bonus->drachme * (($_SESSION['joueur'] -> liste_batiments['atelierf'] -> nb * $_SESSION['joueur'] -> liste_batiments['atelierf'] -> proddrachme))/100)/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation volontaire<br/>';
+		if($paquet->get_cotise_volontaire() > 0) {
+			$conso_dra.='-  '.floor(($paquet->get_cotise_volontaire()*$prod_bonus->drachme * (($liste_bat->atelierf-> nb * $liste_bat->atelierf->proddrachme))/100)/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation volontaire<br/>';
 		}
 
 echo '<center>

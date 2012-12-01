@@ -580,7 +580,10 @@ class EwPaquet {
   }
   
   function get_cotise_volontaire() {
-  	return $this->reponse->joueur->cotise_volontaire;
+  	if(!empty($this->reponse->joueur->alliance))
+  		return $this->reponse->joueur->cotise_volontaire;
+  	else
+  		return 0;
   }
   
   function getidchef() {

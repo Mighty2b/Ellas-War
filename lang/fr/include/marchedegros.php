@@ -100,7 +100,7 @@ foreach($liste_lots as $do) {
 		$do->vendeur = 'Anonyme';
 	}
 	elseif(empty($do->vendeur)) {
-	  $do->vendeur = $_SESSION['joueur'] -> login;
+	  $do->vendeur = $paquet->getlogin();
 	}
 	
 	if($ress == 'faveur') {
