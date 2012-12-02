@@ -7,7 +7,6 @@ $page_lvl = '<a href="classementdesalliances-1-lvl" class=\'titre_tab\'>Niveau</
 $page_xp	= '<a href="classementdesalliances-1-xp" class=\'titre_tab\'>XP</a>';
 $page_vic	= '<a href="classementdesalliances-1-vic" class=\'titre_tab\'>Victoires</a>';
 $page_def	=	'<a href="classementdesalliances-1-def" class=\'titre_tab\'>Défaites</a>';
-$page_tro = '<a href="classementdesalliances-1-trophee" class=\'titre_tab\'>Trophées</a>';
 
 echo '<h1>Classement des alliances</h1>';
 
@@ -79,8 +78,10 @@ elseif($type == 'vic') {
 elseif($type == 'def') {
 	$page_def	=	'<span class="jaune">Défaites</span>';
 }
-elseif($type == 'trophee') {
-	$page_tro	=	'<span class="jaune">Trophées</span>';
+elseif($type == 'trophees1' or $type == 'trophees2' or $type == 'trophees3' or
+			 $type == 'trophees4' or $type == 'trophees5' or $type == 'trophees6' or
+			 $type == 'trophees7') {
+
 }
 else {
 	$page_lvl = '<span class="jaune">Niveau</span>';
@@ -95,14 +96,21 @@ echo '</div>
 <td>&nbsp;'.$page_chef.'&nbsp;</td>
 <td>&nbsp;'.$page_mbs.'&nbsp;</td>
 <td>&nbsp;'.$page_lvl.'&nbsp;</td>
-<td>&nbsp;'.$page_tro.'&nbsp;</td>
 <td>&nbsp;'.$page_xp.'&nbsp;</td>
 <td>&nbsp;'.$page_vic.'&nbsp;</td>
-<td>&nbsp;'.$page_def.'&nbsp;</td></tr>';
+<td>&nbsp;'.$page_def.'&nbsp;</td>
+<td valign="middle"><a href="classementdesalliances-1-trophees7"><img src="images/alliance/mini-laurier.png" alt="Trophée du conflit titanesque" title="Trophée du conflit titanesque" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees6"><img src="images/alliance/mini-laurier-argent.png" alt="Trophée de l\'archarnement divin" title="Trophée de l\'archarnement divin" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees5"><img src="images/alliance/mini-laurier-bronze.png" alt="Trophée de l\'honneur destructeur" title="Trophée de l\'honneur destructeur" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees4"><img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la crutauté" title="Trophée de la crutauté" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees3"><img src="images/alliance/mini-laurier-bleu.png" alt="Trophée de la loyauté" title="Trophée de la loyauté" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees2"><img src="images/alliance/mini-laurier-noir.png" alt="Trophée de l\'orgueil naïf" title="Trophée de l\'orgueil naïf" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees1"><img src="images/alliance/mini-laurier-indigo.png" alt="Trophée du massacre incompréhensible" title="Trophée du massacre incompréhensible" /></a></td>
+</tr>';
 
 foreach($classement as $donnees) {
 	if($i != 0) {
-			echo'<tr class="tableau_fond2"><td colspan="9"></td></tr>';
+			echo'<tr class="tableau_fond2"><td colspan="15"></td></tr>';
 	}
 
 echo'<tr class="tableau_fond'.($i%2).'">
@@ -111,10 +119,16 @@ echo'<tr class="tableau_fond'.($i%2).'">
 	<td>&nbsp;<a href=\'profilsjoueur-'.$donnees->chef.'\' class="sans_soulign">'.$donnees->login.'</a></td>
 	<td class="centrer">&nbsp;'.$donnees->nbmembre.'</td>
 	<td class="centrer">&nbsp;'.$donnees->level.'</td>
-	<td class="centrer">&nbsp;'.$donnees->trophees.'</td>
 	<td>&nbsp;'.nbf(round($donnees->xp)).'</td>
 	<td class="centrer">&nbsp;'.$donnees->victoires.'</td>
 	<td class="centrer">&nbsp;'.$donnees->defaites.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees7.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees6.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees5.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees4.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees3.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees2.'</td>
+	<td class="centrer">&nbsp;'.$donnees->trophees1.'</td>
 	</tr>';
 	
 	$i++;
