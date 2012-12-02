@@ -1,6 +1,6 @@
 <?php
 
-if(FREE_BLOQUE_RESS == 1) {
+if($paquet->getRetour() == 1) {
   echo '<div class="ligne centrer erreur">
   Promotion : Remettez votre compte en route gratuitement !
   </div>';
@@ -18,7 +18,7 @@ donnée par un de vos amis. Vous pouvez aussi recommencer votre partie.
 <br/><br/><br/>
 <table class="centrer_tableau" width="80%"><tr class="centrer"><td>';
 
-if(FREE_BLOQUE_RESS == 1) {
+if($paquet->getRetour() == 1) {
   echo '<h3 class="supr_messagerie" onclick="javascript:retour_pause();">Revenir sur le jeu</h3>';
 }
 elseif($paquet->getFaveurs() > 0) {

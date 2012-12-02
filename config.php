@@ -14,7 +14,6 @@ $minimum_lvl_ress = array('pierre' => 1,
 													'vin' => 7,
 													'gold' => 7);
 $lvlminirejoindre = 1;
-define('FREE_BLOQUE_RESS', 0);
 $temps_lots = 120; //Temps avant de pouvoir acheter, en secondes
 $prix_commerce = array(
 'fer' => array('nom' => 'Fer', 'qtt' => 200000, 'grostaux' => '0.01', 'grosmax' => '0.2', 'petittaux' => '0.02', 'petitmax' => '0.2', 'limit' => array('gd' => 10, 'pt' => 10)),
