@@ -650,3 +650,35 @@ function deplacer_unite(btn, x, y) {
    });
 }
 
+function envoyer_chat() {
+  var texte = $("#texte_chat").val();
+  $("#texte_chat").val('');
+  if(texte != '') {
+    $.ajax({
+      type: "GET",
+      url: "form/envoyer_chat.php",
+      data: "texte=" + texte
+    });
+  }
+}
+
+function refresh_chat() {
+   $.ajax({
+     type: "GET",
+     url: "form/refresh_chat.php",
+     success: function(msg){
+      $("#corps_chat").html($("#corps_chat").html()+msg);
+     }
+   });
+}
+
+function joueurs_chat() {
+   $.ajax({
+     type: "GET",
+     url: "form/joueurs_chat.php",
+     success: function(msg){
+      $("#joueurs_chat2").html(msg);
+     }
+   });
+}
+

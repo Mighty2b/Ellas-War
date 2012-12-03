@@ -37,6 +37,6 @@ $autorise = array('constructions', 'decouvertedujeu', 'faq', 'partenaires',
                   'archives_alliance', 'guerres', 'pactes', 'nommer',
                   'recrutements', 'niveau', 'tour_de_force',
                   'demande', 'sanctuaires', 'changer_grandchef',
-                  'contrats', 'valide', 'blocus', 'diamant');
+                  'contrats', 'valide', 'blocus', 'diamant', 'chat');
 
 ?>

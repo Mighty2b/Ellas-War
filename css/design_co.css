@@ -1265,3 +1265,30 @@ a.details_ress {
   border: 0 none;
 }
 
+#cadre_chat {
+  width:80%;
+  margin:auto;
+}
+
+#joueurs_chat {
+  float:right;
+  border: 1px groove black;
+  height:300px;
+  overflow: auto;
+  background-color:white;
+  width:150px;
+}
+
+#joueurs_chat2 {
+  margin-left:10px;
+}
+
+#corps_chat {
+  float:left;
+  border: 1px groove black;
+  width:550px;
+  height:300px;
+  overflow: auto;
+  background-color:white;
+}
+

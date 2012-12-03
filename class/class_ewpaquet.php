@@ -60,7 +60,8 @@ class EwPaquet {
 				setcookie('temps', $temps, $temps, '/',
 	    				  $_SERVER['HTTP_HOST']);
 			}
-			elseif(($action == 'get_missives' or $action == 'constituer_groupe') && 
+			elseif(($action == 'get_missives' or $action == 'constituer_groupe' or
+							$action == 'ecrire_chat') && 
 						 $reponse->joueur->statu != 0) {
 				$temps = time()+7*60;
 			
@@ -639,6 +640,10 @@ class EwPaquet {
 						$this->reponse->joueur->liste_autels->defense_gaia +
 						$this->reponse->joueur->liste_autels->strategie_hippodamos +
 						$this->reponse->joueur->liste_autels->sauvegarde_ombre;
+  }
+  
+  function get_timestamp() {
+  	return	$this->reponse->joueur->timestamp;
   }
 }
 
