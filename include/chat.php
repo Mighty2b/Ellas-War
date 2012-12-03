@@ -1,6 +1,7 @@
 <?php
 
-$paquet = new EwPaquet('refresh_chat');
+$paquet = new EwPaquet('joueurs_chat');
+$rep = $paquet->getRetour();
 
 //La liste des joueurs connectés
 $liste = $paquet->getRetour();
@@ -8,7 +9,13 @@ $liste = $paquet->getRetour();
 echo '<h1>'.$texte_titre.'</h1>
 <div id="cadre_chat">
 	<div id="corps_chat"></div>
-	<div id="joueurs_chat"><div id="joueurs_chat2"></div></div>
+	<div id="joueurs_chat"><div id="joueurs_chat2">';
+	if(!empty($rep)) {
+		foreach($rep as $j) {
+			echo '<br/><b>'.$j->login.'</b>';
+		}
+	}
+echo '</div></div>
 </div>';
 
 include('lang/'.LANG.'/include/chat.php');
