@@ -101,9 +101,9 @@ elseif($paquet -> possible_temple2() && (empty($_GET['var1']) or ($_GET['var1'] 
 </table>
 </div>
 <div class="centrer">
-<img src="lang/fr/images/temple/img_ares.png" alt="<?=$temples_donnees['ares']['nom'];?>" name="<?=$temples_donnees['ares']['nom']; ?>" id="temple_ares" />
+<img src="lang/fr/images/temple/img_ares.png" alt="<?php echo $temples_donnees['ares']['nom'];?>" name="<?php echo $temples_donnees['ares']['nom']; ?>" id="temple_ares" />
 &nbsp;
-<img src="lang/fr/images/temple/img_athena.png" alt="<?=$temples_donnees['athena']['nom'];?>" name="<?=$temples_donnees['athena']['nom']; ?>" id="temple_athena" />
+<img src="lang/fr/images/temple/img_athena.png" alt="<?php echo $temples_donnees['athena']['nom'];?>" name="<?php echo $temples_donnees['athena']['nom']; ?>" id="temple_athena" />
 </div>
 <?php
 }
@@ -159,11 +159,11 @@ elseif($paquet -> possible_temple3() && (empty($_GET['var1']) or ($_GET['var1'] 
 </table>
 </div>
 <div class="centrer">
-<img src="lang/fr/images/temple/img_artemis.png" alt="<?=$temples_donnees['artemis']['nom'];?>" name="<?=$temples_donnees['artemis']['nom']; ?>" id="temple_artemis" />
+<img src="lang/fr/images/temple/img_artemis.png" alt="<?php echo $temples_donnees['artemis']['nom'];?>" name="<?php echo $temples_donnees['artemis']['nom']; ?>" id="temple_artemis" />
 &nbsp;
-<img src="lang/fr/images/temple/img_dionysos.png" alt="<?=$temples_donnees['dionysos']['nom'];?>" name="<?=$temples_donnees['dionysos']['nom']; ?>" id="temple_dionysos" />
+<img src="lang/fr/images/temple/img_dionysos.png" alt="<?php echo $temples_donnees['dionysos']['nom'];?>" name="<?php echo $temples_donnees['dionysos']['nom']; ?>" id="temple_dionysos" />
 &nbsp;
-<img src="lang/fr/images/temple/img_hephaistos.png" alt="<?=$temples_donnees['hephaistos']['nom'];?>" name="<?=$temples_donnees['hephaistos']['nom']; ?>" id="temple_hephaistos" />
+<img src="lang/fr/images/temple/img_hephaistos.png" alt="<?php echo $temples_donnees['hephaistos']['nom'];?>" name="<?php echo $temples_donnees['hephaistos']['nom']; ?>" id="temple_hephaistos" />
 </div>
 <?php
 }
@@ -218,11 +218,11 @@ elseif($paquet -> possible_temple4() && (empty($_GET['var1']) or ($_GET['var1'] 
 </table>
 </div>
 <div class="centrer">
-<img src="lang/fr/images/temple/img_hades.png" alt="<?=$temples_donnees['hades']['nom'];?>" name="<?=$temples_donnees['hades']['nom']; ?>" id="temple_hades" />
+<img src="lang/fr/images/temple/img_hades.png" alt="<?php echo $temples_donnees['hades']['nom'];?>" name="<?php echo $temples_donnees['hades']['nom']; ?>" id="temple_hades" />
 &nbsp;
-<img src="lang/fr/images/temple/img_poseidon.png" alt="<?=$temples_donnees['poseidon']['nom'];?>" name="<?=$temples_donnees['poseidon']['nom']; ?>" id="temple_poseidon" />
+<img src="lang/fr/images/temple/img_poseidon.png" alt="<?php echo $temples_donnees['poseidon']['nom'];?>" name="<?php echo $temples_donnees['poseidon']['nom']; ?>" id="temple_poseidon" />
 &nbsp;
-<img src="lang/fr/images/temple/img_zeus.png" alt="<?=$temples_donnees['zeus']['nom'];?>" name="<?=$temples_donnees['zeus']['nom']; ?>" id="temple_zeus" />
+<img src="lang/fr/images/temple/img_zeus.png" alt="<?php echo $temples_donnees['zeus']['nom'];?>" name="<?php echo $temples_donnees['zeus']['nom']; ?>" id="temple_zeus" />
 </div>
 <?php
 }

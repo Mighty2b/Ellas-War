@@ -2,8 +2,18 @@
 <div id="bouton_armee"><a href="PasserEnRevue"><img src="design/co/armee.png" alt="Armée" title="Armée" onmouseover="menu_visible('menu_haut_armee');" /></a></div>
 <div id="bouton_archives"><a href="Archives"><img src="design/co/archives.png" alt="Archives" title="Archives" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_mythologie"><a href="<?php
-if($paquet->getlvl() == 0) { echo 'Prieres'; } elseif(sizeof($paquet->getTemples()) >= 4) { echo 'AutelDesDieux'; } else { echo 'Temples'; } ?>"><img src="design/co/mythologie.png" alt="Mythologie" title="Mythologie" onmouseover="menu_visible('menu_haut_mythologie');" /></a></div>
-<div id="bouton_alliance"><a href="<?=(($paquet->getalliance() != 0)?'Alliance':'LesAlliances'); ?>"><img src="design/co/alliances.png" alt="Alliance" title="Alliance" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
+if($paquet->getlvl() == 0) {
+	echo 'Prieres';
+}
+elseif(sizeof($paquet->getTemples()) >= 4) {
+	echo 'AutelDesDieux';
+}
+else {
+	echo 'Temples';
+}
+
+echo '"><img src="design/co/mythologie.png" alt="Mythologie" title="Mythologie" onmouseover="menu_visible('menu_haut_mythologie');" /></a></div>
+<div id="bouton_alliance"><a href="'.(($paquet->getalliance() != 0)?'Alliance':'LesAlliances'); ?>"><img src="design/co/alliances.png" alt="Alliance" title="Alliance" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_forum"><a href="http://forums.ellaswar.com" target="_blank" ><img src="design/co/forum.png" alt="Forum" title="Forum" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_messagerie"><a href="Messagerie">
 <?php

@@ -15,10 +15,10 @@ if(empty($erreur) && !empty($_POST['cheval']) && is_numeric($_POST['cheval'])) {
 ?>
 <div class="ligne80 centrer">
 Venez participer aux biges, ces fantastiques courses de chars à deux chevaux 
-et remportez 4.000 <?=imress('drachme'); ?><br/><br/>
+et remportez 4.000 <?php echo imress('drachme'); ?><br/><br/>
 <form method="post" action="#">
 <b>Choisissez l'attelage sur lequel vous allez miser 1'000 
-<?=imress('drachme'); ?></b><br/>
+<?php echo imress('drachme'); ?></b><br/>
 <table class="centrer_tableau">
 <tr>
 	<td align="left">

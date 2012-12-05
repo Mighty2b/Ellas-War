@@ -24,9 +24,9 @@ if(!empty($alliance)) {
 	<br/><a href="partenaires" class="titre">Partenaires</a>
 	<br/><a href="conditionsgeneralesutilisation" class="titre">Conditions générales d'utilisation</a>
 	<br/><a href="quelquesmotssurlesite" class="titre">Quelques mots sur le site</a>
-	<br/><a href="<?=SITE_URL;?>" class="titre">Constructions</a>
+	<br/><a href="<?php echo SITE_URL;?>" class="titre">Constructions</a>
 		
-			<br/><a href="<?=SITE_URL;?>" class="ss_titre">Ma cité</a>
+			<br/><a href="<?php echo SITE_URL;?>" class="ss_titre">Ma cité</a>
 			<br/><a href="Construire" class="ss_titre">Construire</a>
 			<br/><a href="Armurerie" class="ss_titre">Armurerie</a>
 			<br/><a href="Tresor" class="ss_titre">Trésor</a>
@@ -51,7 +51,7 @@ if(!empty($alliance)) {
 		
 	
 	<br/><a href="Archives" class="titre">Archives</a>
-	<br/><a href="<?=((sizeof($paquet->getTemples()) >= 4)?'AutelDesDieux':'Temples'); ?>" class="titre">Mythologie</a>
+	<br/><a href="<?php echo ((sizeof($paquet->getTemples()) >= 4)?'AutelDesDieux':'Temples'); ?>" class="titre">Mythologie</a>
 		
 			<br/><a href="AutelDesDieux" class="ss_titre">Autel des dieux</a>
 			<br/><a href="Temples" class="ss_titre">Temples</a>

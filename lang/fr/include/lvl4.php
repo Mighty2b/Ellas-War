@@ -13,7 +13,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>Construction de 30 ateliers de battage de la monnaie</b><br/>
-	<i>Actuellement : <?=$actu[0];?>  ateliers de battage de la monnaie</i>
+	<i>Actuellement : <?php echo $actu[0];?>  ateliers de battage de la monnaie</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -30,7 +30,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>Construction de 50 tours d'observation</b><br/>
-	<i>Actuellement : <?=$actu[5];?> tours d'observation</i>
+	<i>Actuellement : <?php echo $actu[5];?> tours d'observation</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -47,7 +47,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>Recrutement de 2'000 archers à arc court</b><br/>
-	<i>Actuellement : <?=nbf($actu[1]);?> archers à arc court</i>
+	<i>Actuellement : <?php echo nbf($actu[1]);?> archers à arc court</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -63,7 +63,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>Construction de 25 fermes vinicoles</b><br/>
-	<i>Actuellement : <?=$actu[2];?> fermes vinicoles</i>
+	<i>Actuellement : <?php echo $actu[2];?> fermes vinicoles</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -79,7 +79,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>160 victoires</b><br/>
-	<i>Actuellement : <?=$actu[3];?> victoires
+	<i>Actuellement : <?php echo $actu[3];?> victoires
 	</td>
 	<td class="centrer">
 	<?php
@@ -95,7 +95,7 @@ if($paquet -> getlvl() != 4) {
 <tr>
 	<td>
 	<b>Toutes vos ressources en positif</b><br/>
-	<i>Actuellement : <?=((!empty($obj[4]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
+	<i>Actuellement : <?php echo ((!empty($obj[4]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
 	</td>
 	<td class="centrer">
 	<?php
@@ -119,6 +119,6 @@ if(array_sum($obj) == sizeof($obj)) {
 <h3>Après votre passage niveau 5 :</h3>
 <table>
 <tr><td>Nouvelle unité disponible : <b>Archer à arc long</b></td></tr>
-<tr><td>Plafond de votre trésor à <b><?=nbf(2000000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Plafond de votre trésor à <b><?php echo nbf(2000000).'</b> '.imress('drachme'); ?></td></tr>
 </table>
 </center>

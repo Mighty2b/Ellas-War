@@ -9,8 +9,8 @@ Vous avez désormais accés aux attaques, vous pouvez aussi rejoindre une allian
 <table>
 <tr><td>Nouveaux bâtiments disponibles : <b>ferme</b> et <b>hutte</b></td></tr>
 <tr><td>Nouvelles unités disponibles : <b>volontaire</b> et <b>homme d'argent</b></td></tr>
-<tr><td>Plafond de votre trésor à <b><?=nbf(400000).'</b> '.imress('drachme'); ?></td></tr>
-<tr><td>Bonus de <b><?=nbf(10000).'</b> '.imress('nourriture').' et <b>'.nbf(50000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Plafond de votre trésor à <b><?php echo nbf(400000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Bonus de <b><?php echo nbf(10000).'</b> '.imress('nourriture').' et <b>'.nbf(50000).'</b> '.imress('drachme'); ?></td></tr>
 <tr><td>50 <b>Espions</b></td></tr>
 <tr><td><b>Nouvelles missions</b></td></tr>
 <tr><td>Nouveau jeu : Le <b>loto</b></td></tr>

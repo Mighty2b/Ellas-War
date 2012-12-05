@@ -1,7 +1,7 @@
 <br/>
 <table class='tableau80d centrer_tableau'>
 	<tr class='tableau_header'>
-		<th><?=$mp->titre; ?></th>
+		<th><?php echo $mp->titre; ?></th>
 	</tr>
 	<tr class="font_classement2">
 		<td class="centrer">
@@ -59,16 +59,16 @@
 	?>
 		</div></div>
 		<div class="bloc_messagerie">
-			<?=$mp->message; ?>
+			<?php echo $mp->message; ?>
 		</div>
 		</td>
 	</tr>
 </table>
 <br/>
 <div align="center">
-	<a href="NouveauMessage-<?=$mp->destinataire.'-'.$mp->id; ?>"><img src="images/joueurs/repondre_mp.png" alt="repondre à ce Mp" title="Répondre à ce message" /></a>
+	<a href="NouveauMessage-<?php echo $mp->destinataire.'-'.$mp->id; ?>"><img src="images/joueurs/repondre_mp.png" alt="repondre à ce Mp" title="Répondre à ce message" /></a>
 	
-<a href="NouveauMessage-<?=$mp->destinataire.'-'.$mp->id; ?>-non"><img src="images/joueurs/mail_send.png" alt="repondre à ce Mp" title="Répondre sans citer" /></a>
+<a href="NouveauMessage-<?php echo $mp->destinataire.'-'.$mp->id; ?>-non"><img src="images/joueurs/mail_send.png" alt="repondre à ce Mp" title="Répondre sans citer" /></a>
 		<?php
 
 		if($mp->destinataire == $paquet->getid()) {

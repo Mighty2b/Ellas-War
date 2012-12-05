@@ -13,7 +13,7 @@ if($paquet -> getlvl() != 3) {
 <tr>
 	<td>
 	<b>Construction de 20 tours d'observation</b><br/>
-	<i>Actuellement : <?=$actu[0];?> tours d'observation</i>
+	<i>Actuellement : <?php echo $actu[0];?> tours d'observation</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -30,7 +30,7 @@ if($paquet -> getlvl() != 3) {
 <tr>
 	<td>
 	<b>Recrutement de 1'000 frondeurs</b><br/>
-	<i>Actuellement : <?=nbf($actu[3]);?> frondeurs</i>
+	<i>Actuellement : <?php echo nbf($actu[3]);?> frondeurs</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -46,7 +46,7 @@ if($paquet -> getlvl() != 3) {
 <tr>
 	<td>
 	<b>100 victoires</b><br/>
-	<i>Actuellement : <?=$actu[2];?> victoires
+	<i>Actuellement : <?php echo $actu[2];?> victoires
 	</td>
 	<td class="centrer">
 	<?php
@@ -62,7 +62,7 @@ if($paquet -> getlvl() != 3) {
 <tr>
 	<td>
 	<b>Toutes vos ressources en positif</b><br/>
-	<i>Actuellement : <?=((!empty($obj[1]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
+	<i>Actuellement : <?php echo ((!empty($obj[1]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
 	</td>
 	<td class="centrer">
 	<?php
@@ -89,6 +89,6 @@ if(array_sum($obj) == sizeof($obj)) {
 	<td>Nouveaux bâtiments disponibles : <b>Ferme vinicole</b> et <b>Habitation</b></td>
 </tr>
 <tr><td>Nouvelle unité disponible : <b>Archer à arc court</b></td></tr>
-<tr><td>Plafond de votre trésor à <b><?=nbf(1000000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Plafond de votre trésor à <b><?php echo nbf(1000000).'</b> '.imress('drachme'); ?></td></tr>
 </table>
 </center>

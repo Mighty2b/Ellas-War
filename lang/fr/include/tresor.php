@@ -6,10 +6,11 @@
 if($paquet->getlvl() > 5) {
 	echo 'Le calcul absolu vous permet d\'obtenir exactement la somme que vous souhaitez retirer. Lors d\'un retrait relatif il vous faut déduire les taxes de la somme que vous retirez.';
 }
-?>
+
+echo '
 </div>
 <br/>
-<h2 class="centrer">Fonds actuels : <?=$paquet->getTresor().' '.imress('drachme'); ?></h2>
+<h2 class="centrer">Fonds actuels : '.$paquet->getTresor().' '.imress('drachme'); ?></h2>
 <div id="simuler" class="centrer"></div>
 
 <div class="ligne cadre">

@@ -1,7 +1,7 @@
 <div class="centrer">
 <p><b>Votre compte est actuellement en pause.</b><br/><br/>
 Vous pourrez sortir de pause quand vous le voulez 
-<?=$info['sortie']; ?> heures avant la fin de votre pause.
+<?php echo $info['sortie']; ?> heures avant la fin de votre pause.
 <br/>Au-delà, la sortie de pause se fera seule.
 Si vous le voulez, vous pouvez sortir de pause en utilisant une faveur,
 celle-ci vous permettra de revenir sur le jeu plus tôt.</p><br/>

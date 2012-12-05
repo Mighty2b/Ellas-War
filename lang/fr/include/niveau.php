@@ -1,4 +1,7 @@
-<div id="cadre_milieu_petit">
+<?php
+
+echo
+'<div id="cadre_milieu_petit">
 	<div id="cadre_haut_petit"></div>
 	<div id="cadre_centre_petit">
 	
@@ -6,12 +9,12 @@
 	<div id="cadre_bas_petit"></div>
 </div>
 
-<h1>Passage niveau <?=$paquet->get_level()+1; ?></h1>
+<h1>Passage niveau '.($paquet->get_level()+1).'</h1>
 <div class="centrer">
 <h3>Votre alliance doit posséder :</h3>
 <table class="centrer_tableau"><tr><td class="gauche">
 <ul>
-<?php
+';
 
 if($conditions->xp > 0) {
 	echo '<li>';

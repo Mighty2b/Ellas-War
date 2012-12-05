@@ -9,7 +9,7 @@
 <h2>Songe de Prométhée</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->unite_myth; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->unite_myth; ?>
 		<br/>
 <?php
 			if($condition_promethee == true) {
@@ -40,7 +40,7 @@
 <h2>Aménagement de Dinocrate</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->baisse_terrain; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->baisse_terrain; ?>
 		<br/>
 <?php
 if($liste_autels->baisse_terrain >= 1) {
@@ -95,7 +95,7 @@ if($liste_autels->baisse_terrain >= 1) {
 <h2>Hospitalité d'Hestia</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->maison; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->maison; ?>
 		<br/>
 <?php
 			if($condition_hestia == true) {
@@ -134,7 +134,7 @@ if($liste_autels->baisse_terrain >= 1) {
 <h2>Lions d'Atlas</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->lion; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->lion; ?>
 		<br/>
 <?php
 			if($condition_lion == true) {
@@ -163,7 +163,7 @@ if($liste_autels->baisse_terrain >= 1) {
 <h2>Unités divines</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->unite; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->unite; ?>
 		<br/>
 <?php
 			if($condition_unite == true) {
@@ -193,7 +193,7 @@ if($liste_autels->baisse_terrain >= 1) {
 <h2>Attirance d'Aphrodite</h2>
 <div class="ligne80">
 	<div class="gauche_autel">
-		<b>Niveau :</b> <?=$liste_autels->attirance_aphrodite; ?>
+		<b>Niveau :</b> <?php echo $liste_autels->attirance_aphrodite; ?>
 		<br/>
 <?php
 		if($condition_attirance_aphrodite == true) {

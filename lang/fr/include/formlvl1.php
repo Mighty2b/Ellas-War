@@ -9,8 +9,8 @@ if($obj1 == $taille) {
 <table>
 <tr><td>Nouveaux bâtiments disponibles : <b>antre des espions</b>, <b>Camp militaire</b> et <b>carrière</b></td></tr>
 <tr><td>Nouvelles unités disponibles : <b>espion</b> et <b>peltaste</b></td></tr>
-<tr><td>Plafond de votre trésor à <b><?=nbf(600000).'</b> '.imress('drachme'); ?></td></tr>
-<tr><td>Bonus de <b><?=nbf(100000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Plafond de votre trésor à <b><?php echo nbf(600000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Bonus de <b><?php echo nbf(100000).'</b> '.imress('drachme'); ?></td></tr>
 <tr><td>Nouveaux jeux : <b>Javelot</b>, <b>Jeux de dés</b>, <b>Batailles navales</b>, <b>Biges</b>, <b>Quadriges</b></td></tr>
 </table>
 

@@ -33,7 +33,7 @@ if(sizeof($liste) > 0) {
 Lorsque votre filleul passe niveau 3, vous recevez tous les deux une faveur. Une faveur vous est aussi accordée lors de son passage niveau 5. Jusqu'à ce que votre filleul passe niveau 6, vous pourrez lui envoyer directement des ressources dans la limite de 50.000 unités par jour.
 
 <h2>Lien simple<h3>
-	<input type="text" class="form_retirer" value="<?=SITE_URL.'/sinscrire-'.$paquet->getid();?>" style="width:500px;" onclick="this.select()"/>
+	<input type="text" class="form_retirer" value="<?php echo SITE_URL.'/sinscrire-'.$paquet->getid();?>" style="width:500px;" onclick="this.select()"/>
 	<br/>
 	
 <h2>Pour mettre sur un forum</h2>
@@ -44,10 +44,10 @@ Lorsque votre filleul passe niveau 3, vous recevez tous les deux une faveur. Une
 </tr>
 <tr>
 <td>
-<textarea class="part_banniere" onclick="this.select()">[url=<?=SITE_URL.'/sinscrire-'.$paquet->getid();?>][img]http://www.ellaswar.com/banniere.gif[/img][/url]</textarea>
+<textarea class="part_banniere" onclick="this.select()">[url=<?php echo SITE_URL.'/sinscrire-'.$paquet->getid();?>][img]http://www.ellaswar.com/banniere.gif[/img][/url]</textarea>
 </td>
 <td>
-<textarea class="part_banniere" onclick="this.select()">[url=<?=SITE_URL.'/sinscrire-'.$paquet->getid();?>][img]http://www.ellaswar.com/banmini.gif[/img][/url]</textarea>
+<textarea class="part_banniere" onclick="this.select()">[url=<?php echo SITE_URL.'/sinscrire-'.$paquet->getid();?>][img]http://www.ellaswar.com/banmini.gif[/img][/url]</textarea>
 </td>
 </tr>
 </table>
@@ -60,10 +60,10 @@ Lorsque votre filleul passe niveau 3, vous recevez tous les deux une faveur. Une
 </tr>
 <tr>
 <td>
-<textarea class="part_banniere" onclick="this.select()"><a href="<?=SITE_URL.'/sinscrire-'.$paquet->getid();?>" target="_blank"><img src="http://www.ellaswar.com/banniere.gif" alt="Ellàs War" /></a></textarea>
+<textarea class="part_banniere" onclick="this.select()"><a href="<?php echo SITE_URL.'/sinscrire-'.$paquet->getid();?>" target="_blank"><img src="http://www.ellaswar.com/banniere.gif" alt="Ellàs War" /></a></textarea>
 </td>
 <td>
-<textarea class="part_banniere" onclick="this.select()"><a href="<?=SITE_URL.'/sinscrire-'.$paquet->getid();?>" target="_blank"><img src="http://www.ellaswar.com/banmini.gif" alt="Ellàs War" /></a></textarea>
+<textarea class="part_banniere" onclick="this.select()"><a href="<?php echo SITE_URL.'/sinscrire-'.$paquet->getid();?>" target="_blank"><img src="http://www.ellaswar.com/banmini.gif" alt="Ellàs War" /></a></textarea>
 </td>
 </tr>
 </table>	
@@ -71,5 +71,5 @@ Lorsque votre filleul passe niveau 3, vous recevez tous les deux une faveur. Une
 
 <div class="centrer ligne"><br/>
 	<b>Gagnez des drachmes grâces aux visites sur ce lien</b>
-	<input type="text" class="form_retirer" onclick="this.select()" value="<?=SITE_URL.'/soutien-'.$paquet->getid();?>" style="width:400px;"/>
+	<input type="text" class="form_retirer" onclick="this.select()" value="<?php echo SITE_URL.'/soutien-'.$paquet->getid();?>" style="width:400px;"/>
 </div>

@@ -45,8 +45,8 @@ else {
 				echo '<div class="centrer">';
 					if($paquet->getid() == $paquet->getidchef() && 
 						 $droits->id == $paquet->getidchef()) {
-					 ?> <h1><?=$droits->login; ?></h1><br/>
-					 <form action="Nommer-<?=$droits->id; ?>" method='post' >
+					 ?> <h1><?php echo $droits->login; ?></h1><br/>
+					 <form action="Nommer-<?php echo $droits->id; ?>" method='post' >
 					 <b>Nom du rang : </b>
 					 <?php
 echo '<input type=\'text\' name=\'rang\' 
@@ -58,8 +58,8 @@ echo '<input type=\'text\' name=\'rang\'
 		</form>';				
 					}
 					elseif($droits->id != $paquet->getidchef()) {
-					 ?> <h1><?=$droits->login; ?></h1>
-					 <br/><form action="Nommer-<?=$droits->id; ?>" method='post' >
+					 ?> <h1><?php echo $droits->login; ?></h1>
+					 <br/><form action="Nommer-<?php echo $droits->id; ?>" method='post' >
 					 <b>Nom du rang : </b>
 					 <?php if($paquet->getid() == $paquet->getidchef()) {
 					 echo '<input type=\'text\' 

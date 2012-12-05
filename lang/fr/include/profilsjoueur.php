@@ -37,11 +37,11 @@ if($paquet->getstatu() == 1 &&
 			</div>
 		</div>
 		<div id="cadre_info_joueur">
-			<br/><b>Niveau : </b> <?=$j->lvl; ?>
-			<br/><b>Expérience : </b> <?=number_format($j->xp, 0, ',', ' '); ?>
-			<br/><b><?=(($j->victoire>1)?'Victoires':'Victoire').' : </b>'.number_format($j->victoire, 0, ',', ' '); ?>
-			<br/><b><?=(($j->defaite>1)?'Défaites':'Défaite').' : </b> '.$j->defaite; ?>
-			<br/><b>Terrain : </b> <?=number_format($j->terrain, 0, ',', ' '); 
+			<br/><b>Niveau : </b> <?php echo $j->lvl; ?>
+			<br/><b>Expérience : </b> <?php echo number_format($j->xp, 0, ',', ' '); ?>
+			<br/><b><?php echo (($j->victoire>1)?'Victoires':'Victoire').' : </b>'.number_format($j->victoire, 0, ',', ' '); ?>
+			<br/><b><?php echo (($j->defaite>1)?'Défaites':'Défaite').' : </b> '.$j->defaite; ?>
+			<br/><b>Terrain : </b> <?php echo number_format($j->terrain, 0, ',', ' '); 
 			if(!empty($j->nomalliance)) {
 			  echo '<br/><b>Rang :</b> '.$j->rang;
 			  if(!empty($j->droit)) {
@@ -62,17 +62,17 @@ if($paquet->getstatu() == 1 &&
   		}
   		
   		echo '
-			<br/><b>'.(($j->nb_fil>1)?'Filleuls':'Filleul');?> : </b> <?=$j->nb_fil; ?>
+			<br/><b>'.(($j->nb_fil>1)?'Filleuls':'Filleul');?> : </b> <?php echo $j->nb_fil; ?>
 			<br/>
-			<br/><div class="fb-like" style="width:100px;" data-href="<?=SITE_URL.'/profilsjoueur-'.$j->id; ?>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+			<br/><div class="fb-like" style="width:100px;" data-href="<?php echo SITE_URL.'/profilsjoueur-'.$j->id; ?>" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 		</div>
 
 		<div class="cadre_gauche">
 			<div id="cadre_info_perso">
-				<b>Âge : </b> <?=$j->age;?> ans
-				<br/><b>Localication : </b> <?=$j->ville;?>
-				<br/><b>Emplois : </b> <?=$j->emplois;?>
-				<br/><b>Date d'inscription : </b> <?=date('d/m/Y', $j->insc); ?>
+				<b>Âge : </b> <?php echo $j->age;?> ans
+				<br/><b>Localication : </b> <?php echo $j->ville;?>
+				<br/><b>Emplois : </b> <?php echo $j->emplois;?>
+				<br/><b>Date d'inscription : </b> <?php echo date('d/m/Y', $j->insc); ?>
 			</div>
 			<div id="cadre_contact">
 			<?php
@@ -84,7 +84,7 @@ if($paquet->getstatu() == 1 &&
 		</div>
 	</div>
 	<div id="description_profils"><br/>
-	<?=$j->description;?>
+	<?php echo $j->description;?>
 	</div>
 </div>
 <?php

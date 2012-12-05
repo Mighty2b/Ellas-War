@@ -9,7 +9,7 @@ if($obj1 == $taille) {
 <table>
 <tr><td>Nouvelle unité disponible : <b>Archer à arc long</b></td></tr>
 <tr>
-	<td>Plafond de votre trésor à <b><?=nbf(2000000).'</b> '.imress('drachme'); ?></td>
+	<td>Plafond de votre trésor à <b><?php echo nbf(2000000).'</b> '.imress('drachme'); ?></td>
 </tr>
 </table>
 <br/><br/>

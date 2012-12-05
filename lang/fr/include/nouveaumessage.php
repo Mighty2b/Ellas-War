@@ -1,10 +1,10 @@
 <div class="centrer">
 <form action="#" method="post" name="formulaire">
 	<b>Destinataire :</b> 
-	<input type="text" name="destinataire" size="12" maxlength="30" class="form_retirer" <?=(!empty($rep_login)?'value="'.$rep_login.'"':''); ?> required="required"/>
+	<input type="text" name="destinataire" size="12" maxlength="30" class="form_retirer" <?php echo (!empty($rep_login)?'value="'.$rep_login.'"':''); ?> required="required"/>
 	&nbsp;&nbsp;&nbsp;&nbsp;
 	<b>Sujet :</b> 
-	<input name="titre_mp" class="form_retirer" <?=(!empty($rep->titre)?'value="'.$rep->titre.'"':''); ?> required="required"/><br/>
+	<input name="titre_mp" class="form_retirer" <?php echo (!empty($rep->titre)?'value="'.$rep->titre.'"':''); ?> required="required"/><br/>
 	
 <p>
 <input type="button" value="G" class="gras form_retirer" onclick="balise('texte', '<style:gras>', '</style>');" /> 
@@ -95,7 +95,7 @@
 <a href="javascript:smile(':music:', 'texte')"><img src="images/smiles/zicgood.gif" alt=":music:"></a>
 <a href="javascript:smile(':ouin:', 'texte')"><img src="images/smiles/ouin.gif" alt="8)"></a>
 </p>
-	<textarea id="texte" name="contenu"  cols="50" rows="25" style="width:700px; height: 250px;" onclick="apercu(this.id, 'texte_apercu');" onkeyup="apercu(this.id, 'texte_apercu');"  class="form_retirer"><?=(!empty($rep->message)?$rep->message:''); ?></textarea><br/><br/>
+	<textarea id="texte" name="contenu"  cols="50" rows="25" style="width:700px; height: 250px;" onclick="apercu(this.id, 'texte_apercu');" onkeyup="apercu(this.id, 'texte_apercu');"  class="form_retirer"><?php echo (!empty($rep->message)?$rep->message:''); ?></textarea><br/><br/>
 	<div id="texte_apercu" class="apercu"></div>
 	<br/>
 	<div class="bouton_classique"><input class="bouton_classique2" type="submit" name="envoyer_un_mp" value="Envoyer" /></div>

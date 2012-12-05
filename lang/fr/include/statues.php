@@ -28,10 +28,10 @@
 
   <!-- Gaia -->
   <div class="ligne80 gauche liste_autels" id="cadre_autel_gaia">
-	  <h2>Défense de Gaïa <?=(($liste_autels->defense_gaia > 0)?'<a href="Statues-defense_gaia-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
+	  <h2>Défense de Gaïa <?php echo (($liste_autels->defense_gaia > 0)?'<a href="Statues-defense_gaia-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
 	  <div class="ligne">
 		  <div class="gauche_autel">
-			  <b>Niveau :</b> <?=$liste_autels->defense_gaia; ?>
+			  <b>Niveau :</b> <?php echo $liste_autels->defense_gaia; ?>
 			  <br/>
   <?php
 			  if($condition_gaia == true) {
@@ -87,10 +87,10 @@
   <!-- Erebe -->
 
   <div class="ligne80 gauche liste_autels" id="cadre_autel_erebe">
-	  <h2>Faveur de l'Érèbe <?=(($liste_autels->sauvegarde_ombre > 0)?'<a href="Statues-sauvegarde_ombre-supprimer"><img src="images/joueurs/supprimer_mp.png" alt="supprimer" /></a>':'');?></h2>
+	  <h2>Faveur de l'Érèbe <?php echo (($liste_autels->sauvegarde_ombre > 0)?'<a href="Statues-sauvegarde_ombre-supprimer"><img src="images/joueurs/supprimer_mp.png" alt="supprimer" /></a>':'');?></h2>
 	  <div class="ligne">
 		  <div class="gauche_autel">
-			  <b>Niveau :</b> <?=$liste_autels->sauvegarde_ombre; ?>
+			  <b>Niveau :</b> <?php echo $liste_autels->sauvegarde_ombre; ?>
 			  <br/>
   <?php
 			  if($condition_erebe == true) {
@@ -147,10 +147,10 @@
   <!-- Héra -->
 
   <div class="ligne80 gauche liste_autels" id="cadre_autel_hera">
-	  <h2>Sacrifice d'Héra <?=(($liste_autels->sacrifice_hera > 0)?'<a href="Statues-sacrifice_hera-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
+	  <h2>Sacrifice d'Héra <?php echo (($liste_autels->sacrifice_hera > 0)?'<a href="Statues-sacrifice_hera-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
 	  <div class="ligne">
 		  <div class="gauche_autel">
-			  <b>Niveau :</b> <?=$liste_autels->sacrifice_hera; ?>
+			  <b>Niveau :</b> <?php echo $liste_autels->sacrifice_hera; ?>
 			  <br/>
   <?php
 			  if($condition_hera == true) {
@@ -181,10 +181,10 @@
 
   <!-- Hippo -->
   <div class="ligne80 gauche liste_autels" id="cadre_autel_hippo">
-	  <h2>Stratégie d'Hippodamos <?=(($liste_autels->strategie_hippodamos > 0)?'<a href="Statues-strategie_hippodamos-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
+	  <h2>Stratégie d'Hippodamos <?php echo (($liste_autels->strategie_hippodamos > 0)?'<a href="Statues-strategie_hippodamos-supprimer"><img src="images/attaques/cross.png" alt="supprimer" /></a>':''); ?></h2>
 	  <div class="ligne">
 		  <div class="gauche_autel">
-			  <b>Niveau :</b> <?=$liste_autels->strategie_hippodamos; ?>
+			  <b>Niveau :</b> <?php echo $liste_autels->strategie_hippodamos; ?>
 			  <br/>
   <?php
 			  if($condition_hippo == true) {

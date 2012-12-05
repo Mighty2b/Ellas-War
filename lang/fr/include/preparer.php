@@ -3,6 +3,6 @@
 			 type="submit" 
 			 alt="Attaquer"
 			 value="ATTAQUER"
-			 onclick="javascript:attaquer(<?=$id; ?>);" 
+			 onclick="javascript:attaquer(<?php echo $id; ?>);" 
 			 id="bouton_attaquer" />
 </div>

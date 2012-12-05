@@ -12,7 +12,7 @@
 
 
 Vous pouvez acheter jusqu'à 100 tickets, 
-chaque ticket coûte 10'000 <?=imress('drachme'); ?>
+chaque ticket coûte 10'000 <?php echo imress('drachme'); ?>
  et vous donne une chance supplémentaire de gagner. <br/>
  Le premier ticket vous est offert, 
  la cagnotte augmente à chaque ticket acheté, 
@@ -34,7 +34,7 @@ chaque ticket coûte 10'000 <?=imress('drachme'); ?>
 ?>
 
 <br/>
-<h3>Cagnotte : <?=number_format($cagnotte, 0, ',', ' ').' '.imress('drachme'); ?></h3>
+<h3>Cagnotte : <?php echo number_format($cagnotte, 0, ',', ' ').' '.imress('drachme'); ?></h3>
 
 	<form method="post" action="#">
 	<input type="text" name="ticket" class="form_retirer" value="1" size="3" required="required" style="text-align:center;" />

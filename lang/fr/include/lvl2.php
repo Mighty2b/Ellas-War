@@ -13,7 +13,7 @@ if($paquet -> getlvl() != 2) {
 <tr>
 	<td>
 	<b>Construction de 25 ateliers de battage de la monnaie</b><br/>
-	<i>Actuellement : <?=$actu[0];?>  ateliers de battage de la monnaie</i>
+	<i>Actuellement : <?php echo $actu[0];?>  ateliers de battage de la monnaie</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -30,7 +30,7 @@ if($paquet -> getlvl() != 2) {
 <tr>
 	<td>
 	<b>Construction de 10 carrières</b><br/>
-	<i>Actuellement : <?=$actu[4];?> carrières</i>
+	<i>Actuellement : <?php echo $actu[4];?> carrières</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -77,7 +77,7 @@ if($paquet -> getlvl() != 2) {
 <tr>
 	<td>
 	<b>50 victoires</b><br/>
-	<i>Actuellement : <?=$actu[1];?> victoires
+	<i>Actuellement : <?php echo $actu[1];?> victoires
 	</td>
 	<td class="centrer">
 	<?php
@@ -93,7 +93,7 @@ if($paquet -> getlvl() != 2) {
 <tr>
 	<td>
 	<b>Toutes vos ressources en positif</b><br/>
-	<i>Actuellement : <?=((!empty($obj[2]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
+	<i>Actuellement : <?php echo ((!empty($obj[2]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
 	</td>
 	<td class="centrer">
 	<?php
@@ -108,8 +108,8 @@ if($paquet -> getlvl() != 2) {
 </tr>
 <tr>
 	<td>
-	<b><?=nbf(400000).' '.imress('drachme'); ?> dans votre trésor</b><br/>
-	<i>Actuellement : <?=nbf(floor($actu[3])).' '.imress('drachme'); ?> dans votre trésor</i>
+	<b><?php echo nbf(400000).' '.imress('drachme'); ?> dans votre trésor</b><br/>
+	<i>Actuellement : <?php echo nbf(floor($actu[3])).' '.imress('drachme'); ?> dans votre trésor</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -137,7 +137,7 @@ if(array_sum($obj) == sizeof($obj)) {
 	<td>Nouveaux bâtiments disponibles : <b>École d'archers</b> et <b>Tour d'observation</b></td>
 </tr>
 <tr><td>Nouvelle unité disponible : <b>Frondeur</b></td></tr>
-<tr><td>Plafond de votre trésor à <b><?=nbf(800000).'</b> '.imress('drachme'); ?></td></tr>
-<tr><td>Bonus de <b><?=nbf(100000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Plafond de votre trésor à <b><?php echo nbf(800000).'</b> '.imress('drachme'); ?></td></tr>
+<tr><td>Bonus de <b><?php echo nbf(100000).'</b> '.imress('drachme'); ?></td></tr>
 </table>
 </center>

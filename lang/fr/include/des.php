@@ -44,7 +44,7 @@ if(empty($erreur) && !empty($_POST['mise']))	{
 <b>Les dés sont un passe-temps populaire datant des temps préhistoriques,
 grâce à eux vous pourrez faire fortune ou tout perdre.
 Vous pourrez miser un maximum de 100'000 
-<?=imress('drachme'); ?></b><br/>
+<?php echo imress('drachme'); ?></b><br/>
 
 <center>
 <form method="post" action="#">

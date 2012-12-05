@@ -13,7 +13,7 @@ if($paquet -> getlvl() != 8) {
 <tr>
 	<td>
 	<b>Construction de 50 ateliers de battage de la monnaie</b><br/>
-	<i>Actuellement : <?=$actu[0];?>  ateliers de battage de la monnaie</i>
+	<i>Actuellement : <?php echo $actu[0];?>  ateliers de battage de la monnaie</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -30,7 +30,7 @@ if($paquet -> getlvl() != 8) {
 <tr>
 	<td>
 	<b>Recrutement de 5'000 hoplites</b><br/>
-	<i>Actuellement : <?=nbf($actu[1]);?> hoplites</i>
+	<i>Actuellement : <?php echo nbf($actu[1]);?> hoplites</i>
 	</td>
 	<td class="centrer">
 	<?php
@@ -46,7 +46,7 @@ if($paquet -> getlvl() != 8) {
 <tr>
 	<td>
 	<b>750 victoires</b><br/>
-	<i>Actuellement : <?=$actu[4];?> victoires
+	<i>Actuellement : <?php echo $actu[4];?> victoires
 	</td>
 	<td class="centrer">
 	<?php
@@ -61,8 +61,8 @@ if($paquet -> getlvl() != 8) {
 </tr>
 <tr>
 	<td>
-	<b><?=nbf(50000);?> XP</b><br/>
-	<i>Actuellement : <?=nbf(round($actu[2]));?> XP
+	<b><?php echo nbf(50000);?> XP</b><br/>
+	<i>Actuellement : <?php echo nbf(round($actu[2]));?> XP
 	</td>
 	<td class="centrer">
 	<?php
@@ -109,7 +109,7 @@ if($paquet -> getlvl() != 8) {
 <tr>
 	<td>
 	<b>Toutes vos ressources en positif</b><br/>
-	<i>Actuellement : <?=((!empty($obj[3]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
+	<i>Actuellement : <?php echo ((!empty($obj[3]))?'ressources en positif':'au moins une des ressources n\'est pas en positif');?>
 	</td>
 	<td class="centrer">
 	<?php

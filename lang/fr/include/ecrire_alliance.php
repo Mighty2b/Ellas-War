@@ -106,7 +106,7 @@ $paquet->display();
 	?>
 	</table>
 	<br/>&nbsp;&nbsp;&nbsp;&nbsp;Envoyer à tous les membres de l'alliance 
-	<input id="et" type="checkbox" name="envoi_tous" value="yes" onclick="cocher2(<?=$i ?>)" /><br/><br/>
+	<input id="et" type="checkbox" name="envoi_tous" value="yes" onclick="cocher2(<?php echo $i ?>)" /><br/><br/>
 	 <div class="bouton_classique"><input class="bouton_classique2" type="submit" value="VALIDER" name="Valider" /></div>
 </form>
 </div>

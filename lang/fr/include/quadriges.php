@@ -16,10 +16,10 @@ if(empty($erreur) && !empty($_POST['cheval']) && is_numeric($_POST['cheval'])) {
 <div class="ligne80 centrer"><br/>
 Les quadriges sont des courses de chars tirés par quatre puissants chevaux.<br/>
 Il y a plus d'attelages que lors des biges mais ces courses peuvent rapporter 
-80.000 <?=imress('drachme'); ?><br/><br/>
+80.000 <?php echo imress('drachme'); ?><br/><br/>
 <form method="post" action="#">
 <b>Choisissez l'attelage sur lequel vous allez miser 10'000 
-<?=imress('drachme'); ?></b><br/>
+<?php echo imress('drachme'); ?></b><br/>
 <table class="centrer_tableau">
 <tr>
 <td align="left"><label><input type="radio" name="cheval" value="1" />Rouge</label></td>
