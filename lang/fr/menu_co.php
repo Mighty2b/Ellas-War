@@ -12,7 +12,7 @@ else {
 	echo 'Temples';
 }
 
-echo '"><img src="design/co/mythologie.png" alt="Mythologie" title="Mythologie" onmouseover="menu_visible('menu_haut_mythologie');" /></a></div>
+echo '"><img src="design/co/mythologie.png" alt="Mythologie" title="Mythologie" onmouseover="menu_visible(\'menu_haut_mythologie\');" /></a></div>
 <div id="bouton_alliance"><a href="'.(($paquet->getalliance() != 0)?'Alliance':'LesAlliances'); ?>"><img src="design/co/alliances.png" alt="Alliance" title="Alliance" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_forum"><a href="http://forums.ellaswar.com" target="_blank" ><img src="design/co/forum.png" alt="Forum" title="Forum" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_messagerie"><a href="Messagerie">
