@@ -113,7 +113,7 @@ $droits_alliance = $paquet->get_droits_alliance();
 		<br/>
 		<input type="hidden" name="cg" value="1" />
 		<div class="bouton_classique"><input class="bouton_classique2" type="submit" name=\'Modifier\' value=\'Modifier\' /></div>
-		</form><br/><br/><a href=\'Alliance-4\'>Retour</a>';
+		</form><br/><br/><a href=\'Nommer\'>Retour</a>';
 				}
 				echo '</div>';
 		}

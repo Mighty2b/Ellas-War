@@ -66,7 +66,7 @@ echo'	<br/><a href="Alliance" class="titre">Alliance</a>
 			  <br/><a href="ProfilMonAlliance" class="ss_titre">Profils</a>
 			  <br/><a href="Ecrire_alliance" class="ss_titre">Ecrire un message à mon alliance</a>';
 			  if($info -> level >= 2) {
-				  echo '<br/><a href="Alliance-10" class="ss_titre">Cotisations</a>';
+				  echo '<br/><a href="Cotisations" class="ss_titre">Cotisations</a>';
 			  }
 			
 			  if($info -> nb_membre > 1) {
@@ -84,11 +84,11 @@ echo'	<br/><a href="Alliance" class="titre">Alliance</a>
 			  <br/><a href="Guerres" class="ss_titre">Guerres</a>';
 
 			  if(($info -> level > 1) && ($paquet -> peut_contrat())) {
-				  echo '<br/><a href="Alliance-16" class="ss_titre">Contrats</a>';
+				  echo '<br/><a href="Contrats" class="ss_titre">Contrats</a>';
 				  $br=1;
 			  }
 
-			  echo '<br/><a href="Alliance-8" class="ss_titre">Archives</a><br/><br/>';
+			  echo '<br/><a href="AArchives_alliance" class="ss_titre">Archives</a><br/><br/>';
 
 			  if(empty($br)) {
 			    echo '<br/><br/><br/>';
