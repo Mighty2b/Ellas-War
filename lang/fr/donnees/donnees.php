@@ -32,7 +32,7 @@ $statues_donnees = array(
 	'sacrifice_hera' => array('nom' => 'Sacrifice d\'Héra', 'url' => 'sacrifice_hera'),
 	'defense_gaia' => array('nom' => 'Défense de Gaia', 'url' => 'defense_gaia'),
 	'strategie_hippodamos' => array('nom' => 'Stratégie d\'Hippodamos', 'url' => 'strategie_hippodamos'),
-	'sauvegarde_ombre' => array('nom' => 'Sauvegarde des ombres', 'url' => 'sauvegarde_ombre')
+	'sauvegarde_ombre' => array('nom' => 'Faveur de l\'Érèbe', 'url' => 'sauvegarde_ombre')
 );
 
 ?>
