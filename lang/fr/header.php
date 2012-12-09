@@ -37,11 +37,11 @@ switch($paquet-> getlvl()) {
 	
 	break;
 }
-
+/*
 echo '<div id="evenement" class="centrer">
 <a href="Sanctuaires" class="rouge_goco"><b>Événement en cours</b>
 <br/>Le sanctuaire du Staff</a><br/><br/>
 <a href="Evenements" class="gras">En savoir plus</a>
-</div>';
+</div>';*/
 
 ?>
