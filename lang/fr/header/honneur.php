@@ -14,5 +14,7 @@ $txt_alli = 'Alliance';
 $txt_h = 'Honneur';
 $titre_classement_honneur = 'Classement de l\'honneur';
 $lien_classement_honneur = 'Classement général de l\'honneur';
+$txt_desc = 'Chaque semaine, le joueur ayant le plus d\'honneur gagne une récompense.<br/>
+L\'honneur est remis à zéro tous les dimanches matin à minuit. ';
 
 ?>

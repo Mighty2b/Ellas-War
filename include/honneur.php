@@ -6,6 +6,8 @@ $dernier    = $paquet -> getRetour(2);
 
 echo '<h1>'.$titre_classement_honneur.'</h1><br/>';
 
+echo '<div class="centrer">'.$txt_desc.'<br/><br/></div>';
+
 echo '<table class=\'tableau centrer_tableau\'>
 	<tr class=\'tableau_header\'>
 		<td>&nbsp;'.$txt_n.'&nbsp;</td>
