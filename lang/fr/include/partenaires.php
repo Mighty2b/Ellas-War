@@ -56,7 +56,7 @@
 		
 		</td>
 		<td>
-		<img src="http://jeux-sos.com/ban/logo3.jpg" alt="Jeux SOS" title="Jeux SOS" />
+		<a href="http://www.jeuxy.com/" title="Jeux.com" ><img src="http://www.jeuxy.com/images/88x31.gif" alt="Jeux.com" /></a>
 		</td>
 		</tr>
 	</table>
