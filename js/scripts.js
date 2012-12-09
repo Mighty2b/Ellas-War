@@ -668,6 +668,7 @@ function refresh_chat() {
      url: "form/refresh_chat.php",
      success: function(msg){
       $("#corps_chat").html($("#corps_chat").html()+msg);
+      document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
      }
    });
 }
