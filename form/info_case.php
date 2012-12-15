@@ -5,7 +5,7 @@ include('../header.php');
 if(!empty($_GET['destination'])) {
 	$unite = array();
 	for($i=1;$i<=4;$i++) {
-		$unite['unite'.$i] = $_GET['unite'.$i];
+		$unite[] = $_GET['unite'.$i];
 	}
 	
 	$paquet = new EwPaquet('deplacer_unite', 
