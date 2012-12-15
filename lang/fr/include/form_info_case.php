@@ -86,15 +86,14 @@ if($info->unite1 > 0 or $info->unite2 > 0 or $info->unite3 > 0 or $info->unite4 
 			</td>
 			<td class="droite">'.$info->unite->$case->attaque.' '.img('images/attaques/dague.png', 'attaque').'</td>
 			<td class="droite">'.$info->unite->$case->defense.' '.img('images/attaques/bouclier.png', 'défense').'</td>
-			<td>
+			<td align="left">
 				<input type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' placeholder="0" class="form_retirer" id="unite'.$i.'" /> / <a class="lien_faq" href="javascript:engager_nb(\'unite'.$i.'\', '.$info->$case.');">'.$info->$case.'</a>
 			</td>
 			</tr>';
 		}
 		else {
-			echo '<input type=\'hidden\' name=\'unite'.$i.'\' value="0" />';
+			echo '<input type=\'hidden\' name=\'unite'.$i.'\' value="0" id="unite'.$i.'" />';
 		}
-		$i++;
 	}
 	echo '</table><br/>
 	<input type="hidden" name="depart" value="'.$info->id_x.';'.$info->id_y.'" />
