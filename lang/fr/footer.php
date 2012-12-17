@@ -4,7 +4,7 @@
 	<a href="http://www.battle-pingouin.fr" title="Jeu de pingouins en ligne !" target="_blank">Battle-Pingouin</a>
 	<a href="http://www.lesjeuxvirtuels.com" target="_blank">Jeux Virtuels</a>
 	<a href="http://www.hit-parade.com/hp.asp?site=a501436" target="_top"><img src="http://loga.hit-parade.com/logohp1.gif?site=a501436" title="Hit-Parade" width="77" height="15" alt="hit-parade" /></a>
-	<a title=" Site déposé sur CopyrightFrance.com " href="http://Z643185.copyrightfrance.com" target="_blank"><img src="fr/images/Z643187-2.gif" alt=" CopyrightFrance.com "/></a>
+	<a title=" Site déposé sur CopyrightFrance.com " href="http://Z643185.copyrightfrance.com" target="_blank"><img src="lang/fr/images/Z643187-2.gif" alt=" CopyrightFrance.com "/></a>
 	&nbsp;&nbsp;
 	Ellàs War 4.4, Design by Goco & Code by <a href="http://www.paranoiaque.fr" target="_blank">Mighty</a>
 	<br/>
