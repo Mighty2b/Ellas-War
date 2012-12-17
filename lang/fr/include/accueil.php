@@ -71,12 +71,12 @@ if(!empty($dernieres_news)) {
 
 <div id="cadre_accueil4">
 	<div id="cadre_accueil41">
-<a href="decouvertedujeu#lang/fr/screen/construire.png"><img src="lang/fr/screen/mini_construire.png" alt="Construire" title="Construisez des bâtiments afin d'étendre votre cité." class="img_acceuil" /></a>&nbsp;&nbsp;
-<a href="decouvertedujeu#lang/fr/screen/commerce.png"><img src="lang/fr/screen/mini_commerce.png" alt="Commerce" title="Commercez avec les autres cités." class="img_acceuil" /></a>&nbsp;&nbsp;
-<a href="decouvertedujeu#lang/fr/screen/tresor.png"><img src="lang/fr/screen/mini_tresor.png" alt="Tresor" title="Cachez vos riches et évitez les pillages." class="img_acceuil" /></a>&nbsp;&nbsp;
-<a href="decouvertedujeu#lang/fr/screen/temples.png"><img src="lang/fr/screen/mini_temples.png" alt="Temples" title="Venerez les dieux et obtenez de terribles pouvoirs." class="img_acceuil" /></a>&nbsp;&nbsp;
-<a href="decouvertedujeu#lang/fr/screen/jeux.png"><img src="lang/fr/screen/mini_jeux.png" alt="Javelot" title="Détendez-vous sur les mini jeux après vos conquêtes." class="img_acceuil" /></a>&nbsp;&nbsp;
-<a href="decouvertedujeu#lang/fr/screen/jeu.png"><img src="lang/fr/screen/mini_jeu.png" alt="Jeux" title="Récuperez toutes les pièces le plus rapidement possible." class="img_acceuil" /></a>
+<a href="decouvertedujeu#lang/fr/screen/construire.png"><img src="lang/fr/screen/mini_construire.png" height="85" width="178" alt="Construire" title="Construisez des bâtiments afin d'étendre votre cité." class="img_acceuil" /></a>&nbsp;&nbsp;
+<a href="decouvertedujeu#lang/fr/screen/commerce.png"><img src="lang/fr/screen/mini_commerce.png" height="85" width="85" alt="Commerce" title="Commercez avec les autres cités." class="img_acceuil" /></a>&nbsp;&nbsp;
+<a href="decouvertedujeu#lang/fr/screen/tresor.png"><img src="lang/fr/screen/mini_tresor.png" height="85" width="143" alt="Tresor" title="Cachez vos riches et évitez les pillages." class="img_acceuil" /></a>&nbsp;&nbsp;
+<a href="decouvertedujeu#lang/fr/screen/temples.png"><img src="lang/fr/screen/mini_temples.png" height="85" width="135" alt="Temples" title="Venerez les dieux et obtenez de terribles pouvoirs." class="img_acceuil" /></a>&nbsp;&nbsp;
+<a href="decouvertedujeu#lang/fr/screen/jeux.png"><img src="lang/fr/screen/mini_jeux.png" height="85" width="140" alt="Javelot" title="Détendez-vous sur les mini jeux après vos conquêtes." class="img_acceuil" /></a>&nbsp;&nbsp;
+<a href="decouvertedujeu#lang/fr/screen/jeu.png"><img src="lang/fr/screen/mini_jeu.png" height="85" width="113" alt="Jeux" title="Récuperez toutes les pièces le plus rapidement possible." class="img_acceuil" /></a>
 	</div>
 </div>
 <div id="cadre_accueil5">
