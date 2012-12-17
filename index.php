@@ -106,7 +106,7 @@ echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
   		echo date("H").':'.date("i");
   	}
 		echo '</div>
-  		<div id="joueursconnectes"><a href="'.trad_to_page('joueursconnectes').'">'.img('lang/'.LANG.'/design/joueurconnectes.png','Joueurs connectés').'</a></div>';
+  		<div id="joueursconnectes"><a href="'.trad_to_page('joueursconnectes').'"><img src="lang/'.LANG.'/design/joueurconnectes.png" alt="Joueurs connectés" title="Joueurs connectés" width="108" height="16" /></a></div>';
   	
   	if($paquet->get_statu() == 0) {
   		echo '<div id="heure2">'.
