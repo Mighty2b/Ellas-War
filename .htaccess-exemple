@@ -4,11 +4,11 @@ RewriteCond %{HTTP_HOST} ^ellaswar\.com$ [NC]
 RewriteRule ^(.*) http://www.ellaswar.com/$1 [QSA,L,R=301]
 RewriteRule rss/news.xml rss/news.xml [L]
 RewriteRule news.xml rss/news.xml [L]
-ErrorDocument 400 http://www.ellaswar.com/erreur-400
-ErrorDocument 401 http://www.ellaswar.com/erreur-401
-ErrorDocument 403 http://www.ellaswar.com/erreur-403
-ErrorDocument 404 http://www.ellaswar.com/erreur-404
-ErrorDocument 500 http://www.ellaswar.com/erreur-500
+ErrorDocument 400 /erreur-400
+ErrorDocument 401 /erreur-401
+ErrorDocument 403 /erreur-403
+ErrorDocument 404 /erreur-404
+ErrorDocument 500 /erreur-500
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3&var3=$4&var4=$5 [L]
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3&var3=$4 [L]
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3 [L]
