@@ -1,7 +1,6 @@
 	<div id="cadre_bannieres">
 	<a href="http://www.2mjeux.com" title="2mjeux.com" target="_blank">Jeux gratuits</a>
 	<a href="http://www.sitacados.com" title="Jeux" target="_blank">Jeux</a>
-	<a href="http://www.battle-pingouin.fr" title="Jeu de pingouins en ligne !" target="_blank">Battle-Pingouin</a>
 	<a href="http://www.lesjeuxvirtuels.com" target="_blank">Jeux Virtuels</a>
 	<a href="http://www.hit-parade.com/hp.asp?site=a501436" target="_top"><img src="http://loga.hit-parade.com/logohp1.gif?site=a501436" title="Hit-Parade" width="77" height="15" alt="hit-parade" /></a>
 	<a title=" Site déposé sur CopyrightFrance.com " href="http://Z643185.copyrightfrance.com" target="_blank"><img src="lang/fr/images/Z643187-2.gif" alt=" CopyrightFrance.com " height="19" width="236" /></a>

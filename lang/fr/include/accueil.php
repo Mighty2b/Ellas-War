@@ -34,7 +34,7 @@
 </div>
 
 <div style="position:absolute;float:left;height:50px;margin-left:510px;margin-top:20px;">
-	<a href="http://www.twitter.com/Ellaswar"><img src="images/logo-twitter.png" alt="S'abonner à Ellaswar sur Twitter" width="36" height="36"/></a>
+	<a href="https://twitter.com/Ellaswar" target="_blank"><img src="images/logo-twitter.png" alt="S'abonner à Ellaswar sur Twitter" width="36" height="36"/></a>
 </div>	
 	
 	</div>
