@@ -318,13 +318,14 @@ echo '<center>
 	';
 $i = 0;
 if(!empty($prod_dra) or !empty($conso_dra)) {
+	$i++;	
 	echo '<tr class="tableau_fond2"><td colspan="3"></td></tr>';
 	echo '<tr class="tableau_fond'.($i%2).'">
 					<td valign=\'top\' class="gauche">'.$prod_dra.'</td>
 					<td class="gauche">'.$conso_dra.'</td>
 					<td class="droite" nowrap=\'nowrap\'>'.plus_valeur(floor($ress_var->drachme*3600*24/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').'&nbsp;</td>
 				</tr>';
-	$i++;
+
 }
 
 if(!empty($prod_nou) or !empty($conso_nou)) {
