@@ -6,11 +6,11 @@ Si vous pensez avoir les qualités requises pour rejoindre l'équipe n'hésitez 
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Administrateurs :</b> Mighty, Goco
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Prophètes : </b> Legendel, Gilgam3sh, Mspeedy78
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Prophètes : </b> Gilgam3sh, Mspeedy78
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Héros :</b> Odysseus, Steen
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Héros :</b> kazenver, Steen
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Graphismes :</b> Goco
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Graphismes :</b> Goco, Alex07654
 <br/>
 <br/>
 Remerciements à <a href="http://www.flogisoft.com/">Flozz</a> pour son jeu "la Chasse aux trésors".
@@ -19,6 +19,6 @@ Remerciements à <a href="http://www.flogisoft.com/">Flozz</a> pour son jeu "la 
 <i>Remerciment à nos anciens :</i>
 <br/><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Administrateurs : </b> Notperfect, Rayz, Octaviux, Dreamer<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Prophètes : </b> Nico11570, Aminouch, Thomast, Melpomene, Missmaude, Driguer, Letnev, Grimmjow, Babyangel85, Lespoune<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Modérateurs :</b> Alexmax, Callysta, Stephrgr, Volvic, Pinpinbleu, Akenagan, Lunch<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Prophètes : </b> Nico11570, Aminouch, Thomast, Melpomene, Missmaude, Driguer, Letnev, Grimmjow, Babyangel85, Lespoune, Legendel<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Modérateurs :</b> Alexmax, Callysta, Stephrgr, Volvic, Pinpinbleu, Akenagan, Lunch, Odysseus<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Graphistes : </b> Galbatorix, Dreamer, Rastaking
