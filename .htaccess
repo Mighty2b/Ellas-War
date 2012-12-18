@@ -4,11 +4,11 @@ RewriteCond %{HTTP_HOST} ^ellaswar\.com$ [NC]
 RewriteRule ^(.*) http://www.ellaswar.com/$1 [QSA,L,R=301]
 RewriteRule rss/news.xml rss/news.xml [L]
 RewriteRule news.xml rss/news.xml [L]
-ErrorDocument 400 http://www.ellaswar.com/erreur-400
-ErrorDocument 401 http://www.ellaswar.com/erreur-401
-ErrorDocument 403 http://www.ellaswar.com/erreur-403
-ErrorDocument 404 http://www.ellaswar.com/erreur-404
-ErrorDocument 500 http://www.ellaswar.com/erreur-500
+ErrorDocument 400 /erreur-400
+ErrorDocument 401 /erreur-401
+ErrorDocument 403 /erreur-403
+ErrorDocument 404 /erreur-404
+ErrorDocument 500 /erreur-500
 RewriteRule classements&pageclass=([0-9]+)&par=([a-z]+)$ http://www.ellaswar.com/classementdesjoueurs-$1-$2 [L]
 RewriteRule classements&classement=alliances index.php?page=classement\ alliance [L]
 RewriteRule ^profilsAlliance&alliance=([0-9]+)$ index.php?page=profilsAlliance&var1=$1 [L]
