@@ -58,7 +58,7 @@ $dernieres_news = $paquet->getRetour();
 
 if(!empty($dernieres_news)) {
 	foreach($dernieres_news as $news) {
-		echo '<div class="news"><a href="'.$news->lien.'" class="titre_news">'.$news->titre.'</a>, <i>le '.date("d-m-y",$news->temps).'</i><br/>Par '.$news->auteur.'</div>';
+		echo '<div class="news"><a href="'.$news->lien.'" class="titre_news">'.$news->titre.'</a>, <i>le '.date("d-m-y",$news->temps).'</i><br/>Par <span class="rouge_goco">'.$news->auteur.'</span></div>';
 	}
 }
 

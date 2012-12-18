@@ -251,6 +251,12 @@
   float:left;
   margin-bottom:4px;
   width:100%;
+  font-weight:bold;
+  font-size:0.9em;
+}
+
+.news:first-letter {
+	color:#b30000 !important;
 }
 
 #news_ew {
