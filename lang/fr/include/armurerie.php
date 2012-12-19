@@ -10,8 +10,8 @@ if($possible == true) {
                 '150000 '.imress('drachme').' 3000000 '.imress('fer'),
                 '100000 '.imress('drachme').' 700000 '.imress('argent'),
                 '150000 '.imress('drachme').' 1050000 '.imress('argent'),
-                '100000 '.imress('drachme').' 500000 '.imress('pierre'),
-                '150000 '.imress('drachme').' 750000 '.imress('pierre'),
+                '100000 '.imress('drachme').' 50000 '.imress('pierre'),
+                '150000 '.imress('drachme').' 75000 '.imress('pierre'),
                 '100000 '.imress('drachme').' 1000000 '.imress('bois'),
                 '150000 '.imress('drachme').' 1500000 '.imress('bois'));
   $noms = array('',
@@ -61,7 +61,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>+5% en défense</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">50000 <?php echo imress('marbre'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('marbre'); ?></td>
       <?php
       $var = $j.'2';
       if(!empty($bonus_unites->$var)) {
@@ -141,7 +141,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>+5% en défense</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">50000 <?php echo imress('marbre'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('marbre'); ?></td>
       <?php
       if(!empty($bonus_unites[$j.'2']))
 			{
