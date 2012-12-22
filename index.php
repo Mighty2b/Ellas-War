@@ -86,7 +86,7 @@ if($paquet->get_statu() == 0 && ((date('m') == '12' && round(date('j')) >= 20) o
 		(date('m') == '1' && date('j') == '1'))) {
 	echo '
 	<style>
-	body {background-image:url(\'design/font_ew_neige.png\');}
+	body {background-image:url(\'design/deco/font_ew_neige.png\');}
 	#interieur2 {background-image:url(\'design/noel/sous_menu.png\');}
 	#banniere {background-image:url(\'design/noel/banniere.png\');}
 	#barre_menu {background-image:url(\'design/noel/barre_menu2.png\');}
