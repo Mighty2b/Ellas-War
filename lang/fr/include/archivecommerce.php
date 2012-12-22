@@ -7,8 +7,8 @@ if(sizeof($mes_ventes) > 0) {
     echo '<tr><td class="droite">'.
     nbf($do->nbvente).' </td><td> '.imress($do->typevente).' pour '.
     nbf($do->prixvente).' '.imress('drachme').' le '.
-    htmlentities(strftime('%A %d %B', $do->date)).' à '.
-    htmlentities(strftime('%Hh %M', $do->date)).'</td></tr>';
+    strftime('%A %d %B', $do->date).' à '.
+    strftime('%Hh %M', $do->date).'</td></tr>';
   }
   echo '</table>
   <br/><br/>';
@@ -21,8 +21,8 @@ if(sizeof($mes_achats) > 0) {
     echo '<tr><td class="droite">'.
     nbf($do->nbvente).' </td><td> '.imress($do->typevente).' pour '.
     nbf($do->prixvente).' '.imress('drachme').' le '.
-    htmlentities(strftime('%A %d %B', $do->date)).' à '.
-    htmlentities(strftime('%Hh %M', $do->date)).'</td></tr>';
+    strftime('%A %d %B', $do->date).' à '.
+    strftime('%Hh %M', $do->date).'</td></tr>';
   }
   echo '</table>
   <br/><br/>';

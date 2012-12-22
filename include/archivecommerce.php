@@ -5,7 +5,7 @@ if($paquet->peut_commerce() == false) {
 }
 else {
 	$paquet = new EwPaquet('archives_com');
-	$mes_ventes = $paquet->getRetour(1);
+	$mes_ventes = $paquet->getRetour(2);
 	$mes_achats = $paquet->getRetour();
 	
 	include('lang/'.LANG.'/include/archivecommerce.php');
