@@ -82,6 +82,19 @@ echo '<script type="text/javascript" src="js/scripts.js" ></script>';
 	
 css_meteo($paquet->getmeteo(), $paquet->getstatu());
 
+if($paquet->get_statu() == 0 && ((date('m') == '12' && round(date('j')) >= 20) or
+		(date('m') == '1' && date('j') == '1'))) {
+	echo '
+	<style>
+	body {background-image:url(\'design/font_ew_neige.png\');}
+	#interieur2 {background-image:url(\'design/noel/sous_menu.png\');}
+	#banniere {background-image:url(\'design/noel/banniere.png\');}
+	#barre_menu {background-image:url(\'design/noel/barre_menu2.png\');}
+	#interieur3 {background-image: url("design/noel/design_bas.png");}
+	</style>';
+	echo '<script src="js/flocons.js"></script>';
+}
+
 include('lang/'.LANG.'/header/header.php');
 if(!in_array($page, $pre_header)) {
   include('header/'.$page.'.php');
@@ -267,6 +280,7 @@ if($paquet->get_statu() == 1) {
 
 echo '<div id="centre_design3">
 		<div id="interieur4_gauche">';
+	
 	if($paquet->getstatu() == 1) {
 		echo '<div id="menu_stats">';
 	if($paquet->getlvl() >= 6) {
@@ -277,6 +291,9 @@ echo '<div id="centre_design3">
 	}
 			include('lang/'.LANG.'/menu_stats.php');
 		echo '</div></div>';
+	}
+	else {
+		include('lang/'.LANG.'/gauche.php');
 	}
 echo '</div>
 		<div id="interieur4">';
@@ -305,6 +322,9 @@ echo '</div>
 			echo '<div id="menu_ressource"><div id="menu_ressource2">';
 				include('lang/'.LANG.'/menu_ress.php');
 			echo '</div></div>';
+		}
+		else {
+			include('lang/'.LANG.'/droite.php');
 		}
 		
 echo '
