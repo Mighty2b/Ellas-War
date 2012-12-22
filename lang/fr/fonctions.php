@@ -31,8 +31,8 @@ function img($chemin, $nom) {
 function print_date($date, $arg=0) {
   if(!empty($date)) {
   	if($arg == 0) {
-	    return utf8_encode(strftime('%A %d %B', $date)).' à '.
-	    utf8_encode(strftime('%Hh %M', $date));
+	    return strftime('%A %d %B', $date).' à '.
+	    strftime('%Hh %M', $date);
   	}
   	else {
 	    return date('d',$date).' '.utf8_encode(strftime('%B', $date));
