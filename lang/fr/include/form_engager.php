@@ -44,7 +44,7 @@ if($value->type == 'def') {
 			 			 title="'.$unites[$bat]['nom'].'" /></div>';
 }
 else {
-	echo '<img src="images/unite/unite200.png"
+	echo '<img src="images/unite/'.$unites[$bat]['img'].'.png"
 			 			 alt="'.$unites[$bat]['nom'].'"
 			 			 title="'.$unites[$bat]['nom'].'" />';
 }

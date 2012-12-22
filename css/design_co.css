@@ -1022,16 +1022,16 @@ tr.int_tab_taux1 {
 .cadre_batiment_nom {
   text-align:center;
   width:100%;
-  margin-top:117px;
-  height:33px;
+  margin-top:125px;
+  height:25px;
   position:relative;
   float:left;
-  background-image:url('../design/co/plaque2.png');
+  background-image:url('../design/co/plaque3.png');
   z-index:1000;
 }
 
 .cadre_batiment_nom2 {
-  margin-top:9px;
+  margin-top:5px;
   text-align:center;
   font-weight: bold;
   font-size:1.1em;
