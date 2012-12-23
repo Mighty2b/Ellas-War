@@ -9,8 +9,11 @@ function suppr_mp(id){
      $.ajax({
        type: "POST",
        url: "form/supprimer_mp.php",
-       data: "id="+id/*,
-       success: function(msg){ alert(msg); }*/
+       data: "id="+id,
+       success:
+           function(msg){
+$("#message_"+id).hide('slow');
+           }
      });
 }
 </script>

@@ -66,7 +66,7 @@ foreach($messages as $mps) {
 	else
 		$date = ''.date('\L\e d/m/Y', $mps->timestamp).'';
 
-echo'<tr class="tableau_fond'.($num_mess%2).'">
+echo'<tr class="tableau_fond'.($num_mess%2).'" id="message_'.$mps->id.'">
 	<td>'.$image.'</td>
 	<td class="gauche"><a href="lire-'.$mps->id.'">'.stripslashes(stripslashes($mps->titre)).'</a></td>
 	<td><a href="profilsjoueur-'.$mps->dest.'" class="non_souligne">'.$mps->destinataire.'</a></td>

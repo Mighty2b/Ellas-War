@@ -67,13 +67,13 @@ foreach($messages as $mps) {
 	else
 		$date = ''.date('\L\e d/m/Y', $mps->timestamp).'';
 
-echo'<tr class="tableau_fond'.($num_mess%2).'">
+echo'<tr class="tableau_fond'.($num_mess%2).'" id="message_'.$mps->id.'">
 	<td>'.$image.'</td>
 	<td class="gauche"><a href="lire-'.$mps->id.'">'.stripslashes(stripslashes($mps->titre)).'</a></td>
 	<td><a href="profilsjoueur-'.$mps->exp.'" class="non_souligne">'.$mps->expediteur.'</a></td>
 	<td>'.$date.' '.date('\à H\hi', $mps->timestamp).'</td>
 	<td><input type="checkbox" name="suppr_mp[]" value="'.$mps->id.'" id="message_'.$i.'"/></td>
-	<td><img src="images/joueurs/suppr.png" alt="supprimer le message privé" onclick="javascript:suppr_mp('.$mps->id.');"/></td>
+	<td><img src="images/joueurs/suppr.png" alt="supprimer le message privé" onclick="javascript:suppr_mp('.$mps->id.');" class="supr_messagerie"/></td>
 	</tr>';
 	$i++;
 }
