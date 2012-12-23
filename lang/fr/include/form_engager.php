@@ -73,7 +73,7 @@ if(!empty($value -> attaque)) {
 }
 
 if(!empty($value -> defense)) {
-	echo '<b>'.$value -> defense.'</b> '.img('images/attaques/bouclier.png', 'défense').'</b><br/>';
+	echo '<b>'.($value -> defense*$value -> coef_def).'</b> '.img('images/attaques/bouclier.png', 'défense').'</b><br/>';
 }
 			
 $temples = $paquet -> getTemples();
