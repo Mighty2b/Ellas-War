@@ -73,7 +73,7 @@ if(!empty($value -> attaque)) {
 }
 
 if(!empty($value -> defense)) {
-	echo '<b>'.($value -> defense*$value -> coef_def).'</b> '.img('images/attaques/bouclier.png', 'défense').'</b><br/>';
+	echo '<b>'.nbf(round($value -> defense, 2), 2).'</b> '.img('images/attaques/bouclier.png', 'défense').'</b><br/>';
 }
 			
 $temples = $paquet -> getTemples();

@@ -37,7 +37,7 @@ $value -> terrain.'<br/>';
 
 if(!empty($value->type) && ($value->type==2)) {
 echo '<b>Défense :</b><br/>
-	'.nbf(round($value -> defense), 0).' '.img('images/attaques/bouclier.png', 'defense');
+	'.nbf(round($value -> defense, 2), 2).' '.img('images/attaques/bouclier.png', 'defense');
 	}
 echo	'</td>
 <td>&nbsp;&nbsp;&nbsp;</td>
