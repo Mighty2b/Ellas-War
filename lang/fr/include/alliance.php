@@ -4,6 +4,7 @@
 			<td>&nbsp;</td>
 			<td>&nbsp;Pseudo&nbsp;</td>
 			<td>&nbsp;Niveau&nbsp;</td>
+			<td>&nbsp;XP&nbsp;</td>
 			<td>&nbsp;Victoires&nbsp;</td>
 			<td>&nbsp;Défaites&nbsp;</td>
 			<td>&nbsp;Terrain&nbsp;</td>
@@ -53,6 +54,7 @@
 
 		echo '&nbsp;</td>
 <td class="droite">&nbsp;'.($do->lvl).'&nbsp;</td>
+<td class="droite">&nbsp;'.($do->points).'&nbsp;</td>
 <td class="droite">'.nbf($do->victoires).'&nbsp;</td>
 <td class="droite">'.$do->defaites.'&nbsp;</td>
 <td class="droite">&nbsp;'.nbf($do->terrain).'&nbsp;</td>
