@@ -5,13 +5,14 @@ echo '<br/>
 	<tr class=\'tableau_header\'>
 		<td class="centrer">&nbsp;Pseudo&nbsp;</td>
 		<td class="centrer">&nbsp;Niveau&nbsp;</td>
+		<td class="centrer">&nbsp;XP&nbsp;</td>
 		<td class="centrer">&nbsp;Rang&nbsp;</td>
 		<td class="centrer">&nbsp;Terrain&nbsp;</td>
 	</tr>';
 $i=0;
 $liste = $all->membres;
 foreach ($liste as $do) {
-	echo '<tr class="tableau_fond2"><td colspan="4"></td></tr>';
+	echo '<tr class="tableau_fond2"><td colspan="5"></td></tr>';
 	
 	if(!empty($do->timestamp)) {
 		$image='<img src="images/joueurs/mb_connecter.png" alt="Joueur Connecté" />';
@@ -43,7 +44,10 @@ foreach ($liste as $do) {
 	else {
 		echo '<a href=\'profilsjoueur-'.$do->id.'\' class="lien joueur_bloque">'.ucfirst($do->login).'</a>';
 	}
-	echo '&nbsp;&nbsp;&nbsp;</td><td class="centrer">&nbsp;'.($do->lvl).'&nbsp;</td><td class="gauche">&nbsp;';
+	echo '&nbsp;&nbsp;&nbsp;</td>
+	<td class="centrer">&nbsp;'.($do->lvl).'&nbsp;</td>
+	<td class="droite">&nbsp;'.($do->points).'&nbsp;</td>
+	<td class="gauche">&nbsp;';
 	if(empty($do->nom) && ($do->id == $do->chef)) {
 		echo 'Grand chef';
 	}
