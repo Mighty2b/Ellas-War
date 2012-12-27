@@ -46,7 +46,7 @@ foreach ($liste as $do) {
 	}
 	echo '&nbsp;&nbsp;&nbsp;</td>
 	<td class="centrer">&nbsp;'.($do->lvl).'&nbsp;</td>
-	<td class="droite">&nbsp;'.($do->points).'&nbsp;</td>
+	<td class="droite">&nbsp;'.nbf($do->points).'&nbsp;</td>
 	<td class="gauche">&nbsp;';
 	if(empty($do->nom) && ($do->id == $do->chef)) {
 		echo 'Grand chef';
