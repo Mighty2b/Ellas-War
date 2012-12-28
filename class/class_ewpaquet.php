@@ -79,7 +79,7 @@ class EwPaquet {
 		$this->reponse = $reponse;
 		
 		//Fix pour le cas où un compte est bloqué pour manque de ressources
-		if($this->getstatu() == 1 && $this->gettpc()<=0) {
+		if($this->getstatu() == 1 && $this->gettpc()<0) {
 			redirect();
 		}
 	}
