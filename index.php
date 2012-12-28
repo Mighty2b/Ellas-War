@@ -158,6 +158,7 @@ echo '<section id="centre_design">
 if($paquet->get_statu() == 1) {
 		echo '<div id="menu_haut_bouclier"></div>';
 		switch($page) {
+			case 'infocite':
 			case 'constructions':
 			case 'construire':
 			case 'armurerie':

@@ -255,10 +255,6 @@
   font-size:0.9em;
 }
 
-.news:first-letter {
-	color:#b30000 !important;
-}
-
 #news_ew {
   position:relative;
   float:left;

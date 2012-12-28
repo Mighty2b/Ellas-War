@@ -104,11 +104,11 @@ class EwPaquet {
 	function getRetour($n=0) {
 		switch($n) {
 			case 2:
-					return $this->reponse->retour2;
+				return $this->reponse->retour2;
 			break;
 			
 			case 3:
-					return $this->reponse->retour3;
+				return $this->reponse->retour3;
 			break;
 			
 			case 4:
@@ -119,8 +119,12 @@ class EwPaquet {
 				return $this->reponse->retour5;
 			break;
 			
+			case 6:
+				return $this->reponse->retour6;
+			break;
+			
 			default:
-					return $this->reponse->retour;
+				return $this->reponse->retour;
 			break;
 		}
 	}
@@ -479,6 +483,10 @@ class EwPaquet {
   
   function get_prod_bonus() {
   	return $this->reponse->joueur->prod_bonus;
+  }
+  
+  function get_bonus() {
+  	return $this->reponse->joueur->bonus;
   }
   
   function get_cotisation() {

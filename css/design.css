@@ -717,3 +717,7 @@ input.permalien {
 	width:23px;
 	margin-top:11px;
 }
+
+.news:first-letter {
+	color:#b30000 !important;
+}
