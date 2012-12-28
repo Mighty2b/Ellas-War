@@ -7,7 +7,7 @@ echo '<marquee behavior="scroll"
 							 scrolldelay="0"
 							 onmouseover="this.stop()" 
 							 onmouseout="this.start()" 
-							 style="width:740px;position:relative;margin-top:40px;">'.stripslashes($var_missives).'</marquee>';
+							 style="width:740px;position:relative;margin-top:40px;">'.html_entity_decode(stripslashes($var_missives)).'</marquee>';
 
 echo '<img src="lang/fr/design/deconnexion.png" 
 					 style="margin-top:-5px;margin-left:26px;position:relative;z-index:1000;"
