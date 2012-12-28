@@ -45,10 +45,10 @@ class EwPaquet {
 				 ($_COOKIE['token'] != $reponse->joueur->token)) && 
 				!empty($reponse->joueur->token)) {
 				if($action == 'connexion' && isset($this->variable[2]) && $this->variable[2] == true) {
-					$temps = time()+7*24*3600;
+					$temps = time()+10*24*3600;
 				}
 				else {
-					$temps = time()+7*60;
+					$temps = time()+10*60;
 				
 					if($_COOKIE['temps'] > $temps) {
 						$temps = $_COOKIE['temps'];
