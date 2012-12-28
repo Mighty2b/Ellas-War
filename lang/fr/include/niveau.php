@@ -133,7 +133,7 @@ if($conditions->mar >0) {
 		echo '<font color="red">'.nbf($conditions->mar).' '.imress('marbre').'</font>';
 	}
 	else {
-		echo nbf($conditions->mar).' '.imress('bois');
+		echo nbf($conditions->mar).' '.imress('marbre');
 	}
 	
 	echo ' (Actuellement : '.nbf($actu->mar).')</li>';
