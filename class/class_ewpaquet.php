@@ -45,10 +45,10 @@ class EwPaquet {
 				 ($_COOKIE['token'] != $reponse->joueur->token)) && 
 				!empty($reponse->joueur->token)) {
 				if($action == 'connexion' && isset($this->variable[2]) && $this->variable[2] == true) {
-					$temps = time()+10*24*3600;
+					$temps = time()+TEMPS_CO*24*3600;
 				}
 				else {
-					$temps = time()+10*60;
+					$temps = time()+TEMPS_CO*60;
 				
 					if($_COOKIE['temps'] > $temps) {
 						$temps = $_COOKIE['temps'];
@@ -63,7 +63,7 @@ class EwPaquet {
 			elseif(($action == 'get_missives' or $action == 'constituer_groupe' or
 							$action == 'ecrire_chat') && 
 						 $reponse->joueur->statu != 0) {
-				$temps = time()+7*60;
+				$temps = time()+TEMPS_CO*60;
 			
 				if($_COOKIE['temps'] < $temps) {
 					setcookie('token', $_COOKIE['token'], $temps, '/',
