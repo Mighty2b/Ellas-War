@@ -128,7 +128,7 @@ $txt_arbredesdieux = array(
     'titre' => 'Piège de cristal', 
     'txt' => 'Votre adversaire perdra minimum 10% de son armée, 
     					ce pouvoir s\'annule si vous ne vous êtes pas connecté
-    					depuis plus de 48h ou si vous n\'avez pas de défense.'
+    					depuis plus de 48h ou si votre adversaire a moins de 1% de pertes.'
   ),
   25 => array(
     'titre' => 'Survivant', 
