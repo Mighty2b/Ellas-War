@@ -99,9 +99,17 @@ $paquet->display();
 	<?php
 	$i=0;
 	foreach($liste_membres as $do) {
-		$i++;
-		echo '<tr><td class="gauche">'.$do->login.'</td>
-<td> <input id="dest'.$i.'" type="checkbox" name="destinataire[]" value="'.$do->id.'" onclick="decoche()" /></td></tr>';
+		if($do->id != $paquet->getid()) {
+			$i++;
+			echo '<tr>
+			<td class="gauche">'.$do->login.'</td>
+			<td> 
+				<input id="dest'.$i.'" type="checkbox" 
+					   name="destinataire[]" value="'.$do->id.'" 
+					   onclick="decoche()" />
+			</td>
+			</tr>';
+		}
 	}
 	?>
 	</table>
