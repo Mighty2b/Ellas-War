@@ -16,7 +16,7 @@ echo '
 </head>
 	<body bgcolor="#EAE7E1">';
 
-echo '<h2 class="centrer">'.$info->attaquant.' contre '.$info->defenseur.'</h2>';
+echo '<h2 class="centrer">'.stripslashes($info->attaquant).' contre '.stripslashes($info->defenseur).'</h2>';
 
 if(!empty($liste) && sizeof($liste) > 0) {
 	echo '<table class="centrer_tableau">';
