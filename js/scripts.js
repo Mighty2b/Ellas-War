@@ -143,6 +143,7 @@ function preparer(id) {
 }
 
 function attaquer(id) {
+   $("#bouton_attaquer").hide();
    $.ajax({
      type: "GET",
      url: "form/attaquer.php",
