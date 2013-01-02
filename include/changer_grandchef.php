@@ -1,7 +1,7 @@
 <?php
 
 if(!empty($_POST['chef'])) {
-	$paquet = new EwPaquet('changer_chefs');
+	$paquet = new EwPaquet('changer_chef');
 }
 else {
 	$paquet = new EwPaquet('possibles_chefs');
