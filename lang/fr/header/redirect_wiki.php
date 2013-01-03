@@ -38,6 +38,10 @@ switch($page) {
 	case 'quelquesregles':
 		$wiki = 'http://wiki.ellaswar.com/index.php/Les_r%C3%A8gles';
 	break;
+	
+	case 'faq':
+		$wiki = 'http://wiki.ellaswar.com';
+	break;
 }
 
 if(!empty($wiki)) {
