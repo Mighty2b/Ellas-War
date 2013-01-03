@@ -65,7 +65,7 @@ else {
 <form action="classementdesjoueurs" method="post" name="classement">
 	<div class="form_rech3"><input type="text" name="joueur" class="form_rech" required="required"/></div>
 	<div class="form_rech4">
-		<div class="bouton_classique"><input class="bouton_classique2" type="submit" value="RECHERCHER" name="joueur"/></div>
+		<div class="bouton_classique"><input class="bouton_classique2" type="submit" value="RECHERCHER" name="RECHERCHER"/></div>
 	</div>
 	<div class="form_rech5">
 <?php
