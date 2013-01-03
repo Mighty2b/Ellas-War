@@ -32,7 +32,7 @@ class EwPaquet {
 								 'action'  => $this->action,
 								 'variable'=> $this->variable,
 								 'host'    => @gethostbyaddr($this -> ip),
-								 'navigateur'=> $_SERVER['HTTP_USER_AGENT'],
+								 'navigateur'=> isset($_SERVER["HTTP_USER_AGENT"]) ? $_SERVER["HTTP_USER_AGENT"] : '',
 								 'ip'      => $this->ip);
 		$reponse = json_decode(getRequest(API_URL, $var));
 
