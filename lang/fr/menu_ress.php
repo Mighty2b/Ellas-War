@@ -197,8 +197,23 @@ function main3()
 	</tr>';
 	}
 	
-	echo '<tr>
-			<td>'.imress('faveur').'</td><td class="droite">'.$paquet->getFaveurs().'</td><td></td></tr>
+	echo '
+	<tr>
+		<td>'.imress('faveur').'</td>
+		<td class="droite">'.nbf($paquet->getFaveurs()).'</td>
+		<td></td>
+	</tr>';
+	
+	if($paquet->is_event('stv')) {
+		echo '
+		<tr>
+		<td>'.imress('stv').'</td>
+		<td class="droite">'.nbf($paquet->getMonnaie()).'</td>
+		<td></td>
+		</tr>';
+	}
+	
+echo '
 </table>
 
 <a href="Details" class="details_ress">Détails</a>';

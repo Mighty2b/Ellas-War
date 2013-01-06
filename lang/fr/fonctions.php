@@ -17,11 +17,26 @@ function trad_to_page($page) {
 }
 
 function imress($ress) {
-	if($ress == 'gold') {
-		$ress = 'or';
+	switch($ress) {
+		case 'gold':
+			$ress = 'or';
+			$description = $ress;
+		break;
+		
+		case 'stv':
+			$description = 'Marque divine';
+		break;
+		
+		default:
+			$description = $ress;
+		break;
 	}
 	
-	return '<img src="images/ress/'.$ress.'.jpg" alt="'.ucfirst($ress).'" title="'.ucfirst($ress).'" /> ';
+	
+	
+	return '<img src="images/ress/'.$ress.'.jpg" 
+				 alt="'.ucfirst($description).'" 
+				 title="'.ucfirst($description).'" /> ';
 }
 
 function img($chemin, $nom) {

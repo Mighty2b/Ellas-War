@@ -199,6 +199,10 @@ class EwPaquet {
 		return $this->reponse->joueur->faveur;
 	}
 	
+	function getMonnaie() {
+		return $this->reponse->joueur->monnaie;
+	}
+	
 	function getid() {
 		return $this->reponse->joueur->id;
 	}
@@ -657,6 +661,15 @@ class EwPaquet {
   
   function get_timestamp() {
   	return	$this->reponse->joueur->timestamp;
+  }
+  
+  function is_event($event) {
+  	if(in_array($event, $this->reponse->event)) {
+  		return true;
+  	}
+  	else {
+  		return false;
+  	}
   }
 }
 

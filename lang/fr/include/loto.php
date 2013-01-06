@@ -31,6 +31,17 @@ chaque ticket coûte 10'000 <?php echo imress('drachme'); ?>
 		echo '<b>Tickets joués : '.$nb_mes_tickets.'</b>';
 	}
 
+	if($paquet->is_event('stv')) {
+		echo '<br/>Pour chaque achat de ticket, vous avez une chance de gagner 1 '.
+			 imress('stv').'. ';
+		 if($paquet->getRetour(3) > 0) {
+		 	echo 'Vous pouvez en gagner encore '.$paquet->getRetour(3).'.';
+		 }
+		 else {
+		 	echo 'Vous ne pouvez plus en gagner aujourd\'hui.';
+		 }
+	}
+	
 ?>
 
 <br/>
