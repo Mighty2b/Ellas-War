@@ -9,7 +9,9 @@
 		</div>
 	
 		<div id="cadre_login4"><span class="rouge_goco">M</span>ot de passe</div>
-		<div id="cadre_login5"><input type="password" name="pass" class="accueil" required="required" /><br/><a href="#" class="lien" onclick="window.open('motdepasseperdu.php','Mot de passe perdu','toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=800, height=200');">Mot de passe perdu ?</a></div>
+		<div id="cadre_login5"><input type="password" name="pass" class="accueil" required="required" />
+		<br/>
+		<a href="#" class="lien" onclick="window.open('motdepasseperdu.php','Mot de passe perdu','toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=800, height=200');">Mot de passe perdu ?</a></div>
 		<div id="cadre_login6">
 			<div id="cadre_login7"><div class="bouton_classique"><input class="bouton_classique2" type="submit" value="VALIDER" onclick="javascript:load_deco();"/></div></div>
 			<div id="cadre_login8"><input type="hidden" name="ap" value="" id="ap" /><input type="checkbox" name="rester_co" class="resterco" />&nbsp;</div>

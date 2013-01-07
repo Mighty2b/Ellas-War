@@ -11,3 +11,9 @@ if(!empty($_POST['identifiant']) && !empty($_POST['pass'])) {
 } 
 
 ?>
+<script type="text/javascript">
+function load_deco()
+{
+	document.getElementById('ap').value=window.location;
+}
+</script>
