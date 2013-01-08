@@ -44,18 +44,35 @@
 </div>
 <div id="cadre_accueil2">
 <div id="cadre_accueil21">
-<span class="rouge_goco">B</span>âtissez votre cité au milieu d'une Grèce à feu et à sang. Enrôlez des hommes et construisez des défenses. Engagez des forces, faites vos propres stratégies et partez à l'assaut des autres cités.
-<br/><br/>
-<span class="rouge_goco">O</span>u préférerez vous peut-être développer vos productions et faire prospérer votre cité économiquement grâce au commerce ?
-<br/><br/>
-<span class="rouge_goco">H</span>onorez les dieux, vivez en les respectant et en les craignant. Ce sont eux qui apporteront à votre cité gloire et renommée ou au contraire la conduira à sa perte. N'oubliez pas, les dieux sont parmi vous, ils vous observent.
-<br/><br/>
-<span class="rouge_goco">F</span>aites des stocks grâce à votre trésor ou dépensez tout afin d'améliorer vos soldats. N'oubliez pas que chaque choix peut avoir des conséquences. Mais ne faut-il pas prendre des risques pour devenir la plus puissante des cités Grecques ?
+<h1>Venez combattre sur Ellàs War</h1>
+<span class="rouge_goco">I</span>nscrivez-vous <a href="jeu-gratuit" title="Jeu gratuit"><strong>gratuitement</strong></a> sur Ellàs War, affrontez des milliers de joueurs et défendez votre cité face aux monstres qui l'entourent.
+<h2>Déployez votre stratégie</h2>
+<span class="rouge_goco">B</span>âtissez votre <strong>cité</strong> au milieu d'une <strong>Grèce</strong> à feu et à sang. 
+Enrôlez des hommes et construisez des défenses. 
+Engagez des forces, faites vos propres <a href="jeu-de-strategie" title="Jeu de stratégie"><strong>stratégies</strong></a> et partez à l'assaut des autres <strong>cités</strong>.
+Ou préférerez-vous peut-être développer vos productions et 
+faire prospérer votre cité <strong>économiquement</strong> grâce au commerce ?
+
+<h2>Faites intervenir les dieux</h2>
+
+<span class="rouge_goco">H</span>onorez les <strong>dieux</strong>, vivez en les respectant et en les craignant. 
+Vous devrez faire des choix, chacun vous donnera un avantage unique.
+Ce sont eux qui apporteront à votre <strong>cité</strong> gloire et renommée ou au contraire la conduiront à sa perte. 
+N'oubliez pas, <strong>les dieux</strong> sont parmi vous, ils vous observent.
+
+<h2>Chaque avantage compte</h2>
+<span class="rouge_goco">L</span>'arbre des <strong>dieux</strong> vous permettra de spécialiser votre cité. 
+Vénérez <strong>les dieux</strong> et <strong>les grands hommes</strong> de la <strong>Grèce antique</strong> grâce aux autels et aux statues et ils vous en remercieront. 
+
+<h2>Prenez des risques</h2>
+<span class="rouge_goco">F</span>aites des stocks grâce à votre trésor ou dépensez tout afin d'améliorer vos <strong>soldats</strong>. 
+N'oubliez pas que chaque choix peut avoir des conséquences. 
+Mais ne faut-il pas prendre des risques pour devenir la plus puissante des <strong>cités Grecques</strong>&nbsp;?
 </div>
 <div id="cadre_accueil22">
 
 <?php
-$paquet = new EwPaquet('get_news', array(5));
+$paquet = new EwPaquet('get_news', array(9));
 $dernieres_news = $paquet->getRetour();
 
 if(!empty($dernieres_news)) {
