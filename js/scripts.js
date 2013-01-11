@@ -685,3 +685,53 @@ function joueurs_chat() {
    });
 }
 
+function preparer_event(type) {
+	$(".soutien").hide();
+	$("#cadre_centre_petit2").html('');
+	$("#cadre_milieu_petit").show("slow");
+	$("#stv_"+type+".soutien").show();
+}
+
+function event_jeu(event,type) {
+	$.ajax({
+		type: "GET",
+		url: "form/event_jeu.php?jeu="+event,
+        success: function(msg){
+        	if(type == 0)
+        		$(".soutien").hide();
+        	$("#cadre_centre_petit2").html(msg);
+        	$("#cadre_milieu_petit").show("slow");
+        	even_maj(event);
+        }
+   });
+}
+
+function even_maj(event) {
+	$.ajax({
+		type: "GET",
+		url: "form/even_maj.php",
+		data: "event="+event,
+		success: function(msg){
+			if(event == 'recherche') {
+				$("#valeur_stv_recherche").html(msg);
+				if(msg >= 5) {
+					$("#bouton_stv_recherche").hide();
+				}
+			}
+			else if(event == 'parade') {
+				$("#valeur_stv_parade").html(msg);
+				if(msg >= 1) {
+					$("#bouton_stv_parade").hide();
+				}
+			}
+			else if(event == 'amphore' ||
+					event == 'babiole' ||
+					event == 'coupe') {
+				$("#valeur_stv_present").html(msg);
+				if(msg >= 5) {
+					$("#bouton_stv_present").hide();
+				}
+			}
+		}
+	});
+}

@@ -334,7 +334,7 @@ foreach($temples_donnees as $temple => $temple_actu) {
 		}
 	echo '</div>';
 	
-	if($paquet -> getlvl() >= 10) {
+	if($paquet -> getlvl() >= 10 && !($paquet->is_event('stv'))) {
 		$possible = $paquet->getRetour(3);
 
 		if(empty($possible)) {

@@ -7,10 +7,10 @@
 	<div id="bouton_haut_prieres"><a href="Prieres"><img src="design/co/menu_haut_prieres.png" alt="Prieres" title="Prieres" /></a></div>
 </div>
 <?php 
-if($paquet->is_event('stv') && sizeof($paquet->getTemples()) > 0) {
+if($page != 'soutien_stv' && $paquet->is_event('stv') && sizeof($paquet->getTemples()) > 0) {
 	echo '
 	<div class="ligne centrer"><br/>
-		<a href="" class="details_ress">Soutenez un dieu pour la Saint Valentin</a>
+		<a href="soutien_stv" class="details_ress">Soutenez un dieu pour la Saint Valentin</a>
 	</div>';
 }
 

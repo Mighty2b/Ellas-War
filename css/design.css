@@ -245,6 +245,9 @@ h1 {
   color:#b30000 !important;
 }
 
+.amour {
+	color:pink;
+}
 
 .bouton_classique {
   border:1px solid #000;

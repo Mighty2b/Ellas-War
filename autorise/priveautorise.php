@@ -38,6 +38,6 @@ $autorise = array('constructions', 'decouvertedujeu', 'faq', 'partenaires',
                   'recrutements', 'niveau', 'tour_de_force',
                   'demande', 'sanctuaires', 'changer_grandchef',
                   'contrats', 'valide', 'blocus', 'diamant', 'chat',
-				  'infocite');
+				  'infocite', 'soutien_stv');
 
 ?>

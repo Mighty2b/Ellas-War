@@ -563,6 +563,34 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 228: $erreur = 'Vous ne pouvez pas acheter de lot durant un blocus';
 		break;
+	case 229: $erreur = 'Votre défilé était parfaitement réussit. 
+	Votre divinité, heureuse de l’initiative, vous offre une marque divine pour vous récompenser.';
+		break;
+	case 230: $erreur = 'Malheureusement, tout ne s’est pas déroulé comme prévu. 
+	Votre tentative n’a fait ni chaud ni froid au cercle des dieux, 
+	vous devez tenter une autre méthode.';
+		break;
+	case 231: $erreur = 'Votre divinité a apprécié votre présent et elle vous en remercie.';
+		break;
+	case 232: $erreur = 'Vos hommes ont fait part de leurs découvertes au dieu que vous soutenez. 
+	Sa gratitude vous est exprimée par la Marque divine qu’il vous donne.';
+		break;
+	case 233: $erreur = 'Vos hommes ont fait de leur mieux, mais ils sont rentrés bredouilles. ';
+		break;
+	case 234: $erreur = 'Vos hommes ont fait de leur mieux, mais ils sont rentrés bredouilles. 
+	Vos troupes se sont trop approchées d’un groupe de Manticores, et elles n’ont pas été tendres.';
+		break;
+	case 235: $erreur = 'Vos hommes ont fait de leur mieux, mais ils sont rentrés bredouilles. 
+	Vos hommes n’ont pas été assez prudents, ils cherchaient des matériaux précieux dans une mine et ont été surpris par un éboulement.';
+		break;
+	case 236: $erreur = 'Vos hommes ont fait de leur mieux, mais ils sont rentrés bredouilles. 
+	Les œufs de Griffons semblaient pourtant une bonne idée… mais les Griffons adultes n’ont pas été de cet avis. ';
+		break;
+	case 237: $erreur = 'Vos hommes ont fait de leur mieux, mais ils sont rentrés bredouilles. 
+	Vous savez maintenant qu’on ne trouve pas de trésor au pied d’un arc-en-ciel. Par contre, les cyclopes qui habitaient dans le coin avaient faim.';
+		break;
+	case 238: $erreur = 'Vous devez envoyer des unités pour réaliser cette quête.';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}

@@ -230,6 +230,7 @@ if($paquet->get_statu() == 1) {
 			case 'succes':
 			case 'arbredesdieux':
 			case 'modifiertemples':
+			case 'soutien_stv':
 				include('lang/'.LANG.'/menu_mytho.php');
 			break;
 			
