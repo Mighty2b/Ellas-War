@@ -5,15 +5,21 @@ $paquet->display();
 $bonus_unites = $paquet->bonus_unites();
 
 if($possible == true) {
+  if($paquet->get_level()) {
+  	$coef = 0.8;
+  }
+  else {
+  	$coef = 1;
+  }
   $prix = array('',
-                '100000 '.imress('drachme').' 2000000 '.imress('fer'),
-                '150000 '.imress('drachme').' 3000000 '.imress('fer'),
-                '100000 '.imress('drachme').' 700000 '.imress('argent'),
-                '150000 '.imress('drachme').' 1050000 '.imress('argent'),
-                '100000 '.imress('drachme').' 50000 '.imress('pierre'),
-                '150000 '.imress('drachme').' 75000 '.imress('pierre'),
-                '100000 '.imress('drachme').' 1000000 '.imress('bois'),
-                '150000 '.imress('drachme').' 1500000 '.imress('bois'));
+                nbf($coef*100000).' '.imress('drachme').' '.nbf($coef*2000000).' '.imress('fer'),
+                nbf($coef*150000).' '.imress('drachme').' '.nbf($coef*3000000).' '.imress('fer'),
+                nbf($coef*100000).' '.imress('drachme').' '.nbf($coef*700000).' '.imress('argent'),
+                nbf($coef*150000).' '.imress('drachme').' '.nbf($coef*1050000).' '.imress('argent'),
+                nbf($coef*100000).' '.imress('drachme').' '.nbf($coef*50000).' '.imress('pierre'),
+                nbf($coef*150000).' '.imress('drachme').' '.nbf($coef*75000).' '.imress('pierre'),
+                nbf($coef*100000).' '.imress('drachme').' '.nbf($coef*1000000).' '.imress('bois'),
+                nbf($coef*150000).' '.imress('drachme').' '.nbf($coef*1500000).' '.imress('bois'));
   $noms = array('',
 'Infanterie de mêlée',
 'Cavalerie de mêlée',
@@ -47,7 +53,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
   <table class="centrer_tableau">
     <tr>
       <td>+5% en attaque</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('raisin'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*10000). ' '. imress('raisin'); ?></td>
       <?php
       $var = $j.'1';
       if(!empty($bonus_unites->$var)) {
@@ -61,7 +67,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>+5% en défense</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('marbre'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*10000). ' '. imress('marbre'); ?></td>
       <?php
       $var = $j.'2';
       if(!empty($bonus_unites->$var)) {
@@ -75,7 +81,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>-5% en solde</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">1000 <?php echo imress('vin'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*1000). ' '. imress('vin'); ?></td>
       <?php
       $var = $j.'3';
       if(!empty($bonus_unites->$var)) {
@@ -89,7 +95,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>-5% en coût</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">1000 <?php echo imress('gold'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*1000). ' '. imress('gold'); ?></td>
       <?php
       $var = $j.'4';
       if(!empty($bonus_unites->$var)) {
@@ -126,7 +132,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
   <table class="centrer_tableau">
     <tr>
       <td>+5% en attaque</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('raisin'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*10000). ' '. imress('raisin'); ?></td>
       <?php
       if(!empty($bonus_unites[$j.'1']))
 			{
@@ -141,7 +147,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>+5% en défense</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">10000 <?php echo imress('marbre'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*10000). ' '. imress('marbre'); ?></td>
       <?php
       if(!empty($bonus_unites[$j.'2']))
 			{
@@ -156,7 +162,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>-5% en solde</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">1000 <?php echo imress('vin'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*1000). ' '. imress('vin'); ?></td>
       <?php
       if(!empty($bonus_unites[$j.'3']))
 			{
@@ -171,7 +177,7 @@ $bonus = array('', '+5% en attaque', '+5% en défense', '-5% en solde', '-5% en 
     </tr>
     <tr>
       <td>-5% en coût</td>
-      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite">1000 <?php echo imress('gold'); ?></td>
+      <td class="droite"><?php echo $prix[$j]; ?></td><td class="droite"><?php echo nbf($coef*1000). ' '. imress('gold'); ?></td>
       <?php
       if(!empty($bonus_unites[$j.'4']))
 			{
