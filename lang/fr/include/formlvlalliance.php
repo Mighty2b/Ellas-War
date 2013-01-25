@@ -22,7 +22,8 @@ switch($paquet->get_level()) {
 	 echo '<tr><td>Possiblité de <b>doubler la cotisation</b></td></tr>
 	 	 <tr><td>Possibilité de lancer <b>des contrats</b></td></tr>
 	 <tr><td>Possibilité de recevoir une <b>3<sup>ème</sup> guerre</b> si vous êtes la source des deux en cours</b></td></tr>
-	';
+	 <tr><td>Augmentation de 5% des <b>Drachmes</b> obtenus lors d\'une guerre</td></tr>
+	 ';
 	break;
 
 	case 3:
@@ -31,12 +32,15 @@ switch($paquet->get_level()) {
 	 <tr><td>Possibilité pour vos membres d\'acheter une <b>armurerie</b></td></tr>
 	 <tr><td>Possibilité pour les membres de cotiser volontairement des drachmes</b></td></tr>
 	 <tr><td>Nouveau mode de <b>cotisation</b></td></tr>
-	';
+	 <tr><td>Augmentation de 10% des <b>Drachmes</b> obtenus lors d\'une guerre</td></tr>
+	 ';
 	break;
 
 	case 4:
 	 echo '
 	 <tr><td>Possibilité d\'annuler une guerre déclarée par votre alliance, pendant <b>12 heures</b> après la déclaration</td></tr>
+	 <tr><td>Baisse de 20% des prix des bonus de <b>l\'armurerie</b></td></tr>
+	 <tr><td>Augmentation de 20% des <b>Drachmes</b> obtenus lors d\'une guerre</td></tr>
 	 ';
 	break;
 }

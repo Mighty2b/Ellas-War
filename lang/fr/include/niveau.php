@@ -55,6 +55,32 @@ if($conditions->vic >0) {
 	echo ' (Actuellement : '.nbf($actu->vic).')</li>';
 }
 
+if($conditions->contrat_rempli >0) {
+	echo '<li>';
+
+	if($actu->contrat_rempli < $conditions->contrat_rempli) {
+		echo '<font color="red">'.nbf($conditions->contrat_rempli).' contrats remplis</font>';
+	}
+	else {
+		echo nbf($conditions->contrat_rempli).' contrats remplis';
+	}
+
+	echo ' (Actuellement : '.nbf($actu->contrat_rempli).')</li>';
+}
+
+if($conditions->contrat_donne >0) {
+	echo '<li>';
+
+	if($actu->contrat_donne < $conditions->contrat_donne) {
+		echo '<font color="red">'.nbf($conditions->contrat_donne).' contrats proposés</font>';
+	}
+	else {
+		echo nbf($conditions->contrat_donne).' contrats proposés';
+	}
+
+	echo ' (Actuellement : '.nbf($actu->contrat_donne).')</li>';
+}
+
 if($conditions->ses >0) {
 	echo '<li>';
 	if($actu->ses < $conditions->ses) {
