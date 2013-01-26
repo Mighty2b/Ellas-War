@@ -31,10 +31,17 @@ foreach($liste_arbre as $arbre) {
   <table class="centrer_tableau">';
 
   foreach($arbre as $ligne) {
+  	$num = 0;
     echo '<tr>';
     foreach($ligne as $noeud) {
       if(!empty($noeud['num'])) {
-        echo '<td><div class="arbre_bloc_noir" onclick="arbre_incremente('.$noeud['num'].', '.$arbre_niveau.', '.$niveau.','.$noeud['lvl'].');" oncontextmenu="arbre_decremente('.$noeud['num'].', '.$arbre_niveau.', '.$niveau.');return false;" >
+      	$num++;
+        echo '<td><div 
+        	class="arbre_bloc_noir" 
+        	onclick="arbre_incremente('.$noeud['num'].', '.$arbre_niveau.', '.$niveau.','.$noeud['lvl'].');" 
+        	oncontextmenu="arbre_decremente('.$noeud['num'].', '.$arbre_niveau.', '.$niveau.');return false;" 
+        	style="background-image:url(\'images/arbre/'.($arbre_niveau+1).($niveau+1).$num.'.png\');"
+        	>
         <div class="arbre_description" id="arbre_description_'.$noeud['num'].'">
         <b>'.$txt_arbredesdieux[$noeud['num']]['titre'].'</b>
         <br/>'.
