@@ -63,6 +63,11 @@ echo	'</div>
 $prix.'<br/><b>Ressources récupérables : </b>'.
 $prix2.$conso.$prod.$logement;
 
+if($unites[$bat]['aff'] == 4) {
+	echo '<br/><b>Terrain : </b><br/>'.
+	$paquet->get_batiments()->$bat->terrain.'<br/>';
+}
+
 echo	'</td>
 <td>&nbsp;&nbsp;&nbsp;</td>
 
