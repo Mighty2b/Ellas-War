@@ -165,8 +165,13 @@
 			  <br/>
   <?php
 		  if($liste_autels->sacrifice_hera > 0) {
+			if($quand_hera == 0) {
 			  echo '<br/>
 	<a href="Statues-sacrifice_hera-activer" class="sous">Activer</a> (coût : 2000000 '.imress('nourriture').' 200 '.imress('vin').' )<br/>';
+			}
+			else {
+				echo '<br/><b>Héra écoutera de nouveau vos requêtes le '.print_date($quand_hera).'</b>';
+			}
 		  }
   if($liste_autels->sacrifice_hera >= 10) {
 	$fin = 10;

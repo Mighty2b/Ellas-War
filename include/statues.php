@@ -43,6 +43,7 @@ else {
 
 $liste_autels = $paquet->liste_autels();
 $conditions = $paquet->getRetour();
+$quand_hera = $paquet->getRetour(2);
 
 $condition_gaia		= $conditions->gaia;
 $condition_erebe	= $conditions->erebe;
