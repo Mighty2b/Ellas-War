@@ -6,7 +6,7 @@
 
 <h2 class="centrer">Grattez et gagnez !</h2>
 
-<div  class="ligne80 centrer">
+<div  class="ligne80">
 <p>Prenez un ticket, grattez-le et remportez des drachmes. <font color="red">Vous</font> jouez avec <font color="red">les ronds</font> et <font color="blue">votre adversaire</font> avec <font color="blue">les croix</font>, chaque partie gagnée vous permettra d'empocher <?php echo nbf(40000).' '.trim(imress('drachme')); ?>. Si vous et votre adversaire gagnez simultanément, vous ne remportez que la moitié de la récompense.<br/>
 Vous recevez automatiquement un ticket toutes les heures mais vous ne pouvez pas conserver plus de 5 tickets.</p>
 <br/>
@@ -21,7 +21,7 @@ if($nb > 0) {
 echo '
 
 <br/><br/>
-
+<div class="centrer">
 <b>Il vous reste '.$nb.' ';
 
 if($nb > 1) {
@@ -32,3 +32,4 @@ else {
 }
 
 ?></div>
+</div>
