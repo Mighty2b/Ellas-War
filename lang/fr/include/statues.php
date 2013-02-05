@@ -168,8 +168,14 @@
 			  echo '<br/>
 	<a href="Statues-sacrifice_hera-activer" class="sous">Activer</a> (coût : 2000000 '.imress('nourriture').' 200 '.imress('vin').' )<br/>';
 		  }
-  for($i=1;$i<=10;$i++) {
-	  if(($i == $liste_autels->sacrifice_hera) or ($i == $liste_autels->sacrifice_hera+1)) {
+  if($liste_autels->sacrifice_hera >= 10) {
+	$fin = 10;
+  }
+  else {
+	$fin = $liste_autels->sacrifice_hera+1;
+  }
+  for($i=$liste_autels->sacrifice_hera;$i<=$fin;$i++) {
+	  if($i <= $liste_autels->sacrifice_hera+1) {
 		  echo '<br/><b>Niveau '.$i.' :</b> '.$texte_niveau[$i-1];
 	  }
   }
