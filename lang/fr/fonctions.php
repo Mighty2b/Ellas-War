@@ -608,7 +608,7 @@ function statu_ress($nombre) {
 }
 
 function check_archives($archive, $next) {
-	if($next > 0) {
+	if($next > 0 && !empty($archive)) {
 		  echo '
   <div id="cadre_milieu_archive">
 	  <div id="cadre_haut_archive">
