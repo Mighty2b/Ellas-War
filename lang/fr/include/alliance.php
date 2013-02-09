@@ -33,20 +33,26 @@
 			$image='<img src="images/mb_deconnecter.png" alt="Joueur Déonnecté\" /></td><td>';
 		}
 		
-		echo $image.'&nbsp;<a href=\'profilsjoueur-'.$do->id.'\'>';
+		switch($do->statu) {
+			case 2:
+				$classe='joueur_manque';
+			break;
+			
+			case 3:
+				$classe='joueur_pause';
+			break;
+			
+			case 4:
+				$classe='joueur_pause';
+			break;
+			
+			default:
+				$classe='';
+			break;
+		}
 		
-		if($do->statu == 3) {
-			echo '<font color=\'red\'><b>',ucfirst($do->login),'</b></font></a>';
-		}
-		elseif($do->statu == 2)	{
-			echo '<font color=\'green\'><b>',ucfirst($do->login),'</b></font></a>';
-		}
-		elseif($do->statu == 4)	{
-			echo '<font color=\'brown\'><b>',ucfirst($do->login),'</b></font></a>';
-		}
-		else {
-			echo ucfirst($do->login),'</a>';
-		}
+		echo $image.'&nbsp;<a href=\'profilsjoueur-'.$do->id.'\' 
+		'.(!empty($classe)?'class="'.$classe.'"':'').'>'.ucfirst($do->login),'</a>';
 
 		if(!empty($do->temps)) {
 			echo '<font color=\'purple\' title=\''.date('d/m/y', $do->temps).'\'>*</font>';
