@@ -395,8 +395,14 @@ class EwPaquet {
 	
   function is_active_bonus_commerce() {
 		if(!empty($this->reponse->joueur->bonus->commerce) && $this->reponse->joueur->bonus->commerce > $this->reponse->joueur->timestamp) {
-      echo '<div class="erreur centrer">Appui d\'Hermès actif jusqu\'au '.print_date($this->reponse->joueur->bonus->commerce).'<br/></div>';
+      echo '<div class="erreur centrer">Appui d\'Hermès actif jusqu\'au '.print_date($this->reponse->joueur->bonus->commerce,2).'<br/></div>';
 		}
+  }
+  
+  function is_active_bonus_xp() {
+  	if(!empty($this->reponse->joueur->bonus->xp) && $this->reponse->joueur->bonus->xp > $this->reponse->joueur->timestamp) {
+  		echo '<div class="erreur centrer">Appui d\'Éros actif jusqu\'au '.print_date($this->reponse->joueur->bonus->xp,2).'<br/></div>';
+  	}
   }
   
   function get_etape() {

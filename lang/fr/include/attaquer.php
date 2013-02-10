@@ -1,5 +1,7 @@
 <?php
 
+$paquet->is_active_bonus_xp();
+
 $writeniveau="<a href=\"Attaquer-$page_num-niveau-$recupcible".constr_get('recherche', $recherche)."\" class=\"titre_tab\">Niveau</a>";
 $writevictoire="<a href=\"Attaquer-$page_num-victoire-$recupcible".constr_get('recherche', $recherche)."\" class=\"titre_tab\">Victoire</a>";
 $writedefaite="<a href=\"Attaquer-$page_num-defaite-$recupcible".constr_get('recherche', $recherche)."\" class=\"titre_tab\">Défaite</a>";

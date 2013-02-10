@@ -49,6 +49,10 @@ function print_date($date, $arg=0) {
 	    return strftime('%A %d %B', $date).' à '.
 	    strftime('%Hh %M', $date);
   	}
+  	elseif($arg == 2) {
+	    return utf8_encode(strftime('%A %d %B', $date)).' à '.
+	    strftime('%Hh %M', $date);
+  	}
   	else {
 	    return date('d',$date).' '.utf8_encode(strftime('%B', $date));
   	}
