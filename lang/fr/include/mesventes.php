@@ -4,6 +4,8 @@ echo '<h1>Mes ventes</h1>';
 
 $paquet->display();
 
+$paquet->is_active_bonus_commerce();
+
 if(empty($mesventes) or sizeof($mesventes) == 0) {
 	echo '<div class="centrer">Vous n\'avez actuellement aucun lot en vente<br/></div>';
 }

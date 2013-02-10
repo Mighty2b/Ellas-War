@@ -394,8 +394,8 @@ class EwPaquet {
 	}
 	
   function is_active_bonus_commerce() {
-		if(!empty($this->joueur->bonus['commerce'])) {
-      echo '<div class="erreur">Appui d\'Hermès actif jusqu\'au '.print_date($this->joueur->bonus['commerce']).'<br/></div>';
+		if(!empty($this->reponse->joueur->bonus->commerce) && $this->reponse->joueur->bonus->commerce > $this->reponse->joueur->timestamp) {
+      echo '<div class="erreur centrer">Appui d\'Hermès actif jusqu\'au '.print_date($this->reponse->joueur->bonus->commerce).'<br/></div>';
 		}
   }
   
