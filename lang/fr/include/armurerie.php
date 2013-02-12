@@ -5,7 +5,7 @@ $paquet->display();
 $bonus_unites = $paquet->bonus_unites();
 
 if($possible == true) {
-  if($paquet->get_level()) {
+  if($paquet->get_level() >= 5) {
   	$coef = 0.8;
   }
   else {
