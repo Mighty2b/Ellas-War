@@ -1141,8 +1141,9 @@ tr.int_tab_taux1 {
 .arbre_bloc_noir .compteur {
   position:relative;
   float:right;
-  margin-top:22px;
+  margin-top:24px;
   margin-right:1px;
+  font-weight: bold;
 }
 
 a.details_ress {
