@@ -1,4 +1,4 @@
-<div id="bouton_construction"><a href="/"><img src="design/co/construction.png" alt="Constructions" title="Constructions" onmouseover="menu_visible('menu_haut_construction');" /></a></div>
+<div id="bouton_construction"><a href="/"><img src="design/co/cite.png" alt="Constructions" title="Constructions" onmouseover="menu_visible('menu_haut_construction');" /></a></div>
 <div id="bouton_armee"><a href="PasserEnRevue"><img src="design/co/armee.png" alt="Armée" title="Armée" onmouseover="menu_visible('menu_haut_armee');" /></a></div>
 <div id="bouton_archives"><a href="Archives"><img src="design/co/archives.png" alt="Archives" title="Archives" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
 <div id="bouton_mythologie"><a href="<?php

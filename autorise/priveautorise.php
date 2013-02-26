@@ -1,6 +1,6 @@
 <?php
 
-$autorise = array('constructions', 'decouvertedujeu', 'faq', 'partenaires', 
+$autorise = array('infocite', 'decouvertedujeu', 'faq', 'partenaires', 
                   'conditionsgeneralesutilisation', 'quelquesmotssurlesite', 
                   'equipedusite', 'plandusite', 'recrutement', 'premierspas', 
                   'lesattaques', 'lestemples', 'generalitesalliances', 
@@ -38,6 +38,6 @@ $autorise = array('constructions', 'decouvertedujeu', 'faq', 'partenaires',
                   'recrutements', 'niveau', 'tour_de_force',
                   'demande', 'sanctuaires', 'changer_grandchef',
                   'contrats', 'valide', 'blocus', 'diamant', 'chat',
-				  'infocite', 'soutien_stv');
+				  'constructions', 'soutien_stv');
 
 ?>

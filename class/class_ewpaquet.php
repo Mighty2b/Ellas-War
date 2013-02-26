@@ -128,6 +128,14 @@ class EwPaquet {
 				return $this->reponse->retour6;
 			break;
 			
+			case 7:
+				return $this->reponse->retour7;
+			break;
+					
+			case 8:
+				return $this->reponse->retour8;
+			break;
+				
 			default:
 				return $this->reponse->retour;
 			break;
@@ -545,11 +553,21 @@ class EwPaquet {
   }
   
   function nbfurie() {
-  	return $this->reponse->joueur->furie;
+  	if($this->reponse->joueur->furie > 0) {
+  		return $this->reponse->joueur->furie;
+  	}
+  	else {
+  		return 0;
+  	}
   }
   
   function nbfoudre() {
-  	return $this->reponse->joueur->foudre;
+  	if($this->reponse->joueur->foudre > 0) {
+  		return $this->reponse->joueur->foudre;
+  	}
+  	else {
+  		return 0;
+  	}
   }
   
   function depart_urgent() {
@@ -676,6 +694,10 @@ class EwPaquet {
   	else {
   		return false;
   	}
+  }
+  
+  function nb_fil() {
+  	return $this->reponse->joueur->nb_fil;
   }
 }
 

@@ -1,5 +1,5 @@
 <div id="menu_haut_construction" class="menuh_visible">
-	<div id="bouton_haut_cite"><a href="/"><img src="design/co/menu_haut_cite.png" alt="Constructions" title="Constructions" /></a></div>
+	<div id="bouton_haut_construction"><a href="constructions"><img src="design/co/menu_haut_constructions.png" alt="Constructions" title="Constructions" /></a></div>
 	<div id="bouton_haut_construire"><a href="Construire"><img src="design/co/menu_haut_construire.png" alt="Construire" title="Construire" /></a></div>
 	<div id="bouton_haut_armurerie"><a href="Armurerie"><img src="design/co/menu_haut_armurerie.png" alt="Armurerie" title="Armurerie" /></a></div>
 	<div id="bouton_haut_tresor"><a href="Tresor"><img src="design/co/menu_haut_tresor.png" alt="Tresor" title="Tresor" /></a></div>
