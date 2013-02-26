@@ -54,8 +54,8 @@ foreach($batiments as $bat => $details) {
 foreach($unites as $bat => $details) {
 	if(!empty($liste_unites->$bat)) {
 		$units[$details['aff']-1] += $liste_unites->$bat->nb;
-		$attaque += $liste_unites->$bat->attaque;
-		$defense += $liste_unites->$bat->defense;
+		$attaque += $liste_unites->$bat->attaque*$liste_unites->$bat->nb;
+		$defense += $liste_unites->$bat->defense*$liste_unites->$bat->nb;
 	}
 }
 
