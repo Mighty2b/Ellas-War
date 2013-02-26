@@ -20,7 +20,7 @@ if(!empty($oracle)) {
 if(sizeof($election) > 0) {
 
 	echo '<h2 class="centrer">Candidats</h2>
-	<div class="ligne80"><b>Votez pour le candidat qui vous représentera le mieux, vous pourrez changer votre choix à n\'importe quel moment</b></div><br/>
+	<div class="ligne80 centrer"><b>Votez pour le candidat qui vous représentera le mieux, vous pourrez changer votre choix à n\'importe quel moment</b></div><br/>
 	<form method="post" action="">
 		<table class="centrer_tableau">';
 
