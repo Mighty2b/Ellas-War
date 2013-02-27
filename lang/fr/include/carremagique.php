@@ -24,7 +24,7 @@
 <script src="http://www.jeu-gratuit.net/tracking/affiche.js" type="text/javascript"></script>
 
 </td><td class="centrer">
-<a href="http://www.cadomax.com/" target="_blank"><img src="http://www.cadomax.com/8831-cadomax-01.gif" width="88" height="31" alt="cadomax" onclick="gagnerdrachme(3);" /></a>
+<a href="http://www.cadomax.com/" target="_blank"><img src="http://www.cadomax.com/design/8831-cadomax-01.gif" width="88" height="31" alt="cadomax" onclick="gagnerdrachme(3);" /></a>
 </td></tr>
 </table>
 </div>
