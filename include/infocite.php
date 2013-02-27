@@ -26,6 +26,19 @@ $niveaux_autels = 0;
 $niveaux_arbres = 0;
 $archives = $paquet->getRetour(4);
 $liste = $paquet->getRetour(5);
+$points_hf = 0;
+$points_tf = 0;
+
+$liste_hf = $paquet->getRetour(9);
+
+foreach($liste_hf as $hf) {
+	if($hf->type == 7) {
+		$points_tf++;
+	}
+	else {
+		$points_hf++;
+	}
+}
 
 $defense_tours = 0;
 
@@ -80,27 +93,27 @@ $niveaux_arbres += $liste_autels->{'sauvegarde_ombre'};
 <div class="cadre_info">
 	<div class="cadre_info_haut"></div>
 	<div class="cadre_info_centre"><div class="cadre_info_interieur" id="cadre_info_cite">
-	<div class="titre">Cité</div>
-	<a class="mtitre" href="constructions">Bâtiments</a>
+	<div class="ligne centrer"><a href="constructions" class="titre">Cité</a></div>
+	<div class="ligne"><a class="mtitre" href="constructions">Bâtiments</a></div>
 	<div class="ligne">
 		<table width="100%">
 		<tr>
-			<td width="50%"><b>Battage de la monnaie :</b> <?php echo nbf($constructions->atelierf->nb); ?></td> 
-			<td width="50%"><b>Production : </b> <?php echo nbf($batis[0]-$constructions->atelierf->nb); ?></td>
+			<td width="50%"><a href="Construire-1"><b>Battage de la monnaie :</b> <?php echo nbf($constructions->atelierf->nb); ?></a></td> 
+			<td width="50%"><a href="Construire-1"><b>Production : </b> <?php echo nbf($batis[0]-$constructions->atelierf->nb); ?></a></td>
 		</tr>
 		<tr>
-			<td><b>Militaire : </b> <?php echo nbf($batis[1]-$units[3]); ?></td>
-			<td><b>Logement : </b> <?php echo nbf($batis[2]); ?></td>
+			<td><a href="Construire-2"><b>Militaire : </b> <?php echo nbf($batis[1]-$units[3]); ?></a></td>
+			<td><a href="Construire-3"><b>Logement : </b> <?php echo nbf($batis[2]); ?></a></td>
 		</tr>
 		<tr>
-			<td><b>Tours : </b> <?php echo nbf($units[3]); ?></td>
+			<td><a href="Engager-4"><b>Tours : </b> <?php echo nbf($units[3]); ?></a></td>
 			<td><?php
 			if($units[3] > 0) {
-				echo '<b>Défense</b> : '.nbf($defense_tours). ' '.img('images/attaques/bouclier.png', 'défense');
+				echo '<a href="PasserEnRevue"><b>Défense</b> : '.nbf($defense_tours). ' '.img('images/attaques/bouclier.png', 'défense');
 			}
 			else {
-				echo '<b>Autre : </b> '.nbf($batis[3]);
-			} ?></td>
+				echo '<a href="Construire-4"><b>Autre : </b> '.nbf($batis[3]);
+			} ?></a></td>
 		</tr>
 		</table>
 		<br/>
@@ -109,12 +122,12 @@ $niveaux_arbres += $liste_autels->{'sauvegarde_ombre'};
 	<div class="ligne">
 		<table width="100%">
 		<tr>
-			<td width="50%"><b>Humaines :</b> <?php echo nbf($units[0]+$units[1]); ?></td>
-			<td width="50%"><b>Mythologiques :</b> <?php echo nbf($units[2]); ?></td>
+			<td width="50%"><a href="Engager"><b>Humaines :</b> <?php echo nbf($units[0]+$units[1]); ?></a></td>
+			<td width="50%"><a href="Engager-3"><b>Mythologiques :</b> <?php echo nbf($units[2]); ?></a></td>
 		</tr>
 		<tr>
-			<td><b>Attaque :</b> <?php echo nbf($attaque).' '.img('images/attaques/dague.png', 'attaque'); ?></td>
-			<td><b>Défense :</b> <?php echo nbf($defense). ' '.img('images/attaques/bouclier.png', 'défense'); ?></td>
+			<td><a href="PasserEnRevue"><b>Attaque :</b> <?php echo nbf($attaque).' '.img('images/attaques/dague.png', 'attaque'); ?></a></td>
+			<td><a href="PasserEnRevue"><b>Défense :</b> <?php echo nbf($defense). ' '.img('images/attaques/bouclier.png', 'défense'); ?></a></td>
 		</tr>
 		</table>
 		<br/>
@@ -205,8 +218,16 @@ if(sizeof($temples) > 0) {
 	if($paquet->getlvl() >= 10) {
 		echo '<tr>
 		<td width="50%"><a href="AutelDesDieux"><b>Autels des dieux : </b> '.$niveaux_autels.' '.($niveaux_autels>1?'niveaux':'niveau').'</a></td>
-		<td width="50%"><a href="Statues"><b>Statues :</b> '.$niveaux_arbres.' '.($niveaux_arbres>1?'ornements':'ornement').'</a></td></tr>';
+		<td width="50%"><a href="Statues"><b>Statues :</b> '.$niveaux_arbres.' '.($niveaux_arbres>1?'ornements':'ornement').'</a></td>
+		</tr>';
 	}
+	
+	echo '<tr>
+	<td><b>Points de succès :</b> '.$points_hf.'
+	</td>
+	<td><b>Tours de force :</b> '.$points_tf.'
+	</td>';
+	
 	echo '</table>';
 ?><br/>
 	</div>
@@ -370,22 +391,25 @@ if(!empty($dernieres_breves)) {
 	<div class="cadre_info_centre"><div class="cadre_info_interieur">
 	<div class="ligne centrer"><a href="Jeux" class="titre">Jeux</a></div>
 	<div class="ligne">
+	<table width="100%">
+		<tr>
+		<td width="50%">
 		<a href="Ticket" class="mtitre">Tickets à gratter</a><br/>
 		<a href="Ticket"><?php
-	
-	if($tikets > 1) {
-		echo '<b>'.$tikets.'</b> tickets restant';
-	}
-	else {
-		echo '<b>'.$tikets.'</b> ticket restant';
-	}
-	echo '</a><br/>';
-
-	if(sizeof($btn) > 0) {
-		echo '<br/></div>
-		<div class="ligne">
+		if($tikets > 1) {
+			echo '<b>'.$tikets.'</b> tickets restant';
+		}
+		else {
+			echo '<b>'.$tikets.'</b> ticket restant';
+		}
+		echo '</a></td>
+		<td width="50%"><a href="Loto" class="mtitre">Jouez au loto</a><br/>
+		<a href="Loto">Un ticket gratuit par semaine !</a></td>
+		</tr>
+		<tr>
+		<td>
 		<a href="BataillesNavales" class="mtitre">Batailles navales</a><br/>';
-		
+	if(sizeof($btn) > 0) {
 		foreach($btn as $do) {
 			if(empty($do->titre)) {
 				$do->titre='Partie publique';
@@ -399,7 +423,12 @@ if(!empty($dernieres_breves)) {
 		}
 	}
 	
-	?>
+	?></td>
+	<td><a href="CarreMagique" class="mtitre">Carré magique</a><br/>
+	<a href="CarreMagique">Aidez le jeu et remportez des faveurs !</a>
+	</td>
+	</tr>
+	</table>
 	</div>	
 	</div></div>
 	<div class="cadre_info_bas"></div>

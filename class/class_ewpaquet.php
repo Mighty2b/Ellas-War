@@ -135,7 +135,11 @@ class EwPaquet {
 			case 8:
 				return $this->reponse->retour8;
 			break;
-				
+			
+			case 9:
+				return $this->reponse->retour9;
+			break;
+			
 			default:
 				return $this->reponse->retour;
 			break;
