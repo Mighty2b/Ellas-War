@@ -75,7 +75,7 @@
 </div>
 <div class="laurier1">
  	 <div class="laurier2">'.$all->medaille4.'</div>
- 	<img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la crutauté" title="Trophée de la crutauté" />
+ 	<img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la cruauté" title="Trophée de la cruauté" />
 </div>
 <div class="laurier1">
  	 <div class="laurier2">'.$all->medaille5.'</div>

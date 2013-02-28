@@ -102,7 +102,7 @@ echo '</div>
 <td valign="middle"><a href="classementdesalliances-1-trophees7"><img src="images/alliance/mini-laurier.png" alt="Trophée du conflit titanesque" title="Trophée du conflit titanesque" /></a></td>
 <td valign="middle"><a href="classementdesalliances-1-trophees6"><img src="images/alliance/mini-laurier-argent.png" alt="Trophée de l\'archarnement divin" title="Trophée de l\'archarnement divin" /></a></td>
 <td valign="middle"><a href="classementdesalliances-1-trophees5"><img src="images/alliance/mini-laurier-bronze.png" alt="Trophée de l\'honneur destructeur" title="Trophée de l\'honneur destructeur" /></a></td>
-<td valign="middle"><a href="classementdesalliances-1-trophees4"><img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la crutauté" title="Trophée de la crutauté" /></a></td>
+<td valign="middle"><a href="classementdesalliances-1-trophees4"><img src="images/alliance/mini-laurier-vert.png" alt="Trophée de la cruauté" title="Trophée de la cruauté" /></a></td>
 <td valign="middle"><a href="classementdesalliances-1-trophees3"><img src="images/alliance/mini-laurier-bleu.png" alt="Trophée de la loyauté" title="Trophée de la loyauté" /></a></td>
 <td valign="middle"><a href="classementdesalliances-1-trophees2"><img src="images/alliance/mini-laurier-noir.png" alt="Trophée de l\'orgueil naïf" title="Trophée de l\'orgueil naïf" /></a></td>
 <td valign="middle"><a href="classementdesalliances-1-trophees1"><img src="images/alliance/mini-laurier-indigo.png" alt="Trophée du massacre incompréhensible" title="Trophée du massacre incompréhensible" /></a></td>
