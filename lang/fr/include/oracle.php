@@ -41,6 +41,11 @@ if(sizeof($election) > 0) {
   			echo '<a href="profilsjoueur-'.$elec->id.'">'.$elec->login.'</a></td>
 			<td><img src="images/alliance/archives.png" alt="Programme" title="Programme" class="supr_messagerie" onclick="javascript:programme('.$elec->id.');" /></td>';
 			}
+			
+			if($paquet->getlvl2() >= 3) {
+				echo '<td> '.$elec->nb.' ('.$elec->prcent.'%)</td>';
+			}
+			
 			echo '</tr>';
 		}
 		echo '</table>
