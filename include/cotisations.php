@@ -48,12 +48,12 @@ if($info->level >= 3) {
 	$max_fer=200000;
 	$max_arg=100000;
 	$max_orr=2000;
-	$max_boi=80000;
-	$max_pie=80000;
+	$max_boi=100000;
+	$max_pie=100000;
 	$max_mar=10000;
 	$max_nou=200000;
 	$max_eau=200000;
-	$max_rai=80000;
+	$max_rai=100000;
 	$max_vin=2000;
 }
 else {
@@ -61,12 +61,12 @@ else {
 	$max_fer=100000;
 	$max_arg=50000;
 	$max_orr=1000;
-	$max_boi=40000;
-	$max_pie=40000;
+	$max_boi=50000;
+	$max_pie=50000;
 	$max_mar=5000;
 	$max_nou=100000;
 	$max_eau=100000;
-	$max_rai=40000;
+	$max_rai=50000;
 	$max_vin=1000;
 }
 
