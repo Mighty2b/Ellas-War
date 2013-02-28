@@ -7,10 +7,11 @@ if($i%$largeur != 0) {
   }
 
   $tableau .= '<td>
-  		<table><tr><td class="case_suppr_strat">&nbsp;</td></tr>';
+  		<table width="100%"><tr><td>&nbsp;</td><td class="case_suppr_strat">&nbsp;</td></tr>';
 
   for($j=0;$j<$nb_vague;$j++) {
 	  $tableau .= '<tr>
+	  <td>&nbsp;'.nbf($total).' '.img('images/attaques/dague.png', 'attaque').'&nbsp;</td>
 	  <td class="case_suppr_strat">&nbsp;<a href="StrategieOffensive-'.($j+1).'"><img src="images/joueurs/supprimer_mp.png" alt="supprimer" /></a>&nbsp;</td></tr>';
   }
 

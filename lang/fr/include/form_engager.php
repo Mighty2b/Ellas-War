@@ -38,7 +38,7 @@ if(!empty($value -> logement)) {
 }
 
 echo '<div class="gauche_batiment">';
-if($value->type == 'def') {
+if($value->type_att == 9) {
 	echo '<img src="images/bat/'.$unites[$bat]['img'].'.png"
 			 			 alt="'.$unites[$bat]['nom'].'"
 			 			 title="'.$unites[$bat]['nom'].'" /></div>';

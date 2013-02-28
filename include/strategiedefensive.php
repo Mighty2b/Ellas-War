@@ -30,7 +30,7 @@ $tableau = '<table width="100%"><tr>';
 $i = 0;
 $liste_unites = $paquet->get_unites();
 $vague = unserialize($paquet->getRetour());
-$largeur = 5;
+$largeur = 4;
 
 foreach($liste_unites as $value) {
 	if(($value -> defense > 0) && ($value -> nb > 0)) {
@@ -41,6 +41,7 @@ foreach($liste_unites as $value) {
 
 $nb_vague = sizeof($vague);
 $nb_unite = sizeof($tab);
+$total = 0;
 
 foreach($tab as $unite) {
 	$i++;
@@ -50,6 +51,7 @@ foreach($tab as $unite) {
 			<td class="titre_tab">'.$unites[$unite]['nom'].'</td>
 		</tr>';
 	for($j=0;$j<$nb_vague;$j++) {
+		$total += ($vague[$j][$unite]*$liste_unites->$unite->defense);
 		$tableau .= '<tr>
 		<td class="centrer"><input type="text" value="'.$vague[$j][$unite].'" name="'.$unite.'[]" class="form_unites"/></td>
 		</tr>';
@@ -61,7 +63,13 @@ foreach($tab as $unite) {
 		$tableau .= '<td><table width="100%"><tr><td class="case_suppr_strat">&nbsp;</td></tr>';
 		
 		for($j=0;$j<$nb_vague;$j++) {
-			$tableau .= '<tr><td class="case_suppr_strat">&nbsp;<a href="StrategieDefensive-'.($j+1).'">'.img('images/joueurs/supprimer_mp.png', 'supprimer').'</a>&nbsp;</td></tr>';
+			$tableau .= '<tr>
+			<td>
+			&nbsp;'.nbf($total).' '.img('images/attaques/bouclier.png', 'defense').'&nbsp;</td>
+			<td class="droite case_suppr_strat">&nbsp;
+&nbsp;<a href="StrategieDefensive-'.($j+1).'">'.img('images/joueurs/supprimer_mp.png', 'supprimer').'</a>&nbsp;
+			</td></tr>';
+			$total = 0;
 		}
 		
 		$tableau .= '</table></td>';

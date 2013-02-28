@@ -591,7 +591,7 @@ class EwPaquet {
 		elseif($this->reponse->joueur->lvl < $value->lvlmini) {
 			return false;
 		}
-		elseif(($value->type == 'def') && ($this->reponse->joueur->lvl >= $value->lvlmini)) {
+		elseif(($value->type_att == 9) && ($this->reponse->joueur->lvl >= $value->lvlmini)) {
 			return true;
 		}
 		elseif(!(
@@ -617,7 +617,7 @@ class EwPaquet {
 			(!empty($value->n_aphro) && 
 			 (empty($this->reponse->joueur->liste_autels->attirance_aphrodite) or 
 			  ($this->reponse->joueur->liste_autels->attirance_aphrodite < $value->n_aphro)))
-			or ($value->type == 'def'))) {
+			or ($value->type_att == 9))) {
 			return true;
 		}
 		else{

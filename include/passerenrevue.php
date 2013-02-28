@@ -19,7 +19,7 @@ if(sizeof($liste_unites) > 0) {
 	$i = 0;
 
 	foreach($liste_unites as $unit => $value) {
-		if(($value -> nb > 0) && ($value -> type != 'def'))	{
+		if(($value -> nb > 0) && ($value -> type_att != 9))	{
 			if($i != 0) {
 					$tab_unite .= '<tr class="tableau_fond2"><td colspan="5"></td></tr>';
 			}
