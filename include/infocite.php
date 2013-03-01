@@ -76,17 +76,19 @@ foreach($arbre_mon as $d) {
 	$points_arbre += $d;
 }
 
-$niveaux_autels += $liste_autels->{'unite_myth'};
-$niveaux_autels += $liste_autels->{'maison'};
-$niveaux_autels += $liste_autels->{'lion'};
-$niveaux_autels += $liste_autels->{'baisse_terrain'};
-$niveaux_autels += $liste_autels->{'unite'};
-$niveaux_autels += $liste_autels->{'attirance_aphrodite'};
-
-$niveaux_arbres += $liste_autels->{'sacrifice_hera'};
-$niveaux_arbres += $liste_autels->{'defense_gaia'};
-$niveaux_arbres += $liste_autels->{'strategie_hippodamos'};
-$niveaux_arbres += $liste_autels->{'sauvegarde_ombre'};
+if(!empty($liste_autels)) {
+	$niveaux_autels += $liste_autels->{'unite_myth'};
+	$niveaux_autels += $liste_autels->{'maison'};
+	$niveaux_autels += $liste_autels->{'lion'};
+	$niveaux_autels += $liste_autels->{'baisse_terrain'};
+	$niveaux_autels += $liste_autels->{'unite'};
+	$niveaux_autels += $liste_autels->{'attirance_aphrodite'};
+	
+	$niveaux_arbres += $liste_autels->{'sacrifice_hera'};
+	$niveaux_arbres += $liste_autels->{'defense_gaia'};
+	$niveaux_arbres += $liste_autels->{'strategie_hippodamos'};
+	$niveaux_arbres += $liste_autels->{'sauvegarde_ombre'};
+}
 
 ?>
 <div id="info_cite_gauche">
@@ -223,9 +225,9 @@ if(sizeof($temples) > 0) {
 	}
 	
 	echo '<tr>
-	<td><b>Points de succès :</b> '.$points_hf.'
+	<td><a href="Succes"><b>Points de succès :</b> '.$points_hf.'</a>
 	</td>
-	<td><b>Tours de force :</b> '.$points_tf.'
+	<td><a href="Succes-7"><b>Tours de force :</b> '.$points_tf.'</a>
 	</td>';
 	
 	echo '</table>';
