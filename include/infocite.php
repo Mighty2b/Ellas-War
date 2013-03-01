@@ -159,7 +159,7 @@ if(sizeof($temples) > 0) {
 	
 	if(in_array('demeter', $temples)) {
 		echo '<a href="Temples-demeter">'.$temples_donnees['demeter']['nom'].
-		' ('.$paquet-> nbfurie().' <img height=\'10px\' src=\'images/attaques/vignette102.gif\' alt="Furies" title="Furies" />)</a><br/>';
+		' ('.nbf($paquet-> nbfurie()).' <img height=\'10px\' src=\'images/attaques/vignette102.gif\' alt="Furies" title="Furies" />)</a><br/>';
 	}
 	
 	if(in_array('hermes', $temples)) {
@@ -191,7 +191,7 @@ if(sizeof($temples) > 0) {
 	echo '</td><td valign="top">';
 	if(in_array('zeus', $temples)) {
 		echo '<a href="Temples-zeus">'.$temples_donnees['zeus']['nom'].
-		' ('.$paquet-> nbfoudre().' <img height=\'10px\' src=\'images/attaques/zeus.gif\' alt="Foudres" title="Foudres" />)</a><br/>';
+		' ('.nbf($paquet-> nbfoudre()).' <img height=\'10px\' src=\'images/attaques/zeus.gif\' alt="Foudres" title="Foudres" />)</a><br/>';
 	}
 	
 	if(in_array('poseidon', $temples)) {
