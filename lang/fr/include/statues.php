@@ -173,13 +173,17 @@
 				echo '<br/><b>Héra écoutera de nouveau vos requêtes le '.print_date($quand_hera).'</b>';
 			}
 		  }
+  $debut = $i=$liste_autels->sacrifice_hera;
   if($liste_autels->sacrifice_hera >= 10) {
 	$fin = 10;
   }
   else {
+  	if($debut < 1) {
+  		$debut = 1;
+  	}
 	$fin = $liste_autels->sacrifice_hera+1;
   }
-  for($i=$liste_autels->sacrifice_hera;$i<=$fin;$i++) {
+  for($i=$debut;$i<=$fin;$i++) {
 	  if($i <= $liste_autels->sacrifice_hera+1) {
 		  echo '<br/><b>Niveau '.$i.' :</b> '.$texte_niveau[$i-1];
 	  }
