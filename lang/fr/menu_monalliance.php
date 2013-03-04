@@ -17,7 +17,7 @@ else {
 echo '</div>';
 
 if(!empty($depart_urgent)) {
-	echo '<div class="interdit" id="sortie_urgence">Sortie d\'urgence activée, départ prévu le '.date('d/m/Y \à H\hi', $depart_urgent);
+	echo '<div class="interdit centrer" id="sortie_urgence">Sortie d\'urgence activée, départ prévu le '.date('d/m/Y \à H\hi', $depart_urgent);
 	
 	if($depart_urgent-(TEMPS_SORTIE_URGENCE-86400) > time()) {
 		echo ' (<a href="#" onclick="annuler_depart_urgent()">Annuler</a>)';
