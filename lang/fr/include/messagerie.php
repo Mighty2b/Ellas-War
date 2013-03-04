@@ -67,9 +67,24 @@ foreach($messages as $mps) {
 	else
 		$date = ''.date('\L\e d/m/Y', $mps->timestamp).'';
 
+	switch($mps->type_message) {
+		case 3://Admin
+			$color = 'red';
+			break;
+		case 1://Oracle
+			$color = '#FF9900';
+			break;
+		case 2://Prophète
+			$color = '#000066';
+			break;
+		default:
+			$color = 'black';
+			break;
+	}
+	
 echo'<tr class="tableau_fond'.($num_mess%2).'" id="message_'.$mps->id.'">
 	<td>'.$image.'</td>
-	<td class="gauche"><a href="lire-'.$mps->id.'">'.stripslashes(stripslashes($mps->titre)).'</a></td>
+	<td class="gauche"><a href="lire-'.$mps->id.'" style="color:'.$color.'">'.stripslashes(stripslashes($mps->titre)).'</a></td>
 	<td><a href="profilsjoueur-'.$mps->exp.'" class="non_souligne">'.$mps->expediteur.'</a></td>
 	<td>'.$date.' '.date('\à H\hi', $mps->timestamp).'</td>
 	<td><input type="checkbox" name="suppr_mp[]" value="'.$mps->id.'" id="message_'.$i.'"/></td>

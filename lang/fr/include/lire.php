@@ -1,7 +1,7 @@
 <br/>
 <table class='tableau80d centrer_tableau'>
 	<tr class='tableau_header'>
-		<th><?php echo $mp->titre; ?></th>
+		<th style="color:<?php echo $color; ?>"><?php echo $mp->titre; ?></th>
 	</tr>
 	<tr class="font_classement2">
 		<td class="centrer">

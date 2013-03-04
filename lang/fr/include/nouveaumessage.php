@@ -4,8 +4,37 @@
 	<input type="text" name="destinataire" size="12" maxlength="30" class="form_retirer" <?php echo (!empty($rep_login)?'value="'.$rep_login.'"':''); ?> required="required"/>
 	&nbsp;&nbsp;&nbsp;&nbsp;
 	<b>Sujet :</b> 
-	<input name="titre_mp" class="form_retirer" <?php echo (!empty($rep->titre)?'value="'.$rep->titre.'"':''); ?> required="required"/><br/>
+	<input name="titre_mp" class="form_retirer" <?php echo (!empty($rep->titre)?'value="'.$rep->titre.'"':''); ?> required="required"/>
+
+<?php 
+
+switch($paquet->getlvl2()) {
+	case 3:
+		echo '&nbsp;&nbsp;&nbsp;&nbsp;
+		<b>Message Administrateur :</b> 
+		<input type="checkbox" name="special"/> <br/>';
+	break;
 	
+	case 2:
+		echo '&nbsp;&nbsp;&nbsp;&nbsp;
+		<b>Message Prophète :</b>
+		<input type="checkbox" name="special"/> <br/>';
+	break;
+	
+	default:
+		if($oracle->id == $paquet->getid()) {
+			echo '&nbsp;&nbsp;&nbsp;&nbsp;
+			<b>Message Oracle :</b>
+			<input type="checkbox" name="special"/> <br/>';
+		}
+		else {
+			echo '<input type="hidden" name="special" value="false" />';
+		}
+	break;
+}
+
+?>
+<br/>
 <p>
 <input type="button" value="G" class="gras form_retirer" onclick="balise('texte', '<style:gras>', '</style>');" /> 
 <input type="button" value="I" class="italique form_retirer" onclick="balise('texte', '<style:italique>', '</style>');" /> 
