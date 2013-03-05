@@ -2,15 +2,12 @@
 
 define('SITE_URL', 'http://v5.ellaswar.com');
 define('API_URL', 'http://apiv5.ellaswar.com/index.php');
-//define('API_URL', 'http://serveur.ellaswar.com');
-//define('API_URL', 'http://www.ellaswar.com:8000/');
 define('LANG', 'fr');
-setlocale (LC_TIME, 'fr_FR.utf8', 'fra');
+setlocale (LC_TIME, 'fr_FR');
 date_default_timezone_set('Europe/Paris');
 define('ID_ADMIN', 457);
 define('LVL_MINI_XP', 7);
 define('LVL_MINI_ALLIANCE', 7);
-define('TEMPS_CO', 10);
 $minimum_lvl_ress = array('pierre' => 1,
 													'marbre' => 1,
 													'raisin' => 3,
@@ -61,11 +58,5 @@ $minior = 1; // Minimum d'ors autorisée contre paix
 $maxdrachmes = 5000000; // Maximum de drachmes autorisée contre paix
 $maxor = 10000; // Maximum d'or autorisée contre paix
 $tempsultimatum = 24;
-
-//Renta
-define('DOC_ID', 123395);
-define('SITE_ID', 408523);
-
-define('TEMPS_SORTIE_URGENCE', 864000);
 
 ?>
