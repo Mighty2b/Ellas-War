@@ -69,16 +69,16 @@ foreach($messages as $mps) {
 
 	switch($mps->type_message) {
 		case 3://Admin
-			$color = 'red';
+			$color = 'red;font-weight: bold;';
 			break;
 		case 1://Oracle
-			$color = '#FF9900';
+			$color = '#FF9900;font-weight: bold;';
 			break;
 		case 2://Prophète
-			$color = '#000066';
+			$color = '#000066;font-weight: bold;';
 			break;
 		default:
-			$color = 'black';
+			$color = 'black;';
 			break;
 	}
 	
