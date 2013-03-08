@@ -247,12 +247,7 @@ if(sizeof($temples) > 0) {
 	<br/>
 	<a href="Faveurs"><b>Attaques bonus : </b>
 	<?php
-	if(!empty($bonus->attaque) && $bonus->attaque > $paquet->get_timestamp()) {
-		echo 'Actif jusqu\'au '.print_date($bonus->attaque);
-	}
-	else {
-		echo ' Inactif';
-	}
+		echo $bonus->attaque;
 	?></a>
 	<br/>
 	<a href="Faveurs"><b>Appui d'Éros : </b>
