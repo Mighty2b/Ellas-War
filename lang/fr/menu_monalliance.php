@@ -26,6 +26,10 @@ if(!empty($depart_urgent)) {
 	echo '</div>';
 }
 
+if($paquet->auto_dissolution()) {
+	echo '<div class="interdit centrer" id="sortie_urgence">Votre alliance a fait une demande de dissolution. Celle-ci sera automatiquement dissoute dès que possible.</div>';
+}
+
 ?>
 <div class="centrer ligne80">
 <hr color="white"/>
@@ -116,6 +120,13 @@ elseif($sortie == 3)
 echo '
 &nbsp;
 <a href=\'Dissoudre\' onClick="if (window.confirm(\'Dissoudre votre alliance ?\')) { this.disabled=\'true\'; document.form_attaque.submit(); return false; } else { return false; }"><img src="images/alliance/dissoudre.png" alt="Dissoudre" title="Dissoudre" /></a>
+&nbsp;';
+}
+elseif($sortie == 4)
+{
+echo '
+&nbsp;
+<a href=\'Dissoudre\' onClick="if (window.confirm(\'Demander la dissolution de votre alliance ?\')) { this.disabled=\'true\'; document.form_attaque.submit(); return false; } else { return false; }"><img src="images/alliance/dissoudre.png" alt="Dissoudre" title="Dissoudre" /></a>
 &nbsp;';
 }
 ?>

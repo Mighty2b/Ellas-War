@@ -703,6 +703,15 @@ class EwPaquet {
   function nb_fil() {
   	return $this->reponse->joueur->nb_fil;
   }
+  
+  function auto_dissolution() {
+  	if($this->reponse->joueur->alliance->dissolution_auto == 1) {
+  		return true;
+  	}
+  	else {
+  		return false;
+  	}
+  }
 }
 
 ?>
