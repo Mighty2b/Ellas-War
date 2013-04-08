@@ -7,8 +7,8 @@ if(empty($_GET['var1'])) {
 $paquet = new EwPaquet('profils_alliance', array($_GET['var1']));
 $all = $paquet -> getRetour();
 
-if(empty($all)) {
-	redirect();
+if(empty($all) or is_numeric($all)) {
+	redirect('allianceexistepas');
 }
 
 ?>

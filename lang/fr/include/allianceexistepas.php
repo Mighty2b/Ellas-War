@@ -1,0 +1,1 @@
+<div class="interdit centrer"><br/><br/>Cette alliance n'existe pas, l'alliance que vous cherchez a peut-être été dissoute.</div>
