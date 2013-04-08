@@ -22,6 +22,7 @@ $mon_alliance  = $paquet->getinfoalliance();
 $liste_attente = $paquet->getRetour(4);
 $sortie        = $paquet->getRetour(5);
 $depart_urgent = $paquet->depart_urgent();
+$demande_ress  = $paquet->getRetour(6);
 
 $nb_archives = $paquet->getRetour();
 $nb_pages = ceil($nb_archives/$nb_archives_par_page);

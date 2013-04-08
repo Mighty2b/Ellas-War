@@ -65,9 +65,16 @@ if($mon_alliance -> nb_membre > 1) {
 
 echo '&nbsp;
 <a href="Cotisations"><img src="images/alliance/cotisations.png" alt="Cotisations" title="Cotisations" /></a>
-&nbsp;&nbsp;
-<a href="Coffre"><img src="images/alliance/coffre.png" alt="Coffre de l\'Alliance" title="Coffre de l\'alliance" /></a>
-&nbsp;
+&nbsp;&nbsp;';
+
+if(!empty($demande_ress) && $demande_ress > 0) {
+	echo '<a href="Coffre"><img src="images/alliance/coffre2.png" alt="Coffre de l\'Alliance" title="Coffre de l\'alliance" /></a>';
+}
+else {
+	echo '<a href="Coffre"><img src="images/alliance/coffre.png" alt="Coffre de l\'Alliance" title="Coffre de l\'alliance" /></a>';
+}
+
+echo '&nbsp;
 &nbsp;
 <a href="Demande"><img src="images/alliance/task_notes.png" alt="Demande de ressources" title="Demande de ressources" /></a>
 &nbsp;';

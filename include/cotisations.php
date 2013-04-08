@@ -38,6 +38,7 @@ $mon_alliance  = $info;
 $do = $paquet->getRetour();
 $liste_attente = $paquet->getRetour(4);
 $sortie        = $paquet->getRetour(5);
+$demande_ress  = $paquet->getRetour(6);
 
 if(empty($id_alliance)) {
 	redirect();
