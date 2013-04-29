@@ -595,6 +595,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 238: $erreur = 'Vous devez envoyer des unités pour réaliser cette quête.';
 		break;
+	case 239: $erreur = 'Vous ne pouvez pas vous remettre en pause après une sortie de pause volontaire';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
