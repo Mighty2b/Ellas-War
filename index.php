@@ -185,6 +185,8 @@ if($paquet->get_statu() == 1) {
 			case 'faveurerreur':
 			case 'faveurvalide':
 			case 'valide':
+			case 'actualites':
+			case 'breves':
 				include('lang/'.LANG.'/menu_cite.php');
 			break;
 			

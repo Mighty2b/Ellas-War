@@ -332,7 +332,7 @@ elseif($paquet->nb_fil() == 0) {
 <div class="cadre_info">
 	<div class="cadre_info_haut"></div>
 	<div class="cadre_info_centre"><div class="cadre_info_interieur" id="cadre_info_actu">
-	<div class="ligne centrer"><a href="http://forums.ellaswar.com/" class="titre">Actualités</a></div>
+	<div class="ligne centrer"><a href="actualites" class="titre">Actualités</a></div>
 	<div class="ligne">
 <?php
 
@@ -350,7 +350,7 @@ if(!empty($dernieres_news)) {
 <div class="cadre_info">
 	<div class="cadre_info_haut"></div>
 	<div class="cadre_info_centre"><div class="cadre_info_interieur" id="cadre_info_breves">
-	<div class="titre">Brèves</div>
+	<div class="ligne centrer"><a href="breves" class="titre">Brèves</a></div>
 	<div class="ligne">
 <?php
 

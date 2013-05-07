@@ -11,6 +11,6 @@ $autorise = array(
 	'profilsjoueur', 'profilsalliance', 'membrealliance', 
 	'joueursconnectes', 'erreur', 'permalien', 'actualites', 'soutien', 
 	'teamspeak', 'allianceexistepas', 'retour', 'jeu', 'animations', 
-	'tour_de_force');
+	'tour_de_force', 'breves');
 
 ?>
