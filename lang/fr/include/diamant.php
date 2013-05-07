@@ -7,7 +7,7 @@ if(empty($info_perso->depuis)) {
 			 '</a> qui a actuellement le diamant.<br/><br/><br/><br/>';
 }
 else {
-	echo 'Vous avez le diamant depuis le '.date('d/m').'.';
+	echo 'Vous avez le diamant depuis le '.date('d/m', $info_perso->depuis).'.';
 }
 
 if(!empty($temps_perso)) {

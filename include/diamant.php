@@ -12,6 +12,11 @@ $temps_perso=$info_perso->temps;
 //Temps en secondes durant lequel mon alliance a eu le diamant
 $temps_alli  = $paquet->getRetour(3);
 
+if(!empty($info_perso->depuis)) {
+	$temps_alli += ($paquet->get_timestamp()-$info_perso->depuis);
+	$temps_perso += ($paquet->get_timestamp()-$info_perso->depuis);
+}
+
 if(!empty($temps_perso)) {
 	//Heure, minutes, jours
 	$tp = array(0,0,0);
