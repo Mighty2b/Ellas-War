@@ -84,5 +84,20 @@ if(!empty($temps_alli)) {
 	}
 }
 
-?>
+echo '</div>
+<div class="centrer">
+	<h2>La semaine dernière</h2>
+	
+	<br/>
+	<b>Dernier possesseur du diamant : </b> 
+	<a href="profilsjoueur-'.$last_player->joueur.'">'.$last_player->login.'</a>
+	<br/>
+	<b>Joueur le plus combatif : </b> 
+	<a href="profilsjoueur-'.$total_player->joueur.'">'.$total_player->login.'</a>
+	<br/>
+	<b>Alliance la plus combative : </b> 
+	<a href="profilsalliance-'.$total_alli->id.'">'.$total_alli->nom.'</a>
 </div>
+';
+
+?>

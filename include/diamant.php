@@ -41,6 +41,10 @@ if(!empty($temps_alli)) {
 	//$temps_perso -= ($tp[0]*60);
 }
 
+$last_player  = $paquet->getRetour(4);
+$total_player = $paquet->getRetour(5);
+$total_alli   = $paquet->getRetour(6);
+
 include('lang/'.LANG.'/include/diamant.php');
 
 ?>
