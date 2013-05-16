@@ -8,10 +8,9 @@ $rep = $paquet->getRetour();
 
 if(!empty($rep)) {
 	foreach($rep as $j) {
-		echo '<br/>
-					<b><a href="'.trad_to_page('profilsjoueur').'-'.$j->id.'"
+		echo '<b><a href="'.trad_to_page('profilsjoueur').'-'.$j->id.'"
 								target="_blank"
-								'.($j->admin?'class="erreur"':'').'>'.$j->login.'</a></b>';
+								'.($j->admin?'class="erreur"':'').'>'.$j->login.'</a></b><br/>';
 	}
 }
 
