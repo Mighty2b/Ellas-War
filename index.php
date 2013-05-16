@@ -258,6 +258,7 @@ if($paquet->get_statu() == 1) {
 			case 'listebataillesnavales':
 			case 'creerunebataillenavale':
 			case 'partie':
+			case 'chat':
 				include('lang/'.LANG.'/menu_extra.php');
 			break;
 			
