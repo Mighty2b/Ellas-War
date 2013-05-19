@@ -3,7 +3,8 @@
 $paquet->display();
 
 ?>
-<div class="ligne80 justifier">Les parties privées sont créées directement par les chefs des cités. Elles vous permettent de choisir précisément vos adversaires et de tester vos stratégies. Ces parties ne comptent pas dans vos statistiques mais vous pouvez en avoir jusqu'à 4 simultanément et la récompense quant à elle est symbolique.</div>
+<div class="ligne80 justifier">Les parties privées sont créées directement par les chefs des cités. Elles vous permettent de choisir précisément vos adversaires et de tester vos stratégies. 
+Ces parties ne comptent pas dans vos statistiques mais vous pouvez en avoir jusqu'à 4 simultanément et la récompense est de 80% du prix d'entrée payé par l'ensemble des joueurs de la partie.</div>
 <div class="ligne80 centrer">
 <br/>
 <form action='#' method='post'>
