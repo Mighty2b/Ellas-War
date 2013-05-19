@@ -16,13 +16,15 @@ else {
 			<td>&nbsp;Titre&nbsp;</td> 
 			<td>&nbsp;Créateur&nbsp;</td> 
 			<td>&nbsp;Places&nbsp;</td> 
+			<td>&nbsp;Prix d\'entrée&nbsp;</td>
 			<td>&nbsp;&nbsp;</td> </tr>';
 
 	foreach($liste as $do) {
 		echo '<tr> 
-				<td>&nbsp;'.$do->titre.'&nbsp;</td> 
+				<td class="gauche">&nbsp;'.$do->titre.'&nbsp;</td> 
 				<td>&nbsp;'.$do->createur.'&nbsp;</td> 
-				<td>&nbsp;'.$do->places.'/8&nbsp;</td>';
+				<td>&nbsp;'.$do->places.'/8&nbsp;</td>
+		        <td>&nbsp;'.nbf($do->prime).' '.imress('drachme').'&nbsp;</td>';
 
 		if(empty($do->id)) {
 			echo '<td>&nbsp;&nbsp;</td> </tr>';

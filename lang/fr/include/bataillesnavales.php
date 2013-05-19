@@ -11,10 +11,13 @@ Bienvenue sur les batailles navales, affrontez d'autres joueurs, mettez au point
 <div class="ligne">
 <br/><br/>
 <center>
-<table><tr><td>
-<b>Partie publique</b></td><td width="100px"></td><td>
-<b>Parties Privées</b>
-</td></tr><tr><td>
+<table>
+<tr>
+<td><b>Partie publique</b></td>
+<td width="100px"></td>
+<td><b>Parties Privées</b></td>
+</tr>
+<tr><td>
 <?php
 
 if(empty($places)) {
@@ -27,7 +30,10 @@ if($paquet->getRetour(3) == true) {
 else {
 	echo 'En attente';
 } 
-echo '<br/>Actuellement : '.$places; ?>/8</td><td></td><td>
+echo '<br/>Actuellement : '.$places.'/8<br/>
+Prix d\'entrée : '.nbf($paquet->getRetour(4)). ' '.imress('drachme');
+?>
+</td><td></td><td>
 <a href="Liste Batailles Navales">Voir les parties privées</a><br/>
 <a href="Creer Une Bataille Navale">Créer une partie privée</a>
 </td></tr></table>

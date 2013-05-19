@@ -7,10 +7,12 @@ $paquet->display();
 <div class="ligne80 centrer">
 <br/>
 <form action='#' method='post'>
-<b>Description de la partie que vous allez créer</b><br/>
-<input type='text' name='description' maxlength='50' size='50' class="form_retirer">
-<br/><br/>
-<div class="bouton_classique"><input class="bouton_classique2" type="submit" name="valider" value="VALIDER" /></div>
+	<b>Description de la partie que vous allez créer</b><br/>
+	<input type='text' name='description' maxlength='50' size='50' class="form_retirer"><br/><br/>
+	<b>Prix d'entrée</b><br/>
+	<input type="number" name="prime" required="required" class="form_retirer" size="15" > <?php echo imress('drachme'); ?>
+	<br/><br/>
+	<div class="bouton_classique"><input class="bouton_classique2" type="submit" name="valider" value="VALIDER" /></div>
 </form>
 
 <br/>
