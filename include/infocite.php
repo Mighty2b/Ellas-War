@@ -206,17 +206,31 @@ if(sizeof($temples) > 0) {
 
 	echo '<table width="100%">
 	<tr>
-	<td colspan="2">
+	<td>
 	<a href="arbredesdieux"><b>Arbre des dieux :</b> '.$points_arbre.' points ';
 	if($points_dispo > 0) {
 		if($points_dispo > 1) {
-			echo ' ('.$points_dispo.' disponibles)';
+			echo ' <span class="mini_texte">('.$points_dispo.' disponibles)</span>';
 		}
 		else {
-			echo ' ('.$points_dispo.' disponible)';
+			echo ' <span class="mini_texte">('.$points_dispo.' disponible)</span>';
 		}
 	}
-	echo '</a></td></tr>';
+	
+	$nb_bonus = sizeof($paquet->get_bonus_connexion());
+	
+	echo '</a></td><td>
+	<a href="Bonus"><b>Bonus :</b>  ';
+	
+	if($nb_bonus >= 3) {
+		echo '<span class="erreur">'.$nb_bonus.'</span>';
+	}
+	else {
+		echo $nb_bonus;
+	}
+	
+	echo '</a>
+	</td></tr>';
 	if($paquet->getlvl() >= 10) {
 		echo '<tr>
 		<td width="50%"><a href="AutelDesDieux"><b>Autels des dieux : </b> '.$niveaux_autels.' '.($niveaux_autels>1?'niveaux':'niveau').'</a></td>
