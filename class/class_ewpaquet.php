@@ -107,42 +107,15 @@ class EwPaquet {
 	}
 	
 	function getRetour($n=0) {
-		switch($n) {
-			case 2:
-				return $this->reponse->retour2;
-			break;
-			
-			case 3:
-				return $this->reponse->retour3;
-			break;
-			
-			case 4:
-				return $this->reponse->retour4;
-			break;
-			
-			case 5:
-				return $this->reponse->retour5;
-			break;
-			
-			case 6:
-				return $this->reponse->retour6;
-			break;
-			
-			case 7:
-				return $this->reponse->retour7;
-			break;
-					
-			case 8:
-				return $this->reponse->retour8;
-			break;
-			
-			case 9:
-				return $this->reponse->retour9;
-			break;
-			
-			default:
-				return $this->reponse->retour;
-			break;
+		if(!($n >= 1) or !(is_int($n))) {
+			$n = 1;
+		}
+
+		if(isset($this->reponse->retour->{$n})) {
+			return $this->reponse->retour->{$n};
+		}
+		else {
+			return '';
 		}
 	}
 	
