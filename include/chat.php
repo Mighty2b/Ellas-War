@@ -26,9 +26,11 @@ include('lang/'.LANG.'/include/chat.php');
 
 echo '
 <script type="text/javascript">
-refresh_chat();
-joueurs_chat();
-setInterval(\'refresh_chat()\',1000);
+$(function() {
+	$("#texte_chat").focus();
+	refresh_chat(1);
+});
+setInterval(\'refresh_chat(0)\',1000);
 setInterval(\'joueurs_chat()\',3000);
 $("#texte_chat").keyup(function(e) {
   if(e.keyCode == 13) {

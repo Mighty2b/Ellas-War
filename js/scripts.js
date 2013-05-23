@@ -664,10 +664,10 @@ function envoyer_chat() {
   }
 }
 
-function refresh_chat() {
+function refresh_chat(clean) {
    $.ajax({
      type: "GET",
-     url: "form/refresh_chat.php",
+     url: "form/refresh_chat.php?clean="+clean,
      success: function(msg){
        if(msg != '') {
          $("#corps_chat").html(msg);

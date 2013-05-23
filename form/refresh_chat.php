@@ -2,7 +2,7 @@
 
 include('../header.php');
 
-$paquet = new EwPaquet('refresh_chat');
+$paquet = new EwPaquet('refresh_chat', array($_GET['clean']));
 
 $rep = $paquet->getRetour();
 
