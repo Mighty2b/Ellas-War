@@ -73,7 +73,7 @@ $unites = array(
 'harpie' => array('nom' => 'Harpie', 'noms' => 'Harpies',
 									'aff' => 3, 'img' => 'harpie'),
 
-'erinyes' => array('nom' => 'Érinye', 'noms' => 'Érinyes',
+'satyre' => array('nom' => 'Satyre', 'noms' => 'Satyres',
 									 'aff' => 3),
 
 'griffon' => array('nom' => 'Griffon', 'noms' => 'Griffons',

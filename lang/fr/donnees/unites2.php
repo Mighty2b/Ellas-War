@@ -44,7 +44,7 @@ $txt_description_unites = array(
 
 'harpie' => 'Ce sont les divinités de la dévastation et de la vengeance divine. Plus rapides que le vent, invulnérables, caquetantes, elles dévorent tout sur leur passage, ne laissant que leurs excréments. Elles ont un corps ailé d\'oiseau et une tête de femme.',
 
-'erinyes' => 'Divinités anciennes aux grandes ailes, aux cheveux de serpents, aux yeux ensanglantés, elles possèdent de grands fouets et torches. Elles les utilisent pour punir les crimes et tourmenter ceux qui font le mal.',
+'satyre' => 'Divinité terrestre, compagnon de Dionysos, représenté avec un corps d\'homme, des cornes et des membres inférieurs de bouc, réputé pour son comportement libidineux.',
 
 'griffon' => 'Le griffon possède le corps d`un aigle greffé sur l\'arrière d\'un lion et muni d\'oreilles de cheval. Malgré sont corps imposant il peut voler et grâce à leurs attaques en piquet faire de terribles ravages chez vos ennemis.',
 
