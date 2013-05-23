@@ -1,10 +1,10 @@
 <?php
 
 $paquet = new EwPaquet('get_joueurs_co');
-$reponse = $paquet->getReponse();
+
 echo '<h1>'.$txt_titre_co.'</h1><br/><br/>
 		<div class="ligne centrer gras">';
-echo construct_phrase('joueurs_co', sizeof($reponse->retour));
+echo construct_phrase('joueurs_co', $paquet->getRetour(2));
 echo '</div><br/><br/><br/>
 <table class="centrer_tableau">
 	<tr class=\'titre_tab\'>
@@ -14,7 +14,7 @@ echo '</div><br/><br/><br/>
 		<td style="min-width:100px;" class="gauche">'.$txt_titre_alliance.'</td>
 	</tr>';
 
-foreach($reponse->retour as $do) {
+foreach($paquet->getRetour() as $do) {
 	echo'<tr>
 	<td>&nbsp;<a href=\'/'.trad_to_page('profilsjoueur').'-'.$do->id.'\'>'.$do->login.'</a> ';
 	
