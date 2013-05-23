@@ -597,6 +597,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 239: $erreur = 'Vous ne pouvez pas vous remettre en pause après une sortie de pause volontaire';
 		break;
+	case 240: $erreur = 'Le prix d\'entrée d\'une bataille navale privée doit être de minimum '.nbf(50000).' '.imress('drachme').'.';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
