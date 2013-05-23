@@ -89,6 +89,13 @@
   margin-top:10px;
 }
 
+#bouton_chat {
+  position:relative;
+  float:left;
+  margin-left:33px;
+  margin-top:2px;
+}
+
 #plan_site {
   position:relative;
   float:left;

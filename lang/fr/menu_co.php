@@ -29,3 +29,4 @@ else {
 <div id="bouton_extra"><a href="InformationsPersonnelles"><img src="design/co/extra.png" alt="Extra" title="Extra" 
 onmouseover="menu_visible('menu_haut_extra');"/></a></div>
 <div id="bouton_help"><a href="http://wiki.ellaswar.com" target="_blank"><img src="images/joueurs/help.png" alt="Aide" title="Aide" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
+<div id="bouton_chat"><a href="Chat"><img src="images/joueurs/bulle.png" alt="Accéder au chat du jeu"  title="Accéder au chat du jeu" onmouseover="menu_visible('menu_haut_bouchon');"/></a></div>
