@@ -737,3 +737,14 @@ function even_maj(event) {
 		}
 	});
 }
+
+function signaler_chat(joueur, temps) {
+	$.ajax({
+		type: "GET",
+		url: "form/signaler_chat.php?joueur="+joueur+"&temps="+temps,
+        success: function(msg){
+        	alert('Le message vient d\'être signalé');
+        	refresh_chat(1);
+        }
+   });
+}

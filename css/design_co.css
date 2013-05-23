@@ -96,6 +96,10 @@
   margin-top:2px;
 }
 
+.chat_signaler {
+  cursor : pointer;
+}
+
 #plan_site {
   position:relative;
   float:left;
