@@ -748,3 +748,13 @@ function signaler_chat(joueur, temps) {
         }
    });
 }
+
+function supprimer_chat(joueur, temps) {
+	$.ajax({
+		type: "GET",
+		url: "form/supprimer_chat.php?joueur="+joueur+"&temps="+temps,
+        success: function(msg){
+        	refresh_chat(1);
+        }
+   });
+}

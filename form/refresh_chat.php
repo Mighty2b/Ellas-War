@@ -14,7 +14,17 @@ if(!empty($rep)) {
 		        	   onclick="signaler_chat(\''.$texte->joueur.'\', \''.$texte->temps.'\');"
 			           class="chat_signaler" />';
 		}
-		echo '<b>'.$texte->login.'</b> : '.$texte->texte.'<br/>';
+		echo '<b>'.$texte->login.'</b> : '.$texte->texte;
+		
+		if($paquet->getlvl2() >= 2) {
+			echo ' <img src="images/joueurs/supprimer_mp.png" 
+			            alt="Supprimer" 
+			            title="Supprimer" 
+			            class="chat_signaler"
+			            onclick="supprimer_chat(\''.$texte->joueur.'\', \''.$texte->temps.'\');" />';
+		}
+		
+		echo '<br/>';
 	}
 }
 
