@@ -3,15 +3,20 @@
 echo '﻿<h1>Vendre</h1>';
 
 $paquet->display();
-
+/*
 echo '
 	<p class="ligne80 justifier">Si vous vendez des ressources en petites quantités celles-ci apparaîtront sur le marché des petits lots.
 		Au contraire si vous vendez des grosses quantités, votre lot apparaîtra dans le marché des gros lots.
 		Lors d\'une vente vous avez deux choix pour le prix de vos ressources.
-		Le prix par taux représente le prix d\'une unité de ressource de votre lot, le prix total par contre sera le prix pour le lot en entier.</p>
+		Le prix par taux représente le prix d\'une unité de ressource de votre lot, le prix total par contre sera le prix pour le lot en entier.</p>';
+*/
+echo '
+<p class="ligne80 justifier">Lorsque vous vendez des lots, ceuxi-ci sont classés en deux catégories. 
+Les deux types de lots sont affiché sur le même marche mais une licence de grand commerçant est obligatoire pour vendre des gros lots.
+Lors d\'une vente vous avez deux choix pour le prix de vos ressources.
+Le prix par taux représente le prix d\'une unité de ressource de votre lot, le prix total par contre sera le prix pour le lot en entier.</p>';
 
-	<p class="centrer ligne">Vous pouvez en échange de 5% du prix, vendre de façon anonyme.</p>
-';
+echo '<p class="centrer ligne">Vous pouvez en échange de 5% du prix, vendre de façon anonyme.</p>';
   $paquet -> is_active_bonus_commerce();
   
 echo '
