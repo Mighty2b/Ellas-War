@@ -5,7 +5,7 @@
 	<a href="http://www.hit-parade.com/hp.asp?site=a501436" target="_top"><img src="http://loga.hit-parade.com/logohp1.gif?site=a501436" title="Hit-Parade" width="77" height="15" alt="hit-parade" /></a>
 	<a title=" Site déposé sur CopyrightFrance.com " href="http://Z643185.copyrightfrance.com" target="_blank"><img src="lang/fr/images/Z643187-2.gif" alt=" CopyrightFrance.com " height="19" width="236" /></a>
 	&nbsp;&nbsp;
-	Ellàs War 4.5, Design by Goco & Code by <a href="http://www.paranoiaque.fr" target="_blank">Mighty</a>
+	Ellàs War 4.6, Design by Goco & Code by <a href="http://www.paranoiaque.fr" target="_blank">Mighty</a>
 	<br/>
   <table class="centrer_tableau"><tr><td>
 <?php
