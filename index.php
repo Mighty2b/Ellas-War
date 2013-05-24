@@ -208,6 +208,7 @@ if($paquet->get_statu() == 1) {
 			case 'donnerunefaveur':
 			case 'marcheaudetails':
 			case 'marchedegros':
+			case 'marche':
 			case 'vendre':
 			case 'licences':
 			case 'archivecommerce':
