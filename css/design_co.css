@@ -423,18 +423,32 @@
   margin-top:7px;
 }
 
-#menu_haut_marche {
+/*#menu_haut_marche {
   background-image:url('../design/co/menu_haut_marche.png');
   height:28px;
   width:765px;
   margin-left: 173px;
+}*/
+
+#menu_haut_marche {
+  background-image:url('../design/co/menu_haut_marche2.png');
+  height:28px;
+  width:574px;
+  margin-left: 364px;
 }
 
 #bouton_haut_donner {
   position:relative;
   float:left;
-  margin-left:19px;
-  margin-top:7px;
+  margin-left:12px;
+  margin-top:0px;
+}
+
+#bouton_haut_marche {
+  position:relative;
+  float:left;
+  margin-left:9px;
+  margin-top:0px;
 }
 
 #bouton_haut_details {
@@ -454,7 +468,7 @@
 #bouton_haut_vendre {
   position:relative;
   float:left;
-  margin-left:95px;
+  margin-left:88px;
   margin-top:7px;
 }
 
