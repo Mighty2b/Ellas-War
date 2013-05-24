@@ -17,7 +17,7 @@ else {
 }
 
 echo '<div class="gauche_batiment">
-<img src="images/bat/'.$batiments[$bat]['img'].'.png"
+<img src="/images/bat/'.$batiments[$bat]['img'].'.png"
 		 alt="'.$batiments[$bat]['nom'].'"
 		 title="'.$batiments[$bat]['nom'].'" /></div>
 <div class="droite_batiment">';

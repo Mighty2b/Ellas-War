@@ -39,12 +39,12 @@ if(!empty($value -> logement)) {
 
 echo '<div class="gauche_batiment">';
 if($value->type_att == 9) {
-	echo '<img src="images/bat/'.$unites[$bat]['img'].'.png"
+	echo '<img src="/images/bat/'.$unites[$bat]['img'].'.png"
 			 			 alt="'.$unites[$bat]['nom'].'"
 			 			 title="'.$unites[$bat]['nom'].'" /></div>';
 }
 else {
-	echo '<img src="images/unite/'.$unites[$bat]['img'].'.png"
+	echo '<img src="/images/unite/'.$unites[$bat]['img'].'.png"
 			 			 alt="'.$unites[$bat]['nom'].'"
 			 			 title="'.$unites[$bat]['nom'].'" />';
 }
