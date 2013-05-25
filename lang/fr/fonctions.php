@@ -599,6 +599,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 240: $erreur = 'Le prix d\'entrée d\'une bataille navale privée doit être de minimum '.nbf(50000).' '.imress('drachme').'.';
 		break;
+	case 241: $erreur = 'Vous devez attendre quelques secondes avant de pouvoir espionner de nouveau ce joueur';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
