@@ -685,6 +685,10 @@ class EwPaquet {
   		return false;
   	}
   }
+  
+  function possible_annuler_bu() {
+  	return $this->reponse->joueur->depart_force;
+  }
 }
 
 ?>
