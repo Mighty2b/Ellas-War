@@ -35,8 +35,10 @@
 	<g:plusone annotation="inline"></g:plusone>
 </div>
 
-<div style="position:absolute;float:left;height:50px;margin-left:510px;margin-top:20px;">
+<div style="position:absolute;float:left;height:50px;margin-left:505px;margin-top:20px;">
 	<a href="https://twitter.com/Ellaswar" target="_blank"><img src="images/logo-twitter.png" alt="S'abonner à Ellaswar sur Twitter" width="36" height="36"/></a>
+	&nbsp;&nbsp;&nbsp;
+	<a href="https://github.com/Mighty2b/Ellas-War" target="_blank"><img src="images/github.png" alt="Ellàs War sur Github" title="Ellàs War sur Github" /></a>
 </div>	
 	
 	</div>
