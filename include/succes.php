@@ -36,7 +36,16 @@ foreach($liste as $hf) {
   echo '<div class="font_hf" >
   <div class="titre_hf">'.$hf['info']['nom'].'</div>
   <div class="txt_hf">'.$hf['info']['description'].'</div>
-  <div class="pt_hf">'.(($_GET['var1'] == 7)?'':$hf['nb']).'</div>
+  <div class="pt_hf">';
+  	if($_GET['var1'] != 7 && !empty($hf['max'])) {
+  		if($hf['nb'] < $hf['max']) {
+  			echo $hf['nb'];
+  		}
+  		else {
+  			echo '<font color="red">'.$hf['nb'].'</font>';
+  		}
+  	}
+  	echo '</div>
   </div>';
 }
 
