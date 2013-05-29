@@ -34,7 +34,7 @@ echo '<h1>Sanctuaires</h1>';
 					echo '<div class="ligne">
 								<a onclick="javascript:constituer_groupe('.$sanctuaire->id.');"
 									 class="details_ress img_temple">Continuer votre sanctuaire</a>
-								</div></div>';
+								</div></p>';
 				}
 				else {
 					echo '<div class="ligne">
