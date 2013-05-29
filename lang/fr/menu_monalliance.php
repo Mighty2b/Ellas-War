@@ -106,7 +106,9 @@ if($mon_alliance -> level >= 2) {
 }
 
 ?>
-
+&nbsp;
+<a href="sanctuaires"><img src="images/alliance/monstres.gif" alt="Sanctuaires" title="Sanctuaires" /></a>
+&nbsp;
 &nbsp;
 <a href="Archives_alliance"><img src="images/alliance/archives.png" alt="Archives" title="Archives" /></a>
 &nbsp;
