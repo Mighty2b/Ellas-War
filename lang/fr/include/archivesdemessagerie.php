@@ -1,7 +1,7 @@
 <div id="recherche_mp" style="position:absolute;margin-top:25px;margin-left:619px;background-color:#E8E5D4;padding:2px;display:none;border:1px dotted black;">
 	<form method="post" action="#">
 		<input type="text" name="recherche" class="form"/><br/>
-		<input type="image" name="Rechercher" src="fr/images/boutons/rechercher.png" class="form_co6" style="margin-top:4px;"/>
+		<div class="bouton_classique"><input type="submit" name="rechercher" value="Rechercher" class="bouton_classique2"></div>
 	</form>
 </div>
 <?php

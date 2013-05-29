@@ -103,13 +103,12 @@ if($info->unite1 > 0 or $info->unite2 > 0 or $info->unite3 > 0 or $info->unite4 
 	foreach($info->possible as $case) {
 			echo '<option value="'.$case->x.';'.$case->y.'">&nbsp;'.$case->x.';'.$case->y.'&nbsp;</option>';
 	}
-	echo '</select><br/><br/>
+	echo '</select><br/><br/><div class="bouton_classique">
 <div class="bouton_classique"><input class="bouton_classique2" 
-																		 type="button" 
-																		 value="Envoyer" 
-																		 type="image" 
-																		 src="fr/images/boutons/envoyer.png" 
-																		 onclick="deplacer_unite('.$_GET['btn'].', '.$info->id_x.', '.$info->id_y.');"/></div>
+                                     type="button" 
+                                     value="Envoyer" 
+                                     name="envoyer" 
+                                     onclick="deplacer_unite('.$_GET['btn'].', '.$info->id_x.', '.$info->id_y.');"/></div>
 	</form>
 	</div>';
 	}
@@ -130,7 +129,7 @@ if($info->unite1 > 0 or $info->unite2 > 0 or $info->unite3 > 0 or $info->unite4 
 			<td class="centrer" valign="middle">	
 					<input id="engager_unite'.$i.'" type=\'text\' name=\'unite'.$i.'\' size=\'5\' maxlength=\'5\' class="form_retirer" placeholder="0" />
 			</td><td>
-<div class="bouton_classique"><input class="bouton_classique2" type="button" value="Engager" type="image" src="fr/images/boutons/envoyer.png" onclick="achat_unite('.$_GET['btn'].', '.$info->id_x.', '.$info->id_y.', \''.$case.'\');" /></div>
+<div class="bouton_classique"><input class="bouton_classique2" type="button" value="Engager" onclick="achat_unite('.$_GET['btn'].', '.$info->id_x.', '.$info->id_y.', \''.$case.'\');" /></div>
 				
 			</td>
 			</tr></form>';

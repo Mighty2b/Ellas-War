@@ -13,7 +13,7 @@ if($oracle == true) {
 }
 
 echo '<br/>
-<div class="bouton_classique"><input class="bouton_classique2" type="submit" value="Envoyer" type="image" src="fr/images/boutons/envoyer.png" class="form_bat4" /></div><br/><br/>
+<div class="bouton_classique"><input class="bouton_classique2" value="Envoyer" name="envoyer" type="submit" /></div><br/><br/>
 </form></div>';
 
 }

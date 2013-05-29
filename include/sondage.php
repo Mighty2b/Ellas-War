@@ -32,7 +32,7 @@ foreach($sondages as $k => $sondage) {
 		}
 	
 		echo '<br/><br/>
-		<input type="image" src="fr/images/boutons/envoyer.png" title="Envoyer" />
+		<div class="bouton_classique"><input type="submit" name="envoyer" value="Envoyer" class="bouton_classique2"></div>
 		</div>
 		</form>';
 	}
