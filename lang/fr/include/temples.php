@@ -134,7 +134,7 @@ elseif($paquet -> possible_temple3() && (empty($_GET['var1']) or ($_GET['var1'] 
 <table width='90%'>
 <tr>
 <td class='titre_tab' valign="top">&nbsp;Artémis&nbsp;</td>
-<td align='justify'>Artémis arpentera les bois et aidera vos bûcherons dans leur tâche. Elles vous prêtera aussi ses féroces amazones pour aller au combat.<br/><br/>
+<td align='justify'>Artémis arpentera les bois et aidera vos bûcherons dans leur tâche. Elle vous prêtera aussi ses féroces amazones pour aller au combat.<br/><br/>
 </td>
 <td valign="top">
 <a href="Temples-artemis" class="centre_armee gras" >Bâtir</a>
