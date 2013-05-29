@@ -19,10 +19,10 @@ echo '<h1>Sanctuaires</h1>';
 	
 	foreach($liste_sanctuaires as $sanctuaire) {
 		if(sizeof($sanctuaire->mb) > 0) {
-			echo '<div class="gauche"><b>'.$sanctuaire->nom.'</b><br/>';
-			echo stripslashes($sanctuaire->description).'<br/><br/>';
+			echo '<p class="gauche"><b>'.$sanctuaire->nom.'</b><br/>';
+			echo stripslashes($sanctuaire->description).'<br/>';
 		
-			echo '<b>Ennemis :</b><br/>
+			echo '<b>Ennemis :</b>
 						<ul>';
 			foreach($sanctuaire->mb as $membre) {
 				echo '<li>'.$membre->nom.'</li>';
@@ -39,14 +39,14 @@ echo '<h1>Sanctuaires</h1>';
 				else {
 					echo '<div class="ligne">
 								Un sanctuaire est déjà en cours
-								</div></div>';
+								</div></p>';
 				}
 			}
 			else {
 				echo '<div class="ligne">
 							<a onclick="javascript:constituer_groupe('.$sanctuaire->id.');"
 								 class="details_ress img_temple">Constituer un groupe</a>
-							</div></div>';
+							</div></p>';
 			}
 		}
 	}
