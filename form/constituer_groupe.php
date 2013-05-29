@@ -73,16 +73,16 @@ if(!empty($_GET['id'])) {
 		echo '<div id="sanctuaire_menu_droite">';
 	
 		if($info_groupe->etape == 0) {
-			echo '<h1>'.$info_groupe->nom.'</h1>';
+			echo '<h1>'.stripslashes($info_groupe->nom).'</h1>';
 			echo stripslashes($info_groupe->description);
 		}
 		else {
-			echo '<h1>'.$info_groupe->mnom.'</h1>';
+			echo '<h1>'.stripslashes($info_groupe->mnom).'</h1>';
 			echo stripslashes($info_groupe->mdescription);
 		}
 	}
 	else {
-		echo '<h1>'.$info_groupe->nom.'</h1>';
+		echo '<h1>'.stripslashes($info_groupe->nom).'</h1>';
 		echo '<div class="erreur centrer">Vous avez terminé ce sanctuaire';
 	}
 	echo '</div>';

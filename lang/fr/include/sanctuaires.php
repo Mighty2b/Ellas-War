@@ -25,7 +25,7 @@ echo '<h1>Sanctuaires</h1>';
 			echo '<b>Ennemis :</b>
 						<ul>';
 			foreach($sanctuaire->mb as $membre) {
-				echo '<li>'.$membre->nom.'</li>';
+				echo '<li>'.$membre->nom.' (Récompense : '.nbf($membre->recompense*$paquet->getRetour(3)).' '.imress('drachme').')</li>';
 			}
 			echo '</ul>';
 			
