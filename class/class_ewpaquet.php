@@ -252,15 +252,15 @@ class EwPaquet {
 	}
 	
 	function getTresor() {
-		return number_format(round($this->reponse->retour,2), 2, ',', ' ');
+		return number_format(round($this->getRetour(1),2), 2, ',', ' ');
 	}
 	
 	function getTaxes() {
-		return $this->reponse->retour2;
+		return $this->getRetour(2);
 	}
 	
 	function getHistoriqueTresor() {
-		return $this->reponse->retour3;
+		return $this->getRetour(3);
 	}
 
 	function nouveaux_mp() {
