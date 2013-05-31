@@ -1,7 +1,9 @@
 <?php
 
 include('../header.php');
-
+if(empty($_GET['clean'])) {
+	$_GET['clean'] = 0;
+}
 $paquet = new EwPaquet('refresh_chat', array($_GET['clean']));
 
 $rep = $paquet->getRetour();
