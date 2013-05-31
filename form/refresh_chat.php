@@ -11,6 +11,7 @@ if(!empty($rep)) {
 		if(empty($texte->date)) {
 			echo '<img src="images/joueurs/signaler.png" 
 		    	       alt="signaler" 
+			           title="signaler" 
 		        	   onclick="signaler_chat(\''.$texte->joueur.'\', \''.$texte->temps.'\');"
 			           class="chat_signaler" />';
 		}
