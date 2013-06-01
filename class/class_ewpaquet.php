@@ -90,7 +90,10 @@ class EwPaquet {
 		}elseif(!empty($this->reponse->joueur->erreur)) {
 			echo '<br/><div class="erreur centrer">'.erreur($this->reponse->joueur->erreur).'</div>';
 		}
-		$this->reponse->joueur->erreur='';
+		
+		if(!empty($this->reponse) && !empty($this->reponse->joueur)) {
+			$this->reponse->joueur->erreur='';
+		}
 	}
 	
 	function hasErreur() {
