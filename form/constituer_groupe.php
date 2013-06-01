@@ -35,10 +35,10 @@ if(!empty($_GET['id'])) {
 			}
 			
 			if($mb->action == 1) {
-				echo '<img src="images/joueurs/mb_connecter.png" alt="Joueur Connecté" title="Joueur Connecté"/>';
+				echo '<img src="images/joueurs/mb_connecter.png" alt="Joueur prêt" title="Joueur prêt"/>';
 			}
 			else {
-				echo '<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déonnecté" title="Joueur Déonnecté" />';
+				echo '<img src="images/joueurs/mb_deconnecter.png" alt="Joueur non prêt" title="Joueur non prêt" />';
 			}
 	
 			echo '&nbsp;</td></tr>';

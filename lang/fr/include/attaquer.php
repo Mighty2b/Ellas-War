@@ -135,7 +135,7 @@ else {
 			$image='<img src="images/joueurs/mb_connecter.png" alt="Joueur Connecté" title="Joueur Connecté"/>';
 		}
 		else {
-			$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déonnecté" title="Joueur Déonnecté" />';
+			$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déconnecté" title="Joueur Déconnecté" />';
 		}
 		
 		if($i != 0) {

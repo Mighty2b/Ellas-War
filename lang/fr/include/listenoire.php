@@ -7,7 +7,7 @@ if(sizeof($liste_noire) > 0) {
 		if(!empty($do->timestamp))
 			$image='<img src="images/joueurs/mb_connecter.png" alt="Joueur Connecté" />';
 		else
-			$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déonnecté\" />';
+			$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déconnecté\" />';
 		
 		if($do->mode == 1)
 			$statu = 'Ignoré';

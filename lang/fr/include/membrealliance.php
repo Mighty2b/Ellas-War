@@ -18,7 +18,7 @@ foreach ($liste as $do) {
 		$image='<img src="images/joueurs/mb_connecter.png" alt="Joueur Connecté" />';
 	}
 	else {
-		$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déonnecté\" />';
+		$image='<img src="images/joueurs/mb_deconnecter.png" alt="Joueur Déconnecté\" />';
 	}
 	
 	echo '<tr class="tableau_fond'.($i%2).'"><td class="gauche">&nbsp;'.$image.'&nbsp;&nbsp;';

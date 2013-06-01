@@ -30,7 +30,7 @@
 <td>';
 		}
 		else {
-			$image='<img src="images/mb_deconnecter.png" alt="Joueur Déonnecté\" /></td><td>';
+			$image='<img src="images/mb_deconnecter.png" alt="Joueur Déconnecté\" /></td><td>';
 		}
 		
 		switch($do->statu) {
