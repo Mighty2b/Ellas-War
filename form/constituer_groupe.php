@@ -9,7 +9,10 @@ if(!empty($_GET['id'])) {
 	$membre      = $paquet->getRetour();
 	$info_groupe = $paquet->getRetour(2);
 	
-	if($info_groupe->etape == 0 or !empty($info_groupe->mnom)) {
+	if(empty($info_groupe)) {
+		echo '<div class="erreur centrer">Le groupe n\'existe pas, vérifiez que vous êtes bien connecté.';
+	}
+	elseif($info_groupe->etape == 0 or !empty($info_groupe->mnom)) {
 		echo '<div id="erreur_sanctuaire"></div>';
 		
 		echo '<div id="sanctuaire_menu_gauche">';
