@@ -177,7 +177,12 @@ class EwPaquet {
 	}
 	
 	function getstatu() {
-		return $this->reponse->joueur->statu;
+		if(!empty($this->reponse) && !empty($this->reponse->joueur)) {
+			return $this->reponse->joueur->statu;
+		}
+		else {
+			return 0;
+		}
 	}
 	
 	function getfaveur() {
