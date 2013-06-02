@@ -1,13 +1,12 @@
 <?php
 
-define('NB_MEMBRE', 2);
-
 include('../header.php');
 
 if(!empty($_GET['id'])) {
 	$paquet      = new EwPaquet('constituer_groupe', array($_GET['id']));
 	$membre      = $paquet->getRetour();
 	$info_groupe = $paquet->getRetour(2);
+	$nb_membre   = $paquet->getRetour(3);
 	
 	if(empty($info_groupe)) {
 		echo '<div class="erreur centrer">Le groupe n\'existe pas, vérifiez que vous êtes bien connecté.';
@@ -17,7 +16,7 @@ if(!empty($_GET['id'])) {
 		
 		echo '<div id="sanctuaire_menu_gauche">';
 		
-		if(sizeof($membre) >= NB_MEMBRE) {
+		if(sizeof($membre) >= $nb_membre) {
 			echo '<b>Membres du groupe :</b>';
 		}
 		else {
@@ -38,10 +37,10 @@ if(!empty($_GET['id'])) {
 			}
 			
 			if($mb->action == 1) {
-				echo '<img src="images/joueurs/mb_connecter.png" alt="Joueur prêt" title="Joueur prêt"/>';
+				echo '<img src="/images/joueurs/mb_connecter.png" alt="Joueur prêt" title="Joueur prêt"/>';
 			}
 			else {
-				echo '<img src="images/joueurs/mb_deconnecter.png" alt="Joueur non prêt" title="Joueur non prêt" />';
+				echo '<img src="/images/joueurs/mb_deconnecter.png" alt="Joueur non prêt" title="Joueur non prêt" />';
 			}
 	
 			echo '&nbsp;</td></tr>';
@@ -49,8 +48,8 @@ if(!empty($_GET['id'])) {
 		
 		echo '</table><br/><div class="centrer">';
 		
-		if(sizeof($membre) >= NB_MEMBRE) {
-			if($info_groupe->nb_pret >= NB_MEMBRE) {
+		if(sizeof($membre) >= $nb_membre) {
+			if($info_groupe->nb_pret >= $nb_membre) {
 				if($info_groupe->chef == $paquet->getid()) {
 					if($info_groupe->etape == 0) {
 						echo '<div class="bouton_classique"><input id="bouton_continuer_groupe" class="bouton_classique2" type="submit" value="CONTINUER" name="CONTINUER" onclick="javascript:continuer_groupe();"/></div>';
