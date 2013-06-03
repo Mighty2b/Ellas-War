@@ -758,3 +758,15 @@ function supprimer_chat(joueur, temps) {
         }
    });
 }
+
+function sortir_sanctuaire(joueur) {
+	$.ajax({
+		type: "GET",
+		url: "form/sortir_sanctuaire.php?joueur="+joueur,
+        success: function(msg){
+        	if(msg == joueur) {
+        		fermer_pacte();
+        	}
+        }
+   });
+}

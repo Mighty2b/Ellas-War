@@ -43,6 +43,18 @@ if(!empty($_GET['id'])) {
 				echo '<img src="/images/joueurs/mb_deconnecter.png" alt="Joueur non prêt" title="Joueur non prêt" />';
 			}
 	
+			echo '&nbsp;';
+			
+			if($info_groupe->etape == 0 && 
+			   ($mb->id_joueur == $paquet->getid() or $info_groupe->chef == $paquet->getid())) {
+				echo '<img src="/images/joueurs/supprimer_mp.png" 
+				           atl="Sortir du sanctuaire" 
+				           title="Sortir du sanctuaire" 
+				           style="width:10px;"
+				           onclick="sortir_sanctuaire('.$mb->id_joueur.');"
+				           class="chat_signaler" />';
+			}
+			
 			echo '&nbsp;</td></tr>';
 		}
 		
