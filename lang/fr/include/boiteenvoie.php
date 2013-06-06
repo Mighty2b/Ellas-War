@@ -6,7 +6,7 @@
 </div>
 <?php
 
-if(empty($_POST['recherche']) && ($nombre_pages == 0)) {
+if(empty($_POST['recherche']) && ($nombre_pages == 0 or empty($messages))) {
 	echo '<br/><div class="centrer"><b>Vous n\'avez pas de message privé</b></div><br/><br/>';
 }
 else {
