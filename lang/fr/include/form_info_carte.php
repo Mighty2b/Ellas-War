@@ -7,7 +7,7 @@ if(!empty($carte)) {
 	  }
 	
 		$affiche_case = true;
-		echo '<img src="images/btn/oqp_'.$do->couleur.'.png" ';
+		echo '<img src="/images/btn/oqp_'.$do->couleur.'.png" ';
 			
 		if(!empty($do->login)) {
 			echo ' alt="Case de '.$do->login.'" title="Case de '.$do->login.' ('.$do->id_x.';'.$do->id_y.')" ';

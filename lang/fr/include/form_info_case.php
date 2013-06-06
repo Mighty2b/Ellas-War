@@ -21,7 +21,7 @@ if(!empty($info->id_c) && $info->id_c == $paquet->getid()) {
 		echo '
 		<div class="ligne centrer">
 			<b>'.$info->drachmes.'</b> 
-			<img src="images/ress/gold.png" alt="Or" title="Or en stock" />';		
+			<img src="/images/ress/gold.png" alt="Or" title="Or en stock" />';		
 		echo '</div>';
 	}
 
@@ -122,7 +122,7 @@ if($info->unite1 > 0 or $info->unite2 > 0 or $info->unite3 > 0 or $info->unite4 
 				<a href="#" title="'.$info->unite->$case->description.'" ><b>'.$info->unite->$case->nom.'</b></a>
 			</td>
 			<td class="centrer">
-				'.$info->unite->$case->prix.' <img src="images/ress/gold.png" alt="Prix en or" title="Prix en or" />
+				'.$info->unite->$case->prix.' <img src="/images/ress/gold.png" alt="Prix en or" title="Prix en or" />
 			</td>
 			<td class="droite">'.$info->unite->$case->attaque.' '.img('images/attaques/dague.png', 'attaque').'</td>
 			<td class="droite">'.$info->unite->$case->defense.' '.img('images/attaques/bouclier.png', 'défense').'</td>
