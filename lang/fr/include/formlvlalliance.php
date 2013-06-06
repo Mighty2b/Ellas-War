@@ -4,7 +4,7 @@ if($retour) {
 
 echo '
 <center>
-<h2>Votre alliance vient de passer niveau '.($paquet->get_level()+1).', félicitation</h2>
+<h2>Votre alliance vient de passer niveau '.$paquet->get_level().', félicitation</h2>
 
 <table class="centrer_tableau">';
 
