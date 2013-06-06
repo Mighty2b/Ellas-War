@@ -60,10 +60,10 @@ foreach($unites as $bat => $details) {
 		echo '<div class="cadre_batiment_unite"
 						 onclick="engager(\''.$bat.'\');" ';
 			if($type != 4) {
-				echo 'style="background-image:url(\'images/unite/'.$details['img'].'150.png\');">';
+				echo 'style="background-image:url(\'/images/unite/'.$details['img'].'150.png\');">';
 			}
 			else {
-				echo 'style="background-image:url(\'images/bat/'.$details['img'].'150.png\');">';
+				echo 'style="background-image:url(\'/images/bat/'.$details['img'].'150.png\');">';
 			}
 	
 				echo '<div class="cadre_batiment_nom"><div class="cadre_batiment_nom2">'.

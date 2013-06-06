@@ -42,7 +42,7 @@ foreach($batiments as $bat => $details) {
 		 $liste_batiments->$bat->lvlmini <= $paquet->getlvl()) {
 echo '<div class="cadre_batiment_unite"
 					 onclick="construire(\''.$bat.'\');"
-					 style="background-image:url(\'images/bat/'.$details['img'].'150.png\');">';
+					 style="background-image:url(\'/images/bat/'.$details['img'].'150.png\');">';
 
 			echo '<div class="cadre_batiment_nom"><div class="cadre_batiment_nom2">'.
 			(!empty($details['nomc'])?$details['nomc']:$details['nom']).
