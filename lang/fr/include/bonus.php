@@ -92,7 +92,7 @@ if(!empty($bonus) && sizeof($bonus) > 0) {
 			break;
 		}
 		echo '&nbsp;</td>
-				<td>&nbsp;<a href="Bonus-'.$b.'" class="sous">Utiliser</a>&nbsp;</td>
+				<td><a href="Bonus-'.$b.'" class="sous"><div class="bouton_classique"><input class="bouton_classique2" type="button" name="Utiliser" value="Utiliser" /></div></a></td>
 				</tr>';
 	}
 	
