@@ -31,6 +31,8 @@ else {
 }
 $info = $paquet->getRetour();
 
-include('../lang/'.LANG.'/include/form_info_case.php');
+if(!empty($info)) {
+	include('../lang/'.LANG.'/include/form_info_case.php');
+}
 
 ?>
