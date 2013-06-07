@@ -25,10 +25,10 @@ Niveau minimal :
 			 class="form_retirer" required="required" /><br/>';
 if($info->level >= 4) {
 	if($info->mode == 1) {
-		echo '<input type="checkbox" name="mode" checked="checked" /> Mode sans déficite';
+		echo '<input type="checkbox" name="mode" checked="checked" /> Mode sans déficit';
 	}
 	else {
-		echo '<input type="checkbox" name="mode" /> Mode sans déficite';
+		echo '<input type="checkbox" name="mode" /> Mode sans déficit';
 	}
 }
 
@@ -109,7 +109,7 @@ if($info->level >= 4) {
 				 class='form_retirer' />% ".imress('drachme')." gagnés (max : 25%)
 	<br/><br/>";
 	if($info->mode == 1) {
-		echo 'Mode : sans déficite<br/>';
+		echo 'Mode : sans déficit<br/>';
 	}
 	else {
 		echo 'Mode : classique<br/>';
