@@ -12,7 +12,7 @@ echo '
 echo '<div class="ligne80">';
 
 echo '<h1>Sanctuaires</h1>';
-	if($paquet->getalliance() == 0 && $paquet->getlvl2() < 3) {
+	if($paquet->getalliance() == 0 && $paquet->getlvl2() < 4) {
 		echo '<div class="erreur centrer">Vous devez être dans une alliance pour accéder aux sanctaires.</div>';
 	}
 	else {

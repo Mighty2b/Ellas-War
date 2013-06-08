@@ -9,13 +9,14 @@
 <?php 
 
 switch($paquet->getlvl2()) {
-	case 3:
+	case 4:
 		echo '&nbsp;&nbsp;&nbsp;&nbsp;
 		<b>Message Administrateur :</b> 
 		<input type="checkbox" name="special"/> <br/>';
 	break;
 	
 	case 2:
+	case 3:
 		echo '&nbsp;&nbsp;&nbsp;&nbsp;
 		<b>Message Prophète :</b>
 		<input type="checkbox" name="special"/> <br/>';
