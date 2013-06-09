@@ -614,7 +614,14 @@ class EwPaquet {
   }
   
   function getidchef() {
-  	return $this->reponse->joueur->alliance->id_chef;
+  	if(!empty($this->reponse) && 
+  	   !empty($this->reponse->joueur) && 
+  	   !empty($this->reponse->joueur->alliance)) {
+  		return $this->reponse->joueur->alliance->id_chef;
+  	}
+  	else {
+  		return null;
+  	}
   }
   
   function getidsschef() {
