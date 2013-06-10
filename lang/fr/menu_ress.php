@@ -153,47 +153,92 @@ function main3()
 </script>
 
 <table id="tableau_ressources">
-	<tr><td>'.imress('drachme').'</td><td id="block_drachme" class="droite">'.number_format(round($ress['drachme'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->drachme).'</td>
-	</tr><tr>
-			<td>'.imress('nourriture').'</td><td id="block_nourriture" class="droite">'.number_format(round($ress['nourriture'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->nourriture).'</td>
-	</tr><tr>
-			<td>'.imress('eau').'</td><td id="block_eau" class="droite">'.number_format(round($ress['eau'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->eau).'</td></tr>
-			
-	<tr><td>'.imress('bois').'</td><td id="block_bois" class="droite">'.number_format(round($ress['bois'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->bois).'</td>
-	</tr><tr>
-	<td>'.imress('fer').'</td><td id="block_fer" class="droite">'.number_format(round($ress['fer'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->fer).'</td>
-	</tr><tr>
-			<td>'.imress('argent').'</td><td id="block_argent" class="droite">'.number_format(round($ress['argent'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->argent).'</td></tr>';
+	<tr>
+		<td>'.imress('drachme').'</td>
+		<td id="block_drachme" 
+		    class="droite '.($ress['drachme']<0?'red':'').'">'.number_format(round($ress['drachme'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->drachme).'</td>
+	</tr>
+	<tr>
+		<td>'.imress('nourriture').'</td>
+		<td id="block_nourriture" 
+		    class="droite '.($ress['nourriture']<0?'red':'').'">'.number_format(round($ress['nourriture'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->nourriture).'</td>
+	</tr>
+	<tr>
+		<td>'.imress('eau').'</td>
+		<td id="block_eau" 
+		    class="droite '.($ress['eau']<0?'red':'').'">'.number_format(round($ress['eau'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->eau).'</td>
+	</tr>			
+	<tr>
+		<td>'.imress('bois').'</td>
+		<td id="block_bois" 
+		    class="droite '.($ress['bois']<0?'red':'').'">'.number_format(round($ress['bois'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->bois).'</td>
+	</tr>
+	<tr>
+		<td>'.imress('fer').'</td>
+		<td id="block_fer" 
+		    class="droite '.($ress['fer']<0?'red':'').'">'.number_format(round($ress['fer'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->fer).'</td>
+	</tr>
+	<tr>
+		<td>'.imress('argent').'</td>
+		<td id="block_argent" 
+		    class="droite '.($ress['argent']<0?'red':'').'">'.number_format(round($ress['argent'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->argent).'</td>
+	</tr>';
 
 	if($paquet->getlvl() >= $minimum_lvl_ress['pierre']) {
 	echo '
-	<tr><td>'.imress('pierre').'</td><td id="block_pierre" class="droite">'.number_format(round($ress['pierre'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->pierre).'</td>
+	<tr>
+		<td>'.imress('pierre').'</td>
+		<td id="block_pierre" 
+		    class="droite '.($ress['pierre']<0?'red':'').'">'.number_format(round($ress['pierre'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->pierre).'</td>
 	</tr>';
 	}
 	
 	if($paquet->getlvl() >= $minimum_lvl_ress['marbre'])
 	{
 	echo '<tr>
-			<td>'.imress('marbre').'</td><td id="block_marbre" class="droite">'.number_format(round($ress['marbre'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->marbre).'</td>
+		<td>'.imress('marbre').'</td>
+		<td id="block_marbre" 
+		    class="droite '.($ress['marbre']<0?'red':'').'">'.number_format(round($ress['marbre'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->marbre).'</td>
 	</tr>';
 	}
 
 	if($paquet->getlvl() >= $minimum_lvl_ress['raisin'])
 	{
-	echo '<tr>
-			<td>'.imress('raisin').'</td><td id="block_raisin" class="droite">'.number_format(round($ress['raisin'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->raisin).'</td></tr>';
-		}
+	echo '
+	<tr>
+		<td>'.imress('raisin').'</td>
+		<td id="block_raisin" 
+		    class="droite '.($ress['raisin']<0?'red':'').'">'.number_format(round($ress['raisin'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->raisin).'</td>
+	</tr>';
+	}
 
 	if($paquet->getlvl() >= $minimum_lvl_ress['vin'])	{
 		echo '
-	<tr><td>'.imress('vin').'</td><td id="block_vin" class="droite">'.number_format(round($ress['vin'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->vin).'</td>
+	<tr>
+		<td>'.imress('vin').'</td>
+		<td id="block_vin" 
+		    class="droite '.($ress['vin']<0?'red':'').'">'.number_format(round($ress['vin'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->vin).'</td>
 	</tr>';
 	}
 	
 	if($paquet->getlvl() >= $minimum_lvl_ress['gold'])
 	{
-		echo '<tr>
-	<td>'.imress('or').'</td><td id="block_gold" class="droite">'.number_format(round($ress['gold'],2), 2, ',', ' ').'</td><td>'.statu_ress($ress_var->gold).'</td>
+	echo '
+	<tr>
+		<td>'.imress('or').'</td>
+		<td id="block_gold" 
+		    class="droite '.($ress['gold']<0?'red':'').'">'.number_format(round($ress['gold'],2), 2, ',', ' ').'</td>
+		<td>'.statu_ress($ress_var->gold).'</td>
 	</tr>';
 	}
 	
