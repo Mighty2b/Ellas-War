@@ -701,7 +701,7 @@ class EwPaquet {
   	}
   }
   
-  function possible_annuler_bu() {
+  function possible_annuler_du() {
   	return $this->reponse->joueur->depart_force;
   }
 }
