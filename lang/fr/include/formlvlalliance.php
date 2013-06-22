@@ -15,6 +15,7 @@ switch($paquet->get_level()) {
 	 <tr><td>Possibilité de recevoir <b>des contrats</b></td></tr>
 	 <tr><td>Possibilité de recevoir <b>des blocus</b></td></tr>
 	 <tr><td>Possibilité d\'annuler une guerre déclarée par votre alliance, pendant <b>2 heures</b> après la déclaration</td></tr>
+	 <tr><td>Activation de la cotisation en négatif</td></tr>
 	';
 	
 	break;
