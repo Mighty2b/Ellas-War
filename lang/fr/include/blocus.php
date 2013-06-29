@@ -19,11 +19,11 @@ if(!empty($do)) {
 	mais vous perdrez 10% de votre XP et l\'enemis gagnera la moitier de ces 10%.<br/><br/>';
 	
 	if($paquet->getid() == $paquet->getidchef()) {
-		if($do->fin == 1 && $do->vainqueur != $do->alliance) {
+		if(!empty($do->vainqueur) && $do->vainqueur != $do->alliance) {
 			echo '<a href=\'Blocus-accepter\'>Accepter la paix</a> | 
 						<a href=\'Blocus-refuser\'>Refuser la paix</a>';
 		}
-		elseif($do->fin == 1) {
+		elseif(!empty($do->vainqueur)) {
 			echo '<a href=\'BBlocus-abdiquer\'>Abdiquer</a>';
 		}
 		else {
