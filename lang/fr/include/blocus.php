@@ -1,6 +1,7 @@
 <?php
 
 if(!empty($do)) {
+	echo '<div class="centrer">';
 	if($do->attaquant == $info->id) {
 		$ennemis = $do->defenseur_nom;
 	}
@@ -31,6 +32,7 @@ if(!empty($do)) {
 						<a href=\'Blocus-abdiquer\'>Abdiquer</a>';
 		}
 	}
+	echo '</div>';
 }
 else {
 	echo '<div class="centrer">Votre alliance n\'a pour l\'instant aucun blocus en cours</div>';
