@@ -418,22 +418,23 @@ if(!empty($dernieres_breves)) {
 		<a href="Loto">Un ticket gratuit par semaine !</a></td>
 		</tr>
 		<tr>
-		<td>
-		<a href="BataillesNavales" class="mtitre">Batailles navales</a><br/>';
-	if(sizeof($btn) > 0) {
-		foreach($btn as $do) {
-			if(empty($do->titre)) {
-				$do->titre='Partie publique';
+		<td>';
+	if($paquet->getlvl() > 1 or sizeof($btn) > 0) {
+		echo '<a href="BataillesNavales" class="mtitre">Batailles navales</a><br/>';
+		if(sizeof($btn) > 0) {
+			foreach($btn as $do) {
+				if(empty($do->titre)) {
+					$do->titre='Partie publique';
+				}
+			
+				if(($do->places == 8) && ($do->temps < $paquet->get_timestamp())) {
+					$do->titre='<a href=\'partie-'.$do->id.'\'>'.$do->titre.'</a>';
+				}
+			
+				echo $do->titre.'<br/>';
 			}
-		
-			if(($do->places == 8) && ($do->temps < $paquet->get_timestamp())) {
-				$do->titre='<a href=\'partie-'.$do->id.'\'>'.$do->titre.'</a>';
-			}
-		
-			echo $do->titre.'<br/>';
 		}
 	}
-	
 	?></td>
 	<td><a href="CarreMagique" class="mtitre">Carré magique</a><br/>
 	<a href="CarreMagique">Aidez le jeu et remportez des faveurs !</a>
