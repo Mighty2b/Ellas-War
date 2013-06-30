@@ -1,6 +1,6 @@
 <?php
 
-if($paquet->getlvl() >= 5) {
+if($paquet->getlvl() >= 1) {
   echo '<div class="ligne80 centrer">
   Prix : '.nbf($prix).' '.imress('drachme').
 	' (Maximum 255 caractères) <br/><br/>
