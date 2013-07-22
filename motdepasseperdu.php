@@ -31,7 +31,12 @@ if(!empty($_POST['mail'])) {
     $paquet = new EwPaquet('mdp_perdu_login',array($_POST['mail']));
   }
   
-  $paquet->display();
+  if($paquet->hasErreur()) {
+  	$paquet->display();
+  }
+  elseif($paquet->getstatu() != 0) {
+  	$paquet->display(242);
+  }
 }
 ?>
 </body>

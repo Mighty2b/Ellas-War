@@ -601,6 +601,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 241: $erreur = 'Vous devez attendre quelques secondes avant de pouvoir espionner de nouveau ce joueur';
 		break;
+	case 242: $erreur = 'Vous ne pouvez pas demander un nouveau mot de passe si vous êtes connecté';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
