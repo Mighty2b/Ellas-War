@@ -51,7 +51,7 @@
 		<td>
 		
 		<a href="http://www.meilleursjeuxvirtuels.com" target="_blank">
-			<img src="fr/images/mjv88x31.gif " alt="meilleursjeuxvirtuels" title="Meilleurs Jeux Virtuels" />
+			<img src="lang/fr/images/mjv88x31.gif " alt="meilleursjeuxvirtuels" title="Meilleurs Jeux Virtuels" />
 		</a>
 		
 		</td>
