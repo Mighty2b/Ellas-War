@@ -127,7 +127,13 @@ class EwPaquet {
 	}
 	
 	function get_batiments() {
-		return $this->reponse->joueur->liste_batiments;
+		if(!empty($this->reponse) && !empty($this->reponse->joueur) &&
+		   !empty($this->reponse->joueur->liste_batiments)) {
+			return $this->reponse->joueur->liste_batiments;
+		}
+		else {
+			return null;
+		}   
 	}
 	
 	function get_unites() {
