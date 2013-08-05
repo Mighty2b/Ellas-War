@@ -43,58 +43,58 @@ echo "<table class='centrer_tableau'>
 <tr align='center'>
 	<td>".imress('drachme')."</td>
 <td>&nbsp;<input type='text' name='drachme' maxlength='6' size='7' value='".$do -> drachme."' class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_ses&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_ses)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->drachme)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('nourriture')."</td>
 <td>&nbsp;<input type='text' name='nourriture' maxlength='6' size='7' value='".$do -> nourriture."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_nou&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_nou)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->nourriture)."&nbsp;</td>
 	</tr>
 	<tr align='center'>
 	<td>".imress('eau')."</td>
 <td>&nbsp;<input type='text' name='eau' maxlength='6' size='7' value='".$do -> eau."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_eau&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_eau)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->eau)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('bois')."</td>
 <td>&nbsp;<input type='text' name='bois' maxlength='6' size='7' value='".$do -> bois."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_boi&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_boi)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->bois)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('fer')."</td>
 <td>&nbsp;<input type='text' name='fer' maxlength='6' size='7' value='".$do -> fer."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_fer&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_fer)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->fer)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('argent')."</td>
 <td>&nbsp;<input type='text' name='argent' maxlength='6' size='7' value='".$do -> argent."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_arg&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_arg)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->argent)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('pierre')."</td>
 <td>&nbsp;<input type='text' name='pierre' maxlength='6' size='7' value='".$do -> pierre."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_pie&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_pie)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->pierre)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('marbre')."</td>
 <td>&nbsp;<input type='text' name='marbre' maxlength='6' size='7' value='".$do -> marbre."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_mar&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_mar)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->marbre)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('raisin')."</td>
 <td>&nbsp;<input type='text' name='raisin' maxlength='6' size='7' value='".$do -> raisin."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_rai&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_rai)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->raisin)."&nbsp;</td></tr>
 <tr align='center'>
 	<td>".imress('vin')."</td>
 <td>&nbsp;<input type='text' name='vin' maxlength='6' size='7' value='".$do -> vin."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_vin&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_vin)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->vin)."&nbsp;</td></tr>
 	<tr align='center'>
 	<td>".imress('gold')."</td>
 <td>&nbsp;<input type='text' name='gold' maxlength='6' size='7' value='".$do -> gold."'class='form_retirer' />&nbsp;</td>
-<td align='right'>&nbsp;$max_orr&nbsp;</td>
+<td align='right'>&nbsp;".nbf($max_orr)."&nbsp;</td>
 <td class=\"droite\">&nbsp;".nbf($info->gold)."&nbsp;</td></tr>
 </table>";
 
