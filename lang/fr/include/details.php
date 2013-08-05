@@ -307,7 +307,7 @@ $prod_or .=' '.plus_valeur($value -> nb*$value -> prodor/$temps).' '.img('images
 		}
 
 		if($paquet->get_cotise_volontaire() > 0) {
-			$conso_dra.='-  '.floor(($paquet->get_cotise_volontaire()*$prod_bonus->drachme * (($liste_bat->atelierf-> nb * $liste_bat->atelierf->proddrachme))/100)/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation volontaire<br/>';
+			$conso_dra.='-  '.nbf(floor(($paquet->get_cotise_volontaire()*$prod_bonus->drachme * (($liste_bat->atelierf-> nb * $liste_bat->atelierf->proddrachme))/100)/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation volontaire<br/>';
 		}
 
 echo '<center>
