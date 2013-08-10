@@ -28,7 +28,7 @@ foreach($sondages as $k => $sondage) {
 
 		foreach($options as $j => $option) {
 			echo '<br/>
-<input type="radio" name="reponse" value="'.$option->id_option.'" '.((!empty($rep[$sondage['id']]) && ($rep[$sondage['id']] == $option['id_option']))?' checked="checked"':'').'>'.$option['rep'];
+<input type="radio" name="reponse" value="'.$option->id_option.'" '.((!empty($rep->{$sondage->id}) && ($rep->{$sondage->id} == $option->id_option))?' checked="checked"':'').'>'.$option->rep;
 		}
 	
 		echo '<br/><br/>
