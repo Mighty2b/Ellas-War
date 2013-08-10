@@ -24,39 +24,29 @@ else {
 }
 
 if ($par == 'victoires') {
-	$parvar="victoires DESC, lvl DESC, terrain DESC, defaites DESC, login DESC";
 	$writevictoires="<span class='jaune'>Victoires</span>";
 }
 elseif ($par == 'defaites') {
-	$parvar="defaites DESC, lvl DESC, victoires DESC, terrain DESC, login DESC";
 	$writedefaites="<span class='jaune'>Défaites</span>";
 }
 elseif ($par == 'terrain') {
-	$parvar="terrain DESC, lvl DESC, victoires DESC, defaites DESC, login DESC";
 	$writeterrain="<span class='jaune'>Terrain</span>";
 }
 elseif ($par == 'alliance') {
-	$parvar="alliance DESC, lvl DESC, victoires DESC, defaites DESC, login DESC";
 	$writealliance="<span class='jaune'>Alliance</span>";
 }
 elseif ($par == 'pseudo') {
-	$parvar="login ASC";
 	$writepseudo="<span class='jaune'>Pseudo</span>";
 }
 elseif ($par =='xp') {
-	$par="xp"; 
 	$writexp="<span class='jaune'>XP</span>";
-	$parvar="points DESC, lvl DESC, terrain DESC, victoires DESC, defaites DESC, login DESC";
 }
 elseif ($par =='filleuls') {
-	$par="filleuls"; 
 	$writeparrain="<span class='jaune'>Filleuls</span>";
-	$parvar="nb_fil DESC, lvl DESC, points DESC, login ASC, terrain DESC, victoires DESC, defaites DESC";
 }
 else {
 	$par="niveau"; 
 	$writeniveau="<span class='jaune'>Niveau</span>";
-	$parvar="lvl DESC, points DESC, terrain DESC, victoires DESC, defaites DESC, login ASC";
 }
 ?>
 <h1 class="title_faq">Classement des chefs de cité</h1>

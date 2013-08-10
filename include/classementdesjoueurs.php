@@ -8,7 +8,7 @@ else {
 }
 
 if (isset($_GET['var1']) && is_numeric($_GET['var1'])) {
-  $page = $_GET['var1']; // On récupère le numéro de la page indiqué dans l'adresse (livreor.php?page=4)
+  $page = $_GET['var1'];
   $i=25*($page-1)+1;
 }
 else {
