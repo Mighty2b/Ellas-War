@@ -3,6 +3,10 @@
 echo '<div class="ligne centrer"><b>Actions disponibles :</b> '.$paquet->getRetour(2).'</div>
 <div id="interieur_btn">';
 
+if(empty($info)) {
+	redirect('BataillesNavales');
+}
+
 if(!empty($info->id_c)) {
 	echo '<div class="ligne centrer">
 	<b>'.$info->login.'</b> ('.$info->id_x.';'.$info->id_y.')<br/><br/>
