@@ -3,7 +3,13 @@
 if(!empty($_GET['var1']) && is_numeric($_GET['var1'])) {
 	if(!empty($_POST['cg'])) {
 	
-		$nom_rang = trim($_POST['rang']);
+		if(empty($_POST['rang'])) {
+			$nom_rang = '';
+		}
+		else {
+			$nom_rang = trim($_POST['rang']);
+		}
+		
 		$modifier_profils=@abs(round(addslashes(trim(htmlentities($_POST['modifier_profils'])))));
 		$changer_cotise=@abs(round(addslashes(trim(htmlentities($_POST['changer_cotise'])))));
 		$pacte=@abs(round(addslashes(trim(htmlentities($_POST['pacte'])))));
