@@ -1,7 +1,12 @@
 <?php
 
-$ress_var = $paquet->get_ress_var();
-$ress     = $paquet->get_ress();
+if(empty($ress_var)) {
+	$ress_var = $paquet->get_ress_var();
+}
+
+if(empty($ress)) {
+	$ress     = $paquet->get_ress();
+}
 
 echo '<img src="lang/fr/images/menu/titre_ress.png" 
 					 alt="Ressources"

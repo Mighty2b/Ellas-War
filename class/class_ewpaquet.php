@@ -492,7 +492,12 @@ class EwPaquet {
   }
   
   function get_ress_var() {
-		return $this->reponse->joueur->ress_var;
+  	if(!empty($this->reponse) && !empty($this->reponse->joueur) && !empty($this->reponse->joueur->ress_var)) {
+			return $this->reponse->joueur->ress_var;
+  	}
+  	else {
+  		return '';
+  	}
   }
   
   function get_prod_bonus() {
@@ -508,18 +513,23 @@ class EwPaquet {
   }
   
   function get_ress() {
-  	return array(
-		'drachme' => $this->reponse->joueur->drachme,
-		'nourriture' => $this->reponse->joueur->nourriture,
-		'eau' => $this->reponse->joueur->eau,
-		'bois'=> $this->reponse->joueur->bois,
-		'fer' => $this->reponse->joueur->fer,
-		'argent'=>$this->reponse->joueur->argent,
-		'pierre'=>$this->reponse->joueur->pierre,
-		'marbre'=>$this->reponse->joueur->marbre,
-		'raisin'=>$this->reponse->joueur->raisin,
-		'vin'=>$this->reponse->joueur->vin,
-		'gold'=>$this->reponse->joueur->gold);
+  	if(!empty($this->reponse) && !empty($this->reponse->joueur)) {
+	  	return array(
+			'drachme' => $this->reponse->joueur->drachme,
+			'nourriture' => $this->reponse->joueur->nourriture,
+			'eau' => $this->reponse->joueur->eau,
+			'bois'=> $this->reponse->joueur->bois,
+			'fer' => $this->reponse->joueur->fer,
+			'argent'=>$this->reponse->joueur->argent,
+			'pierre'=>$this->reponse->joueur->pierre,
+			'marbre'=>$this->reponse->joueur->marbre,
+			'raisin'=>$this->reponse->joueur->raisin,
+			'vin'=>$this->reponse->joueur->vin,
+			'gold'=>$this->reponse->joueur->gold);
+  	}
+  	else {
+  		return '';
+  	}
   }
   
   function getmeteo() {
