@@ -513,7 +513,7 @@ class EwPaquet {
   }
   
   function get_ress() {
-  	if(!empty($this->reponse) && !empty($this->reponse->joueur)) {
+  	if(!empty($this->reponse) && !empty($this->reponse->joueur) && $this->reponse->joueur->statu == 1) {
 	  	return array(
 			'drachme' => $this->reponse->joueur->drachme,
 			'nourriture' => $this->reponse->joueur->nourriture,
