@@ -4,8 +4,8 @@ if(empty($ress_var)) {
 	$ress_var = $paquet->get_ress_var();
 }
 
-if(empty($ress)) {
-	$ress     = $paquet->get_ress();
+if(empty($var_ress)) {
+	$var_ress     = $paquet->get_ress();
 }
 
 echo '<img src="lang/fr/images/menu/titre_ress.png" 
@@ -17,19 +17,19 @@ echo '<img src="lang/fr/images/menu/titre_ress.png"
 function load() {
  
 	b_ses = document.getElementById(\'block_drachme\');
-	ses = '.$ress['drachme'].';
+	ses = '.$var_ress['drachme'].';
 	conso_ses = '.($ress_var->drachme*3).';
 
 	b_eau = document.getElementById(\'block_eau\');
-	eau = '.$ress['eau'].';
+	eau = '.$var_ress['eau'].';
 	conso_eau = '.($ress_var->eau*3).';	
 	
 	b_fer = document.getElementById(\'block_fer\');
-	fer = '.$ress['fer'].';
+	fer = '.$var_ress['fer'].';
 	conso_fer = '.($ress_var->fer*3).';		
 
 	b_argent = document.getElementById(\'block_argent\');
-	argent = '.$ress['argent'].';
+	argent = '.$var_ress['argent'].';
 	conso_argent = '.($ress_var->argent*3).';		
 ';	
 
@@ -37,20 +37,20 @@ function load() {
 	{
 		echo '
 	b_gold = document.getElementById(\'block_gold\');
-	gold = '.$ress['gold'].';
+	gold = '.$var_ress['gold'].';
 	conso_gold = '.($ress_var->gold*3).';';
 	}
 	
 	echo '
 	b_bois = document.getElementById(\'block_bois\');
-	bois = '.$ress['bois'].';
+	bois = '.$var_ress['bois'].';
 	conso_bois = '.($ress_var->bois*3).';';	
 
 	if($paquet->getlvl() >= $minimum_lvl_ress['pierre'])
 	{
 		echo '
 		b_pierre = document.getElementById(\'block_pierre\');
-		pierre = '.$ress['pierre'].';
+		pierre = '.$var_ress['pierre'].';
 		conso_pierre = '.($ress_var->pierre*3).';';
 	}
 
@@ -58,20 +58,20 @@ function load() {
 	{
 		echo '
 	b_marbre = document.getElementById(\'block_marbre\');
-	marbre = '.$ress['marbre'].';
+	marbre = '.$var_ress['marbre'].';
 	conso_marbre = '.($ress_var->marbre*3).';';
 	}
 	
 	echo '
 	b_nourriture = document.getElementById(\'block_nourriture\');
-	nourriture = '.$ress['nourriture'].';
+	nourriture = '.$var_ress['nourriture'].';
 	conso_nourriture = '.($ress_var->nourriture*3).';';
 	
 	if($paquet->getlvl() >= $minimum_lvl_ress['raisin'])
 	{
 		echo '
 		b_raisin = document.getElementById(\'block_raisin\');
-		raisin = '.$ress['raisin'].';
+		raisin = '.$var_ress['raisin'].';
 		conso_raisin = '.($ress_var->raisin*3).';';
 	}
 	
@@ -79,7 +79,7 @@ function load() {
 	{
 		echo '
 	b_vin = document.getElementById(\'block_vin\');
-	vin = '.$ress['vin'].';
+	vin = '.$var_ress['vin'].';
 	conso_vin = '.($ress_var->vin*3).';';
 	}
 	
@@ -161,37 +161,37 @@ function main3()
 	<tr>
 		<td>'.imress('drachme').'</td>
 		<td id="block_drachme" 
-		    class="droite '.($ress['drachme']<0?'red':'').'">'.number_format(round($ress['drachme'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['drachme']<0?'red':'').'">'.number_format(round($var_ress['drachme'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->drachme).'</td>
 	</tr>
 	<tr>
 		<td>'.imress('nourriture').'</td>
 		<td id="block_nourriture" 
-		    class="droite '.($ress['nourriture']<0?'red':'').'">'.number_format(round($ress['nourriture'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['nourriture']<0?'red':'').'">'.number_format(round($var_ress['nourriture'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->nourriture).'</td>
 	</tr>
 	<tr>
 		<td>'.imress('eau').'</td>
 		<td id="block_eau" 
-		    class="droite '.($ress['eau']<0?'red':'').'">'.number_format(round($ress['eau'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['eau']<0?'red':'').'">'.number_format(round($var_ress['eau'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->eau).'</td>
 	</tr>			
 	<tr>
 		<td>'.imress('bois').'</td>
 		<td id="block_bois" 
-		    class="droite '.($ress['bois']<0?'red':'').'">'.number_format(round($ress['bois'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['bois']<0?'red':'').'">'.number_format(round($var_ress['bois'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->bois).'</td>
 	</tr>
 	<tr>
 		<td>'.imress('fer').'</td>
 		<td id="block_fer" 
-		    class="droite '.($ress['fer']<0?'red':'').'">'.number_format(round($ress['fer'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['fer']<0?'red':'').'">'.number_format(round($var_ress['fer'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->fer).'</td>
 	</tr>
 	<tr>
 		<td>'.imress('argent').'</td>
 		<td id="block_argent" 
-		    class="droite '.($ress['argent']<0?'red':'').'">'.number_format(round($ress['argent'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['argent']<0?'red':'').'">'.number_format(round($var_ress['argent'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->argent).'</td>
 	</tr>';
 
@@ -200,7 +200,7 @@ function main3()
 	<tr>
 		<td>'.imress('pierre').'</td>
 		<td id="block_pierre" 
-		    class="droite '.($ress['pierre']<0?'red':'').'">'.number_format(round($ress['pierre'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['pierre']<0?'red':'').'">'.number_format(round($var_ress['pierre'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->pierre).'</td>
 	</tr>';
 	}
@@ -210,7 +210,7 @@ function main3()
 	echo '<tr>
 		<td>'.imress('marbre').'</td>
 		<td id="block_marbre" 
-		    class="droite '.($ress['marbre']<0?'red':'').'">'.number_format(round($ress['marbre'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['marbre']<0?'red':'').'">'.number_format(round($var_ress['marbre'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->marbre).'</td>
 	</tr>';
 	}
@@ -221,7 +221,7 @@ function main3()
 	<tr>
 		<td>'.imress('raisin').'</td>
 		<td id="block_raisin" 
-		    class="droite '.($ress['raisin']<0?'red':'').'">'.number_format(round($ress['raisin'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['raisin']<0?'red':'').'">'.number_format(round($var_ress['raisin'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->raisin).'</td>
 	</tr>';
 	}
@@ -231,7 +231,7 @@ function main3()
 	<tr>
 		<td>'.imress('vin').'</td>
 		<td id="block_vin" 
-		    class="droite '.($ress['vin']<0?'red':'').'">'.number_format(round($ress['vin'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['vin']<0?'red':'').'">'.number_format(round($var_ress['vin'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->vin).'</td>
 	</tr>';
 	}
@@ -242,7 +242,7 @@ function main3()
 	<tr>
 		<td>'.imress('or').'</td>
 		<td id="block_gold" 
-		    class="droite '.($ress['gold']<0?'red':'').'">'.number_format(round($ress['gold'],2), 2, ',', ' ').'</td>
+		    class="droite '.($var_ress['gold']<0?'red':'').'">'.number_format(round($var_ress['gold'],2), 2, ',', ' ').'</td>
 		<td>'.statu_ress($ress_var->gold).'</td>
 	</tr>';
 	}

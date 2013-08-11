@@ -19,8 +19,8 @@ $paquet = new EwPaquet('get_missives');
 $var_missives      = $paquet->getRetour();
 $var_nb_archives   = $paquet->getRetour(2);
 $var_next_archives = $paquet->getRetour(3);
-$ress_var = $paquet->get_ress_var();
-$ress     = $paquet->get_ress();
+$ress_var          = $paquet->get_ress_var();
+$var_ress          = $paquet->get_ress();
 
 //On voit les pages autorisées
 //Les includes
