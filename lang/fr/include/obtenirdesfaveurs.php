@@ -1,7 +1,7 @@
 <h1>Obtenir des faveurs</h1>
 <div class="ligne80 erreur centrer"><br/><br/>
 Pour la validation d'un code Rentabiliweb ou Winapass vous obtiendrez une faveur.<br/>
-Les faveurs achetées via paypal sont créditées manuellement par notre équipe après vérification du paiement. Celles-ci vous seront créditées entre 1 et 12 heures après votre achat. Si l'adresse mail de votre compte est différente de celle du payement veuillez nous le préciser par la page contact.</div>
+Les faveurs achetées via paypal sont créditées manuellement par notre équipe après vérification du paiement. Celles-ci vous seront créditées entre 1 et 12 heures après votre achat. Si l'adresse mail de votre compte est différente de celle du paiement veuillez nous le préciser par la page contact.</div>
 
 <br/>
 <div class="ligne centrer">

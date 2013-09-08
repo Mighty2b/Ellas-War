@@ -5,12 +5,12 @@ echo '
 <h1>Ellàs War, un jeu gratuit</h1>
 
 <h2>Financement du jeu</h2>
-Le jeu est gratuit mais l\'équipe se doit de financer ses besoins. En effet les serveurs et les noms de domaine ne sont pas gratuit. Pour cela nous avons mis en place un système de Faveur, l\'achat d\'une faveur vous permettra d\'aider le jeu et d\'obtenir divers avantages. Pour cela nous utilisons plusieurs systèmes de payement comme paypal et rentabiliweb.<br/>
+Le jeu est gratuit mais l\'équipe se doit de financer ses besoins. En effet les serveurs et les noms de domaine ne sont pas gratuit. Pour cela nous avons mis en place un système de Faveur, l\'achat d\'une faveur vous permettra d\'aider le jeu et d\'obtenir divers avantages. Pour cela nous utilisons plusieurs systèmes de paiement comme paypal et rentabiliweb.<br/>
 Depuis le début, le jeu a toujours réussi à s\'auto-financer. Si vous désirez nous aidez, la meilleure chose que vous puissiez faire est d\'envoyer le lien du jeu à vos amis. Notre meilleure récompense est de savoir que le site vous plait.
 
 
 <h2>Fonctionnement des Faveurs</h2>
-Lors d\'un achat via le système de payement, votre compte se voit crédité une ou plusieurs faveurs. Celles-ci vous permettront d\'obtenir des bonus dans le jeu. Afin de ne pas trop désavantager ceux qui ne prennent pas de faveurs, celles-ci peuvent être échanger entre joueurs. Vous pouvez aussi obtenir des faveurs en invitant des amis à s\'inscrire sur Ellàs War via votre lien de parrainage ou par les jeux organisés  régulièrement sur <a href="teamspeak">Teamspeak</a>.';
+Lors d\'un achat via le système de paiement, votre compte se voit crédité une ou plusieurs faveurs. Celles-ci vous permettront d\'obtenir des bonus dans le jeu. Afin de ne pas trop désavantager ceux qui ne prennent pas de faveurs, celles-ci peuvent être échangées entre joueurs. Vous pouvez aussi obtenir des faveurs en invitant des amis à s\'inscrire sur Ellàs War via votre lien de parrainage ou par les jeux organisés  régulièrement sur <a href="teamspeak">Teamspeak</a>.';
 
 }
 else {
