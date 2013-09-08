@@ -603,6 +603,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 242: $erreur = 'Vous ne pouvez pas demander un nouveau mot de passe si vous êtes connecté';
 		break;
+	case 243: $erreur = 'Vous ne pouvez pas vendre cette ressource';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
