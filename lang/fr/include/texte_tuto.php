@@ -56,7 +56,7 @@ if($paquet->getlvl() == 0) {
 			echo '<br/><br/></div><div class="ligne centrer"><a href="javascript:etape_suivante();" class="titre_tab">Passer à l\'étape suivante</a>';
 		}
 	
-		echo '<br/><b>Récompense :</b> '.nbf(1000).' '.imress('drachme').' '.nbf(2000).' '.imress('bois');
+		echo '<br/><b>Récompense :</b> '.nbf(2000).' '.imress('drachme').' '.nbf(4000).' '.imress('bois');
 	
 		echo '</div>';
 	break;
@@ -83,7 +83,7 @@ if($paquet->getlvl() == 0) {
 		if($paquet->check_etape() == true) {
 			echo '<br/><br/></div><div class="ligne centrer"><a href="javascript:etape_suivante();" class="titre_tab">Passer à l\'étape suivante</a>';
 		}
-		echo '<br/><b>Récompense :</b> '.nbf(6000).' '.imress('drachme');
+		echo '<br/><b>Récompense :</b> '.nbf(8000).' '.imress('drachme');
 	
 		echo '</div>';
 	break;
