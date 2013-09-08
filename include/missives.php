@@ -1,7 +1,14 @@
 <?php
 
 if(!empty($_POST['message'])) {
-	$paquet = new EwPaquet('poster_missive',array($_POST['message']));
+	if(!empty($_POST['oracle']) && $_POST['oracle'] == true) {
+		$oracle = 1;
+	}
+	else {
+		$oracle = 0;
+	}
+	
+	$paquet = new EwPaquet('poster_missive',array($_POST['message'], $oracle));
 }
 elseif(!empty($_GET['var1'])) {
 	$paquet = new EwPaquet('supprimer_missive',array($_GET['var1']));
