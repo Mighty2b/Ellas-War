@@ -1,0 +1,1 @@
+xgettext -kT_gettext -kT_  *.php

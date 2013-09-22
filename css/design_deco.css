@@ -1,0 +1,66 @@
+body {
+  margin:auto;
+  padding:0;
+  background-color:skyblue;
+  min-height:800px;
+}
+
+footer {
+  margin-top:10px;
+  min-height:50px;
+  width:100%;
+  background-color:black;
+  bottom:0;
+}
+
+footer nav {
+  padding:10px 0px 10px 0px;
+  font-size:0.75em;
+  column-count:5;
+  -moz-column-count:5;
+  -webkit-column-count:5;
+  
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  
+  column-rule: 1px dotted #BBBBBB;
+  -moz-column-rule: 1px dotted #BBBBBB;
+  -webkit-column-rule: 1px dotted #BBBBBB;
+}
+
+footer nav .titre {
+  font-weight:bold;
+}
+
+/*Général*/
+.ligne {
+  width:100%;
+}
+
+/*Accueil*/
+section#home {
+  width:786px;
+  height:519px;
+  margin:auto;
+  margin-top:50px;
+  text-align:center;
+  background-image:url('../images/design_deco/navigationdroite.png');
+  background-repeat:no-repeat;
+  background-position:right;
+}
+
+section#home #inscription{
+  width:187px;
+  float:left;
+  height:380px;
+  margin:35px 0 0 0;
+  background-image:url('../images/design_deco/navigationgauche.png');
+  background-repeat:no-repeat;
+}
+
+section#home #inside{
+  width:599px;
+  float:right;
+  margin-top:25px;
+}
