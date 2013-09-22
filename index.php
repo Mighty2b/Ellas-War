@@ -58,10 +58,10 @@ echo '
 <br/>
 <br/>
 
-<div class="titre">'._('Ellàs War').'</div>
+<div class="titre"><a href="'.SITE_URL.'" title="'._('Ellàs War').'">'._('Ellàs War').'</a></div>
 '._('Découvrir le jeu').'
 <br/>'._('Actualités du jeu').'
-<br/>'._('FAQ').'
+<br/><a href="'.WIKI_URL.'" title="'._('Wiki d\'Ellàs War').'">'._('FAQ').'</a>
 <br/>'._('Conditions générales d\'utilisation').'
 <br/>
 

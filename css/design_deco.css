@@ -16,6 +16,7 @@ footer {
 footer nav {
   padding:10px 0px 10px 0px;
   font-size:0.75em;
+  color:white;
   column-count:5;
   -moz-column-count:5;
   -webkit-column-count:5;
@@ -33,6 +34,11 @@ footer nav .titre {
   font-weight:bold;
 }
 
+footer nav a {
+  color:white;
+  text-decoration:none;
+}
+
 /*Général*/
 .ligne {
   width:100%;
@@ -40,7 +46,7 @@ footer nav .titre {
 
 /*Accueil*/
 section#home {
-  width:786px;
+  width:762px;
   height:519px;
   margin:auto;
   margin-top:50px;
@@ -60,7 +66,7 @@ section#home #inscription{
 }
 
 section#home #inside{
-  width:599px;
+  width:575px;
   float:right;
   margin-top:25px;
 }
