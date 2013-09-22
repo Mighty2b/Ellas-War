@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-  margin-top:10px;
+  margin-top:20px;
   min-height:50px;
   width:100%;
   background-color:black;
@@ -65,8 +65,34 @@ section#home #inscription{
   background-repeat:no-repeat;
 }
 
-section#home #inside{
+section#home #inside {
   width:575px;
   float:right;
   margin-top:25px;
+}
+
+section#home section#inside article {
+  width:480px;
+  height:440px;
+  margin: 0px 75px 3px 15px;
+  padding-right:5px;
+  text-align:justify;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+section#home section#inside article h1{
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+
+section#home section#inside article h2{
+  text-align:center;
+  margin:0;
+
+}
+
+section#home section#inside article p {
+  margin:0;
 }
