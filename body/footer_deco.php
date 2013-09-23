@@ -21,7 +21,7 @@ echo '<nav>
 <br/><a href="'._('conditionsgeneralesutilisation').'" title="'._('Conditions générales d\'utilisation').'">'._('Conditions générales d\'utilisation').'</a>
 <br/>
 
-<div class="titre"><a href="'._('communauté').'" title="'._('La communauté d\'Ellàs War').'">'._('Communauté').'</a></div>
+<div class="titre"><a href="'._('communaute').'" title="'._('La communauté d\'Ellàs War').'">'._('Communauté').'</a></div>
 <a href="'._('joueursconnectes').'" title="'._('Joueurs connectés sur Ellàs War').'">'._('Joueurs connectés').'</a>
 <br/><a href="'.FORUM_URL.'" title="'._('Forum d\'Ellàs War').'">'._('Forum').'</a>
 <br/><a href="'._('teamspeak').'" title="'._('Serveur Teamspeak').'">'._('Serveur Teamspeak').'</a>
