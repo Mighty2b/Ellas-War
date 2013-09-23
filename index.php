@@ -46,47 +46,18 @@ echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 		<meta name="author" content="Mighty" />
 	</head>
   <body>';
-  
+
+include('body/haut_deco.php');
+
 include('include/'.$page.'.php');
 
-echo '
-<footer>
-<nav>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+include('body/bas_deco.php');
 
-<div class="titre"><a href="'.SITE_URL.'" title="'._('Ellàs War').'">'._('Ellàs War').'</a></div>
-'._('Découvrir le jeu').'
-<br/>'._('Actualités du jeu').'
-<br/><a href="'.WIKI_URL.'" title="'._('Wiki d\'Ellàs War').'">'._('FAQ').'</a>
-<br/>'._('Conditions générales d\'utilisation').'
-<br/>
+echo '<footer>';
 
-<div class="titre">'._('Présentation').'</div>
-'._('Quelques mots sur le site').'
-<br/>'._('Partenaires').'
-<br/>'._('Jeu de stratégie').'
-<br/>'._('Jeu gratuit').'
-<br/>
+include('body/footer_deco.php');
 
-<div class="titre">'._('Communauté').'</div>
-'._('Joueurs connectés').'
-<br/>'._('Forum').'
-<br/>'._('Serveur Teamspeak').'
-<br/>'._('L\'équipe du site').'
-<br/>
-
-<div class="titre">'._('Classements').'</div>
-'._('Alliances').'
-<br/>'._('Joueurs').'
-<br/>'._('Batailles navales').'
-<br/>'._('Héros').'
-<br/>
-</nav>
-</footer>
+echo '</footer>
   </body>
 </html>';
 

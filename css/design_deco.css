@@ -56,13 +56,23 @@ section#home {
   background-position:right;
 }
 
-section#home #inscription{
+section#home #inscription {
   width:187px;
   float:left;
   height:380px;
   margin:35px 0 0 0;
   background-image:url('../images/design_deco/navigationgauche.png');
   background-repeat:no-repeat;
+}
+
+section#home #inscription article {
+  margin:0px 0px 0px 32px;
+  width:147px;
+}
+
+section#home #inscription article .form {
+  width:90%;
+  margin-top:2px;
 }
 
 section#home #inside {
@@ -74,25 +84,28 @@ section#home #inside {
 section#home section#inside article {
   width:480px;
   height:440px;
-  margin: 0px 75px 3px 15px;
+  margin: 5px 75px 3px 15px;
   padding-right:5px;
   text-align:justify;
-  overflow-y:scroll;
+  overflow-y:auto;
   overflow-x:hidden;
 }
 
 section#home section#inside article h1{
   text-align:center;
   margin:0;
-  padding:0;
+  padding:2px 0px 0px 0px;
+  font-size:1.2em;
 }
 
 section#home section#inside article h2{
   text-align:center;
   margin:0;
-
+  font-size:1.1em;
+  padding:4px 0px 0px 0px;
 }
 
 section#home section#inside article p {
   margin:0;
+  font-size:0.8em;
 }

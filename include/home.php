@@ -1,22 +1,5 @@
 <?php
 	echo '
-<section id="home">
-	<div class="ligne">
-	<img src="images/design_deco/Ellaswarheader.png" 
-	     alt="Header Ellàs War" 
-	     title="Ellàs War" />
-	</div>
-	<section id="inscription">
-		<h2>Inscription</h2>
-		<input type="text" name="login" value="" />
-		<br/>
-		<input type="password" name="pass" value="" />
-		<br/><br/>
-		<input type="submit" name="envoyer" value="envoyer" />
-		<br/><br/>
-	</section>
-	<section id="inside">
-		<article>
 <h1>'._('Venez combattre sur Ellàs War').'</h1>
 <p>'._('Inscrivez-vous gratuitement sur Ellàs War, '.
 'affrontez des milliers de joueurs et '.
@@ -42,8 +25,6 @@
 <p>'._('Faites des stocks grâce à votre trésor ou dépensez tout afin d\'améliorer vos soldats. '.
 'N\'oubliez pas que chaque choix peut avoir des conséquences. '.
 'Mais ne faut-il pas prendre des risques '.
-'pour devenir la plus puissante des cités Grecques ? ').'</p></article>
-	</section>
-</section>';
+'pour devenir la plus puissante des cités Grecques ? ').'</p>';
 
 ?>

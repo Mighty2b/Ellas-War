@@ -1,0 +1,18 @@
+Options +FollowSymlinks
+RewriteEngine on
+ErrorDocument 400 /erreur-400
+ErrorDocument 401 /erreur-401
+ErrorDocument 403 /erreur-403
+ErrorDocument 404 /erreur-404
+ErrorDocument 500 /erreur-500
+RewriteRule classements&pageclass=([0-9]+)&par=([a-z]+)$ http://www.ellaswar.com/classementdesjoueurs-$1-$2 [L]
+RewriteRule classements&classement=alliances index.php?page=classement\ alliance [L]
+RewriteRule ^profilsAlliance&alliance=([0-9]+)$ index.php?page=profilsAlliance&var1=$1 [L]
+RewriteRule ^membre\ alliance&alliance=([0-9]+)$ index.php?page=membre\ alliance&var1=$1 [L]
+RewriteRule ^profils\ joueur&joueur=([0-9]+)$ index.php?page=profils\ joueur&var1=$1 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3&var3=$4&var4=$5&var5=$6 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3&var3=$4&var4=$5 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_\(\)]+)$  index.php?page=$1&var1=$2&var2=$3&var3=$4 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2 [L]
+RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1 [L]
