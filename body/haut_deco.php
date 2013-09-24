@@ -1,8 +1,10 @@
 <section id="home">
 	<div class="ligne">
+	<a href="<?php echo SITE_URL; ?>" title="Ellàs War">
 	<img src="images/design_deco/Ellaswarheader.png" 
 	     alt="Header Ellàs War" 
 	     title="Ellàs War" />
+	</a>
 	</div>
 	<section id="inscription">
 		<article>
