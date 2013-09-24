@@ -10,7 +10,7 @@ echo '<nav>
 <div class="titre"><a href="'.SITE_URL.'" title="'._('Ellàs War').'">'._('Ellàs War').'</a></div>
 <a href="'._('decouvertedujeu').'" title="'._('Découvrir Ellàs War').'">'._('Découvrir le jeu').'</a>
 <br/><a href="'._('actualites').'" title="'._('Actualités d\'Ellàs War').'">'._('Actualités du jeu').'</a>
-<br/><a href="'.WIKI_URL.'" title="'._('Wiki d\'Ellàs War').'">'._('FAQ').'</a>
+<br/><a href="'.WIKI_URL.'" title="'._('Wiki d\'Ellàs War').'" target="_blank">'._('FAQ').'</a>
 <br/><a href="'._('nouscontacter').'" title="'._('Contacter l\'équipe d\'Ellàs War').'">'._('Nous contacter').'</a>
 <br/>
 
@@ -23,7 +23,7 @@ echo '<nav>
 
 <div class="titre"><a href="'._('communaute').'" title="'._('La communauté d\'Ellàs War').'">'._('Communauté').'</a></div>
 <a href="'._('joueursconnectes').'" title="'._('Joueurs connectés sur Ellàs War').'">'._('Joueurs connectés').'</a>
-<br/><a href="'.FORUM_URL.'" title="'._('Forum d\'Ellàs War').'">'._('Forum').'</a>
+<br/><a href="'.FORUM_URL.'" title="'._('Forum d\'Ellàs War').'" target="_blank">'._('Forum').'</a>
 <br/><a href="'._('teamspeak').'" title="'._('Serveur Teamspeak').'">'._('Serveur Teamspeak').'</a>
 <br/><a href="'._('equipedusite').'" title="'._('L\'équipe d\'Ellàs War').'">'._('L\'équipe du site').'</a>
 <br/>
