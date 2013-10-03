@@ -1,0 +1,12 @@
+/***
+ * Public API functions
+ ***/
+
+---------------------------------------
+
+Name       : connexion
+Parameters : login
+             password
+Return     : token
+
+---------------------------------------
