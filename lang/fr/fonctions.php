@@ -605,6 +605,8 @@ function erreur($no_erreur, $var='') {
 		break;
 	case 243: $erreur = 'Vous ne pouvez pas vendre cette ressource';
 		break;
+	case 244: $erreur = 'Erreur dans les quantités';
+		break;
 	//case : $erreur = "";break;
 			default: $erreur = "";	break;
 		}
