@@ -11,3 +11,15 @@ Return     : token
 
 ---------------------------------------
 
+Name       : get_joueurs_co
+Parameters : 
+Return     : players list :
+             id : player's id
+             login : player's login
+             lvl : player's lvl
+             terrain : player's terrain
+             alliance : player's alliance id
+             nom : alliance name
+             chef : player's alliance master
+
+---------------------------------------

@@ -4,6 +4,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 define('SITE_URL', 'http://clientv5.ellaswar.com');
+define('API_URL',  'http://serverv5.ellaswar.com');
 define('WIKI_URL', 'http://wiki.ellaswar.com');
 define('FORUM_URL', 'http://forums.ellaswar.com');
 define('LANG', 'fr_FR');
