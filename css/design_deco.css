@@ -56,7 +56,7 @@ section#home {
   background-position:right;
 }
 
-section#home #inscription {
+section#home #formulaire {
   width:187px;
   float:left;
   height:380px;
@@ -65,12 +65,12 @@ section#home #inscription {
   background-repeat:no-repeat;
 }
 
-section#home #inscription article {
+section#home #formulaire article {
   margin:0px 0px 0px 32px;
   width:147px;
 }
 
-section#home #inscription article .form {
+section#home #formulaire article .form {
   width:90%;
   margin-top:2px;
 }

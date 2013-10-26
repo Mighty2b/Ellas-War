@@ -38,6 +38,7 @@ echo '<link rel="stylesheet" href="css/design_deco.css" />';
 <![endif]–>';*/
 
 echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
+echo '<script type="text/javascript" src="js/scripts.js" ></script>';
 
 echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 		<meta name="google-site-verification" 

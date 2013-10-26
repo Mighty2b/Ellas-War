@@ -1,0 +1,17 @@
+/***
+ * Trade functions
+ ***/
+
+---------------------------------------
+
+Name       : get_commercem
+Parameters : ressource type
+             order (optional)
+             page (optional)
+Return     : number of lots
+             list of lots
+             does the player has a blockade
+
+---------------------------------------
+
+
