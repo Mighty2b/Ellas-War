@@ -27,10 +27,10 @@ class Ewpaquet {
 	
 	function send_actions() {
 		$var = array('token'     => $this->token,
-								 'actions'   => $this->actions,
-								 'host'      => @gethostbyaddr($this -> ip),
-								 'navigateur'=> $this->user_agent,
-								 'ip'        => $this->ip);
+		             'actions'   => $this->actions,
+		             'host'      => @gethostbyaddr($this -> ip),
+		             'navigateur'=> $this->user_agent,
+		             'ip'        => $this->ip);
 		$postvar = http_build_query($var);
 		$opts = array('http' =>
 		    array(
@@ -44,11 +44,18 @@ class Ewpaquet {
 		$data = json_decode(file_get_contents(API_URL, false, $context));
 		
 		$this->joueur = $data->joueur;
-		$this->answer = $data->answer;
+		
+		if(!empty($data->answer)) {
+			$this->answer = $data->answer;
+		}
 	}
 	
 	function get_answer($action) {
 		return $this->answer->$action;
+	}
+	
+	function get_infoj($arg) {
+		return $this->joueur->$arg;
 	}
 }
 
