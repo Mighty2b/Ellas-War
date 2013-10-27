@@ -55,14 +55,14 @@ Ellàs War
 </section>
 <section id="header_menu">
 &nbsp;<a href="/">Cité</a>&nbsp;
-&nbsp;<a href="'._('armee').'">Armée</a>&nbsp;
-&nbsp;<a href="'._('archives').'">Archives</a>&nbsp;
-&nbsp;<a href="'._('mythologie').'">Mythologie</a>&nbsp;
-&nbsp;<a href="'._('heros').'">Héros</a>&nbsp;
-&nbsp;<a href="'._('sanctuaires').'">Sanctuaires</a>&nbsp;
-&nbsp;<a href="'._('alliance').'">Alliance</a>&nbsp;
-&nbsp;<a href="'._('commerce').'">Marché</a>&nbsp;
-&nbsp;<a href="'._('jeux').'">Jeux</a>&nbsp;
+&nbsp;<a href="'._('armee').'">'._('Armée').'</a>&nbsp;
+&nbsp;<a href="'._('archives').'">'._('Archives').'</a>&nbsp;
+&nbsp;<a href="'._('mythologie').'">'._('Mythologie').'</a>&nbsp;
+&nbsp;<a href="'._('heros').'">'._('Héros').'</a>&nbsp;
+&nbsp;<a href="'._('sanctuaires').'">'._('Sanctuaires').'</a>&nbsp;
+&nbsp;<a href="'._('alliance').'">'._('Alliance').'</a>&nbsp;
+&nbsp;<a href="'._('commerce').'">'._('Marché').'</a>&nbsp;
+&nbsp;<a href="'._('jeux').'">'._('Jeux').'</a>&nbsp;
 </section>
 
 <section id="header_ssmenu">';
@@ -77,13 +77,13 @@ switch($page) {
 	case 'bonus':
 	case 'faveur':
 		echo '
-		Constructions
-		Construire
-		Armurerie
-		Tresor
-		Oracles
-		Bonus divins
-		Faveurs';
+		<a href="'._('constructions').'">'._('Constructions').'</a>
+		<a href="'._('construire').'">'._('Construire').'</a>
+		<a href="'._('armurerie').'">'._('Armurerie').'</a>
+		<a href="'._('tresor').'">'._('Tresor').'</a>
+		<a href="'._('oracle').'">'._('Oracle').'</a>
+		<a href="'._('bonus').'">'._('Bonus divins').'</a>
+		<a href="'._('faveurs').'">'._('Faveurs').'</a>';
 	break;
 default: echo $page; break;
 }

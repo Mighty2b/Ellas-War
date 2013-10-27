@@ -55,7 +55,7 @@ else {
 	$page = $autorise[0];
 }
 
-echo '<link rel="stylesheet" href="css/design_'.$prefix.'.css" />';
+echo '<link rel="stylesheet" href="design/'.DESIGN.'_'.$prefix.'/design.css" />';
 /*echo '<!–[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]–>';*/

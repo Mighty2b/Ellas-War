@@ -1,6 +1,6 @@
 @font-face {
     font-family: "diogenes";
-    src: url('../diogenes.ttf');
+    src: url('../../diogenes.ttf');
 }
 
 body  * {
@@ -102,4 +102,9 @@ body {
   width:100%;
   text-align:center;
   float:left;
+}
+
+#header_ssmenu a {
+  color:grey;
+  text-decoration:none;
 }

@@ -5,6 +5,7 @@ $autorise = array(
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
 	'conditionsgeneralesutilisation', 'communaute', 'joueursconnectes',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
-	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros');
+	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
+	'constructions');
 
 ?>

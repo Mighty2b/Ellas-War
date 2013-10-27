@@ -51,7 +51,7 @@ section#home {
   margin:auto;
   margin-top:50px;
   text-align:center;
-  background-image:url('../images/design_deco/navigationdroite.png');
+  background-image:url('navigationdroite.png');
   background-repeat:no-repeat;
   background-position:right;
 }
@@ -61,7 +61,7 @@ section#home #formulaire {
   float:left;
   height:380px;
   margin:35px 0 0 0;
-  background-image:url('../images/design_deco/navigationgauche.png');
+  background-image:url('navigationgauche.png');
   background-repeat:no-repeat;
 }
 
