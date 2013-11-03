@@ -1,7 +1,7 @@
 <section id="home">
 	<div class="ligne">
 	<a href="<?php echo SITE_URL; ?>" title="Ellàs War">
-	<img src="images/design_deco/Ellaswarheader.png" 
+	<img src="design/design_deco/Ellaswarheader.png" 
 	     alt="Header Ellàs War" 
 	     title="Ellàs War" />
 	</a>
@@ -20,12 +20,23 @@
 		
 		<article id="connexion">
 			<h2>Connexion</h2>
+			<?php
+				if(!empty($paquet->get_answer('connexion'))) {
+					if($paquet->get_answer('connexion')->{2} != 0) {
+						echo display_error($paquet->get_answer('connexion')->{2});
+					}
+				}
+			?>
 			<div id="erreur"></div>
-			<input type="text" name="login" value="" class="form" />
-			<br/>
-			<input type="password" name="pass" value="" class="form" />
-			<br/>
-			<input type="submit" name="envoyer" value="envoyer" />
+			<form action="/" method="post">
+				<input type="text" name="login" value="" class="form" />
+				<br/>
+				<input type="password" name="pass" value="" class="form" />
+				<br/>
+				<input type="submit" 
+				       name="envoyer" 
+				       value="envoyer" />
+			</form>
 			<br/>
 		</article>
 		

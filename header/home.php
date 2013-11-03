@@ -7,4 +7,8 @@ echo '<meta name="description" content="'._('Bienvenue sur Ellás War.
       Construisez votre cité et votre armée pour devenir le maître de toute une civilisation.').
       '" />';
 
+if(!empty($_POST['login']) && !empty($_POST['pass'])) {
+	$paquet -> add_action('connexion', array($_POST['login'], $_POST['pass']));
+}
+
 ?>
