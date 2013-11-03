@@ -21,7 +21,7 @@ echo '<!DOCTYPE html>
 		
 $paquet =  new EwPaquet();
 
-if(empty($page)) {
+if(empty($page) or !file_exists('header/'.$page.'.php')) {
 	$page = 'home';
 }
 

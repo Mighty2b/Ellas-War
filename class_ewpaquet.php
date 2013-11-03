@@ -52,6 +52,7 @@ class Ewpaquet {
 		
 		if(!empty($data->joueur)) {
 			$this->joueur = $data->joueur;
+			
 			$temps = time()+TEMPS_CO*86400;
 			
 			if((empty($_COOKIE['token']) or 

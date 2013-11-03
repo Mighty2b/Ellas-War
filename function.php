@@ -22,6 +22,47 @@ function set_lang() {
 	textdomain('textes');
 }
 
+function nbf($n, $nb=2) {
+	if(is_numeric($n)) {
+		if($n == round($n)) {
+			return number_format($n , 0, ',', ' ');
+		}
+		else {
+			if($nb == 0) {
+				$n = floor($n);
+			}
+			return number_format($n , $nb, ',', ' ');
+		}
+	}
+}
+
+function img($chemin, $nom) {
+	return '<img src=\''.$chemin.'\' 
+	             title=\''.ucfirst(_($nom)).'\' 
+	             alt=\''.ucfirst(_($nom)).'\'/>';	
+}
+
+function imress($ress) {
+	switch($ress) {
+		case 'gold':
+			$ress = 'or';
+			$description = $ress;
+		break;
+		
+		case 'stv':
+			$description = 'Marque divine';
+		break;
+		
+		default:
+			$description = $ress;
+		break;
+	}
+
+	return '<img src="images/ress/'.$ress.'.jpg" 
+				 alt="'.ucfirst(_($description)).'" 
+				 title="'.ucfirst(_($description)).'" /> ';
+}
+
 function display_error($erreur_no, $var='') {
 
 	if(is_array($erreur_no)) {
