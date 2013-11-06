@@ -14,6 +14,7 @@ $autorise = array('cite',
 'parrainage', 'filleuls', 'soutien',
 
 //Classements
+'classements',
 
 //Communauté
 'joueursconnectes', 'amis', 'teamspeak', 'sondages', 'chat',

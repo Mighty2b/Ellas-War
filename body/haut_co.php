@@ -27,7 +27,7 @@ echo '
 			<li>&nbsp;<a href="'._('filleuls').'">'.ucfirst(_('filleuls')).'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('soutien').'">'.ucfirst(_('soutien')).'</a>&nbsp;</li>
 		</ul></li>
-		<li>&nbsp;'._('Classements').'&nbsp;
+		<li>&nbsp;<a href="'._('classements').'">'._('Classements').'</a>&nbsp;
 		<ul class="sub_menu">
 			<li>&nbsp;'._('Alliances').'&nbsp;</li>
 			<li>&nbsp;'._('Batailles navales').'&nbsp;</li>
@@ -35,7 +35,7 @@ echo '
 			<li>&nbsp;'._('Héros').'&nbsp;</li>
 			<li>&nbsp;'._('Honneur').'&nbsp;</li>
 		</ul>
-		<li>&nbsp;'._('Communauté').'&nbsp;
+		<li>&nbsp;<a href="'._('communaute').'">'._('Communauté').'</a>&nbsp;
 		<ul class="sub_menu">
 			<li>&nbsp;<a href="'._('joueursconnectes').'">'._('Joueur&nbsp;connectés').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('amis').'">'.ucfirst(_('amis')).'</a>&nbsp;</li>
@@ -168,6 +168,11 @@ switch($page) {
 	
 	break;
 	
+	case 'classements':
+	
+	break;
+	
+	case 'communaute':
 	case 'joueursconnectes':
 	case 'amis':
 	case 'teamspeak':
