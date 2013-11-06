@@ -21,7 +21,7 @@
 		<article id="connexion">
 			<h2>Connexion</h2>
 			<?php
-				if(!empty($paquet->get_answer('connexion'))) {
+				if($paquet->get_answer('connexion') != '') {
 					$answer = $paquet->get_answer('connexion');
 					if($answer->{2} != 0) {
 						echo display_error($answer->{2});
