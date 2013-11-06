@@ -1,0 +1,21 @@
+/***
+ * Accounts functions
+ ***/
+
+---------------------------------------
+
+Name       : changer_mail
+Parameters : actual password
+             new password
+             new password check
+Return     : error number
+
+---------------------------------------
+
+Name       : changer_pwd
+Parameters : actual email
+             new email
+             new email check
+Return     : error number
+
+---------------------------------------

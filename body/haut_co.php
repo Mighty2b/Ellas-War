@@ -15,17 +15,17 @@ echo '
 		</li>
 		<li>&nbsp;<a href="'._('messagerie').'">'._('Messagerie').'</a>&nbsp;
 		<ul class="sub_menu">
-			<li>&nbsp;<a href="'._('nouveaumessage').'">Nouveau message</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('messagerie').'">Boite de reception</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('boiteEnvoie').'">Boite d\'envoi</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('archivesdemessagerie').'">Archives</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('listenoire').'">Liste noire</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('nouveaumessage').'">'._('Nouveau message').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('messagerie').'">'._('Boite de reception').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('boiteenvoie').'">'._('Boite d\'envoi').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('archivesdemessagerie').'">'._('Archives').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('listenoire').'">'._('Liste noire').'</a>&nbsp;</li>
 		</ul>
 		</li>
-		<li>&nbsp;'._('Parrainage').'&nbsp;
+		<li>&nbsp;<a href="'._('parrainage').'">'.ucfirst(_('parrainage')).'</a>&nbsp;
 		<ul class="sub_menu">
-			<li>&nbsp;'._('Filleuls').'&nbsp;</li>
-			<li>&nbsp;'._('Soutien').'&nbsp;</li>
+			<li>&nbsp;<a href="'._('filleuls').'">'.ucfirst(_('filleuls')).'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('soutien').'">'.ucfirst(_('soutien')).'</a>&nbsp;</li>
 		</ul></li>
 		<li>&nbsp;'._('Classements').'&nbsp;
 		<ul class="sub_menu">
@@ -37,21 +37,21 @@ echo '
 		</ul>
 		<li>&nbsp;'._('Communauté').'&nbsp;
 		<ul class="sub_menu">
-			<li>&nbsp;'._('Joueur&nbsp;connectés').'&nbsp;</li>
-			<li>&nbsp;'._('Amis').'&nbsp;</li>
+			<li>&nbsp;<a href="'._('joueursconnectes').'">'._('Joueur&nbsp;connectés').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('amis').'">'.ucfirst(_('amis')).'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'.FORUM_URL.'">'._('Forum').'</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('teamspeak').'">'._('Teamspeak').'</a>&nbsp;</li>
-			<li>&nbsp;'._('Sondages').'&nbsp;</li>
-			<li>&nbsp;'._('Chat').'&nbsp;</li>
+			<li>&nbsp;<a href="'._('teamspeak').'">'.ucfirst(_('teamspeak')).'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('sondages').'">'.ucfirst(_('sondages')).'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('chat').'">'.ucfirst(_('chat')).'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'.WIKI_URL.'">'._('Aide').'</a>&nbsp;</li>
-		<li>&nbsp;'._('Contact').'&nbsp;</li>
+		<li>&nbsp;<a href="'._('pagecontact').'">'._('Contact').'</a>&nbsp;</li>
 		<li>&nbsp;'._('Deconnexion').'&nbsp;</li>
 </ul>
 </div>
 </section>
 <section id="header_ban">
-Ellàs War
+<a href="'.SITE_URL.'">Ellàs War</a>
 </section>
 <section id="header_menu">
 &nbsp;<a href="/">Cité</a>&nbsp;
@@ -68,7 +68,6 @@ Ellàs War
 <section id="header_ssmenu">';
 switch($page) {
 	case 'cite':
-	case 'armee':
 	case 'constructions':
 	case 'construire':
 	case 'armurerie':
@@ -86,6 +85,48 @@ switch($page) {
 		<a href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>';
 	break;
 	
+	case 'armee':
+	case 'attaquer':
+	case 'passerenrevue':
+	case 'engager':
+	case 'mesattaques':
+	case 'strategiedefensive':
+	case 'strategieoffensive':
+		echo '
+		<a href="'._('attaquer').'">'.ucfirst(_('attaquer')).'</a>
+		<a href="'._('passerenrevue').'">'._('Passer en revue').'</a>
+		<a href="'._('engager').'">'.ucfirst(_('engager')).'</a>
+		<a href="'._('mesattaques').'">'._('Mes attaques').'</a>
+		<a href="'._('strategiedefensive').'">'._('Stratégie défensive').'</a>
+		<a href="'._('strategieoffensive').'">'._('Stratégie offensive').'</a>';
+	break;
+	
+	case 'archives':
+	
+	break;
+	
+	case 'mythologie':
+	case 'arbredesdieux':
+	case 'auteldesdieux':
+	case 'temples':
+	case 'statues':
+	case 'succes':
+	case 'prieres':
+	
+	break;
+	
+	case 'heros':
+	
+	break;
+	
+	case 'missions':
+	
+	break;
+	
+	case 'alliance':
+	
+	break;
+	
 	case 'commerce':
 	case 'donnerunefaveur':
 	case 'faveurs':
@@ -101,6 +142,10 @@ switch($page) {
 		<a href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>';
 	break;
 	
+	case 'jeux':
+	
+	break;
+	
 	case 'informationspersonnelles':
 	case 'bibliotheque':
 	case 'pause':
@@ -109,7 +154,29 @@ switch($page) {
 	
 	break;	
 	
-default: echo $page; break;
+	case 'nouveaumessage':
+	case 'messagerie':
+	case 'boiteEnvoie':
+	case 'archivesdemessagerie':
+	case 'listenoire':
+	
+	break;
+	
+	case 'parrainage':
+	case 'filleuls':
+	case 'soutien':
+	
+	break;
+	
+	case 'joueursconnectes':
+	case 'amis':
+	case 'teamspeak':
+	case 'sondages':
+	case 'chat':
+	
+	break;
+	
+	default: echo $page; break;
 }
 echo '
 </section>
