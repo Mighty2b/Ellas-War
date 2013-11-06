@@ -22,9 +22,9 @@
 			<h2>Connexion</h2>
 			<?php
 				if(!empty($paquet->get_answer('connexion'))) {
-					$num = $paquet->get_answer('connexion')->{2};
-					if($num != 0) {
-						echo display_error($num);
+					$answer = $paquet->get_answer('connexion');
+					if($answer->{2} != 0) {
+						echo display_error($answer->{2});
 					}
 				}
 			?>
