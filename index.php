@@ -56,7 +56,7 @@ echo '<link rel="stylesheet" href="design/'.DESIGN.'_'.$prefix.'/design.css" />'
 <![endif]–>';*/
 
 echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
-echo '<script type="text/javascript" src="js/scripts.js" ></script>';
+echo '<script type="text/javascript" src="js/scripts_'.$prefix.'.js" ></script>';
 
 echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 		<meta name="google-site-verification" 

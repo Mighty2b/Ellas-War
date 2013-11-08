@@ -1,0 +1,10 @@
+/***
+ * Players functions
+ ***/
+
+---------------------------------------
+
+Name       : deco
+Description: deconnect a player
+
+---------------------------------------

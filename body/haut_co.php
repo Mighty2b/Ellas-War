@@ -46,7 +46,7 @@ echo '
 		</ul>
 		<li>&nbsp;<a href="'.WIKI_URL.'">'._('Aide').'</a>&nbsp;</li>
 		<li>&nbsp;<a href="'._('pagecontact').'">'._('Contact').'</a>&nbsp;</li>
-		<li>&nbsp;'._('Deconnexion').'&nbsp;</li>
+		<li>&nbsp;<a href="#" onclick="deco();">'._('Deconnexion').'</a>&nbsp;</li>
 </ul>
 </div>
 </section>

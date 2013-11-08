@@ -7,3 +7,13 @@ $(function(){
     $('ul:first',this).css('visibility', 'hidden');
   });
 });
+
+function deco() {
+  $.ajax({
+    type: "GET",
+    url: "../form/form_deconnexion.php",
+    success: function(msg) {
+      location.reload();
+    }
+  });
+}
