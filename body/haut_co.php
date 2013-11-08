@@ -181,6 +181,10 @@ switch($page) {
 	
 	break;
 	
+	case 'pagecontact':
+	
+	break;
+	
 	default: echo $page; break;
 }
 echo '
