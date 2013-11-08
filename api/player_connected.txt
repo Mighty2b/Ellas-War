@@ -1,0 +1,12 @@
+/***
+ * Players connected functions
+ ***/
+
+---------------------------------------
+
+Name       : utiliser_bonus
+Parameters : bonus id
+Description: use a bonus
+
+---------------------------------------
+

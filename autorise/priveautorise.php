@@ -24,7 +24,7 @@ $autorise = array('cite',
 
 //cite
 'construire', 'constructions', 'armurerie', 'tresor', 'oracle', 
-'bonusdivins', 'faveurs',
+'bonus', 'faveurs',
 
 //Armée
 'armee', 'attaquer', 'passerenrevue', 'engager', 'mesattaques', 
