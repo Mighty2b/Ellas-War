@@ -254,3 +254,99 @@ body {
   display: block;
   position: absolute;
 }
+
+#erreur_bat {
+  position:absolute;
+  margin-top:235px;
+  width:642px;
+  margin-left:125px;
+}
+
+
+#cadre_batiment_description {
+  width:642px;
+  height:270px;
+  margin:auto;
+  background-image:url('../design/co/contourgrand.png');
+}
+
+#cadre_batiment_types {
+  width:385px;
+  height:28px;
+  background-image:url('../design/co/menu4.png');
+  margin:auto;
+}
+
+#cadre_batiment_types2 {
+  margin-top:3px;
+  position:relative;
+  float:left;
+  font-size:1.3em;
+  text-align:center;
+  font-weight: bold;
+  width:100%;
+}
+
+#cadre_batiment_liste {
+  margin-left:24px;
+  margin-top:10px;
+  width:850px;
+  position:relative;
+  float:left;
+  background-color:#EAE6E1;
+}
+
+.cadre_batiment_unite {
+  height:150px;
+  width:150px;
+  position:relative;
+  float:left;
+  margin:10px;
+  cursor : pointer;
+}
+
+.cadre_batiment_nom {
+  text-align:center;
+  width:100%;
+  margin-top:125px;
+  height:25px;
+  position:relative;
+  float:left;
+  background-image:url('../design/co/plaque3.png');
+  z-index:1000;
+}
+
+.cadre_batiment_nom2 {
+  margin-top:5px;
+  text-align:center;
+  font-weight: bold;
+  font-size:1.1em;
+}
+
+#cadre_batiment_cache {
+  position:absolute;
+  margin-top:510px;
+  margin-left:140px;
+  width:622px;
+  height:260px;
+}
+
+.titre_batiment2 {
+  margin-top:2px;
+  margin-bottom:7px;
+  font-size:1.4em;
+  text-align:center;
+}
+
+.gauche_batiment {
+  position:relative;
+  float:left;
+  width:210px;
+}
+
+.droite_batiment {
+  position:relative;
+  float:left;
+  width:410px;
+  line-height:14px;
+}

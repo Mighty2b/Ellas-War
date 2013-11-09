@@ -45,7 +45,11 @@ echo '
 			<li>&nbsp;<a href="'._('chat').'">'.ucfirst(_('chat')).'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'.WIKI_URL.'">'._('Aide').'</a>&nbsp;</li>
-		<li>&nbsp;<a href="'._('pagecontact').'">'._('Contact').'</a>&nbsp;</li>
+		<li>&nbsp;<a href="'._('pagecontact').'">'._('Contact').'</a>&nbsp;
+		<ul class="sub_menu">
+			<li>&nbsp;<a href="'._('archivescontact').'">'._('Archives').'</a>&nbsp;</li>
+		</ul>
+		</li>
 		<li>&nbsp;<a href="#" onclick="deco();">'._('Deconnexion').'</a>&nbsp;</li>
 </ul>
 </div>
@@ -74,7 +78,7 @@ switch($page) {
 	case 'tresor':
 	case 'oracle':
 	case 'bonus':
-	case 'faveur':
+	case 'faveurs':
 		echo '
 		<a href="'._('constructions').'">'._('Constructions').'</a>
 		<a href="'._('construire').'">'._('Construire').'</a>
@@ -129,7 +133,6 @@ switch($page) {
 	
 	case 'commerce':
 	case 'donnerunefaveur':
-	case 'faveurs':
 	case 'vendre':
 	case 'licences':
 	case 'mesventes':

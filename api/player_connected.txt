@@ -10,3 +10,21 @@ Description: use a bonus
 
 ---------------------------------------
 
+Name       : batir
+Parameters : construction keyword
+             construction number
+Description: build new constructions
+
+---------------------------------------
+
+Name       : detruire
+Parameters : construction keyword
+             construction number
+Description: destruct constructions
+
+---------------------------------------
+
+Name       : modif_coef_marbre
+Parameters : pourcent of production used for marble
+
+---------------------------------------
