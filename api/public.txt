@@ -23,3 +23,10 @@ Return     : players list :
              chef : player's alliance master
 
 ---------------------------------------
+
+Name       : nouscontacter
+Parameters : login
+             email
+             subject
+             text
+Return     : error number

@@ -67,8 +67,29 @@ echo '
 
 if(!empty($_GET['var2'])) {
 	echo '
-	<script>
-		construire(\''.$_GET['var2'].'\');
-	</script>';
+<script type="text/javascript">
+$(function() {
+	var cadre = $("#cadre_batiment_cache");
+	cadre.html(\'\');
+	if(cadre.hasClass(\'affiche\')) {
+			cadre.css("top", "+=500")
+	}
+	else {
+		cadre.addClass(\'affiche\');
+	}
+	
+	$.ajax({
+		type: "GET",
+		url: "form/form_construire.php",
+    data: "bat='.$_GET['var2'].'",
+		success: function(msg){ cadre.html(msg); }
+	});
+
+	cadre.animate({
+		top:-500
+	}, 1000);
+});
+</script>';
 }
+
 ?>

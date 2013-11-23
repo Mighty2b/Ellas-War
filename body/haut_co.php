@@ -185,6 +185,7 @@ switch($page) {
 	break;
 	
 	case 'pagecontact':
+	case 'archivescontact':
 	
 	break;
 	
