@@ -24,9 +24,18 @@ Return     : players list :
 
 ---------------------------------------
 
+Name       : get_news
+Parameters : number of new (default : 10)
+Return     : news list and links          
+             number of news
+
+---------------------------------------
+
 Name       : nouscontacter
 Parameters : login
              email
              subject
              text
 Return     : error number
+
+---------------------------------------
