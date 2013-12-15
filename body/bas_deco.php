@@ -1,3 +1,4 @@
-</article>
+			</article>
+		</section>
 	</section>
 </section>

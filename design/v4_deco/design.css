@@ -1,0 +1,119 @@
+body {
+	background-color:#3694DB;
+	padding:0;
+	margin:auto;
+	width:1250px;
+}
+
+#banniere {
+	background-image:url('banniere.png');
+	width:1250px;
+	height:276px;
+}
+
+#menu {
+	background-image:url('barre_menu.png');
+	width:1250px;
+	height:50px;
+	position:absolute;
+	top:276px;
+}
+
+footer {
+  min-height:50px;
+  width:100%;
+  background-color:black;
+  bottom:0;
+}
+
+footer nav {
+  padding:10px 0px 10px 0px;
+  font-size:0.75em;
+  color:white;
+  column-count:5;
+  -moz-column-count:5;
+  -webkit-column-count:5;
+  
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  
+  column-rule: 1px dotted #BBBBBB;
+  -moz-column-rule: 1px dotted #BBBBBB;
+  -webkit-column-rule: 1px dotted #BBBBBB;
+}
+
+footer nav .titre {
+  font-weight:bold;
+}
+
+footer nav a {
+  color:white;
+  text-decoration:none;
+}
+
+#home {
+	margin-top:50px;
+	background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
+	background-position: 0% 0%, bottom, 0% 0%;
+	background-repeat: no-repeat, no-repeat, repeat;
+	padding-bottom: 7px;
+}
+
+#home_int {
+	background-image:url('header_tab_accueil.png'), url('font_bas_cadre.png'), url('font_texte_accueil.png');
+	background-position: 0% 0%, bottom, 0% 0%;
+	background-repeat: no-repeat, no-repeat, repeat-y;
+	width:873px;
+	margin:auto;
+	padding-bottom:70px;
+}
+
+#formulaire {
+	width:230px;
+	display:inline;
+	float:right;
+	padding-top:60px;
+}
+
+#inscription {
+	position:relative;
+	width:230px;
+}
+
+#connexion {
+	position:relative;
+	width:230px;
+}
+
+#inside {
+	width:553px;
+	display:inline;
+}
+
+#inside article {
+	width:510px;
+	margin-left:10px;
+	padding-top:60px;
+}
+
+#inside article h1:first-letter, #inside article h2:first-letter, #inside article p:first-letter {
+    color: #B30000 !important;
+}
+
+#inside article h1 {
+	font-size: 1.7em;
+	text-align:center;
+	margin:18px 0px 0px 0px;
+}
+
+#inside article h2 {
+    font-size: 1.2em;
+    margin: 3px 0 0;
+    text-align: center;
+}
+
+#inside article p {
+	font-size:0.9em;
+	text-align:justify;
+}
