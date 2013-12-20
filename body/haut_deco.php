@@ -5,13 +5,24 @@
 		<section id="formulaire">
 		
 			<article id="inscription">
-			<h2>Inscription</h2>
-			<input type="text" name="login" value="" class="form" />
+			<h2><?php echo _('Inscription'); ?></h2>
+			<input type="text"
+			       name="login" 
+			       value="" 
+			       class="form"
+			       placeholder="<?php echo _('Nom de joueur'); ?>" />
 			<br/>
-			<input type="password" name="pass" value="" class="form" />
+			<input type="password" 
+			       name="pass" 
+			       value="" 
+			       class="form"
+			       placeholder="<?php echo _('Mot de passe'); ?>" />
 			<br/>
-			<input type="submit" name="envoyer" value="envoyer" />
-			<br/><br/>
+			<div class="bouton_classique"><input type="submit" 
+			                                     name="envoyer" 
+			                                     value="<?php echo _('S\'inscrire'); ?>" /></div>
+			<br/>
+			<hr/>
 			</article>
 			
 			<article id="connexion">
@@ -26,13 +37,21 @@
 				?>
 				<div id="erreur"></div>
 				<form action="/" method="post">
-					<input type="text" name="login" value="" class="form" />
+					<input type="text" 
+					       name="login" 
+					       value="" 
+					       class="form"
+					       placeholder="<?php echo _('Nom de joueur'); ?>" />
 					<br/>
-					<input type="password" name="pass" value="" class="form" />
+					<input type="password" 
+					       name="pass" 
+					       value="" 
+					       class="form"
+					       placeholder="<?php echo _('Mot de passe'); ?>" />
 					<br/>
-					<input type="submit" 
-					       name="envoyer" 
-					       value="envoyer" />
+					<div class="bouton_classique"><input type="submit" 
+					                                     name="envoyer" 
+					                                     value="<?php echo _('Entrer'); ?>" /></div>
 				</form>
 				<br/>
 			</article>
