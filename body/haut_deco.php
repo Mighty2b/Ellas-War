@@ -55,6 +55,10 @@
 				</form>
 				<br/>
 			</article>
+			
+			<article id="reseaux_sociaux">
+			
+			</article>
 		</section>
 		<section id="inside">
 			<article>

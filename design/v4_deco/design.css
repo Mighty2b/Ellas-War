@@ -10,6 +10,10 @@ body {
 	width:1250px;
 }
 
+.clear {
+	clear:both
+}
+
 #banniere {
 	background-image:url('banniere.png');
 	width:1250px;
@@ -108,7 +112,7 @@ footer nav a {
 #inside article h1:first-letter, 
 #inside article h2:first-letter, 
 #inside article p:first-letter,
-#inscription h2:first-letter {
+#formulaire h2:first-letter {
     color: #B30000 !important;
 }
 
@@ -166,6 +170,10 @@ input[type="submit"] {
 
 #formulaire .bouton_classique  {
 	margin-top:5px;
+}
+
+#reseaux_sociaux {
+	text-align:center;
 }
 
 #home_description {
