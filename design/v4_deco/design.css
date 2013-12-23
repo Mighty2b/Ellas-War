@@ -83,7 +83,7 @@ footer nav a {
 	width:230px;
 	display:inline;
 	float:right;
-	padding-top:60px;
+	padding-top:75px;
 	margin-right:15px;
 	text-align:center;
 }
@@ -158,8 +158,8 @@ input[type="submit"] {
 }
 
 #formulaire h2 {
+	margin-top:5px;
 	margin-bottom:5px;
-	
 }
 
 

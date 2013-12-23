@@ -22,11 +22,26 @@
 			                                     name="envoyer" 
 			                                     value="<?php echo _('S\'inscrire'); ?>" /></div>
 			<br/>
-			<hr/>
 			</article>
-			
+			<article id="reseaux_sociaux">
+<a href="<?php echo FACEBOOK; ?>" 
+   target="_blank"><img src="images/logo/facebook.png" 
+                        title="<?php echo _('Ellàs War sur Facebook'); ?>" 
+                        alt="<?php echo _('Ellàs War sur Facebook'); ?>"></a>
+&nbsp;
+<a href="<?php echo TWITTER; ?>" 
+   target="_blank"><img src="images/logo/twitter.png" 
+                        title="<?php echo _('S\'abonner à Ellaswar sur Twitter'); ?>" 
+                        alt="<?php echo _('S\'abonner à Ellaswar sur Twitter'); ?>"></a>
+&nbsp;
+<a href="https://github.com/Mighty2b" 
+   target="_blank"><img src="images/logo/github.png" 
+                        title="<?php echo _('Mighty sur Github'); ?>" 
+                        alt="<?php echo _('Mighty sur Github'); ?>"></a>
+		
+			</article>
 			<article id="connexion">
-				<h2>Connexion</h2>
+				<h2><?php echo _('Connexion'); ?></h2>
 				<?php
 					if($paquet->get_answer('connexion') != '') {
 						$answer = $paquet->get_answer('connexion');
@@ -35,7 +50,6 @@
 						}
 					}
 				?>
-				<div id="erreur"></div>
 				<form action="/" method="post">
 					<input type="text" 
 					       name="login" 
@@ -54,10 +68,6 @@
 					                                     value="<?php echo _('Entrer'); ?>" /></div>
 				</form>
 				<br/>
-			</article>
-			
-			<article id="reseaux_sociaux">
-			
 			</article>
 		</section>
 		<section id="inside">
