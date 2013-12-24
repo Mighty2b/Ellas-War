@@ -50,7 +50,9 @@ else {
 	$page = $autorise[0];
 }
 
-echo '<link rel="stylesheet" href="design/'.DESIGN.'_'.$prefix.'/design.css" />';
+echo '
+<link rel="stylesheet" href="design/'.DESIGN.'_'.$prefix.'/design.css" />
+<link rel="icon" href="design/'.DESIGN.'_'.$prefix.'/favicon.ico" />';
 /*echo '<!–[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]–>';*/
