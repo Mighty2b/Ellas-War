@@ -23,6 +23,7 @@ a {
 	background-image:url('banniere.png');
 	width:1250px;
 	height:276px;
+	cursor:pointer;
 }
 
 #menu {

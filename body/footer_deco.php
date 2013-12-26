@@ -43,7 +43,15 @@ $(window).load(function() {
 		var diff = ($(document).width() - $(window).width())/2;
 		$('html,body').animate({
 	        scrollLeft: diff
-	    }, 800);
+	    }, 1);
 	}
 });
+<?php 
+
+echo '
+$("#banniere").click( function() {
+	location.href = \''.SITE_URL.'\';
+});';
+
+?>
 </script>
