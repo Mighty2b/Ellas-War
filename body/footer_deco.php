@@ -37,3 +37,13 @@ echo '<nav>
 </nav>';
 
 ?>
+<script type="text/javascript">
+$(window).load(function() {
+	if($(document).width() > $(window).width()) {
+		var diff = ($(document).width() - $(window).width())/2;
+		$('html,body').animate({
+	        scrollLeft: diff
+	    }, 800);
+	}
+});
+</script>
