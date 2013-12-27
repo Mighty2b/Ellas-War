@@ -6,21 +6,25 @@
 		
 			<article id="inscription">
 			<h2><?php echo _('Inscription'); ?></h2>
-			<input type="text"
-			       name="login" 
-			       value="" 
-			       class="form"
-			       placeholder="<?php echo _('Nom de joueur'); ?>" />
-			<br/>
-			<input type="password" 
-			       name="pass" 
-			       value="" 
-			       class="form"
-			       placeholder="<?php echo _('Mot de passe'); ?>" />
-			<br/>
-			<div class="bouton_classique"><input type="submit" 
-			                                     name="envoyer" 
-			                                     value="<?php echo _('S\'inscrire'); ?>" /></div>
+			<form action="/" method="post">
+				<input type="text"
+				       name="ilogin" 
+				       value="" 
+				       class="form"
+				       placeholder="<?php echo _('Nom de joueur'); ?>"
+				       required="required" />
+				<br/>
+				<input type="password" 
+				       name="ipass" 
+				       value="" 
+				       class="form"
+				       placeholder="<?php echo _('Mot de passe'); ?>"
+				       required="required" />
+				<br/>
+				<div class="bouton_classique"><input type="submit" 
+				                                     name="sinscrire" 
+				                                     value="<?php echo _('S\'inscrire'); ?>" /></div>
+			</form>
 			<br/>
 			</article>
 			<article id="reseaux_sociaux">
@@ -55,13 +59,15 @@
 					       name="login" 
 					       value="" 
 					       class="form"
-					       placeholder="<?php echo _('Nom de joueur'); ?>" />
+					       placeholder="<?php echo _('Nom de joueur'); ?>"
+				           required="required" />
 					<br/>
 					<input type="password" 
 					       name="pass" 
 					       value="" 
 					       class="form"
-					       placeholder="<?php echo _('Mot de passe'); ?>" />
+					       placeholder="<?php echo _('Mot de passe'); ?>"
+				           required="required" />
 					<br/>
 					<div class="bouton_classique"><input type="submit" 
 					                                     name="envoyer" 
