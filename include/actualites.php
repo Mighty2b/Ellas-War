@@ -2,11 +2,10 @@
 
 $list_news = $paquet->get_answer('get_news')->{1};
 
-echo '<h1 class="title_faq">'._('Actualités d\'Ellàs War').'</h1>';
+echo '<h1 class="title_faq">'._('Actualités d\'Ellàs War').'</h1><br/>';
 
 if(sizeof($list_news) > 0) {
-	echo '<div id="new_list" class="ligne">
-	<h2>'._('News').'</h2>';
+	echo '<div id="new_list" class="ligne">';
 	
 	foreach($list_news as $i => $news) {
 		echo '<div class="ligne">
@@ -14,7 +13,7 @@ if(sizeof($list_news) > 0) {
 		</div>';
 	}
 	
-	echo '</div>';
+	echo '<div class="ligne"><br/></div></div>';
 }
 
 ?>
