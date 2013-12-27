@@ -6,6 +6,16 @@
 		
 			<article id="inscription">
 			<h2><?php echo _('Inscription'); ?></h2>
+			<?php
+			
+			if($paquet->get_answer('inscription') != '') {
+				$answer = $paquet->get_answer('inscription');
+				if($answer->{1} != 0) {
+					echo display_error($answer->{1});
+				}
+			}
+			
+			?>
 			<form action="/" method="post">
 				<input type="text"
 				       name="ilogin" 
