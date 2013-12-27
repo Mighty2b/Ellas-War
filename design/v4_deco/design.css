@@ -15,6 +15,15 @@ a {
 	color:black;
 }
 
+table {
+	margin:auto;
+}
+
+thead {
+	font-weight:bold;
+	font-size:1.1em;
+}
+
 .clear {
 	clear:both
 }
