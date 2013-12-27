@@ -10,4 +10,8 @@ function display_date($temps, $type=1) {
 	}
 }
 
+function trad_to_page($page) {
+	return $page;
+}
+
 ?>
