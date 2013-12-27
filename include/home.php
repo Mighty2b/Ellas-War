@@ -102,20 +102,22 @@ _('Faites des stocks grâce à votre trésor ou dépensez tout afin d\'améliore
 'pour devenir la plus puissante des <b>cités Grecques</b> ?').'</div>
 </div>
 </div>';
-	
-$list_news = $paquet->get_answer('get_news')->{1};
-	
-if(sizeof($list_news) > 0) {
-	echo '<div id="new_list" class="ligne">
-	<h2>'._('News').'</h2>';
-	
-	foreach($list_news as $i => $news) {
-		echo '<div class="ligne">
-			<a href="'.$news->lien.'" class="titre_news" target="_blank" >'.$news->titre.'</a>, <i>'.display_date($news->temps, 1).'</i></td>
-		</div>';
+
+if($paquet->get_answer('get_news') != null) {
+	$list_news = $paquet->get_answer('get_news')->{1};
+		
+	if(sizeof($list_news) > 0) {
+		echo '<div id="new_list" class="ligne">
+		<h2>'._('News').'</h2>';
+		
+		foreach($list_news as $i => $news) {
+			echo '<div class="ligne">
+				<a href="'.$news->lien.'" class="titre_news" target="_blank" >'.$news->titre.'</a>, <i>'.display_date($news->temps, 1).'</i></td>
+			</div>';
+		}
+		
+		echo '</div>';
 	}
-	
-	echo '</div>';
 }
 ?>
 
