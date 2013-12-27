@@ -48,7 +48,7 @@ class Ewpaquet {
 		);
 		
 		$context  = stream_context_create($opts);
-		$data     = json_decode(file_get_contents(API_URL, false, $context));
+		$data     = @json_decode(file_get_contents(API_URL, false, $context));
 		
 		if(!empty($data->joueur)) {
 			$this->joueur = $data->joueur;
