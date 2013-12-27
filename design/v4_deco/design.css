@@ -130,7 +130,9 @@ footer nav a {
 #inside article h2:first-letter, 
 #inside article p:first-letter,
 #formulaire h2:first-letter,
-#new_list.ligne .ligne:first-letter {
+#new_list.ligne .ligne:first-letter,
+.rouge_goco,
+#nouscontacter_droite:first-letter {
     color: #B30000 !important;
 }
 
@@ -152,7 +154,8 @@ footer nav a {
 	margin:2px 0px;
 }
 
-input {
+input,
+textarea {
 	background-color: #EAE7E1;
     border: 1px solid #857061;
 }
@@ -277,4 +280,21 @@ input[type="submit"] {
 
 #new_list.ligne .ligne {
 	font-size:0.8em;
+}
+
+#nouscontacter_gauche {
+	width:40%;
+	float:left;
+	position:relative;
+}
+
+#nouscontacter_droite {
+	width:60%;
+	float:right;
+	position:relative;
+}
+
+#nouscontacter_droite textarea {
+	width:100%;
+	height:122px;
 }
