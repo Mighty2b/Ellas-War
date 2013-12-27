@@ -253,6 +253,10 @@ input[type="submit"] {
 	width:100%;
 }
 
+.ligne80 {
+	font-size:0.8em;
+}
+
 .ligne_50 {
 	position:relative;
 	float:left;
@@ -261,6 +265,10 @@ input[type="submit"] {
 
 .gras {
   font-weight:bold;
+}
+
+.justify {
+	text-align:justify;
 }
 
 #new_list.ligne .ligne {
