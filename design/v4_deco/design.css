@@ -267,6 +267,10 @@ input[type="submit"] {
   font-weight:bold;
 }
 
+.gauche {
+	text-align:left;
+}
+
 .justify {
 	text-align:justify;
 }
