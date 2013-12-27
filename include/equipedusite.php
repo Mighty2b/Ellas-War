@@ -14,7 +14,7 @@ echo '<h1>'._('L\'équipe d\'Ellàs War').'</h1>
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Administrateurs').' :</b> Mighty
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Prophètes').' : </b> Mspeedy78
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Prophètes').' : </b> Mspeedy78, Kassie
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Héros').' :</b> MAXXX29
 <br/>
