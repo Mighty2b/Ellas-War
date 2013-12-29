@@ -31,6 +31,13 @@
 				       placeholder="<?php echo _('Mot de passe'); ?>"
 				       required="required" />
 				<br/>
+				<input type="email" 
+				       name="iemail" 
+				       value="" 
+				       class="form"
+				       placeholder="<?php echo _('Adresse e-mail'); ?>"
+				       required="required" />
+				<br/>
 				<div class="bouton_classique"><input type="submit" 
 				                                     name="sinscrire" 
 				                                     value="<?php echo _('S\'inscrire'); ?>" /></div>

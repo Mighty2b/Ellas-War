@@ -9,7 +9,7 @@ echo '<meta name="description" content="'._('Bienvenue sur Ellás War.
 
 $paquet -> add_action('get_news', array(2));
 
-if(!empty($_POST['ilogin']) && !empty($_POST['ipass'])) {
+if(!empty($_POST['ilogin']) && !empty($_POST['ipass']) && !empty($_POST['iemail'])) {
 	
 }
 
