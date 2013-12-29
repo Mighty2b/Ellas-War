@@ -3,7 +3,7 @@
 if(!empty($_GET['var1']) && (trad_to_page($_GET['var1']) == 'gratuit')) {
 	echo '<title>'._('Jouez gratuitement sur Ellàs War !').'</title>';
 	echo '<meta name="description" content="'._(
-	     'Jouez gratuitement sur Ellàs War.').
+	     'Jouez gratuitement sur Ellàs War !').
 	      '" />';
 }
 else {
