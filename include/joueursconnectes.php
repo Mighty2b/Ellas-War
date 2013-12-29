@@ -1,6 +1,11 @@
 <?php
 
-$liste = $paquet->get_answer('get_joueurs_co')->{1};
+if(!empty($paquet->get_answer('get_joueurs_co'))) {
+	$liste = $paquet->get_answer('get_joueurs_co')->{1};
+}
+else {
+	$liste = array();
+}
 
 echo '<h1>'._('Joueurs connectés').'</h1>
 <br/>
