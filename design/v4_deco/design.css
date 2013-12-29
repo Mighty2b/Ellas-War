@@ -298,3 +298,57 @@ input[type="submit"] {
 	width:100%;
 	height:122px;
 }
+
+#menu a {
+	color:chocolate;
+	font-size:1.4em;
+	font-family:"diogenes";
+	position:relative;
+	float:left;
+	height:30px;
+	text-align:center;
+	padding-top:10px;
+}
+
+#menu #nousrejoindre {
+	margin-left:110px;
+	width:170px;
+}
+
+#menu #decouvrirjeu {
+	width:170px;
+}
+
+#menu #faq {
+	width:110px;
+	margin-left:10px;
+}
+
+#menu #accueil {
+	color:yellow;
+	font-weight:bold;
+	width:105px;
+	margin-top:-20px;
+	font-size:1.5em;
+}
+
+#menu #forum {
+	width:110px;
+	margin-left:10px;
+}
+
+#menu #partenaires {
+	width:110px;
+}
+
+#menu #contact {
+	width:110px;
+}
+
+.centrer {
+	text-align:center;
+}
+
+#sinscrire img {
+	width:50%;
+}
