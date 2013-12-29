@@ -34,7 +34,7 @@ echo '<div class="ligne ligne80 justify"><br/>'._(
 <div id="nouscontacter_droite">
 	
 	'._('Message').' :<br/>
-	<textarea name="message" class="message_contact"></textarea>
+	<textarea name="message" class="message_contact" required="required"></textarea>
 
 </div>
 <div class="ligne centrer"><br/>
