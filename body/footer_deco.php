@@ -18,7 +18,7 @@ echo '<nav>
 <a href="'._('partenaires').'" title="'._('Nos partenaires').'">'._('Partenaires').'</a>
 <br/><a href="'._('jeu-strategie').'" title="'._('Un jeu de stratégie').'">'._('Un jeu de stratégie').'</a>
 <br/><a href="'._('jeu-gratuit').'" title="'._('Un jeu gratuit').'">'._('Un jeu gratuit').'</a>
-<br/><a href="'._('conditionsgeneralesutilisation').'" title="'._('Conditions générales d\'utilisation').'">'._('Conditions générales d\'utilisation').'</a>
+<br/><a href="'.CGU_URL.'" title="'._('Conditions générales d\'utilisation').'">'._('Conditions générales d\'utilisation').'</a>
 <br/>
 
 <div class="titre"><a href="'._('communaute').'" title="'._('La communauté d\'Ellàs War').'">'._('Communauté').'</a></div>

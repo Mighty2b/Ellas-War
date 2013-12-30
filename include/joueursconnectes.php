@@ -23,7 +23,7 @@ echo '<h1>'._('Joueurs connectés').'</h1>
 
 foreach($liste as $do) {
 	echo'<tr>
-	<td>&nbsp;<a href=\'/'.trad_to_page('profilsjoueur').'-'.$do->id.'\'>'.$do->login.'</a> ';
+	<td>&nbsp;<a href=\'/'._('profilsjoueur').'-'.$do->id.'\'>'.$do->login.'</a> ';
 	
 	if($do->id == $do->chef) {
 		echo img('images/joueurs/mini_laurier.png', _('Grand chef'));
@@ -34,7 +34,7 @@ foreach($liste as $do) {
 	<td align=\'right\'>&nbsp;'.nbf($do->terrain).'&nbsp;</td>
 	<td>&nbsp;';
 	if(!empty($do->alliance)) {
-		echo '<a href="'.trad_to_page('profilsalliance').'-'.$do->alliance.'">'.$do->nom.'</a>';
+		echo '<a href="'._('profilsalliance').'-'.$do->alliance.'">'.$do->nom.'</a>';
 	}
 	else {
 		echo $do->nom;
