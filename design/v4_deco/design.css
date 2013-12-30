@@ -324,10 +324,6 @@ input[type="submit"] {
 	margin-left:10px;
 }
 
-#menu #faq .ssmenu {
-	width:110px;
-}
-
 #menu #accueil {
 	color:black;
 	font-weight:bold;
@@ -337,8 +333,8 @@ input[type="submit"] {
 }
 
 #menu #accueil .ssmenu {
-	width:105px;
 	color:#ffff00;
+	margin: 2px 0 0 2px;
 }
 
 #menu #forum {
@@ -346,15 +342,7 @@ input[type="submit"] {
 	margin-left:10px;
 }
 
-#menu #forum .ssmenu {
-	width:110px;
-}
-
 #menu #partenaires {
-	width:110px;
-}
-
-#menu #partenaires .ssmenu {
 	width:110px;
 }
 
@@ -362,12 +350,8 @@ input[type="submit"] {
 	width:110px;
 }
 
-#menu #contact .ssmenu {
-	width:110px;
-}
-
 #menu .ssmenu {
-	width:170px;
+	width:100%;
 	margin: 1px 0 0 1px;
 	position:absolute;
 	color:#21160a;
