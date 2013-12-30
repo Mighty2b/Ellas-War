@@ -156,7 +156,7 @@ footer nav a {
 
 input,
 textarea {
-	background-color: #EAE7E1;
+	background-color: #f5efd0;
     border: 1px solid #857061;
 }
 
@@ -352,3 +352,9 @@ input[type="submit"] {
 #sinscrire img {
 	width:50%;
 }
+
+.part_banniere {
+  height:32px;
+  width:468px;
+}
+
