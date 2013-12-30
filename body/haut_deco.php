@@ -1,12 +1,28 @@
-<section id="banniere"></section>
-<nav id="menu"></nav>
+<?php
+
+echo '<section id="banniere"></section>
+<nav id="menu">
+	<a id="nousrejoindre"
+	   href="'.trad_to_page('sinscrire').'"><div class="ssmenu">'._('Nous rejoindre').'</div>'._('Nous rejoindre').'</a>
+	<a id="decouvrirjeu"
+	   href="'.trad_to_page('decouvertedujeu').'"><div class="ssmenu">'._('Découvrir le jeu').'</div>'._('Découvrir le jeu').'</a>
+	<a id="faq"
+	   href="'.WIKI_URL.'"><div class="ssmenu">'._('Faq').'</div>'._('Faq').'</a>
+	<a id="accueil"
+	   href="/"><div class="ssmenu">'._('Accueil').'</div>'._('Accueil').'</a>
+	<a id="forum"
+	   href="'.FORUM_URL.'"><div class="ssmenu">'._('Forum').'</div>'._('Forum').'</a>
+	<a id="partenaires"
+	   href="'.trad_to_page('partenaires').'"><div class="ssmenu">'._('Partenaires').'</div>'._('Partenaires').'</a>
+	<a id="contact"
+	   href="'.trad_to_page('nouscontacter').'"><div class="ssmenu">'._('Contact').'</div>'._('Contact').'</a>
+</nav>
 <section id="home">
 	<section id="home_int">
 		<section id="formulaire">
 		
 			<article id="inscription">
-			<h2><?php echo _('Inscription'); ?></h2>
-			<?php
+			<h2>'._('Inscription').'</h2>';
 			
 			if($paquet->get_answer('inscription') != '') {
 				$answer = $paquet->get_answer('inscription');
