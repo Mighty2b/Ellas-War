@@ -55,21 +55,22 @@ echo '
 </div>
 </section>
 <section id="header_ban">
-<a href="'.SITE_URL.'">Ellàs War</a>
 </section>
 <section id="header_menu">
-&nbsp;<a href="/">Cité</a>&nbsp;
-&nbsp;<a href="'._('armee').'">'._('Armée').'</a>&nbsp;
-&nbsp;<a href="'._('archives').'">'.ucfirst(_('archives')).'</a>&nbsp;
-&nbsp;<a href="'._('mythologie').'">'.ucfirst(_('mythologie')).'</a>&nbsp;
-&nbsp;<a href="'._('heros').'">'.ucfirst(_('heros')).'</a>&nbsp;
-&nbsp;<a href="'._('missions').'">'.ucfirst(_('missions')).'</a>&nbsp;
-&nbsp;<a href="'._('alliance').'">'.ucfirst(_('alliance')).'</a>&nbsp;
-&nbsp;<a href="'._('commerce').'">'._('Marché').'</a>&nbsp;
-&nbsp;<a href="'._('jeux').'">'.ucfirst(_('jeux')).'</a>&nbsp;
+&nbsp;<a id="menu_cite" href="/"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
+&nbsp;<a id="menu_armee" href="'._('armee').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
+&nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
+&nbsp;<a id="menu_mythologie" href="'._('mythologie').'"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
+&nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'.ucfirst(_('heros')).'</div>'.ucfirst(_('heros')).'</a>&nbsp;
+&nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
+&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
+&nbsp;<a id="menu_alliance" href="'._('alliance').'"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;
+&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div>'._('Marché').'</a>&nbsp;
+&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div>'.ucfirst(_('jeux')).'</a>&nbsp;
 </section>
 
-<section id="header_ssmenu">';
+<section id="inside_co">
+<div id="header_ssmenu">';
 switch($page) {
 	case 'cite':
 	case 'constructions':
@@ -192,8 +193,7 @@ switch($page) {
 	default: echo $page; break;
 }
 echo '
-</section>
-<section id="inside_co">
+</div>
 ';
 
 ?>

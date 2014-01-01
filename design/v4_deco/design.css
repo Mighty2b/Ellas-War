@@ -1,6 +1,6 @@
 @font-face {
     font-family: "diogenes";
-    src: url('../../diogenes.ttf');
+    src: url('../../policy/diogenes.ttf');
 }
 
 body {
@@ -329,7 +329,7 @@ input[type="submit"] {
 	font-weight:bold;
 	width:105px;
 	margin-top:-20px;
-	font-size:1.5em;
+	font-size:1.6em;
 }
 
 #menu #accueil .ssmenu {
