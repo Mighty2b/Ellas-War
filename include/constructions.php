@@ -14,42 +14,45 @@ $placeg_nb = $paquet->get_infoj('placeg_nb');
 $placeg    = $paquet->get_infoj('placeg');
 
 echo '
-<table class=\'tableau centrer_tab\'>
+<table>
+<thead>
 	<tr class=\'tableau_header\'>
-		<td>&nbsp;'._('Bâtiment').'&nbsp;</td>
+		<td>&nbsp;&nbsp;</td>
 		<td>&nbsp;'._('Nombre').'&nbsp;</td>
 		<td>&nbsp;'._('Terrain').'&nbsp;</td>
 		<td>&nbsp;'._('Production').'&nbsp;</td>
 		<td>&nbsp;'._('Consommation').'&nbsp;</td>
-	</tr>';
+	</tr>
+</thead>
+<tfoot>
+</tfoot>
+<tbody>';
 
 $i=0;
 foreach($constructions as $bat => $value) {
 	if($value -> nb > 0) {
-	echo'<tr class="tableau_fond2"><td colspan="5"></td></tr>';
-
-	echo '<tr class="tableau_fond'.($i%2).'">
+	echo '<tr>
 	<td class="gauche">&nbsp;<a href="'._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'._($value -> nom2).'">'.$batiments[$value -> nom2]['nom'].'</a>&nbsp;';
 	
 	if($bat == 'hall') {
 			if(!empty($liste_autels->sacrifice_hera)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('Statues').'-'.
-						 _('sacrifice_hera').'">'._('Sacrifice d\'Héra').'</a>';
+						 _('sacrifice_hera').'" class="normal">'._('Sacrifice d\'Héra').'</a>';
 			}
 			
 			if(!empty($liste_autels->defense_gaia)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('Statues').'-'.
-						 _('defense_gaia').'">'._('Défense de Gaia').'</a>';
+						 _('defense_gaia').'" class="normal">'._('Défense de Gaia').'</a>';
 			}
 			
 			if(!empty($liste_autels->strategie_hippodamos)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('Statues').'-'.
-						 _('strategie_hippodamos').'">'._('Stratégie d\'Hippodamos').'</a>';
+						 _('strategie_hippodamos').'" class="normal">'._('Stratégie d\'Hippodamos').'</a>';
 			}
 			
 			if(!empty($liste_autels->sauvegarde_ombre)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('Statues').'-'.
-						 _('sauvegarde_ombre').'">'._('Faveur de l\'Érèbe').'</a>';
+						 _('sauvegarde_ombre').'" class="normal">'._('Faveur de l\'Érèbe').'</a>';
 			}
 	}
 	
@@ -186,87 +189,71 @@ foreach($constructions as $bat => $value) {
 			}
 			
 	echo '&nbsp;</td>
-			</tr>';		
-			$i++;	
+			</tr>';
 		}
 	}
 	
-	echo '</table>';
+	echo '</tbody></table>';
 
 if(sizeof($temples) > 0) {
 	$i=0;
 	echo '<br/>
 	<table class=\'tableau centrer_tab\'>
+<thead>
 	<tr class=\'tableau_header\'>
-	<td>&nbsp;Temple&nbsp;</td><td class="centrer" >&nbsp;Terrain&nbsp;</td></tr>';
+	<td>&nbsp;&nbsp;</td><td class="centrer" >&nbsp;Terrain&nbsp;</td></tr>
+</thead>
+<tfoot>
+</tfoot>
+<tbody>';
 
 	if(in_array('apollon', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'.('apollon').'">'._('Temple d\'Apollon').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'.('apollon').'">'._('Temple d\'Apollon').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('demeter', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('demeter').'">'._('Temple de Demeter').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('demeter').'">'._('Temple de Demeter').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hermes', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hermes').'">'._('Temple d\'Hermès').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hermes').'">'._('Temple d\'Hermès').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('ares', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('ares').'">'._('Temple d\'Arès').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('ares').'">'._('Temple d\'Arès').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('athena', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('athena').'">'._('Temple d\'Athéna').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('athena').'">'._('Temple d\'Athéna').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('artemis', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('artemis').'">'._('Temple d\'Artémis').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('artemis').'">'._('Temple d\'Artémis').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('dionysos', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('dionysos').'">'._('Temple de Dionysos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('dionysos').'">'._('Temple de Dionysos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hephaistos', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hephaistos').'">'._('Temple d\'Héphaïstos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hephaistos').'">'._('Temple d\'Héphaïstos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('zeus', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('zeus').'">'._('Temple de Zeus').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('zeus').'">'._('Temple de Zeus').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('poseidon', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('poseidon').'">'._('Temple de Poseidon').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('poseidon').'">'._('Temple de Poseidon').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hades', $temples)) {
-		$i++;
-		echo'<tr class="tableau_fond2"><td colspan="2"></td></tr>';
-		echo '<tr class="tableau_fond'.($i%2).'"> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hades').'">'._('Temple d\'Hadès').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hades').'">'._('Temple d\'Hadès').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
-echo '</table>';
+echo '
+</tbody>
+</table>';
 }
 
 ?>

@@ -211,6 +211,7 @@ switch($page) {
 }
 echo '
 </div>
+<div class="clear"></div>
 ';
 
 ?>

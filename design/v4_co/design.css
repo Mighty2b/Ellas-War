@@ -41,17 +41,67 @@ a {
 
 table {
 	margin:auto;
+	margin-top:5px;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #2A2A2A;
 }
 
 thead {
 	font-weight:bold;
-	font-size:1.1em;
+	font-size:1em;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+thead td {
+    border-top: 1px solid #EAEAEA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font: bold 1.3em 'trebuchet MS','Lucida Sans',Arial;
+}
+
+thead td:first-child {
+    border-top: medium none;
+}
+
+table thead tr td:first-letter {
+	color: #B30000 !important;
+}
+
+tbody {
+	font-size:0.9em;
+}
+
+td {
+    border-bottom: 1px solid #CDCDCD;
+    box-shadow: 0 1px 0 #FFFFFF;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+tbody td:nth-child(1) {
+	background-color:#E1B88F;
+	font-weight:bold;
+}
+
+td:nth-child(2), td:nth-child(3),
+td:nth-child(4), td:nth-child(5) {
+    background: none repeat scroll 0 0 rgba(210, 182, 150, 0.15);
+    border-right: 1px solid #FFFFFF;
 }
 
 /* General class*/
 
 .centrer {
 	text-align:center;
+}
+
+.clear {
+	clear:both
+}
+
+.normal {
+	font-weight:normal;
 }
 
 /* Header */
@@ -255,7 +305,7 @@ thead {
 	background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
 	background-position: 0% 0%, bottom, 0% 0%;
 	background-repeat: no-repeat, no-repeat, repeat;
-	padding-bottom: 7px;
+	padding-bottom: 15px;
 	width: 1250px;
 	min-height:450px;
 	float:left;
