@@ -1,6 +1,28 @@
+/* Policy */
+
 @font-face {
     font-family: "diogenes";
     src: url('../../policy/diogenes.ttf');
+}
+
+@font-face {
+    font-family: "marav";
+    src: url('../../policy/Marav2.ttf');
+}
+
+@font-face {
+    font-family: "poseiaoe";
+    src: url('../../policy/PoseiAOE.ttf');
+}
+
+@font-face {
+    font-family: "dalek";
+    src: url('../../policy/DALEK.ttf');
+}
+
+@font-face {
+    font-family: "spqr";
+    src: url('../../policy/spqr.ttf');
 }
 
 /* General CSS */
@@ -183,7 +205,49 @@ thead {
 /* 2nd menu */
 #header_ssmenu {
 	float:left;
-	margin-left:180px;
+	font-family:"poseiaoe", "dalek", "spqr";
+}
+
+#header_ssmenu a {
+	position:relative;
+	float:left;
+	font-size:1.5em;
+}
+
+#barre_menu_cite {
+	background-image:url('barre_menu_cite.png');
+	background-repeat:no-repeat;
+	width:682px;
+	height:28px;
+	margin-left:123px;
+}
+
+#header_ssmenu_constructions {
+	margin-left:20px;
+}
+
+#header_ssmenu_construire {
+	margin-left:25px;
+}
+
+#header_ssmenu_armurerie {
+	margin-left:25px;
+}
+
+#header_ssmenu_tresor {
+	margin-left:25px;
+}
+
+#header_ssmenu_oracle {
+	margin-left:25px;
+}
+
+#header_ssmenu_bonus {
+	margin-left:20px;
+}
+
+#header_ssmenu_faveurs {
+	margin-left:110px;
 }
 
 /* page */

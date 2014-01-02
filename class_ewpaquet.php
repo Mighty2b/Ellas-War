@@ -93,6 +93,9 @@ class Ewpaquet {
 	}
 	
 	function get_infoj($arg) {
+		if($arg == 'statu')
+			return 1;
+		
 		if($this->joueur == null) {
 			return null;
 		}

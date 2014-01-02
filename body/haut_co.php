@@ -81,13 +81,22 @@ switch($page) {
 	case 'bonus':
 	case 'faveurs':
 		echo '
-		<a href="'._('constructions').'">'._('Constructions').'</a>
-		<a href="'._('construire').'">'._('Construire').'</a>
-		<a href="'._('armurerie').'">'._('Armurerie').'</a>
-		<a href="'._('tresor').'">'._('Tresor').'</a>
-		<a href="'._('oracle').'">'._('Oracle').'</a>
-		<a href="'._('bonus').'">'._('Bonus divins').'</a>
-		<a href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>';
+		<div id="barre_menu_cite">
+			<a id="header_ssmenu_constructions"
+			   href="'._('constructions').'">'._('Constructions').'</a>
+			<a id="header_ssmenu_construire"
+			   href="'._('construire').'">'._('Construire').'</a>
+			<a id="header_ssmenu_armurerie"
+			   href="'._('armurerie').'">'._('Armurerie').'</a>
+			<a id="header_ssmenu_tresor"
+			   href="'._('tresor').'">'._('Tresor').'</a>
+			<a id="header_ssmenu_oracle"
+			   href="'._('oracle').'">'._('Oracle').'</a>
+			<a id="header_ssmenu_bonus"
+			   href="'._('bonus').'">'._('Bonus divins').'</a>
+			<a id="header_ssmenu_faveurs"
+			   href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>
+		</div>';
 	break;
 	
 	case 'armee':
@@ -98,12 +107,20 @@ switch($page) {
 	case 'strategiedefensive':
 	case 'strategieoffensive':
 		echo '
-		<a href="'._('attaquer').'">'.ucfirst(_('attaquer')).'</a>
-		<a href="'._('passerenrevue').'">'._('Passer en revue').'</a>
-		<a href="'._('engager').'">'.ucfirst(_('engager')).'</a>
-		<a href="'._('mesattaques').'">'._('Mes attaques').'</a>
-		<a href="'._('strategiedefensive').'">'._('Stratégie défensive').'</a>
-		<a href="'._('strategieoffensive').'">'._('Stratégie offensive').'</a>';
+		<div id="barre_menu_armee">
+			<a id="header_ssmenu_attaquer"
+			   href="'._('attaquer').'">'.ucfirst(_('attaquer')).'</a>
+			<a id="header_ssmenu_passerenrevue"
+			   href="'._('passerenrevue').'">'._('Passer en revue').'</a>
+			<a id="header_ssmenu_engager"
+			   href="'._('engager').'">'.ucfirst(_('engager')).'</a>
+			<a id="header_ssmenu_mesattaques"
+			   href="'._('mesattaques').'">'._('Mes attaques').'</a>
+			<a id="header_ssmenu_strategiedefensive"
+			   href="'._('strategiedefensive').'">'._('Stratégie défensive').'</a>
+			<a id="header_ssmenu_strategieoffensive"
+			   href="'._('strategieoffensive').'">'._('Stratégie offensive').'</a>
+		</div>';
 	break;
 	
 	case 'archives':
