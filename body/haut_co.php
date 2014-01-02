@@ -61,7 +61,7 @@ echo '
 &nbsp;<a id="menu_armee" href="'._('armee').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
 &nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="'._('mythologie').'"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
-&nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'.ucfirst(_('heros')).'</div>'.ucfirst(_('heros')).'</a>&nbsp;
+&nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div>'.ucfirst(_('heros')).'</a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
 &nbsp;<a id="menu_alliance" href="'._('alliance').'"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;
