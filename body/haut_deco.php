@@ -13,7 +13,7 @@ echo '<section id="banniere"></section>
 	<a id="forum"
 	   href="'.FORUM_URL.'"><div class="ssmenu">'._('Forum').'</div>'._('Forum').'</a>
 	<a id="partenaires"
-	   href="'._('partenaires').'"><div class="ssmenu">'._('Partenaires').'</div>'._('Partenaires').'</a>
+	   href="'._('partenaires').'"><div class="ssmenu">'._('Partenariats').'</div>'._('Partenaires').'</a>
 	<a id="contact"
 	   href="'._('nouscontacter').'"><div class="ssmenu">'._('Contact').'</div>'._('Contact').'</a>
 </nav>

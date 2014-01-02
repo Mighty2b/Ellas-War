@@ -15,7 +15,7 @@ echo '<nav>
 <br/>
 
 <div class="titre"><a href="'._('quelquesmotssurlesite').'" title="'._('Quelques mots sur Ellàs War').'">'._('Quelques mots sur le site').'</a></div>
-<a href="'._('partenaires').'" title="'._('Nos partenaires').'">'._('Partenaires').'</a>
+<a href="'._('partenaires').'" title="'._('Partenariats').'">'._('Partenariats').'</a>
 <br/><a href="'._('jeu-strategie').'" title="'._('Un jeu de stratégie').'">'._('Un jeu de stratégie').'</a>
 <br/><a href="'._('jeu-gratuit').'" title="'._('Un jeu gratuit').'">'._('Un jeu gratuit').'</a>
 <br/><a href="'.CGU_URL.'" title="'._('Conditions générales d\'utilisation').'">'._('Conditions générales d\'utilisation').'</a>
