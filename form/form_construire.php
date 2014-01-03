@@ -223,8 +223,8 @@ echo '<script type="text/javascript">
 		
 		echo	'</div>
 		<form method="post" action="'._('construire').'-'.$batiments[$bat]['aff'].'-'.$bat.'">
-		<table><tr>
-		<td align=\'left\' valign="top">
+		<div class="ligne">
+			<div class="ligne_50">
 		<b>'._('Matériaux de construction').' : </b>'.
 		$prix.'<br/><b>'._('Matériaux récupérés').' : </b>'.
 		$prix2.$conso.$prod.'<br/><b>'._('Terrain').' : </b><br/>'.
@@ -234,26 +234,36 @@ echo '<script type="text/javascript">
 		echo '<b>Défense :</b><br/>
 			'.nbf(round($value -> defense, 2), 2).' '.img('images/attaques/bouclier.png', 'defense');
 			}
-		echo	'</td>
-		<td>&nbsp;&nbsp;&nbsp;</td>
-		
-		<td valign="top"><b>';
+		echo	'</div><div class="ligne_50">';
 		
 		if(!empty($value->nbmax)) {
-		  echo _('Max').' : '.$value->nbmax.'<br/>';
+		  echo '<b>'._('Max').' :</b> '.$value->nbmax.'<br/>';
 		}
 			
-		echo ('Actuellement').' : '.$value->nb.'<br/>';
+		echo '<b>'._('Actuellement').' :</b>  '.$value->nb.'<br/>';
 		
 		if($bat == 'atelierf' && $paquet->get_infoj('lvl') > 1) {
-			echo _('Minimum').' : '._(6*($paquet->get_infoj('lvl')-1)).'<br/>';
+			echo '<b>'._('Minimum').' :</b> '._(6*($paquet->get_infoj('lvl')-1)).'<br/>';
 		}
 		
-		echo '</b><input type="hidden" name="batiment" value="'.$bat.'" />
+		echo '<input type="hidden" name="batiment" value="'.$bat.'" />
 				<input type="hidden" name="type" value="'.$batiments[$bat]['aff'].'" />
 		<table><tr>
-		<td valign="middle"><input type="text" name="achatt" placeholder="0" size="10" class="form_retirer droite" /></td>
-		<td valign="middle"><div class="bouton_classique"><input class="bouton_classique2" type="submit" value="'._('BÂTIR').'" name="achat" style="width:80px;"/></div></td></tr>
+			<td valign="middle">
+			<input type="text" 
+			       name="achatt" 
+			       placeholder="0" 
+			       size="10" 
+			       class="form_retirer droite" />
+			</td>
+			<td valign="middle">
+			<div class="bouton_classique"><input class="bouton_classique2" 
+			                                     type="submit" 
+			                                     value="'._('BÂTIR').'" 
+			                                     name="achat" 
+			                                     style="width:80px;"/></div>
+			</td>
+		</tr>
 		<tr>
 		<td valign="middle"><input type="text" name="ventee" placeholder="0" size="10" class="form_retirer droite" /></td>
 		<td valign="middle"><div class="bouton_classique"><input class="bouton_classique2" type="submit" value="'._('DÉTRUIRE').'" name="vente" style="width:80px;"/></div></td></tr>
@@ -276,8 +286,8 @@ echo '<script type="text/javascript">
 		}
 		
 		echo '
-		</td></tr>
-		</table>
+		</div>
+		</div>
 		</form>
 		</div>
 		</div></div>';

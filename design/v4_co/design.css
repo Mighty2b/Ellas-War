@@ -39,6 +39,16 @@ a {
 	color:black;
 }
 
+h1 {
+	text-align:center;
+}
+
+h1:first-letter, h2:first-letter,
+.rouge_goco {
+    color: #B30000 !important;
+}
+
+
 table {
 	margin:auto;
 	margin-top:5px;
@@ -102,6 +112,43 @@ td:nth-child(4), td:nth-child(5) {
 
 .normal {
 	font-weight:normal;
+}
+
+.ligne {
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+.ligne80 {
+	font-size:0.8em;
+}
+
+.ligne_50 {
+	position:relative;
+	float:left;
+	width:50%;
+}
+
+.gras {
+  font-weight:bold;
+}
+
+.gauche {
+	text-align:left;
+}
+
+.droite {
+	text-align:right;
+}
+
+.justify {
+	text-align:justify;
+}
+
+.valign {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Header */
@@ -300,6 +347,32 @@ td:nth-child(4), td:nth-child(5) {
 	margin-left:110px;
 }
 
+/* button */
+
+input,
+textarea {
+	background-color: #f5efd0;
+    border: 1px solid #857061;
+}
+
+.bouton_classique {
+    background-color: #D9D2BF;
+    border: 1px solid #000000;
+    display: table;
+    margin: auto;
+}
+
+input[type="submit"] {
+    background: linear-gradient(#F0E9D6, #D2C9AC) repeat scroll 0 0 transparent;
+    border: 1px solid #CAC3B1;
+    color: #0C0400;
+    cursor: pointer;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    font-size: 1.1em;
+    margin: 1px 2px;
+    padding: 0 3px;
+}
+
 /* page */
 #inside_co {
 	background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
@@ -307,6 +380,127 @@ td:nth-child(4), td:nth-child(5) {
 	background-repeat: no-repeat, no-repeat, repeat;
 	padding-bottom: 15px;
 	width: 1250px;
-	min-height:450px;
 	float:left;
+}
+
+#inside_co_int {
+	float:left;
+	min-height:450px;
+    margin: 8px 0px 0px 188px;
+    position: relative;
+    width: 873px;
+    font-family: 'Times New Roman';
+	font-size: 12px;
+}
+
+/* pages */
+
+/* batiment */
+
+#erreur_bat {
+  position:absolute;
+  margin-top:235px;
+  width:642px;
+  margin-left:125px;
+}
+
+#cadre_batiment_description {
+  width:642px;
+  height:270px;
+  margin:auto;
+  background-image:url('contourgrand.png');
+}
+
+#cadre_batiment_types {
+  width:385px;
+  height:28px;
+  background-image:url('menu.png');
+  margin:auto;
+}
+
+#cadre_batiment_types2 {
+  margin-top:3px;
+  position:relative;
+  float:left;
+  font-size:1.3em;
+  text-align:center;
+  font-weight: bold;
+  width:100%;
+}
+
+#cadre_batiment_liste {
+  margin-left:24px;
+  margin-top:10px;
+  width:850px;
+  position:relative;
+  float:left;
+  background-color:#EAE6E1;
+}
+
+.cadre_batiment_unite {
+  height:150px;
+  width:150px;
+  position:relative;
+  float:left;
+  margin:10px;
+  cursor : pointer;
+}
+
+.cadre_batiment_nom {
+  text-align:center;
+  width:100%;
+  margin-top:125px;
+  height:25px;
+  position:relative;
+  float:left;
+  background-image:url('plaque.png');
+  z-index:1000;
+}
+
+.cadre_batiment_nom2 {
+  margin-top:5px;
+  text-align:center;
+  font-weight: bold;
+  font-size:1.1em;
+}
+
+#cadre_batiment_cache {
+  position:absolute;
+  margin-top:510px;
+  margin-left:140px;
+  width:622px;
+  height:260px;
+}
+
+.titre_batiment2 {
+  margin-top:2px;
+  margin-bottom:7px;
+  font-size:1.4em;
+  text-align:center;
+}
+
+.gauche_batiment {
+  position:relative;
+  float:left;
+  width:210px;
+}
+
+.droite_batiment {
+  position:relative;
+  float:left;
+  width:390px;
+  line-height:14px;
+}
+
+#cadre_batiment_cache .texte1 {
+  min-height:50px;
+}
+
+#cadre_batiment_cache tbody td:nth-child(1) {
+    background-color: transparent;
+}
+
+#cadre_batiment_cache td {
+	border: 0px solid #CDCDCD;
+	box-shadow: 0 0px 0 #FFFFFF;
 }

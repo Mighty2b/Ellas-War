@@ -89,6 +89,28 @@ $(function() {
 		top:-500
 	}, 1000);
 });
+
+function construire(bat) {
+	var cadre = $("#cadre_batiment_cache");
+	cadre.html(\'\');
+	if(cadre.hasClass(\'affiche\')) {
+			cadre.css("top", "+=500")
+	}
+	else {
+		cadre.addClass(\'affiche\');
+	}
+	
+	$.ajax({
+		type: "GET",
+		url: "form/form_construire.php",
+    data: "bat="+bat,
+		success: function(msg){ cadre.html(msg); }
+	});
+
+	cadre.animate({
+		top:-500
+	}, 1000);
+}
 </script>';
 }
 

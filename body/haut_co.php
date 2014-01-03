@@ -212,6 +212,7 @@ switch($page) {
 echo '
 </div>
 <div class="clear"></div>
+<div id="inside_co_int">
 ';
 
 ?>

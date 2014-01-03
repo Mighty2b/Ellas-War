@@ -1,3 +1,4 @@
+</div>
 </section>
 <section id="player_info">
 	
