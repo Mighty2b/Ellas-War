@@ -3,12 +3,8 @@
 echo '<h1>'._('Changer d\'adresse mail').'</h1>
 <br/>';
 
-if(!empty($paquet->get_answer('changer_mail'))) {
-	if($paquet->get_answer('changer_mail')->{1} != 0) {
-		echo display_error($paquet->get_answer('changer_mail')->{1});
-	}
-}
-	
+$paquet->error('changer_mail');
+
 echo '
 <br/>
 <form method="post" action="">

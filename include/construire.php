@@ -12,17 +12,8 @@ else {
 
 echo '<div id="erreur_bat">';
 
-if(!empty($paquet->get_answer('batir'))) {
-	if($paquet->get_answer('batir')->{1} != 0) {
-		echo display_error($paquet->get_answer('batir')->{1});
-	}
-}
-
-if(!empty($paquet->get_answer('detruire'))) {
-	if($paquet->get_answer('detruire')->{1} != 0) {
-		echo display_error($paquet->get_answer('detruire')->{1});
-	}
-}
+$paquet->error('batir');
+$paquet->error('detruire');
 
 echo '</div>
 <div id="cadre_batiment_cache">
