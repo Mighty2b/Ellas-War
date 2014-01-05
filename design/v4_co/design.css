@@ -353,6 +353,82 @@ td:nth-child(4), td:nth-child(5) {
 	margin-left:110px;
 }
 
+#barre_menu_armee {
+	background-image:url('barre_menu_armee.png');
+	background-repeat:no-repeat;
+	width:765px;
+	height:28px;
+	margin-left:173px;
+}
+
+#header_ssmenu_attaquer {
+	margin-left:30px;
+}
+
+#header_ssmenu_passerenrevue {
+	margin-left:30px;
+}
+
+#header_ssmenu_engager {
+	margin-left:30px;
+}
+
+#header_ssmenu_mesattaques {
+	margin-left:30px;
+}
+
+#header_ssmenu_strategiedefensive {
+	margin-left:110px;
+}
+
+#header_ssmenu_strategieoffensive {
+	margin-left:25px;
+}
+
+#barre_menu_marche {
+	background-image:url('barre_menu_cite.png');
+	background-repeat:no-repeat;
+	width:765px;
+	height:28px;
+	margin-left:123px;
+}
+
+#header_ssmenu_donnerunefaveur {
+	margin-left:30px;
+}
+
+#header_ssmenu_commerce {
+	margin-left:30px;
+}
+
+#header_ssmenu_vendre {
+	margin-left:30px;
+}
+
+#header_ssmenu_mesventes {
+	margin-left:30px;
+}
+
+#header_ssmenu_debarras {
+	margin-left:30px;
+}
+
+#header_ssmenu_faveurs2 {
+	margin-left:119px;
+}
+
+#header_ssmenu_donnerunefaveur {
+	margin-left:30px;
+}
+
+#barre_menu_vide {
+	background-image:url('barre_menu_vide.png');
+	background-repeat:no-repeat;
+	width:682px;
+	height:28px;
+	margin-left:123px;
+}
+
 /* button */
 
 input,

@@ -154,13 +154,22 @@ switch($page) {
 	case 'vendre':
 	case 'licences':
 	case 'mesventes':
+	case 'debarras':
 		echo '
-		<a href="'._('donnerunefaveur').'">'._('Donner une faveur').'</a>
-		<a href="'._('commerce').'">'._('Marché').'</a>
-		<a href="'._('vendre').'">'.ucfirst(_('vendre')).'</a>
-		<a href="'._('licences').'">'.ucfirst(_('licences')).'</a>
-		<a href="'._('mesventes').'">'._('Mes ventes').'</a>
-		<a href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>';
+		<div id="barre_menu_marche">
+			<a id="header_ssmenu_donnerunefaveur"
+			   href="'._('donnerunefaveur').'">'._('Donner une faveur').'</a>
+			<a id="header_ssmenu_commerce"
+			   href="'._('commerce').'">'._('Marché').'</a>
+			<a id="header_ssmenu_vendre"
+			   href="'._('vendre').'">'.ucfirst(_('vendre')).'</a>
+			<a id="header_ssmenu_mesventes"
+			   href="'._('mesventes').'">'._('Mes ventes').'</a>
+			<a id="header_ssmenu_debarras"
+			   href="'._('debarras').'">'._('Débarras').'</a>
+			<a id="header_ssmenu_faveurs2"
+			   href="'._('faveurs').'">'.ucfirst(_('faveurs')).'</a>
+		</div>';
 	break;
 	
 	case 'jeux':
