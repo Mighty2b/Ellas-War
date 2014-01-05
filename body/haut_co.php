@@ -124,7 +124,7 @@ switch($page) {
 	break;
 	
 	case 'archives':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'mythologie':
@@ -142,11 +142,11 @@ switch($page) {
 	break;
 	
 	case 'missions':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'alliance':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'commerce':
@@ -181,7 +181,7 @@ switch($page) {
 	case 'pause':
 	case 'adressemail':
 	case 'motdepasse':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;	
 	
 	case 'nouveaumessage':
@@ -195,11 +195,11 @@ switch($page) {
 	case 'parrainage':
 	case 'filleuls':
 	case 'soutien':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'classements':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'communaute':
@@ -208,12 +208,12 @@ switch($page) {
 	case 'teamspeak':
 	case 'sondages':
 	case 'chat':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'pagecontact':
 	case 'archivescontact':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	default: echo $page; break;
