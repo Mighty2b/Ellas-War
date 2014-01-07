@@ -34,8 +34,8 @@ $autorise = array('cite',
 'archives',
 
 //Mythologie
-'mythologie', 'arbredesdieux', 'auteldesdieux', 'temples', 'statues', 'succes', 
-'prieres',
+'mythologie', 'arbredesdieux', 'auteldesdieux', 'temples', 'statues', 
+'succes', 'prieres',
 
 //Heros
 'heros',
@@ -48,6 +48,7 @@ $autorise = array('cite',
 
 //Marché
 'commerce', 'donnerunefaveur', 'faveurs', 'vendre', 'licences', 'mesventes',
+'debarras',
 
 //Jeux
 'jeux',
