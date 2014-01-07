@@ -6,7 +6,7 @@ $info  = $paquet->get_infoj('bonus_info');
 echo '<h1>'._('Bonus divins').'</h1>';
 
 echo '
-<div class="ligne">
+<div class="ligne"><br/><br/>
 	<div class="ligne_50 droite" style="margin-top:3px;">
 		<b><span class="rouge_goco">'._('A</span>vancée du bonus divin').' :</b>
 	</div>
@@ -29,8 +29,8 @@ echo '
 	  </div>
 	</div>
 </div>
-
-<div class="ligne_80 justify">
+<div class="clear"></div>
+<div class="ligne_80 justify"><br/>
 '._('Les bonus divins vous sont octroyés lors de votre connexion sur 
 le jeu et récompensent votre fidélité. 
 Lorsqu\'un bonus divin vous est accordé, 
