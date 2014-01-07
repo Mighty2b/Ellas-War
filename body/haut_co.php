@@ -134,11 +134,15 @@ switch($page) {
 	case 'statues':
 	case 'succes':
 	case 'prieres':
-	
+		echo '
+		<div id="barre_menu_mythologie">
+		</div>';
 	break;
 	
 	case 'heros':
-	
+		echo '
+		<div id="barre_menu_heros">
+		</div>';
 	break;
 	
 	case 'missions':
@@ -173,7 +177,7 @@ switch($page) {
 	break;
 	
 	case 'jeux':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'informationspersonnelles':

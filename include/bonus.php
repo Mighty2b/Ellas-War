@@ -7,21 +7,30 @@ echo '<h1>'._('Bonus divins').'</h1>';
 
 echo '
 <div class="ligne">
-	<div class="cadre_50 droite" style="margin-top:3px;">
-		<b>'._('Avancée du bonus divin').' :</b>
+	<div class="ligne_50 droite" style="margin-top:3px;">
+		<b><span class="rouge_goco">'._('A</span>vancée du bonus divin').' :</b>
 	</div>
-	<div class="cadre_50">
+	<div class="ligne_50">
 	  <div class="progress-bar">
 	    <div class="progress-bar3" id="bar_hf_2">
 	      <div class="progress-bar2 rouge">
 	      </div>
 	    </div>
-	    <div class="progress-bar-txt"></div>
+	    <div class="progress-bar-txt gras">'.$paquet->get_infoj('bonus_days').' ';
+	    
+		if($paquet->get_infoj('bonus_days') > 1) {
+	    	echo _('jours avant le prochain bonus divin');
+		}
+		else {
+			echo _('jour avant le prochain bonus divin');
+		}
+		
+	    echo '</div>
 	  </div>
 	</div>
 </div>
 
-<div class="ligne80 justifier">
+<div class="ligne_80 justify">
 '._('Les bonus divins vous sont octroyés lors de votre connexion sur 
 le jeu et récompensent votre fidélité. 
 Lorsqu\'un bonus divin vous est accordé, 
@@ -35,7 +44,7 @@ pouvez obtenir ne permettent pas de dépasser la limite qui vous
 est imposée.').'<br/><br/></div>';
 
 if(!empty($bonus) && sizeof($bonus) > 0) {
-	echo '<table class="centrer_tab">';
+	echo '<table class="none">';
 	
 	foreach($bonus as $b) {
 		echo '<tr>
@@ -94,7 +103,7 @@ if(!empty($bonus) && sizeof($bonus) > 0) {
 			break;
 		}
 		echo '&nbsp;</td>
-				<td><a href="'._('Bonus').'-'.$b.'" class="sous"><div class="bouton_classique"><input class="bouton_classique2" type="button" name="Utiliser" value="'._('Utiliser').'" /></div></a></td>
+				<td><a href="'._('bonus').'-'.$b.'" class="sous"><div class="bouton_classique"><input type="button" name="Utiliser" value="'._('Utiliser').'" /></div></a></td>
 				</tr>';
 	}
 	
