@@ -37,7 +37,7 @@ foreach($liste as $do) {
 		echo '<a href="'._('profilsalliance').'-'.$do->alliance.'">'.$do->nom.'</a>';
 	}
 	else {
-		echo $do->nom;
+		echo _('Aucune');
 	}
 	echo '&nbsp;</td></tr>';
 }
