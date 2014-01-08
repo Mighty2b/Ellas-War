@@ -3,11 +3,7 @@
 echo '<h1>'._('Changer de mot de passe').'</h1>
 <br/>';
 
-if(!empty($paquet->get_answer('changer_pwd'))) {
-	if($paquet->get_answer('changer_pwd')->{1} != 0) {
-		echo display_error($paquet->get_answer('changer_pwd')->{1});
-	}
-}
+$paquet->error('changer_pwd');
 
 echo '
 <br/>
