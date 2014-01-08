@@ -2,6 +2,8 @@
 
 $bonus = $paquet->get_infoj('bonus_connexion');
 $info  = $paquet->get_infoj('bonus_info');
+$days  = $paquet->get_infoj('bonus_days');
+$days++;
 
 echo '<h1>'._('Bonus divins').'</h1>';
 
@@ -16,9 +18,9 @@ echo '
 	      <div class="progress-bar2 rouge">
 	      </div>
 	    </div>
-	    <div class="progress-bar-txt gras">'.$paquet->get_infoj('bonus_days').' ';
+	    <div class="progress-bar-txt gras">'.$days.' ';
 	    
-		if($paquet->get_infoj('bonus_days') > 1) {
+		if($days > 1) {
 	    	echo _('jours avant le prochain bonus divin');
 		}
 		else {
