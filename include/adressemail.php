@@ -8,7 +8,7 @@ $paquet->error('changer_mail');
 echo '
 <br/>
 <form method="post" action="">
-	<table style="margin:auto;">
+	<table class="none">
 		<tr>
 			<td align="left" class="gras">'._('Ancienne adresse mail').'</td>
 			<td><input type="text" name="ancien" class="form_retirer" required="required"/></td>
