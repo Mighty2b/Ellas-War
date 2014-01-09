@@ -111,8 +111,9 @@ if($paquet->get_answer('get_news') != null) {
 		<h2>'._('News').'</h2>';
 		
 		foreach($list_news as $i => $news) {
-			echo '<div class="ligne">
-				<a href="'.$news->lien.'" class="titre_news" target="_blank" >'.$news->titre.'</a>, <i>'.display_date($news->temps, 1).'</i></td>
+			echo '
+			<div class="ligne">
+				<a href="'.$news->lien.'" class="titre_news" target="_blank" >'.$news->titre.'</a>, <i>'.display_date($news->temps, 1).'</i>
 			</div>';
 		}
 		
