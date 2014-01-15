@@ -110,6 +110,16 @@ class Ewpaquet {
 		
 		return $this->joueur->$arg;
 	}
+	
+	//Specifics functions
+  function peut_commerce() {
+  	if($this->joueur->liste_batiments->forum->nb > 0) {
+  		return true;
+  	}
+  	else {
+  		return false;
+  	}
+  }
 }
 
 ?>
