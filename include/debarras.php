@@ -8,7 +8,7 @@ else {
 }
 
 echo '<div class="ligne_80">'._(
-'Le débarras est accèpte les dépôts en ressources la semaine et les met '.
+'Le débarras accepte les dépôts en ressources la semaine et les met '.
 'en vente le weekend. Les ressources au même taux sont rassemblée en un seul '.
 'gros lot et seul le lot ayant le taux le plus faible est affiché. '.
 'Lors d\'un achat, Vous pouvez choisir la quantité de ressources que vous désirez.'
