@@ -6,7 +6,7 @@ echo '
 <ul class="dropdown">
 		<li>&nbsp;<a href="'._('informationspersonnelles').'">'._('Compte').'</a>&nbsp;
 		<ul class="sub_menu">
-			<li>&nbsp;<a href="'._('informationspersonnelles').'">Informations personelles</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('informationspersonnelles').'">Informations personnelles</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('bibliotheque').'">Bibliothéque</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('pause').'">Pause</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('adressemail').'">E-mail</a>&nbsp;</li>
