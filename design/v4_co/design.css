@@ -734,3 +734,47 @@ input[type="submit"], input[type="button"] {
 	border: 0px solid #CDCDCD;
 	box-shadow: 0 0px 0 #FFFFFF;
 }
+
+/* Bibliothéque */
+
+.biblio_cadre {
+	margin: 0% 2% 0% 2%;
+	width:46%;
+	float:left;
+}
+
+.biblio_titre {
+	font-weight:bold;
+	width:90%;
+	float:left;
+}
+
+.biblio_titre_edit {
+	width:90%;
+	float:left;
+	display:none;
+}
+
+.biblio_titre_edit input {
+	width:100%;
+}
+
+.biblio_edit {
+	width:10%;
+	float:left;
+	text-align:right;
+}
+
+.biblio_txt {
+	text-align:justify;
+}
+
+.biblio_txt_edit {
+	display:none;
+}
+
+.biblio_txt_edit textarea {
+	width:100%;
+	height:120px;
+	padding-top:2px;
+}
