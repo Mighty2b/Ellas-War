@@ -120,6 +120,73 @@ class Ewpaquet {
   		return false;
   	}
   }
+  
+  function possible_unite($unite,$premier) {
+  	if(empty($this->joueur->liste_unites->$unite)) {
+  		return false;
+  	}
+  	
+		$value = $this->joueur->liste_unites->$unite;
+		
+		if($value->nb > 0) {
+			return true;
+		}
+		elseif($this->joueur->lvl < $value->lvlmini) {
+			return false;
+		}
+		elseif(($value->type_att == 9) && ($this->joueur->lvl >= $value->lvlmini)) {
+			return true;
+		}
+		elseif(!(
+			(($unite == 'espion') && empty($this->joueur->liste_batiments->qgespion->nb)) or 
+			(!empty($value->n_camp) && 
+			 empty($this->joueur->liste_batiments->camp -> nb)) or 
+			(!empty($value->n_arc) && 
+			 empty($this->joueur->liste_batiments->ecolearc-> nb)) or 
+			(!empty($value->n_cav) && 
+			 empty($this->joueur->liste_batiments->ecolecav -> nb)) or 
+			(!empty($value->n_aca) && 
+			 empty($this->joueur->liste_batiments->academy -> nb)) or 
+			(!empty($value->n_art) && (!in_array('artemis', $this->joueur->temples))) or
+			(!empty($value->n_hep) && (!in_array('hephaistos', $this->joueur->temples))) or
+			(!empty($value->n_dio) && (!in_array('dionysos', $this->joueur->temples)))  or
+			(!empty($value->n_ares) && (!in_array('ares', $this->joueur->temples)))  or
+			(!empty($value->n_zeus) && (!in_array('zeus', $this->joueur->temples))) or
+			(!empty($value->n_hades) && (!in_array('hades', $this->joueur->temples))) or
+			(!empty($value->n_lion) && empty($this->joueur->liste_autels->lion)) or
+			(!empty($value->n_cyclope) && empty($this->joueur->liste_autels->unite)) or
+			(!empty($value->n_gaia) && empty($this->joueur->liste_autels->defense_gaia)) or
+			(!empty($value->n_pre) && (!$premier)) or
+			(!empty($value->n_aphro) && 
+			 (empty($this->joueur->liste_autels->attirance_aphrodite) or 
+			  ($this->joueur->liste_autels->attirance_aphrodite < $value->n_aphro)))
+			or ($value->type_att == 9))) {
+			return true;
+		}
+		else{
+			return false;
+		}
+  }
+  
+  function get_ress() {
+  	if(!empty($this->joueur) && $this->joueur->statu == 1) {
+	  	return array(
+			'drachme' => $this->joueur->drachme,
+			'nourriture' => $this->joueur->nourriture,
+			'eau' => $this->joueur->eau,
+			'bois'=> $this->joueur->bois,
+			'fer' => $this->joueur->fer,
+			'argent'=>$this->joueur->argent,
+			'pierre'=>$this->joueur->pierre,
+			'marbre'=>$this->joueur->marbre,
+			'raisin'=>$this->joueur->raisin,
+			'vin'=>$this->joueur->vin,
+			'gold'=>$this->joueur->gold);
+  	}
+  	else {
+  		return '';
+  	}
+  }
 }
 
 ?>

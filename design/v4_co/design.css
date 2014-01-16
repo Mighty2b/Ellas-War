@@ -102,6 +102,7 @@ td:nth-child(4), td:nth-child(5) {
 
 table.none tbody td:nth-child(1) {
 	background-color:transparent;
+	font-weight:normal;
 }
 
 table.none td {
