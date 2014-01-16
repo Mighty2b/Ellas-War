@@ -94,14 +94,14 @@ $tab_unite .= '<tr>
 		}
 		
 		$tab_unite = '
-		<table>
+		<table class="centrer_tableau">
 			<thead>
-			<tr>
-				<td>&nbsp;'._('Unité').'&nbsp;</td>
-				<td>&nbsp;'._('Nombre').'&nbsp;</td>
-				<td>&nbsp;'._('Solde').'&nbsp;</td>
-				<td>&nbsp;'._('Attaque').'&nbsp;</td>
-				<td>&nbsp;'._('Défense').'&nbsp;</td></tr>
+			<tr class=\'titre_tab\'>
+				<td>'._('Unité').'</td>
+				<td>'._('Nombre').'</td>
+				<td>'._('Solde').'</td>
+				<td>'._('Attaque').'</td>
+				<td>'._('Défense').'</td></tr>
 			</thead>
 			<tfoot>'.$tab_unite_bas.'</tfoot>
 			<tbody>
@@ -165,10 +165,10 @@ $tab_bat = '<br/>
 		<table>
 			<thead>
 			<tr>
-		<td>&nbsp;'._('Bâtiment').'&nbsp;</td>
-		<td>&nbsp;'._('Nombre').'&nbsp;</td>
-		<td class="droite">&nbsp;'._('Terrain').'&nbsp;</td>
-		<td class="droite">&nbsp;'._('Défense').'&nbsp;</td></tr>
+		<td>'._('Bâtiment').'</td>
+		<td>'._('Nombre').'</td>
+		<td class="droite">'._('Terrain').'</td>
+		<td class="droite">'._('Défense').'</td></tr>
 		</thead>
 		<tfoot>'.$tab_bat_bas.'</tfoot>
 		<tbody>'.$tab_bat;

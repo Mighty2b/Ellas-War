@@ -18,10 +18,10 @@ echo '
 <thead>
 	<tr class=\'tableau_header\'>
 		<td>&nbsp;&nbsp;</td>
-		<td>&nbsp;'._('Nombre').'&nbsp;</td>
-		<td>&nbsp;'._('Terrain').'&nbsp;</td>
-		<td>&nbsp;'._('Production').'&nbsp;</td>
-		<td>&nbsp;'._('Consommation').'&nbsp;</td>
+		<td>'._('Nombre').'</td>
+		<td>'._('Terrain').'</td>
+		<td>'._('Production').'</td>
+		<td>'._('Consommation').'</td>
 	</tr>
 </thead>
 <tfoot>
@@ -201,7 +201,7 @@ if(sizeof($temples) > 0) {
 	<table class=\'tableau centrer_tab\'>
 <thead>
 	<tr class=\'tableau_header\'>
-	<td>&nbsp;&nbsp;</td><td class="centrer" >&nbsp;Terrain&nbsp;</td></tr>
+	<td>&nbsp;&nbsp;</td><td class="centrer" >Terrain</td></tr>
 </thead>
 <tfoot>
 </tfoot>
