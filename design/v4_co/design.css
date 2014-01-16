@@ -78,6 +78,10 @@ table thead tr td:first-letter {
 	color: #B30000 !important;
 }
 
+tfoot {
+  font-weight:bold;
+}
+
 tbody {
 	font-size:0.9em;
 }
