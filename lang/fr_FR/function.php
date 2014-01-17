@@ -7,6 +7,9 @@ function display_date($temps, $type=1) {
 		case 1:
 			return 'le '.date("d-m-y", $temps);
 		break;
+		case 2:
+			return date("d-m-y", $temps);
+		break;
 	}
 }
 

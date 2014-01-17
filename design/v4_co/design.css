@@ -44,6 +44,7 @@ h1 {
 }
 
 h1:first-letter, h2:first-letter,
+.news:first-letter,
 .rouge_goco {
     color: #B30000 !important;
 }
@@ -104,7 +105,11 @@ td:nth-child(4), td:nth-child(5) {
     border-right: 1px solid #FFFFFF;
 }
 
-table.none tbody td:nth-child(1) {
+table.none tbody td:nth-child(1),
+table.none tbody td:nth-child(2), 
+table.none tbody td:nth-child(3),
+table.none tbody td:nth-child(4), 
+table.none tbody td:nth-child(5) {
 	background-color:transparent;
 	font-weight:normal;
 }
@@ -136,6 +141,10 @@ table.none td {
 
 .ligne80 {
 	font-size:0.8em;
+}
+
+.ligne90 {
+  font-size:0.8em;
 }
 
 .ligne_50 {
@@ -621,7 +630,7 @@ input[type="submit"], input[type="button"] {
 #inside_co_int {
 	float:left;
 	min-height:450px;
-    margin: 8px 0px 0px 188px;
+    margin: 8px 0px 0px 185px;
     position: relative;
     width: 873px;
     font-family: 'Times New Roman';
@@ -782,4 +791,94 @@ input[type="submit"], input[type="button"] {
 	width:100%;
 	height:120px;
 	padding-top:2px;
+}
+
+/* Cité */
+
+#info_cite_gauche {
+  width:50%;
+  float:left;
+}
+
+#info_cite_droite {
+  width:50%;
+  float:right;
+}
+
+#cadre_info_cite {
+  min-height:376px;
+}
+
+#cadre_info_actu {
+  min-height:87px;
+}
+
+#cadre_info_oracle {
+  min-height:34px;
+}
+
+#cadre_info_breves {
+  min-height:87px;
+}
+
+#cadre_info_archives {
+  min-height:148px;
+}
+
+#cadre_info_filleuls {
+  
+}
+
+.cadre_info {
+  width:434px;
+  position:relative;
+  margin-bottom:10px;
+  float:left;
+  margin-right:7px;
+  margin-left:4px;
+}
+
+.cadre_info_bas {
+  background-image:url('cadre_info_bas.png');
+  width:100%;
+  height:9px;
+}
+
+.cadre_info_haut {
+  background-image:url('cadre_info_haut.png');
+  width:100%;
+  height:10px;
+}
+
+.cadre_info_centre {
+  background-image:url('cadre_info_centre.png');
+  background-repeat:repeat-y;
+  min-height:10px;
+  width:100%;
+}
+
+.cadre_info_interieur {
+  margin-left:10px;
+  width:415px;
+}
+
+.cadre_info .titre {
+  width:100%;
+  text-align:center;
+  font-size:1.3em;
+  font-weight: bold;
+  color:#b30000 !important;
+}
+
+.cadre_info .mtitre {
+  width:100%;
+  text-align:left;
+  font-size:1.1em;
+  color:#b30000 !important;
+}
+
+.news {
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 100%;
 }
