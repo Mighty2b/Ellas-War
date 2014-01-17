@@ -402,8 +402,10 @@ echo '
 	<div class="ligne centrer"><a href="'._('archives').'" class="titre">'._('Archives').'</a></div>
 	<div class="ligne">';
 	
-	foreach($archives as $details) {
-		echo '<div class="news"><a href="" class="titre_news">'.$details->titre.'</a></div>';
+	if(!empty($archives)) {
+		foreach($archives as $details) {
+			echo '<div class="news"><a href="" class="titre_news">'.$details->titre.'</a></div>';
+		}
 	}
 	
 	echo '
