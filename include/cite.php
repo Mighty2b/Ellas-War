@@ -1,5 +1,9 @@
 <?php
 
+if(empty($_GET['page'])) {
+	redirect(SITE_URL.'/'._('home'));
+}
+
 include('donnees/batiments.php');
 include('donnees/unites.php');
 include('donnees/donnees.php');
