@@ -1,7 +1,7 @@
 <?php
 
 if(empty($_GET['page'])) {
-	redirect(SITE_URL.'/'._('home'));
+	redirect(SITE_URL.'/'._('cite'));
 }
 
 include('donnees/batiments.php');
