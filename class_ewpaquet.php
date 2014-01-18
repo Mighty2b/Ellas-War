@@ -193,6 +193,15 @@ class Ewpaquet {
       echo '<div class="erreur centrer">'._('Appui d\'Hermès actif jusqu\'au %s',print_date($this->reponse->joueur->bonus->commerce,2)).'<br/></div>';
 		}
   }
+  
+	function get_taux_rachat() {
+		if(in_array('hermes', $this->joueur->temples)) {
+			return 97.5;
+		}
+		else {
+			return 80;
+		}
+	}
 }
 
 ?>
