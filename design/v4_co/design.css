@@ -31,7 +31,7 @@ body {
 	background-color:#3694DB;
 	padding:0;
 	margin:auto;
-	width:1250px;
+	width:1340px;
 }
 
 a {
@@ -373,6 +373,7 @@ table.none td {
 	height:276px;
 	cursor:pointer;
 	float:left;
+	margin-left:45px;
 }
 
 /* 1st menu */
@@ -382,6 +383,7 @@ table.none td {
 	height:50px;
 	top:276px;
 	float:left;
+	margin-left:45px;
 }
 
 #header_menu a {
@@ -630,11 +632,12 @@ select {
 /* page */
 #inside_co {
 	background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
-	background-position: 0% 0%, bottom, 0% 0%;
+	background-position: 0% 0%, left bottom, 0% 0%;
 	background-repeat: no-repeat, no-repeat, repeat;
 	padding-bottom: 15px;
-	width: 1250px;
+	width: 1295px;
 	float:left;
+	margin-left:45px;
 }
 
 #inside_co_stat {
@@ -669,6 +672,40 @@ select {
 }
 
 #inside_co_stat_int .sousligne {
+  text-decoration:underline;
+}
+
+#inside_co_ress {
+  float:left;
+  position:relative;
+  background-image: url("panneau_droitefin.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 195px;
+  margin: 35px 0px 0px 28px;
+}
+
+#inside_co_ress_tab {
+  height:260px;
+}
+
+#inside_co_ress_tab table {
+  margin:65px 0px 0px 10px;
+  font-size:0.9em;
+}
+
+#inside_co_ress_a {
+  width:144px;
+  text-align:center;
+}
+
+#inside_co_ress_a a {
+  color: #B30000 !important;
+  font-weight: bold;
+  text-align:center;
+  width:100%;
+  font-size:0.9em;
   text-decoration:underline;
 }
 

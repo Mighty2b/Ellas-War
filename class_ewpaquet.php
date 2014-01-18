@@ -6,6 +6,7 @@ class Ewpaquet {
 	private $ip='';
 	private $user_agent='';
 	private $joueur=null;
+	private $event=null;
 	private $answer=null;
 	
 	function __construct() {
@@ -52,6 +53,7 @@ class Ewpaquet {
 		
 		if(!empty($data->joueur)) {
 			$this->joueur = $data->joueur;
+			$this->event  = $data->event;
 			
 			$temps = time()+TEMPS_CO*86400;
 			
@@ -111,6 +113,15 @@ class Ewpaquet {
 		return $this->joueur->$arg;
 	}
 	
+  function is_event($event) {
+  	if(in_array($event, $this->event)) {
+  		return true;
+  	}
+  	else {
+  		return false;
+  	}
+  }
+  
 	//Specifics functions
   function peut_commerce() {
   	if($this->joueur->liste_batiments->forum->nb > 0) {

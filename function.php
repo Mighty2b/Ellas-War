@@ -607,4 +607,16 @@ function display_error($erreur_no, $var='') {
 	}
 }
 
+function statu_ress($nombre) {
+	if($nombre > 0) {
+		return '<img src="images/ress/haut.png" alt="'._('monte').'" />';
+	}
+	elseif($nombre < 0) {
+		return '<img src="images/ress/bas.png" alt="'._('descend').'" />';
+	}
+	else {
+		return '<img src="images/ress/stagne.png" alt="'._('stagne').'" />';
+	}
+}
+
 ?>
