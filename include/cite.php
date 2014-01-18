@@ -426,8 +426,8 @@ echo '
 	<table width="100%" class="none">
 		<tr>
 		<td width="50%">
-		<a href="Ticket" class="mtitre">'._('Tickets à gratter').'</a><br/>
-		<a href="Ticket">';
+		<a href="'._('ticket').'" class="mtitre">'._('Tickets à gratter').'</a><br/>
+		<a href="'._('ticket').'">';
 		if($tikets > 1) {
 			echo '<b>'.$tikets.'</b> '._('tickets restant');
 		}
@@ -436,7 +436,7 @@ echo '
 		}
 		echo '</a></td>
 		<td width="50%"><a href="'._('loto').'" class="mtitre">'._('Jouez au loto').'</a><br/>
-		<a href="Loto">'._('Un ticket gratuit par semaine !').'</a></td>
+		<a href="'._('loto').'">'._('Un ticket gratuit par semaine !').'</a></td>
 		</tr>
 		<tr>
 		<td>';
@@ -458,8 +458,8 @@ echo '
 	}
 	
 	echo '</td>
-	<td><a href="'._('carreMagique').'" class="mtitre">'._('Carré magique').'</a><br/>
-	<a href="'._('carreMagique').'">'._('Aidez le jeu et remportez des faveurs !').'</a>
+	<td><a href="'._('carremagique').'" class="mtitre">'._('Carré magique').'</a><br/>
+	<a href="'._('carremagique').'">'._('Aidez le jeu et remportez des faveurs !').'</a>
 	</td>
 	</tr>
 	</table>
