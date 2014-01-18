@@ -187,6 +187,12 @@ class Ewpaquet {
   		return '';
   	}
   }
+  
+  function is_active_bonus_commerce() {
+		if(!empty($this->reponse->joueur->bonus->commerce) && $this->reponse->joueur->bonus->commerce > $this->reponse->joueur->timestamp) {
+      echo '<div class="erreur centrer">'._('Appui d\'Hermès actif jusqu\'au %s',print_date($this->reponse->joueur->bonus->commerce,2)).'<br/></div>';
+		}
+  }
 }
 
 ?>

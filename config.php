@@ -15,6 +15,14 @@ define('TEMPS_CO', 31);
 
 //Social networks
 define('FACEBOOK', 'https://fr-fr.facebook.com/pages/Ellas-War/236755106383392');
-define('TWITTER', 'http://www.twitter.com/Ellaswar')
+define('TWITTER', 'http://www.twitter.com/Ellaswar');
+
+//Commerce
+$minimum_lvl_ress = array('pierre' => 1,
+													'marbre' => 1,
+													'raisin' => 3,
+													'vin' => 7,
+													'gold' => 7);
+$temps_lots = 120; //Temps avant de pouvoir acheter, en secondes
 
 ?>
