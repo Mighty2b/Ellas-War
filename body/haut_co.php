@@ -226,6 +226,42 @@ switch($page) {
 echo '
 </div>
 <div class="clear"></div>
+
+<div id="inside_co_stat" class="centrer">
+	<div id="inside_co_stat_int">';
+
+$alliance     = $paquet->get_infoj('alliance');
+if(!empty($alliance)) {
+	$nom_alliance = $alliance->nom;
+}
+
+echo '
+<a href="'._('vosobjectifs').'" 
+   class="gras" 
+   style="text-decoration:none;">'.$paquet->get_infoj('login')
+.' ('.$paquet->get_infoj('lvl').')</a><br/>
+<a href="'._('vosobjectifs').'" class="sousligne">'._('Vos objectifs').'</a><br/>
+'.(!empty($nom_alliance)?$nom_alliance.
+'<br/>':'').
+_('Terrain').' : <b>'.nbf($paquet->get_infoj('terrain')).'</b><br/>
+'.(($paquet->get_infoj('victoires')>1)?_('Victoires'):_('Victoire')).
+' : <b>'.nbf($paquet->get_infoj('victoires')).'</b><br/>
+'.(($paquet->get_infoj('defaites')>1)?_('Défaites'):_('Défaite')).' : <b>'.
+nbf($paquet->get_infoj('defaites')).'</b><br/>';
+
+if($paquet->get_infoj('lvl') >= 6) {
+	echo _('XP').' : <b>'.nbf($paquet->get_infoj('points')).'</b><br/>';
+}
+
+if($paquet->get_infoj('lvl') >= 1) {
+	echo '<a href="'._('honneur').'" class="sousligne">'._('Honneur').'</a> : ';
+	echo '<a href="'._('honneur').'" style="text-decoration:none;"><b>'.
+					 nbf($paquet->get_infoj('honneur')).'</b></a>';
+}
+
+echo '</div>
+</div>
+
 <div id="inside_co_int">
 ';
 

@@ -637,14 +637,39 @@ select {
 	float:left;
 }
 
+#inside_co_stat {
+  float:left;
+  position:relative;
+  background-image: url("panneau_stats.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  height: 163px;
+  width: 144px;
+  margin: 50px 0px 0px 18px;
+}
+
 #inside_co_int {
 	float:left;
+	position:relative;
 	min-height:450px;
-    margin: 8px 0px 0px 185px;
-    position: relative;
-    width: 873px;
-    font-family: 'Times New Roman';
+  margin: 8px 0px 0px 21px;
+  position: relative;
+  width: 873px;
+  font-family: 'Times New Roman';
 	font-size: 12px;
+}
+
+#inside_co_stat_int {
+  float:left;
+  position:relative;
+  width:142px;
+  margin:35px 0px 0px 2px;
+  font-size:0.8em;
+  color:#000;
+}
+
+#inside_co_stat_int .sousligne {
+  text-decoration:underline;
 }
 
 /* pages */
