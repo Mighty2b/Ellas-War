@@ -1,7 +1,9 @@
 <?php
 
 if($paquet->peut_commerce() == false) {
-	display_error(95);
+	echo '<div class="erreur">';
+	echo display_error(95);
+	echo '</div>';
 }
 else {
 	echo '<h1>'._('Donner une faveur').'</h1>
