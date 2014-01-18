@@ -1,7 +1,31 @@
+/* Policy */
+
 @font-face {
     font-family: "diogenes";
     src: url('../../policy/diogenes.ttf');
 }
+
+@font-face {
+    font-family: "marav";
+    src: url('../../policy/Marav2.ttf');
+}
+
+@font-face {
+    font-family: "poseiaoe";
+    src: url('../../policy/PoseiAOE.ttf');
+}
+
+@font-face {
+    font-family: "dalek";
+    src: url('../../policy/DALEK.ttf');
+}
+
+@font-face {
+    font-family: "spqr";
+    src: url('../../policy/spqr.ttf');
+}
+
+/* General CSS */
 
 body {
 	background-color:#3694DB;
@@ -16,17 +40,82 @@ a {
 }
 
 table {
-	margin:auto;
+  margin:auto;
+  margin-top:5px;
+    border-collapse: separate;
+    border-spacing: 0;
+    color: #2A2A2A;
 }
 
 thead {
-	font-weight:bold;
-	font-size:1.1em;
+  font-weight:bold;
+  font-size:1em;
+  text-shadow: 0 1px 0 #FFFFFF;
 }
 
-.clear {
-	clear:both
+thead td {
+    border-top: 1px solid #EAEAEA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font: bold 1.3em 'trebuchet MS','Lucida Sans',Arial;
 }
+
+thead td:first-child {
+    border-top: medium none;
+}
+
+table thead tr td:first-letter {
+  color: #B30000 !important;
+}
+
+tfoot {
+  font-weight:bold;
+}
+
+tbody {
+  font-size:0.9em;
+}
+
+td {
+    border-bottom: 1px solid #CDCDCD;
+    box-shadow: 0 1px 0 #FFFFFF;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+tbody td:nth-child(1) {
+  background-color:#E1B88F;
+  font-weight:bold;
+}
+
+td:nth-child(2), td:nth-child(3),
+td:nth-child(4), td:nth-child(5) {
+    background: none repeat scroll 0 0 rgba(210, 182, 150, 0.15);
+    border-right: 1px solid #FFFFFF;
+}
+
+table.none tbody td:nth-child(1),
+table.none tbody td:nth-child(2), 
+table.none tbody td:nth-child(3),
+table.none tbody td:nth-child(4), 
+table.none tbody td:nth-child(5) {
+  background-color:transparent;
+  font-weight:normal;
+}
+
+table.none td {
+  border:0px;
+  box-shadow:0 0px 0 #000;
+  white-space:normal;
+}
+
+/* General class*/
+
+.clear {
+  clear:both
+}
+
+/* Design */
 
 #banniere {
 	background-image:url('banniere.png');
