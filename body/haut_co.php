@@ -140,6 +140,18 @@ switch($page) {
 	case 'prieres':
 		echo '
 		<div id="barre_menu_mythologie">
+			<a id="header_ssmenu_arbredesdieux"
+			   href="'._('arbredesdieux').'">'._('Arbre des Dieux').'</a>
+			<a id="header_ssmenu_auteldesdieux"
+			   href="'._('auteldesdieux').'">'._('Autel des Dieux').'</a>
+			<a id="header_ssmenu_temples"
+			   href="'._('temples').'">'._('Temples').'</a>
+			<a id="header_ssmenu_statues"
+			   href="'._('statues').'">'._('Statues').'</a>
+			<a id="header_ssmenu_succes"
+			   href="'._('succes').'">'._('Succès').'</a>
+			<a id="header_ssmenu_prieres"
+			   href="'._('prieres').'">'._('Prieres').'</a>		
 		</div>';
 	break;
 	

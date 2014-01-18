@@ -118,6 +118,7 @@ table.none tbody td:nth-child(5) {
 table.none td {
 	border:0px;
 	box-shadow:0 0px 0 #000;
+	white-space:normal;
 }
 
 /* General class*/
@@ -542,6 +543,30 @@ table.none td {
 	margin-left:123px;
 }
 
+#header_ssmenu_arbredesdieux {
+  margin-left:35px;
+}
+
+#header_ssmenu_auteldesdieux {
+  margin-left:25px;
+}
+
+#header_ssmenu_temples {
+  margin-left:25px;
+}
+
+#header_ssmenu_statues {
+  margin-left:25px;
+}
+
+#header_ssmenu_succes {
+  margin-left:25px;
+}
+
+#header_ssmenu_prieres {
+  margin-left:155px;
+}
+
 #barre_menu_heros {
 	background-image:url('barre_menu_cite.png');
 	background-repeat:no-repeat;
@@ -959,4 +984,60 @@ select {
     font-size: 0.9em;
     font-weight: bold;
     width: 100%;
+}
+
+/* Arbre des dieux */
+.cadre_33 {
+  position:relative;
+  float:left;
+  width:33.3%;
+}
+
+#tab_autel_dieux .cadre_33 img {
+  cursor : pointer;
+}
+
+.arbre_bloc_noir {
+  background-color:black;
+  color:white;
+  text-align:center;
+  height:40px;
+  width:40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin: 2px 2px 4px 2px;
+  border: 3px solid #2E2519;
+  cursor : pointer;
+}
+
+.arbre_bloc_noir .arbre_description {
+  display:none;
+  color:black;
+  padding:2px;
+  background: white;
+  padding: 3px;
+  opacity:0.9;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background:white;
+  border:1px solid black;
+  font-size:12px;
+  z-index:500;
+  position: absolute;
+  width:200px;
+}
+
+.arbre_bloc_noir:hover .arbre_description {
+  display: inline; /* On affiche l'infobulle. */
+  margin-top:45px;
+}
+
+.arbre_bloc_noir .compteur {
+  position:relative;
+  float:right;
+  margin-top:24px;
+  margin-right:1px;
+  font-weight: bold;
 }
