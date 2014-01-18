@@ -216,6 +216,7 @@ switch($page) {
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
+	case 'breves':
 	case 'pagecontact':
 	case 'archivescontact':
 		echo '<div id="barre_menu_vide"></div>';

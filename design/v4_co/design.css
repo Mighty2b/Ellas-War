@@ -45,6 +45,7 @@ h1 {
 
 h1:first-letter, h2:first-letter,
 .news:first-letter,
+#new_list.ligne .ligne:first-letter,
 .rouge_goco {
     color: #B30000 !important;
 }
@@ -819,6 +820,11 @@ select {
 #cadre_batiment_cache td {
 	border: 0px solid #CDCDCD;
 	box-shadow: 0 0px 0 #FFFFFF;
+}
+
+/* News */
+#new_list.ligne .ligne a {
+  margin-left:200px;
 }
 
 /* Bibliothéque */
