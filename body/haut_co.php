@@ -64,9 +64,13 @@ echo '
 &nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div>'.ucfirst(_('heros')).'</a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
-&nbsp;<a id="menu_alliance" href="'._('alliance').'"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;
-&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div>'._('Marché').'</a>&nbsp;
-&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div>'.ucfirst(_('jeux')).'</a>&nbsp;
+&nbsp;<a id="menu_alliance" href="'._('alliance').'"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;';
+
+if($paquet->get_infoj('lvl') > 0) {
+	echo '&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div>'._('Marché').'</a>&nbsp;';
+}
+
+echo '&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div>'.ucfirst(_('jeux')).'</a>&nbsp;
 </section>
 
 <section id="inside_co">
