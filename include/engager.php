@@ -11,7 +11,7 @@ elseif(!empty($_GET['var1']) && $_GET['var1'] <= 4) {
 else {
 	if($paquet->get_infoj('lvl') == 0) {
 
-		if($liste_unites['spartiate']->nb > 0) {
+		if(!empty($liste_unites->spartiate) && $liste_unites->spartiate->nb > 0) {
 			$type = 3;
 		}
 		else {
@@ -48,7 +48,11 @@ echo '
 
 
 </div>
+';
 
+if($paquet->get_infoj('lvl') > 0) {
+	
+	echo '
 <div id="cadre_batiment_types">
 	<div id="cadre_batiment_types2">
 	&nbsp;&nbsp;&nbsp;<a href="'._('engager').'-1">'._('Infanterie').'</a>&nbsp;&nbsp;&nbsp;
@@ -56,7 +60,11 @@ echo '
 	&nbsp;&nbsp;&nbsp;<a href="'._('engager').'-3">'._('Mythologie').'</a>&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;<a href="'._('engager').'-4">'._('Bâtiments').'</a>&nbsp;&nbsp;&nbsp;
 	</div>
-</div>
+</div>';
+
+}
+
+echo '
 
 <div id="cadre_batiment_liste">';
 
