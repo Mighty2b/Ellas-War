@@ -48,7 +48,7 @@ $autorise = array('cite',
 
 //Marché
 'commerce', 'donnerunefaveur', 'faveurs', 'vendre', 'licences', 'mesventes',
-'debarras',
+'debarras', 'archivecommerce',
 
 //Jeux
 'jeux',

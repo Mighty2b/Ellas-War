@@ -159,6 +159,7 @@ switch($page) {
 	case 'licences':
 	case 'mesventes':
 	case 'debarras':
+	case 'archivecommerce':
 		echo '
 		<div id="barre_menu_marche">
 			<a id="header_ssmenu_donnerunefaveur"

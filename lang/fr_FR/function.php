@@ -10,6 +10,11 @@ function display_date($temps, $type=1) {
 		case 2:
 			return date("d-m-y", $temps);
 		break;
+		case 3:
+			return 'le '.
+	    strftime('%A %d %B', $do->date).' à '.
+	    strftime('%Hh %M', $do->date);
+		break;
 	}
 }
 
