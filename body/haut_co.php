@@ -233,6 +233,7 @@ switch($page) {
 	break;
 	
 	case 'breves':
+	case 'vosobjectifs':
 	case 'actualites':
 	case 'pagecontact':
 	case 'archivescontact':
