@@ -855,7 +855,7 @@ select {
 /* Bibliothéque */
 
 .biblio_cadre {
-	margin: 0px 15px 10px 15px;
+	margin: 20px 15px 0px 15px;
 	width:402px;
 	float:left;
 	border: 2px dashed #21160A;
@@ -863,26 +863,31 @@ select {
 
 .biblio_titre {
 	font-weight:bold;
-	width:350px;
+	width:339px;
 	float:left;
 	margin:5px 5px 0px 5px;
 }
 
 .biblio_titre_edit {
-	width:90%;
+	width:345px;
 	float:left;
 	display:none;
 }
 
 .biblio_titre_edit input {
-	width:100%;
+  width:345px;
+  margin:5px 5px 0px 5px;
 }
 
 .biblio_edit {
-	width:20px;
+	width:43px;
 	float:right;
 	text-align:right;
   margin:5px 5px 0px 5px;
+}
+
+.biblio_edit a {
+  cursor : pointer;
 }
 
 .biblio_txt {
@@ -895,7 +900,8 @@ select {
 }
 
 .biblio_txt_edit textarea {
-	width:100%;
+  width:388px;
+  margin:5px;
 	height:120px;
 	padding-top:2px;
 }
