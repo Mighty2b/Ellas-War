@@ -239,6 +239,7 @@ switch($page) {
 	case 'archivescontact':
 	case 'profilsjoueur':
 	case 'details':
+	case 'gestionmeteo':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
