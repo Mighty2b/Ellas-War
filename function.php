@@ -619,4 +619,13 @@ function statu_ress($nombre) {
 	}
 }
 
+function plus_valeur($nombre) {
+	if($nombre > 0) {
+		return '+ '.nbf($nombre);
+	}
+	else {
+		return nbf($nombre);
+	}
+}
+
 ?>
