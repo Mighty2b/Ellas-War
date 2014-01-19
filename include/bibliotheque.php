@@ -1,12 +1,15 @@
 <?php
 
 $biblio= $paquet->get_answer('get_bibliotheque');
+$i = 1;
 
-echo '<h1>'._('Bibliothéque').'</h1>';
-	
+echo '<h1>'._('Bibliothéque').'</h1>
+
+<div id="cadre_bibliotheque">';
+
 if(!empty($biblio)) {
+	
 	$list  = $biblio->{1};
-	$i     = 1;
 
 	foreach ($list as $mem) {
 		echo '<div id="biblio_cadre_'.$i.'"
@@ -31,7 +34,8 @@ if(!empty($biblio)) {
 	}
 }
 
-?>
+echo '</div>
+
 <script type="text/javascript">
 function edit_bibli(id) {
 	$("#biblio_titre_edit2_"+id).val($("#biblio_titre_"+id).html());
@@ -42,4 +46,30 @@ function edit_bibli(id) {
 	$("#biblio_txt_edit_"+id).show();
 	$("#biblio_txt_"+id).hide();
 }
-</script>
+
+function new_cadre(id) {
+	txt  = \'<div id="biblio_cadre_\'+id+\'" class="biblio_cadre">\';
+	txt += \'<div class="ligne">\';
+	txt += \'<div class="biblio_titre" id="biblio_titre_\'+id+\'">'._('Nouvelle note').'</div>\';
+	txt += \'<div class="biblio_titre_edit"	id="biblio_titre_edit_\'+id+\'">\';
+	txt += \'<input type="text" id="biblio_titre_edit2_\'+id+\'"/></div>\';
+	txt += \'<div class="biblio_edit">\';\'+id+\'
+	txt += \'<a onclick="edit_bibli(\'+id+\')">E</a> \';
+	txt += \'<a href="#" onclick="supr_bibli(id)">X</a>\';
+	txt += \'</div>\';
+	txt += \'</div>\';
+	txt += \'<div class="biblio_txt" id="biblio_txt_\'+id+\'"></div>\';
+	txt += \'<div class="biblio_txt_edit" id="biblio_txt_edit_\'+id+\'">\';
+	txt += \'<textarea id="biblio_txt_edit2_\'+id+\'"> </textarea></div>\';
+	txt += \'</div>\';
+	$("#cadre_bibliotheque").html($("#cadre_bibliotheque").html()+txt);
+}';
+
+if($i < 10) {
+	echo 'new_cadre('.($i+1).')';
+}
+
+echo '
+</script>';
+
+?>
