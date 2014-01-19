@@ -421,23 +421,27 @@ echo '</tbody>
 
 switch($paquet->get_infoj('meteo')) {
 	case 'canicule':
-	echo '<br/>' .
-	_('<b>Effet de la météo :</b> Augmentation de la production de vin, de la consommation d\'eau et de vin');
+		echo '<br/>
+		<b>'._('Effet de la météo').' :</b> '.
+		_('Augmentation de la production de vin, de la consommation d\'eau et de vin');
 	break;
 	
 	case 'pluie':
-		echo '<br/>' .
-	_('<b>Effet de la météo :</b> Baisse de la production de bois, augmentation des productions de nourriture et de raisin.');
+		echo '<br/>
+		<b>'._('Effet de la météo').' :</b> '.
+		_('Baisse de la production de bois, augmentation des productions de nourriture et de raisin.');
 	break;
 	
 	case 'vent':
-		echo '<br/>' .
-	_('<b>Effet de la météo :</b> Augmentation de la production de bois');
+		echo '<br/>
+		<b>'._('Effet de la météo').' :</b> '.
+		_('Augmentation de la production de bois');
 	break;
 	
 	case 'neige':
-		echo '<br/>' .
-	_('<b>Effet de la météo :</b> Baisse de toutes les productions sauf les drachmes');
+		echo '<br/>
+		<b>'._('Effet de la météo').' :</b> '.
+		_('Baisse de toutes les productions sauf les drachmes');
 	break;
 }
 
