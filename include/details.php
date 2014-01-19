@@ -335,9 +335,9 @@ echo '<center>
 <table class=\'tableau\'>
 	<thead>
 	<tr class=\'tableau_header\'>
-		<td>&nbsp;'._('Production').'&nbsp;</td>
-		<td>&nbsp;'._('Consommation').'&nbsp;</td>
-		<td>&nbsp;'._('Evolution').'&nbsp;</td>
+		<td>'._('Production').'</td>
+		<td>'._('Consommation').'</td>
+		<td>'._('Evolution').'</td>
 	</tr>
 	</thead>
 	<tfoot></tfoot>
