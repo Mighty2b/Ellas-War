@@ -46,6 +46,7 @@ h1 {
 h1:first-letter, h2:first-letter,
 .news:first-letter,
 #new_list.ligne .ligne:first-letter,
+#cadre_gauche h3:first-letter,
 .rouge_goco {
     color: #B30000 !important;
 }
@@ -1051,3 +1052,42 @@ select {
   margin-right:1px;
   font-weight: bold;
 }
+
+/* nouveaumessage */
+
+#cadre_gauche {
+  width:180px;
+  position:relative;
+  float:left;
+  text-align:left;
+}
+
+#cadre_gauche_int {
+  margin-left:10px;
+}
+
+#cadre_gauche_int img {
+  cursor:pointer;
+}
+
+#liste_destinataires {
+  margin-top:10px;
+  border: 2px dashed #21160A;
+  background-color: #F5EFD0;
+  padding: 5px;
+}
+
+#liste_destinataires div {
+  
+}
+
+#cadre_gauche input {
+  width:150px;
+}
+
+#cadre_droite {
+  width:720px;
+  position:relative;
+  float:left;
+}
+
