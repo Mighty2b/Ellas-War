@@ -76,7 +76,7 @@ echo '
       $var = $j.'1';
       if(!empty($bonus_unites->$var)) {
 				echo '<td>'._('Fin').' : </td>
-				      <td class="droite">'.date('G\h i', $bonus_unites->$var);
+				      <td class="droite">'.display_date($bonus_unites->$var, 2);
 			}
 			else {
         echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'1">'._('Obtenir').'</a>';
@@ -92,7 +92,7 @@ echo '
       
       $var = $j.'2';
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
 			}
 			else {
         echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'2">'._('Obtenir').'</a>';
@@ -109,7 +109,7 @@ echo '
       $var = $j.'3';
       
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
 			}
 			else {
         echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'3">'._('Obtenir').'</a>';
@@ -125,7 +125,7 @@ echo '
       
       $var = $j.'4';
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites->$var);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
 			}
 			else {
         echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'4">'._('Obtenir').'</a>';
@@ -168,7 +168,7 @@ echo '
       if(!empty($bonus_unites[$j.'1']))
 			{
 				echo '<td>'._('Fin').' : </td>
-				      <td class="droite">'.date('G\h i', $bonus_unites[$j.'1']);
+				      <td class="droite">'.display_date($bonus_unites[$j.'1'], 2);
 			}
 			else
 			{
@@ -185,7 +185,7 @@ echo '
       
       if(!empty($bonus_unites[$j.'2']))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'2']);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'2'], 2);
 			}
 			else
 			{
@@ -201,7 +201,7 @@ echo '
       
       if(!empty($bonus_unites[$j.'3']))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'3']);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'3'], 2);
 			}
 			else
 			{
@@ -218,7 +218,7 @@ echo '
       
       if(!empty($bonus_unites[$j.'4']))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.date('G\h i', $bonus_unites[$j.'4']);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'4'], 2);
 			}
 			else
 			{
