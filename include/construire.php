@@ -28,8 +28,13 @@ echo '</div>
 <div id="cadre_batiment_types">
 <div id="cadre_batiment_types2">
 &nbsp;&nbsp;&nbsp;<a href="'._('construire').'-1">'._('Production').'</a>&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-2">'._('Militaire').'</a>&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-3">'._('Logement').'</a>&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-2">'._('Militaire').'</a>&nbsp;&nbsp;&nbsp;';
+
+if($paquet->get_infoj('lvl') >= 1) {
+	echo '&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-3">'._('Logement').'</a>&nbsp;&nbsp;&nbsp;';
+}
+
+echo '
 &nbsp;&nbsp;&nbsp;<a href="'._('construire').'-4">'._('Divers').'</a>&nbsp;&nbsp;&nbsp;
 </div>
 </div>
