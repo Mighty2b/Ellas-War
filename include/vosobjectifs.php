@@ -4,7 +4,7 @@ if($paquet->get_infoj('lvl') < 10) {
 	$actu= unserialize($paquet->get_answer('get_objectifs_lvl')->{1});
 	$obj = unserialize($paquet->get_answer('get_objectifs_lvl')->{2});
 	
-	echo '<h1>'._('Vos objectifs pour passer niveau 1').'</h1>';
+	echo '<h1>'._('Vos objectifs pour passer niveau 1').'</h1><br/>';
 }
 
 include('include/vosobjectifs'.$paquet->get_infoj('lvl').'.php');
