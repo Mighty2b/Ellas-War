@@ -60,3 +60,11 @@ function serialize(obj) {
   return null;
 }
 
+function etape_suivante() {
+   $.ajax({
+     type: "GET",
+     url: "form/etape_suivante.php",
+     success: function(msg){ $("#etape").html(msg); }
+   });
+}
+

@@ -54,7 +54,13 @@ echo '
 </ul>
 </div>
 </section>
-<section id="header_ban">
+<section id="header_ban">';
+
+echo '<div id="etape">';
+	include('include/texte_tuto.php');
+echo '</div>';
+
+echo '
 </section>
 <section id="header_menu">
 &nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
