@@ -63,16 +63,19 @@ echo '<section id="banniere"></section>
 			<article id="reseaux_sociaux">
 <a href="<?php echo FACEBOOK; ?>" 
    target="_blank"><img src="images/logo/facebook.png" 
+                        height="36" width="36"
                         title="<?php echo _('Ellàs War sur Facebook'); ?>" 
                         alt="<?php echo _('Ellàs War sur Facebook'); ?>"></a>
 &nbsp;
 <a href="<?php echo TWITTER; ?>" 
    target="_blank"><img src="images/logo/twitter.png" 
+                        height="36" width="36"
                         title="<?php echo _('S\'abonner à Ellaswar sur Twitter'); ?>" 
                         alt="<?php echo _('S\'abonner à Ellaswar sur Twitter'); ?>"></a>
 &nbsp;
 <a href="https://github.com/Mighty2b" 
    target="_blank"><img src="images/logo/github.png" 
+                        height="36" width="36"
                         title="<?php echo _('Mighty sur Github'); ?>" 
                         alt="<?php echo _('Mighty sur Github'); ?>"></a>
 		
