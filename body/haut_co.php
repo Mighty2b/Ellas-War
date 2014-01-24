@@ -194,6 +194,7 @@ switch($page) {
 	break;
 	
 	case 'jeux':
+	case 'carremagique':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
