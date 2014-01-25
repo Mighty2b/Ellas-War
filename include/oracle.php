@@ -81,7 +81,7 @@ if(sizeof($election) > 0) {
 	</form>';
 }
 
-if($paquet->get_infoj('lvl2') == 0 && $peut_oracle == true) {
+if($peut_oracle) {
 	echo '<div class="ligne">
 	      <br/><a href="javascript:affiche_cache(\'devenir_candidat\');">
 	      <div class="bouton_classique">';
