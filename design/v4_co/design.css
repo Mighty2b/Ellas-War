@@ -1167,3 +1167,56 @@ select {
   float:left;
 }
 
+/* profilsjoueur */
+
+#cadre_espace_profils {
+  position:relative;
+  float:left;
+  width:500px;
+}
+
+#description_profils {
+  position:relative;
+  float:left;
+  width:350px;
+  font-size:14px;
+  overflow:auto;
+}
+
+#cadre_avatar {
+  position:relative;
+  float:left;
+  min-height:210px;
+  width:220px;
+  margin-left:80px;
+}
+
+#cadre_info_perso {
+  position:relative;
+  float:left;
+  font-size:14px;
+  margin-left:80px;
+  margin-top:10px;
+  width: 280px;
+}
+
+#cadre_info_joueur {
+  position:relative;
+  float:left;
+  font-size:14px;
+  width:200px;
+}
+
+#cadre_contact {
+  position:relative;
+  float:left;
+  margin-left:20px;
+}
+
+.cadre_dedi {
+  background-color: #F1DE9D;
+  border: 1px solid white;
+  height: 100px;
+  margin-top: 3px;
+  width:600px;
+}

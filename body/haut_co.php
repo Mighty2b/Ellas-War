@@ -235,7 +235,7 @@ switch($page) {
 	case 'boiteEnvoie':
 	case 'archivesdemessagerie':
 	case 'listenoire':
-	
+		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
 	case 'parrainage':
