@@ -27,7 +27,7 @@ echo '
 <table width="90%">
 <tr>
 <td class="titre_tab" valign="top">&nbsp;Hermès&nbsp;</td>
-<td align="justify">Lorsque vous rachetez vos lots dans le marché, vous récupérez 95% de ceux-ci au lieu de 75%. Le nombre de lots que vous pouvez mettre en vente passe de 8 à 10 et les licences vous permettant de vendre sur le marché de gros vous coûtent 50% moins cher.<br/><br/>
+<td align="justify">Lorsque vous rachetez vos lots dans le marché, vous récupérez 97.5% de ceux-ci au lieu de 80%. Le nombre de lots que vous pouvez mettre en vente passe de 8 à 10 et les licences vous permettant de vendre sur le marché de gros vous coûtent 50% moins cher.<br/><br/>
 </td>
 <td valign="top">
 <a href="Temples-hermes" class="centre_armee gras" >Bâtir</a>
