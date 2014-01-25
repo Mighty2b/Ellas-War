@@ -11,7 +11,6 @@ if(!empty($_POST['pro_texte'])) {
 elseif(!empty($_GET['var2'])) {
 	if($_GET['var2'] == _('ajouter')) {
 		$paquet -> add_action('ajouter_amis', array($_GET['var1']));
-		redirect(_('amis'));
 	}
 	elseif($_GET['var2'] == _('ajouterl')) {
 		$paquet -> add_action('ajouter_liste_noire',

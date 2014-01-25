@@ -2,7 +2,10 @@
 
 $j = $paquet->get_answer('profils_joueur')->{1};
 
-if(empty($j)) {
+if(!empty($_GET['var2']) && $_GET['var2'] == _('ajouter')) {
+	redirect(_('amis'));
+}
+elseif(empty($j)) {
 	redirect();
 }
 
