@@ -8,6 +8,11 @@ $var_ress     = $paquet->get_ress();
 $liste_bat    = $paquet->get_infoj('liste_batiments');
 $prod_bonus   = $paquet->get_infoj('prod_bonus');
 $cotise_volontaire = $paquet->get_infoj('cotise_volontaire');
+$meteo       = $paquet->get_infoj('meteo');
+
+if(empty($meteo)) {
+	$meteo = _('soleil');
+}
 
 if(!empty($paquet->get_infoj('alliance'))) {
 	$cotisation        = $paquet->get_infoj('alliance')->cotisation;
@@ -417,37 +422,42 @@ echo '</tbody>
           selected="selected"':'').'>'._('7 jours').'</option>
   <option value="9" '.($_GET['var1']==9?'
           selected="selected"':'').'>'._('14 jours').'</option>
-</select>';
+</select><br/>
 
-switch($paquet->get_infoj('meteo')) {
-	case 'canicule':
+'._('Météo').' : '.$meteo;
+
+switch($meteo) {
+	case _('canicule'):
 		echo '<br/>
 		<b>'._('Effet de la météo').' :</b> '.
 		_('Augmentation de la production de vin, de la consommation d\'eau et de vin');
 	break;
 	
-	case 'pluie':
+	case _('pluie'):
 		echo '<br/>
 		<b>'._('Effet de la météo').' :</b> '.
 		_('Baisse de la production de bois, augmentation des productions de nourriture et de raisin.');
 	break;
 	
-	case 'vent':
+	case _('vent'):
 		echo '<br/>
 		<b>'._('Effet de la météo').' :</b> '.
 		_('Augmentation de la production de bois');
 	break;
 	
-	case 'neige':
+	case _('neige'):
 		echo '<br/>
 		<b>'._('Effet de la météo').' :</b> '.
 		_('Baisse de toutes les productions sauf les drachmes');
 	break;
 }
 
-echo '
-<br/><br/>
-<a href="'._('gestionmeteo').'" class="erreur">'._('Ne plus subir la météo').'</a>
-</center>';
+if($paquet->get_infoj('lvl') >= 5) {
+	echo '
+	<br/><br/>
+	<a href="'._('gestionmeteo').'" class="erreur">'._('Ne plus subir la météo').'</a>';
+}
+
+echo '</center>';
 
 ?>
