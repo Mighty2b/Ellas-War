@@ -2,6 +2,10 @@
 
 $j = $paquet->get_answer('profils_joueur')->{1};
 
+if(empty($j)) {
+	redirect();
+}
+
 echo '<h1>'.$j->login.'</h1>';
 
 if(!empty($j->nomalliance)) {
@@ -153,4 +157,12 @@ echo '</div>
 			}
 		}
 	}
+
+echo '
+<script type="text/javascript">
+    $(document).ready(function() {
+        document.title = \'Profil de '.$j->login.'\';
+    });
+</script>';
+
 ?>
