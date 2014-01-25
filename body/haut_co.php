@@ -16,17 +16,23 @@ echo '
 		<li>&nbsp;<a href="'._('messagerie').'" ';
 			
 			if($paquet->get_infoj('nouveau') > 0) {
-				echo 'style="text-shadow: 0px 0px 7px rgba(218, 165, 32, 0.75);"'.
-				     'title= title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"'.
+				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
 			}
-echo '>'._('Messagerie').'</a>&nbsp;
+echo '>'._('Messagerie');
+
+if($paquet->get_infoj('nouveau') > 0) {
+	echo '&nbsp;('.$paquet->get_infoj('nouveau').')';
+}
+
+echo '</a>&nbsp;
 		<ul class="sub_menu">
 			<li>&nbsp;<a href="'._('nouveaumessage').'">'._('Nouveau message').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('messagerie').'" ';
 			
 			if($paquet->get_infoj('nouveau') > 0) {
-				echo 'style="text-shadow: 0px 0px 7px rgba(218, 165, 32, 0.75);"'.
-				     'title= title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"'.
+				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
 			}
 echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('boiteenvoie').'">'._('Boite d\'envoi').'</a>&nbsp;</li>

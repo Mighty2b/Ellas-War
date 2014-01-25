@@ -1,4 +1,19 @@
 $(function(){
+
+$("ul.dropdown li").mouseover(function(){
+  $(".hover ul:first").css('visibility', 'hidden');
+  $(".hover").removeClass("hover");
+  
+  $(this).addClass("hover");
+  $('ul:first',this).css('visibility', 'visible');
+});
+
+$("#header_menu").mouseover(function(){
+  $(".hover ul:first").css('visibility', 'hidden');
+  $(".hover").removeClass("hover");
+});
+
+/*
   $("ul.dropdown li").hover(function(){
     $(this).addClass("hover");
     $('ul:first',this).css('visibility', 'visible');
@@ -6,6 +21,7 @@ $(function(){
     $(this).removeClass("hover");
     $('ul:first',this).css('visibility', 'hidden');
   });
+*/
 });
 
 function deco() {
