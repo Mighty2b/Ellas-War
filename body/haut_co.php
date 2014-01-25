@@ -13,10 +13,22 @@ echo '
 			<li>&nbsp;<a href="'._('motdepasse').'">Mot de passe</a>&nbsp;</li>
 		</ul>
 		</li>
-		<li>&nbsp;<a href="'._('messagerie').'">'._('Messagerie').'</a>&nbsp;
+		<li>&nbsp;<a href="'._('messagerie').'" ';
+			
+			if($paquet->get_infoj('nouveau') > 0) {
+				echo 'style="text-shadow: 0px 0px 7px rgba(218, 165, 32, 0.75);"'.
+				     'title= title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+			}
+echo '>'._('Messagerie').'</a>&nbsp;
 		<ul class="sub_menu">
 			<li>&nbsp;<a href="'._('nouveaumessage').'">'._('Nouveau message').'</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('messagerie').'">'._('Boite de reception').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('messagerie').'" ';
+			
+			if($paquet->get_infoj('nouveau') > 0) {
+				echo 'style="text-shadow: 0px 0px 7px rgba(218, 165, 32, 0.75);"'.
+				     'title= title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+			}
+echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('boiteenvoie').'">'._('Boite d\'envoi').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('archivesdemessagerie').'">'._('Archives').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('listenoire').'">'._('Liste noire').'</a>&nbsp;</li>
