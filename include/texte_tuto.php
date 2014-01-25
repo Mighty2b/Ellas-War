@@ -331,7 +331,7 @@ if($paquet->get_infoj('lvl') == 0) {
 	break;
 	}
 }
-elseif($paquet->getlvl() == 1) {
+elseif($paquet->get_infoj('lvl') == 1) {
 	switch($etape) {
 	case 1:
 		echo '<div class="ligne gauche">'._(
