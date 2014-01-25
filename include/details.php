@@ -424,7 +424,7 @@ echo '</tbody>
           selected="selected"':'').'>'._('14 jours').'</option>
 </select><br/>
 
-'._('Météo').' : '.$meteo;
+<b>'._('Météo').' :</b> '.$meteo;
 
 switch($meteo) {
 	case _('canicule'):
