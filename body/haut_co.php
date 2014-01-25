@@ -29,11 +29,11 @@ echo '
 		</ul></li>
 		<li>&nbsp;<a href="'._('classements').'">'._('Classements').'</a>&nbsp;
 		<ul class="sub_menu">
-			<li>&nbsp;'._('Alliances').'&nbsp;</li>
-			<li>&nbsp;'._('Batailles navales').'&nbsp;</li>
-			<li>&nbsp;'._('Cités').'&nbsp;</li>
-			<li>&nbsp;'._('Héros').'&nbsp;</li>
-			<li>&nbsp;'._('Honneur').'&nbsp;</li>
+			<li>&nbsp;<a>'._('Alliances').'</a>&nbsp;</li>
+			<li>&nbsp;<a>'._('Batailles navales').'</a>&nbsp;</li>
+			<li>&nbsp;<a>'._('Cités').'</a>&nbsp;</li>
+			<li>&nbsp;<a>'._('Héros').'</a>&nbsp;</li>
+			<li>&nbsp;<a>'._('Honneur').'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'._('communaute').'">'._('Communauté').'</a>&nbsp;
 		<ul class="sub_menu">
