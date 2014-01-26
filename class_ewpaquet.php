@@ -85,7 +85,7 @@ class Ewpaquet {
 		}
 	}
 	
-	function get_answer($action='', $num=1) {
+	function get_answer($action='', $num=0) {
 		if(!empty($this->answer) && !empty($this->answer->$action)) {
 			if(!empty($num)) {
 				return $this->answer->$action->$num;
