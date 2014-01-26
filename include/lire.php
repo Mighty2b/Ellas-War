@@ -37,7 +37,7 @@ echo '<tr>
 	    valign="top"><a class="rouge_goco"
 	                    href="'._('profilsjoueur').'-'.$mess->joueur.'">'.$mess->login.'</a>
 	<br/>';
-	
+	/*
 	if($paquet->get_infoj('id') == $mess->joueur) {
 		echo '<img src=\''.$avatar_moi.'\' 
 		           alt="'._('Avatar du joueur').' '.$mess->login.'" 
@@ -48,7 +48,7 @@ echo '<tr>
 		           alt="'._('Avatar du joueur').' '.$mess->login.'" 
 		           width="200px"/>';
 	}
-	
+	*/
 	echo '<br/>'.display_date($mess->temps,3).'</td>
 	<td valign="top"><br/>'.$mess->message.'</td>
 	</tr>';
