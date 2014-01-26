@@ -51,7 +51,6 @@ h1:first-letter, h2:first-letter,
     color: #B30000 !important;
 }
 
-
 table {
 	margin:auto;
 	margin-top:5px;
@@ -359,7 +358,7 @@ td.none {
 /* Header */
 
 #header {
-  width:100%;
+  width:1340px;
   background-color:#E4DCC2;/*#21160A;*/
   text-align:center;
   padding: 0px 0px 3px 0px;
