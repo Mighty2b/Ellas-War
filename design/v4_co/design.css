@@ -1162,9 +1162,9 @@ select {
 }
 
 #cadre_droite {
-  width:720px;
+  width:670px;
   position:relative;
-  float:left;
+  float:right;
 }
 
 /* profilsjoueur */

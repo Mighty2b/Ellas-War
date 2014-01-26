@@ -37,6 +37,7 @@ echo '<section id="banniere"></section>
 				       name="ilogin" 
 				       value="" 
 				       class="form"
+				       data-minlength="4"
 				       placeholder="<?php echo _('Nom de joueur'); ?>"
 				       required="required" />
 				<br/>
