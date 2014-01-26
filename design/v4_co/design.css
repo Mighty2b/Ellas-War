@@ -122,6 +122,12 @@ table.none td {
 	white-space:normal;
 }
 
+td.none {
+  background-color:transparent;
+  border:0px;
+  box-shadow:0 0px 0 #000;
+}
+
 /* General class*/
 
 .centrer {

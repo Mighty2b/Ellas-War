@@ -12,8 +12,13 @@ function display_date($temps, $type=1) {
 		break;
 		case 3:
 			return 'le '.
-	    strftime('%A %d %B', $do->date).' à '.
-	    strftime('%Hh %M', $do->date);
+	    strftime('%A %d %B', $temps).' à '.
+	    strftime('%Hh %M', $temps);
+		break;
+		case 4:
+			return 
+	    strftime('%A %d %B', $temps).' à '.
+	    strftime('%Hh %M', $temps);
 		break;
 	}
 }
