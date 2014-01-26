@@ -16,7 +16,7 @@ echo '
 		<li>&nbsp;<a href="'._('messagerie').'" ';
 			
 			if($paquet->get_infoj('nouveau') > 0) {
-				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"'.
+				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);" '.
 				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
 			}
 echo '>'._('Messagerie');
@@ -31,7 +31,7 @@ echo '</a>&nbsp;
 			<li>&nbsp;<a href="'._('messagerie').'" ';
 			
 			if($paquet->get_infoj('nouveau') > 0) {
-				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"'.
+				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);" '.
 				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
 			}
 echo '>'._('Boite de reception').'</a>&nbsp;</li>
@@ -235,6 +235,7 @@ switch($page) {
 	case 'boiteEnvoie':
 	case 'archivesdemessagerie':
 	case 'listenoire':
+	case 'lire':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
