@@ -85,9 +85,14 @@ class Ewpaquet {
 		}
 	}
 	
-	function get_answer($action='') {
+	function get_answer($action='', $num=1) {
 		if(!empty($this->answer) && !empty($this->answer->$action)) {
-			return $this->answer->$action;
+			if(!empty($num)) {
+				return $this->answer->$action->$num;
+			}
+			else {
+				return $this->answer->$action;
+			}
 		}
 		else {
 			return '';
