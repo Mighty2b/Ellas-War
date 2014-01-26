@@ -33,7 +33,9 @@ echo '
 	
 	foreach($message->messages as $mess) {
 echo '<tr>	
-	<td class="centrer" valign="top"><span class="rouge_goco">'.$mess->login.'</span>
+	<td class="centrer"
+	    valign="top"><a class="rouge_goco"
+	                    href="'._('profilsjoueur').'-'.$mess->joueur.'">'.$mess->login.'</a>
 	<br/>';
 	
 	if($paquet->get_infoj('id') == $mess->joueur) {
