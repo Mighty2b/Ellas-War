@@ -17,7 +17,7 @@ if(sizeof($liste) > 0) {
 
 foreach($liste as $mess) {
 	echo '<tr>
-	<td>';
+	<td class="centrer">';
 	
 	if(!empty($mess->lecture)) {
 		echo '<img src="images/messagerie/mp.png"
