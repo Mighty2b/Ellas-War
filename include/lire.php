@@ -22,6 +22,8 @@ else {
 	$avatar_lui = 'images/joueurs/avatar.png';
 }
 
+$paquet->error('messagerie_repondre', 1);
+
 echo '
 <table>
 	<thead><tr class="centrer">
@@ -35,10 +37,12 @@ echo '
 	<tbody><form method="post" action="#">
 	<tr style="display:none;" id="envoyer">
 		<td class="centrer"><div 
-		    class="bouton_classique"><input type="button"
+		    class="bouton_classique"><input type="submit"
+		                                    name="envoyer"
 		                                    value="'._('Envoyer').'" /></div></td>
 		<td><textarea name="texte"
-		              style="width:100%;height:100px;"></textarea></td>
+		              style="width:100%;height:100px;"
+		              required="required"></textarea></td>
 	</tr></form>';
 	
 	foreach($message->messages as $mess) {
@@ -74,6 +78,10 @@ function repondre() {
 	$("#repondre").hide(\'slow\');
 	$("#envoyer").show(\'slow\');
 }
+
+$(document).ready(function() {
+	document.title = \''.$message->titre.'\';
+});
 </script>';
 
 ?>
