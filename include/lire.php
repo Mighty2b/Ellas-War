@@ -22,14 +22,24 @@ else {
 	$avatar_lui = 'images/joueurs/avatar.png';
 }
 
-echo '
+echo '<form method="post" action="#">
 <table>
-	<thead><tr>
-		<td></td>
-		<td class="centrer" style="min-width:60%">'.$message->titre.'</td>
+	<thead><tr class="centrer">
+		<td><div class="bouton_classique"><input type="button" 
+		                                         value="'._('Répondre').'"
+		                                         id="repondre"
+		                                         onclick="repondre()"/></div></td>
+		<td style="min-width:70%">'.$message->titre.'</td>
 	</tr></thead>
 	<tfoot></tfoot>
-	<tbody>';
+	<tbody>
+	<tr style="display:none;" id="envoyer">
+		<td class="centrer"><div 
+		    class="bouton_classique"><input type="button"
+		                                    value="'._('Envoyer').'" /></div></td>
+		<td><textarea name="texte"
+		              style="width:100%;height:100px;"></textarea></td>
+	</tr>';
 	
 	foreach($message->messages as $mess) {
 echo '<tr>	
@@ -56,6 +66,14 @@ echo '<tr>
 	
 echo '
 	</tbody>
-</table>';
+</table>
+</form>
+
+<script type="text/javascript">
+function repondre() {
+	$("#repondre").hide(\'slow\');
+	$("#envoyer").show(\'slow\');
+}
+</script>';
 
 ?>
