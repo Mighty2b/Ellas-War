@@ -22,7 +22,7 @@ else {
 	$avatar_lui = 'images/joueurs/avatar.png';
 }
 
-echo '<form method="post" action="#">
+echo '
 <table>
 	<thead><tr class="centrer">
 		<td><div class="bouton_classique"><input type="button" 
@@ -32,14 +32,14 @@ echo '<form method="post" action="#">
 		<td style="min-width:70%">'.$message->titre.'</td>
 	</tr></thead>
 	<tfoot></tfoot>
-	<tbody>
+	<tbody><form method="post" action="#">
 	<tr style="display:none;" id="envoyer">
 		<td class="centrer"><div 
 		    class="bouton_classique"><input type="button"
 		                                    value="'._('Envoyer').'" /></div></td>
 		<td><textarea name="texte"
 		              style="width:100%;height:100px;"></textarea></td>
-	</tr>';
+	</tr></form>';
 	
 	foreach($message->messages as $mess) {
 echo '<tr>	
@@ -67,7 +67,7 @@ echo '<tr>
 echo '
 	</tbody>
 </table>
-</form>
+
 
 <script type="text/javascript">
 function repondre() {
