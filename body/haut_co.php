@@ -232,7 +232,7 @@ switch($page) {
 	
 	case 'nouveaumessage':
 	case 'messagerie':
-	case 'boiteEnvoie':
+	case 'boiteenvoie':
 	case 'archivesdemessagerie':
 	case 'listenoire':
 	case 'lire':
