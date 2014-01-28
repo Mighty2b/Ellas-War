@@ -8,7 +8,7 @@ if(sizeof($liste) > 0) {
 		<thead><tr>
 			<td></td>
 			<td>'._('Titre').'</td>
-			<td>'._('Expéditeur').'</td>
+			<td>'._('Destinataire').'</td>
 			<td>'._('Date').'</td>
 			<td class="none"></td>
 		</tr></thead>
