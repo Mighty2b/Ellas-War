@@ -1,0 +1,30 @@
+########################################
+#OOOOOOV#VV#OOOOOOOOOOOOOOOOOOOOOOOOOOO#
+#OOOOOV.#OO#VVVVVVVVVVVVVVVVVVVVVVVVVVV#
+#OOOOV..#OO#....................P......#
+#OOOV...#OO#.###########################
+#OOV....#OO#.#...OOOOOOOOOOOOOOOOOOOOOV#
+#OV..........#.#.VVVVVVVVVVVVVVVVVVVVVO#
+########## #...#.......................#
+#OOOOOOOO# #...######################..#
+#OOOOOOOV# #######################....##
+#OOOOOOVV# #.OOVVVVVOOOVVVVVOO.....#####
+#OOOOOVVV# #..OOVVVVVOVVVVVOO......#OOO#
+#OOOOVVVV# #...OOVVVVVVVVVOO.......#VVV#
+#OOOVVVVV# #....OOVVVVVVVOO........OVVV#
+#OOVVVVVV###.....OOVVVVVOO.........OVVV#
+#OVVVVVVV.........OOVVVOO..........#VVV#
+#..................OOVOO...........#####
+#...................OOO................#
+#OOOOOOOO............O.................#
+##OOOOOOO..............................#
+###OOOOOO..............................#
+####OOOOO...OOOOOOOOOOOOOOOOOOOOOOOO...#
+#####OOOO...VVVVVVVVVVVVVVVVVVVVVVVV...#
+######OOO...OOOOOOOOOOOOOOOOOOOOOOOO...#
+#######OO...VVVVVVVVVVVVVVVVVVVVVVVV...#
+########O..............................#
+#########..............................#
+#VOOOOOOO..............................#
+#VVVVVVVV..............................#
+########################################

@@ -17,7 +17,7 @@ echo '
 	}
 	echo '
 	<td class="centrer"><a href="#" 
-	                       onclick="window.open(\'form/parcour.php\',\''._('Chasse aux trésors').'\',\'toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=850, height=710\');" class="centre_armee"><img src="images/jeux/chasse_150.png" alt="'._('Chasse au trésor').'" title="'._('Chasse au trésor').'" /></a></td>';
+	                       onclick="window.open(\'popup/parcour.php\',\''._('Chasse aux trésors').'\',\'toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=850, height=710\');" class="centre_armee"><img src="images/jeux/chasse_150.png" alt="'._('Chasse au trésor').'" title="'._('Chasse au trésor').'" /></a></td>';
 
 	if($paquet->get_infoj('lvl') != 1) {
     echo '</tr>';
