@@ -25,16 +25,18 @@ if($nb >= 0) {
 		<br/><br/>';
 	}
 	
+	echo '<div class="clear"></div>';
+	echo '<div class="ligne centrer">';
 
 	for($i=0;$i<$image_haut;$i++) {
 		for($j=0;$j<$image_larg;$j++) {
-			echo '<img src="/images/grilles/grattez.png"
-			           style="position:absolute;margin-top:'.($i*10).'px;margin-left:'.(281+$j*10).'px;width:10px;height:10px;cursor:hand;" 
+			echo '<img src="/images/jeux/grilles/grattez.png"
+			           style="position:absolute;margin-top:'.($i*10).'px;margin-left:'.($j*10).'px;width:10px;height:10px;cursor:hand;" 
 			           onmouseover="this.style.visibility=\'hidden\';" 
 			           onmouseout="this.style.visibility=\'hidden\';gain_ticket();">';
 		}
 	}
-	echo '<div class="ligne centrer">';
+	
 	echo '<img src="images/jeux/grilles/'.$alea.'.gif" 
 	           width="150" height="150" 
 	           alt="Grille de morpion">
