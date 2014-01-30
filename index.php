@@ -15,7 +15,7 @@ if(!empty($_GET['page']) && preg_match("/^[a-zA-Z0-9_]+$/", $_GET['page'])) {
 }
 
 echo '<!DOCTYPE html>
-<html>
+<html lang="'.PAGE_LANG.'">
 	<head>
 		<meta charset="utf-8" />';
 		
