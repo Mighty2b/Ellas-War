@@ -1,5 +1,7 @@
 <?php
 
+$nouveaux_mp = $paquet->get_answer('messagerie_nonlus')->{1};
+
 echo '
 <section id="header">
 <div id="header2">
@@ -15,14 +17,14 @@ echo '
 		</li>
 		<li>&nbsp;<a href="'._('messagerie').'" ';
 			
-			if($paquet->get_infoj('nouveau') > 0) {
+			if($nouveaux_mp > 0) {
 				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);" '.
-				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+				     'title="'._('Messagerie').' ('.$nouveaux_mp.')"';
 			}
 echo '>'._('Messagerie');
 
-if($paquet->get_infoj('nouveau') > 0) {
-	echo '&nbsp;('.$paquet->get_infoj('nouveau').')';
+if($nouveaux_mp > 0) {
+	echo '&nbsp;('.$nouveaux_mp.')';
 }
 
 echo '</a>&nbsp;
@@ -30,9 +32,9 @@ echo '</a>&nbsp;
 			<li>&nbsp;<a href="'._('nouveaumessage').'">'._('Nouveau message').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('messagerie').'" ';
 			
-			if($paquet->get_infoj('nouveau') > 0) {
+			if($nouveaux_mp > 0) {
 				echo 'style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);" '.
-				     'title="'._('Messagerie').' ('.$paquet->get_infoj('nouveau').')"';
+				     'title="'._('Messagerie').' ('.$nouveaux_mp.')"';
 			}
 echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('boiteenvoie').'">'._('Boite d\'envoi').'</a>&nbsp;</li>
