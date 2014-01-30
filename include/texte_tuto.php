@@ -145,11 +145,10 @@ if($paquet->get_infoj('lvl') == 0) {
 
 	case 7:
 		echo '<div class="ligne gauche">'._(
-		     'Sur le marché, vous pourrez acheter et vendre des lots de '.
-		     'ressources à partir du niveau 1. Pour accéder au commerce '.
+		     'Au niveau 1 vous pourrez accéder au commerce mais pour cela '.
 		     'il vous faudra une agora.').'<br/>'._(
 		     'Allez dans Constructions, Construire, Divers puis construisez '.
-				 '<b>une agora</b> et allez consulter le commerce.');
+				 '<b>une agora</b>.');
 	
 		if($paquet->get_infoj('check_etape') == true) {
 			echo '<br/><br/></div>
