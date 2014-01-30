@@ -210,9 +210,7 @@ if($paquet->get_infoj('lvl') == 0) {
 		echo '<div class="ligne gauche">'._(
 		'Allez dans armée, puis engager. Renvoyez les spartiates et '.
 		'récupérez des ressources. Vous pourrez de nouveau en engager '.
-		'si vous bâtissez le temple d\'Arès au niveau 6.').'<br/>'._(
-		'Ne vous inquiètez pas pour votre fer, je vais vous arranger ça, '.
-		'mais que cela reste entre nous ;)');
+		'si vous bâtissez le temple d\'Arès au niveau 6.').'<br/>';
 		
 		if($paquet->get_infoj('check_etape') == true) {
 			echo '<br/><br/></div>
