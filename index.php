@@ -59,7 +59,15 @@ echo '
 <![endif]–>';*/
 
 echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
+
+switch($paquet->get_infoj('statu')) {
+	case 1:
 echo '<script type="text/javascript" src="js/scripts_'.$prefix.'.js" ></script>';
+	break;
+	
+	default:
+	break;
+}
 
 echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 		<meta name="google-site-verification" 
