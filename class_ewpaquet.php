@@ -205,8 +205,8 @@ class Ewpaquet {
   }
   
   function is_active_bonus_commerce() {
-		if(!empty($this->reponse->joueur->bonus->commerce) && $this->reponse->joueur->bonus->commerce > $this->reponse->joueur->timestamp) {
-      echo '<div class="erreur centrer">'._('Appui d\'Hermès actif jusqu\'au %s',print_date($this->reponse->joueur->bonus->commerce,2)).'<br/></div>';
+		if(!empty($this->joueur->bonus->commerce) && $this->joueur->bonus->commerce > $this->joueur->timestamp) {
+      echo '<div class="erreur centrer">'._('Appui d\'Hermès actif jusqu\'au %s',print_date($this->joueur->bonus->commerce,2)).'<br/></div>';
 		}
   }
   
@@ -218,6 +218,48 @@ class Ewpaquet {
 			return 80;
 		}
 	}
+	
+	
+	function possible_temple1() {
+		if(sizeof($this->joueur->temples) == 0 && 
+			 $this->joueur->lvl == 2) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	function possible_temple2() {
+		if(sizeof($this->joueur->temples) == 1 &&
+			 $this->joueur->lvl == 6) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	function possible_temple3() {
+		if(sizeof($this->joueur->temples) == 2 &&
+			 $this->joueur->lvl == 8) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	function possible_temple4() {
+		if(sizeof($this->joueur->temples) == 3 &&
+			 $this->joueur->lvl == 10) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 }
 
 ?>
