@@ -141,6 +141,11 @@ td.none {
 	font-weight:normal;
 }
 
+.cadre {
+  position:relative;
+  float:left;
+}
+
 .ligne {
 	position:relative;
 	float:left;

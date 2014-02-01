@@ -206,8 +206,18 @@ class Ewpaquet {
   
   function is_active_bonus_commerce() {
 		if(!empty($this->joueur->bonus->commerce) && $this->joueur->bonus->commerce > $this->joueur->timestamp) {
-      echo '<div class="erreur centrer">'._('Appui d\'Hermès actif jusqu\'au %s',print_date($this->joueur->bonus->commerce,2)).'<br/></div>';
+      echo '<div class="erreur centrer">';
+      printf(_("Appui d\'Hermès actif jusqu\'au %s"),display_date($this->joueur->bonus->commerce,4));
+			echo '<br/></div>';
 		}
+  }
+  
+  function is_active_bonus_xp() {
+  	if(!empty($this->reponse->joueur->bonus->xp) && $this->reponse->joueur->bonus->xp > $this->reponse->joueur->timestamp) {
+  		echo '<div class="erreur centrer">';
+  		printf(_("Appui d\'Éros actif jusqu\'au %").display_date($this->reponse->joueur->bonus->xp,4));
+			echo '<br/></div>';
+  	}
   }
   
 	function get_taux_rachat() {

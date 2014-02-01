@@ -639,4 +639,10 @@ function affiche_etoile($nb, $couleur, $txt) {
   return $r;
 }
 
+function constr_get($type, $var) {
+	if(!empty($var)) {
+		return '&amp;'.$type.'='.$var;
+	}
+}
+
 ?>
