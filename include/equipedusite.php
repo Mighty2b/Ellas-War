@@ -29,7 +29,7 @@ echo '<h1>'._('L\'équipe d\'Ellàs War').'</h1>
 <div class="gauche">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Administrateurs').' : </b> Notperfect, Rayz, Octaviux, Dreamer, Goco<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Prophètes').' : </b> Nico11570, Aminouch, Thomast, Melpomene, Missmaude, Driguer, Letnev, Grimmjow, Babyangel85, Lespoune, Legendel, Gilgam3sh<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Modérateurs').' :</b> Alexmax, Callysta, Stephrgr, Volvic, Pinpinbleu, Akenagan, Lunch, Odysseus, kazenver, Steen<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Modérateurs').' :</b> Alexmax, Callysta, Stephrgr, Volvic, Pinpinbleu, Akenagan, Lunch, Odysseus, kazenver, Steen, Padommay, Electhor<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>'._('Graphistes').' : </b> Galbatorix, Dreamer, Rastaking
 <br/><br/>
 </div></div>';
