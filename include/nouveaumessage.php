@@ -100,4 +100,13 @@ function ajouter_dest() {
 	  });
 	}
 }
+
+<?php 
+
+if(!empty($_GET['var1'])) {
+	echo '$("#destinataire").val('.$_GET['var1'].');
+	      ajouter_dest();';
+}
+
+?>
 </script>
