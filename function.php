@@ -628,4 +628,21 @@ function plus_valeur($nombre) {
 	}
 }
 
+function affiche_etoile($nb, $couleur, $txt) {
+  $r = '';
+  if($nb > 0) {
+    //Les étoiles
+    for($i=0;$i<$nb;$i++) {
+      $r .= '<img src="images/etoiles/'.$couleur.'.png" alt="'.$txt.'" title="'.$txt.'" />';
+    }
+  }
+  return $r;
+}
+
+function constr_get($type, $var) {
+	if(!empty($var)) {
+		return '&amp;'.$type.'='.$var;
+	}
+}
+
 ?>
