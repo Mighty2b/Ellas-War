@@ -86,7 +86,16 @@ echo '
 &nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
 &nbsp;<a id="menu_armee" href="'._('armee').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
 &nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
-&nbsp;<a id="menu_mythologie" href="'._('mythologie').'"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
+&nbsp;<a id="menu_mythologie" href="';
+
+if($paquet->get_infoj('lvl') == 0) {
+	echo _('arbredesdieux');
+}
+else {
+	echo _('mythologie');
+}
+
+echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
 &nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div>'.ucfirst(_('heros')).'</a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
@@ -157,8 +166,30 @@ switch($page) {
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
-	case 'mythologie':
 	case 'arbredesdieux':
+		if($paquet->get_infoj('lvl') == 0) {
+			echo '<div id="barre_menu_vide"></div>';
+		}
+		else {
+			echo '
+		<div id="barre_menu_mythologie">
+			<a id="header_ssmenu_arbredesdieux"
+			   href="'._('arbredesdieux').'">'._('Arbre des Dieux').'</a>
+			<a id="header_ssmenu_auteldesdieux"
+			   href="'._('auteldesdieux').'">'._('Autel des Dieux').'</a>
+			<a id="header_ssmenu_temples"
+			   href="'._('temples').'">'._('Temples').'</a>
+			<a id="header_ssmenu_statues"
+			   href="'._('statues').'">'._('Statues').'</a>
+			<a id="header_ssmenu_succes"
+			   href="'._('succes').'">'._('Succès').'</a>
+			<a id="header_ssmenu_prieres"
+			   href="'._('prieres').'">'._('Prieres').'</a>
+		</div>';
+		}
+	break;
+	
+	case 'mythologie':	
 	case 'auteldesdieux':
 	case 'temples':
 	case 'statues':
