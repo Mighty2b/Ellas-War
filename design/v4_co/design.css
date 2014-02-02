@@ -1320,3 +1320,9 @@ select {
   margin-top:12px;
   text-align:center;
 }
+
+/* Parrainage */
+.part_banniere {
+  height:62px;
+  width:375px;
+}
