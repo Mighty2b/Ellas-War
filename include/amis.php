@@ -30,7 +30,7 @@ if($taille > 0) {
 			             alt="'._('Joueur Connecté').'" />';
 		}
 		else {
-			$image='<img src="images/utils/mb_deconnecter.png
+			$image='<img src="images/utils/mb_deconnecter.png"
 			             alt="'._('Joueur Déconnecté').'" />';
 		}
 		
