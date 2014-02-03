@@ -231,8 +231,8 @@ if(sizeof($temples) > 0) {
 			echo ' <span class="ligne90">('.$points_dispo.' '._('disponible').')</span>';
 		}
 	}
-	
-	$nb_bonus = sizeof($paquet->get_infoj('bonus'));
+	print_r($bonus);
+	$nb_bonus = sizeof($paquet->get_infoj('bonus_connexion'));
 	
 	echo '</a></td><td>
 	<a href="'._('bonus').'"><b>'._('Bonus').' :</b>  ';
