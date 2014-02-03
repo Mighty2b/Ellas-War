@@ -106,232 +106,232 @@ $prod_or  = '';
 	foreach($liste_bat as $bat => $value) {
 	
 		if(!empty($value -> consodrachme) && ($value -> nb > 0)) {
-			$conso_dra.='- '.nbf($value -> nb*$value -> consodrachme/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+			$conso_dra.='- '.nbf($value -> nb*$value -> consodrachme/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consonourriture) && ($value -> nb > 0)) {
-$conso_nou.='- '.nbf($value -> nb*$value -> consonourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_nou.='- '.nbf($value -> nb*$value -> consonourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoeau) && ($value -> nb > 0)) {
-$conso_eau.='- '.nbf($value -> nb*$value -> consoeau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_eau.='- '.nbf($value -> nb*$value -> consoeau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consobois) && ($value -> nb > 0)) {
-$conso_bois .='- '.nbf($value -> nb*$value -> consobois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_bois .='- '.nbf($value -> nb*$value -> consobois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consofer) && ($value -> nb > 0)) {
-$conso_fer .='- '.nbf($value -> nb*$value -> consofer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_fer .='- '.nbf($value -> nb*$value -> consofer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoargent) && ($value -> nb > 0)) {
-$conso_arg .='- '.nbf($value -> nb*$value -> consoargent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_arg .='- '.nbf($value -> nb*$value -> consoargent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consopierre) && ($value -> nb > 0)) {
-$conso_pie .='- '.nbf($value -> nb*$value -> consopierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_pie .='- '.nbf($value -> nb*$value -> consopierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consomarbre) && ($value -> nb > 0)) {
-$conso_mar .='- '.nbf($value -> nb*$value -> consomarbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_mar .='- '.nbf($value -> nb*$value -> consomarbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoraisin) && ($value -> nb > 0)) {
-$conso_rai .='- '.nbf($value -> nb*$value -> consoraisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_rai .='- '.nbf($value -> nb*$value -> consoraisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consovin) && ($value -> nb > 0)) {
-$conso_vin .='- '.nbf($value -> nb*$value -> consovin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_vin .='- '.nbf($value -> nb*$value -> consovin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoor) && ($value -> nb > 0)) {
-$conso_or .='- '.nbf($value -> nb*$value -> consoor/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$conso_or .='- '.nbf($value -> nb*$value -> consoor/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> proddrachme) && ($value -> nb > 0)) {
-$prod_dra.=' '.plus_valeur(floor(($value -> nb*$value -> proddrachme*$prod_bonus->drachme)/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_dra.=' '.plus_valeur(floor(($value -> nb*$value -> proddrachme*$prod_bonus->drachme)/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodnourriture) && ($value -> nb > 0)) {
-$prod_nou.=' '.plus_valeur($value -> nb*$value -> prodnourriture*$prod_bonus->nourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_nou.=' '.plus_valeur($value -> nb*$value -> prodnourriture*$prod_bonus->nourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodeau) && ($value -> nb > 0)) {
-$prod_eau.=' '.plus_valeur($value -> nb*$value -> prodeau*$prod_bonus->eau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_eau.=' '.plus_valeur($value -> nb*$value -> prodeau*$prod_bonus->eau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodbois) && ($value -> nb > 0)) {
-$prod_bois .=' '.plus_valeur($value -> nb*$value -> prodbois*$prod_bonus->bois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$bat]['nom'].'</a><br/>';
+$prod_bois .=' '.plus_valeur($value -> nb*$value -> prodbois*$prod_bonus->bois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodfer) && ($value -> nb > 0)) {
-$prod_fer .=' '.plus_valeur($value -> nb*$value -> prodfer*$prod_bonus->fer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$bat]['nom'].'</a><br/>';
+$prod_fer .=' '.plus_valeur($value -> nb*$value -> prodfer*$prod_bonus->fer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodargent) && ($value -> nb > 0)) {
-$prod_arg .=' '.plus_valeur($value -> nb*$value -> prodargent*$prod_bonus->argent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_arg .=' '.plus_valeur($value -> nb*$value -> prodargent*$prod_bonus->argent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodpierre) && ($value -> nb*$prod_bonus->pierre > 0)) {
-$prod_pie .=' '.plus_valeur($value -> nb*$value -> prodpierre*$prod_bonus->pierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_pie .=' '.plus_valeur($value -> nb*$value -> prodpierre*$prod_bonus->pierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodmarbre) && ($value -> nb*$prod_bonus->marbre > 0)) {
-$prod_mar .=' '.plus_valeur($value -> nb*$value -> prodmarbre*$prod_bonus->marbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_mar .=' '.plus_valeur($value -> nb*$value -> prodmarbre*$prod_bonus->marbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodraisin) && ($value -> nb > 0)) {
-$prod_rai .=' '.plus_valeur($value -> nb*$value -> prodraisin*$prod_bonus->raisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_rai .=' '.plus_valeur($value -> nb*$value -> prodraisin*$prod_bonus->raisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodvin) && ($value -> nb > 0)) {
-$prod_vin .=' '.plus_valeur($value -> nb*$value -> prodvin*$prod_bonus->vin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_vin .=' '.plus_valeur($value -> nb*$value -> prodvin*$prod_bonus->vin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodor) && ($value -> nb > 0)) {
-$prod_or .=' '.plus_valeur($value -> nb*$value -> prodor*$prod_bonus->gold/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\'Construire-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
+$prod_or .=' '.plus_valeur($value -> nb*$value -> prodor*$prod_bonus->gold/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\''._('construire').'-'.$batiments[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$batiments[$value->nom2]['nom'].'</a><br/>';
 		}
 
 	}
 
 	foreach($liste_unites as $bat => $value) {
 		if(!empty($value -> consodrachme) && ($value -> nb > 0)) {
-$conso_dra.='- '.nbf($value -> nb*$value -> consodrachme/$temps, 2).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_dra.='- '.nbf($value -> nb*$value -> consodrachme/$temps, 2).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consonourriture) && ($value -> nb > 0)) {
-$conso_nou.='- '.nbf($value -> nb*$value -> consonourriture/$temps, 2).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_nou.='- '.nbf($value -> nb*$value -> consonourriture/$temps, 2).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoeau) && ($value -> nb > 0)) {
-$conso_eau.='- '.nbf($value -> nb*$value -> consoeau/$temps, 2).' '.img('images/ress/eau.jpg', 'eau').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_eau.='- '.nbf($value -> nb*$value -> consoeau/$temps, 2).' '.img('images/ress/eau.jpg', 'eau').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consobois) && ($value -> nb > 0)) {
-$conso_bois .='- '.nbf($value -> nb*$value -> consobois/$temps, 2).' '.img('images/ress/bois.jpg', 'bois').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_bois .='- '.nbf($value -> nb*$value -> consobois/$temps, 2).' '.img('images/ress/bois.jpg', 'bois').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consofer) && ($value -> nb > 0)) {
-$conso_fer .='- '.nbf($value -> nb*$value -> consofer/$temps, 2).' '.img('images/ress/fer.jpg', 'fer').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_fer .='- '.nbf($value -> nb*$value -> consofer/$temps, 2).' '.img('images/ress/fer.jpg', 'fer').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoargent) && ($value -> nb > 0)) {
-$conso_arg .='- '.nbf($value -> nb*$value -> consoargent/$temps, 2).' '.img('images/ress/argent.jpg', 'argent').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_arg .='- '.nbf($value -> nb*$value -> consoargent/$temps, 2).' '.img('images/ress/argent.jpg', 'argent').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consopierre) && ($value -> nb > 0)) {
-$conso_pie .='- '.nbf($value -> nb*$value -> consopierre/$temps, 2).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_pie .='- '.nbf($value -> nb*$value -> consopierre/$temps, 2).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consomarbre) && ($value -> nb > 0)) {
-$conso_mar .='- '.nbf($value -> nb*$value -> consomarbre/$temps, 2).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_mar .='- '.nbf($value -> nb*$value -> consomarbre/$temps, 2).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoraisin) && ($value -> nb > 0)) {
-$conso_rai .='- '.nbf($value -> nb*$value -> consoraisin/$temps, 2).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_rai .='- '.nbf($value -> nb*$value -> consoraisin/$temps, 2).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consovin) && ($value -> nb > 0)) {
-$conso_vin .='- '.nbf($value -> nb*$value -> consovin/$temps, 2).' '.img('images/ress/vin.jpg', 'vin').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_vin .='- '.nbf($value -> nb*$value -> consovin/$temps, 2).' '.img('images/ress/vin.jpg', 'vin').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> consoor) && ($value -> nb > 0)) {
-$conso_or .='- '.nbf($value -> nb*$value -> consoor/$temps, 2).' '.img('images/ress/or.jpg', 'or').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$conso_or .='- '.nbf($value -> nb*$value -> consoor/$temps, 2).' '.img('images/ress/or.jpg', 'or').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> proddrachme) && ($value -> nb > 0)) {
-$prod_dra.=' '.plus_valeur(floor($value -> nb*$value -> proddrachme/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_dra.=' '.plus_valeur(floor($value -> nb*$value -> proddrachme/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodnourriture) && ($value -> nb > 0)) {
-$prod_nou.=' '.plus_valeur($value -> nb*$value -> prodnourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_nou.=' '.plus_valeur($value -> nb*$value -> prodnourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodeau) && ($value -> nb > 0)) {
-$prod_eau.=' '.plus_valeur($value -> nb*$value -> prodeau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_eau.=' '.plus_valeur($value -> nb*$value -> prodeau/$temps).' '.img('images/ress/eau.jpg', 'eau').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodbois) && ($value -> nb > 0)) {
-$prod_bois .=' '.plus_valeur($value -> nb*$value -> prodbois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_bois .=' '.plus_valeur($value -> nb*$value -> prodbois/$temps).' '.img('images/ress/bois.jpg', 'bois').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodfer) && ($value -> nb > 0)) {
-$prod_fer .=' '.plus_valeur($value -> nb*$value -> prodfer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_fer .=' '.plus_valeur($value -> nb*$value -> prodfer/$temps).' '.img('images/ress/fer.jpg', 'fer').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodargent) && ($value -> nb > 0)) {
-$prod_arg .=' '.plus_valeur($value -> nb*$value -> prodargent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_arg .=' '.plus_valeur($value -> nb*$value -> prodargent/$temps).' '.img('images/ress/argent.jpg', 'argent').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodpierre) && ($value -> nb > 0)) {
-$prod_pie .=' '.plus_valeur($value -> nb*$value -> prodpierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_pie .=' '.plus_valeur($value -> nb*$value -> prodpierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodmarbre) && ($value -> nb > 0)) {
-$prod_mar .=' '.plus_valeur($value -> nb*$value -> prodmarbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_mar .=' '.plus_valeur($value -> nb*$value -> prodmarbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodraisin) && ($value -> nb > 0)) {
-$prod_rai .=' '.plus_valeur($value -> nb*$value -> prodraisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_rai .=' '.plus_valeur($value -> nb*$value -> prodraisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodvin) && ($value -> nb > 0)) {
-$prod_vin .=' '.plus_valeur($value -> nb*$value -> prodvin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_vin .=' '.plus_valeur($value -> nb*$value -> prodvin/$temps).' '.img('images/ress/vin.jpg', 'vin').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 		if(!empty($value -> prodor) && ($value -> nb > 0)) {
-$prod_or .=' '.plus_valeur($value -> nb*$value -> prodor/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\'Engager-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
+$prod_or .=' '.plus_valeur($value -> nb*$value -> prodor/$temps).' '.img('images/ress/or.jpg', 'or').' <a href=\''._('engager').'-'.$unites[$value -> nom2]['aff'].'-'.$bat.'\' class="non_souligne">'.$unites[$bat]['nom'].'</a><br/>';
 		}
 		
 	}
 
 		if(!empty($cotisation->drachme)) {
-			$conso_dra.='- '.nbf($cotisation->drachme/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation<br/>';
+			$conso_dra.='- '.nbf($cotisation->drachme/$temps).' '.img('images/ress/drachme.jpg', 'drachme').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->nourriture)) {
-			$conso_nou.='- '.nbf($cotisation->nourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' Cotisation<br/>';
+			$conso_nou.='- '.nbf($cotisation->nourriture/$temps).' '.img('images/ress/nourriture.jpg', 'nourriture').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->eau)) {
-			$conso_eau.='- '.nbf($cotisation->eau/$temps).' '.img('images/ress/eau.jpg', 'eau').' Cotisation<br/>';
+			$conso_eau.='- '.nbf($cotisation->eau/$temps).' '.img('images/ress/eau.jpg', 'eau').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->bois)) {
-			$conso_bois.='- '.nbf($cotisation->bois/$temps).' '.img('images/ress/bois.jpg', 'bois').' Cotisation<br/>';
+			$conso_bois.='- '.nbf($cotisation->bois/$temps).' '.img('images/ress/bois.jpg', 'bois').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->fer)) {
-			$conso_fer.='- '.nbf($cotisation->fer/$temps).' '.img('images/ress/fer.jpg', 'fer').' Cotisation<br/>';
+			$conso_fer.='- '.nbf($cotisation->fer/$temps).' '.img('images/ress/fer.jpg', 'fer').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->argent)) {
-			$conso_arg.='- '.nbf($cotisation->argent/$temps).' '.img('images/ress/argent.jpg', 'argent').' Cotisation<br/>';
+			$conso_arg.='- '.nbf($cotisation->argent/$temps).' '.img('images/ress/argent.jpg', 'argent').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->pierre)) {
-			$conso_pie.='- '.nbf($cotisation->pierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' Cotisation<br/>';
+			$conso_pie.='- '.nbf($cotisation->pierre/$temps).' '.img('images/ress/pierre.jpg', 'pierre').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->marbre)) {
-			$conso_mar.='- '.nbf($cotisation->marbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' Cotisation<br/>';
+			$conso_mar.='- '.nbf($cotisation->marbre/$temps).' '.img('images/ress/marbre.jpg', 'marbre').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->raisin)) {
-			$conso_rai.='- '.nbf($cotisation->raisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' Cotisation<br/>';
+			$conso_rai.='- '.nbf($cotisation->raisin/$temps).' '.img('images/ress/raisin.jpg', 'raisin').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->vin)) {
-			$conso_vin.='- '.nbf($cotisation->vin/$temps).' '.img('images/ress/vin.jpg', 'vin').' Cotisation<br/>';
+			$conso_vin.='- '.nbf($cotisation->vin/$temps).' '.img('images/ress/vin.jpg', 'vin').' '._('Cotisation').'<br/>';
 		}
 		
 		if(!empty($cotisation->gold)) {
-			$conso_or.='- '.nbf($cotisation->gold/$temps).' '.img('images/ress/or.jpg', 'or').' Cotisation<br/>';
+			$conso_or.='- '.nbf($cotisation->gold/$temps).' '.img('images/ress/or.jpg', 'or').' '._('Cotisation').'<br/>';
 		}
 
 		if($cotise_volontaire > 0) {
-			$conso_dra.='-  '.nbf(floor(($paquet->get_cotise_volontaire()*$prod_bonus->drachme * (($liste_bat->atelierf-> nb * $liste_bat->atelierf->proddrachme))/100)/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' Cotisation volontaire<br/>';
+			$conso_dra.='-  '.nbf(floor(($paquet->get_cotise_volontaire()*$prod_bonus->drachme * (($liste_bat->atelierf-> nb * $liste_bat->atelierf->proddrachme))/100)/$temps)).' '.img('images/ress/drachme.jpg', 'drachme').' '._('Cotisation volontaire').'<br/>';
 		}
 
 echo '<center>
