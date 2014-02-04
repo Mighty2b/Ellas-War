@@ -362,7 +362,7 @@ td.none {
 /* Header */
 
 #header {
-  width:1340px;
+  width:100%;
   background-color:#E4DCC2;/*#21160A;*/
   text-align:center;
   padding: 0px 0px 3px 0px;
