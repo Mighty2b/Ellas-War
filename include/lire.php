@@ -31,7 +31,7 @@ echo '
 		                                         value="'._('Répondre').'"
 		                                         id="repondre"
 		                                         onclick="repondre()"/></div></td>
-		<td style="min-width:70%">'.$message->titre.'</td>
+		<td style="min-width:75%">'.$message->titre.'</td>
 	</tr></thead>
 	<tfoot></tfoot>
 	<tbody><form method="post" action="#">
