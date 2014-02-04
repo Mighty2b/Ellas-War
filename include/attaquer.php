@@ -118,8 +118,7 @@ echo '<div class="ligne centrer cadre">
        name="recherche" 
        class="form_retirer cadre" 
        style="margin-top:3px;margin-left:48px;margin-right:5px;" 
-       required="required" /> <div class="bouton_classique cadre"><input class="bouton_classique2" 
-                                                                         type="submit" 
+       required="required" /> <div class="bouton_classique cadre"><input type="submit" 
                                                                          value="'._('Rechercher').'" 
                                                                          name="rechercher" /></div>
 </form>
@@ -156,43 +155,43 @@ if(empty($liste) or sizeof($liste) == 0) {
 }
 else {
 	$i=0;
-	echo '<br/><table class=\'tableau centrer_tableau\'>
+	echo '<br/><table>
 	<thead><tr>
-		<th>&nbsp;'.$writepseudo.'&nbsp;</th>
-		<th>&nbsp;'.$writeniveau.'&nbsp;</th> 
-		<th>&nbsp;'.$writevictoire.'&nbsp;</th> 
-		<th>&nbsp;'.$writedefaite.'&nbsp;</th> 
-		<th>&nbsp;'.$writexp.'&nbsp;</th> 
-		<th>&nbsp;'.$writeterrain.'&nbsp;</th> 
-		<th>&nbsp;Alliance&nbsp;</th>
-		<th>&nbsp;&nbsp;</th></tr></thead>
+		<td>&nbsp;'.$writepseudo.'&nbsp;</td>
+		<td>&nbsp;'.$writeniveau.'&nbsp;</td> 
+		<td>&nbsp;'.$writevictoire.'&nbsp;</td> 
+		<td>&nbsp;'.$writedefaite.'&nbsp;</td> 
+		<td>&nbsp;'.$writexp.'&nbsp;</td> 
+		<td>&nbsp;'.$writeterrain.'&nbsp;</td> 
+		<td>&nbsp;'._('Alliance').'&nbsp;</td>
+		<td>&nbsp;&nbsp;</td></tr></thead>
 	<tfoot></tfoot>
 	<tbody>';
 		
 	foreach($liste as $donneees) {
 		if($donneees->co) {
-			$image='<img src="images/joueurs/mb_connecter.png"
-			             alt="Joueur Connecté" 
-			             title="Joueur Connecté"/>';
+			$image='<img src="images/utils/mb_connecter.png"
+			             alt="'._('Joueur Connecté').'" 
+			             title="'._('Joueur Connecté').'"/>';
 		}
 		else {
-			$image='<img src="images/joueurs/mb_deconnecter.png" 
-			             alt="Joueur Déconnecté" 
-			             title="Joueur Déconnecté" />';
+			$image='<img src="images/utils/mb_deconnecter.png" 
+			             alt="'._('Joueur Déconnecté').'" 
+			             title="'._('Joueur Déconnecté').'" />';
 		}
 
 		echo '<tr>';
 		if($donneees->statu == 4) {
-			echo '<td align=\'left\'>&nbsp;'.$image.' <a href=\'profilsjoueur-'.$donneees->id.'\'><font color=\'brown\'>'.ucfirst($donneees->login).'</font></a>&nbsp;</td>
+			echo '<td align=\'left\'>&nbsp;'.$image.' <a href="'._('profilsjoueur').'-'.$donneees->id.'"><font color=\'brown\'>'.ucfirst($donneees->login).'</font></a>&nbsp;</td>
 								<td class="centrer">&nbsp;'.($donneees->lvl).'&nbsp;</td>
 								<td class="centrer">&nbsp;'.nbf($donneees->victoires).'&nbsp;</td>
 								<td class="centrer">&nbsp;'.$donneees->defaites.'&nbsp;</td>
 								<td class="centrer">&nbsp;'.nbf($donneees->points).'&nbsp;</td>
-								<td  class="centrer">&nbsp;'.nbf($donneees->terrain).'&nbsp;</td>
+								<td class="centrer">&nbsp;'.nbf($donneees->terrain).'&nbsp;</td>
 								<td align=\'left\'>&nbsp;';
 		}
 		else {
-			echo '<td align=\'left\'>&nbsp;'.$image.' <a href=\'profilsjoueur-'.$donneees->id.'\'>'.ucfirst($donneees->login).'</a>&nbsp;</td>
+			echo '<td align=\'left\'>&nbsp;'.$image.' <a href="'._('profilsjoueur').'-'.$donneees->id.'">'.ucfirst($donneees->login).'</a>&nbsp;</td>
 								<td class="centrer">&nbsp;'.($donneees->lvl).'&nbsp;</td>
 								<td class="centrer">&nbsp;'.nbf($donneees->victoires).'&nbsp;</td>
 								<td class="centrer">&nbsp;'.$donneees->defaites.'&nbsp;</td>
@@ -202,7 +201,7 @@ else {
 		}
 
 		if(empty($donneees->nom)) {
-			echo '<a href="'._('attaquer').'-1-niveau-1'.constr_get('recherche', $recherche).'\'>Aucune</a>';
+			echo '<a href="'._('attaquer').'-1-niveau-1'.constr_get('recherche', $recherche).'">'._('Aucune').'</a>';
 		}
 		else {
 			echo ' <a href="'._('attaquer').'-1-niveau-'.$donneees->alliance.constr_get('recherche', $recherche).'">'.stripslashes($donneees->nom).'</a> ';
@@ -211,14 +210,34 @@ else {
 
 		if(empty($donneees->times) or ($donneees->times < time())) {
 			if(in_array('apollon', $temples)) {
-				echo ' <img height=\'25px\' src=\'images/attaques/eyes.gif\' alt="Espionner" title="Espionner" class="supr_messagerie" onclick="javascript:observer('.$donneees->id.');"/> ';
+				echo ' <img height=\'25px\'
+				            src=\'images/attaques/eyes.gif\'
+				            alt="'._('Espionner').'" 
+				            title="'._('Espionner').'" 
+				            class="cursor" 
+				            onclick="javascript:observer('.$donneees->id.');"/> ';
 			}
 			elseif(in_array('hades', $temples)) {
-				echo ' <img height=\'25px\' src=\'images/attaques/hades.gif\' alt="Visiter" title="Visiter" class="supr_messagerie" onclick="javascript:visiter('.$donneees->id.');"/> ';
+				echo ' <img height=\'25px\'
+				            src=\'images/attaques/hades.gif\'
+				            alt="'._('Visiter').'" 
+				            title="'._('Visiter').'" 
+				            class="cursor" 
+				            onclick="javascript:visiter('.$donneees->id.');"/> ';
 			}
-			echo ' <img src=\'images/attaques/xeyes.png\' alt="Espionner" title="Espionner" class="supr_messagerie" onclick="javascript:espionner('.$donneees->id.');"/> ';
+			echo ' <img src=\'images/attaques/xeyes.png\' 
+			            alt="'._('Espionner').'" 
+			            title="'._('Espionner').'" 
+			            class="cursor" 
+			            onclick="javascript:espionner('.$donneees->id.');"/> ';
 			if(!empty($donneees->furie)) {
-				echo ' <img src=\'images/attaques/vignette102.gif\' alt=\'Déclencher\' title=\'Déclencher\' height=\'32px\' class="supr_messagerie" onclick="if(window.confirm(\'Envoyer la furie de Demeter ?\')) { furie('.$donneees->id.'); } else { return false; }" id="bouton_furie_'.$donneees->id.'" /> ';
+				echo ' <img src=\'images/attaques/vignette102.gif\'
+				            alt=\'Déclencher\'
+				            title=\'Déclencher\'
+				            height=\'32px\'
+				            class="cursor" 
+				            onclick="if(window.confirm(\''._('Envoyer la furie de Demeter ?').'\')) { furie('.$donneees->id.'); } else { return false; }" 
+				            id="bouton_furie_'.$donneees->id.'" /> ';
 			}
 		}
 
@@ -233,7 +252,13 @@ else {
 		}
 
 		if($donneees->possible) {
-			echo ' <img height=\'25px\' src=\'images/attaques/epee_s.gif\' alt="Attaquer" title="Attaquer" class="supr_messagerie" onclick="javascript:preparer('.$donneees->id.');" id="bouton_attaquer_'.$donneees->id.'" /> ';
+			echo ' <img height=\'25px\'
+			            src=\'images/attaques/epee_s.gif\'
+			            alt="'._('Attaquer').'" 
+			            title="'._('Attaquer').'" 
+			            class="cursor" 
+			            onclick="javascript:preparer('.$donneees->id.');"
+			            id="bouton_attaquer_'.$donneees->id.'" /> ';
 		}
 		echo '</td></tr>';
 	}
