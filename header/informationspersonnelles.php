@@ -38,13 +38,7 @@ if(!empty($_POST)) {
 			alerte(_('Le fichier téléchargé n\'est pas du type autorisé'));
 		}
 		else {
-			@unlink('avatarjoueur/'.$paquet->getid().'.jpg');
-			@unlink('avatarjoueur/'.$paquet->getid().'.png');
-	
-			if($_FILES['fichier']['type'] == "image/pjpeg")
-				move_uploaded_file($_FILES['fichier']['tmp_name'],'avatarjoueur/'.$paquet->getid().'.jpg');
-			else
-				move_uploaded_file($_FILES['fichier']['tmp_name'],'avatarjoueur/'.$paquet->getid().'.png');
+			$maj_avatar = 1;
 		}
 	}
 	

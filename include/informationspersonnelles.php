@@ -1,5 +1,17 @@
 <?php
 
+if(!empty($maj_avatar)) {
+	@unlink('avatarjoueur/'.$paquet->get_infoj('id').'.jpg');
+	@unlink('avatarjoueur/'.$paquet->get_infoj('id').'.png');
+
+	if($_FILES['fichier']['type'] == "image/pjpeg") {
+		move_uploaded_file($_FILES['fichier']['tmp_name'],'avatarjoueur/'.$paquet->get_infoj('id').'.jpg');
+	}
+	else {
+		move_uploaded_file($_FILES['fichier']['tmp_name'],'avatarjoueur/'.$paquet->get_infoj('id').'.png');
+	}
+}
+
 $dir     = 'images/drapeau';
 $dossier = opendir($dir);
 $r       = $paquet->get_answer('get_profil')->{1};
