@@ -57,9 +57,9 @@ class Ewpaquet {
 			
 			$temps = time()+TEMPS_CO*86400;
 			
-			if((empty($_COOKIE['token']) or 
-			   $_COOKIE['token'] != $this->joueur->token) && 
-				!empty($this->joueur->token)) {
+			if(!empty($this->joueur->token) && 
+			   (empty($_COOKIE['token']) or 
+			   $_COOKIE['token'] != $this->joueur->token)) {
 			
 				if($_COOKIE['temps'] > $temps) {
 					$temps = $_COOKIE['temps'];
