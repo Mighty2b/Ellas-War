@@ -12,6 +12,6 @@ $paquet -> add_action('get_breves', array(5));
 $paquet -> add_action('arbredesdieux');
 $paquet -> add_action('get_hf');
 $paquet -> add_action('get_mes_filleuls_actifs');
-$paquet -> add_action('list_archives');
+$paquet -> add_action('list_archives', array(0,0,0,10));
 
 ?>
