@@ -114,6 +114,10 @@ table.none tbody td:nth-child(5) {
 	font-weight:normal;
 }
 
+table.none tbody td.gras:nth-child(1) {
+  font-weight:bold;
+}
+
 table.none td {
 	border:0px;
 	box-shadow:0 0px 0 #000;
@@ -209,21 +213,19 @@ td.none {
 #cadre_milieu_petit {
   width:600px;
   position:absolute;
-  background-image:url(../images/menu/milieu_cadre_petit.png);
-  background-repeat:repeat-y;
   margin-left:145px;
   margin-top:40px;
   display:none;
   z-index:1000;
+  background-color: #E4DCC2;
+  border: 2px solid #B8860B;
+  box-shadow: 2px 3px 5px 2px #656565 inset, 0 -3px 5px 0 #656565 inset;
 }
 
 #cadre_haut_petit {
   width:100%;
-  height:97px;
   position:relative;
   float:left;
-  background-image:url(../images/menu/haut_cadre_petit.png);
-  background-repeat:no-repeat;
   text-align:right;
 }
 
@@ -232,8 +234,6 @@ td.none {
   height:14px;
   position:relative;
   float:left;
-  background-image:url(../images/menu/bas_cadre_petit.png);
-  background-repeat:no-repeat;
 }
 
 #cadre_centre_petit {

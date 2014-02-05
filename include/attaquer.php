@@ -64,6 +64,20 @@ if($num < 1) {
 	$num = 1;
 }
 
+echo '
+<div id="cadre_milieu_petit">
+	<div id="cadre_haut_petit"><img src="images/attaques/cross.png"
+	                                alt="'._('Fermer').'" 
+	                                title="'._('Fermer').'" 
+	                                class="cursor" 
+	                                style="margin-top:10px;margin-right:10px;" 
+	                                onclick="javascript:fermer_cadre();"/></div>
+	<div id="cadre_centre_petit">
+	
+	</div>
+	<div id="cadre_bas_petit"></div>
+</div>';
+
 if($nombreDePages > 1) {
 	if($numl > $nombreDePages) {
 		$numl = $nombreDePages;
@@ -290,5 +304,97 @@ if($nombreDePages > 1) {
 	}
 	echo '</div>';
 }
+
+echo '<script type="text/javascript">
+function observer(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/observer.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function espionner(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/form_espionner.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function visiter(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/visiter.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function furie(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/furie.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function foudre(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/foudre.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function preparer(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/form_preparer.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function attaquer(id) {
+   $("#bouton_attaquer").hide();
+   $("#encours").html(\''._('<b>Attaque en cours</b>').'\');
+   $.ajax({
+     type: "GET",
+     url: "form/form_attaquer.php",
+     data: "ciblej="+id,
+     success: function(msg){
+       $("#cadre_centre_petit").html(msg);
+       $("#cadre_milieu_petit").show("slow");
+     }
+   });
+}
+
+function fermer_cadre() {
+  $("#cadre_milieu_petit").hide("slow");
+}
+</script>';
 
 ?>
