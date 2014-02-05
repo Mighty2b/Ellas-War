@@ -290,8 +290,8 @@ if($paquet->get_infoj('lvl') == 0) {
 	case 14:
 		echo '<div class="ligne gauche">'._(
 		     'Vous pourrez gagner des drachmes tous les jours en jouant au '.
-		     '<b>carré magique</b>. Il se situe dans les jeux dans la rubrique '.
-		     'Extra.<br/>Allez cliquer pour aider le jeu. Profitez de cette '.
+		     '<b>carré magique</b>. Il se situe dans les jeux.'.
+		     '<br/>Allez cliquer pour aider le jeu. Profitez de cette '.
 		     'visite pour gratter quelques tickets, vous aurez peut-être '.
 		     'de la chance.');
 
@@ -415,7 +415,7 @@ elseif($paquet->get_infoj('lvl') == 1) {
 		     'Votre profil vous permet de vous faire connaître auprès des '.
 		     'autres joueurs. Ils pourront par la suite y laisser des dédicaces.').
 		     '<br/>'._(
-		     'Allez dans Extra et complétez votre profil pour passer à l\'étape suivante.');
+		     'Allez dans Compte et complétez votre profil pour passer à l\'étape suivante.');
 
 		if($paquet->get_infoj('check_etape') == true) {
 			echo '<br/><br/></div>
