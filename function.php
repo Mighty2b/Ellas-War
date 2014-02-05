@@ -481,9 +481,9 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 191: $erreur = "Vous ne pouvez pas racheter une licence si votre licence termine dans plus d'une semaine.";
 		break;
-	case 192: $erreur = "Vous venez de déposer ".nbf($var)." ".$_SESSION['ressource']['drachme']-> getImg();
+	case 192: $erreur = "Vous venez de déposer ".nbf($var)." ".imress('drachme');
 		break;
-	case 193: $erreur = "Vous venez de retirer ".nbf($var)." ".$_SESSION['ressource']['drachme']-> getImg();
+	case 193: $erreur = "Vous venez de retirer ".nbf($var)." ".imress('drachme');
 		break;
 	case 194: $erreur = "Vous ne possédez pas d'armurerie.";
 		break;
