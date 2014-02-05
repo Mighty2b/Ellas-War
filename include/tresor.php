@@ -124,7 +124,7 @@ $histo = $paquet->get_answer('get_tresor')->{3};
 if(sizeof($histo) > 0) {
 	echo '<div class="ligne cadre centrer"><br/><br/>
 	<b>'._('Dernières actions').'</b>
-	<table class="centrer_tableau">';
+	<table class="none">';
 	foreach($histo as $do) {
 	echo '<tr><td class="gauche">';
 		if($do->action == 'retrait') {
