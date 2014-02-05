@@ -1,7 +1,5 @@
 <?php
 
-$paquet -> add_action('get_tresor');
-
 if(!empty($_POST['montant'])) {
 	if($_POST['mode'] == "deposer") {
 		$paquet -> add_action('deposer', array($_POST['montant']));
@@ -13,6 +11,8 @@ if(!empty($_POST['montant'])) {
 		$paquet -> add_action('retirer', array($_POST['montant'], $_POST['calcul']));
 	}
 }
+
+$paquet -> add_action('get_tresor');
 
 echo '
 <title>'._('Trésor').'</title>
