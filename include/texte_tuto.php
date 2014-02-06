@@ -327,6 +327,14 @@ if($paquet->get_infoj('lvl') == 0) {
 		echo _('Je n\'ai actuellement aucune mission à vous proposer.');
 	break;
 	}
+	
+	if(!empty($_GET['page'])) {
+		echo '<script type="text/javascript">
+	$(function() {
+		$("#etape").show();
+	});
+	</script>';
+	}
 }
 elseif($paquet->get_infoj('lvl') == 1) {
 	switch($etape) {
@@ -519,6 +527,14 @@ elseif($paquet->get_infoj('lvl') == 1) {
 	default:
 		echo _('Je n\'ai actuellement aucune mission à vous proposer.');
 	break;
+	}
+	
+	if(!empty($_GET['page'])) {
+		echo '<script type="text/javascript">
+	$(function() {
+		$("#etape").show();
+	});
+	</script>';
 	}
 }
 

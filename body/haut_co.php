@@ -76,7 +76,7 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 </section>
 <section id="header_ban">';
 
-echo '<div id="etape">';
+echo '<div id="etape" style="display:none">';
 	include('include/texte_tuto.php');
 echo '</div>';
 
