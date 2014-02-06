@@ -7,11 +7,11 @@ if(sizeof($liste) > 0) {
 	<br/><table class="none">';
 	foreach($liste as $do)	{
 		if(!empty($do->timestamp)) {
-			$image='<img src="images/joueurs/mb_connecter.png" 
+			$image='<img src="images/utils/mb_connecter.png" 
 			             alt="'._('Joueur Connecté').'" />';
 		}
 		else {
-			$image='<img src="images/joueurs/mb_deconnecter.png" 
+			$image='<img src="images/utils/mb_deconnecter.png" 
 			             alt="'._('Joueur Déconnecté').'" />';
 		}
 		

@@ -148,7 +148,7 @@ echo '</div>
 					   (($dedi->idj2 == $paquet->get_infoj('id')) or 
 					    ($j->id == $paquet->get_infoj('id')))) {
 			echo '<a href="'._('profilsjoueur').'-'.$j->id.'-'._('supprdedi').'-'.$dedi->id.'" 
-			         class="lien"><img src="images/joueurs/supprimer_mp.png"
+			         class="lien"><img src="images/utils/supprimer_mp.png"
 			         alt="supprimer" title="'._('Supprimer').'"></a>';
 					}
 				echo'<br/>'.stripslashes($dedi->mess).'<br/><br/></div>';

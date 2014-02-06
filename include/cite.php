@@ -338,10 +338,10 @@ if(sizeof($temples) > 0) {
 if(sizeof($liste) > 0) {
 	foreach($liste as $do)	{
 		if(!empty($do->timestamp)) {
-			$image='<img src="images/joueurs/mb_connecter.png" alt="'._('Joueur Connecté').'" />';
+			$image='<img src="images/utils/mb_connecter.png" alt="'._('Joueur Connecté').'" />';
 		}
 		else {
-			$image='<img src="images/joueurs/mb_deconnecter.png" alt="'._('Joueur Déconnecté').'" />';
+			$image='<img src="images/utils/mb_deconnecter.png" alt="'._('Joueur Déconnecté').'" />';
 		}
 		
 		echo $image.' &nbsp;  <a href=\''._('profilsjoueur').'-'.$do->id.'\'>'.$do->login.'</a><br/>';
