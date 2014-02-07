@@ -392,11 +392,21 @@ echo '<SCRIPT LANGUAGE="JavaScript">
 	<td valign="middle"><div class="bouton_classique"><input type="submit" value="'._('Engager').'" name="achat" style="width:80px;"/></div></td></tr>';
 	}
 	
-	echo '<tr>
-	<td valign="middle"><input type="text" id="'.$bat.'_vente" name="ventee" placeholder="0" size="10" class="form_retirer droite" /></td>
-	<td valign="middle">&nbsp;<a href="javascript:engager_nb(\''.$bat.'_vente\', '.$value->nb.');" class="lien_faq">/ '.nbf($value->nb).'</a>&nbsp;</td>
-	<td valign="middle"><div class="bouton_classique"><input type="submit" value="'._('Libérer').'" name="vente" style="width:80px;"/></div></td></tr>
-	</table>';
+	if($bat != 'spartiate' or $paquet->get_infoj('lvl') > 0) {
+		echo '<tr>
+		<td valign="middle"><input type="text" id="'.$bat.'_vente" 
+		                           name="ventee" 
+		                           placeholder="0" 
+		                           size="10" 
+		                           class="form_retirer droite" /></td>
+		<td valign="middle">&nbsp;<a href="javascript:engager_nb(\''.$bat.'_vente\', '.$value->nb.');" 
+		                             class="lien_faq">/ '.nbf($value->nb).'</a>&nbsp;</td>
+		<td valign="middle"><div class="bouton_classique"><input type="submit" 
+		                                                         value="'._('Libérer').'" 
+		                                                         name="vente" 
+		                                                         style="width:80px;"/></div></td></tr>
+		</table>';
+	}
 	
 	if($bat == 'carriere') {
 	echo '
