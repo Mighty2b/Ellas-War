@@ -135,7 +135,7 @@ foreach($liste_lots as $do) {
 	  $do->tauxvente = round($do->tauxvente,6);
 	}
 	
-	if($do->vend == $paquet->getid()) {
+	if($do->vend == $paquet->get_infoj('id')) {
 	echo '
 	<tr class=\'text_commerce\'>
 	<td>&nbsp;'.nbf(round($do->nbvente,2)).'&nbsp;</td>
