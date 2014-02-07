@@ -10,10 +10,19 @@ $paquet = new EwPaquet();
 $paquet -> add_action('refresh_chat', array($_GET['clean']));
 $paquet -> send_actions();
 
-$rep = $paquet->get_answer('refresh_chat')->{1};
+$rep   = $paquet->get_answer('refresh_chat')->{1};
+$moi   = 0;
+$autre = 0;
 
 if(!empty($rep)) {
-	foreach($rep as $texte) {/*
+	foreach($rep as $texte) {
+		if($texte->joueur == $paquet->get_infoj('id')) {
+			$moi++;
+		}
+		else {
+			$autre++;
+		}
+		/*
 		if(empty($texte->date)) {
 			echo '<img src="/images/joueurs/signaler.png" 
 		    	       alt="signaler" 
@@ -33,6 +42,12 @@ if(!empty($rep)) {
 		
 		echo '<br/>';
 	}
+	
+	if(empty($_GET['clean']) && $autre > 0) {
+		echo '<script type="text/javascript">
+		$("#cadre_chat_titre2").css("color", "red");
+		</script>';
+	}	
 }
 
 ?>

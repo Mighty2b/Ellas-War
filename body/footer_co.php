@@ -58,6 +58,7 @@ $("#cadre_chat_titre2").click(function() {
 			$("#cadre_chat_interieur").show(\'slow\');
 			$("#cadre_chat").css(\'height\', \'auto\');
 			$("#cadre_chat").css(\'width\', \'auto\');
+			document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
      }
    });
 });
@@ -66,6 +67,7 @@ $("#cadre_chat_iconefermer").click(function() {
 	$("#cadre_chat").css(\'height\', \'auto\');
 	$("#cadre_chat").css(\'width\', \'auto\');
 	$("#cadre_chat_interieur").hide(\'slow\');
+	$("#cadre_chat_titre2").css("color", "black");
 	$("#cadre_chat_titre").show();
 });
 
