@@ -100,7 +100,9 @@ tbody td:nth-child(1) {
 }
 
 td:nth-child(2), td:nth-child(3),
-td:nth-child(4), td:nth-child(5) {
+td:nth-child(4), td:nth-child(5),
+td:nth-child(6), td:nth-child(7),
+td:nth-child(8) {
     background: none repeat scroll 0 0 rgba(210, 182, 150, 0.15);
     border-right: 1px solid #FFFFFF;
 }
@@ -109,7 +111,10 @@ table.none tbody td:nth-child(1),
 table.none tbody td:nth-child(2), 
 table.none tbody td:nth-child(3),
 table.none tbody td:nth-child(4), 
-table.none tbody td:nth-child(5) {
+table.none tbody td:nth-child(5), 
+table.none tbody td:nth-child(6), 
+table.none tbody td:nth-child(7), 
+table.none tbody td:nth-child(8) {
 	background-color:transparent;
 	font-weight:normal;
 }
@@ -1432,4 +1437,62 @@ select {
   background-color:white;
   overflow-wrap: break-word;
   border: 1px groove black;
+}
+
+/* Classement */
+#cadre_classement {
+  position:relative;
+  float:left;
+}
+
+#class_gauche {
+  position:relative;
+  float:left;
+  width:48px;
+  height:100px;
+  margin-right:5px;
+  margin-top:229px;
+}
+
+#class_centre {
+  position:relative;
+  float:left;
+}
+
+#class_centre table {
+  width:767px;
+}
+
+#class_droite {
+  position:relative;
+  float:left;
+  width:48px;
+  height:100px;
+  margin-left:5px;
+  margin-top:230px;
+}
+
+.form_rech3 {
+  position:relative;
+  float:left;
+  margin-top:1px;
+}
+
+.form_rech4 {
+  position:relative;
+  float:left;
+  margin-left:10px;
+}
+
+.form_rech5 {
+  position:relative;
+  float:left;
+  margin-top:10px;
+  margin-left:40px;
+  text-align:center;
+  width:120px;
+}
+
+#rech_classement {
+  margin-left:53px;
 }
