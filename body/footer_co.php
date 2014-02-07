@@ -55,9 +55,9 @@ $("#cadre_chat_titre2").click(function() {
      success: function(msg){
 			$("#cadre_chat_titre").hide();
 			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
+			$("#cadre_chat_interieur").show(\'slow\');
 			$("#cadre_chat").css(\'height\', \'auto\');
 			$("#cadre_chat").css(\'width\', \'auto\');
-			$("#cadre_chat_interieur").show(\'slow\');
      }
    });
 });
