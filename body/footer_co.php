@@ -46,7 +46,7 @@ $("#texte_chat").keyup(function(e) {
 });
 
 setInterval(\'joueurs_chat()\',3000);
-setInterval(\'refresh_chat(0)\',1000);
+setInterval(\'refresh_chat(0)\',500);
 
 $("#cadre_chat_titre2").click(function() {
    $.ajax({
