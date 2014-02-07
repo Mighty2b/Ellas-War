@@ -21,6 +21,13 @@ echo '<div id="cadre_chat">
 				                                     onclick="envoyer_chat()" /></div>
 		</div>
 		<div id="cadre_chat_interieur_droite">
+				<div id="cadre_chat_fermer">
+				<img src="images/utils/supprimer_mp.png"
+				     alt="Fermer"
+				     class="cursor"
+				     id="cadre_chat_iconefermer">	 
+				</div>
+				<div class="clear"></div>
 				<div id="joueurs_chat"></div>
 		</div>
 	</div>
@@ -53,6 +60,13 @@ $("#cadre_chat_titre2").click(function() {
 			$("#cadre_chat_interieur").show(\'slow\');
      }
    });
+});
+
+$("#cadre_chat_iconefermer").click(function() {
+	$("#cadre_chat").css(\'height\', \'auto\');
+	$("#cadre_chat").css(\'width\', \'auto\');
+	$("#cadre_chat_interieur").hide(\'slow\');
+	$("#cadre_chat_titre").show();
 });
 
 $("#cadre_chat_iconedeco").click(function() {
