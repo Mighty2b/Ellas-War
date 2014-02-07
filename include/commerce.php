@@ -78,7 +78,7 @@ else {
 
 echo '<br/>';
 
-$paquet->error('get_commercem');
+$paquet->error('acheter_lotm');
 
 $tp=time()-$temps_lots;
 
@@ -105,13 +105,14 @@ if($nb_lot_ress > 1)
 
 echo '<br/><br/>
     <table>
+    <thead>
     <tr class="titre_tab">
       <td align="center">&nbsp;'.$titre_qtt.'&nbsp;</td>
       <td>&nbsp;'.$titre_taux.'&nbsp;</td>
       <td>&nbsp;'.$titre_prix.'&nbsp;</td>
       <td>&nbsp;'.$titre_vendeur.'&nbsp;</td>
       <td></td>
-    </tr>';
+    </tr> </thead><tfoot></tfoot><tbody>';
 
 foreach($liste_lots as $do) {
 	if(!empty($do->alliance) && empty($do->anonyme)) {
@@ -173,7 +174,7 @@ foreach($liste_lots as $do) {
 	}
 }
 
-echo '</table><br/></center>';
+echo '</tbody></table><br/></center>';
 	}
 	
   $paquet -> is_active_bonus_commerce();
