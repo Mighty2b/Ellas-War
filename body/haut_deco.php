@@ -11,6 +11,7 @@ echo '<section id="banniere"></section>
 	<a id="accueil"
 	   href="/"><div class="ssmenu">'._('Accueil').'</div>'._('Accueil').'</a>
 	<a id="forum"
+	   target="_blank"
 	   href="'.FORUM_URL.'"><div class="ssmenu">'._('Forum').'</div>'._('Forum').'</a>
 	<a id="partenaires"
 	   href="'._('partenaires').'"><div class="ssmenu">'._('Partenariats').'</div>'._('Partenaires').'</a>

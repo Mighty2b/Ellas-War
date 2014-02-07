@@ -59,12 +59,14 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 		<ul class="sub_menu">
 			<li>&nbsp;<a href="'._('joueursconnectes').'">'._('Joueur&nbsp;connectés').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('amis').'">'.ucfirst(_('amis')).'</a>&nbsp;</li>
-			<li>&nbsp;<a href="'.FORUM_URL.'">'._('Forum').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'.FORUM_URL.'"
+			             target="_blank">'._('Forum').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('teamspeak').'">'.ucfirst(_('teamspeak')).'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('sondages').'">'.ucfirst(_('sondages')).'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('chat').'">'.ucfirst(_('chat')).'</a>&nbsp;</li>
 		</ul>
-		<li>&nbsp;<a href="'.WIKI_URL.'">'._('Aide').'</a>&nbsp;</li>
+		<li>&nbsp;<a href="'.WIKI_URL.'"
+		             target="_blank">'._('Aide').'</a>&nbsp;</li>
 		<li>&nbsp;<a href="'._('pagecontact').'">'._('Contact').'</a>&nbsp;';/*
 		<ul class="sub_menu">
 			<li>&nbsp;<a href="'._('archivescontact').'">'._('Archives').'</a>&nbsp;</li>
