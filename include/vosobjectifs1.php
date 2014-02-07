@@ -168,7 +168,7 @@ echo '
 <h2 class="centrer">'._('Après votre passage niveau 2').' :</h2>
 <table class="none">
 <tr><td>'._(
-'Nouveaux bâtiments disponibles : <b>antre des espions</b>, <b>Camp militaire</b> et <b>carrière</b>').
+'Nouveaux bâtiments disponibles : <b>antre des espions</b>, <b>camp militaire</b> et <b>carrière</b>').
 '</td></tr>
 <tr><td>'._(
 'Nouvelles unités disponibles : <b>espion</b> et <b>peltaste</b>').
