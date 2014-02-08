@@ -53,7 +53,7 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a>'._('Batailles navales').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="classementcites">'._('Cités').'</a>&nbsp;</li>
 			<li>&nbsp;<a>'._('Héros').'</a>&nbsp;</li>
-			<li>&nbsp;<a>'._('Honneur').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('classementghonneur').'">'._('Honneur').'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'._('communaute').'">'._('Communauté').'</a>&nbsp;
 		<ul class="sub_menu">
@@ -262,6 +262,7 @@ switch($page) {
 	case 'classements':
 	case 'honneur':
 	case 'classementcites':
+	case 'classementghonneur':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
