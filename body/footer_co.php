@@ -6,10 +6,10 @@ echo '<div id="cadre_chat">
 	'<img src="images/utils/mb_deconnecter.png"
 	      alt="'._('Connexion au chat').'"
 	      id="cadre_chat_iconeco">&nbsp;</span>'.
-	'<img src="images/utils/supprimer_mp.png"
+	'<img src="images/utils/right.png"
 	 			alt="Deconnexion"
 	      id="cadre_chat_iconedeco"
-	      style="display:none;">	 
+	      style="display:none;">
 	 </div>
 	<div id="cadre_chat_interieur" style="display:none;">
 		<div id="cadre_chat_interieur_gauche">
@@ -26,6 +26,12 @@ echo '<div id="cadre_chat">
 				     alt="Fermer"
 				     class="cursor"
 				     id="cadre_chat_iconefermer">	 
+				
+				<img src="images/utils/right.png"
+					 			alt="Deconnexion"
+					      id="cadre_chat_iconedeco2"
+					      class="cursor">
+					      
 				</div>
 				<div class="clear"></div>
 				<div id="joueurs_chat"></div>
@@ -48,27 +54,20 @@ $("#texte_chat").keyup(function(e) {
   }
 });
 
+$("#cadre_chat_titre2").mouseover(function() {
+	display_chat();
+});
+
 $("#cadre_chat_titre2").click(function() {
-   $.ajax({
-     type: "GET",
-     url: "form/chat_connexion.php",
-     success: function(msg){
-			$("#cadre_chat_titre").hide();
-			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
-			$("#cadre_chat_interieur").show(\'slow\');
-			$("#cadre_chat").css(\'height\', \'auto\');
-			$("#cadre_chat").css(\'width\', \'auto\');
-			document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
-     }
-   });
+	display_chat();
+});
+
+$("#cadre_chat_interieur").mouseleave(function() {
+	close_chat();
 });
 
 $("#cadre_chat_iconefermer").click(function() {
-	$("#cadre_chat").css(\'height\', \'auto\');
-	$("#cadre_chat").css(\'width\', \'auto\');
-	$("#cadre_chat_interieur").hide(\'slow\');
-	$("#cadre_chat_titre2").css("color", "black");
-	$("#cadre_chat_titre").show();
+	close_chat();
 });
 
 $("#cadre_chat_iconedeco").click(function() {
@@ -81,6 +80,45 @@ $("#cadre_chat_iconedeco").click(function() {
      }
    });
 });
+
+$("#cadre_chat_iconedeco2").click(function() {
+	$("#cadre_chat").css(\'height\', \'auto\');
+	$("#cadre_chat").css(\'width\', \'auto\');
+	$("#cadre_chat_interieur").hide(\'slow\');
+	$("#cadre_chat_titre2").css("color", "black");
+	$("#cadre_chat_titre").show();
+   $.ajax({
+     type: "GET",
+     url: "form/chat_deconnexion.php",
+     success: function(msg){
+			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
+			$("#cadre_chat_iconedeco").hide();
+     }
+   });
+});
+
+function display_chat() {
+   $.ajax({
+     type: "GET",
+     url: "form/chat_connexion.php",
+     success: function(msg){
+			$("#cadre_chat_titre").hide();
+			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
+			$("#cadre_chat_interieur").show(\'slow\');
+			$("#cadre_chat").css(\'height\', \'auto\');
+			$("#cadre_chat").css(\'width\', \'auto\');
+			document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
+     }
+   });
+}
+
+function close_chat() {
+	$("#cadre_chat").css(\'height\', \'auto\');
+	$("#cadre_chat").css(\'width\', \'auto\');
+	$("#cadre_chat_interieur").hide(\'slow\');
+	$("#cadre_chat_titre2").css("color", "black");
+	$("#cadre_chat_titre").show();
+}
 
 function joueurs_chat() {
    $.ajax({

@@ -698,7 +698,7 @@ td.none {
   margin-top:70px;
   width:250px;
   padding:5px;
-  z-index:10000;
+  z-index:1000;
   opacity:0.9;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -1370,7 +1370,13 @@ select {
 
 #cadre_chat_iconedeco {
     float: right;
-    margin: 3px 10px 0px 10px;
+    margin: 4px 8px 0px 8px;
+    position: relative;
+}
+
+#cadre_chat_iconedeco2 {
+    float: right;
+    margin: 2px 8px 0px 8px;
     position: relative;
 }
 
