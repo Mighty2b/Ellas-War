@@ -103,9 +103,14 @@ echo '</div>
 			<div id="cadre_info_perso">
 				<b>'._('Âge').' : </b>'.$j->age.' '._('ans').'
 				<br/><b>'._('Localication').' : </b>'.$j->ville.'
-				<br/><b>'._('Emplois').' : </b>'.$j->emplois.'
-				<br/><b>'._('Date d\'inscription').' : </b>'.display_date($j->insc,2).'
-			</div>
+				<br/><b>'._('Emplois').' : </b>'.$j->emplois;
+				
+				if($paquet->get_infoj('statu') != 0) {
+					echo '<br/><b>'._('Date d\'inscription').' : </b>'.
+					     display_date($j->insc,2);
+				}
+				
+				'</div>
 			<div id="cadre_contact">';
 
 				if($paquet->get_infoj('statu') == 1) {
@@ -137,7 +142,7 @@ echo '</div>
 	}
 	else {
 		if(sizeof($j->dedi) > 0) {
-			echo '<h2 class="centrer">'._('Dédicaces').' : </h2>';
+			echo '<h2 class="centrer">'._('Dédicaces').'</h2>';
 
 			foreach($j->dedi as $dedi) {
 				echo '<div class="ligne centrer"><b>'._(
