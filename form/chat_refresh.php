@@ -43,10 +43,17 @@ if(!empty($rep)) {
 		echo '<br/>';
 	}
 	
-	if(empty($_GET['clean']) && $autre > 0) {
-		echo '<script type="text/javascript">
-		$("#cadre_chat_titre2").css("color", "red");
-		</script>';
+	if(empty($_GET['clean'])) {
+		if($autre > 0) {
+			echo '<script type="text/javascript">
+			$("#cadre_chat_titre2").css("color", "red");
+			</script>';
+		}
+		elseif($moi > 0) {
+			echo '<script type="text/javascript">
+			$("#cadre_chat_titre2").css("color", "black");
+			</script>';
+		}
 	}	
 }
 
