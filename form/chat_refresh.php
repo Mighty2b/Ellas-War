@@ -44,12 +44,13 @@ if(!empty($rep)) {
 	}
 	
 	if(empty($_GET['clean'])) {
-		if($autre > 0) {
+		if($paquet->get_answer('refresh_chat')->{3} > 0) {
 			echo '<script type="text/javascript">
 			$("#cadre_chat_titre2").css("color", "red");
 			</script>';
 			
-			if($paquet->get_answer('refresh_chat')->{2} == 0 && !empty($_COOKIE['signalement'])) {
+			if($paquet->get_answer('refresh_chat')->{2} == 0 && 
+			   !empty($_COOKIE['signalement'])) {
 				switch($_COOKIE['signalement']) {
 					case 1: $file='bip1'; break;
 					case 2: $file='pet1'; break;
