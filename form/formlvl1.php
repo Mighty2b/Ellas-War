@@ -17,7 +17,7 @@ echo '
 <h2>'._('Vous venez de passer niveau 2, félicitation').'</h2>
 
 <br/>
-<table>
+<table class="none">
 <tr><td>'._(
 'Nouveaux bâtiments disponibles : <b>antre des espions</b>, <b>Camp militaire</b> et <b>carrière</b>').
 '</td></tr>
