@@ -37,6 +37,9 @@ echo '<div id="cadre_chat">
 $(function() {
 	joueurs_chat();
 	refresh_chat(1);
+	
+	setInterval(\'joueurs_chat()\',3000);
+	setInterval(\'refresh_chat(0)\',500);
 });
 
 $("#texte_chat").keyup(function(e) {
@@ -44,9 +47,6 @@ $("#texte_chat").keyup(function(e) {
     envoyer_chat();
   }
 });
-
-setInterval(\'joueurs_chat()\',3000);
-setInterval(\'refresh_chat(0)\',500);
 
 $("#cadre_chat_titre2").click(function() {
    $.ajax({
