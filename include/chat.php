@@ -15,7 +15,7 @@ echo '<div class="ligne_80">'._(
 'deconnecter du chat.').'</div>';
 
 
-echo '<h2 class="centrer">'._('Signalement').'</h1>';
+echo '<h2 class="centrer">'._('Signalement d\'un nouveau message').'</h1>';
 
 echo '<div class="centrer">
 
