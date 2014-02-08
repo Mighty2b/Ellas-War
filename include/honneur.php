@@ -15,7 +15,6 @@ echo '<div class="centrer">'._(
 	<tr class=\'tableau_header\'>
 		<td>&nbsp;'._('N°').'&nbsp;</td>
 		<td>&nbsp;'._('Pseudo').'&nbsp;</td>
-		<td>&nbsp;'._('Niveau').'&nbsp;</td>
 		<td>&nbsp;'._('XP').'&nbsp;</td>
 		<td>&nbsp;'._('Victoires').'&nbsp;</td>
 		<td>&nbsp;'._('Défaites').'&nbsp;</td>
@@ -30,7 +29,6 @@ echo '
 <tr>
 	<td>&nbsp;'.$i.'&nbsp;</td>
 	<td>&nbsp;<a href=\''._('profilsjoueur').'-'.$j->id.'\'>'.$j->login.'</a>&nbsp;</td>
-	<td>&nbsp;'.($j->lvl).'&nbsp;</td>
 	<td>&nbsp;'.nbf(round($j->points)).'&nbsp;</td>
 	<td>&nbsp;'.nbf($j->victoires).'&nbsp;</td>
 	<td>&nbsp;'.nbf($j->defaites).'&nbsp;</td>
