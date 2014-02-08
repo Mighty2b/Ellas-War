@@ -8,7 +8,7 @@ echo '<h1>'._('Honnorez les dieux').'</h1><br/>';
 	
 $paquet->error('batir_temple1');
 
-echo '<div class="ligne80">
+echo '<div class="ligne90 centrer">
 <b>'._(
 'Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').
 '</b><br/><br/>
@@ -22,7 +22,7 @@ echo '<div class="ligne80">
 echo '
 </p><br/>
 
-<table width="90%">
+<table width="80%">
 <tr>
 <td class="titre_tab"
     valign="top">&nbsp;'._('Hermès').'&nbsp;</td>
@@ -62,6 +62,7 @@ echo '
 </td>
 </tr>
 </table>
+<br/>
 <div class="centrer">
 <img src="images/temples/img_hermes.png" 
      alt="'.$temples_donnees['hermes']['nom'].'" 
@@ -85,7 +86,7 @@ elseif($paquet -> possible_temple2()) {
 	$paquet->error('batir_temple2');
 
 echo '
-<div class="ligne80">
+<div class="ligne90 centrer">
 <b>'._('Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').'</b><br/><br/>
 <p>
 <b>'._('Prix').' :</b>';
@@ -98,7 +99,7 @@ foreach($batiment_prix_temple2 as $ress => $qtt) {
 
 echo '</p><br/>
 
-<table width="90%">
+<table width="80%">
 <tr>
 <td class="titre_tab"
     valign="top" 
@@ -127,6 +128,8 @@ echo '</p><br/>
 </td>
 </tr>
 </table>
+<br/>
+
 </div>
 <div class="centrer">
 <img src="images/temples/img_ares.png" 
@@ -147,7 +150,7 @@ elseif($paquet -> possible_temple3()) {
 	
 	$paquet->error('batir_temple3');
 
-echo '<div class="ligne80">
+echo '<div class="ligne90 centrer">
 <b>'._('Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').'</b><br/><br/>
 <p>
 <b>'._('Prix').' :</b>';
@@ -160,7 +163,7 @@ echo '<div class="ligne80">
 
 echo '</p><br/>
 
-<table width="90%">
+<table width="80%">
 <tr>
 <td class="titre_tab"
     valign="top">&nbsp;'._('Artémis').'&nbsp;</td>
@@ -198,6 +201,8 @@ echo '</p><br/>
 </td>
 </tr>
 </table>
+<br/>
+
 </div>
 <div class="centrer">
 <img src="images/temples/img_artemis.png" 
@@ -224,7 +229,7 @@ elseif($paquet -> possible_temple4()) {
 	$paquet->error('batir_temple4');
 
 echo '
-<div class="ligne80">
+<div class="ligne90 centrer">
 <b>'._(
 'Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').
 '</b><br/><br/>
@@ -238,7 +243,7 @@ echo '
 
 echo '</p><br/>
 
-<table width="90%">
+<table width="80%">
 <tr>
 <td class="titre_tab"
     valign="top" 
@@ -287,6 +292,8 @@ echo '</p><br/>
 </td>
 </tr>
 </table>
+<br/>
+
 </div>
 <div class="centrer">
 <img src="images/temples/img_hades.png" 

@@ -67,6 +67,15 @@ $temples_donnees  = array(
 		'dieu' => _('Poseidon'))
 	);
 
+$batiment_prix_temple1 = array('drachme' => 200000, 'pierre' => 20000, 'marbre' => 500, 'bois' => 160000, 'gold' => 0);
+
+$batiment_prix_temple2 = array('drachme' => 500000, 'pierre' => 50000, 'marbre' => 1250, 'bois' => 400000, 'gold' => 0);
+
+$batiment_prix_temple3 = array('drachme' => 1000000, 'pierre' => 400000, 'marbre' => 8000, 'bois' => 1200000, 'gold' => 0);
+
+$batiment_prix_temple4 = array('drachme' => 4000000, 'pierre' => 1600000, 'marbre' => 160000, 'bois' => 25000000, 'gold' => 120000);
+
+
 $statues_donnees = array(
 	'sacrifice_hera' => array('nom' => 'Sacrifice d\'Héra', 'url' => 'sacrifice_hera'),
 	'defense_gaia' => array('nom' => 'Défense de Gaia', 'url' => 'defense_gaia'),
