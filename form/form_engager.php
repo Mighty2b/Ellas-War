@@ -367,7 +367,8 @@ echo '<SCRIPT LANGUAGE="JavaScript">
 	
 	$temples = $paquet -> get_infoj('temples');
 	
-	if(($bat == 'spartiate' && !in_array('ares', $temples)) or empty($value->max)) {
+	if(($bat == 'spartiate' && !in_array('ares', $temples)) or 
+	   empty($value->max)) {
 		echo '<br/>';
 	}
 	else {
@@ -392,7 +393,8 @@ echo '<SCRIPT LANGUAGE="JavaScript">
 	<td valign="middle"><div class="bouton_classique"><input type="submit" value="'._('Engager').'" name="achat" style="width:80px;"/></div></td></tr>';
 	}
 	
-	if($bat != 'spartiate' or $paquet->get_infoj('lvl') > 0) {
+	if($bat != 'spartiate' or $paquet->get_infoj('lvl') > 0 or
+	   $paquet->get_infoj('etape') > 9) {
 		echo '<tr>
 		<td valign="middle"><input type="text" id="'.$bat.'_vente" 
 		                           name="ventee" 
