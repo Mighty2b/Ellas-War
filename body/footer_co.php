@@ -108,6 +108,7 @@ function refresh_chat(clean) {
    $.ajax({
      type: "GET",
      url: "form/chat_refresh.php?clean="+clean,
+     timeout : 400,
      success: function(msg){
        if(msg != \'\') {
          $("#corps_chat").html(msg);
