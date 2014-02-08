@@ -130,11 +130,11 @@ echo '<script type="text/javascript">
 		}
 		
 		if(!empty($value -> prodpierre)) {
-			$prod .=' '.nbf($value -> prodpierre*(100-$paquet->getcoef_marbre())/100).' '.imress('pierre');
+			$prod .=' '.nbf($value -> prodpierre*(100-$paquet->get_infoj('coef_marbre'))/100).' '.imress('pierre');
 		}
 		
 		if(!empty($value -> prodmarbre)) {
-			$prod .=' '.nbf($value -> prodmarbre*$paquet->getcoef_marbre()/100).' '.imress('marbre');
+			$prod .=' '.nbf($value -> prodmarbre*$paquet->get_infoj('coef_marbre')/100).' '.imress('marbre');
 		}
 		
 		if(!empty($value -> prodraisin)) {
@@ -276,7 +276,7 @@ echo '<script type="text/javascript">
 			<table>
 				<tr>
 					<td>
-		<input type="text" class="form_retirer droite" size="3" maxlenght="3" value="'.$paquet->getcoef_marbre().'" name="modif" required="required" /> % 
+		<input type="text" class="form_retirer droite" size="3" maxlenght="3" value="'.$paquet->get_infoj('coef_marbre').'" name="modif" required="required" /> % 
 		</td>
 		<td>
 			<div class="bouton_classique"><input class="bouton_classique2" type="submit" name="Modifier" value="'._('Modifier').'" /></div>
