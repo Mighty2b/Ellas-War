@@ -14,7 +14,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'parrainage', 'filleuls', 'soutien',
 
 //Classements
-'classements', 'classementcites',
+'classements', 'classementcites', 'honneur',
 
 //Communauté
 'joueursconnectes', 'amis', 'teamspeak', 'sondages', 'chat',

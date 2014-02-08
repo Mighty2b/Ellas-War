@@ -260,6 +260,7 @@ switch($page) {
 	break;
 	
 	case 'classements':
+	case 'honneur':
 	case 'classementcites':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
