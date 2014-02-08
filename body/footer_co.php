@@ -42,7 +42,6 @@ echo '<div id="cadre_chat">
 <script type="text/javascript">
 $(function() {
 	joueurs_chat();
-	refresh_chat(1);
 	
 	setInterval(\'joueurs_chat()\',3000);
 	setInterval(\'refresh_chat(0)\',500);
@@ -108,6 +107,7 @@ function display_chat() {
 			$("#cadre_chat").css(\'height\', \'auto\');
 			$("#cadre_chat").css(\'width\', \'auto\');
 			document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
+			refresh_chat(1);
      }
    });
 }
