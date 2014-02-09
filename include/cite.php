@@ -266,7 +266,7 @@ if(sizeof($temples) > 0) {
 	<div class="ligne">
 	<a href="'._('faveurs').'"><b>'._('Appui d\'Hébé').' : </b>';
 
-	if(!empty($bonus->tresor) && $bonus->tresor > $paquet->get_timestamp()) {
+	if(!empty($bonus->tresor) && $bonus->tresor > $paquet->get_infoj('timestamp')) {
 		echo _('Actif jusqu\'au').' '.display_date($bonus->tresor,2);
 	}
 	else {
@@ -280,7 +280,7 @@ if(sizeof($temples) > 0) {
 	<br/>
 	<a href="'._('faveurs').'"><b>'._('Appui d\'Éros').' : </b>';
 	
-	if(!empty($bonus->xp) && $bonus->xp > $paquet->get_timestamp()) {
+	if(!empty($bonus->xp) && $bonus->xp > $paquet->get_infoj('timestamp')) {
 		echo _('Actif jusqu\'au').' '.display_date($bonus->xp,2);
 	}
 	else {
@@ -301,7 +301,7 @@ if(sizeof($temples) > 0) {
 	echo '</a>
 	<br/><a href="'._('licences').'"><b>'._('Licence de grand commerçant').' : </b>';
 	
-	if(!empty($bonus->licence) && $bonus->licence > $paquet->get_timestamp()) {
+	if(!empty($bonus->licence) && $bonus->licence > $paquet->get_infoj('timestamp')) {
 		echo _('Actif jusqu\'au').' '.display_date($bonus->licence,2);
 	}
 	else {
@@ -448,7 +448,7 @@ echo '
 					$do->titre=_('Partie publique');
 				}
 			
-				if(($do->places == 8) && ($do->temps < $paquet->get_timestamp())) {
+				if(($do->places == 8) && ($do->temps < $paquet->get_infoj('timestamp'))) {
 					$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
 				}
 			
