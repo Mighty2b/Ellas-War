@@ -90,11 +90,11 @@ echo '
 &nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="';
 
-if($paquet->get_infoj('lvl') == 0) {
+if($paquet->get_infoj('lvl') <= 1) {
 	echo _('arbredesdieux');
 }
 else {
-	echo _('mythologie');
+	echo _('temples');
 }
 
 echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
