@@ -35,7 +35,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Mythologie
 'mythologie', 'arbredesdieux', 'auteldesdieux', 'temples', 'statues', 
-'succes', 'prieres',
+'succes', 'prieres', 'modifiertemples',
 
 //Heros
 'heros',

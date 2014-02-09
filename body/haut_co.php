@@ -184,6 +184,7 @@ switch($page) {
 	case 'statues':
 	case 'succes':
 	case 'prieres':
+	case 'modifiertemples':
 		echo '
 		<div id="barre_menu_mythologie">
 			<a id="header_ssmenu_arbredesdieux"
