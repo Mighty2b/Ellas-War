@@ -12,7 +12,7 @@ elseif(empty($j)) {
 echo '<h1>'.$j->login.'</h1>';
 
 if(!empty($j->nomalliance)) {
-	echo '<div class="centrer"><a href="profilsalliance-'.$j->alliance.'"
+	echo '<div class="centrer"><a href="'._('profilsalliance').'-'.$j->alliance.'"
 	                              class="non_souligne titre_profils ligne">';
   if($j->id == $j->chef) {
     echo '<img src="images/joueurs/mini_laurier.png" 

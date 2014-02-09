@@ -74,7 +74,7 @@ else {
 		<td class="don_profils">'.$all->contratr.'</td>
 		</tr>
 		<tr><td colspan="3" class="centrer">&nbsp;<br/>
-<div class="fb-like" style="width:100px;" data-href="'.SITE_URL.'/profilsalliance-'.$all->id.'" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
+<div class="fb-like" style="width:100px;" data-href="'.SITE_URL.'/'._('profilsalliance').'-'.$all->id.'" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 	</td></tr>
 	</table></div><br/>';
 
