@@ -60,7 +60,8 @@ img('images/alliance/membrealli.png', _('membre')).'&nbsp;</td>
 <td class="centrer">&nbsp;'._('Effectifs').'&nbsp;</td>
 <td class="centrer">&nbsp;'._('Profils').'&nbsp;</td>';
 
-if(empty($paquet->get_infoj('alliance')) && $paquet->get_infoj('lvl') >= $lvlminirejoindre) {
+if(empty($paquet->get_infoj('alliance')) && 
+   $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{4}) {
 	echo '<td class="centrer">&nbsp;'._('Postuler').'&nbsp;</td>';
 	$j++;
 }
@@ -104,7 +105,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 		</td>';
 		
 		if(empty($paquet->get_infoj('alliance')) && 
-		   $paquet->get_infoj('lvl') >= $lvlminirejoindre) {
+		   $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{4}) {
 			echo '<td class="centrer">&nbsp;';
 			
 			if($all->peut_postuler) {
