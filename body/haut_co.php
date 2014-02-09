@@ -101,7 +101,16 @@ echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mytho
 &nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div>'.ucfirst(_('heros')).'</a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
-&nbsp;<a id="menu_alliance" href="'._('alliance').'"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;';
+&nbsp;<a id="menu_alliance" href="';
+
+if($paquet->get_infoj('alliance') == 0) {
+	echo _('lesalliances');
+}
+else {
+	echo _('alliance');
+}
+
+echo '"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;';
 
 if($paquet->get_infoj('lvl') > 0) {
 	echo '&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div>'._('Marché').'</a>&nbsp;';
@@ -203,6 +212,7 @@ switch($page) {
 	break;
 	
 	case 'alliance':
+	case 'lesalliances':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
