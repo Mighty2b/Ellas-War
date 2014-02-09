@@ -217,6 +217,7 @@ switch($page) {
 	case 'creervotrealliance':
 	case 'membrealliance':
 	case 'profilsalliance':
+	case 'postuler':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	

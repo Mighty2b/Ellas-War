@@ -227,6 +227,14 @@ echo '<script type="text/javascript">
 function fermer_cadre() {
   $("#cadre_milieu_petit").hide("slow");
 }
+
+function annuler_candidature(id){
+   $.ajax({
+     type: "GET",
+     url: "form/annuler_candidature.php"
+   });
+   $("#cadre_candidature").hide("slow");
+}
 </script>';
 
 ?>
