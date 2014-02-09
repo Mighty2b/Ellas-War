@@ -514,6 +514,7 @@ td.none {
 	font-weight:bold;
 	margin-top:-20px;
 	font-size:1.6em;
+	margin-left:2px;
 }
 
 #menu_forum .ssmenu {
@@ -525,15 +526,15 @@ td.none {
 }
 
 #menu_alliance {
-	margin-left:25px;
+	margin-left:23px;
 }
 
 #menu_commerce {
-	margin-left:25px;
+	margin-left:23px;
 }
 
 #menu_jeux {
-	margin-left:25px;
+	margin-left:23px;
 }
 
 /* 2nd menu */
