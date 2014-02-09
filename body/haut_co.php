@@ -103,7 +103,7 @@ echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mytho
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
 &nbsp;<a id="menu_alliance" href="';
 
-if($paquet->get_infoj('alliance') == 0) {
+if(empty($paquet->get_infoj('alliance'))) {
 	echo _('lesalliances');
 }
 else {
@@ -214,6 +214,7 @@ switch($page) {
 	
 	case 'alliance':
 	case 'lesalliances':
+	case 'creervotrealliance':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	

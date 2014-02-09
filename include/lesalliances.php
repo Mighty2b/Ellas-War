@@ -165,7 +165,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 else {
 	echo '<div class="erreur centrer">'.
 	     _('Il n\'y a actuellement aucune alliance sur le jeu').
-	     '</div>';
+	     '<br/></div>';
 }
 
 if($nombreDePages > 1)
@@ -213,7 +213,7 @@ if($nombreDePages > 1)
 
 if($paquet->get_infoj('alliance') == 0 && 
    $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{3}) {
-	echo '<div class="centrer erreur"><a href="'._('creervotrealliance').'"
+	echo '<div class="centrer erreur"><br/><a href="'._('creervotrealliance').'"
 	                                     class="centre_armee" >'._('Creer votre alliance').'</a></div>';
 }
 
