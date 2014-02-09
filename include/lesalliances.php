@@ -60,24 +60,24 @@ img('images/alliance/membrealli.png', _('membre')).'&nbsp;</td>
 <td class="centrer">&nbsp;'._('Effectifs').'&nbsp;</td>
 <td class="centrer">&nbsp;'._('Profils').'&nbsp;</td>';
 
-if($paquet->getalliance() == 0 && $paquet->get_infoj('lvl') >= $lvlminirejoindre) {
+if(empty($paquet->get_infoj('alliance')) && $paquet->get_infoj('lvl') >= $lvlminirejoindre) {
 	echo '<td class="centrer">&nbsp;'._('Postuler').'&nbsp;</td>';
 	$j++;
 }
-else {
-	if($paquet->peut_pacte()) {
+elseif(!empty($paquet->get_infoj('alliance'))) {
+	if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 		echo'<td class="centrer">&nbsp;'._('Pacte').'&nbsp;</td>';
 		$j++;
 	}
-	if($paquet->peut_guerre()) {
+	if($paquet->get_infoj('droits_alliance')->declarer_guerre > 0) {
 		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Guerre').'</b></font>&nbsp;</td>';
 		$j++;
 	}
-	if($paquet->peut_contrat()) {
+	if($paquet->get_infoj('droits_alliance')->contrat > 0) {
 		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Contrats').'</b></font>&nbsp;</td>';
 		$j++;
 	}
-	if($paquet->getid() == $paquet->getidchef()) {
+	if($paquet->get_infoj('id') == $paquet->get_infoj('alliance')->id_chef) {
 		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Blocus').'</b></font>&nbsp;</td>';
 		$j++;
 	}
@@ -103,7 +103,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 		img('images/alliance/view_text.png',_('profils')).'</a>
 		</td>';
 		
-		if($paquet->getalliance() == 0 && 
+		if(empty($paquet->get_infoj('alliance')) && 
 		   $paquet->get_infoj('lvl') >= $lvlminirejoindre) {
 			echo '<td class="centrer">&nbsp;';
 			
@@ -114,8 +114,8 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 			
 			echo '&nbsp;</td>';
 		}
-		else {
-			if($paquet->peut_pacte()) {
+		elseif(!empty($paquet->get_infoj('alliance'))) {
+			if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 				echo '<td class="centrer">';
 				if($all->peut_pacte) {
 					echo '<img src="images/alliance/flag_green.png"
@@ -127,7 +127,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 				echo '</td>';
 			}
 			
-			if($paquet->peut_guerre()) {
+			if($paquet->get_infoj('droits_alliance')->declarer_guerre > 0) {
 				echo '<td class="centrer">';
 				if($all->peut_guerre) {
 					echo '<img src="images/alliance/flag_red.png"
@@ -138,7 +138,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 				echo '</td>';
 			}
 			
-			if($paquet->peut_contrat()) {
+			if($paquet->get_infoj('droits_alliance')->contrat > 0) {
 				echo '<td class="centrer">';
 				if($all->peut_contrat) {
 					echo '<img src="images/alliance/flag_pink.png"
@@ -150,12 +150,17 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 				echo '</td>';
 			}
 			
-			if($all->peut_blocus) {
-				echo '<td class="centrer"><img src="images/alliance/flag_orange.png"
-						 alt="'._('Poser un blocus"
-						 title="'._('Poser un blocus').'" 
-						 class="cursor').'" 
-						 onclick="javascript:declarer_blocus('.$all->id.');" /></td>';
+			if($paquet->get_infoj('id') == $paquet->get_infoj('alliance')->id_chef) {
+				if($all->peut_blocus) {
+					echo '<td class="centrer"><img src="images/alliance/flag_orange.png"
+							 alt="'._('Poser un blocus"
+							 title="'._('Poser un blocus').'" 
+							 class="cursor').'" 
+							 onclick="javascript:declarer_blocus('.$all->id.');" /></td>';
+				}
+				else {
+					echo '<td>&nbsp;</td>';
+				}				
 			}
 		}
 		echo '</tr>';
@@ -211,7 +216,7 @@ if($nombreDePages > 1)
 }
 
 
-if($paquet->get_infoj('alliance') == 0 && 
+if(empty($paquet->get_infoj('alliance')) && 
    $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{3}) {
 	echo '<div class="centrer erreur"><br/><a href="'._('creervotrealliance').'"
 	                                     class="centre_armee" >'._('Creer votre alliance').'</a></div>';
