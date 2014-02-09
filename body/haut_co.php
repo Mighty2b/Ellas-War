@@ -249,6 +249,7 @@ switch($page) {
 	case 'carremagique':
 	case 'ticket':
 	case 'javelot':
+	case 'des':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	

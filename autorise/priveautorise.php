@@ -53,7 +53,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'debarras', 'archivecommerce',
 
 //Jeux
-'jeux', 'carremagique', 'ticket', 'javelot',
+'jeux', 'carremagique', 'ticket', 'javelot', 'des',
  
 'decouvertedujeu', 'actualites', 'nouscontacter', 
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
