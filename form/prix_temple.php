@@ -1,6 +1,7 @@
 <?php
 
 include('../header.php');
+include('../donnees/donnees.php');
 
 $paquet = new EwPaquet();
 $paquet -> add_action('info');
