@@ -333,7 +333,7 @@ function espionner(id) {
 function visiter(id) {
    $.ajax({
      type: "GET",
-     url: "form/visiter.php",
+     url: "form/form_visiter.php",
      data: "ciblej="+id,
      success: function(msg){
        $("#cadre_centre_petit").html(msg);
@@ -345,7 +345,7 @@ function visiter(id) {
 function furie(id) {
    $.ajax({
      type: "GET",
-     url: "form/furie.php",
+     url: "form/form_furie.php",
      data: "ciblej="+id,
      success: function(msg){
        $("#cadre_centre_petit").html(msg);
@@ -357,7 +357,7 @@ function furie(id) {
 function foudre(id) {
    $.ajax({
      type: "GET",
-     url: "form/foudre.php",
+     url: "form/form_foudre.php",
      data: "ciblej="+id,
      success: function(msg){
        $("#cadre_centre_petit").html(msg);
