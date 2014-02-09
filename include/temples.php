@@ -89,7 +89,7 @@ echo '
 <div class="ligne90 centrer">
 <b>'._('Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').'</b><br/><br/>
 <p>
-<b>'._('Prix').' :</b>';
+<b>'._('Prix').' :</b> ';
 
 foreach($batiment_prix_temple2 as $ress => $qtt) {
 	if(!empty($qtt)) {
@@ -153,7 +153,7 @@ elseif($paquet -> possible_temple3()) {
 echo '<div class="ligne90 centrer">
 <b>'._('Construisez un temple, honorez un dieu et bénéficiez de nombreux avantages.').'</b><br/><br/>
 <p>
-<b>'._('Prix').' :</b>';
+<b>'._('Prix').' :</b> ';
 
 	foreach($batiment_prix_temple3 as $ress => $qtt) {
 		if($qtt > 0) {
@@ -235,7 +235,7 @@ echo '
 '</b><br/><br/>
 
 <p>
-<b>'._('Prix').' :</b>';
+<b>'._('Prix').' :</b> ';
 
 	foreach($batiment_prix_temple4 as $ress => $qtt) {
 		echo number_format($qtt, 0, ',', ' ').' '.imress($ress).'&nbsp; ';
