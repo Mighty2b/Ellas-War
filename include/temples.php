@@ -443,13 +443,15 @@ foreach($temples_donnees as $temple => $temple_actu) {
 		$possible = $paquet->get_answer('info_temples')->{3};
 
 		if(empty($possible)) {
-			echo '<br/>
+			echo '<div class="clear"></div>
+			<br/>
 			<div class="centrer erreur">
 			<a href="'._('modifiertemples').'">'._('Changer l\'un de vos temples').'</a>
 			</div>';
 		}
 		else {
-		  echo '<br/>
+		  echo '<div class="clear"></div>
+			<br/>
 			<div class="centrer">
 			'._('Vous pourrez changer l\'un de vos temples le ').
 			display_date($possible, 4).
