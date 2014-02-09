@@ -1556,3 +1556,16 @@ select {
   margin-right:15px;
   min-height:80px;
 }
+
+/* autel des dieux */
+.gauche_autel {
+  position:relative;
+  float:left;
+  width:220px;
+}
+
+.droite_autel {
+  position:relative;
+  float:right;
+  width:390px;
+}

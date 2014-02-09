@@ -4,7 +4,9 @@
 $all = $paquet -> get_answer('profils_alliance')->{1};
 
 if(is_numeric($all)) {
-	$paquet->display($all);
+	echo '<div class="erreur">';
+	echo display_error($all);
+	echo '</div>';
 }
 else {
 		
