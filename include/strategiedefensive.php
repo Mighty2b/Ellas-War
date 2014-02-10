@@ -52,7 +52,7 @@ foreach($tab as $unite) {
 			img('images/attaques/bouclier.png', _('defense')).'&nbsp;</td>
 			<td class="droite case_suppr_strat">&nbsp;
 &nbsp;<a href="'._('strategiedefensive').'-'.($j+1).'">'.
-img('images/joueurs/supprimer_mp.png', _('supprimer')).'</a>&nbsp;
+img('images/utils/supprimer_mp.png', _('supprimer')).'</a>&nbsp;
 			</td></tr>';
 			$total = 0;
 		}
