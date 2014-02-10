@@ -4,7 +4,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Compte
 'informationspersonnelles',	'bibliotheque', 'pause', 'adressemail', 
-'motdepasse', 'vosobjectifs', 'profilsjoueur',
+'motdepasse', 'vosobjectifs', 'profilsjoueur', 'tour_de_force',
 
 //Messagerie
 'nouveaumessage', 'messagerie', 'boiteenvoie', 'archivesdemessagerie', 

@@ -293,6 +293,7 @@ switch($page) {
 	case 'teamspeak':
 	case 'sondages':
 	case 'chat':
+	case 'tour_de_force':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
