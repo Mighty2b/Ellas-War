@@ -33,7 +33,8 @@ foreach($tab as $unite) {
 		$total += ($vague[$j][$unite]*$liste_unites->$unite->defense);
 		$tableau .= '<tr>
 		<td class="centrer"><input type="text"
-		                           value="'.$vague[$j][$unite].'" 
+		                           value="'.$vague[$j][$unite].'"
+		                           size="6"
 		                           name="'.$unite.'[]"/></td>
 		</tr>';
 	}
