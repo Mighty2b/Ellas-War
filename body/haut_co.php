@@ -253,6 +253,7 @@ switch($page) {
 	case 'loto':
 	case 'biges':
 	case 'quadriges':
+	case 'bataillesnavales':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
@@ -261,6 +262,7 @@ switch($page) {
 	case 'pause':
 	case 'adressemail':
 	case 'motdepasse':
+	case 'reset':
 		echo '<div id="barre_menu_vide"></div>';
 	break;	
 	

@@ -5,6 +5,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 //Compte
 'informationspersonnelles',	'bibliotheque', 'pause', 'adressemail', 
 'motdepasse', 'vosobjectifs', 'profilsjoueur', 'tour_de_force',
+'reset',
 
 //Messagerie
 'nouveaumessage', 'messagerie', 'boiteenvoie', 'archivesdemessagerie', 
@@ -54,7 +55,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Jeux
 'jeux', 'carremagique', 'ticket', 'javelot', 'des', 'loto', 'biges',
-'quadriges',
+'quadriges', 'bataillesnavales',
  
 'decouvertedujeu', 'actualites', 'nouscontacter', 
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
