@@ -86,7 +86,7 @@ echo '
 </section>
 <section id="header_menu">
 &nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
-&nbsp;<a id="menu_armee" href="'._('armee').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
+&nbsp;<a id="menu_armee" href="'._('passerenrevue').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
 &nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="';
 
