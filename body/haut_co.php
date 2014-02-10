@@ -250,6 +250,7 @@ switch($page) {
 	case 'ticket':
 	case 'javelot':
 	case 'des':
+	case 'loto':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
