@@ -309,7 +309,7 @@ echo '<script type="text/javascript">
 function observer(id) {
    $.ajax({
      type: "GET",
-     url: "form/observer.php",
+     url: "form/form_observer.php",
      data: "ciblej="+id,
      success: function(msg){
        $("#cadre_centre_petit").html(msg);
