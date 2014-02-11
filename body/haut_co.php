@@ -164,6 +164,7 @@ switch($page) {
 	case 'mesattaques':
 	case 'strategiedefensive':
 	case 'strategieoffensive':
+	case 'diamant':
 		echo '
 		<div id="barre_menu_armee">
 			<a id="header_ssmenu_attaquer"

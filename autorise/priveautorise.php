@@ -30,7 +30,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Armée
 'armee', 'attaquer', 'passerenrevue', 'engager', 'mesattaques', 
-'strategiedefensive', 'strategieoffensive',
+'strategiedefensive', 'strategieoffensive', 'diamant',
 
 //Archives
 'archives',
