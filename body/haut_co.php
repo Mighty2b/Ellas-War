@@ -87,17 +87,7 @@ echo '
 <section id="header_menu">
 &nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
 &nbsp;<a id="menu_armee" href="'._('passerenrevue').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
-&nbsp;<a id="menu_archives"
-         href="'._('archives').'" ';
-
-if($paquet->get_infoj('nb_histo') > 0) {
-	echo ' style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);" ';
-}
-
-echo '><div class="ssmenu">'.ucfirst(_('archives')).
-(($paquet->get_infoj('nb_histo') > 0)?' <span style="font-size:0.7em;">('.$paquet->get_infoj('nb_histo').')<span>':'').
-' </div>'.ucfirst(_('archives')).
-(($paquet->get_infoj('nb_histo') > 0)?' <span style="font-size:0.7em;">('.$paquet->get_infoj('nb_histo').')<span>':'').'</a>&nbsp;
+&nbsp;<a id="menu_archives" href="'._('archives').'"><div class="ssmenu">'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="';
 
 if($paquet->get_infoj('lvl') <= 1) {

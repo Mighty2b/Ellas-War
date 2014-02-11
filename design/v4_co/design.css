@@ -489,32 +489,32 @@ td.none {
 }
 
 #menu_cite {
-	margin-left:120px;
-	width:50px;
+	margin-left:125px;
 }
 
 #menu_armee {
-  width:80px;
+	margin-left:25px;
 }
 
 #menu_archives {
-	width:120px;
+	margin-left:25px;
 }
 
 #menu_mythologie {
-  width:120px;
+	margin-left:25px;
 }
 
 #menu_heros {
-  width:60px;
+	margin-left:25px;
 }
 
 #header_menu #menu_forum {
-	width:150px;
+	width:156px;
 	color:black;
 	font-weight:bold;
 	margin-top:-20px;
 	font-size:1.6em;
+	margin-left:2px;
 }
 
 #menu_forum .ssmenu {
@@ -522,19 +522,19 @@ td.none {
 }
 
 #menu_missions {
-  width:90px;
+	
 }
 
 #menu_alliance {
-  width:85px;
+	margin-left:23px;
 }
 
 #menu_commerce {
-  width:75px;
+	margin-left:23px;
 }
 
 #menu_jeux {
-  width:65px;
+	margin-left:23px;
 }
 
 /* 2nd menu */
