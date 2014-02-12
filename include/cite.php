@@ -434,29 +434,32 @@ echo '
 		else {
 			echo '<b>'.$tikets.'</b> '._('ticket restant');
 		}
-		echo '</a></td>
+		echo '</a>';
+	if($paquet->get_infoj('lvl') > 0) {
+	echo '
+		</td>
 		<td width="50%"><a href="'._('loto').'" class="mtitre">'._('Jouez au loto').'</a><br/>
 		<a href="'._('loto').'">'._('Un ticket gratuit par semaine !').'</a></td>
 		</tr>
 		<tr>
 		<td>';
-	if($paquet->get_infoj('lvl') > 1 or sizeof($btn) > 0) {
-		echo '<a href="'._('bataillesnavales').'" class="mtitre">'._('Batailles navales').'</a><br/>';
-		if(sizeof($btn) > 0) {
-			foreach($btn as $do) {
-				if(empty($do->titre)) {
-					$do->titre=_('Partie publique');
+		if($paquet->get_infoj('lvl') > 1 or sizeof($btn) > 0) {
+			echo '<a href="'._('bataillesnavales').'" class="mtitre">'._('Batailles navales').'</a><br/>';
+			if(sizeof($btn) > 0) {
+				foreach($btn as $do) {
+					if(empty($do->titre)) {
+						$do->titre=_('Partie publique');
+					}
+				
+					if(($do->places == 8) && ($do->temps < $paquet->get_infoj('timestamp'))) {
+						$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
+					}
+				
+					echo $do->titre.'<br/>';
 				}
-			
-				if(($do->places == 8) && ($do->temps < $paquet->get_infoj('timestamp'))) {
-					$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
-				}
-			
-				echo $do->titre.'<br/>';
 			}
 		}
 	}
-	
 	echo '</td>
 	<td><a href="'._('carremagique').'" class="mtitre">'._('Carré magique').'</a><br/>
 	<a href="'._('carremagique').'">'._('Aidez le jeu et remportez des faveurs !').'</a>

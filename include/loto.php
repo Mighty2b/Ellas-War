@@ -1,5 +1,9 @@
 <?php
 
+if($paquet->get_infoj('lvl') == 0) {
+	redirect();
+}
+
 $cagnotte       = $paquet->get_answer('info_loto')->{1};
 $nb_mes_tickets = $paquet->get_answer('info_loto')->{2};
 
