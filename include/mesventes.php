@@ -29,9 +29,11 @@ else {
 		}
 		else {
 			echo '<br/>
-			<div class="ligne centrer">' ._(
-"Taux de rachat des ressources : %s% (20.000 %s pour les %s)", (100-$taux), imress('drachme'), imress('faveur')).
-'</div><br/><br/>
+			<div class="ligne centrer">';
+			printf(_(
+"Taux de rachat des ressources : %s% (20.000 %s pour les %s)"), (100-$taux), imress('drachme'), imress('faveur'));
+
+echo '</div><br/><br/>
 			<table class="centrer_tableau">
 			<tr class=\'titre_tab centre\' >
 				<td>&nbsp;'._('Ressources').'&nbsp;</td>
