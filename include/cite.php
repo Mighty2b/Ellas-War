@@ -408,7 +408,8 @@ echo '
 	
 	if(!empty($archives)) {
 		foreach($archives as $details) {
-			echo '<div class="news"><a href="" class="titre_news">'.$details->titre.'</a></div>';
+			echo '<div class="news"><a href="'._('archives').'&ouvrir='.$details->id.'"
+			                           class="titre_news'.(empty($details->lu)?' dore':'').'">'.$details->titre.'</a></div>';
 		}
 	}
 	

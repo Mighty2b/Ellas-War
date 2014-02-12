@@ -93,8 +93,8 @@ else{
 			<div class="ligne">
 				<div class="gauche_historique">'.
 				display_date($val->timestamp,4).'</div>
-				<div class="droite_historique"
-				     onclick="javascript:voir_historique('.$val->id.');">'.
+				<div class="droite_historique'.(empty($val->lu)?' dore':'').'"
+				     onclick="javascript:voir_historique('.$val->id.', '.$val->lu.');">'.
 				$val->titre.'</div>
 			</div>
 			<div class="cache_historique"
@@ -118,16 +118,14 @@ echo '<script type="text/javascript">';
 if(!empty($_GET['ouvrir'])) {
 	echo '
 	$(function(){
-		$("#historique_num'.$_GET['ouvrir'].'").addClass("ouvert");
-	$("#historique_num'.$_GET['ouvrir'].'").show("slow");
-	voir_historique('.$_GET['ouvrir'].');
+		voir_historique('.$_GET['ouvrir'].', 0);
 	});';
 }
 
 echo '
-function voir_historique(id) {
+function voir_historique(id, lu) {
 
-var menu = $("#historique_num"+id);
+	var menu = $("#historique_num"+id);
 	
 	if(menu.hasClass("ouvert")) {
 		menu.hide("slow");
@@ -136,6 +134,15 @@ var menu = $("#historique_num"+id);
 	else {
 		menu.addClass("ouvert");
 		menu.show("slow");
+		
+		if(lu == 0) {
+			$.ajax({
+				type: "GET",
+				url: "form/archive_lire.php",
+				data: "id="+id,
+				success: function(msg){}
+			});
+		}
 	}
 }
 
