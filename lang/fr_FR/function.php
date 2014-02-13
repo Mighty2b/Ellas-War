@@ -1,7 +1,5 @@
 <?php
 
-date_default_timezone_set('Europe/Paris');
-
 function display_date($temps, $type=1) {
 	if($temps > 0)
 	switch($type) {
@@ -19,6 +17,11 @@ function display_date($temps, $type=1) {
 		case 4:
 			return 
 	    strftime('%A %d %B', $temps).' à '.
+	    strftime('%Hh %M', $temps);
+		break;
+		case 5:
+			return 
+	    strftime('%A %d %B', $temps).' '.
 	    strftime('%Hh %M', $temps);
 		break;
 	}

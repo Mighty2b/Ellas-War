@@ -92,7 +92,7 @@ else{
 		echo '<div class="ligne_historique">
 			<div class="ligne">
 				<div class="gauche_historique">'.
-				display_date($val->timestamp,4).'</div>
+				display_date($val->timestamp,5).'</div>
 				<div class="droite_historique'.(empty($val->lu)?' dore':'').'"
 				     onclick="javascript:voir_historique('.$val->id.', '.$val->lu.');">'.
 				$val->titre.'</div>
