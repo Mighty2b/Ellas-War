@@ -143,6 +143,8 @@ td.none {
   background-color:transparent;
   border:0px;
   box-shadow:0 0px 0 #000;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 /* General class*/
