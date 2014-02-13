@@ -26,14 +26,14 @@ elseif ($par == 'niveau') {
 	$writeniveau='<span class="jaune">'._('Niveau').'</span>';
 }
 elseif($par == 'pub') {
-	$writeppub='<span class="jaune">'._('Points publics').'</span>';
+	$writeppub='<span class="jaune">'._('Score publics').'</span>';
 }
 elseif($par == 'priv') {
-	$writeppriv='<span class="jaune">'._('Points privés').'</span>';
+	$writeppriv='<span class="jaune">'._('Score privés').'</span>';
 }
 else {
 	$par == 'total';
-	$writep='<span class="jaune">'._('Points').'</span>';
+	$writep='<span class="jaune">'._('Score général').'</span>';
 }
 
 echo '<h1>'._('Classement des batailles navales').'</h1>
@@ -89,10 +89,10 @@ echo '<table><thead>
 		<td>N°&nbsp;</td>
 		<td>'.$writepseudo.'</td>
 		<td>'.$writeniveau.'</td>
-		<td>'.$writep.'</td>
+		<td>'.$writealliance.'</td>
 		<td>'.$writeppub.'</td>
 		<td>'.$writeppriv.'</td>
-		<td>'.$writealliance.'</td>
+		<td>'.$writep.'</td>		
 	</tr></thead><tfoot></tfoot><tbody>';
 
 foreach($classement as $do) {
@@ -101,11 +101,7 @@ echo '<tr>
 <td class="droite">&nbsp;'.$i.'&nbsp;</td>
 <td class="gauche">&nbsp;<a href="'._('profilsjoueur').'-'.$do->id.'"
                             class="login_class">'.ucfirst($do->login).'</a>&nbsp;</td>
-<td class="centrer">&nbsp;'.($do->lvl).'&nbsp;</td>
-<td class="droite">&nbsp;'.nbf($do->total).'&nbsp;</td>
-<td class="centrer">&nbsp;'.nbf($do->pub).'&nbsp;</td>
-<td class="centrer">&nbsp;'.nbf($do->priv).'&nbsp;</td>';
-
+<td class="centrer">&nbsp;'.($do->lvl).'&nbsp;</td>';
 if(!empty($do->nom)) {
 	echo '<td>&nbsp;<a href="'._('profilsalliance').'-'.$do->alliance.'"
 	                   class="sans_soulign">'.ucfirst(stripslashes($do->nom)).'</a>&nbsp;</td>';
@@ -114,7 +110,9 @@ else {
 	echo '<td class="sans_soulign">&nbsp;Aucune&nbsp;</td>';
 }
 
-echo '</tr>';
+echo '<td class="centrer">&nbsp;'.nbf($do->pub).'&nbsp;</td>
+<td class="centrer">&nbsp;'.nbf($do->priv).'&nbsp;</td>
+<td class="centrer">&nbsp;'.nbf($do->total).'&nbsp;</td></tr>';
 
 	$i++;
 }
