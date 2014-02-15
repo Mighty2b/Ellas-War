@@ -228,6 +228,7 @@ switch($page) {
 	case 'profilsalliance':
 	case 'postuler':
 	case 'profilmonalliance':
+	case 'cotisations':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
