@@ -1,21 +1,5 @@
 <?php
 
-$mon_alliance  = $paquet->get_infoj('alliance');
-$liste_membres = $paquet->get_answer('infoalliance')->{1};
-$liste_guerres = $paquet->get_answer('infoalliance')->{2};
-$liste_pactes  = $paquet->get_answer('infoalliance')->{3};
-$liste_attente = $paquet->get_answer('infoalliance')->{4};
-$sortie        = $paquet->get_answer('infoalliance')->{5};
-$demande_ress  = $paquet->get_answer('infoalliance')->{6};
-$depart_urgent = $paquet->get_infoj('depart_urgent');
-
-if(is_array($liste_guerres) && sizeof($liste_guerres) > 0) {
-	$nombre_guerres = sizeof($liste_guerres);
-}
-else {
-	$nombre_guerres = 0;
-}
-
 include('include/menu_monalliance.php');
 
 echo '

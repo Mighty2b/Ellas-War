@@ -47,7 +47,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Alliance
 'alliance', 'lesalliances', 'creervotrealliance', 'membrealliance',
-'profilsalliance', 'postuler',
+'profilsalliance', 'postuler', 'profilmonalliance',
 
 //Marché
 'commerce', 'donnerunefaveur', 'faveurs', 'vendre', 'licences', 'mesventes',
