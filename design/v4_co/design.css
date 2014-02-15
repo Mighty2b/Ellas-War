@@ -1615,3 +1615,17 @@ select {
   margin-left:25px;
   cursor : pointer;
 }
+
+/* cotisations */
+#menu_affaires {
+    float: left;
+    width: 200px;
+    margin-left:20px;
+}
+
+#corps_affaires {
+    width:600px;
+    margin: auto;
+    text-align: center;
+    float:right;
+}
