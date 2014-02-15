@@ -35,6 +35,14 @@ switch($paquet->get_infoj('statu')) {
 		include('autorise/priveautorise.php');
 		$prefix = 'co';
 	break;
+	case 2:
+		include('autorise/manqueautorise.php');
+		$prefix = 'deco';
+	break;
+	case 3:
+		include('autorise/pauseautorise.php');
+		$prefix = 'deco';
+	break;
 	case 0:
 		include('autorise/pubautorise.php');
 		$prefix = 'deco';
