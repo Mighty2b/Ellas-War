@@ -232,6 +232,7 @@ switch($page) {
 	case 'coffre':
 	case 'demande':
 	case 'nommer':
+	case 'recrutements':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
