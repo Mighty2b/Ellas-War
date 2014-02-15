@@ -13,7 +13,7 @@ $largeur = 4;
 
 foreach($liste_unites as $value) {
 	if(($value -> attaque > 0) && ($value -> nb > 0)) {
-		$liste .= $value -> nb.' '.$unites[$value->nom2]['nom'].'<br/>';
+		$liste .= nbf($value -> nb).' '.$unites[$value->nom2]['nom'].'<br/>';
 		$tab[] = $value->nom2;
 	}
 }
