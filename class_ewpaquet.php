@@ -215,11 +215,11 @@ class Ewpaquet {
   }
   
   function is_active_bonus_xp() {
-  	if(!empty($this->reponse->joueur->bonus->xp) && 
-  	   $this->reponse->joueur->bonus->xp > $this->reponse->joueur->timestamp) {
+  	if(!empty($this->joueur->bonus->xp) && 
+  	   $this->joueur->bonus->xp > $this->joueur->timestamp) {
   		echo '<div class="erreur centrer">';
   		printf(_("Appui d'Éros actif jusqu'au %").
-  		       display_date($this->reponse->joueur->bonus->xp,4));
+  		       display_date($this->joueur->bonus->xp,4));
 			echo '<br/></div>';
   	}
   }
@@ -274,6 +274,25 @@ class Ewpaquet {
 		}
 	}
 	
+  /***
+  * Possibilité de transmettre au moins un pouvoir
+  ***/
+	function possible_transmettre() {
+		if(($this->joueur->droits_alliance->changer_cotise == 2) or 
+		   ($this->joueur->droits_alliance->pacte == 2) or 
+		   ($this->joueur->droits_alliance->declarer_guerre == 2) or 
+		   ($this->joueur->droits_alliance->annuler_guerre == 2) or 
+		   ($this->joueur->droits_alliance->accepter_joueur == 2) or 
+		   ($this->joueur->droits_alliance->recrutement == 2) or 
+		   ($this->joueur->droits_alliance->contrat == 2) or 
+		   ($this->joueur->droits_alliance->accepter_demande == 2) or 
+		   ($this->joueur->droits_alliance->modifier_profils == 2)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
 }
 
 ?>
