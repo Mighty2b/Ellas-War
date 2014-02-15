@@ -85,8 +85,8 @@ echo '</div>';
 echo '
 </section>
 <section id="header_menu">
-&nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div>'._('Cité').'</a>&nbsp;
-&nbsp;<a id="menu_armee" href="'._('passerenrevue').'"><div class="ssmenu">'._('Armée').'</div>'._('Armée').'</a>&nbsp;
+&nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div></a>&nbsp;
+&nbsp;<a id="menu_armee" href="'._('passerenrevue').'"><div class="ssmenu">'._('Armée').'</div></a>&nbsp;
 &nbsp;<a id="menu_archives" href="'._('archives').'"';
 
 if($paquet->get_infoj('nb_histo') > 0) {
@@ -95,7 +95,7 @@ if($paquet->get_infoj('nb_histo') > 0) {
 	                _('archives en attente').'"';
 }
 
-echo '><div class="ssmenu" >'.ucfirst(_('archives')).'</div>'.ucfirst(_('archives')).'</a>&nbsp;
+echo '><div class="ssmenu" >'.ucfirst(_('archives')).'</div></a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="';
 
 if($paquet->get_infoj('lvl') <= 1) {
@@ -105,10 +105,10 @@ else {
 	echo _('temples');
 }
 
-echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div>'.ucfirst(_('mythologie')).'</a>&nbsp;
-&nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div>'.ucfirst(_('heros')).'</a>&nbsp;
-&nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div>'.ucfirst(_('forum')).'</a>&nbsp;
-&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div>'.ucfirst(_('missions')).'</a>&nbsp;
+echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div></a>&nbsp;
+&nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div></a>&nbsp;
+&nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div></a>&nbsp;
+&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div></a>&nbsp;
 &nbsp;<a id="menu_alliance" href="';
 
 if(empty($paquet->get_infoj('alliance'))) {
@@ -118,13 +118,13 @@ else {
 	echo _('alliance');
 }
 
-echo '"><div class="ssmenu">'.ucfirst(_('alliance')).'</div>'.ucfirst(_('alliance')).'</a>&nbsp;';
+echo '"><div class="ssmenu">'.ucfirst(_('alliance')).'</div></a>&nbsp;';
 
 if($paquet->get_infoj('lvl') > 0) {
-	echo '&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div>'._('Marché').'</a>&nbsp;';
+	echo '&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div></a>&nbsp;';
 }
 
-echo '&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div>'.ucfirst(_('jeux')).'</a>&nbsp;
+echo '&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div></a>&nbsp;
 </section>
 
 <section id="inside_co">

@@ -3,20 +3,20 @@
 echo '<section id="banniere"></section>
 <nav id="menu">
 	<a id="nousrejoindre"
-	   href="'._('sinscrire').'"><div class="ssmenu">'._('Nous rejoindre').'</div>'._('Nous rejoindre').'</a>
+	   href="'._('sinscrire').'"><div class="ssmenu">'._('Nous rejoindre').'</div></a>
 	<a id="decouvrirjeu"
-	   href="'._('decouvertedujeu').'"><div class="ssmenu">'._('Découvrir le jeu').'</div>'._('Découvrir le jeu').'</a>
+	   href="'._('decouvertedujeu').'"><div class="ssmenu">'._('Découvrir le jeu').'</div></a>
 	<a id="faq"
-	   href="'.WIKI_URL.'"><div class="ssmenu">'._('Faq').'</div>'._('Faq').'</a>
+	   href="'.WIKI_URL.'"><div class="ssmenu">'._('Faq').'</div></a>
 	<a id="accueil"
-	   href="/"><div class="ssmenu">'._('Accueil').'</div>'._('Accueil').'</a>
+	   href="/"><div class="ssmenu">'._('Accueil').'</div></a>
 	<a id="forum"
 	   target="_blank"
-	   href="'.FORUM_URL.'"><div class="ssmenu">'._('Forum').'</div>'._('Forum').'</a>
+	   href="'.FORUM_URL.'"><div class="ssmenu">'._('Forum').'</div></a>
 	<a id="partenaires"
-	   href="'._('partenaires').'"><div class="ssmenu">'._('Partenariats').'</div>'._('Partenaires').'</a>
+	   href="'._('partenaires').'"><div class="ssmenu">'._('Partenariats').'</div></a>
 	<a id="contact"
-	   href="'._('nouscontacter').'"><div class="ssmenu">'._('Contact').'</div>'._('Contact').'</a>
+	   href="'._('nouscontacter').'"><div class="ssmenu">'._('Contact').'</div></a>
 </nav>
 <section id="home">
 	<section id="home_int">

@@ -547,9 +547,8 @@ footer nav a {
 #menu .ssmenu {
 	width:100%;
 	margin: 1px 0 0 1px;
-	position:absolute;
 	color:#21160a;
-	float:none;
+	text-shadow: -1px -1px 0px #FFF;
 }
 
 #sinscrire img {
