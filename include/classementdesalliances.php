@@ -103,19 +103,28 @@ echo '</div>
 	<tr>
 <td>&nbsp;N°&nbsp;</td>
 <td>&nbsp;'.$page_nom.'&nbsp;</td>
-<td>&nbsp;'.$page_chef.'&nbsp;</td>
-<td>&nbsp;'.$page_mbs.'&nbsp;</td>
-<td>&nbsp;'.$page_lvl.'&nbsp;</td>
+<td>&nbsp;'.$page_chef.'&nbsp;</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+	echo '<td>&nbsp;'.$page_mbs.'&nbsp;</td>';
+}
+
+echo '<td>&nbsp;'.$page_lvl.'&nbsp;</td>
 <td>&nbsp;'.$page_xp.'&nbsp;</td>
-<td>&nbsp;'.$page_vic.'&nbsp;</td>
-<td>&nbsp;'.$page_def.'&nbsp;</td>
+<td>&nbsp;'.$page_vic.'&nbsp;</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+echo '<td>&nbsp;'.$page_def.'&nbsp;</td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees7"><img src="images/alliance/mini-laurier.png" alt="'._('Trophée du conflit titanesque').'" title="'._('Trophée du conflit titanesque').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees6"><img src="images/alliance/mini-laurier-argent.png" alt="'._('Trophée de l\'archarnement divin').'" title="'._('Trophée de l\'archarnement divin').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees5"><img src="images/alliance/mini-laurier-bronze.png" alt="'._('Trophée de l\'honneur destructeur').'" title="'._('Trophée de l\'honneur destructeur').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees4"><img src="images/alliance/mini-laurier-vert.png" alt="'._('Trophée de la cruauté').'" title="'._('Trophée de la cruauté').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees3"><img src="images/alliance/mini-laurier-bleu.png" alt="'._('Trophée de la loyauté').'" title="'._('Trophée de la loyauté').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees2"><img src="images/alliance/mini-laurier-noir.png" alt="'._('Trophée de l\'orgueil naïf').'" title="'._('Trophée de l\'orgueil naïf').'" /></a></td>
-<td valign="middle"><a href="'._('classementdesalliances').'-1-trophees1"><img src="images/alliance/mini-laurier-indigo.png" alt="'._('Trophée du massacre incompréhensible').'" title="'._('Trophée du massacre incompréhensible').'" /></a></td>
+<td valign="middle"><a href="'._('classementdesalliances').'-1-trophees1"><img src="images/alliance/mini-laurier-indigo.png" alt="'._('Trophée du massacre incompréhensible').'" title="'._('Trophée du massacre incompréhensible').'" /></a></td>';
+}
+
+echo '
 </tr></thead><tfoot></tfoot><tbody>';
 
 foreach($classement as $donnees) {
@@ -123,22 +132,29 @@ foreach($classement as $donnees) {
 echo'<tr>
 	<td class="droite">&nbsp;'.$i.'&nbsp;</td>
 	<td class="gauche">&nbsp;<a href="'._('profilsalliance').'-'.$donnees->id.'" class="login_class">'.stripslashes($donnees->nom).'</a></td>
-	<td>&nbsp;<a href=\''._('profilsjoueur').'-'.$donnees->chef.'\' class="sans_soulign">'.$donnees->login.'</a></td>
-	<td class="centrer">&nbsp;'.$donnees->nbmembre.'</td>
-	<td class="centrer">&nbsp;'.$donnees->level.'</td>
+	<td>&nbsp;<a href=\''._('profilsjoueur').'-'.$donnees->chef.'\' class="sans_soulign">'.$donnees->login.'</a></td>';
+
+if($paquet->get_infoj('statu') == 1) {
+	echo '<td class="centrer">&nbsp;'.$donnees->nbmembre.'</td>';
+}
+
+echo '<td class="centrer">&nbsp;'.$donnees->level.'</td>
 	<td>&nbsp;'.nbf(round($donnees->xp)).'</td>
-	<td class="centrer">&nbsp;'.$donnees->victoires.'</td>
-	<td class="centrer">&nbsp;'.$donnees->defaites.'</td>
+	<td class="centrer">&nbsp;'.$donnees->victoires.'</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+echo '<td class="centrer">&nbsp;'.$donnees->defaites.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees7.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees6.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees5.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees4.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees3.'</td>
 	<td class="centrer">&nbsp;'.$donnees->trophees2.'</td>
-	<td class="centrer">&nbsp;'.$donnees->trophees1.'</td>
-	</tr>';
-	
-	$i++;
+	<td class="centrer">&nbsp;'.$donnees->trophees1.'</td>';
+}
+
+echo '</tr>';
+
 }
 echo'</tbody></table><br/>
 </div>

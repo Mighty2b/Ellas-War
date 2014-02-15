@@ -22,7 +22,7 @@ echo '<section id="banniere"></section>
 	<section id="home_int">
 		<section id="formulaire">
 		
-			<article id="inscription">
+			<div id="inscription">
 			<h2>'._('Inscription').'</h2>';
 			
 			if($paquet->get_answer('inscription') != '') {
@@ -61,8 +61,8 @@ echo '<section id="banniere"></section>
 				                                     value="<?php echo _('S\'inscrire'); ?>" /></div>
 			</form>
 			<br/>
-			</article>
-			<article id="reseaux_sociaux">
+			</div>
+			<div id="reseaux_sociaux">
 <a href="<?php echo FACEBOOK; ?>" 
    target="_blank"><img src="images/logo/facebook.png" 
                         height="36" width="36"
@@ -81,8 +81,8 @@ echo '<section id="banniere"></section>
                         title="<?php echo _('Mighty sur Github'); ?>" 
                         alt="<?php echo _('Mighty sur Github'); ?>"></a>
 		
-			</article>
-			<article id="connexion">
+			</div>
+			<div id="connexion">
 				<h2><?php echo _('Connexion'); ?></h2>
 				<?php
 					if($paquet->get_answer('connexion') != '') {
@@ -112,7 +112,6 @@ echo '<section id="banniere"></section>
 					                                     value="<?php echo _('Entrer'); ?>" /></div>
 				</form>
 				<br/>
-			</article>
+			</div>
 		</section>
 		<section id="inside">
-			<article>

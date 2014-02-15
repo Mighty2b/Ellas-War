@@ -5,7 +5,7 @@ echo '
 <h1>'._('Ellàs War, un jeu gratuit').'</h1>
 <br/>
 <h2>'._('Financement du jeu').'</h2>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Le jeu est gratuit mais l\'équipe se doit de financer ses besoins. '.
 'En effet les serveurs et les noms de domaine ne sont pas gratuit. '.
 'Pour cela nous avons mis en place un système de Faveur, l\'achat '.
@@ -18,7 +18,7 @@ echo '
 '<br/><br/></div>
 
 <h2>'._('Fonctionnement des Faveurs').'</h2>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Lors d\'un achat via le système de paiement, votre compte se voit crédité '.
 'une ou plusieurs faveurs. Celles-ci vous permettront d\'obtenir des bonus '.
 'dans le jeu. Afin de ne pas trop désavantager ceux qui ne prennent pas '.
@@ -32,13 +32,13 @@ echo '
 else {
 echo '<h1>'._('Mettez en place votre stratégie').'</h1>
 <br/>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Ellàs War est un jeu de stratégie en ligne. '.
 'Nous allons maintenant voir rapidement les principaux points stratégiques du jeu.'
 ).'<br/><br/></div>
 
 <h2>'._('Vénérez les dieux').'</h2>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Régulièrement vous aurez la possibilité de bâtir un temple dans votre cité. '.
 'Il y a en tous 11 temples disponibles, malheureusement pour vous, '.
 'vous ne pourrez en construire que 4. Ces temples sont déterminants pour '.
@@ -47,7 +47,7 @@ echo '<h1>'._('Mettez en place votre stratégie').'</h1>
 '<br/><br/></div>
 
 <h2>'._('Faites varier votre terrain').'</h2>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Sauf cas exceptionnels, vos possibilités d\'attaque ou d\'être attaqué, '.
 'sont déterminées par votre terrain. En faisant varier celui-ci tout en '.
 'renforçant votre défense vous pourrez vous adapter à vos ennemis.').
@@ -55,7 +55,7 @@ echo '<h1>'._('Mettez en place votre stratégie').'</h1>
 
 
 <h2>'._('Choisissez vos unités').'</h2>
-<div class="ligne ligne80 justify">'._(
+<div class="ligne justify">'._(
 'Chaque unité possède des caractéristiques uniques. '.
 'Elles vous permettront de mener à bien vos conquêtes ou d\'assurer '.
 'la défense de votre cité. Celles-ci peuvent être mythologiques ou humaines, '.

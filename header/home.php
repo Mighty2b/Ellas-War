@@ -7,7 +7,7 @@ echo '<meta name="description" content="'._('Bienvenue sur Ellás War.
       Construisez votre cité et votre armée pour devenir le maître de toute une civilisation.').
       '" />';
 
-$paquet -> add_action('get_news', array(2));
+$paquet -> add_action('get_news', array(5));
 
 if(!empty($_POST['ilogin']) && !empty($_POST['ipass']) && !empty($_POST['iemail'])) {
 	$paquet -> add_action('inscription',

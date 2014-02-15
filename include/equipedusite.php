@@ -1,7 +1,7 @@
 <?php
 
 echo '<h1>'._('L\'équipe d\'Ellàs War').'</h1>
-<br/><div class="ligne ligne80 justify">'._(
+<br/><div class="ligne justify">'._(
 'Si vous pensez avoir les qualités requises pour rejoindre l\'équipe '.
 'n\'hésitez pas à <a href="nouscontacter">nous contacter</a>. '.
 'Vous pouvez le faire soit en utilisant <a href="'.FORUM_URL.'">notre forum</a>, '.

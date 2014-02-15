@@ -7,22 +7,21 @@
 
 <div id="home_description_1" class="visible">
 
-<div class="ligne"><h2>'._('Déployez votre stratégie').'</h2></div>
-
 <div class="home_description_left">
 <img src="lang/'.LANG.'/images/screen/mini_strategie.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
      width="120" height="113" >
 <br/>
-<div class="ligne_50 centrer cursor gras"
+<div class="ligne_50 ligne200 centrer cursor gras"
      onclick="display_cadre(4)">&larr;</div>
-<div class="ligne_50 centrer cursor gras"
+<div class="ligne_50 ligne200 centrer cursor gras"
      onclick="display_cadre(2)">&rarr;</div>
 </div>
 
 <div class="home_description_right">
-<div class="home_description_right_inner">'.
+<div class="home_description_right_inner">
+<h2>'._('Déployez votre stratégie').'</h2><br/>'.
 _('Prenez la tête d\'une <b>cité</b> au milieu d\'une <b>Grèce</b> à feu et à sang. '.
 'Enrôlez des hommes et construisez des défenses. '.
 'Engagez des forces, faites vos propres <b>stratégies</b> et '.

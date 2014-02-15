@@ -9,13 +9,13 @@ if($paquet->get_answer('nouscontacter') != '') {
 	}
 }
 
-echo '<div class="ligne ligne80 justify"><br/>'._(
+echo '<div class="ligne justify"><br/>'._(
 'Laissez nous un message et nous vous recontacterons par e-mail ou via la '.
 'messagerie du jeu.<br/>Le temps de réponse est de 24h à une semaine mais nous '.
 'faisons notre maximum pour traiter les demandes au plus vite.').
 '<br/><br/></div>
 
-<div id="nouscontacter" class="ligne80">
+<div id="nouscontacter">
 <form method="post" action="#">
 <div id="nouscontacter_gauche">
 
