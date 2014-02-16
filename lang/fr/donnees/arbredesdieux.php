@@ -95,7 +95,7 @@ $txt_arbredesdieux = array(
   ),
   17 => array(
     'titre' => 'Cachette secrète', 
-    'txt' => 'Si un de vos lot est acheté alors que vous n\'êtes pas connecté, 
+    'txt' => 'Si un de vos lot est acheté alors que vous êtes déconnecté, 
     					20% des gains obtenu via votre premier lot vendu sur le 
     					commerce seront protégés des attaques par niveau'
   ),
@@ -122,7 +122,7 @@ $txt_arbredesdieux = array(
   23 => array(
     'titre' => 'Cachette améliorée', 
     'txt' => 'Le pouvoir précédent protège maintenant le lot le plus cher 
-    					vendu en votre absence.'
+    					vendu alors que vous êtes déconnecté.'
   ),
   24 => array(
     'titre' => 'Piège de cristal', 
