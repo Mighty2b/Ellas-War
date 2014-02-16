@@ -235,6 +235,7 @@ switch($page) {
 	case 'recrutements':
 	case 'pactes':
 	case 'guerres':
+	case 'archives_alliance':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
