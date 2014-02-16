@@ -98,7 +98,8 @@ echo '
 	
 	if($conditions->ses >0) {
 		echo '<li>';
-		if($actu->ses < $conditions->ses) {
+		if($actu->ses < $conditions->ses or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->ses).' '.imress('drachme').'</font>';
 		}
 		else {
@@ -115,7 +116,8 @@ echo '
 	
 	if($conditions->fer >0) {
 		echo '<li>';
-		if($actu->fer < $conditions->fer) {
+		if($actu->fer < $conditions->fer or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->fer).' '.imress('fer').'</font>';
 		}
 		else {
@@ -132,7 +134,8 @@ echo '
 	
 	if($conditions->arg >0) {
 		echo '<li>';
-		if($actu->arg < $conditions->arg) {
+		if($actu->arg < $conditions->arg or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->arg).' '.imress('argent').'</font>';
 		}
 		else {
@@ -149,7 +152,8 @@ echo '
 	
 	if($conditions->gol >0) {
 		echo '<li>';
-		if($actu->gol < $conditions->gol) {
+		if($actu->gol < $conditions->gol or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->gol).' '.imress('gold').'</font>';
 		}
 		else {
@@ -166,7 +170,8 @@ echo '
 	
 	if($conditions->boi >0) {
 		echo '<li>';
-		if($actu->boi < $conditions->boi) {
+		if($actu->boi < $conditions->boi or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->boi).' '.imress('bois').'</font>';
 		}
 		else {
@@ -183,7 +188,8 @@ echo '
 	
 	if($conditions->pie >0) {
 		echo '<li>';
-		if($actu->pie < $conditions->pie) {
+		if($actu->pie < $conditions->pie or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->pie).' '.imress('pierre').'</font>';
 		}
 		else {
@@ -200,7 +206,8 @@ echo '
 	
 	if($conditions->mar >0) {
 		echo '<li>';
-		if($actu->mar < $conditions->mar) {
+		if($actu->mar < $conditions->mar or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->mar).' '.imress('marbre').'</font>';
 		}
 		else {
@@ -217,7 +224,8 @@ echo '
 	
 	if($conditions->nou >0) {
 		echo '<li>';
-		if($actu->nou < $conditions->nou) {
+		if($actu->nou < $conditions->nou or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->nou).' '.imress('nourriture').'</font>';
 		}
 		else {
@@ -234,7 +242,8 @@ echo '
 	
 	if($conditions->eau >0) {
 		echo '<li>';
-		if($actu->eau < $conditions->eau) {
+		if($actu->eau < $conditions->eau or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->eau).' '.imress('eau').'</font>';
 		}
 		else {
@@ -251,7 +260,8 @@ echo '
 	
 	if($conditions->rai >0) {
 		echo '<li>';
-		if($actu->rai < $conditions->rai) {
+		if($actu->rai < $conditions->rai or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->rai).' '.imress('raisin').'</font>';
 		}
 		else {
@@ -268,7 +278,8 @@ echo '
 	
 	if($conditions->vin >0) {
 		echo '<li>';
-		if($actu->vin < $conditions->vin) {
+		if($actu->vin < $conditions->vin or 
+		   $paquet->get_infoj('droits_alliance')->voir_coffre == 0) {
 			echo '<font color="red">'.nbf($conditions->vin).' '.imress('vin').'</font>';
 		}
 		else {
