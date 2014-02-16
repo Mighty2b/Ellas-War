@@ -237,6 +237,7 @@ switch($page) {
 	case 'guerres':
 	case 'archives_alliance':
 	case 'dissoudre':
+	case 'niveau':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	

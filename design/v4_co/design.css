@@ -518,11 +518,11 @@ td.none {
 	margin-top:-20px;
 	font-size:1.6em;
 	margin-left:2px;
-  text-shadow: -1px -1px 0px #FFF;
 }
 
 #menu_forum .ssmenu {
 	color:#ffff00;
+  text-shadow: -1px -1px 0px #FFF;
 }
 
 #menu_missions {
