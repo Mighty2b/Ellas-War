@@ -33,7 +33,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'strategiedefensive', 'strategieoffensive', 'diamant',
 
 //Archives
-'archives',
+'archives', 'permalien',
 
 //Mythologie
 'mythologie', 'arbredesdieux', 'auteldesdieux', 'temples', 'statues', 

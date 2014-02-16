@@ -183,6 +183,7 @@ switch($page) {
 	break;
 	
 	case 'archives':
+	case 'permalien':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 

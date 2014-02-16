@@ -24,6 +24,11 @@ function display_date($temps, $type=1) {
 	    strftime('%A %d %B', $temps).' '.
 	    strftime('%Hh %M', $temps);
 		break;
+		case 6:
+			return ' du '.
+	    strftime('%A %d %B', $temps).' à '.
+	    strftime('%Hh %M', $temps);
+	  break;
 	}
 }
 

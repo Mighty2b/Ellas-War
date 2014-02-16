@@ -6,6 +6,6 @@ $autorise = array(
 	'conditionsgeneralesutilisation', 'communaute', 'joueursconnectes',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
-	'sinscrire', 'profilsjoueur');
+	'sinscrire', 'profilsjoueur', 'permalien');
 
 ?>
