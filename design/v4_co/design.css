@@ -1596,7 +1596,7 @@ select {
 #tableau_historique {
   position:relative;
   float:left;
-  width:600px;
+  width:610px;
   margin-left:120px;
   margin-top:20px;
 }
@@ -1604,7 +1604,7 @@ select {
 .gauche_historique {
   position:relative;
   float:left;
-  width:120px;
+  width:130px;
 }
 
 .droite_historique {
