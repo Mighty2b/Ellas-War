@@ -88,15 +88,17 @@ else {
 					 }
 
 			if($mon_alliance->id_chef == $paquet->get_infoj('id')) {
-				if($droits->id == $paquet->get_infoj('sous_chef'))
+				if($droits->id == $mon_alliance->sous_chef) {
 					echo '<input type="checkbox"
 					             name="sous_chef" 
 					             checked="checked" 
 					             id="second"/> <b>'._('Second').'</b><br/>';
-				else
+				}
+				else {
 					echo '<input type="checkbox"
 					             name="sous_chef" 
 					             id="second" /> <b>'._('Second').'</b><br/>';
+				}
 			}
 
 		$taille_tableau = sizeof($tableau_droit);
@@ -114,17 +116,17 @@ $droits_alliance = $paquet->get_infoj('droits_alliance');
 				if(($droits_alliance->$tableau_droit[$i] == 2) or 
 					 ($mon_alliance->id_chef == $paquet->get_infoj('id'))) {
 					if(!empty($droits->$tableau_droit[$i]) && $droits->$tableau_droit[$i] == 2)
-						echo '<tr><td class="gauche">'.img('images/1/'.($i+1).'.png', $nom_droit[$i]).img('images/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
+						echo '<tr><td class="gauche">'.img('images/alliance/1/'.($i+1).'.png', $nom_droit[$i]).img('images/alliance/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="1" class="tableau_droits" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="2" class="tableau_droits" checked="checked" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="0" class="tableau_droits" /></td></tr>';
 					elseif(!empty($droits->$tableau_droit[$i]) && $droits->$tableau_droit[$i] == 1)
-						echo '<tr><td class="gauche">'.img('images/1/'.($i+1).'.png', $nom_droit[$i]).img('images/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
+						echo '<tr><td class="gauche">'.img('images/alliance/1/'.($i+1).'.png', $nom_droit[$i]).img('images/alliance/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="1" class="tableau_droits" checked="checked" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="2" class="tableau_droits" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="0" class="tableau_droits" /></td></tr>';
 					elseif(empty($droits->$tableau_droit[$i]))
-						echo '<tr><td class="gauche">'.img('images/1/'.($i+1).'.png', $nom_droit[$i]).img('images/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
+						echo '<tr><td class="gauche">'.img('images/alliance/1/'.($i+1).'.png', $nom_droit[$i]).img('images/alliance/2/'.($i+1).'.png', $nom_droit[$i]).' '.$nom_droit[$i].'</td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="1" class="tableau_droits" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="2" class="tableau_droits" /></td>
 <td><input type="radio" name="'.$tableau_droit[$i].'" value="0" class="tableau_droits" checked="checked" /></td></tr>';
