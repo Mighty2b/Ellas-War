@@ -162,11 +162,6 @@ if($mon_alliance -> level >= 2) {
 }
 
 echo '&nbsp;
-<a href="'._('sanctuaires').'"><img src="images/alliance/monstres.gif"
-                                    alt="'._('Sanctuaires').'" 
-                                    title="'._('Sanctuaires').'" /></a>
-&nbsp;
-&nbsp;
 <a href="'._('archives_alliance').'"><img src="images/alliance/archives.png" 
                                           alt="'._('Archives').'" 
                                           title="'._('Archives').'" /></a>
