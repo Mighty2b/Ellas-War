@@ -102,10 +102,13 @@ echo '
 echo '</tbody></table>
 
 	<table class="none">
-		<tr>
-			<td class="centrer"
-			    width="50%"><h2>'._('Coffre de l\'alliance').'</h2></td>';
-
+		<tr>';
+		
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo '<td class="centrer"
+			          width="50%"><h2>'._('Coffre de l\'alliance').'</h2></td>';
+		}
+		
 		if($nombre_guerres > 0) {
 			echo '<td class="centrer" width="50%">
 			      <h2>'._('Guerres en cours').'</h2></td>';
@@ -120,7 +123,7 @@ echo '</tr>
 			<td>
 <table class="none">
 	<tr><td>';
-
+	if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
 		echo imress('drachme').' </td>
 <td class="droite"> '.nbf($mon_alliance -> drachme).'</td></tr>
 <tr><td>'.imress('nourriture').' </td>
@@ -145,7 +148,8 @@ echo '</tr>
 <td class="droite"> '.nbf($mon_alliance -> gold).'</td></tr>
 </table>
 			</td>';
-
+	}
+	
 if($nombre_guerres > 0 && !empty($liste_guerres)) {
 	echo '<td valign="top"><table class="none">';
 
