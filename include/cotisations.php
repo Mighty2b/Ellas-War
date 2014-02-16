@@ -47,7 +47,7 @@ Cotisation volontaire :
 imress('drachme').' '._('gagnés').' ('._('max').' : 25%)</div>
 <br/><br/>
 <div class="bouton_classique"><input type="submit"
-			 name="'._('Changer').'" value="'._('Changer').'" /></div></p></form>
+			 name="'._('Changer').'" value="'._('Changer').'" /></div></div></form>
 <form action="Cotisations" method="post">';
 }
 
@@ -202,67 +202,115 @@ if($mon_alliance->level >= 4) {
 echo '<table>
 	<thead><tr>
 	<td>'._('Ressource').'</td>
-<td>'._('Quantité').'</td>
-<td>'._('Maximum').'</td>
-<td>'._('Stocks').'</td></tr></thead>
+<td>'._('Cotisation').'</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td>'._('Stocks').'</td>';
+}
+
+echo '</tr></thead>
 <tfoot></tfoot><tbody>
 <tr align="center">
 	<td class="centrer">'.imress('drachme').'</td>
-<td>&nbsp;'.nbf($do -> drachme).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->drachme).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> drachme).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->drachme).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('nourriture').'</td>
-<td>&nbsp;'.nbf($do -> nourriture).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->nourriture).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> nourriture).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->nourriture).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('eau').'</td>
-<td>&nbsp;'.nbf($do -> eau).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->eau).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> eau).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->eau).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('bois').'</td>
-<td>&nbsp;'.nbf($do -> bois).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->bois).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> bois).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->bois).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('fer').'</td>
-<td>&nbsp;'.nbf($do -> fer).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->fer).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> fer).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->fer).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('argent').'</td>
-<td>&nbsp;'.nbf($do -> argent).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->argent).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> argent).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->argent).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('pierre').'</td>
-<td>&nbsp;'.nbf($do -> pierre).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->pierre).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> pierre).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->pierre).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('marbre').'</td>
-<td>&nbsp;'.nbf($do -> marbre).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->marbre).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> marbre).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->marbre).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('raisin').'</td>
-<td>&nbsp;'.nbf($do -> raisin).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->raisin).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> raisin).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->raisin).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('vin').'</td>
-<td>&nbsp;'.nbf($do -> vin).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->vin).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> vin).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->vin).'&nbsp;</td>';
+}
+
+echo '</tr>
 <tr class="centrer">
 	<td class="centrer">'.imress('or').'</td>
-<td>&nbsp;'.nbf($do -> gold).'&nbsp;</td>
-<td>&nbsp;'.nbf($mon_alliance->gold).'&nbsp;</td>
-</tr>
+<td>&nbsp;'.nbf($do -> gold).'&nbsp;</td>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '<td class="droite">&nbsp;'.nbf($mon_alliance->gold).'&nbsp;</td>';
+}
+
+echo '</tr>
 </tbody>
-</table>';
+</table></div>';
 }
 
 if($paquet->get_infoj('droits_alliance')->changer_cotise != 0 or $mon_alliance->level >= 4) {

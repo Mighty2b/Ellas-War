@@ -2,6 +2,7 @@
 
 include('include/menu_monalliance.php');
 
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
 echo '<div id=\'menu_affaires\'
            class="gauche">
 <h1>'._('Stocks').'</h1><br/>
@@ -30,7 +31,14 @@ echo '<div id=\'menu_affaires\'
 <td class="droite"> '.nbf($mon_alliance->gold).'</td></tr>
 </table>
 </div>
-<div id=\'corps_affaires\'><center>';
+<div id=\'corps_affaires\'>';
+
+}
+else {
+	echo '<div class="ligne">';
+}
+
+echo '<center>';
 
 echo '<h1>'._('Demander').'</h1><br/>
 <form action=\'Coffre\' method=\'post\' >

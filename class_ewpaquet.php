@@ -286,7 +286,8 @@ class Ewpaquet {
 		   ($this->joueur->droits_alliance->recrutement == 2) or 
 		   ($this->joueur->droits_alliance->contrat == 2) or 
 		   ($this->joueur->droits_alliance->accepter_demande == 2) or 
-		   ($this->joueur->droits_alliance->modifier_profils == 2)) {
+		   ($this->joueur->droits_alliance->modifier_profils == 2) or
+		   ($this->joueur->droits_alliance->voir_coffre == 2)) {
 			return true;
 		}
 		else {

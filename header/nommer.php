@@ -25,6 +25,7 @@ if(!empty($_GET['var1']) && is_numeric($_GET['var1'])) {
 		$recrutement=@abs(round(addslashes(trim(htmlentities($_POST['recrutement'])))));
 		$contrat=@abs(round(addslashes(trim(htmlentities($_POST['contrat'])))));
 		$accepter_demande=@abs(round(addslashes(trim(htmlentities($_POST['accepter_demande'])))));
+		$voir_coffre=@abs(round(addslashes(trim(htmlentities($_POST['voir_coffre'])))));
 
 		$info = array(
 			'nom' => $nom_rang,
@@ -37,6 +38,7 @@ if(!empty($_GET['var1']) && is_numeric($_GET['var1'])) {
 			'recrutement' => $recrutement,
 			'contrat' => $contrat,
 			'accepter_demande' => $accepter_demande,
+			'voir_coffre' => $voir_coffre,
 			'sous_chef' => @$_POST['sous_chef']);
 		$paquet -> add_action('maj_droits_joueur', array($_GET['var1'], $info));
 	}

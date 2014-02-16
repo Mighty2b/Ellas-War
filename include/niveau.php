@@ -105,7 +105,12 @@ echo '
 			echo nbf($conditions->ses).' '.imress('drachme');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->ses).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->ses).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->fer >0) {
@@ -117,7 +122,12 @@ echo '
 			echo nbf($conditions->fer).' '.imress('fer');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->fer).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->fer).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->arg >0) {
@@ -129,7 +139,12 @@ echo '
 			echo nbf($conditions->arg).' '.imress('argent');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->arg).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->arg).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->gol >0) {
@@ -141,7 +156,12 @@ echo '
 			echo nbf($conditions->gol).' '.imress('gold');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->gol).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->gol).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->boi >0) {
@@ -153,7 +173,12 @@ echo '
 			echo nbf($conditions->boi).' '.imress('bois');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->boi).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->boi).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->pie >0) {
@@ -165,7 +190,12 @@ echo '
 			echo nbf($conditions->pie).' '.imress('pierre');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->pie).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->pie).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->mar >0) {
@@ -177,7 +207,12 @@ echo '
 			echo nbf($conditions->mar).' '.imress('marbre');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->mar).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->mar).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->nou >0) {
@@ -189,7 +224,12 @@ echo '
 			echo nbf($conditions->nou).' '.imress('nourriture');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->nou).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->nou).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->eau >0) {
@@ -201,7 +241,12 @@ echo '
 			echo nbf($conditions->eau).' '.imress('eau');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->eau).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->eau).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->rai >0) {
@@ -213,7 +258,12 @@ echo '
 			echo nbf($conditions->rai).' '.imress('raisin');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->rai).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->rai).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	if($conditions->vin >0) {
@@ -225,7 +275,12 @@ echo '
 			echo nbf($conditions->vin).' '.imress('vin');
 		}
 		
-		echo ' ('._('Actuellement').' : '.nbf($actu->vin).')</li>';
+		if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+			echo ' ('._('Actuellement').' : '.nbf($actu->vin).')</li>';
+		}
+		else {
+			echo '</li>';
+		}
 	}
 	
 	echo '

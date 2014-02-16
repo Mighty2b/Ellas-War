@@ -2,13 +2,15 @@
 
 $tableau_droit = array('modifier_profils', 'changer_cotise', 'pacte', 
                        'declarer_guerre', 'annuler_guerre', 'accepter_joueur',
-                       'recrutement', 'contrat', 'accepter_demande');
+                       'recrutement', 'contrat', 'accepter_demande',
+                       'voir_coffre');
 
 $nom_droit = array(_('Modifier le profil'), _('Changer la cotisation'), 
                    _('Gérer les pactes'), _('Déclarer une guerre'), 
                    _('Annuler une guerre'), _('Gérer les membres'), 
                    _('Recruteur'), _('Gérer les contrats'), 
-                   _('Accepter une demande de ressources'));
+                   _('Accepter une demande de ressources'),
+                   _('Voir le coffre'));
 
 $liste_temples = array('hermes', 'apollon', 'demeter', 'ares', 'athena', 'hephaistos', 'dionysos', 'artemis', 'poseidon', 'zeus', 'hades');
 
