@@ -17,10 +17,10 @@ if(sizeof($liste_attente) > 0) {
 		';
 		if($paquet->get_infoj('droits_alliance')->accepter_joueur > 0) {
 			echo '<a onclick="javascript:recruter('.$do->id.', \'oui\');"
-			         class="cursor">'.img('images/joueurs/adept_reinstall.png', _('Accepter')).'</a>
+			         class="cursor">'.img('images/alliance/adept_reinstall.png', _('Accepter')).'</a>
 		&nbsp;
 		<a onclick="javascript:recruter('.$do->id.', \'non\');"
-		   class="cursor">'.img('images/joueurs/agt_uninstall-product.png', _('Refuser')).'</a>';
+		   class="cursor">'.img('images/alliance/agt_uninstall-product.png', _('Refuser')).'</a>';
 		}
 		echo '</td>
 		<td rowspan="2" align="left">&nbsp;'.stripslashes($do->motivations).'&nbsp;</td>

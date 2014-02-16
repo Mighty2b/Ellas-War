@@ -3,7 +3,8 @@
 include('../header.php');
 
 if(!empty($_GET['joueur']) && !empty($_GET['action'])) {
-	$paquet -> add_action();
+	
+	$paquet = new EwPaquet();
 
 	if($_GET['action'] == 'oui') {
 		$paquet -> add_action('accepter_alliance', array($_GET['joueur']));
