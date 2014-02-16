@@ -13,6 +13,7 @@ echo '
 			<li>&nbsp;<a href="'._('pause').'">Pause</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('adressemail').'">E-mail</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('motdepasse').'">Mot de passe</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('reset').'">Reset</a>&nbsp;</li>
 		</ul>
 		</li>
 		<li>&nbsp;<a href="'._('messagerie').'" ';
