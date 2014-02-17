@@ -14,4 +14,10 @@ if(!empty($_POST['changer']) && !empty($_POST['dest'])) {
 	                          $_POST['texte']));
 }
 
+if(!empty($_GET['var3'])) {
+	$paquet -> add_action('profils_alliance', array($_GET['var3']));
+}
+
+$mon_alliance  = $paquet->add_action('infoalliance');
+
 ?>

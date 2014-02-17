@@ -68,9 +68,10 @@ echo '<div class="centrer ligne80">
                                           title="'._('Profils').'" /></a>
 &nbsp;
 &nbsp;
-<a href="'._('ecrire_alliance').'"><img src="images/alliance/message.png"
-                                        alt="'._('Ecrire un message aux membres de l\'alliance').'"
-                                        title="'._('Ecrire un message aux membres de l\'alliance').'" /></a>
+<a href="'._('nouveaumessage').'-0-0-'.
+           $mon_alliance->id.'"><img src="images/alliance/message.png"
+                                     alt="'._('Ecrire un message aux membres de l\'alliance').'"
+                                     title="'._('Ecrire un message aux membres de l\'alliance').'" /></a>
 &nbsp;';
 
 if($mon_alliance -> level >= 2) {
