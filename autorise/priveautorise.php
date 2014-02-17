@@ -16,7 +16,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Classements
 'classements', 'classementdesjoueurs', 'honneur', 'classementghonneur',
-'classementdesalliances', 'classementdesbtn',
+'classementdesalliances', 'classementdesbtn', 'classementdesheros',
 
 //Communauté
 'joueursconnectes', 'amis', 'teamspeak', 'sondages', 'chat',
@@ -61,8 +61,6 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
  
 'decouvertedujeu', 'actualites', 'nouscontacter', 
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
-	'conditionsgeneralesutilisation', 'communaute', 'joueursconnectes',
-	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
-	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros');
+	'conditionsgeneralesutilisation', 'communaute', 'equipedusite');
 
 ?>
