@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: "diogenes";
-    src: url('../../policy/diogenes.ttf');
+    src: url('../../../policy/diogenes.ttf');
 }
 
 @font-face {
     font-family: "marav";
-    src: url('../../policy/Marav2.ttf');
+    src: url('../../../policy/Marav2.ttf');
 }
 
 @font-face {
     font-family: "poseiaoe";
-    src: url('../../policy/PoseiAOE.ttf');
+    src: url('../../../policy/PoseiAOE.ttf');
 }
 
 @font-face {
     font-family: "dalek";
-    src: url('../../policy/DALEK.ttf');
+    src: url('../../../policy/DALEK.ttf');
 }
 
 @font-face {
     font-family: "spqr";
-    src: url('../../policy/spqr.ttf');
+    src: url('../../../policy/spqr.ttf');
 }
 
 /* General CSS */

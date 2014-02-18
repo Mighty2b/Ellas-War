@@ -37,7 +37,7 @@ switch($paquet->get_infoj('statu')) {
 	break;
 	case 2:
 		include('autorise/manqueautorise.php');
-		$prefix = 'deco';
+		$prefix = 'mq';
 	break;
 	case 3:
 		include('autorise/pauseautorise.php');
@@ -60,8 +60,8 @@ else {
 }
 
 echo '
-<link rel="stylesheet" href="design/'.DESIGN.'_'.$prefix.'/design.css" />
-<link rel="icon" href="design/'.DESIGN.'_'.$prefix.'/favicon.ico" />';
+<link rel="stylesheet" href="design/'.DESIGN.'/'.$prefix.'/design.css" />
+<link rel="icon" href="design/'.DESIGN.'/favicon.ico" />';
 /*echo '<!–[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]–>';*/
