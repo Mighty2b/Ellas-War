@@ -458,30 +458,10 @@ foreach($temples_donnees as $temple => $temple_actu) {
 			'</div>';
 		}
 	}
-	
-	if(!empty($_GET['var1'])) {
-	echo '
-	<script type="text/javascript">
-	$(function(){
-		menu = $("#description_temple_'.addslashes(htmlentities($_GET['var1'])).'");
-		menu.addClass("ouvert");
-		menu.show("slow");
-	});
-	</script>';
-	}
-	elseif(sizeof($temples) == 1 or sizeof($temples) == 2) {
-		echo '
-		<script type="text/javascript">
-		$(function(){
-			menu = $("#description_temple_'.$temples[sizeof($temples)-1].'");
-			menu.addClass("ouvert");
-			menu.show("slow");
-		});
-		</script>';
-	}
-	
+		
 	echo '<script type="text/javascript">
 		$(function(){
+			var menu;
 		  $(".cadre_liste_temple").hide();
 		
 			$("#temple_hermes").click( function() {
@@ -636,9 +616,24 @@ foreach($temples_donnees as $temple => $temple_actu) {
 					menu.addClass("ouvert");
 					menu.show("slow");
 				}
-			});
+			});';
+			
+		if(!empty($_GET['var1'])) {
+		echo '
+			menu = $("#description_temple_'.addslashes(htmlentities($_GET['var1'])).'");
+			menu.addClass("ouvert");
+			menu.show("slow");';
+		}
+		elseif(sizeof($temples) == 1 or sizeof($temples) == 2) {
+			echo '
+				menu = $("#description_temple_'.$temples[sizeof($temples)-1].'");
+				menu.addClass("ouvert");
+				menu.show("slow");';
+		}
+		
+		echo '
 		});
-	      </script>';
+	  </script>';
 	
 }
 else {
