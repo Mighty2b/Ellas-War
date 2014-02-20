@@ -40,7 +40,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'succes', 'prieres', 'modifiertemples',
 
 //Heros
-'heros',
+'heros', 'marchant', 'quetes', 'aventures', 'combats',
 
 //Missions
 'missions',

@@ -3,10 +3,14 @@
 $res_permalien = $paquet->get_answer('get_permalien')->{1};
 
 if(is_numeric($res_permalien) && $res_permalien = 1) {
-	$paquet->display(213);
+	echo '<div class="erreur"><br/><br/>';
+	echo display_error(213);
+	echo '</div>';
 }
 elseif(is_numeric($res_permalien) && $res_permalien == 0) {
-	$paquet->display(214);
+	echo '<div class="erreur"><br/><br/>';
+	echo display_error(214);
+	echo '</div>';
 }
 else {
 		

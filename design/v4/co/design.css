@@ -230,6 +230,27 @@ td.none {
   text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);
 }
 
+/* Status des joueurs */
+.joueur_bloque {
+  color:red !important;
+  font-weight:bold;
+}
+
+.joueur_pause {
+  color:orange !important;
+  font-weight:bold;
+}
+
+.joueur_manque {
+  color:green !important;
+  font-weight:bold;
+}
+
+.sortie_urgence {
+  color:purple;
+  font-weight:bold;
+}
+
 /* Popup */
 #cadre_milieu_petit {
   width:600px;
@@ -661,6 +682,26 @@ td.none {
 	margin-left:123px;
 }
 
+#header_ssmenu_herosinfo {
+  margin-left:25px;
+}
+
+#header_ssmenu_herosmarchant {
+  margin-left:25px;
+}
+
+#header_ssmenu_herosquetes {
+  margin-left:25px;
+}
+
+#header_ssmenu_herosaventures {
+  margin-left:25px;
+}
+
+#header_ssmenu_heroscombats {
+  margin-left:25px;
+}
+      
 #barre_menu_marche {
 	background-image:url('barre_menu_cite.png');
 	background-repeat:no-repeat;

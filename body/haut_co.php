@@ -214,8 +214,22 @@ switch($page) {
 	break;
 	
 	case 'heros':
+	case 'marchant':
+	case 'quetes':
+	case 'aventures':
+	case 'combats':
 		echo '
 		<div id="barre_menu_heros">
+			<a id="header_ssmenu_herosinfo"
+			   href="'._('heros').'">Info</a>
+			<a id="header_ssmenu_herosmarchant"
+			   href="'._('marchant').'">Marchant</a>
+			<a id="header_ssmenu_herosquetes"
+			   href="'._('quetes').'">Quêtes</a>
+			<a id="header_ssmenu_herosaventures"
+			   href="'._('aventures').'">Aventures</a>
+			<a id="header_ssmenu_heroscombats"
+			   href="'._('combats').'">Combats</a>
 		</div>';
 	break;
 	
@@ -334,6 +348,7 @@ switch($page) {
 	case 'gestionmeteo':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
+	
 	
 	default: echo $page; break;
 }
