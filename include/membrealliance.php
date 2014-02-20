@@ -89,7 +89,7 @@ echo '</tbody></table><br/>
 echo '
 <script type="text/javascript">
     $(document).ready(function() {
-        document.title = \''._('Membres de l\'alliance').' '.$all -> nom.'\';
+        document.title = \''._('Membres de l\'alliance').' '.addslashes($all -> nom).'\';
     });
 </script>';
 
