@@ -78,7 +78,7 @@ else {
 	</td></tr>
 	</table></div><br/>';
 
- echo '<div style="margin-left:357px;">
+ echo '<div id="cadre_laurier">
 <div class="laurier1">
  	 <div class="laurier2">'.$all->medaille1.'</div>
  	<img src="images/alliance/mini-laurier-indigo.png" alt="Trophée du massacre incompréhensible" title="Trophée du massacre incompréhensible" />

@@ -1609,6 +1609,10 @@ select {
   min-height:80px;
 }
 
+#cadre_laurier {
+  margin-left:357px;
+}
+
 /* autel des dieux */
 .gauche_autel {
   position:relative;
