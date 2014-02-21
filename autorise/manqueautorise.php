@@ -1,5 +1,5 @@
 <?php
 
-$autorise = array('accueil_mq');
+$autorise = array('accueil_mq', 'obtenirdesfaveurs');
 
 ?>

@@ -1526,3 +1526,8 @@ select {
   margin-right:15px;
   min-height:80px;
 }
+
+/*obtenirdesfaveurs */
+.cache_renta {
+  display:none;
+}

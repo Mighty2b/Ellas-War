@@ -1818,3 +1818,8 @@ select {
     -webkit-user-select: none;
     user-select: none;
 }
+
+/*obtenirdesfaveurs */
+.cache_renta {
+  display:none;
+}

@@ -739,3 +739,8 @@ footer nav a {
 #cadre_laurier {
   margin-left:160px;
 }
+
+/*obtenirdesfaveurs */
+.cache_renta {
+  display:none;
+}

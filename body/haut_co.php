@@ -139,6 +139,7 @@ switch($page) {
 	case 'oracle':
 	case 'bonus':
 	case 'faveurs':
+	case 'obtenirdesfaveurs':
 		echo '
 		<div id="barre_menu_cite">
 			<a id="header_ssmenu_constructions"
