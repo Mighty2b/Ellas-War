@@ -53,33 +53,33 @@ if(sizeof($liste_alliances)) {
 	<tr>
 <td class="centrer">&nbsp;'.
 img('images/alliance/membrealli.png', _('membre')).'&nbsp;</td>
-<td class=\'centrer\'>&nbsp;'._('Nom').'&nbsp;</td>
-<td class="centrer">&nbsp;'._('Chef').'&nbsp;</td>
-<td class="centrer">&nbsp;'._('V').'&nbsp;</td>
-<td class="centrer">&nbsp;'._('D').'&nbsp;</td>
-<td class="centrer">&nbsp;'._('Effectifs').'&nbsp;</td>
-<td class="centrer">&nbsp;'._('Profils').'&nbsp;</td>';
+<td class=\'centrer\'>'._('Nom').'</td>
+<td class="centrer">'._('Chef').'</td>
+<td class="centrer">'._('V').'</td>
+<td class="centrer">'._('D').'</td>
+<td class="centrer">'._('Effectifs').'</td>
+<td class="centrer">'._('Profils').'</td>';
 
 if(empty($paquet->get_infoj('alliance')) && 
    $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{4}) {
-	echo '<td class="centrer">&nbsp;'._('Postuler').'&nbsp;</td>';
+	echo '<td class="centrer">'._('Postuler').'</td>';
 	$j++;
 }
 elseif(!empty($paquet->get_infoj('alliance'))) {
 	if($paquet->get_infoj('droits_alliance')->pacte > 0) {
-		echo'<td class="centrer">&nbsp;'._('Pacte').'&nbsp;</td>';
+		echo'<td class="centrer">'._('Pacte').'</td>';
 		$j++;
 	}
 	if($paquet->get_infoj('droits_alliance')->declarer_guerre > 0) {
-		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Guerre').'</b></font>&nbsp;</td>';
+		echo '<td class="centrer"><font color=\'red\'><b>'._('Guerre').'</b></font></td>';
 		$j++;
 	}
 	if($paquet->get_infoj('droits_alliance')->contrat > 0) {
-		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Contrats').'</b></font>&nbsp;</td>';
+		echo '<td class="centrer"><font color=\'red\'><b>'._('Contrats').'</b></font></td>';
 		$j++;
 	}
 	if($paquet->get_infoj('id') == $paquet->get_infoj('alliance')->id_chef) {
-		echo '<td class="centrer">&nbsp;<font color=\'red\'><b>'._('Blocus').'</b></font>&nbsp;</td>';
+		echo '<td class="centrer"><font color=\'red\'><b>'._('Blocus').'</b></font></td>';
 		$j++;
 	}
 }

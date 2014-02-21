@@ -6,6 +6,7 @@ function get_message($id=0, $args=array()) {
 	$message = '';
 
 	switch ($id) {
+		case 1:
 		
 	}
 	
