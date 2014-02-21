@@ -1674,3 +1674,147 @@ select {
     text-align: center;
     float:right;
 }
+
+/* Héros */
+.cadre_personnage_titre {
+  font-size:1.1em;
+  font-weight: bold;
+}
+
+#cadre_personnage {
+  margin-left:84px;
+}
+
+.cadre_personnage {
+  float:left;
+  width:211px;
+  min-height:300px;
+  border:5px solid black;
+  margin:8px 8px 15px 8px;
+  cursor : pointer;
+  font-size:0.8em;
+  background: linear-gradient(to bottom, #83B600, #9EDD00);
+}
+
+.cadre_personnage_int {
+  margin:5px 3px 4px 3px;
+  position:relative;
+  text-align:justify;
+}
+
+.cadre_personnage_plus {
+  margin-top:80px;
+  font-weight: bold;
+  font-size:1.3em;
+}
+
+#heros_stuff {
+  background-color:red;
+  height:300px;
+  width:300px;
+  margin:10px;
+  position:relative;
+  float:left;
+}
+
+#personnage_stats2 {
+  background-color:red;
+  height:300px;
+  width:300stuff_objetpx;
+  margin:10px;
+  position:relative;
+  float:left;
+}
+
+#personnage_stats {
+  margin:10px;
+}
+
+#marchant_cadre {
+  background-color:red;
+  height:200px;
+  width:300px;
+  margin:10px;
+  position:relative;
+  float:left;
+}
+
+#marchant_objets {
+  background-color:red;
+  height:200px;
+  width:300px;
+  margin:10px;
+  position:rela tive;
+  float:left;
+}
+
+.marchant_obj {
+  width:60px;
+  height:60px;
+  background-color:yellow;
+  position:relative;
+  float:left;
+}
+
+.stuff_deplacable {
+  width:100%;
+  height:100%;
+  position:relative;
+  float:left;
+}
+
+.stuff_deplacable2 {
+  margin-top:40px;
+  margin-right:3px;
+  height:20px;
+  float:right;
+  position:relative;
+}
+
+#contenu_sac {
+  width:700px;
+  position:relative;
+  float:left;
+  background-color:brown;
+}
+
+#personnage_casque {
+
+}
+
+#emplacement_2 {
+  margin-left:165px;
+}
+
+#emplacement_3 {
+  
+}
+
+#emplacement_4 {
+  margin-left:165px;
+}
+
+#emplacement_5 {
+  
+}
+
+#emplacement_6 {
+  margin-left:85px;
+}
+
+#emplacement_7 {
+  float:left;
+}
+
+.stuff_objet {
+  position:relative;
+  float:left;
+  background-color:black;
+  height:60px;
+  width:60px;
+  margin:5px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
