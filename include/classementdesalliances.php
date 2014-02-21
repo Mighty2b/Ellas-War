@@ -101,20 +101,20 @@ echo '</div>
 <div id="class_centre">
 <table><thead>
 	<tr>
-<td>&nbsp;N°&nbsp;</td>
-<td>&nbsp;'.$page_nom.'&nbsp;</td>
-<td>&nbsp;'.$page_chef.'&nbsp;</td>';
+<td>N°</td>
+<td>'.$page_nom.'</td>
+<td>'.$page_chef.'</td>';
 
 if($paquet->get_infoj('statu') == 1) {
-	echo '<td>&nbsp;'.$page_mbs.'&nbsp;</td>';
+	echo '<td>'.$page_mbs.'</td>';
 }
 
-echo '<td>&nbsp;'.$page_lvl.'&nbsp;</td>
-<td>&nbsp;'.$page_xp.'&nbsp;</td>
-<td>&nbsp;'.$page_vic.'&nbsp;</td>';
+echo '<td>'.$page_lvl.'&nbsp;</td>
+<td>'.$page_xp.'</td>
+<td>'.$page_vic.'</td>';
 
 if($paquet->get_infoj('statu') == 1) {
-echo '<td>&nbsp;'.$page_def.'&nbsp;</td>
+echo '<td>'.$page_def.'</td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees7"><img src="images/alliance/mini-laurier.png" alt="'._('Trophée du conflit titanesque').'" title="'._('Trophée du conflit titanesque').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees6"><img src="images/alliance/mini-laurier-argent.png" alt="'._('Trophée de l\'archarnement divin').'" title="'._('Trophée de l\'archarnement divin').'" /></a></td>
 <td valign="middle"><a href="'._('classementdesalliances').'-1-trophees5"><img src="images/alliance/mini-laurier-bronze.png" alt="'._('Trophée de l\'honneur destructeur').'" title="'._('Trophée de l\'honneur destructeur').'" /></a></td>

@@ -128,19 +128,19 @@ echo '
 echo '<table>
 	<thead>
 	<tr>
-		<td>&nbsp;N°&nbsp;</td>
-		<td>&nbsp;'.$writepseudo.'&nbsp;</td>
-		<td>&nbsp;'.$writeniveau.'&nbsp;</td>
-		<td class="centrer">&nbsp;'.$writexp.'&nbsp;</td>';
+		<td>N°&nbsp;</td>
+		<td>'.$writepseudo.'</td>
+		<td>'.$writeniveau.'</td>
+		<td class="centrer">'.$writexp.'</td>';
 
 if($paquet->get_infoj('statu') == 1) {
-	echo '<td>&nbsp;'.$writevictoires.'&nbsp;</td>
-	     <td>&nbsp;'.$writedefaites.'&nbsp;</td>
-	     <td>&nbsp;'.$writeterrain.'&nbsp;</td>';
+	echo '<td>'.$writevictoires.'</td>
+	     <td>'.$writedefaites.'</td>
+	     <td>'.$writeterrain.'</td>';
 }
 
-echo '<td>&nbsp;'.$writealliance.'&nbsp;</td>
-		<!--<td>&nbsp;'.$writeparrain.'&nbsp;</td>-->
+echo '<td>'.$writealliance.'</td>
+		<!--<td>'.$writeparrain.'</td>-->
 	</tr>
 	</thead><tfoot></tfoot><tbody>';
 

@@ -12,15 +12,15 @@ L\'honneur est remis à zéro tous les dimanches matin à minuit. ').
 echo '<table>
 	<thead>
 	<tr class=\'tableau_header\'>
-		<td>&nbsp;'._('N°').'&nbsp;</td>
-		<td>&nbsp;'._('Pseudo').'&nbsp;</td>
-		<td>&nbsp;'._('Niveau').'&nbsp;</td>
-		<td>&nbsp;'._('XP').'&nbsp;</td>
-		<td>&nbsp;'._('Victoires').'&nbsp;</td>
-		<td>&nbsp;'._('Défaites').'&nbsp;</td>
-		<td>&nbsp;'._('Terrain').'&nbsp;</td>
-		<td>&nbsp;'._('Alliance').'&nbsp;</td>
-		<td>&nbsp;'._('Honneur').'&nbsp;</td>
+		<td>'._('N°').'</td>
+		<td>'._('Pseudo').'</td>
+		<td>'._('Niveau').'</td>
+		<td>'._('XP').'</td>
+		<td>'._('Victoires').'</td>
+		<td>'._('Défaites').'</td>
+		<td>'._('Terrain').'</td>
+		<td>'._('Alliance').'</td>
+		<td>'._('Honneur').'</td>
 	</tr>
 	</thead><tfoot></tfoot><tbody>';
 $i=1;
