@@ -3,7 +3,7 @@
 $bat = $paquet->get_infoj('liste_batiments');
 
 if(empty($bat -> hall) or ($bat -> hall-> nb == 0)) {
-	echo '<div class="erreur">';
+	echo '<div class="erreur"><br/><br/>';
 	echo display_error(119);
 	echo '</div>';
 }
