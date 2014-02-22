@@ -122,7 +122,8 @@ else {
 echo '"><div class="ssmenu">'.ucfirst(_('alliance')).'</div></a>&nbsp;';
 
 if($paquet->get_infoj('lvl') > 0) {
-	echo '&nbsp;<a id="menu_commerce" href="'._('commerce').'"><div class="ssmenu">'._('Marché').'</div></a>&nbsp;';
+	echo '&nbsp;<a id="menu_commerce"
+	               href="'._('mesventes').'"><div class="ssmenu">'._('Marché').'</div></a>&nbsp;';
 }
 
 echo '&nbsp;<a id="menu_jeux" href="'._('jeux').'"><div class="ssmenu">'.ucfirst(_('jeux')).'</div></a>&nbsp;
