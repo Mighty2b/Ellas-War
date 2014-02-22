@@ -1,5 +1,17 @@
 <?php
+
+if(!empty($paquet->get_answer('get_parrain'))) {
+	$_SESSION['parrain'] = $paquet->get_answer('get_parrain')->{1};
+}
+
 echo '<h1>'._('Inscription sur Ellàs War').'</h1>';
+
+if(!empty($_SESSION['parrain'])) {
+	echo '<div class="ligne centrer rouge_goco">';
+	printf(_('%s vous parraine pour votre inscription sur Ellàs War'), 
+	       $_SESSION['parrain']->login);
+	echo '<br/><br/></div>';
+}
 
 echo '<p><br/></p>';
 
@@ -20,5 +32,14 @@ echo '<div id="sinscrire" class="centrer">
      alt="'._('S\'inscrire').'" 
      title="'._('S\'inscrire').'" />
 </div>';
+
+if(!empty($_SESSION['parrain']) && !empty($_SESSION['parrain']->login)) {
+	echo '
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	        document.title = \'Rejoignez '.$_SESSION['parrain']->login.' sur Ellàs War\';
+	    });
+	</script>';
+}
 
 ?>

@@ -10,9 +10,16 @@ echo '<meta name="description" content="'._('Bienvenue sur Ellás War.
 $paquet -> add_action('get_news', array(5));
 
 if(!empty($_POST['ilogin']) && !empty($_POST['ipass']) && !empty($_POST['iemail'])) {
+	if(!empty($_SESSION['parrain']) && !empty($_SESSION['parrain']->id)) {
+		$parrain = $_SESSION['parrain']->id;
+	}
+	else {
+		$parrain = 0;
+	}
+	
 	$paquet -> add_action('inscription',
 	                      array($_POST['ilogin'], $_POST['ipass'], $_POST['ipass'], 
-	                            $_POST['iemail'], 0));
+	                            $_POST['iemail'], $parrain));
 }
 
 if(!empty($_POST['login']) && !empty($_POST['pass'])) {
