@@ -26,7 +26,8 @@ else {
 
 echo '</div>
 <div class="clear"></div><br/>
-<div style="margin-left:125px;">';
+<div style="margin-left:'.
+(($paquet->get_infoj('statu') == 1)?'125px;':'25px').'">';
 
 foreach($j->tourforce as $tdf) {
   echo '<div class="font_hf" >
