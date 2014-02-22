@@ -5,6 +5,8 @@ echo '
 <meta name="description"
       content="'._('Vendre des ressources sur le marché').'" />';
 
+$paquet -> add_action('prix_commerce');
+
 if(!empty($_POST['cle'])) {
 	if(empty($_POST['anonyme'])) {
 		$_POST['anonyme'] = '';

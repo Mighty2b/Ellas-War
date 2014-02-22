@@ -112,14 +112,15 @@ echo '</form>
 	<tbody>';
 	$i = 0;
 
+	$prix_commerce = $paquet->get_answer('prix_commerce')->{1};
 	if(!empty($prix_commerce)) {
-		foreach($prix_commerce as $cle => $valeur) {
+		foreach($prix_commerce as $valeur) {
 			echo '
 			<tr>
-			<td align=\'left\'>&nbsp;'.$valeur['nom'].'&nbsp;</td>
-			<td class="droite">&nbsp;'.nbf($valeur['petittaux'],4).'&nbsp;</td>
-			<td class="droite">&nbsp;'.nbf($valeur['petitmax'],4).'&nbsp;</td>
-			<td class="droite">&nbsp;'.nbf($valeur['qtt']).'&nbsp;</td>
+			<td align=\'left\'>&nbsp;'.$valeur->nom.'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->petittaux,4).'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->petitmax,4).'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->qtt).'&nbsp;</td>
 			</tr>
 			';
 		}
