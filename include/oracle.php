@@ -110,3 +110,17 @@ if($peut_oracle) {
 }
 
 ?>
+<script type="text/javascript">
+function fermer_cadre() {
+  $("#cadre_milieu_petit").hide("slow");
+}
+
+function programme(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/programme.php",
+     data: "id="+id,
+     success: function(msg){ $("#cadre_centre_petit").html(msg);$("#cadre_milieu_petit").show("slow"); }
+   });
+}
+</script>
