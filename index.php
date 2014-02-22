@@ -87,6 +87,10 @@ echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
 
 include('body/haut_'.$prefix.'.php');
 
+if($paquet->get_infoj('statu') == 1 && $paquet->get_infoj('tpc') > 0) {
+	affiche_tpc($paquet->get_infoj('tpc') - $paquet->get_infoj('timestamp'));
+}
+
 include('include/'.$page.'.php');
 
 include('body/bas_'.$prefix.'.php');
