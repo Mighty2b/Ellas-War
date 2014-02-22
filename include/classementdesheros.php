@@ -67,7 +67,7 @@ echo '<tr>
 
 echo '
 </tr>';
-
+$i++;
 }
 echo'</tbody></table><br/>
 </div>

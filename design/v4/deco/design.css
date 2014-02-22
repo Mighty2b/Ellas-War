@@ -600,6 +600,7 @@ footer nav a {
 #class_centre {
   position:relative;
   float:left;
+  width:390px;
 }
 
 #class_droite {
