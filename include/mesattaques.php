@@ -24,6 +24,14 @@ $recue_restante_g2=$retour[18];
 $temps_attaque_recu_g=$retour[19];
 $attaques_bonus_dispo=$retour[20];
 
+echo '<div class="ligne centrer">
+     <b>'._('Ce mois ci').' :</b> '.
+     _('bilan de votre XP personnel').
+     ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'</span>, '.
+		 _('bilan de l\'XP apportée à votre alliance').
+     ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'<span>
+		 </div>';		 
+
 echo '<h2 class="centrer">'._('Attaques disponibles').'</h2>
 <table class=\'tableau80 centrer_tableau\'>
 	<thead>
