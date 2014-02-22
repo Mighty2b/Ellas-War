@@ -18,7 +18,7 @@ echo '
 	                                alt="Fermer" title="Fermer" 
 	                                class="cursor" 
 	                                style="margin-top:10px;margin-right:10px;" 
-	                                onclick="javascript:fermer_pacte();"/></div>
+	                                onclick="javascript:fermer_cadre();"/></div>
 	<div id="cadre_centre_petit">
 	
 	</div>
