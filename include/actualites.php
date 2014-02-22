@@ -12,6 +12,11 @@ if(!empty($paquet->get_answer('get_news'))) {
 			echo '<div class="ligne">
 				<a href="'.$news->lien.'" class="titre_news" target="_blank" >'.$news->titre.'</a>, <i>'.display_date($news->temps, 1).'</i></td>
 			</div>';
+			
+			if(!empty($last) && $last != date('Y', $news->temps)) {
+				echo '<div class="ligne"><br/></div>';
+			}
+			$last = date('Y', $news->temps);
 		}
 		
 		echo '<div class="ligne"><br/></div></div>';
