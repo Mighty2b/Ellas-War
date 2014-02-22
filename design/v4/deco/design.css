@@ -373,7 +373,7 @@ footer nav a {
 }
 
 #home_int {
-	background-image:url('header_tab_accueil.png'), url('font_bas_cadre.png'), url('font_texte_accueil.png');
+	background-image:url('header_tab_accueil.jpg'), url('font_bas_cadre.jpg'), url('font_texte_accueil.jpg');
 	background-position: 0% 0%, bottom, 0% 0%;
 	background-repeat: no-repeat, no-repeat, repeat-y;
 	width:873px;
