@@ -13,9 +13,6 @@ else {
 	
 	echo '
 	<p class="ligne80 justifier"><br/>'._(
-	'Lorsque vous vendez des lots, ceuxi-ci sont classés en deux catégories. '.
-	'Les deux types de lots sont affiché sur le même marche mais une licence de '.
-	'grand commerçant est obligatoire pour vendre des gros lots. '.
 	'Lors d\'une vente vous avez deux choix pour le prix de vos ressources. '.
 	'Le prix par taux représente le prix d\'une unité de ressource de votre lot, '.
 	'le prix total par contre sera le prix pour le lot en entier.').'</p>';
