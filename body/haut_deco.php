@@ -64,8 +64,7 @@ echo '<section id="banniere"></section>
 			</div>
 			<div id="reseaux_sociaux">
 <a href="<?php echo FACEBOOK; ?>" 
-   target="_blank"><img src="data:image/png;base64,
-   iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+   target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
 WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QwVFgItrwEOyAAABSdJREFUWMPFWNuLVVUY/31rfWvv
 c5mbMTo6E1ko5SVCeolgnnRKhEyELHqVwJciCqn8A4IgLQwkfBR8il56CBIFu1gQOgRBoVKhD4pz
 0bmc2957Xb4eZmzmzDkz53TOUOvpcPZaa//29/2+3/p9i7BsbH5qX+7psRN7NccHARpZ9igDUAJA
@@ -96,8 +95,7 @@ AElFTkSuQmCC"
                         alt="<?php echo _('Ellàs War sur Facebook'); ?>"></a>
 &nbsp;
 <a href="<?php echo TWITTER; ?>" 
-   target="_blank"><img src="data:image/png;base64,
-   iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+   target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
 bWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
 bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6
 eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEz
@@ -139,8 +137,7 @@ Gjja3G2msXaZLMkInczn88+Ycdh/01ai93t2PvQbKfQiaw43QyWmDCNDorADq5eYQmHCLvrjQwI7
                         alt="<?php echo _('S\'abonner à Ellaswar sur Twitter'); ?>"></a>
 &nbsp;
 <a href="https://github.com/Mighty2b" 
-   target="_blank"><img src="data:image/png;base64,
-   iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAKL2lDQ1BJQ0MgUHJvZmlsZQAASMed
+   target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAKL2lDQ1BJQ0MgUHJvZmlsZQAASMed
 lndUVNcWh8+9d3qhzTDSGXqTLjCA9C4gHQRRGGYGGMoAwwxNbIioQEQREQFFkKCAAaOhSKyIYiEo
 qGAPSBBQYjCKqKhkRtZKfHl57+Xl98e939pn73P32XuftS4AJE8fLi8FlgIgmSfgB3o401eFR9Cx
 /QAGeIABpgAwWempvkHuwUAkLzcXerrICfyL3gwBSPy+ZejpT6eD/0/SrFS+AADIX8TmbE46S8T5
