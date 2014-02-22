@@ -652,7 +652,7 @@ footer nav a {
 #cadre_avatar {
   position:relative;
   float:left;
-  min-height:210px;
+  min-height:200px;
   width:220px;
   margin-left:80px;
 }

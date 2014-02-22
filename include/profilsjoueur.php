@@ -101,23 +101,29 @@ echo '</div>
 
 		<div class="ligne gauche">
 			<div id="cadre_info_perso">
-				<b>'._('Âge').' : </b>'.$j->age.' '._('ans').'
-				<br/><b>'._('Localication').' : </b>'.$j->ville.'
-				<br/><b>'._('Emplois').' : </b>'.$j->emplois;
-				
-				if($paquet->get_infoj('statu') != 0) {
-					echo '<br/><b>'._('Date d\'inscription').' : </b>'.
-					     display_date($j->insc,2);
-				}
-				
-				'</div>
-			<div id="cadre_contact">';
+				<b>'._('Âge').' : </b>'.$j->age.' '._('ans');
 
-				if($paquet->get_infoj('statu') == 1) {
-					echo '<a href="'._('nouveaumessage').'-'.$j->id.'">'.
-					     '<div class="bouton_classique"><input type="BUTTON" 
-					                                           value="'._('Contacter').'" /></div></a>';
-				}
+		if($j->ville != '') {
+			echo '<br/><b>'._('Localication').' : </b>'.$j->ville;
+		}
+
+		if($j->emplois != '') {
+			echo '<br/><b>'._('Emplois').' : </b>'.$j->emplois;
+		}
+
+		if($paquet->get_infoj('statu') != 0) {
+			echo '<br/><b>'._('Date d\'inscription').' : </b>'.
+			     display_date($j->insc,2);
+		}
+		
+		'</div>
+	<div id="cadre_contact">';
+
+		if($paquet->get_infoj('statu') == 1) {
+			echo '<a href="'._('nouveaumessage').'-'.$j->id.'">'.
+			     '<div class="bouton_classique"><input type="BUTTON" 
+			                                           value="'._('Contacter').'" /></div></a>';
+		}
 
 echo '</div>
 		</div>
