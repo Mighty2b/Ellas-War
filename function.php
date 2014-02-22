@@ -645,4 +645,92 @@ function constr_get($type, $var) {
 	}
 }
 
+function prix_hall($tab_base, $level=0) {
+	$prix = '';
+
+	if(empty($level)) {
+		$tab = array(	'prix_drachme'=> 0,
+									'prix_or'	    => 0,
+									'prix_argent'	=> 0,
+									'prix_bois'  	=> 5000000,
+									'prix_nourriture'=> 0,
+									'prix_eau'		=> 10000000,
+									'prix_fer'   	=> 8000000,
+									'prix_raisin'	=> 0,
+									'prix_vin'   	=> 0,
+									'prix_pierre'	=> 1000000,
+									'prix_marbre' => 20000);
+	}
+	else {
+	  $tab['prix_drachme']   = $tab_base->prix_drachme*($level);
+	  $tab['prix_or']        = $tab_base->prix_drachme*($level);
+	  $tab['prix_argent']    = $tab_base->prix_drachme*($level);
+	  $tab['prix_bois']      = $tab_base->prix_drachme*($level);
+	  $tab['prix_nourriture']= $tab_base->prix_drachme*($level);
+	  $tab['prix_eau']       = $tab_base->prix_drachme*($level);
+	  $tab['prix_fer']       = $tab_base->prix_drachme*($level);
+	  $tab['prix_raisin']    = $tab_base->prix_drachme*($level);
+	  $tab['prix_vin']       = $tab_base->prix_drachme*($level);
+	  $tab['prix_pierre']    = $tab_base->prix_drachme*($level);
+	  $tab['prix_marbre']    = $tab_base->prix_drachme*($level);
+	}
+	
+	if($tab['prix_drachme'] > 0) {
+		$prix .= nbf($tab['prix_drachme']).'&nbsp;'.
+		         imress('drachme').' ';
+	}
+
+	if($tab['prix_nourriture'] > 0) {
+		$prix .= nbf($tab['prix_nourriture']).'&nbsp;'.
+		         imress('nourriture').' ';
+	}
+
+	if($tab['prix_eau'] > 0) {
+		$prix .= nbf($tab['prix_eau']).'&nbsp;'.
+		         imress('eau').' ';
+	}
+
+	if($tab['prix_bois'] > 0) {
+		$prix .= nbf($tab['prix_bois']).'&nbsp;'.
+		         imress('bois').' ';
+	}
+
+	if($tab['prix_fer'] > 0) {
+		$prix .= nbf($tab['prix_fer']).'&nbsp;'.
+		         imress('fer').' ';
+	}
+
+	if($tab['prix_argent'] > 0) {
+		$prix .= nbf($tab['prix_argent']).'&nbsp;'.
+		         imress('argent').' ';
+	}
+
+	if($tab['prix_pierre'] > 0) {
+		$prix .= nbf($tab['prix_pierre']).'&nbsp;'.
+		         imress('pierre').' ';
+	}
+
+	if($tab['prix_marbre'] > 0) {
+		$prix .= nbf($tab['prix_marbre']).'&nbsp;'.
+		         imress('marbre').' ';
+	}
+
+	if($tab['prix_raisin'] > 0) {
+		$prix .= nbf($tab['prix_raisin']).'&nbsp;'.
+		         imress('raisin').' ';
+	}
+
+	if($tab['prix_vin'] > 0) {
+		$prix .= nbf($tab['prix_vin']).'&nbsp;'.
+		         imress('vin').' ';
+	}
+
+	if($tab['prix_or'] > 0) {
+		$prix .= nbf($tab['prix_or']).'&nbsp;'.
+		         imress('gold').' ';
+	}
+
+	return $prix;
+}
+
 ?>

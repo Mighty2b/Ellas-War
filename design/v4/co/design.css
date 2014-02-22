@@ -166,6 +166,12 @@ td.none {
   float:left;
 }
 
+.cadre_50 {
+  position:relative;
+  float:left;
+  width:50%;
+}
+
 .ligne {
 	position:relative;
 	float:left;
@@ -1822,4 +1828,21 @@ select {
 /*obtenirdesfaveurs */
 .cache_renta {
   display:none;
+}
+
+/* statues */
+#tab_statues .cadre_50 img {
+  cursor : pointer;
+}
+
+.gauche_autel {
+  position:relative;
+  float:left;
+  width:220px;
+}
+
+.droite_autel {
+  position:relative;
+  float:right;
+  width:390px;
 }
