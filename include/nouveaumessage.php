@@ -17,7 +17,7 @@ if(!empty($paquet->get_answer('nouveaux_messages')) &&
 }
 
 if(!empty($_GET['var2'])) {
-	$res   = get_message($_GET['var2']);
+	$res   = get_message($_GET['var2'], array($paquet->get_infoj('alliance')));
 	$title = $res['titre'];
 	$text  = $res['message'];
 }

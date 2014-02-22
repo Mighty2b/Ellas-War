@@ -21,6 +21,14 @@ if(!empty($j->nomalliance)) {
   }
 	echo $j->nomalliance.'</a></div><br/><br/>';
 }
+elseif($paquet->get_infoj('statu') == 1 && 
+       $paquet->get_infoj('droits_alliance')->accepter_joueur > 0) {
+	echo '<div class="ligne centrer">
+	      <a class="rouge_goco"
+	         href="'._('nouveaumessage').'-'.$j->id.'-1">'._('Inviter dans mon alliance').'</a>
+	      <br/><br/>
+	      </div>';
+}
 
 if($paquet->get_infoj('statu') == 1 && 
    $j->id != $paquet->get_infoj('id')) {
@@ -120,7 +128,7 @@ echo '</div>
 	<div id="cadre_contact">';
 
 		if($paquet->get_infoj('statu') == 1) {
-			echo '<a href="'._('nouveaumessage').'-'.$j->id.'">'.
+			echo '<br/><br/><a href="'._('nouveaumessage').'-'.$j->id.'">'.
 			     '<div class="bouton_classique"><input type="BUTTON" 
 			                                           value="'._('Contacter').'" /></div></a>';
 		}
