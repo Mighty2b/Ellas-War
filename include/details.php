@@ -15,7 +15,7 @@ if(empty($meteo)) {
 }
 
 if(!empty($paquet->get_infoj('alliance'))) {
-	$cotisation        = $paquet->get_infoj('alliance')->cotisation;
+	$cotisation = $paquet->get_infoj('cotisation');
 }
 else {
 	$cotisation = null;
