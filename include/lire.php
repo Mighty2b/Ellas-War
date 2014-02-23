@@ -86,7 +86,7 @@ else {
 	}
 	
 	$(document).ready(function() {
-		document.title = \''.$message->titre.'\';
+		document.title = \''.addslashes($message->titre).'\';
 	});
 	</script>';
 }
