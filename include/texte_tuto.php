@@ -423,7 +423,8 @@ elseif($paquet->get_infoj('lvl') == 1) {
 		     'Votre profil vous permet de vous faire connaître auprès des '.
 		     'autres joueurs. Ils pourront par la suite y laisser des dédicaces.').
 		     '<br/>'._(
-		     'Allez dans Compte et complétez votre profil pour passer à l\'étape suivante.');
+		     'Allez dans Compte, cliquez sur informations personnelles et '.
+		     'complétez votre profil pour passer à l\'étape suivante.');
 
 		if($paquet->get_infoj('check_etape') == true) {
 			echo '<br/><br/></div>
