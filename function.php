@@ -596,6 +596,10 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 244: $erreur = 'Erreur dans les quantités';
 		break;
+	case 245: $erreur = 'Il n\'y a pas autant de ressources disponibles à ce taux';
+		break;
+	case 246: $erreur = 'Lot acheté';
+		break;
 	//case : $erreur = "";break;
 	}
 	

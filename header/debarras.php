@@ -12,4 +12,6 @@ if(!empty($_POST['nbressource']) && !empty($_POST['prixressource']) &&
 	                            $_POST['prixressource']));
 }
 
+$paquet -> add_action('liste_debarras');
+
 ?>

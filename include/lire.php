@@ -69,6 +69,13 @@ else {
 			           width="200px"/>';
 		}
 		*/
+		
+		if($mess->text_type > 0) {
+			$m = get_message($mess->text_type, 
+			                 unserialize(lcfirst($mess->message)));
+			$mess->message = $m['message'];
+		}
+		
 		echo '<br/>'.display_date($mess->temps,3).'</td>
 		<td valign="top"><br/>'.$mess->message.'</td>
 		</tr>';
