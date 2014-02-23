@@ -199,4 +199,16 @@ echo '
 echo '<hr color="white"/>
 </div>';
 
+echo '<script type="text/javascript">
+
+function annuler_depart_urgent() {
+   $.ajax({
+	     type: "GET",
+	     url: "form/annuler_depart_urgent.php"
+	   });
+   $("#sortie_urgence").hide("slow");
+}
+
+</script>'
+
 ?>
