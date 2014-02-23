@@ -257,6 +257,7 @@ switch($page) {
 	case 'dissoudre':
 	case 'niveau':
 	case 'donner':
+	case 'changer_grandchef':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
