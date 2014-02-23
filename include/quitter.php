@@ -1,0 +1,5 @@
+<?php
+
+redirect(_('lesalliances'));
+
+?>
