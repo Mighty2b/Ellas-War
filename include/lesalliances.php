@@ -235,6 +235,42 @@ function annuler_candidature(id){
    });
    $("#cadre_candidature").hide("slow");
 }
+
+function demande_pacte(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/demander_pacte.php",
+     data: "alliance="+id,
+     success: function(msg){ $("#cadre_centre_petit").html(msg);$("#cadre_milieu_petit").show("slow"); }
+   });
+}
+
+function declarer(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/declarer.php",
+     data: "alliance="+id,
+     success: function(msg){ $("#cadre_centre_petit").html(msg);$("#cadre_milieu_petit").show("slow"); }
+   });
+}
+
+function declarer_contrat(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/declarer_contrat.php",
+     data: "alliance="+id,
+     success: function(msg){ $("#cadre_centre_petit").html(msg);$("#cadre_milieu_petit").show("slow"); }
+   });
+}
+
+function declarer_blocus(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/declarer_blocus.php",
+     data: "alliance="+id,
+     success: function(msg){ $("#cadre_centre_petit").html(msg);$("#cadre_milieu_petit").show("slow"); }
+   });
+}
 </script>';
 
 ?>
