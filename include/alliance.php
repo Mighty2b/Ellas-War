@@ -65,6 +65,10 @@ echo '
 			echo '<font color=\'purple\' title=\''.date('d/m/y', $do->temps).'\'>*</font>';
 		}
 
+		if(!empty($do->greve)) {
+			echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
+		}
+
 		echo '&nbsp;</td>
 <td class="droite">&nbsp;'.($do->lvl).'&nbsp;</td>
 <td class="droite">&nbsp;'.nbf($do->points).'&nbsp;</td>

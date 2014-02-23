@@ -31,25 +31,41 @@ else {
 
 $do = $paquet->get_answer('get_cotisation')->{1};
 
-echo '<h1>'._('Cotisation actuelle').'</h1><br/>
-<form action="Cotisations" method="post">';
+echo '<h1>'._('Cotisation actuelle').'</h1>
+<form action="cotisations" method="post">';
 
 if($paquet->get_infoj('droits_alliance')->changer_cotise != 0) {
 
+echo '<div class="centrer">';
+
 if($mon_alliance->level >= 4) {
-echo '<div class="centrer">
+echo '
 Cotisation volontaire : 
 <input type="text"
        name="cotise_volontaire" 
        maxlength="2"
 			 size="2" 
 			 value="'.$paquet->get_cotise_volontaire().'"/>% '.
-imress('drachme').' '._('gagnés').' ('._('max').' : 25%)</div>
-<br/><br/>
-<div class="bouton_classique"><input type="submit"
-			 name="'._('Changer').'" value="'._('Changer').'" /></div></div></form>
-<form action="Cotisations" method="post">';
+imress('drachme').' '._('gagnés').' ('._('max').' : 25%)
+<br/><br/>';
 }
+
+if($mon_alliance -> id_chef != $paquet->get_infoj('id') &&
+   $paquet->get_answer('peut_greve')->{1}) {
+	echo '<input type="checkbox"
+	             name="greve"
+	             '.(!empty($paquet->get_infoj('greve'))?'checked="checked"':'').' />';
+	echo 'Se mettre en grève';
+}
+if(($mon_alliance -> id_chef != $paquet->get_infoj('id') && 
+    $paquet->get_answer('peut_greve')->{1}) or
+   $mon_alliance->level >= 4) {
+	echo '<div class="bouton_classique"><input type="submit"
+	           name="changer_cotisation"
+	           value="'._('Changer').'" /></div><br/><br/>';
+}
+echo '</div></form>
+	<form action="cotisations" method="post">';
 
 echo '<div class="centrer">
 '._('Niveau minimal').' : 
@@ -67,7 +83,7 @@ if($mon_alliance->level >= 4) {
 	}
 }
 
-echo '<br/><br/></div>';
+echo '<br/></div>';
 
 echo '<table>
 	<thead><tr>
@@ -198,6 +214,21 @@ if($mon_alliance->level >= 4) {
 		echo _('Mode : classique').'<br/>';
 	}
 }
+
+if($paquet->get_answer('peut_greve')->{1}) {
+	echo '<input type="checkbox"
+	             name="greve"
+	             '.(!empty($paquet->get_infoj('greve'))?'checked="checked"':'').' />';
+	echo 'Se mettre en grève';
+}
+
+if($paquet->get_answer('peut_greve')->{1} or $mon_alliance->level >= 4) {
+	echo '<div class="bouton_classique"><input type="submit"
+	           name="changer_cotisation"
+	           value="'._('Changer').'" /></div>';
+}
+
+echo '<br/><br/></div>';
 
 echo '<table>
 	<thead><tr>

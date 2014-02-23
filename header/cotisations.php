@@ -5,6 +5,17 @@ echo '<title>'._('Gestion de vos cotisations').'</title>
       content="'._('Gestion de vos cotisations').'" />';
 
 $paquet -> add_action('infoalliance');
+$paquet -> add_action('peut_greve');
+
+if(isset($_POST['changer_cotisation'])) {
+	if(empty($_POST['greve'])) {
+		$greve = 0;
+	}
+	else {
+		$greve = 1;
+	}
+	$paquet -> add_action('changer_greve', array($greve));
+}
 
 if(isset($_POST['cotise_volontaire'])) {
 	$paquet -> add_action('changer_cotise_volontaire',
