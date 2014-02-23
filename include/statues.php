@@ -34,7 +34,6 @@ $condition_hippo	= $conditions->hippo;
 
   echo '<h1>'._('Statues').'</h1>';
 
-	$paquet->error('batir_statue',1);
 	$paquet->error('orner',1);
 	$paquet->error('activer_hera',1);
 	$paquet->error('supprimer_statue',1);
