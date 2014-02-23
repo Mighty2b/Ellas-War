@@ -2,8 +2,11 @@
 
 include('../header.php');
 
-$paquet = new EwPaquet('possible_blocus', array($_GET['alliance']));
-$cible = $paquet->getRetour();
+$paquet = new EwPaquet();
+$paquet -> add_action('possible_blocus', array($_GET['alliance']));
+$paquet -> send_actions();
+
+$cible = $paquet->get_answer('possible_blocus')->{1};
 
 echo '<h1>'.ucfirst(stripslashes($cible -> nom)).'</h1>';
 

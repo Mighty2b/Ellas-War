@@ -194,6 +194,17 @@ echo '
 </td>
 		</tr>
 </table>
-</div>';
+</div>
+
+<script type="text/javascript">
+function expulser(id) {
+	$.ajax({
+		type: "GET",
+		url: "form/expulser_membre.php",
+		data: "id="+id
+	});
+	$("#ligne_"+id).hide("slow");
+}
+</script>';
 
 ?>
