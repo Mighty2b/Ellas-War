@@ -3,12 +3,13 @@
 echo '<title>'._('Calendrier de votre alliance').'</title>
 <meta name="description"
       content="'._('Calendrier de votre alliance').'" />';
+echo '<script type="text/javascript"
+              src="js/js_calendrier.js" ></script>';
 
 if(!empty($_GET['var1'])) {
 	$verif_date = explode("_", addslashes($_GET['var1'])); 
 
-	if(checkdate($verif_date[1], $verif_date[0], $verif_date[2]) == true)
-	{
+	if(checkdate($verif_date[1], $verif_date[0], $verif_date[2]) == true) {
 		if($verif_date[0] < 10)
 			$verif_date[0] = '0'.round($verif_date[0]);
 			
@@ -21,8 +22,7 @@ if(!empty($_GET['var1'])) {
 		$date = date('d-m-Y');
 	}
 }
-else
-{
+else {
 	$date = date('d-m-Y');
 }
 
