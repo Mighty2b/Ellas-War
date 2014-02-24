@@ -14,7 +14,7 @@ function reset() {
    $.ajax({
      type: "GET",
      url: "form/reset.php",
-     success: function(msg){ lwindow.location.href=\''.SITE_URL.'\'; }
+     success: function(msg){ window.location.href=\''.SITE_URL.'\'; }
    });
 }
 </script>';

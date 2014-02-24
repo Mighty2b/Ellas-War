@@ -139,8 +139,9 @@ echo '<h1>'._('Obtenir des faveurs').'</h1>
 
 </td></tr></table>
 
-<div class="ligne centrer rouge_goco">
-<a href="Parrainage"><br/>'._('Transmettez votre lien de parrainage et gagnez des faveurs !').'</a>
+<div class="ligne centrer gras rouge_goco erreur">
+<a href="'._('parrainage').'" class="rouge_goco"><br/>'.
+_('Transmettez votre lien de parrainage et gagnez des faveurs !').'</a>
 </div>
 </center>
 

@@ -180,6 +180,10 @@ td.none {
   font-size:0.9em;
 }
 
+.ligne200 {
+  font-size:2em;
+}
+
 .ligne_50 {
   position:relative;
   float:left;
@@ -262,431 +266,28 @@ td.none {
   width:580px;
 }
 
-/* Barres de chargement */
-
-.progress-bar {
-  width: 0px;
-  height: 18px;
-  padding: 2px 2px 3px 2px;
-  background-color: #E6DCBF;
-/*background-color: #191919;*/
-  border-radius: 13px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-  -webkit-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-  -moz-box-shadow: inset 0 1px 2px #000, 0 1px 0 #2b2b2b;
-  position:relative;
-  float:left;
-  margin:10px;
-  margin-top:0px;
-  box-shadow: 1px 1px 12px #555;
-}
-
-.progress-bar2:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 18px;
-  background: #999;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), inset 0 -1px 3px rgba(0, 0, 0, 0.4), 0 1px 1px #000;
-}
-
-.progress-bar2:after {
-  content: '|||||||||||||';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 18px;
-  overflow: hidden;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  transform: skewX(-30deg);
-  -webkit-transform: skewX(-30deg);
-  -moz-transform: skewX(-30deg);
-  -o-transform: skewX(-30deg);
-  font: bold 120px/80px sans-serif;
-  letter-spacing: -8px;
-  color: #000;
-  opacity: 0.06;
-}
-
-.progress-bar-txt {
-  display: block;
-  position: absolute;
-  z-index:1000;
-  width:100%;
-  color:white;
-  text-align:center;
-  text-shadow: 1px 1px 12px #000;
-  margin-top:3px;
-}
-
-.blue:before {
-  background: #099;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#099), to(#006A6B));
-  background: -moz-linear-gradient(top, #099, #006A6B);
-  background: -o-linear-gradient(#099, #006A6B);
-  background: -ms-linear-gradient(#099, #006A6B);
-  background: linear-gradient(#099, #006A6B);
-}
-
-.rouge:before {
-  background: #FF0000;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF0000), to(#D30000));
-  background: -moz-linear-gradient(top, #FF0000, #D30000);
-  background: -o-linear-gradient(#FF0000, #D30000);
-  background: -ms-linear-gradient(#FF0000, #D30000);
-  background: linear-gradient(#FF0000, #D30000);
-}
-
-.vert:before {
-  background: #77B33C;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#77B33C), to(#446622));
-  background: -moz-linear-gradient(#77B33C, #446622) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(#77B33C, #446622);
-  background: -ms-linear-gradient(#77B33C, #446622);
-  background: linear-gradient(#77B33C, #446622);
-}
-
-.jaune:before {
-  background: #FFCC33;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFCC33), to(#CC9900));
-  background: -moz-linear-gradient(#FFCC33, #CC9900) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(#FFCC33, #CC9900);
-  background: -ms-linear-gradient(#FFCC33, #CC9900);
-  background: linear-gradient(#FFCC33, #CC9900);
-}
-
-.orange:before {
-  background: #F28518;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F28518), to(#9D5209));
-  background: -moz-linear-gradient(#F28518, #9D5209) repeat scroll 0 0 transparent;
-  background: -o-linear-gradient(#F28518, #9D5209);
-  background: -ms-linear-gradient(#F28518, #9D5209);
-  background: linear-gradient(#F28518, #9D5209);
-}
-
-.progress-bar3 {
-  width:0px;
-  display: block;
-  position: absolute;
-}
-
-/* Header */
-
-#header {
-  width:100%;
-  background-color:#E4DCC2;/*#21160A;*/
-  text-align:center;
-  padding: 0px 0px 3px 0px;
-  font-size:0.8em;
-  position:fixed;
-  z-index:100000;
-  border-top: 2px solid #21160A;
-  border-bottom: 2px solid #21160A;
-  box-shadow: inset 0px 3px 5px 0px #656565, inset 0px -3px 5px 0px #656565;
-  -webkit-box-shadow: inset 0px 3px 5px 0px #656565, inset 0px -3px 5px 0px #656565;
-  -moz-box-shadow: inset 0px 3px 5px 0px #656565, inset 0px -3px 5px 0px #656565;
-  -o-box-shadow: inset 0px 3px 5px 0px #656565, inset 0px -3px 5px 0px #656565;
-  filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=5);
-  left:0;
-}
-
-#header2 {
-  margin:auto;
-  width:800px;
-}
-
-.dropdown {
-  margin:2px 0px 0px 0px;
-}
-
-#header2 ul {
-  list-style: none;
-}
-
-#header2 ul.dropdown {
-  position: relative;
-}
-
-#header2 ul.dropdown li {
-  float: left;
-  zoom: 1;
-  width:12.5%;
-}
-
-#header2 ul.dropdown li.hover, 
-#header2 ul.dropdown li:hover {
-  position: relative;
-}
-
-#header2 ul.dropdown ul {
-  visibility: hidden;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  margin-left:-60px;
-  border-radius: 0px 0px 5px 5px;
-  background-color:#21160A;
-  padding:0px 0px 8px 0px;
-}
-
-#header2 ul.dropdown ul li {
-  float: none;
-  width:200px;
-}
-
-#header2 ul.dropdown li ul li a {
-  color:#FFF;
-  text-decoration:none;
-}
-
-#header2 a {
-  color:#21160A;
-  text-decoration:none;
-}
-
-/* Ban */
-
-#header_ban {
-  background-image:url('banniere.png');
-  width:1250px;
-  height:276px;
-  cursor:pointer;
-  float:left;
-  margin:22px 0px 0px 45px;
-}
-
-/* 1st menu */
-#header_menu {
-  background-image:url('barre_menu.png');
-  width:1250px;
-  height:50px;
-  top:276px;
-  float:left;
-  margin-left:45px;
-}
-
-#header_menu a {
-  color:white;
-  font-size:1.4em;
-  font-family:"diogenes";
-  position:relative;
-  float:left;
-  height:30px;
-  text-align:center;
-  padding-top:9px;
-}
-
-#header_menu .ssmenu {
-  color:#21160a;
-  text-shadow: -1px -1px 0px #FFF;
-}
-
-#header_menu #menu_forum {
-  width:156px;
-  color:black;
+/* Status des joueurs */
+.joueur_bloque {
+  color:red !important;
   font-weight:bold;
-  margin-top:-20px;
-  font-size:1.6em;
-  margin-left:2px;
 }
 
-/* 2nd menu */
-#header_ssmenu {
-  float:left;
-  font-family:"poseiaoe", "dalek", "spqr";
+.joueur_pause {
+  color:orange !important;
+  font-weight:bold;
 }
 
-#header_ssmenu a {
-  position:relative;
-  float:left;
-  font-size:1.5em;
+.joueur_manque {
+  color:green !important;
+  font-weight:bold;
 }
 
-#barre_menu_cite {
-  background-image:url('barre_menu_cite.png');
-  background-repeat:no-repeat;
-  width:682px;
-  height:28px;
-  margin-left:123px;
+.sortie_urgence {
+  color:purple;
+  font-weight:bold;
 }
 
-#header_ssmenu_constructions {
-  margin-left:20px;
-}
-
-#header_ssmenu_construire {
-  margin-left:25px;
-}
-
-#header_ssmenu_armurerie {
-  margin-left:25px;
-}
-
-#header_ssmenu_tresor {
-  margin-left:25px;
-}
-
-#header_ssmenu_oracle {
-  margin-left:25px;
-}
-
-#header_ssmenu_bonus {
-  margin-left:20px;
-}
-
-#header_ssmenu_faveurs {
-  margin-left:110px;
-}
-
-#barre_menu_armee {
-  background-image:url('barre_menu_armee.png');
-  background-repeat:no-repeat;
-  width:765px;
-  height:28px;
-  margin-left:173px;
-}
-
-#header_ssmenu_attaquer {
-  margin-left:30px;
-}
-
-#header_ssmenu_passerenrevue {
-  margin-left:30px;
-}
-
-#header_ssmenu_engager {
-  margin-left:30px;
-}
-
-#header_ssmenu_mesattaques {
-  margin-left:30px;
-}
-
-#header_ssmenu_strategiedefensive {
-  margin-left:110px;
-}
-
-#header_ssmenu_strategieoffensive {
-  margin-left:25px;
-}
-
-#barre_menu_mythologie {
-  background-image:url('barre_menu_cite.png');
-  background-repeat:no-repeat;
-  width:765px;
-  height:28px;
-  margin-left:123px;
-}
-
-#header_ssmenu_arbredesdieux {
-  margin-left:35px;
-}
-
-#header_ssmenu_auteldesdieux {
-  margin-left:25px;
-}
-
-#header_ssmenu_temples {
-  margin-left:25px;
-}
-
-#header_ssmenu_statues {
-  margin-left:25px;
-}
-
-#header_ssmenu_succes {
-  margin-left:25px;
-}
-
-#header_ssmenu_prieres {
-  margin-left:155px;
-}
-
-#barre_menu_heros {
-  background-image:url('barre_menu_cite.png');
-  background-repeat:no-repeat;
-  width:765px;
-  height:28px;
-  margin-left:123px;
-}
-
-#barre_menu_marche {
-  background-image:url('barre_menu_cite.png');
-  background-repeat:no-repeat;
-  width:765px;
-  height:28px;
-  margin-left:123px;
-}
-
-#header_ssmenu_donnerunefaveur {
-  margin-left:30px;
-}
-
-#header_ssmenu_commerce {
-  margin-left:30px;
-}
-
-#header_ssmenu_vendre {
-  margin-left:30px;
-}
-
-#header_ssmenu_mesventes {
-  margin-left:30px;
-}
-
-#header_ssmenu_debarras {
-  margin-left:30px;
-}
-
-#header_ssmenu_faveurs2 {
-  margin-left:119px;
-}
-
-#header_ssmenu_donnerunefaveur {
-  margin-left:30px;
-}
-
-#barre_menu_vide {
-  background-image:url('barre_menu_vide.png');
-  background-repeat:no-repeat;
-  width:682px;
-  height:28px;
-  margin-left:584px;
-}
-
-/* Missions */
-
-#etape {
-  position:absolute;
-  margin-left:800px;
-  margin-top:70px;
-  width:250px;
-  padding:5px;
-  z-index:1000;
-  opacity:0.9;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background:white;
-  border:1px solid black;
-  font-size:0.7em;
-}
-
-> #etape:first-child {
-  font-size:0.8em;
-}
-
-/* button */
+/* Button */
 
 input,
 textarea {
@@ -701,7 +302,7 @@ textarea {
     margin: auto;
 }
 
-input[type="submit"], input[type="button"] {
+input[type="submit"] {
     background: linear-gradient(#F0E9D6, #D2C9AC) repeat scroll 0 0 transparent;
     border: 1px solid #CAC3B1;
     color: #0C0400;
@@ -722,439 +323,336 @@ select {
     margin: 1px 2px;
 }
 
-/* page */
-#inside_co {
-  background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
-  background-position: 0% 0%, left bottom, 0% 0%;
-  background-repeat: no-repeat, no-repeat, repeat;
-  padding-bottom: 15px;
-  width: 1295px;
-  float:left;
-  margin-left:45px;
-}
-
-#inside_co_stat {
-  float:left;
-  position:relative;
-  background-image: url("panneau_stats.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  height: 163px;
-  width: 144px;
-  margin: 50px 0px 0px 18px;
-}
-
-#inside_co_int {
-  float:left;
-  position:relative;
-  min-height:450px;
-  margin: 8px 0px 0px 21px;
-  position: relative;
-  width: 873px;
-  font-family: 'Times New Roman';
-  font-size: 12px;
-}
-
-#inside_co_stat_int {
-  float:left;
-  position:relative;
-  width:142px;
-  margin:35px 0px 0px 2px;
-  font-size:0.8em;
-  color:#000;
-}
-
-#inside_co_stat_int .sousligne {
-  text-decoration:underline;
-}
-
-#inside_co_ress {
-  float:left;
-  position:relative;
-  background-image: url("panneau_droitefin.png");
-  background-position: right center;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 195px;
-  margin: 35px 0px 0px 28px;
-}
-
-#inside_co_ress_tab {
-  height:260px;
-}
-
-#inside_co_ress_tab table {
-  margin:65px 0px 0px 10px;
-  font-size:0.9em;
-}
-
-#inside_co_ress_a {
-  width:144px;
-  text-align:center;
-}
-
-#inside_co_ress_a a {
-  color: #B30000 !important;
-  font-weight: bold;
-  text-align:center;
-  width:100%;
-  font-size:0.9em;
-  text-decoration:underline;
-}
-
-/* pages */
-
-/* batiment */
-
-#erreur_bat {
-  position:absolute;
-  margin-top:250px;
-  width:622px;
-  margin-left:125px;
-}
-
-#cadre_batiment_description {
-  width:642px;
-  height:270px;
-  margin:auto;
-  background-image:url('contourgrand.png');
-}
-
-#cadre_batiment_types {
-  width:385px;
-  height:28px;
-  background-image:url('menu.png');
-  margin:auto;
-}
-
-#cadre_batiment_types2 {
-  margin-top:3px;
-  position:relative;
-  float:left;
-  font-size:1.3em;
-  text-align:center;
-  font-weight: bold;
-  width:100%;
-}
-
-#cadre_batiment_liste {
-  margin-left:24px;
-  margin-top:10px;
-  width:850px;
-  position:relative;
-  float:left;
-  background-color:#EAE6E1;
-}
-
-.cadre_batiment_unite {
-  height:150px;
-  width:150px;
-  position:relative;
-  float:left;
-  margin:10px;
-  cursor : pointer;
-}
-
-.cadre_batiment_nom {
-  text-align:center;
-  width:100%;
-  margin-top:125px;
-  height:25px;
-  position:relative;
-  float:left;
-  background-image:url('plaque.png');
-  z-index:1000;
-}
-
-.cadre_batiment_nom2 {
-  margin-top:5px;
-  text-align:center;
-  font-weight: bold;
-  font-size:1.1em;
-}
-
-#cadre_batiment_cache {
-  position:absolute;
-  margin-top:510px;
-  margin-left:140px;
-  width:622px;
-  height:260px;
-}
-
-.titre_batiment2 {
-  margin-top:2px;
-  margin-bottom:7px;
-  font-size:1.4em;
-  text-align:center;
-}
-
-.gauche_batiment {
-  position:relative;
-  float:left;
-  width:210px;
-}
-
-.droite_batiment {
-  position:relative;
-  float:left;
-  width:390px;
-  line-height:14px;
-}
-
-#cadre_batiment_cache .texte1 {
-  min-height:50px;
-}
-
-#cadre_batiment_cache tbody td:nth-child(1) {
-    background-color: transparent;
-}
-
-#cadre_batiment_cache td {
-  border: 0px solid #CDCDCD;
-  box-shadow: 0 0px 0 #FFFFFF;
-}
-
-/* News */
-#new_list.ligne .ligne a {
-  margin-left:200px;
-}
-
-/* Bibliothéque */
-
-.biblio_cadre {
-  margin: 20px 15px 0px 15px;
-  width:402px;
-  float:left;
-  border: 2px dashed #21160A;
-}
-
-.biblio_titre {
-  font-weight:bold;
-  width:339px;
-  float:left;
-  margin:5px 5px 0px 5px;
-}
-
-.biblio_titre_edit {
-  width:345px;
-  float:left;
-  display:none;
-}
-
-.biblio_titre_edit input {
-  width:345px;
-  margin:5px 5px 0px 5px;
-}
-
-.biblio_edit {
-  width:43px;
-  float:right;
-  text-align:right;
-  margin:5px 5px 0px 5px;
-}
-
-.biblio_edit a {
-  cursor : pointer;
-}
-
-.biblio_txt {
-  text-align:justify;
-  margin:5px;
-}
-
-.biblio_txt_edit {
-  display:none;
-}
-
-.biblio_txt_edit textarea {
-  width:388px;
-  margin:5px;
-  height:120px;
-  padding-top:2px;
-}
-
-/* Cité */
-
-#info_cite_gauche {
-  width:50%;
-  float:left;
-}
-
-#info_cite_droite {
-  width:50%;
-  float:right;
-}
-
-#cadre_info_cite {
-  min-height:376px;
-}
-
-#cadre_info_actu {
-  min-height:87px;
-}
-
-#cadre_info_oracle {
-  min-height:34px;
-}
-
-#cadre_info_breves {
-  min-height:87px;
-}
-
-#cadre_info_archives {
-  min-height:148px;
-}
-
-#cadre_info_filleuls {
-  
-}
-
-.cadre_info {
-  width:434px;
-  position:relative;
-  margin-bottom:10px;
-  float:left;
-  margin-right:7px;
-  margin-left:4px;
-}
-
-.cadre_info_bas {
-  background-image:url('cadre_info_bas.png');
-  width:100%;
-  height:9px;
-}
-
-.cadre_info_haut {
-  background-image:url('cadre_info_haut.png');
-  width:100%;
-  height:10px;
-}
-
-.cadre_info_centre {
-  background-image:url('cadre_info_centre.png');
-  background-repeat:repeat-y;
-  min-height:10px;
-  width:100%;
-}
-
-.cadre_info_interieur {
-  margin-left:10px;
-  width:415px;
-}
-
-.cadre_info .titre {
-  width:100%;
-  text-align:center;
-  font-size:1.3em;
-  font-weight: bold;
-  color:#b30000 !important;
-}
-
-.cadre_info .mtitre {
-  width:100%;
-  text-align:left;
-  font-size:1.1em;
-  color:#b30000 !important;
-}
-
-.news {
-    font-size: 0.9em;
-    font-weight: bold;
-    width: 100%;
-}
-
-/* Arbre des dieux */
-.cadre_33 {
-  position:relative;
-  float:left;
-  width:33.3%;
-}
-
-#tab_autel_dieux .cadre_33 img {
-  cursor : pointer;
-}
-
-.arbre_bloc_noir {
-  background-color:black;
-  color:white;
-  text-align:center;
-  height:40px;
-  width:40px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  margin: 2px 2px 4px 2px;
-  border: 3px solid #2E2519;
-  cursor : pointer;
-}
-
-.arbre_bloc_noir .arbre_description {
-  display:none;
-  color:black;
-  padding:2px;
-  background: white;
-  padding: 3px;
-  opacity:0.9;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
-  background:white;
-  border:1px solid black;
-  font-size:12px;
-  z-index:500;
-  position: absolute;
-  width:200px;
-}
-
-.arbre_bloc_noir:hover .arbre_description {
-  display: inline; /* On affiche l'infobulle. */
-  margin-top:45px;
-}
-
-.arbre_bloc_noir .compteur {
-  position:relative;
-  float:right;
-  margin-top:24px;
-  margin-right:1px;
-  font-weight: bold;
-}
-
-/* nouveaumessage */
-
-#cadre_gauche {
-  width:180px;
-  position:relative;
-  float:left;
-  text-align:left;
-}
-
-#cadre_gauche_int {
-  margin-left:10px;
-}
-
-#cadre_gauche_int img {
+/* Design */
+
+#banniere {
+  background-image:url('banniere.png');
+  width:1250px;
+  height:276px;
   cursor:pointer;
 }
 
-#liste_destinataires {
-  margin-top:10px;
-  border: 2px dashed #21160A;
-  background-color: #F5EFD0;
-  padding: 5px;
+#menu {
+  background-image:url('barre_menu.png');
+  width:1250px;
+  height:50px;
+  position:absolute;
+  top:276px;
 }
 
-#liste_destinataires div {
+footer {
+  min-height:5px;
+  width:100%;
+  background-color:black;
+  bottom:0;
+}
+
+footer nav {
+  padding:10px 0px 10px 0px;
+  font-size:0.75em;
+  color:white;
+  column-count:5;
+  -moz-column-count:5;
+  -webkit-column-count:5;
+  
+  column-gap: 20px;
+  -moz-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  
+  column-rule: 1px dotted #BBBBBB;
+  -moz-column-rule: 1px dotted #BBBBBB;
+  -webkit-column-rule: 1px dotted #BBBBBB;
+}
+
+footer nav .titre {
+  font-weight:bold;
+}
+
+footer nav a {
+  color:white;
+  text-decoration:none;
+}
+
+#home {
+  margin-top:50px;
+  background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
+  background-position: 0% 0%, bottom, 0% 0%;
+  background-repeat: no-repeat, no-repeat, repeat;
+  padding-bottom: 7px;
+  width: 1250px;
+}
+
+#home_int {
+  width:855px;
+  margin-left:188px;
+  padding-bottom:85px;
+  position:relative;
+  float:left;
+}
+
+#formulaire {
+  width:230px;
+  display:inline;
+  float:right;
+  padding-top:75px;
+  margin-right:15px;
+  text-align:center;
+}
+
+#inscription {
+  position:relative;
+  width:230px;
+}
+
+#connexion {
+  position:relative;
+  width:230px;
+}
+
+#inside {
+  float: left;
+  width: 100%;
+  display:inline;
+  padding: 5px 0px 0px 0px;
+  font-family: 'Times New Roman';
+  font-size: 12px;
+  min-height: 300px;
+}
+
+#inside h1:first-letter, 
+#inside h2:first-letter, 
+#inside p:first-letter,
+#formulaire h2:first-letter,
+#new_list.ligne .ligne:first-letter,
+.rouge_goco,
+#nouscontacter_droite:first-letter {
+    color: #B30000 !important;
+}
+
+#inside h1 {
+  font-size: 1.5em;
+  text-align:center;
+  margin:18px 0px 8px 0px;
+}
+
+#inside h2 {
+    font-size: 1.2em;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+#inside p {
+  text-align:justify;
+  margin:2px 0px;
+}
+
+#formulaire h2 {
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#formulaire input.form{
+  width:80%;
+  margin-top:3px;
+}
+
+#formulaire .bouton_classique  {
+  margin-top:5px;
+}
+
+#reseaux_sociaux {
+  text-align:center;
+}
+
+#home_description {
+  width:100%;
+}
+
+#home_description_1 {
   
 }
 
-#cadre_gauche input {
-  width:150px;
+#home_description_2 {
+  display:none;
 }
 
-#cadre_droite {
-  width:670px;
+#home_description_3 {
+  display:none;
+}
+
+#home_description_4 {
+  display:none;
+}
+
+.home_description_left {
+  width:25%;
+  float:left;
+  text-align:center;
+}
+
+.home_description_left img {
+  width:96%;
+}
+
+.home_description_right {
+  width:75%;
+  float:left;
+}
+
+.home_description_right_inner {
+  width:96%;
+  margin-left:2%;
+  text-align:justify;
+}
+
+#nouscontacter_gauche {
+  width:40%;
+  float:left;
   position:relative;
+}
+
+#nouscontacter_droite {
+  width:60%;
   float:right;
+  position:relative;
+}
+
+#nouscontacter_droite textarea {
+  width:100%;
+  height:122px;
+}
+
+#menu a {
+  color:white;
+  font-size:1.4em;
+  font-family:"diogenes";
+  position:relative;
+  float:left;
+  height:30px;
+  text-align:center;
+  padding-top:9px;
+}
+
+#menu #nousrejoindre {
+  margin-left:251px;
+  width:200px;
+}
+
+#menu #decouvrirjeu {
+  width:170px;
+}
+
+#menu #faq {
+  width:110px;
+  margin-left:10px;
+}
+
+#menu #accueil {
+  color:black;
+  font-weight:bold;
+  width:105px;
+  margin-top:-20px;
+  font-size:1.6em;
+}
+
+#menu #accueil .ssmenu {
+  color:#ffff00;
+  margin: 2px 0 0 2px;
+  text-shadow: -1px -1px 0px #000;
+}
+
+#menu #forum {
+  width:110px;
+  margin-left:10px;
+}
+
+#menu #partenaires {
+  width:110px;
+}
+
+#menu #contact {
+  width:110px;
+}
+
+#menu .ssmenu {
+  width:100%;
+  margin: 1px 0 0 1px;
+  color:#21160a;
+  text-shadow: -1px -1px 0px #FFF;
+}
+
+#sinscrire img {
+  width:50%;
+}
+
+.part_banniere {
+  height:52px;
+  width:427px;
+}
+
+/* 2nd menu */
+#header_ssmenu {
+  float:left;
+  font-family:"poseiaoe", "dalek", "spqr";
+}
+
+#barre_menu_vide {
+  background-image:url('barre_menu_vide.png');
+  background-repeat:no-repeat;
+  width:682px;
+  height:28px;
+  margin-left:584px;
+}
+
+/* Classement */
+#cadre_classement {
+  position:relative;
+  float:left;
+}
+
+#class_gauche {
+  position:relative;
+  float:left;
+  width:48px;
+  height:100px;
+  margin-right:5px;
+  margin-top:129px;
+}
+
+#class_centre {
+  position:relative;
+  float:left;
+  width:390px;
+}
+
+#class_droite {
+  position:relative;
+  float:left;
+  width:48px;
+  height:100px;
+  margin-left:5px;
+  margin-top:130px;
+}
+
+.form_rech3 {
+  position:relative;
+  float:left;
+  margin-top:1px;
+}
+
+.form_rech4 {
+  position:relative;
+  float:left;
+  margin-left:10px;
+}
+
+.form_rech5 {
+  position:relative;
+  float:left;
+  margin-top:10px;
+  margin-left:40px;
+  text-align:center;
+  width:120px;
 }
 
 /* profilsjoueur */
@@ -1176,7 +674,7 @@ select {
 #cadre_avatar {
   position:relative;
   float:left;
-  min-height:210px;
+  min-height:200px;
   width:220px;
   margin-left:80px;
 }
@@ -1211,272 +709,6 @@ select {
   width:600px;
 }
 
-/* Succes */
-#menu_hf {
-  position:relative;
-  float:left;
-  width:152px;
-  height:382px;
-  background-image:url(../../../images/hf/font_hf2.png);
-  background-repeat:no-repeat;
-  text-align:left;
-  margin-top:10px;
-  margin-left:30px;
-}
-
-#liste_hf {
-  position:relative;
-  float:left;
-  width:635px;
-  margin-top:11px;
-  margin-left:42px;
-}
-
-#hf_img_1 {
-  margin-top:18px;
-}
-
-.bouton_hf {
-  margin-top:12px;
-  margin-left:17px;
-  position:relative;
-  float:left;
-  width:114px;
-  height:30px;
-  background-color: #E4DCC2;
-  border: 2px solid #B8860B;
-  box-shadow: 2px 3px 5px 2px #656565 inset, 0 -3px 5px 0 #656565 inset;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.bouton_hf_int {
-  position:relative;
-  float:left;
-  color:#B8860B;
-  width:100%;
-  text-align:center;
-  font-size:2em;
-  text-shadow: 0 -1px 0 #000;
-  margin-top:5px;
-}
-
-.font_hf {
-  background-image:url(../../../images/hf/font_succes.png);
-  background-repeat:no-repeat;
-  height:73px;
-  width:624px;
-  position:relative;
-  float:left;
-  margin-bottom:5px;
-}
-
-.titre_hf {
-  position:relative;
-  float:left;
-  height:22px;
-  width:558px;
-  margin-top:5px;
-  color:white;
-  font-weight:bold;
-  text-align:center;
-}
-
-.txt_hf {
-  position:relative;
-  float:left;
-  width:558px;
-  text-align:center;
-}
-
-.pt_hf  {
-  position:relative;
-  float:right;
-  width:54px;
-  color:white;
-  font-weight: bold;
-  margin-left:9px;
-  margin-top:12px;
-  text-align:center;
-}
-
-/* Parrainage */
-.part_banniere {
-  height:62px;
-  width:375px;
-}
-
-/* Chat */
-
-#cadre_chat {
-  position:fixed;
-  bottom:0;
-  right:0;
-  height:30px;
-  z-index:1100;
-  background-color: #E4DCC2;
-  border: 2px solid #B8860B;
-  box-shadow: 2px 3px 5px 2px #656565 inset, 0 -3px 5px 0 #656565 inset;
-  color: #21160A
-}
-
-#cadre_chat_titre {
-  text-align:center;
-  width:100%;
-  position:relative;
-  float:left;
-  z-index:1200;
-  font-family: "diogenes";
-  margin-top:3px;
-}
-
-#cadre_chat_titre {
-    float: right;
-    margin-top: 3px;
-    position: relative;
-}
-
-#cadre_chat_titre2 {
-    float: left;
-    margin: 1px 1px 0px 10px;
-    position: relative;
-}
-
-#cadre_chat_iconedeco {
-    float: right;
-    margin: 4px 8px 0px 8px;
-    position: relative;
-}
-
-#cadre_chat_iconedeco2 {
-    float: right;
-    margin: 2px 8px 0px 8px;
-    position: relative;
-}
-
-#cadre_chat_fermer {
-  position:relative;
-  text-align:right;
-  float:right;
-  z-index:1400;
-  width:100%;
-  height:30px;
-}
-
-#cadre_chat_interieur {
-  width:600px;
-  position:relative;
-  float:left;
-  z-index:1200;
-  margin:10px;
-  font-size:0.8em;
-}
-
-#cadre_chat_interieur_droite {
-  position:relative;
-  float:right;
-  z-index:1300;
-  width:150px;
-}
-
-#cadre_chat_interieur_gauche {
-  position:relative;
-  float:left;
-  z-index:1300;
-  width:440px;
-  margin-right:10px;
-}
-
-#cadre_chat_interieur_gauche .bouton_classique {
-  margin: 0px 0px 0px 10px;
-  position:relative;
-  float:left;
-}
-
-#corps_chat {
-  margin-bottom:3px;
-  border: 1px groove black;
-  width:438px;
-  height:300px;
-  overflow: auto;
-  background-color:white;
-  overflow-wrap: break-word;
-}
-
-#texte_chat {
-    float: left;
-    position: relative;
-    margin-top:2px;
-    width:354px;
-}
-
-#joueurs_chat {
-  width:100%;
-  height:300px;
-  overflow: auto;
-  background-color:white;
-  overflow-wrap: break-word;
-  border: 1px groove black;
-}
-
-/* Classement */
-#cadre_classement {
-  position:relative;
-  float:left;
-}
-
-#class_gauche {
-  position:relative;
-  float:left;
-  width:48px;
-  height:100px;
-  margin-right:5px;
-  margin-top:229px;
-}
-
-#class_centre {
-  position:relative;
-  float:left;
-}
-
-#class_centre table {
-  width:767px;
-}
-
-#class_droite {
-  position:relative;
-  float:left;
-  width:48px;
-  height:100px;
-  margin-left:5px;
-  margin-top:230px;
-}
-
-.form_rech3 {
-  position:relative;
-  float:left;
-  margin-top:1px;
-}
-
-.form_rech4 {
-  position:relative;
-  float:left;
-  margin-left:10px;
-}
-
-.form_rech5 {
-  position:relative;
-  float:left;
-  margin-top:10px;
-  margin-left:40px;
-  text-align:center;
-  width:120px;
-}
-
-#rech_classement {
-  margin-left:53px;
-}
-
 /* profilsalliance */
 .laurier1 {
   width:25px;
@@ -1497,14 +729,14 @@ select {
 #cadre_com_profils {
   position:relative;
   float:left;
-  background-image:url('../../../images/menu/interieur.png');
+  background-image:url('../../../images/menu/interieur2.png');
   background-repeat:repeat-y;
-  width:779px;
-  margin-left:48px;
+  width:495px;
+  margin-left:3px;
 }
 
 #cadre_com_profils2 {
-  background-image:url('../../../images/menu/haut.png');
+  background-image:url('../../../images/menu/haut2.png');
   background-repeat:no-repeat;
   width:779px;
   height:13px;
@@ -1513,7 +745,7 @@ select {
 #cadre_com_profils3 {
   position:relative;
   float:left;
-  background-image:url('../../../images/menu/bas.png');
+  background-image:url('../../../images/menu/bas2.png');
   background-repeat:no-repeat;
   width:779px;
   height:15px;
@@ -1527,7 +759,40 @@ select {
   min-height:80px;
 }
 
+#cadre_laurier {
+  margin-left:160px;
+}
+
 /*obtenirdesfaveurs */
 .cache_renta {
   display:none;
+}
+
+/* tour de force */
+.font_hf {
+  background-image:url(../../../images/hf/font_succes2.png);
+  background-repeat:no-repeat;
+  height:73px;
+  width:452px;
+  position:relative;
+  float:left;
+  margin-bottom:5px;
+}
+
+.titre_hf {
+  position:relative;
+  float:left;
+  height:22px;
+  width:100%;
+  margin-top:5px;
+  color:white;
+  font-weight:bold;
+  text-align:center;
+}
+
+.txt_hf {
+  position:relative;
+  float:left;
+  width:100%;
+  text-align:center;
 }
