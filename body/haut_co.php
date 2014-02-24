@@ -261,6 +261,7 @@ switch($page) {
 	case 'changer_grandchef':
 	case 'contrats':
 	case 'blocus':
+	case 'calendrier':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
