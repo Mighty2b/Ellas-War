@@ -121,6 +121,24 @@ function gestion_pacte(id, action) {
 		success: function(msg){ location.reload(); }
 	});
 }
+
+function demander_fusion(id) {
+	$.ajax({
+		type: "GET",
+		url: "form/demander_fusion.php",
+		data: "id="+id,
+		success: function(msg){ location.reload(); }
+	});
+}
+
+function annuler_fusion(id) {
+	$.ajax({
+		type: "GET",
+		url: "form/annuler_fusion.php",
+		data: "id="+id,
+		success: function(msg){ location.reload(); }
+	});
+}
 </script>';
 
 ?>
