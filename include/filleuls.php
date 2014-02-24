@@ -17,7 +17,7 @@ if(sizeof($liste) > 0) {
 		
 		echo '<tr>
 <td>&nbsp;'.$image.
-    ' &nbsp;  <a href="'._('profilsjoueur').'-'.$do->id.'\'>'.
+    ' &nbsp;  <a href="'._('profilsjoueur').'-'.$do->id.'">'.
     $do->login.'</a>&nbsp;</td>
 		<td>&nbsp;'.$do->lvl.'&nbsp;</t>
 		<td>&nbsp;<a href="'._('nouveaumessage').'-'.$do->id.'">'.
