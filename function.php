@@ -600,6 +600,10 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 246: $erreur = 'Lot acheté';
 		break;
+	case 247: $erreur = 'Contrat validé';
+		break;
+	case 248: $erreur = 'Vous venez d\'annuler un contrat envers l\'alliance '.$var;
+		break;
 	//case : $erreur = "";break;
 	}
 	

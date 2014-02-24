@@ -150,7 +150,8 @@ echo '
                                 title="'._('Guerres').'" /></a>
 &nbsp;';
 
-if($mon_alliance -> level >= 3 && $paquet->peut_contrat() > 0) {
+if($mon_alliance -> level >= 3 && 
+   $paquet->get_infoj('droits_alliance')->contrat > 0) {
 	echo '&nbsp;<a href="'._('contrats').'" ><img src="images/alliance/contrats.png"
 	                                              alt="'._('Contrats').'" 
 	                                              title="'._('Contrats').'" /></a>&nbsp;';

@@ -11,19 +11,14 @@ if($mon_alliance->level < 5) {
 	
 echo '
 <div id="cadre_milieu_petit">
-	<div id="cadre_haut_petit"><img src="images/attaques/cross.png"
-	                                alt="'._('Fermer').'" 
-	                                title="'._('Fermer').'" 
-	                                class="cursor" 
-	                                style="margin-top:10px;margin-right:10px;" 
-	                                onclick="javascript:fermer_cadre();"/></div>
+	<div id="cadre_haut_petit"></div>
 	<div id="cadre_centre_petit">
 	
 	</div>
 	<div id="cadre_bas_petit"></div>
 </div>';
 
-	echo '<h1>'._('Passage niveau').' '.($paquet->get_infoj('lvl')+1).'</h1>
+	echo '<h1>'._('Passage niveau').' '.($mon_alliance->level+1).'</h1>
 	<div class="centrer">
 	<h3>Votre alliance doit posséder :</h3>
 	<table class="none">
@@ -313,14 +308,14 @@ echo '
 	if($paquet->get_infoj('id') == $mon_alliance->id_chef && 
 	   $remplie == $necessaire) {
 		echo '<br/><div class="bouton_classique"><input type="button"
-																										value="'._('PASSER VOTRE ALLIANCE NIVEAU').' '.($paquet->get_infoj('lvl')+1).'" 
+																										value="'._('PASSER VOTRE ALLIANCE NIVEAU').' '.($mon_alliance->level+1).'" 
 																										onclick="javascript:passer_lvlalliance();"/></div>';
 	}
 	
 	
 	echo '<div class="centrer">
 				<h2>'._('Après le passage de votre alliance niveau').' '.
-				($paquet->get_infoj('lvl')+1).'</h2></div>
+				($mon_alliance->level+1).'</h2></div>
 				<table class="none">';
 	
 	switch($paquet->get_infoj('lvl')) {

@@ -15,7 +15,7 @@ echo '
 <center>
 <h2>Votre alliance vient de passer niveau '.$mon_alliance->level.', félicitation</h2>
 
-<table class="centrer_tableau">';
+<table class="none">';
 
 switch($mon_alliance->level) {
 	case 2:

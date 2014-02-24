@@ -51,6 +51,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'coffre', 'demande', 'nommer', 'recrutements', 'pactes', 'guerres',
 'archives_alliance', 'dissoudre', 'niveau', 'donner', 'sortieurgence',
 'calendrier', 'contrats', 'blocus', 'quitter', 'changer_grandchef',
+'blocus',
 
 //Marché
 'commerce', 'donnerunefaveur', 'faveurs', 'vendre', 'licences', 'mesventes',
