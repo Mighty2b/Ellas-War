@@ -17,7 +17,7 @@ if(sizeof($liste_pactes) > 0) {
 <td>'._('Chef').'</td>
 <td>'._('Signature').'</td>';
 
-	if($paquet->peut_pacte() > 0) {
+	if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 		echo '<td>'._('Action(s)').'</td>';
 	}
 	
@@ -38,7 +38,7 @@ if(sizeof($liste_pactes) > 0) {
 	$do->alliance2_idchef.'">'.$do->alliance2_chef.'</a>&nbsp;</td>
 	<td>&nbsp;'.$signature.'&nbsp;</td>';
 			if(empty($do->date)) {
-				if($paquet->peut_pacte() > 0)	{
+				if($paquet->get_infoj('droits_alliance')->pacte > 0)	{
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'signer\');">'._('Signer').'</a>&nbsp;
 										&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'refuser\');">'._('Refuser').'</a>&nbsp;</td></tr>';
 				}
@@ -48,10 +48,10 @@ if(sizeof($liste_pactes) > 0) {
 			}
 			else
 			{
-				if($paquet->peut_pacte() > 0) {
+				if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'briser\');">'._('Annuler').'</a>&nbsp; ';
 				
-					if(sizeof($liste_fusion) == 0 && $paquet->getid() == $do->alliance1_idchef && ($tp > $do->date)) {
+					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $do->alliance1_idchef && ($tp > $do->date)) {
 						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
 					}
 				
@@ -69,17 +69,17 @@ if(sizeof($liste_pactes) > 0) {
 	<td>&nbsp;'.$signature.'&nbsp;</td>';
 			if(empty($do->date))
 			{
-				if($paquet->peut_pacte() > 0)
+				if($paquet->get_infoj('droits_alliance')->pacte > 0)
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'annuler\');">'._('Annuler').'</a>&nbsp;</td></tr>';
 				else
 					echo '<td>&nbsp;&nbsp;</td></tr>';
 			}
 			else
 			{
-				if($paquet->peut_pacte() > 0) {
+				if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'briser\');">'._('Annuler').'</a>&nbsp;';
 
-					if(sizeof($liste_fusion) == 0 && $paquet->getid() == $do->alliance2_idchef && ($tp > $do->date)) {
+					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $do->alliance2_idchef && ($tp > $do->date)) {
 						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
 					}
 				
@@ -110,5 +110,17 @@ if(sizeof($liste_pactes) > 0) {
 else {
 	echo '<div class="ligne erreur centrer"><h2>'._('Vous n\'avez aucun pacte en cours').'</h2></div>';
 }
+
+echo '
+<script type="text/javascript">
+function gestion_pacte(id, action) {
+	$.ajax({
+		type: "GET",
+		url: "form/gestion_pacte.php",
+		data: "id="+id+"&action="+action,
+		success: function(msg){ location.reload(); }
+	});
+}
+</script>';
 
 ?>
