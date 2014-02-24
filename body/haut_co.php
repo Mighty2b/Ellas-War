@@ -141,6 +141,7 @@ switch($page) {
 	case 'bonus':
 	case 'faveurs':
 	case 'obtenirdesfaveurs':
+	case 'dons':
 		echo '
 		<div id="barre_menu_cite">
 			<a id="header_ssmenu_constructions"
