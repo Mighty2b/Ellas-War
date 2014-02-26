@@ -1846,3 +1846,13 @@ select {
   float:right;
   width:390px;
 }
+
+/* faveurs */
+#menu_hf .nb_faveur {
+  position:relative;
+  float:left;
+  width:100%;
+  text-align:center;
+  font-size:1.5em;
+  margin-top:12px;
+}

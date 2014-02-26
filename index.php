@@ -40,8 +40,12 @@ switch($paquet->get_infoj('statu')) {
 		$prefix = 'mq';
 	break;
 	case 3:
+		include('autorise/bloqueautorise.php');
+		$prefix = 'bq';
+	break;
+	case 4:
 		include('autorise/pauseautorise.php');
-		$prefix = 'deco';
+		$prefix = 'pause';
 	break;
 	case 0:
 		include('autorise/pubautorise.php');
@@ -69,11 +73,16 @@ echo '<!–[if lt IE 9]>
 echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
 
 switch($paquet->get_infoj('statu')) {
+	case 0:
+	
+	break;
+	
 	case 1:
 echo '<script type="text/javascript" src="js/scripts_'.$prefix.'.js" ></script>';
 	break;
 	
 	default:
+echo '<script type="text/javascript" src="js/scripts_aco.js" ></script>';
 	break;
 }
 
