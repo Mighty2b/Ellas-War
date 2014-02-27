@@ -9,7 +9,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Messagerie
 'nouveaumessage', 'messagerie', 'boiteenvoie', 'archivesdemessagerie', 
-'listenoire', 'lire',
+'listenoire', 'lire', 'missives',
 
 //Parrainage
 'parrainage', 'filleuls', 'soutien',

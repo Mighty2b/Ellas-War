@@ -41,6 +41,7 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('boiteenvoie').'">'._('Boite d\'envoi').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('archivesdemessagerie').'">'._('Archives').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('listenoire').'">'._('Liste noire').'</a>&nbsp;</li>
+			<li>&nbsp;<a href="'._('missives').'">'._('Missives').'</a>&nbsp;</li>
 		</ul>
 		</li>
 		<li>&nbsp;<a href="'._('parrainage').'">'.ucfirst(_('parrainage')).'</a>&nbsp;
@@ -316,6 +317,7 @@ switch($page) {
 	case 'archivesdemessagerie':
 	case 'listenoire':
 	case 'lire':
+	case 'missives':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
