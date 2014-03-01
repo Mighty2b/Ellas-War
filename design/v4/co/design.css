@@ -481,6 +481,13 @@ td.none {
   text-decoration:none;
 }
 
+#missives {
+  position:relative;
+  margin: 39px 0 0 130px;
+  width: 940px;
+  font-size:0.9em;
+}
+
 /* Ban */
 
 #header_ban {

@@ -80,11 +80,24 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 </section>
 <section id="header_ban">';
 
+if(!empty($paquet->get_answer('get_missives'))) {
+	$var_missives = $paquet->get_answer('get_missives')->{1};
+	
+	echo '
+	<marquee height="18"
+	         id="missives"
+	         onmouseout="this.start()" 
+	         onmouseover="this.stop()" 
+	         scrolldelay="0" 
+	         scrollamount="3" 
+	         direction="left" 
+	         behavior="scroll">'.html_entity_decode(stripslashes($var_missives)).'</marquee>';
+}
+	         
 echo '<div id="etape" style="display:none">';
 	include('include/texte_tuto.php');
-echo '</div>';
+echo '</div>
 
-echo '
 </section>
 <section id="header_menu">
 &nbsp;<a id="menu_cite" href="'._('cite').'"><div class="ssmenu">'._('Cité').'</div></a>&nbsp;

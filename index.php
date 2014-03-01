@@ -28,6 +28,7 @@ if(empty($page) or !file_exists('header/'.$page.'.php')) {
 include('header/'.$page.'.php');
 
 $paquet -> add_action('messagerie_nonlus');
+$paquet -> add_action('get_missives');
 $paquet -> send_actions();
 
 switch($paquet->get_infoj('statu')) {
