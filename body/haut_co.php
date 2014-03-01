@@ -155,6 +155,7 @@ switch($page) {
 	case 'bonus':
 	case 'faveurs':
 	case 'obtenirdesfaveurs':
+	case 'faveurerreur':
 	case 'dons':
 		echo '
 		<div id="barre_menu_cite">
