@@ -154,7 +154,7 @@ echo '
 	
 	case 3:
 	
-	if($get_answer('possible_changer_temple')->{1} > 0) {
+	if($paquet->get_answer('possible_changer_temple')->{1} > 0) {
 echo '
 <div class="ligne_50"
      style="height:140px;">
