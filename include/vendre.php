@@ -31,8 +31,8 @@ else {
 	if(!empty($paquet->get_answer('licence')) &&
 	   $paquet->get_answer('licence')->{1} > $paquet->get_infoj('timestamp')) {
 		echo '<div class="erreur">';
-		echo _('Votre licence finie').' '.
-		     display_date($paquet->get_infoj('timestamp'),4);
+		echo _('Votre licence finit').' '.
+		     display_date($paquet->get_answer('licence')->{1},4);
 		echo '</div>';
 	}
 	  
