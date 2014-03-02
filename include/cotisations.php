@@ -45,7 +45,7 @@ Cotisation volontaire :
        name="cotise_volontaire" 
        maxlength="2"
 			 size="2" 
-			 value="'.$paquet->get_cotise_volontaire().'"/>% '.
+			 value="'.$paquet->get_infoj('cotise_volontaire').'"/>% '.
 imress('drachme').' '._('gagnés').' ('._('max').' : 25%)
 <br/><br/>';
 }
