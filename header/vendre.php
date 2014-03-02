@@ -6,6 +6,7 @@ echo '
       content="'._('Vendre des ressources sur le marché').'" />';
 
 $paquet -> add_action('prix_commerce');
+$paquet -> add_action('licence');
 
 if(!empty($_POST['cle'])) {
 	if(empty($_POST['anonyme'])) {

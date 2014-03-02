@@ -23,11 +23,25 @@ echo '<div class="ligne_80 justify">'._(
 
 echo '<div id="error"></div>';
 
-if($jour != 3 && $jour != 6 && $jour != 7) {
+if(true != false or $jour != 3 && $jour != 6 && $jour != 7) {
 echo
  '<div class="ligne_50">
 	<h2 class="centrer">'._('Poser des ressources au débarras').'</h2>
-	<br/>
+	<br/>';
+
+if(!empty($paquet->get_answer('licence')) &&
+   $paquet->get_answer('licence')->{1} > $paquet->get_infoj('timestamp')) {
+	echo '<div class="erreur">';
+	echo _('Votre licence finie').' '.
+	     display_date($paquet->get_infoj('timestamp'),4);
+	echo ' (<a href="'._('licences').'">'._('Licences').'</a>)<br/></div>';
+}
+else {
+	echo '<div class="erreur"><a href="'._('licences').'">'._(
+	     'Acheter une licence pour pouvoir vendre au debarras.').'</a><br/></div>';
+}
+
+echo '
 	<form action="#" method="post" name="vendre">
 	<table class="none">
 	<tr>
@@ -120,7 +134,16 @@ echo '
 			<td>Taux moyen</td>
 		</tr></thead>
 		<tfoot></tfoot>
-		<tbody>
+		<tbody>';
+
+foreach($paquet->get_answer('archives_debarras')->{1} as $ress => $taux) {
+	echo '<tr>
+	<td>'.imress($ress).'</td>
+	<td class="centrer">'.nbf($taux,4).'</td>
+	</tr>';
+}
+
+echo '
 		</tbody>
 	</table>
 	</div>

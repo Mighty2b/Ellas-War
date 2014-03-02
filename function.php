@@ -604,6 +604,8 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 248: $erreur = 'Vous venez d\'annuler un contrat envers l\'alliance '.$var;
 		break;
+	case 249: $erreur = 'Vous devez avoir une licence pour vendre au débarras.';
+		break;
 	//case : $erreur = "";break;
 	}
 	

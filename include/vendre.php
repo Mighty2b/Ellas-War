@@ -12,20 +12,45 @@ else {
 	$paquet->error('vendre_lot');
 	
 	echo '
-	<p class="ligne80 justifier"><br/>'._(
+	<p class="ligne_80 justifier"><br/>'._(
 	'Lors d\'une vente vous avez deux choix pour le prix de vos ressources. '.
 	'Le prix par taux représente le prix d\'une unité de ressource de votre lot, '.
-	'le prix total par contre sera le prix pour le lot en entier.').'</p>';
+	'le prix total par contre sera le prix pour le lot en entier.').'<br/>
+	'._('La vente flash vous permet de vendre un lot plus gros que la quantité '.
+	'maximale autorisée. '.
+	'En contre-partie celui-ci ne restera sur le commerce que 12 heures. '.
+	'De plus vous aurez besoin d\'une licence pour l\'activer. '.
+	'Si vous avez une licence et que vous oubliez de cocher la case, la '.
+	'vente flash s\'activera automatiquement.').'</p>';
 	
 	echo '<p class="centrer ligne">'._(
 	'Vous pouvez en échange de 5% du prix, vendre de façon anonyme.').'</p>';
 	
 	$paquet -> is_active_bonus_commerce();
+	
+	if(!empty($paquet->get_answer('licence')) &&
+	   $paquet->get_answer('licence')->{1} > $paquet->get_infoj('timestamp')) {
+		echo '<div class="erreur">';
+		echo _('Votre licence finie').' '.
+		     display_date($paquet->get_infoj('timestamp'),4);
+		echo '</div>';
+	}
 	  
 	echo '
 	<div class="ligne_50"><br/>
 	<form action="#" method="post" name="vendre">
 	<table class="none">
+	<tr>';
+	if($paquet->get_answer('licence')->{1} <= $paquet->get_infoj('timestamp')) {
+		echo '<td colspan="2" class="rouge_goco centrer">'.
+	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
+	}
+	else {
+echo '<td><b>'._('Vente flash').' (<a href="'._('licences').'">'._('Licences').'</a>)</b></td>
+	 	<td><input type="checkbox" name="flash" id="vente_flash">';
+	}
+
+	echo '</td></tr>
 	<tr>
 		<td align="left">&nbsp;<b>'._('Quantité').' </b>&nbsp;</td>
 		<td align="left"><input name="nbressource" 
@@ -95,7 +120,9 @@ echo '
 	
 echo '</form>
 	</div>
-	<div class="ligne_50"><br/>
+	<div class="ligne_50"><br/>';
+	
+echo '<div id="vente_flash_off">
 		<table>
 	<thead>
 		<tr>
@@ -114,7 +141,7 @@ echo '</form>
 		foreach($prix_commerce as $valeur) {
 			echo '
 			<tr>
-			<td align=\'left\'>&nbsp;'.$valeur->nom.'&nbsp;</td>
+			<td align="left">&nbsp;'.$valeur->nom.'&nbsp;</td>
 			<td class="droite">&nbsp;'.nbf($valeur->petittaux,4).'&nbsp;</td>
 			<td class="droite">&nbsp;'.nbf($valeur->petitmax,4).'&nbsp;</td>
 			<td class="droite">&nbsp;'.nbf($valeur->qtt).'&nbsp;</td>
@@ -123,9 +150,58 @@ echo '</form>
 		}
 	}
 	echo '</tbody>
-	</table>
-	</div>';
+	</table></div>';
+	
+echo '<div id="vente_flash_on" style="display:none">
+		<table>
+	<thead>
+		<tr>
+			<td></td>
+			<td>'._('Mini PL').'</td>
+			<td>'._('Maxi PL').'</td>
+			<td>'._('Seuil').'</td>
+		</tr>
+	</thead>
+	<tfoot></tfoot>
+	<tbody>';
+	$i = 0;
 
+	$prix_commerce = $paquet->get_answer('prix_commerce')->{1};
+	if(!empty($prix_commerce)) {
+		foreach($prix_commerce as $valeur) {
+			if($valeur->nom == 'Faveur') {
+				$coef = 1;
+			}
+			else {
+				$coef = 5;
+			}
+			
+			echo '
+			<tr>
+			<td align="left">&nbsp;'.$valeur->nom.'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->petittaux,4).'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->petitmax,4).'&nbsp;</td>
+			<td class="droite">&nbsp;'.nbf($valeur->qtt*$coef).'&nbsp;</td>
+			</tr>
+			';
+		}
+	}
+	echo '</tbody>
+	</table></div>';
+	
+	echo '</div>
+<script type="text/javascript">
+	$("#vente_flash").change(function () {
+		if( $("input[name=flash]").is(":checked") ){
+			$("#vente_flash_on").show();
+			$("#vente_flash_off").hide();
+		}
+		else {
+			$("#vente_flash_on").hide();
+			$("#vente_flash_off").show();
+		}
+	});
+</script>';
 }
 
 ?>
