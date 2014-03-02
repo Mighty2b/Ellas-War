@@ -190,6 +190,7 @@ echo '<div id="vente_flash_on" style="display:none">
 	</table></div>';
 	
 	echo '</div>
+<div class="ligne"><br/><br/></div>
 <script type="text/javascript">
 	$("#vente_flash").change(function () {
 		if( $("input[name=flash]").is(":checked") ){
