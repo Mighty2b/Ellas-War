@@ -10,5 +10,6 @@ if(!empty($_GET['var2'])) {
 }
 
 $paquet -> add_action('dernieres_faveurs');
+$paquet -> add_action('possible_changer_temple');
 
 ?>
