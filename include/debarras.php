@@ -23,7 +23,7 @@ echo '<div class="ligne_80 justify">'._(
 
 echo '<div id="error"></div>';
 
-if(true != false or $jour != 3 && $jour != 6 && $jour != 7) {
+if($jour != 3 && $jour != 6 && $jour != 7) {
 echo
  '<div class="ligne_50">
 	<h2 class="centrer">'._('Poser des ressources au débarras').'</h2>

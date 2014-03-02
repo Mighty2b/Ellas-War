@@ -41,7 +41,7 @@ else {
 	<form action="#" method="post" name="vendre">
 	<table class="none">
 	<tr>';
-	if($paquet->get_answer('licence')->{1} <= $paquet->get_infoj('timestamp')) {
+	if($paquet->get_answer('licence')->{1} > 0) {
 		echo '<td colspan="2" class="rouge_goco centrer">'.
 	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
 	}
