@@ -10,8 +10,8 @@ echo '<div class="ligne_80">'._(
 'Lors de l\'arrivée d\'un nouveau message, le texte du bouton '.
 'chat apparaît en rouge. '.
 'Lorsque vous êtes sur le chat la croix rouge vous permet de '.
-'fermer la fenetre. La flècge rouge vous permet de vous '.
-'deconnecter du chat.').'</div>';
+'fermer la fenetre. La flèche rouge vous permet de vous '.
+'déconnecter du chat.').'</div>';
 
 
 echo '<h2 class="centrer">'._('Signalement d\'un nouveau message').'</h1>';
