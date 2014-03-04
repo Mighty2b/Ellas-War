@@ -30,7 +30,7 @@ echo '<div class="ligne centrer">
      ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'</span>, '.
 		 _('bilan de l\'XP apportée à votre alliance').
      ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'<span>
-		 </div>';		 
+		 <br/><br/></div>';		 
 
 echo '<h2 class="centrer">'._('Attaques disponibles').'</h2>
 <table class=\'tableau80 centrer_tableau\'>
