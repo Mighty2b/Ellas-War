@@ -13,7 +13,7 @@ if(!empty($_POST)) {
 			$pays=trim(htmlentities($_POST['pays'], ENT_NOQUOTES, 'UTF-8'));
 		}
 		
-		if(empty($pays) or ($pays == 'Thumbs.db') or !file_exists($dir.'/'.$pays)) {
+		if(empty($pays) or ($pays == 'Thumbs.db') or !file_exists('images/drapeau/'.$pays)) {
 			$pays='aaa.gif';
 		}
 
