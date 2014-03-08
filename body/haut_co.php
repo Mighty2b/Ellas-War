@@ -105,12 +105,16 @@ echo '</div>
 &nbsp;<a id="menu_archives" href="'._('archives').'"';
 
 if($paquet->get_infoj('nb_histo') > 0) {
-	echo ' style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"
-	       title="'.$paquet->get_infoj('nb_histo').' '.
-	                _('archives en attente').'"';
+	echo ' title="'.$paquet->get_infoj('nb_histo').' '._('archives en attente').'"';
 }
 
-echo '><div class="ssmenu" >'.ucfirst(_('archives')).'</div></a>&nbsp;
+echo '><div class="ssmenu" ';
+
+if($paquet->get_infoj('nb_histo') > 0) {
+	echo ' style="text-shadow: 0px 0px 8px rgba(255, 140, 0, 0.75);"';
+}
+
+echo '>'.ucfirst(_('archives')).'</div></a>&nbsp;
 &nbsp;<a id="menu_mythologie" href="';
 
 if($paquet->get_infoj('lvl') <= 1) {
