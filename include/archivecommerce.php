@@ -11,7 +11,7 @@ else {
 	
 	if(sizeof($mes_achats) > 0) {
 		echo '<h2 class="centrer">'._('Mes derniers achats').'</h2><br/>
-		<table class="centrer_tableau">';
+		<table class="none">';
 		foreach($mes_achats as $do) {
 			echo '<tr><td class="droite">'.
 					nbf($do->nbvente).' </td><td> '.imress($do->typevente).' '._('pour').' '.
@@ -24,7 +24,7 @@ else {
 	
 	if(sizeof($mes_ventes) > 0) {
 	 echo '<h2 class="centrer">'._('Mes dernières ventes').'</h2><br/>
-	 <table class="centrer_tableau">';
+	 <table class="none">';
 	 foreach($mes_ventes as $do) {
 	    echo '<tr><td class="droite">'.
 	    nbf($do->nbvente).' </td><td> '.imress($do->typevente).' '._('pour').' '.
