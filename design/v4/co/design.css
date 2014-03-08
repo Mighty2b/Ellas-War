@@ -875,7 +875,7 @@ select {
 }
 
 #inside_co_ress_tab {
-  height:260px;
+  min-height:260px;
 }
 
 #inside_co_ress_tab table {

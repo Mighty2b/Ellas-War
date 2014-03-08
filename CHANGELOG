@@ -23,3 +23,6 @@
 - Les joueurs peuvent se mettre en greve. Ils ne peuvent attaquer en guerre mais ne payent plus de cotisation. Après une sortie de grève il faut 24 heures avant de pouvoir attaquer de nouveau.
 - Lors d'une déclaration de guerre la case de rédition est cochée par défaut
 - Doublement de la production de pierre et de marbre
+- Rang soldat par défaut dans les alliances
+- Message à tous les joueurs lors de l'election de l'oracle
+- Le diamant est automatiquement redistribué au bout de 36h, si on est ni mercredi, ni jeudi
