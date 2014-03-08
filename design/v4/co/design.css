@@ -835,8 +835,8 @@ select {
   background-position: left center;
   background-repeat: no-repeat;
   height: 163px;
-  width: 144px;
-  margin: 50px 0px 0px 18px;
+  width: 154px;
+  margin: 50px 0px 0px 8px;
 }
 
 #inside_co_int {
@@ -853,8 +853,8 @@ select {
 #inside_co_stat_int {
   float:left;
   position:relative;
-  width:142px;
-  margin:35px 0px 0px 2px;
+  width:152px;
+  margin:25px 0px 0px 2px;
   font-size:0.8em;
   color:#000;
 }
@@ -875,11 +875,11 @@ select {
 }
 
 #inside_co_ress_tab {
-  min-height:260px;
+  min-height:270px;
 }
 
 #inside_co_ress_tab table {
-  margin:65px 0px 0px 10px;
+  margin:60px 0px 0px 10px;
   font-size:0.9em;
 }
 
