@@ -208,47 +208,47 @@ if(sizeof($temples) > 0) {
 <tbody>';
 
 	if(in_array('apollon', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'.('apollon').'">'._('Temple d\'Apollon').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'.('apollon').'">'._('Temple d\'Apollon').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('demeter', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('demeter').'">'._('Temple de Demeter').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('demeter').'">'._('Temple de Demeter').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hermes', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hermes').'">'._('Temple d\'Hermès').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('hermes').'">'._('Temple d\'Hermès').'</a>&nbsp;</td> <td class="centrer">&nbsp;200&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('ares', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('ares').'">'._('Temple d\'Arès').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('ares').'">'._('Temple d\'Arès').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('athena', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('athena').'">'._('Temple d\'Athéna').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('athena').'">'._('Temple d\'Athéna').'</a>&nbsp;</td> <td class="centrer">&nbsp;500&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('artemis', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('artemis').'">'._('Temple d\'Artémis').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('artemis').'">'._('Temple d\'Artémis').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('dionysos', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('dionysos').'">'._('Temple de Dionysos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('dionysos').'">'._('Temple de Dionysos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hephaistos', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hephaistos').'">'._('Temple d\'Héphaïstos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('hephaistos').'">'._('Temple d\'Héphaïstos').'</a>&nbsp;</td> <td class="centrer">&nbsp;1 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('zeus', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('zeus').'">'._('Temple de Zeus').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('zeus').'">'._('Temple de Zeus').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('poseidon', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('poseidon').'">'._('Temple de Poseidon').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('poseidon').'">'._('Temple de Poseidon').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
 	if(in_array('hades', $temples)) {
-		echo '<tr> <td class="gauche">&nbsp;<a href="'.('Temples').'-'._('hades').'">'._('Temple d\'Hadès').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
+		echo '<tr> <td class="gauche">&nbsp;<a href="'.('temples').'-'._('hades').'">'._('Temple d\'Hadès').'</a>&nbsp;</td> <td class="centrer">&nbsp;2 000&nbsp;</td> </tr>';
 	}
 	
 echo '
