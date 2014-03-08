@@ -699,7 +699,7 @@ td.none {
   margin-left:25px;
 }
 
-#header_ssmenu_herosmarchant {
+#header_ssmenu_herosmarchand {
   margin-left:25px;
 }
 
@@ -1743,7 +1743,7 @@ select {
   margin:10px;
 }
 
-#marchant_cadre {
+#marchand_cadre {
   background-color:red;
   height:200px;
   width:300px;
@@ -1752,7 +1752,7 @@ select {
   float:left;
 }
 
-#marchant_objets {
+#marchand_objets {
   background-color:red;
   height:200px;
   width:300px;
@@ -1761,7 +1761,7 @@ select {
   float:left;
 }
 
-.marchant_obj {
+.marchand_obj {
   width:60px;
   height:60px;
   background-color:yellow;

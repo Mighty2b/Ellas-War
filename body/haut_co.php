@@ -232,7 +232,7 @@ switch($page) {
 	break;
 	
 	case 'heros':
-	case 'marchant':
+	case 'marchand':
 	case 'quetes':
 	case 'aventures':
 	case 'combats':
@@ -240,8 +240,8 @@ switch($page) {
 		<div id="barre_menu_heros">
 			<a id="header_ssmenu_herosinfo"
 			   href="'._('heros').'">Info</a>
-			<a id="header_ssmenu_herosmarchant"
-			   href="'._('marchant').'">Marchant</a>
+			<a id="header_ssmenu_herosmarchand"
+			   href="'._('marchand').'">Marchand</a>
 			<a id="header_ssmenu_herosquetes"
 			   href="'._('quetes').'">Quêtes</a>
 			<a id="header_ssmenu_herosaventures"
