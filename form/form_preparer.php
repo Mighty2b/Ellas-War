@@ -12,7 +12,8 @@ if(!empty($_GET['ciblej'])) {
   
 	echo '<div class="centrer">';
 	
-	if(empty($paquet->get_answer('preparer'))) {
+	if(empty($paquet->get_answer('preparer')) or
+	   $paquet->get_answer('preparer')->{2} == 0) {
 		echo '<div class="erreur">';
 		echo display_error(212);
 		echo '</div>';
