@@ -12,7 +12,12 @@ if(!empty($_GET['ciblej'])) {
   
 	echo '<div class="centrer">';
 	
-	if(empty($error)) {
+	if(empty($paquet->get_answer('preparer'))) {
+		echo '<div class="erreur">';
+		echo display_error(212);
+		echo '</div>';
+	}
+	elseif(empty($error)) {
 		$login = $paquet->get_answer('preparer')->{1};
 		$id    = $paquet->get_answer('preparer')->{2};
 		
