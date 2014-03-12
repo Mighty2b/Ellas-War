@@ -5,6 +5,12 @@ echo '
 <meta name="description"
       content="'._('Classement de l\'honneur').'" />';
 
-$paquet->add_action('get_classementh');
+$lvl = 0;
+
+if(!empty($_GET['var1'])) {
+	$lvl = $_GET['var1'];
+}
+
+$paquet->add_action('get_classementh', array($lvl));
 
 ?>
