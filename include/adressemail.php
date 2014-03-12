@@ -18,7 +18,7 @@ echo '
 			<td><input type="text" name="nouveau" class="form_retirer" required="required"/></td>
 		</tr>
 		<tr>
-			<td align="left" class="gras">'._('Confirmation').'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left" class="gras">'._('Confirmation de l\'adresse').'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td><input type="text" name="confirmation" class="form_retirer" required="required"/></td>
 		</tr>
 	</table>
