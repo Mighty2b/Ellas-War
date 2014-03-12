@@ -39,7 +39,7 @@ else {
 			<b>'._('Niveau').' :</b> '.$liste_autels->unite_myth.'<br/>';
 
 	if($condition_promethee == true) {
-		echo '<b>'._('Prix').' :</b> '.
+		echo '<b>'._('Prix du niveau suivant').' :</b> '.
 		nbf($prix_autel->unite_myth->gold * (
 		$liste_autels->unite_myth+1)).' '.
 		imress('gold').' '.
@@ -91,7 +91,7 @@ if($liste_autels->baisse_terrain >= 1) {
 	}
 }
 		if($condition_dino == true) {
-			echo '<b>'._('Prix').' :</b> '.
+			echo '<b>'._('Prix du niveau suivant').' :</b> '.
 			nbf($prix_autel->baisse_terrain->bois * 
 			($liste_autels->baisse_terrain+1)).' '.
 			imress('bois').' '.
@@ -127,7 +127,7 @@ echo '</div>
 		<br/>';
 
 			if($condition_hestia == true) {
-				echo '<b>'._('Prix').' :</b> '.
+				echo '<b>'._('Prix du niveau suivant').' :</b> '.
 				nbf($prix_autel->maison->eau * 
 				($liste_autels->maison+1)).' '.
 				 imress('eau').' '.
@@ -166,7 +166,7 @@ echo '</div>
 		'<br/>';
 
 	if($condition_lion == true) {
-			echo '<b>'._('Prix').' :</b> '.
+			echo '<b>'._('Prix du niveau suivant').' :</b> '.
 			nbf($prix_autel->lion->nourriture * ($liste_autels->lion+1)).' '.
 			imress('nourriture').' '.
 			nbf($prix_autel->lion->gold * ($liste_autels->lion+1)).' '.imress('gold').'
@@ -195,7 +195,7 @@ echo '</div>
 		'<br/>';
 
 			if($condition_unite == true) {
-				echo '<b>'._('Prix').' :</b> '.
+				echo '<b>'._('Prix du niveau suivant').' :</b> '.
 				nbf($prix_autel->unite->fer * ($liste_autels->unite+1)).' '.
 				imress('fer').' '.
 				nbf($prix_autel->unite->gold * ($liste_autels->unite+1)).' '.
@@ -225,7 +225,7 @@ echo '</div>
 		<br/>';
 
 		if($condition_attirance_aphrodite == true) {
-			echo '<b>'._('Prix').' :</b> '.
+			echo '<b>'._('Prix du niveau suivant').' :</b> '.
 			nbf($prix_autel->attirance_aphrodite->nourriture * (
 			$liste_autels->attirance_aphrodite+1)).' '.
 			imress('nourriture').' '.
