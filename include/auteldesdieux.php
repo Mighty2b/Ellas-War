@@ -73,21 +73,21 @@ else {
 if($liste_autels->baisse_terrain >= 1) {
 	if($active_ter == 1)
 	{
-		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Place minimale').'<br/>';
-		echo '<a href="'._('auteldesdieux').'-1-0">'._('Passer en mode normal').'</a><br/>';
-		echo '<a href="'._('auteldesdieux').'-1-2">'._('Augmenter la taille').'</a><br/>';
+		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Terrain minimal').'<br/>';
+		echo '<a href="'._('auteldesdieux').'-1-0">'._('Retrouver mon terrain d\'origine').'</a><br/>';
+		echo '<a href="'._('auteldesdieux').'-1-2">'._('Augmenter mon terrain').'</a><br/>';
 	}
 	elseif($active_ter == 2)
 	{
-		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Place maximale').'<br/>';
-		echo '<a href="'._('auteldesdieux').'-1-1">'._('Réduire la taille').'</a><br/>';
-		echo '<a href="'._('auteldesdieux').'-1-0">'._('Passer en mode normal').'</a><br/>';
+		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Terrain maximal').'<br/>';
+		echo '<a href="'._('auteldesdieux').'-1-1">'._('Réduire mon terrain').'</a><br/>';
+		echo '<a href="'._('auteldesdieux').'-1-0">'._('Retrouver mon terrain d\'origine').'</a><br/>';
 	}
 	else
 	{
-		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Place normale').'<br/>';
-		echo '<a href="'._('auteldesdieux').'-1-1">'._('Réduire la taille').'</a><br/>';
-		echo '<a href="'._('auteldesdieux').'-1-2">'._('Augmenter la taille').'</a><br/>';
+		echo '<br/><br/><b>'._('Actuellement').' :</b> '._('Terrain normal').'<br/>';
+		echo '<a href="'._('auteldesdieux').'-1-1">'._('Réduire mon terrain').'</a><br/>';
+		echo '<a href="'._('auteldesdieux').'-1-2">'._('Augmenter mon terrain').'</a><br/>';
 	}
 }
 		if($condition_dino == true) {
