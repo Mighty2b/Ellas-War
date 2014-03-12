@@ -107,10 +107,10 @@ echo '<br/><br/>
     <table>
     <thead>
     <tr class="titre_tab">
-      <td align="center">&nbsp;'.$titre_qtt.'&nbsp;</td>
-      <td>&nbsp;'.$titre_taux.'&nbsp;</td>
-      <td>&nbsp;'.$titre_prix.'&nbsp;</td>
-      <td>&nbsp;'.$titre_vendeur.'&nbsp;</td>
+      <td align="center">'.$titre_qtt.'</td>
+      <td>'.$titre_taux.'</td>
+      <td>'.$titre_prix.'</td>
+      <td>'.$titre_vendeur.'</td>
       <td></td>
     </tr> </thead><tfoot></tfoot><tbody>';
 
