@@ -12,7 +12,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'listenoire', 'lire', 'missives',
 
 //Parrainage
-'parrainage', 'filleuls', 'soutien',
+'parrainage', 'filleuls', 'soutien', 'derniersinscrits',
 
 //Classements
 'classements', 'classementdesjoueurs', 'honneur', 'classementghonneur',
