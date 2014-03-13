@@ -42,23 +42,28 @@ echo '
 		
 		switch($do->statu) {
 			case 2:
-				$classe=_('joueur_manque');
+				$classe='joueur_manque';
+				$title=ucfirst($do->login).', '._('bloqué pour manque de ressources');
 			break;
 			
 			case 3:
-				$classe=_('joueur_pause');
+				$classe='joueur_bloque';
+				$title=ucfirst($do->login).', '._('bloqué par le staff');
 			break;
 			
 			case 4:
-				$classe=_('joueur_pause');
+				$classe='joueur_pause';
+				$title=ucfirst($do->login).', '._('en pause');
 			break;
 			
 			default:
 				$classe='';
+				$title=ucfirst($do->login);
 			break;
 		}
 		
-		echo $image.'&nbsp;<a href="'._('profilsjoueur').'-'.$do->id.'" 
+		echo $image.'&nbsp;<a href="'._('profilsjoueur').'-'.$do->id.'"
+		     title="'.$title.'"
 		'.(!empty($classe)?'class="'.$classe.'"':'').'>'.ucfirst($do->login),'</a>';
 
 		if(!empty($do->temps)) {
