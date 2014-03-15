@@ -30,14 +30,23 @@ echo '
 <tr>
 	<td>
 	<select name="temple"
+	        id="temple"
 	        required="required" 
 	        onchange="javascript:modifier_temple(this.value);">
 		<option value="">&nbsp;</option>';
 		
+		$i=1;
 		$temples = $paquet->get_infoj('temples');
 		foreach($temples as $index) {
-			echo '<option value="'.$index.'">'.
-			$temples_donnees[$index]['nom'].'</option>';
+			if(!empty($_GET['var1']) && $_GET['var1'] == $i) {
+				echo '<option value="'.$index.'" selected="selected">'.
+				$temples_donnees[$index]['nom'].'</option>';
+			}
+			else {
+				echo '<option value="'.$index.'">'.
+				$temples_donnees[$index]['nom'].'</option>';
+			}
+			$i++;
 		}
 		
 		echo '
@@ -77,6 +86,13 @@ function modifier_temple(id) {
      success: function(msg){ $("#prix_temple").html(msg);}
    });
 }
+';
+
+	if(!empty($_GET['var1'])) {
+		echo 'modifier_temple($("#temple").val()); ';
+	}
+
+echo '
 </script>';
 
 }
