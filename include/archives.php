@@ -5,7 +5,16 @@ $nombre_archives = $paquet->get_answer('archives')->{1};
 $pages = ceil($nombre_archives/$nombre_par_page);
 $archives = $paquet->get_answer('archives')->{2};
 
-echo '<h1>'._('Archives').'</h1>
+echo '<h1>'._('Archives');
+
+if($paquet->get_infoj('nb_histo') > 0) {
+	echo '<img id="checked"
+	           class="cursor"
+	           src="images/utils/checked.png"
+	           alt="'._('Marquer toutes les archives comme lues').'" />';
+}
+
+echo '</h1>
 <br/>';
 	
 echo'
@@ -154,6 +163,16 @@ function gestion_permalien(id) {
 		success: function(msg){ $("#gestion_permalien_"+id).html(msg); }
 	});
 }
+
+$("#checked").click( function() {
+	$(this).hide();
+	$.ajax({
+		type: "GET",
+		url: "form/archive_ttmarquer.php",
+		success: function(msg){ window.location.href = "archives"; }
+	});	
+});
+
 </script>';
 
 
