@@ -128,7 +128,7 @@ else {
 echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div></a>&nbsp;
 &nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div></a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div></a>&nbsp;
-&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'.ucfirst(_('missions')).'</div></a>&nbsp;
+&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'._('Quêtes').'</div></a>&nbsp;
 &nbsp;<a id="menu_alliance" href="';
 
 if(empty($paquet->get_infoj('alliance'))) {
@@ -257,7 +257,26 @@ switch($page) {
 	break;
 	
 	case 'missions':
-		echo '<div id="barre_menu_vide"></div>';
+	case 'poursuites':
+	case 'missionsquetes':
+	case 'events':
+	case 'sanctuaires':
+	case 'missionsstats':
+		echo '
+		<div id="barre_menu_quetes">
+			<a id="header_ssmenu_poursuites"
+			   href="'._('poursuites').'">Poursuites</a>
+			<a id="header_ssmenu_missions"
+			   href="'._('missions').'">Missions</a>
+			<a id="header_ssmenu_quetes"
+			   href="'._('missionsquetes').'">Quêtes</a>
+			<a id="header_ssmenu_events"
+			   href="'._('events').'">Events</a>
+			<a id="header_ssmenu_sanctuaires"
+			   href="'._('sanctuaires').'">Sanctuaires</a>
+			<a id="header_ssmenu_missionsstats"
+			   href="'._('missionsstats').'">Statistiques</a>
+		</div>';
 	break;
 	
 	case 'alliance':

@@ -43,7 +43,8 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 'heros', 'marchand', 'quetes', 'aventures', 'combats',
 
 //Missions
-'missions',
+'missions', 'poursuites', 'missionsquetes', 'events', 'sanctuaires',
+'missionsstats',
 
 //Alliance
 'alliance', 'lesalliances', 'creervotrealliance', 'membrealliance',

@@ -687,6 +687,38 @@ td.none {
   margin-left:155px;
 }
 
+#barre_menu_quetes {
+  background-image:url('barre_menu_cite.png');
+  background-repeat:no-repeat;
+  width:765px;
+  height:28px;
+  margin-left:123px;
+}
+
+#header_ssmenu_poursuites {
+  margin-left:35px;
+}
+
+#header_ssmenu_missions {
+  margin-left:35px;
+}
+
+#header_ssmenu_quetes {
+  margin-left:35px;
+}
+
+#header_ssmenu_events {
+  margin-left:35px;
+}
+
+#header_ssmenu_missionsstats {
+  margin-left:150px;
+}
+
+#header_ssmenu_sanctuaires {
+  margin-left:35px;
+}
+
 #barre_menu_heros {
 	background-image:url('barre_menu_cite.png');
 	background-repeat:no-repeat;
