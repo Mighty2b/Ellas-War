@@ -318,7 +318,7 @@ echo '
 				($mon_alliance->level+1).'</h2></div>
 				<table class="none">';
 	
-	switch($paquet->get_infoj('lvl')) {
+	switch($mon_alliance->level) {
 		case 1:
 		 echo '<tr><td>'._('<b>Calendrier</b> afin d\'organiser votre alliance').'</td></tr>
 		 <tr><td>'._('Possibilité de retirer <b>toutes les ressources</b> du coffre d\'alliance').'</td></tr>
