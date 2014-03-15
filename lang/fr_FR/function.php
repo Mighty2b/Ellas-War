@@ -36,9 +36,9 @@ function trad_to_page($page) {
 	return $page;
 }
 
-function affiche_tpc($restant) {
-  $jours=floor($restant/86400);
-  $reste=$restant%86400;
+function affiche_tpc($tmp_restant) {
+  $jours=floor($tmp_restant/86400);
+  $reste=$tmp_restant%86400;
   $heures=floor($reste/3600);
   $reste=$reste%3600;
   $minutes=floor($reste/60);
@@ -78,8 +78,13 @@ function affiche_tpc($restant) {
 	elseif($secondes > 0)
 		$restant .= $secondes.' seconde';
 
-	echo '<div class="ligne centrer rouge_goco gras">'.$restant.' avant le blocage de votre compte pour manque de ressources<br/></div>
-	      <div class="clear"></div>';
+	echo '<div class="ligne centrer rouge_goco gras">'.$restant.' avant le blocage de votre compte pour manque de ressources.';
+
+	if($tmp_restant < 48*3600) {
+		echo ' Vos attaques en guerre sont restreintes, veuillez rétablir vos ressources.';
+	}
+
+	echo '<br/></div><div class="clear"></div>';
 }
 
 ?>
