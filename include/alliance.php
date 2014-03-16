@@ -26,7 +26,8 @@ echo '
 
 	echo '<tfoot></tfoot><tbody>';
 
-	$temps_mois = time() - 20*24*3600;
+	$temps      = time();
+	$temps_mois = $temps - 20*24*3600;
 
 	foreach ($liste_membres as $do) {
 		echo '<tr id="ligne_'.$do->id.'"><td>';
@@ -96,7 +97,7 @@ echo '
 		if($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 &&
 		   ($mon_alliance -> nb_membre > 1)) {
 		  
-		  if($do->id != $paquet->get_infoj('id') && $do->periode_essai != 0) {
+		  if($do->id != $paquet->get_infoj('id') && $do->periode_essai > $temps) {
 					echo '<td><a href="javascript:expulser('.$do->id.');"
 					             onClick="if (window.confirm(\''._('Expulser').' '.$do->login.' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
 					                                                                                                                                          alt="'._('Expulser').'"/></a></td></tr>';    
