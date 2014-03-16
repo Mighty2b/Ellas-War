@@ -25,22 +25,24 @@ if(sizeof($liste_pactes) > 0) {
 	
 	if(!empty($liste_pactes)) {
 	foreach($liste_pactes as $do) {
-		if(empty($do->date))
+		if(empty($do->date)) {
 			$signature = _('En cours');
-		else
+		}
+		else {
 			$signature = display_date($do->date,2);
+		}
 
-		if($do->alliance1_id == $mon_alliance->id) {
+		if($do->demandeur == $mon_alliance->id) {
 			echo '<tr>
-	<td>&nbsp;<a href="'._('profilsalliance').'-'.$do->alliance2_id.'">'.
-	stripslashes($do->alliance2_nom).'</a>&nbsp;</td>
+	<td>&nbsp;<a href="'._('profilsalliance').'-'.$do->id.'">'.
+	stripslashes($do->nom).'</a>&nbsp;</td>
 	<td>&nbsp;<a href="'._('profilsjoueur').'-'.
-	$do->alliance2_idchef.'">'.$do->alliance2_chef.'</a>&nbsp;</td>
+	$do->idchef.'">'.$do->loginchef.'</a>&nbsp;</td>
 	<td>&nbsp;'.$signature.'&nbsp;</td>';
 			if(empty($do->date)) {
 				if($paquet->get_infoj('droits_alliance')->pacte > 0)	{
-					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'signer\');">'._('Signer').'</a>&nbsp;
-										&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'refuser\');">'._('Refuser').'</a>&nbsp;</td></tr>';
+					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'signer\');">'._('Signer').'</a>&nbsp;
+										&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'refuser\');">'._('Refuser').'</a>&nbsp;</td></tr>';
 				}
 				else {
 					echo '<td>&nbsp;&nbsp;</td></tr>';
@@ -49,10 +51,10 @@ if(sizeof($liste_pactes) > 0) {
 			else
 			{
 				if($paquet->get_infoj('droits_alliance')->pacte > 0) {
-					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'briser\');">'._('Annuler').'</a>&nbsp; ';
+					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'briser\');">'._('Annuler').'</a>&nbsp; ';
 				
-					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $do->alliance1_idchef && ($tp > $do->date)) {
-						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
+					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
+						echo '<a href="javascript:demander_fusion('.$do->pacte_id.');">'._('Demander une fusion').'</a>';
 					}
 				
 					echo '&nbsp;</td></tr>';
@@ -64,23 +66,24 @@ if(sizeof($liste_pactes) > 0) {
 		}
 		else
 		{
-			echo '<tr><td>&nbsp;<a href="'._('profilsalliance').'-'.$do->alliance1_id.'">'.stripslashes($do->alliance1_nom).'</a>&nbsp;</td>
-	<td>&nbsp;<a href="'._('profilsjoueur').'-'.$do->alliance1_idchef.'">'.$do->alliance1_chef.'</a>&nbsp;</td>
+			echo '<tr>
+	<td>&nbsp;<a href="'._('profilsalliance').'-'.$do->id.'">'.stripslashes($do->nom).'</a>&nbsp;</td>
+	<td>&nbsp;<a href="'._('profilsjoueur').'-'.$do->idchef.'">'.$do->loginchef.'</a>&nbsp;</td>
 	<td>&nbsp;'.$signature.'&nbsp;</td>';
 			if(empty($do->date))
 			{
 				if($paquet->get_infoj('droits_alliance')->pacte > 0)
-					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'annuler\');">'._('Annuler').'</a>&nbsp;</td></tr>';
+					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'annuler\');">'._('Annuler').'</a>&nbsp;</td></tr>';
 				else
 					echo '<td>&nbsp;&nbsp;</td></tr>';
 			}
 			else
 			{
 				if($paquet->get_infoj('droits_alliance')->pacte > 0) {
-					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->id.', \'briser\');">'._('Annuler').'</a>&nbsp;';
+					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'briser\');">'._('Annuler').'</a>&nbsp;';
 
-					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $do->alliance2_idchef && ($tp > $do->date)) {
-						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
+					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
+						echo '<a href="javascript:demander_fusion('.$do->pacte_id.');">'._('Demander une fusion').'</a>';
 					}
 				
 					echo '&nbsp;</td></tr>';

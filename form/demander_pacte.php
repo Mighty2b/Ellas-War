@@ -11,7 +11,7 @@ $paquet -> add_action('form_pacte', array($_GET['alliance']));
 $paquet -> send_actions();
 
 $alliance = $paquet->get_answer('form_pacte')->{1};
-$possible = $paquet->get_answer('form_pacte')->{1};
+$possible = $paquet->get_answer('form_pacte')->{2};
 
 if($possible == false or empty($alliance -> nom))
 	redirect();
@@ -26,7 +26,7 @@ _('Un pacte vous coûtera').' '.nbf(750000).' '.imress('drachme').
 <form action="#" method="post">
 <input type="hidden"
        name="alliance" 
-       value="'.alliance->id.'" />
+       value="'.$alliance->id.'" />
 <textarea name="motivation"
           rows="8" 
           cols="45" 
