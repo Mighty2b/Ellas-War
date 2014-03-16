@@ -73,6 +73,16 @@ echo '
 		if(!empty($do->greve)) {
 			echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
 		}
+		
+		if($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 && 
+		   !empty($do->periode_essai)) {
+			echo '<font color=\'skyblue\' title=\''._('En grève').'\' id="periode2_'.$do->id.'">*</font>
+			<img src="images/alliance/adept_reinstall.png"
+			     class="cursor"
+			     onclick="valider_periode('.$do->id.')"
+			     id="periode_'.$do->id.'"
+			     alt="'._('Valider la période d\'essai').'" />';			
+		}
 
 		echo '&nbsp;</td>
 <td class="droite">&nbsp;'.($do->lvl).'&nbsp;</td>
@@ -85,7 +95,13 @@ echo '
 
 		if($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 &&
 		   ($mon_alliance -> nb_membre > 1)) {
-			if(($do->id == $paquet->get_infoj('id')) or 
+		  
+		  if($do->id != $paquet->get_infoj('id') && $do->periode_essai != 0) {
+					echo '<td><a href="javascript:expulser('.$do->id.');"
+					             onClick="if (window.confirm(\''._('Expulser').' '.$do->login.' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
+					                                                                                                                                          alt="'._('Expulser').'"/></a></td></tr>';    
+		  }
+		  elseif(($do->id == $paquet->get_infoj('id')) or 
 				 (!empty($nombre_futur) && ($mon_alliance -> nb_membre <= 2))) {
 				echo '<td>&nbsp;</td></tr>';
 			}
@@ -220,6 +236,15 @@ function expulser_urgence(id) {
 		data: "id="+id
 	});
 	$("#ligne_"+id).hide("slow");
+}
+
+function valider_periode(id) {
+   $.ajax({
+     type: "GET",
+     url: "form/valider_periode.php",
+     data: "joueur="+id,
+     success: function(msg){ $("#periode_"+id).hide(); $("#periode2_"+id).hide(); }
+   });
 }
 </script>';
 
