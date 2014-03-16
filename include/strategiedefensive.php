@@ -128,4 +128,8 @@ if($nb_vague < 50) {
 		'strategiedefensive').'-999999">'._('Ajouter une vague').'</a> </div>';
 }
 
+echo '<div class="ligne rouge_goco centrer gras">'.
+_('Les tours et les âmes sont obligatoirement en défense.').
+'</div>';
+
 ?>
