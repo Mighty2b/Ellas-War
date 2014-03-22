@@ -12,7 +12,7 @@ echo '
 
 <b>'._(
 'Visitez les sites de nos partenaires et gagnez des drachmes. '.
-'Chaque semaine, la personne qui a le plus aidée le site reçoit 5 faveurs. '.
+'Chaque semaine, la personne qui a le plus aidée le site reçoit 1 faveur. '.
 'Lorsque vous cliquez sur une des bannières, vous devrez visiter au moins '.
 'deux pages pour que la visite soit enregistrée. '.
 'En cas d\'égalité entre plusieurs joueurs, tous reçoivent la récompense. '.
