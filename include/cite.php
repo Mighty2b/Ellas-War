@@ -299,6 +299,17 @@ if(sizeof($temples) > 0) {
 	}
 	
 	echo '</a>
+	<br/>
+	<a href="'._('faveurs').'"><b>'._('Appui d\'Hélios').' : </b>';
+	
+	if(!empty($bonus->ress) && $bonus->ress > $paquet->get_infoj('timestamp')) {
+		echo _('Actif jusqu\'au').' '.display_date($bonus->ress,2);
+	}
+	else {
+		echo ' '._('Inactif');
+	}
+	
+	echo '</a>
 	<br/><a href="'._('licences').'"><b>'._('Licence de grand commerçant').' : </b>';
 	
 	if(!empty($bonus->licence) && $bonus->licence > $paquet->get_infoj('timestamp')) {

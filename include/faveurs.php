@@ -6,6 +6,8 @@ echo '<div class="ligne centrer">
 	<h1>'._('Tout pour prendre de l\'avance !').'</h1>
 	</div>';
 
+$paquet->error('bonus_faveur');
+
 echo '
 <div id="menu_hf">
 <div class="nb_faveur"><b>';
@@ -26,10 +28,16 @@ echo '
 <br>
 <a href="'._('faveurs').'-2" 
    class="bouton_fv"><span class="bouton_fv_int">Commerce</span></a>
-<br>
+<br>';
+if(sizeof($paquet->get_infoj('temples') >= 1) && 
+   $paquet->get_answer('possible_changer_temple')->{1} == 0) {
+'
 <a href="'._('faveurs').'-3" 
    class="bouton_fv"><span class="bouton_fv_int">Mythologie</span></a>
-<br>
+<br>';
+}
+
+echo '
 <a href="'._('faveurs').'-4" 
    class="bouton_fv"><span class="bouton_fv_int">Ressources</span></a>
 <br>
@@ -50,16 +58,16 @@ echo '
 <div class="ligne_50"
      style="height:140px;"><div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-zeus"><b>'._('Appui de Zeus').'</b></a><br>
+       href="faveurs-0-zeus"><b>'._('Appui de Zeus').'</b></a><br>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-zeus">'._('Appui de Déimos').'</a>
+       href="faveurs-0-zeus">'._('Appui de Déimos').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-zeus">'._('Appui d\'Éros').'</a>
+       href="faveurs-0-zeus">'._('Appui d\'Éros').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-zeus">'._('Appui d\'Hébé').'</a>
+       href="faveurs-0-zeus">'._('Appui d\'Hébé').'</a>
     <br>
     <br><b>'._('Prix').'</b> : 2 '.imress('faveur').'
   </div>
@@ -74,13 +82,13 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos2"><b>'._('Appui de Déimos amélioré').'</b></a><br>
+       href="faveurs-1-deimos2"><b>'._('Appui de Déimos amélioré').'</b></a><br>
     <br>
         <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos2">'._('Remportez de nombreuses victoires !').'</a>
+       href="faveurs-1-deimos2">'._('Remportez de nombreuses victoires !').'</a>
     <br>
         <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos2">'._('35 attaques bonus vous sont ajoutées. Vous pouvez en faire un maximum de 5 par jour.').'</a>
+       href="faveurs-1-deimos2">'._('35 attaques bonus vous sont ajoutées. Vous pouvez en faire un maximum de 5 par jour.').'</a>
     <br>
     <br><b>'._('Prix').'</b> : 2 '.imress('faveur').'
   </div>
@@ -91,18 +99,18 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-eros"><b>'._('Appui d\'Éros').'</b></a>
+       href="faveurs-eros"><b>'._('Appui d\'Éros').'</b></a>
     <br><br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-eros">'._('Augmentez votre XP pendant une semaine !').'</a>
+       href="faveurs-eros">'._('Augmentez votre XP pendant une semaine !').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-eros">'._('- 20% de perte d\'XP lors d\'une défaite').'</a>
+       href="faveurs-eros">'._('- 20% de perte d\'XP lors d\'une défaite').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-eros">'._('+ 20% d\'XP en cas de victoire').'</a>
+       href="faveurs-eros">'._('+ 20% d\'XP en cas de victoire').'</a>
     <br>
-    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
+    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').' '._('pour une semaine').'
   </div>
 </div>';
 
@@ -111,13 +119,13 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos"><b>'._('Appui de Déimos').'</b></a><br>
+       href="faveurs-1-deimos"><b>'._('Appui de Déimos').'</b></a><br>
     <br>
         <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos">'._('Remportez de nombreuses victoires !').'</a>
+       href="faveurs-1-deimos">'._('Remportez de nombreuses victoires !').'</a>
     <br>
         <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-deimos">'._('15 attaques bonus vous sont ajoutées. Vous pouvez en faire un maximum de 5 par jour.').'</a>
+       href="faveurs-1-deimos">'._('15 attaques bonus vous sont ajoutées. Vous pouvez en faire un maximum de 5 par jour.').'</a>
     <br>
     <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
   </div>
@@ -128,14 +136,14 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
   <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-leonnidas"><b>'._('Appui de Léonidas').'</b></a>
+       href="faveurs-1-leonnidas"><b>'._('Appui de Léonidas').'</b></a>
   <br>
   <br>
   <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-leonnidas">'._('+ 40 Spartiates').'</a>
+       href="faveurs-1-leonnidas">'._('+ 40 Spartiates').'</a>
   <br>
   <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-leonnidas">'._('+ 200 espions').'</a>
+       href="faveurs-1-leonnidas">'._('+ 200 espions').'</a>
   <br>
   <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
   </div>
@@ -150,22 +158,22 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-hermes"><b>'._('Appui d\'Hermès').'</b></a>
+       href="faveurs-2-hermes"><b>'._('Appui d\'Hermès').'</b></a>
     <br>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-hermes">'._('+50% de lots sur le commerce').'</a>
+       href="faveurs-2-hermes">'._('+50% de lots sur le commerce').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-hermes">'._('-50% sur la taxe lors des rachats').'</a>
+       href="faveurs-2-hermes">'._('-50% sur la taxe lors des rachats').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-hermes">'._('Licence de grand commerçant').'</a>
+       href="faveurs-2-hermes">'._('Licence de grand commerçant').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="Faveurs-hermes">'._('Ventes/Achats anonymes sans frais').'</a>
+       href="faveurs-2-hermes">'._('Ventes/Achats anonymes sans frais').'</a>
     <br>
-    <br><b>'._('Prix').'</b> : 2 '.imress('faveur').'
+    <br><b>'._('Prix').'</b> : 2 '.imress('faveur').' '._('pour une semaine').'
   </div>
 </div>';
 
@@ -293,12 +301,12 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-hebe"><b>'._('Appui d\'Hébé').'</b></a>
+      href="faveurs-4-hebe"><b>'._('Appui d\'Hébé').'</b></a>
     <br><br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-hebe">'._('Vous ne payerez pas de taxes lors de vos retraits dans votre trésor durant 7 jours').'</a>
+      href="faveurs-4-hebe">'._('Vous ne payerez pas de taxes lors de vos retraits dans votre trésor durant 7 jours').'</a>
     <br>
-    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
+    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').' '._('pour une semaine').'
   </div>
 </div>';
 
@@ -307,13 +315,13 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-midas"><b>'._('Appui de Midas').'</b></a>
+      href="faveurs-4-midas"><b>'._('Appui de Midas').'</b></a>
    <br><br>
    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-midas">'._('Augmentez vos richesses !').'</a>
+      href="faveurs-4-midas">'._('Augmentez vos richesses !').'</a>
    <br>
    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-midas">'._('+ 800\'000 Drachmes').'</a>
+      href="faveurs-4-midas">'._('+ 800\'000 Drachmes').'</a>
    <br>
    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
   </div>
@@ -324,18 +332,34 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-ploutos"><b>'._('Appui de Ploutos').'</b></a>
+      href="faveurs-4-ploutos"><b>'._('Appui de Ploutos').'</b></a>
     <br><br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-ploutos">'._('Ayez des ressources en abondance !').'</a>
+      href="faveurs-4-ploutos">'._('Ayez des ressources en abondance !').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-      href="Faveurs-ploutos">'._('+ 2\'000\'000 Bois, Fer, Nourriture, Eau et 1\'000\'000 d\'Argent').'</a>
+      href="faveurs-4-ploutos">'._('+ 2\'000\'000 Bois, Fer, Nourriture, Eau et 1\'000\'000 d\'Argent').'</a>
     <br>
     <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
   </div>
 </div>';
 
+echo '
+<div class="ligne_50"
+     style="height:140px;">
+<div class="cadre_renta centrer">
+    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
+      href="faveurs-4-helios"><b>'._('Appui d\'Hélios').'</b></a>
+    <br><br>
+    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
+      href="faveurs-4-helios">'._('Vos pertes en ressources lors des attaques').'</a>
+    <br>
+    <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
+      href="faveurs-4-helios">'._('seront réduites de 50%').'</a>
+    <br>
+    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').' '._('pour une semaine').'
+  </div>
+</div>';
 	break;
 	
 	default:
@@ -388,6 +412,7 @@ echo '
         case 'ploutos': echo _('Appui de Ploutos'); break;
         case 'hebe': echo _('Appui d\'Hébé'); break;
         case 'leonnidas': echo _('Appui de Léonnidas'); break;
+        case 'helios': echo _('Appui d\'Hélios '); break;
         
 				default:echo $do->type;
 				break;
