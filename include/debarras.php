@@ -12,13 +12,14 @@ else {
 $paquet->error('vendre_debarras', 1);
 
 echo '<div class="ligne_80 justify">'._(
-'Le débarras accepte les dépôts en ressources le lundi, mardi, mercredi '.
-'et jeudi. Il les met en vente le mercredi, samedi et dimanche. Les ' .
+'Le débarras accepte les dépôts en ressources le lundi, mardi, jeudi '.
+'et vendredi. Il les met en vente le mercredi, samedi et dimanche pour '.
+'une semaine. Les ' .
 'ressources au même taux sont rassemblée en un seul gros lot et seul le lot '.
 'ayant le taux le plus faible est affiché. Lors d\'un achat, Vous pouvez '.
 'choisir la quantité de ressources que vous désirez.').
 ' '._(
-'Le dimanche soir à minuit, les invendus reviennent sur les comptes des joueurs '.
+'Les invendus reviennent sur les comptes des joueurs '.
 'avec un malus de 5%').'</div>';
 
 echo '<div id="error"></div>';
