@@ -75,7 +75,7 @@ echo '<h1>'._('Demander').'</h1><br/>
 				'.number_format($de->nombre).' '.imress($de->type).
 				' '._('par').' '.$de->login.' '.display_date($de->date_d,1);
 
-				if($de->demande != $paquet->getid()) {
+				if($de->demande != $paquet->get_infoj('id')) {
 					echo ' <a href="javascript:accepter_demande('.$de->id.', 1);">'.
 					     img('images/joueurs/adept_reinstall.png', _('Accepter')).'</a>
 									<a href="javascript:accepter_demande('.$de->id.', 2);">'.
