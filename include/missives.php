@@ -48,7 +48,7 @@ foreach($liste as $do_mes) {
 			 stripslashes(stripslashes($do_mes->message));	
 	
 	if($paquet->get_infoj('lvl2') >= 2) {
-		echo ' <a href="Missives-'.$do_mes->id.'">'.
+		echo ' <a href="missives-'.$do_mes->id.'">'.
 		     '<img src="images/utils/supprimer_mp.png"
 		           alt="'._('Supprimer').'" /></a>';
 	}

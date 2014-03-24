@@ -43,7 +43,7 @@ if(!empty($offre) && sizeof($offre)) {
 <td>';
 
 if($d->joueur == $paquet->get_infoj('id') or $paquet->get_infoj('id') == $paquet->getidchef()) {
-echo '<a href="Demande-'.$d->id.'"><img src="images/attaques/cross.png"
+echo '<a href="demande-'.$d->id.'"><img src="images/attaques/cross.png"
 	                                      alt="'._('Annuler').'" 
 	                                      title="'._('Annuler').'"/></a>';
 	}

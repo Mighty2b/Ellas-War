@@ -41,7 +41,7 @@ else {
 echo '<center>';
 
 echo '<h1>'._('Demander').'</h1><br/>
-<form action=\'Coffre\' method=\'post\' >
+<form action=\'coffre\' method=\'post\' >
 <input type=\'text\' name=\'qtt\' required="required"> 
 <select name=\'choix\' >
     <option value=\'drachme\'>'._('Drachmes').'</option>';

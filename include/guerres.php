@@ -48,7 +48,7 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 				     imress('gold').' '._('contre la paix').'</P>';
 				if($details->peut_payer2) {
 					echo '<b>'._('Vous pouvez').' : </b>
-							<p><form action="Guerres" method="post" enctype="multipart/form-data">.
+							<p><form action="guerres" method="post" enctype="multipart/form-data">.
 							<input type="radio" name="choix" value="accepte" /> '._('Accepter').'
 							<input type="radio" name="choix" value="refuse" /> '._('Refuser').'
 							<input type="hidden" name="id" value="'.$details->id.'"> </p><p>

@@ -16,7 +16,7 @@ printf(_('Vous êtes sur le point de donner des Drachmes à	un joueur '.
 echo '<br/><br/></div>';
 
 echo '<div class="ligne centrer">
-<form action="Donner" method="post">
+<form action="donner" method="post">
 <select name="joueur">';
 
 foreach($liste_membres as $do) {
