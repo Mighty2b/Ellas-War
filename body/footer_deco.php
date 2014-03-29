@@ -31,8 +31,9 @@ echo '<nav>
 <div class="titre"><a href="'._('classements').'" title="'._('Classements d\'Ellàs War').'">'._('Classements').'</a></div>
 <a href="'._('classementdesalliances').'" title="'._('Classement des alliances').'">'._('Alliances').'</a>
 <br/><a href="'._('classementdesjoueurs').'" title="'._('Classement des joueurs').'">'._('Joueurs').'</a>
-<br/><a href="'._('classementdesbtn').'" title="'._('Classement des batailles navales').'">'._('Batailles navales').'</a>
-<br/><a href="'._('classementdesheros').'" title="'._('Classement des Héros').'">'._('Héros').'</a>
+<br/><a href="'._('classementdesbtn').'" title="'._('Classement des batailles navales').'">'._('Batailles navales').'</a>';
+//'<br/><a href="'._('classementdesheros').'" title="'._('Classement des Héros').'">'._('Héros').'</a>';
+echo '<br/><a href="'._('classementghonneur').'" title="'._('Classement de l\'honneur').'">'._('Honneur').'</a>
 <br/>
 </nav>';
 

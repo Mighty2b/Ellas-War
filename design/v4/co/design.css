@@ -526,23 +526,24 @@ td.none {
 }
 
 #menu_cite {
-	margin-left:125px;
+	margin-left:185px;
 }
 
 #menu_armee {
-	margin-left:25px;
+	margin-left:30px;
 }
 
 #menu_archives {
-	margin-left:25px;
+	margin-left:30px;
 }
 
 #menu_mythologie {
-	margin-left:25px;
+	margin-left:30px;
 }
 
 #menu_heros {
 	margin-left:25px;
+	display:none;
 }
 
 #header_menu #menu_forum {

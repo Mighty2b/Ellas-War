@@ -55,7 +55,7 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('classementdesalliances').'">'._('Alliances').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('classementdesbtn').'">'._('Batailles navales').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('classementdesjoueurs').'">'._('Cités').'</a>&nbsp;</li>
-			<li>&nbsp;<a href="'._('classementdesheros').'">'._('Héros').'</a>&nbsp;</li>
+			<!--<li>&nbsp;<a href="'._('classementdesheros').'">'._('Héros').'</a>&nbsp;</li>-->
 			<li>&nbsp;<a href="'._('classementghonneur').'">'._('Honneur').'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'._('communaute').'">'._('Communauté').'</a>&nbsp;
