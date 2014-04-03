@@ -71,18 +71,19 @@ echo '
 			echo '<font color=\'purple\' title=\''.date('d/m/y', $do->temps).'\'>*</font>';
 		}
 
-		if(!empty($do->greve)) {
-			echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
+		if(empty($do->periode_essai)) {
+			if(!empty($do->greve)) {
+				echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
+			}
 		}
-		
-		if($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 && 
-		   !empty($do->periode_essai)) {
+		elseif($paquet->get_infoj('droits_alliance')->accepter_joueur > 0) {
 			echo '<font color=\'skyblue\' title=\''._('En grève').'\' id="periode2_'.$do->id.'">*</font>
 			<img src="images/alliance/adept_reinstall.png"
 			     class="cursor"
-			     onclick="valider_periode('.$do->id.')"
+			     onClick="if (window.confirm(\''._('Valider la période d\'essai').' ?\')) { valider_periode('.$do->id.') } else { return false; }"
 			     id="periode_'.$do->id.'"
-			     alt="'._('Valider la période d\'essai').'" />';			
+			     alt="'._('Valider la période d\'essai').'"
+			     title="'._('Valider la période d\'essai').'"  />';			
 		}
 
 		echo '&nbsp;</td>
