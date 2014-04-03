@@ -154,7 +154,7 @@ echo '<td class="centrer">&nbsp;'.$donnees->defaites.'</td>
 }
 
 echo '</tr>';
-
+$i++;
 }
 echo'</tbody></table><br/>
 </div>
