@@ -41,10 +41,9 @@ echo '</div>
 	<div class="ligne_50 centrer"><br/>';
 
 if($paquet->get_answer('stats_tmp')->{1}->forum_visite == 0) {
-	echo '<a href="'.FORUM_URL.'"
+	echo '<a href="#"
 	         onclick="valider_mission(\'visiteur_ailleurs\', 0)"
-	         class="rouge_goco"
-	         target="_blank">'._('Visiter le forum').'</a>';
+	         class="rouge_goco">'._('Visiter le forum').'</a>';
 }
 else {
 	echo '<span class="rouge_goco">'._('Mission validée').
@@ -115,7 +114,12 @@ function valider_mission(mission, hide) {
      url: "form/valide_quetej.php",
      data: "mission="+mission,
      success: function(msg){
-     		window.location.href = \''._('poursuites').'\';
+     		if(mission == \'visiteur_ailleurs\') {
+     			window.location.href = \''.FORUM_URL.'\';
+     		}
+     		else {
+     			window.location.href = \''._('poursuites').'\';
+     		}
      }
    });
 }
