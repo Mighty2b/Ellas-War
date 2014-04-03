@@ -53,7 +53,7 @@ if(empty($info_perso->depuis)) {
 	echo '.<br/><br/><br/><br/>';
 }
 else {
-	echo _('Vous avez le diamant depuis'). display_date($info_perso->depuis, 3).'.';
+	echo _('Vous avez le diamant depuis').' '.display_date($info_perso->depuis, 3).'.';
 }
 
 if(!empty($temps_perso)) {

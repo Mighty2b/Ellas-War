@@ -29,7 +29,7 @@ echo '<div class="ligne centrer">
      _('bilan de votre XP personnel').
      ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'</span>, '.
 		 _('bilan de l\'XP apportée à votre alliance').
-     ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points2')).'<span>
+     ' : <span class="rouge_goco">'.plus_valeur($paquet->get_infoj('points3')).'<span>
 		 <br/><br/></div>';		 
 
 echo '<h2 class="centrer">'._('Attaques disponibles').'</h2>

@@ -77,7 +77,7 @@ echo '
 			}
 		}
 		elseif($paquet->get_infoj('droits_alliance')->accepter_joueur > 0) {
-			echo '<font color=\'skyblue\' title=\''._('En grève').'\' id="periode2_'.$do->id.'">*</font>
+			echo '
 			<img src="images/alliance/adept_reinstall.png"
 			     class="cursor"
 			     onClick="if (window.confirm(\''._('Valider la période d\'essai').' ?\')) { valider_periode('.$do->id.') } else { return false; }"

@@ -218,7 +218,7 @@ class Ewpaquet {
   	if(!empty($this->joueur->bonus->xp) && 
   	   $this->joueur->bonus->xp > $this->joueur->timestamp) {
   		echo '<div class="erreur centrer">';
-  		printf(_("Appui d'Éros actif jusqu'au %").
+  		printf(_("Appui d'Éros actif jusqu'au %s"), 
   		       display_date($this->joueur->bonus->xp,4));
 			echo '<br/></div>';
   	}
