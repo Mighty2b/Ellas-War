@@ -31,7 +31,13 @@ elseif(!empty($_POST['alliance']) && !empty($_POST['motivation'])) {
 elseif(!empty($_POST['declarer'])) {
 	if(empty($_POST['ultimatum'])) {
 		$_POST['ultimatum'] = '';
+		$_POST['drachmes'] = 0;
+		$_POST['or'] =0;
 	}
+	else {
+		$_POST['ultimatum'] = 'on';
+	}
+	
 	$paquet -> add_action('declarer_guerre',
 												array($_POST['declarer'], $_POST['drachmes'],
 												 			 $_POST['or'], $_POST['ultimatum'], $page));

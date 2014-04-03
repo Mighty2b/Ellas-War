@@ -606,6 +606,10 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 249: $erreur = 'Vous devez avoir une licence pour vendre au débarras.';
 		break;
+  case 250: $erreur = 'Vous venez de déclarer une guerre';
+    break;
+  case 251: $erreur = 'Erreur dans la déclaration de la guerre';
+    break;
 	//case : $erreur = "";break;
 	}
 	
