@@ -4,7 +4,7 @@ $temples = $paquet->get_infoj('temples');
 
 if($paquet -> possible_temple1()) {
 	
-echo '<h1>'._('Honnorez les dieux').'</h1><br/>';
+echo '<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 $paquet->error('batir_temple1');
 
@@ -81,7 +81,7 @@ echo '
 }
 elseif($paquet -> possible_temple2()) {
 	
-	echo '<h1>'._('Honnorez les dieux').'</h1><br/>';
+	echo '<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 	$paquet->error('batir_temple2');
 
@@ -146,7 +146,7 @@ echo '</p><br/>
 }
 elseif($paquet -> possible_temple3()) {
 	
-	echo '<h1>'._('Honnorez les dieux').'</h1><br/>';
+	echo '<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 	$paquet->error('batir_temple3');
 
@@ -224,7 +224,7 @@ echo '</p><br/>
 }
 elseif($paquet -> possible_temple4()) {
 	
-	echo '<h1>Honnorez les dieux</h1><br/>';
+	echo '<h1>Honorez les dieux</h1><br/>';
 	
 	$paquet->error('batir_temple4');
 
