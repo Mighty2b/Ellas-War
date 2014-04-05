@@ -3,8 +3,11 @@
 $temples = $paquet->get_infoj('temples');
 
 if($paquet -> possible_temple1()) {
-	
-echo '<h1>'._('Honorez les dieux').'</h1><br/>';
+
+echo '
+<div class="cadre_liste_temple centrer ligne_80"
+     id="description_temple_noir">
+<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 $paquet->error('batir_temple1');
 
@@ -63,25 +66,14 @@ echo '
 </tr>
 </table>
 <br/>
-<div class="centrer">
-<img src="images/temples/img_hermes.png" 
-     alt="'.$temples_donnees['hermes']['nom'].'" 
-     name="'.$temples_donnees['hermes']['nom'].'" 
-     id="temple_hermes" />
-&nbsp;
-<img src="images/temples/img_demeter.png" 
-     alt="'.$temples_donnees['demeter']['nom'].'" 
-     name="'.$temples_donnees['demeter']['nom'].'" />
-&nbsp;
-<img src="images/temples/img_apollon.png" 
-     alt="'.$temples_donnees['apollon']['nom'].'" 
-     name="'.$temples_donnees['apollon']['nom'].'" 
-     id="temple_apollon" />
+
 </div></div>';
 }
 elseif($paquet -> possible_temple2()) {
-	
-	echo '<h1>'._('Honorez les dieux').'</h1><br/>';
+echo '
+<div class="cadre_liste_temple centrer ligne_80"
+     id="description_temple_noir">
+<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 	$paquet->error('batir_temple2');
 
@@ -131,22 +123,15 @@ echo '</p><br/>
 <br/>
 
 </div>
-<div class="centrer">
-<img src="images/temples/img_ares.png" 
-     alt="'.$temples_donnees['ares']['nom'].'"
-     name="'.$temples_donnees['ares']['nom'].'"
-     id="temple_ares" />
-&nbsp;
-<img src="images/temples/img_athena.png"
-     alt="'.$temples_donnees['athena']['nom'].'" 
-     name="'.$temples_donnees['athena']['nom'].'" 
-     id="temple_athena" />
 </div>';
 
 }
 elseif($paquet -> possible_temple3()) {
 	
-	echo '<h1>'._('Honorez les dieux').'</h1><br/>';
+echo '
+<div class="cadre_liste_temple centrer ligne_80"
+     id="description_temple_noir">
+<h1>'._('Honorez les dieux').'</h1><br/>';
 	
 	$paquet->error('batir_temple3');
 
@@ -204,27 +189,16 @@ echo '</p><br/>
 <br/>
 
 </div>
-<div class="centrer">
-<img src="images/temples/img_artemis.png" 
-     alt="'.$temples_donnees['artemis']['nom'].'" 
-     name="'.$temples_donnees['artemis']['nom'].'" 
-     id="temple_artemis" />
-&nbsp;
-<img src="images/temples/img_dionysos.png"
-     alt="'.$temples_donnees['dionysos']['nom'].'" 
-     name="'.$temples_donnees['dionysos']['nom'].'" 
-     id="temple_dionysos" />
-&nbsp;
-<img src="images/temples/img_hephaistos.png" 
-     alt="'.$temples_donnees['hephaistos']['nom'].'" 
-     name="'.$temples_donnees['hephaistos']['nom'].'" 
-     id="temple_hephaistos" />
+
 </div>';
 
 }
 elseif($paquet -> possible_temple4()) {
 	
-	echo '<h1>Honorez les dieux</h1><br/>';
+echo '
+<div class="cadre_liste_temple centrer ligne_80"
+     id="description_temple_noir">
+<h1>Honorez les dieux</h1><br/>';
 	
 	$paquet->error('batir_temple4');
 
@@ -295,25 +269,11 @@ echo '</p><br/>
 <br/>
 
 </div>
-<div class="centrer">
-<img src="images/temples/img_hades.png" 
-     alt="'.$temples_donnees['hades']['nom'].'" 
-     name="'.$temples_donnees['hades']['nom'].'" 
-     id="temple_hades" />
-&nbsp;
-<img src="images/temples/img_poseidon.png" 
-     alt="'.$temples_donnees['poseidon']['nom'].'" 
-     name="'.$temples_donnees['poseidon']['nom'].'" 
-     id="temple_poseidon" />
-&nbsp;
-<img src="images/temples/img_zeus.png" 
-     alt="'.$temples_donnees['zeus']['nom'].'" 
-     name="'.$temples_donnees['zeus']['nom'].'" 
-     id="temple_zeus" />
 </div>';
 
 }
-elseif(sizeof($temples) > 0) {
+
+if(sizeof($temples) > 0) {
 foreach($temples_donnees as $temple => $temple_actu) {
 	if(in_array($temple, $temples)) {
 
@@ -437,6 +397,24 @@ foreach($temples_donnees as $temple => $temple_actu) {
 				echo '<br/>';
 			}
 		}
+		
+		if($paquet -> possible_temple2() or 
+		   $paquet -> possible_temple3() or 
+		   $paquet -> possible_temple4()) {
+			echo '<img src="images/temples/temples.jpg" 
+			           alt="'._('Nouveau temple').'" 
+			           name="'._('Nouveau temple').'" 
+			           class="cursor" 
+			           id="temple_noir" />';
+			$i++;
+			if($i%$nb != 0) {
+				echo '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
+			}
+			else {
+				echo '<br/>';
+			}
+		}
+		
 	echo '</div>';
 	
 	if($paquet->get_infoj('lvl') >= 10 && !($paquet->is_event('stv'))) {
@@ -616,13 +594,35 @@ foreach($temples_donnees as $temple => $temple_actu) {
 					menu.addClass("ouvert");
 					menu.show("slow");
 				}
-			});';
+			});
+			
+			$("#temple_noir").click( function() {
+				menu = $("#description_temple_noir");
+				if(menu.hasClass("ouvert")) {
+					menu.hide("slow");
+					menu.removeClass("ouvert");
+				}
+				else {
+					$(".ouvert").hide("slow");
+					$(".ouvert").removeClass("ouvert");
+					menu.addClass("ouvert");
+					menu.show("slow");
+				}
+			});
+			';
 			
 		if(!empty($_GET['var1'])) {
 		echo '
 			menu = $("#description_temple_'.addslashes(htmlentities($_GET['var1'])).'");
 			menu.addClass("ouvert");
 			menu.show("slow");';
+		}
+		elseif($paquet -> possible_temple2() or $paquet -> possible_temple3() or 
+		       $paquet -> possible_temple4()) {
+			echo '
+				menu = $("#description_temple_noir");
+				menu.addClass("ouvert");
+				menu.show("slow");';
 		}
 		elseif(sizeof($temples) == 1 or sizeof($temples) == 2) {
 			echo '
@@ -636,7 +636,7 @@ foreach($temples_donnees as $temple => $temple_actu) {
 	  </script>';
 	
 }
-else {
+elseif(!($paquet -> possible_temple1())) {
 	echo '<div class="erreur centrer">'._(
 	     'Vous n\'avez pour l\'instant aucun temple. '.
 	     'Vous pourrez bâtir votre premier temple au niveau 2.'.
