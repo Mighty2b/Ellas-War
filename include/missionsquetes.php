@@ -1,5 +1,8 @@
 <?php
 
+$info    = $paquet->get_answer('quetesmissions_info')->{1};
+$encours = $paquet->get_answer('quetesmissions_info')->{2};
+
 echo '<h2 class="centrer">'._('Missions').'</h2>';
 
 echo '<div class="ligne_80 centrer"><br/>'._(
@@ -20,7 +23,29 @@ if($paquet->get_infoj('lvl') >= 9) {
 		'<br/>'._('Mission hebdomadaire').
 		'<br/><i>'._('Durée').' :</i> 6h
 		<br/><br/></div>
-		<div class="ligne_50 centrer"><br/></div>
+		<div class="ligne_50 centrer"><br/>';
+
+	if(!empty($info->mainmidas)) {
+		echo _('Mission terminée');
+	}
+	elseif(!empty($encours)) {
+		if($encours->id == 1) {
+			echo _('Fin').' : '.display_date($encours->temps,3);
+		}
+		else {
+			echo _('Une mission est déjà en cours');
+		}
+	}
+	elseif($paquet->get_infoj('fer') >= 160000) {
+		echo '<div class="cursor rouge_goco"
+		           onclick="envoyer_mission(\'mainmidas\')">'.
+		         _('Réaliser la mission').'</div>';
+	}
+	else {
+		echo 'En attente';
+	}
+
+	echo '</div>
 	</div>';
 }
 
@@ -36,8 +61,30 @@ echo '
 	'<br/>'._('Mission quotidiene').
 	'<br/><i>'._('Durée').' :</i> 6h
 	<br/><br/></div>
-	<div class="ligne_50 centrer"><br/></div>
-</div>';
+		<div class="ligne_50 centrer"><br/>';
+
+	if(!empty($info->danaides)) {
+		echo _('Mission terminée');
+	}
+	elseif(!empty($encours)) {
+		if($encours->id == 2) {
+			echo _('Fin').' : '.display_date($encours->temps,3);
+		}
+		else {
+			echo _('Une mission est déjà en cours');
+		}
+	}
+	elseif($paquet->get_infoj('eau') >= 200000) {
+				echo '<div class="cursor rouge_goco"
+		           onclick="envoyer_mission(\'danaides\')">'.
+		         _('Réaliser la mission').'</div>';
+	}
+	else {
+		echo 'En attente';
+	}
+	
+	echo '</div>
+	</div>';
 
 echo '
 <div class="ligne">
@@ -50,8 +97,27 @@ echo '
 	'<br/>'._('Mission quotidiene').
 	'<br/><i>'._('Durée').' :</i> 6h
 	<br/><br/></div>
-	<div class="ligne_50 centrer"><br/></div>
-</div>';
+		<div class="ligne_50 centrer"><br/>';
+
+	if(!empty($info->laurion)) {
+		echo _('Mission terminée');
+	}
+	elseif(!empty($encours)) {
+		if($encours->id == 3) {
+			echo _('Fin').' : '.display_date($encours->temps,3);
+		}
+		else {
+			echo _('Une mission est déjà en cours');
+		}
+	}
+	else {
+				echo '<div class="cursor rouge_goco"
+		           onclick="envoyer_mission(\'laurion\')">'.
+		         _('Réaliser la mission').'</div>';
+	}
+
+	echo '</div>
+	</div>';
 
 if($paquet->get_infoj('lvl') >= 9) {
 	echo '
@@ -67,10 +133,47 @@ if($paquet->get_infoj('lvl') >= 9) {
 		'<br/>'._('Mission hebdomadaire').
 		'<br/><i>'._('Durée').' :</i> 6h
 		<br/><br/></div>
-		<div class="ligne_50 centrer"><br/></div>
+		<div class="ligne_50 centrer"><br/>';
+
+	if(!empty($info->dionysies)) {
+		echo _('Mission terminée');
+	}
+	elseif(!empty($encours)) {
+		if($encours->id == 4) {
+			echo _('Fin').' : '.display_date($encours->temps,3);
+		}
+		else {
+			echo _('Une mission est déjà en cours');
+		}
+	}
+	elseif($paquet->get_infoj('eau') >= 120000) {
+				echo '<div class="cursor rouge_goco"
+		           onclick="envoyer_mission(\'dionysies\')">'.
+		         _('Réaliser la mission').'</div>';
+	}
+	else {
+		echo 'En attente';
+	}
+	
+	echo '</div>
 	</div>';
 }
 
-echo '</div>';
+echo '</div>
+
+<script type="text/javascript">
+
+function envoyer_mission(mission) {
+   $.ajax({
+     type: "GET",
+     url: "form/envoyer_mission.php",
+     data: "mission="+mission,
+     success: function(msg){
+     		window.location.href = \''._('missionsquetes').'\';
+     }
+   });
+}
+
+</script>';
 
 ?>

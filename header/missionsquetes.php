@@ -5,4 +5,6 @@ echo '
 <meta name="description"
       content="'._('Quêtes').'" />';
 
+$paquet->add_action('quetesmissions_info');
+
 ?>
