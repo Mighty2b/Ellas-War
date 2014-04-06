@@ -3,7 +3,7 @@
 $info    = $paquet->get_answer('quetesmissions_info')->{1};
 $encours = $paquet->get_answer('quetesmissions_info')->{2};
 
-echo '<h2 class="centrer">'._('Missions').'</h2>';
+echo '<h2 class="centrer">'._('Quêtes').'</h2>';
 
 echo '<div class="ligne_80 centrer"><br/>'._(
 'Les quêtes peuvent êtres quotidienes, hebdomadaires ou mensuelles. '.
