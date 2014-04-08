@@ -25,12 +25,13 @@ if(empty($_GET['var1']) or !is_numeric($_GET['var1'])) {
 	<td class="none"></td></tr></thead><tfoot></tfoot><tbody>';
 	
 	$taille_tableau = sizeof($tableau_droit);
+	$liste_membres = $paquet->get_answer('nommer')->{1};
 	
 	foreach($liste_membres as $do) {
 		$droit = '';
 		for($i=0;$i<$taille_tableau;$i++) {
 			if(!empty($do->$tableau_droit[$i])) {
-				$droit .= img('images/'.$do->$tableau_droit[$i].'/'.($i+1).'.png',
+				$droit .= img('images/alliance/'.$do->$tableau_droit[$i].'/'.($i+1).'.png',
 				              $nom_droit[$i]);
 			}
 		}

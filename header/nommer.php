@@ -1,6 +1,7 @@
 <?php
 
 $paquet -> add_action('infoalliance');
+$paquet -> add_action('nommer');
 
 echo '<title>'._('Nommer les membres de votre alliance').'</title>
 <meta name="description"
