@@ -132,7 +132,7 @@ else {
 echo '
 <script type="text/javascript">
     $(document).ready(function() {
-        document.title = \''.$all->nom.' '._('dirigée par').' '.$all->chef.'\';
+        document.title = \''.html_entity_decode($all->nom).' '._('dirigée par').' '.$all->chef.'\';
     });
 </script>';
 }
