@@ -201,6 +201,10 @@ td.none {
   font-weight:bold;
 }
 
+.sousligne {
+  text-decoration:underline;
+}
+
 .gauche {
 	text-align:left;
 }

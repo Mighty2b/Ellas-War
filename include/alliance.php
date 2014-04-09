@@ -185,23 +185,37 @@ if($nombre_guerres > 0 && !empty($liste_guerres)) {
 	foreach($liste_guerres as $do) {
 		if($do->vattaque > $do->vdefense) {
 			echo '<tr>
-			<td bgcolor="green">&nbsp;'.stripslashes($do->at).'&nbsp;</td>
-			<td align="center">'.$do->vattaque.' - '.$do->vdefense.'</td>
-			<td bgcolor="red">&nbsp;'.stripslashes($do->def).'&nbsp;</td>
+			<td><a class="sousligne"
+			       href="profilsalliance-'.$do->idattaque.'">'.
+			stripslashes($do->at).'</a></td>
+			<td align="center">&nbsp;&nbsp;'.
+			$do->vattaque.'</a> - '.$do->vdefense.
+			'&nbsp;&nbsp;</td>
+			<td><a href="profilsalliance-'.$do->idefense.'">'.
+			stripslashes($do->def).'</a></td>
 			</tr>';
 		}
 		elseif($do->vattaque < $do->vdefense) {
 			echo '<tr>
-			<td bgcolor="red">&nbsp;'.stripslashes($do->at).'&nbsp;</td>
-			<td align="center">'.$do->vattaque.' - '.$do->vdefense.'</td>
-			<td bgcolor="green">&nbsp;'.stripslashes($do->def).'&nbsp;</td>
+			<td><a href="profilsalliance-'.$do->idattaque.'">'.
+			stripslashes($do->at).'</a></td>
+			<td align="center">&nbsp;&nbsp;'.
+			$do->vattaque.' - '.$do->vdefense.
+			'&nbsp;&nbsp;</td>
+			<td><a class="sousligne"
+			       href="profilsalliance-'.$do->idefense.'">'.
+			stripslashes($do->def).'</a></td>
 			</tr>';
 		}
 		else {
 			echo '<tr>
-			<td>&nbsp;'.stripslashes($do->at).'&nbsp;</td>
-			<td align="center">'.$do->vattaque.' - '.$do->vdefense.'</td>
-			<td>&nbsp;'.stripslashes($do->def).'&nbsp;</td>
+			<td><a href="profilsalliance-'.$do->idattaque.'">'.
+			stripslashes($do->at).'</a></td>
+			<td align="center">&nbsp;&nbsp;'.
+			$do->vattaque.' - '.$do->vdefense.
+			'&nbsp;&nbsp;</td>
+			<td><a href="profilsalliance-'.$do->idefense.'">'.
+			stripslashes($do->def).'</a></td>
 			</tr>';
 		}
 	}
