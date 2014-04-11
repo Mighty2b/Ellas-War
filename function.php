@@ -457,7 +457,7 @@ function display_error($erreur_no, $var='') {
 		break;
 	case 179: $erreur = 'Vous venez de rejoindre une bataille navale privée, faites face et remportez la vicoire.';
 		break;
-	case 180: $erreur = 'Vous venez de creer une bataille navale, des courrageux combattants ne vont pas tarder à vous rejoindre, faites face et remportez la vicoire.';
+	case 180: $erreur = 'Vous venez de rejoindre une bataille navale, des courrageux combattants ne vont pas tarder à vous rejoindre, faites face et remportez la vicoire.';
 		break;
 	case 181: $erreur = "Vous devez vendre votre lot à un taux plus élevé.";
 		break;

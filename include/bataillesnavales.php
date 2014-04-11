@@ -7,35 +7,33 @@ echo '
 	<div class="ligne">
 		<h2 class="centrer">Parties en cours</h2>';
 
-	if(!empty($paquet->get_answer('info_btn')->{2})) {
-		foreach($paquet->get_answer('info_btn')->{2} as $do) {
-				if(empty($do->titre)) {
-					$do->titre=_('Partie publique');
-				}
-			
-				if($do->places == 4 && 
-				   $do->temps < $paquet->get_infoj('timestamp')) {
-					$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
-				}
-			
-				echo $do->titre.'<br/>';
+if(!empty($paquet->get_answer('info_btn')->{2})) {
+	foreach($paquet->get_answer('info_btn')->{2} as $do) {
+		if(empty($do->titre)) {
+			$do->titre=_('Partie publique');
 		}
+	
+		if($do->places == 4 && 
+		   $do->temps < $paquet->get_infoj('timestamp')) {
+			$do->titre='<a href="'._('partie').'-'.$do->btn_id.'">'.$do->titre.'</a>';
+		}
+	
+		echo $do->titre.'<br/>';
 	}
-	else {
-		echo '<div class="erreur">'._('Aucune partie en cours').'</div>';
-	}
+}
+else {
+	echo '<div class="erreur">'._('Aucune partie en cours').'</div>';
+}
 
 echo '<br/>';
 
-if($paquet->get_answer('info_btn')->{3}) {
+if(sizeof($paquet->get_answer('info_btn')->{2}) == 0) {
 	echo '<div class="centrer">
-	<br/>Actuellement : '.$paquet->get_answer('info_btn')->{3}.'/4';
-	echo '<br/>'._('Rejoindre la partie publique');
-	echo '<br/>'._('Prix d\'entrée').' : '.nbf(100000).' '.imress('drachme');
+	<br/>Actuellement : '.$paquet->get_answer('info_btn')->{1}.'/4';
+	echo '<br/><a href="'._('bataillesnavales').'-'._('rejoindre').'">'._('Rejoindre la partie publique');
+	echo '</a><br/>'._('Prix d\'entrée').' : '.nbf($paquet->get_answer('info_btn')->{3}).' '.imress('drachme');
 	echo '</div>';
 }
-
-
 
 echo '<br/>
 	</div>
