@@ -17,8 +17,11 @@ if(!empty($paquet->get_answer('info_btn')->{2})) {
 		   $do->temps < $paquet->get_infoj('timestamp')) {
 			$do->titre='<a href="'._('partie').'-'.$do->btn_id.'">'.$do->titre.'</a>';
 		}
-	
-		echo $do->titre.'<br/>';
+		else  {
+			echo $do->titre.' ('._('En attente').' '.$do->places.'/4)';
+		}
+		
+		echo '<br/>';
 	}
 }
 else {

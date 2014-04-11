@@ -1941,3 +1941,140 @@ select {
     z-index: 10000;
 }
 
+/* BTN */
+#interieur {
+  width:400px;
+  margin:auto;
+}
+
+#partie {
+  width:100%;
+}
+
+#carte {
+  width:90%;
+  margin:auto;
+  background-color:black;
+}
+
+#info_case_ext {
+  background: none repeat scroll 0 0 white;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+  margin: auto;
+  opacity: 0.8;
+  position:absolute;
+  z-index:500;
+}
+
+#info_case input {
+
+}
+
+.case {
+  position:relative;
+  float:left;
+  border:2px solid black;
+}
+
+.case_terre {
+  background-color:brown;
+}
+
+.case_mer {
+  background-color:darkblue;
+}
+
+.case_mernoire {
+  background-color:#19144F;
+}
+
+.forme {
+  z-index:99;
+}
+
+.mesformes {
+  cursor:move;
+}
+
+.cercle {
+  border-radius: 390px;
+}
+
+.carre {
+
+}
+
+.forme_bleu {
+  background-color:rgba(111, 111,111,0.6);
+  border: 10px solid rgba(0,174,239,0.2);
+}
+
+.forme_rouge {
+  background-color:rgba(111, 111,111,0.6);
+  border: 10px solid rgba(255,0,0,0.2);
+}
+
+.forme_vert {
+  background-color:rgba(111, 111,111,0.6);
+  border: 10px solid rgba(0,240,36,0.2);
+}
+
+.forme_jaune {
+  background-color:rgba(111, 111,111,0.6);
+  border: 10px solid rgba(240,232,0,0.2);
+}
+
+#slider_bireme, #slider_trireme, #slider_quadrireme, #slider_leviathan, #mover_bireme, #mover_trireme, #mover_quadrireme, #mover_leviathan {
+    background: url("images/bg-track.png") repeat scroll left top transparent;
+    border-color: #333333 #333333 #777777;
+    border-radius: 25px 25px 25px 25px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 0 0 rgba(250, 250, 250, 0.5);
+    height: 13px;
+    left: 20px;
+    position: absolute;
+    width: 100px;
+}
+
+.ui-slider-handle {
+    background: url("images/jeux/handle.png") no-repeat scroll 50% 50% transparent;
+    color: #1C94C4;
+    cursor: pointer;
+    font-weight: bold;
+    height: 25px;
+    margin-left: -12px;
+    outline: medium none;
+    position: absolute;
+    top: -7px;
+    width: 25px;
+    z-index: 2;
+}
+
+#info_fermer {
+  text-align:center;
+  font-weight: bold;
+  z-index:1000;
+}
+
+.ligne_achat {
+  width:90%;
+  margin-left: 5%;
+}
+
+.ext_slider {
+  position:relative;
+  float:left;
+  margin-left:25%;
+}
+
+.valide_slider {
+  position:relative;
+  float:right;
+  margin-left:50px;
+}
+
+.input_achat {
+  width:25%;
+}

@@ -60,7 +60,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 
 //Jeux
 'jeux', 'carremagique', 'ticket', 'javelot', 'des', 'loto', 'biges',
-'quadriges', 'bataillesnavales',
+'quadriges', 'bataillesnavales', 'partie',
  
 'decouvertedujeu', 'actualites', 'nouscontacter', 
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
