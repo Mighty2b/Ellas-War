@@ -71,7 +71,16 @@ echo '<!–[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]–>';
 
-echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
+if(!empty($_GET['page']) && ($_GET['page'] == _('partie'))) {
+  echo '<script type="text/javascript"
+                src="js/jquery-2.js" ></script>';
+  echo '<script type="text/javascript"
+                src="js/jquery-ui.min.js" ></script>';
+
+}
+else {
+  echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
+}
 
 switch($paquet->get_infoj('statu')) {
 	case 0:

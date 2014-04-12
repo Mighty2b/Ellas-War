@@ -337,6 +337,7 @@ switch($page) {
 	case 'biges':
 	case 'quadriges':
 	case 'bataillesnavales':
+	case 'partie':
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
