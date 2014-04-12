@@ -82,7 +82,7 @@ function deplacement(dest_x, dest_y) {
          else {
            info_case($("#move_departx").val(), $("#move_departy").val());
          }
-         deplacement = '';
+         current_case = '';
        }
   );
 }
@@ -458,7 +458,7 @@ $(document).keyup(function(e) {
       break;
     }
   }
-  deplacement = '';
+  current_case = '';
 });
 </script>
 <div id="btn_liste"><a href="bataillesnavales">Retour aux batailles navales</a></div>
