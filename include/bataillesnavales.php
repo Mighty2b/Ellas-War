@@ -4,7 +4,7 @@ $stats = $paquet->get_answer('stats_btn')->{1};
 
 echo '
 <div class="ligne_50">
-	<div class="ligne">
+	<div class="ligne centrer">
 		<h2 class="centrer">Parties en cours</h2>';
 
 if(!empty($paquet->get_answer('info_btn')->{2})) {
