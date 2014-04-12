@@ -464,7 +464,7 @@ echo '
 					}
 				
 					if(($do->places == 4) && ($do->temps < $paquet->get_infoj('timestamp'))) {
-						$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
+						$do->titre='<a href="'._('partie').'-'.$do->btn_id.'">'.$do->titre.'</a>';
 					}
 				
 					echo $do->titre.'<br/>';
