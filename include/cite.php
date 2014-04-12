@@ -463,7 +463,7 @@ echo '
 						$do->titre=_('Partie publique');
 					}
 				
-					if(($do->places == 8) && ($do->temps < $paquet->get_infoj('timestamp'))) {
+					if(($do->places == 4) && ($do->temps < $paquet->get_infoj('timestamp'))) {
 						$do->titre='<a href="'._('partie').'-'.$do->id.'">'.$do->titre.'</a>';
 					}
 				
