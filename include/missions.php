@@ -31,6 +31,30 @@ else {
 
 echo '</div>
 </div>
+<div class="ligne">
+	<div class="ligne_50"><b>' ._('Combattant du 51').'</b><br/>
+	'._('Effectuer au moins 51 attaques hors guerre').
+	'<br/><i>Récompense :</i> 100 000 '.imress('drachme').'
+	<br/><br/></div>
+	<div class="ligne_50 centrer"><br/>';
+
+if($paquet->get_answer('stats_tmp')->{1}->attaques_valide == 0) {
+	if($paquet->get_answer('stats_tmp')->{1}->attaques_hg < 51) {
+		echo _('Actuellement').' : '.
+		     nbf($paquet->get_answer('stats_tmp')->{1}->attaques_hg);
+	}
+	else {
+		echo '<a href="#"
+		         class="cursor rouge_goco"
+		         onclick="valider_mission(\'combattant_51\', 1)">'._('Valider la mission').'</a>';
+	}
+}
+else {
+	echo '<span class="rouge_goco">'._('Mission validée').'</span>';
+}
+
+echo '</div>
+</div>
 
 </div>
 
