@@ -47,6 +47,7 @@ h1:first-letter, h2:first-letter,
 .news:first-letter,
 #new_list.ligne .ligne:first-letter,
 #cadre_gauche h3:first-letter,
+#mdp_perdu a:first-letter,
 .rouge_goco {
     color: #B30000 !important;
 }
@@ -454,6 +455,16 @@ footer nav a {
 
 #reseaux_sociaux {
 	text-align:center;
+}
+
+#mdp_perdu {
+  text-align:center;
+  position:relative;
+}
+
+#mdp_perdu a {
+  font-size:0.9em;
+  font-weight:bold;
 }
 
 #home_description {
