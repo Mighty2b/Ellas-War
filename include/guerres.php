@@ -96,7 +96,7 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 			
 				}
 				echo '<p><a href="#"
-				            onclick="window.open(\'popup_guerres.php?id='.$do->id.'\',\''._('Historique attaques').'\',\'toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=800, height=500\');">'._('Voir toutes les attaques').'</a></p></fieldset></fieldset>';
+				            onclick="window.open(\'popup/guerres.php?id='.$do->id.'\',\''._('Historique attaques').'\',\'toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=800, height=500\');">'._('Voir toutes les attaques').'</a></p></fieldset></fieldset>';
 			}
 		}
 	}
