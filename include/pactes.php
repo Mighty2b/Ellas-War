@@ -54,7 +54,7 @@ if(sizeof($liste_pactes) > 0) {
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'briser\');">'._('Annuler').'</a>&nbsp; ';
 				
 					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
-						echo '<a href="javascript:demander_fusion('.$do->pacte_id.');">'._('Demander une fusion').'</a>';
+						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
 					}
 				
 					echo '&nbsp;</td></tr>';
@@ -83,7 +83,7 @@ if(sizeof($liste_pactes) > 0) {
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'briser\');">'._('Annuler').'</a>&nbsp;';
 
 					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
-						echo '<a href="javascript:demander_fusion('.$do->pacte_id.');">'._('Demander une fusion').'</a>';
+						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
 					}
 				
 					echo '&nbsp;</td></tr>';
@@ -99,13 +99,13 @@ if(sizeof($liste_pactes) > 0) {
 	
 	if(!empty($liste_fusion) && sizeof($liste_fusion) > 0) {
 		foreach($liste_fusion as $k => $demande) {
-			echo '<div class="ligne erreur">'._('Demande de fusion avec').' '.$demande['nom'].' (<a href="javascript:annuler_fusion('.$demande['destination'].');">'._('Annuler').'</a>)</div>';
+			echo '<div class="ligne erreur">'._('Demande de fusion avec').' '.$demande->nom.' (<a href="javascript:annuler_fusion('.$demande->destination.');">'._('Annuler').'</a>)</div>';
 		}
 	}
 	
 	if(!empty($liste_fusion2) && sizeof($liste_fusion2) > 0) {
 		foreach($liste_fusion2 as $k => $demande) {
-			echo '<div class="ligne erreur">'._('Demande de fusion de l\'alliance').' '.$demande['nom'].' (<a>'._('Accepter').'</a> - <a href="javascript:annuler_fusion('.$demande['source'].');">'._('Refuser').')</a></div>';
+			echo '<div class="ligne erreur">'._('Demande de fusion de l\'alliance').' '.$demande->nom.' (<a>'._('Accepter').'</a> - <a href="javascript:annuler_fusion('.$demande->source.');">'._('Refuser').')</a></div>';
 		}
 	}
 	
