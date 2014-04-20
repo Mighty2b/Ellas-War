@@ -79,25 +79,6 @@ echo '<h1>'._('Obtenir des faveurs').'</h1>
 </div>
 <br/>
 
-<table width="80%" class="none">
-<tr>
-<td valign="top" width="50%" align="center" style="padding-top:11px;">
-<!-- Début -->
-<!-- BEGIN Winapass script  -->
- <div id="winapass_553"></div>
- <script type="text/javascript" src="http://www.winapass.com/script/script.php?pid=553"></script>
- 
- <noscript>
-'._('Veuillez activer le Javascript de votre navigateur s\'il vous plaît.').'<br />
-   <a href="http://www.winapass.fr/">Plateforme de Micropaiement Winapass</a>
- </noscript>
-<!-- END Winapass script-->
-
-<!-- Fin -->
-</td>
-<td width="50%" align="center">
-
-<!-- début -->
 
 <table class="none" border="0" cellpadding="0" cellspacing="0" style="border:5px solid #E5E5E5; margin: -5px auto;"><tr><td>
 <table class="none" border="0" cellpadding="0" cellspacing="0" style="width: 300px; border: solid 1px #AAAAAA; ">
@@ -132,12 +113,6 @@ echo '<h1>'._('Obtenir des faveurs').'</h1>
 	  </div></td>
   </tr>
 </table></td></tr></table>
-
-<!-- fin -->
-
-</td></tr></table>
-
-</td></tr></table>
 
 <div class="ligne centrer gras rouge_goco erreur">
 <a href="'._('parrainage').'" class="rouge_goco"><br/>'.
