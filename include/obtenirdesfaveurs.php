@@ -4,8 +4,8 @@ $DOC_ID  = $paquet->get_answer('renta_info')->{1};
 $SITE_ID = $paquet->get_answer('renta_info')->{2};
 
 echo '<h1>'._('Obtenir des faveurs').'</h1>
-<div class="ligne80 erreur centrer"><br/><br/>'._(
-'Pour la validation d\'un code Rentabiliweb ou Winapass vous obtiendrez '.
+<div class="ligne_80 erreur centrer"><br/><br/>'._(
+'Pour la validation d\'un code Rentabiliweb vous obtiendrez '.
 'une faveur.<br/>Les faveurs achetées via paypal sont créditées '.
 'manuellement par notre équipe après vérification du paiement. '.
 'Celles-ci vous seront créditées entre 1 et 12 heures après votre '.

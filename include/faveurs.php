@@ -427,6 +427,11 @@ echo '
 	break;
 }
 
-echo '</div>';
+echo '
+<div class="ligne"><br/>
+	<a class="erreur centrer" 
+	   href="'._('obtenirdesfaveurs').'">'._('Obtenir des faveurs').'</a>
+</div>
+</div>';
 
 ?>
