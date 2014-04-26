@@ -1,8 +1,21 @@
 <?php
 
-$liste = $paquet->get_answer('messagerie_reception')->{1};
+$liste        = $paquet->get_answer('messagerie_reception')->{1};
+$nombre_pages = $paquet->get_answer('messagerie_reception')->{2};
 
 if(sizeof($liste) > 0) {
+	if($nombre_pages > 1) {
+		echo '<div class="centrer">Page | ';
+	
+		for($i=1;$i<=$nombre_pages;$i++) {
+			if($_GET['var1'] == $i)
+				echo '<a href="messagerie-'.$i.'" class="gras">'.$i.'</a> | ';
+			else
+				echo '<a href="messagerie-'.$i.'">'.$i.'</a> | ';
+		}
+		echo '</div>';
+	}
+	
 	echo '
 	<table style="min-width:50%;">
 		<thead><tr>
@@ -19,7 +32,8 @@ foreach($liste as $mess) {
 	echo '<tr>
 	<td class="centrer">';
 	
-	if(!empty($mess->lecture)) {
+	if(!empty($mess->lecture) or 
+	   $mess->destinataire == $paquet->get_infoj('id')) {
 		echo '<img src="images/messagerie/mp.png"
 		           alt="'._('Ancien Message').'" 
 		           title="'._('Ancien Message').'" />';
@@ -36,16 +50,28 @@ echo '</td>
 	<td>'.display_date($mess->date,4).'</td>
 	<td><img src="images/messagerie/supprimer.png"
 	         alt="'._('Supprimer').'"
-	         title="'._('Supprimer').'" /></td>
+	         title="'._('Supprimer').'"
+	         class="cursor" 
+	         onclick="messagerie_supprimer('.$mess->id.');"/></td>
 	</tr>';
 }
 
 echo '</tbody>
-	</table>';	
-	
+	</table>
+<script type="text/javascript">
+	function messagerie_supprimer(id) {
+		$.ajax({
+			type: "GET",
+			url: "form/messagerie_supprimer.php",
+			data: "id="+id,
+			success: function(msg){ location.reload(); }
+		});
+	}
+</script>';
 }
 else {
-	
+	echo '<div class="centrer"><br/><br/>'.
+	     _('Messagerie vide').'</div>';
 }
 
 ?>
