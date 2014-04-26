@@ -308,7 +308,7 @@ echo '<SCRIPT LANGUAGE="JavaScript">
 	
 		if($value -> logement == 'luxe') {
 			$logement .= _('Palais');
-			$max=min($max,floor($paquet->get_infoj('placel')-$paquet->get_placel_nb()));
+			$max=min($max,floor($paquet->get_infoj('placel')-$paquet->get_infoj('placel_nb')));
 		}
 		elseif($value -> logement == 'normal') {
 			$logement .= _('Huttes et habitations');
