@@ -15,6 +15,7 @@ if(!empty($_POST['nbressource']) && !empty($_POST['prixressource']) &&
 }
 
 $paquet -> add_action('liste_debarras');
+$paquet -> add_action('mon_debarras');
 $paquet -> add_action('archives_debarras');
 
 ?>

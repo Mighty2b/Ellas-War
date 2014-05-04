@@ -10,6 +10,7 @@ else {
 }
 
 $paquet->error('vendre_debarras', 1);
+$i = 1;
 
 echo '<div class="ligne_80 justify">'._(
 'Le débarras accepte les dépôts en ressources le lundi, mardi, jeudi '.
@@ -100,7 +101,7 @@ else {
 	<td>Quantité</td>
 	<td class="none"></td>
 	</tr></thead><tfoot></tfoot><tbody>';
-	$i = 1;
+
 	foreach($liste as $lot) {
 		echo '<tr>
 		      <td onclick="set_ress('.$i.', '.$lot->restant.')"
@@ -147,8 +148,44 @@ foreach($paquet->get_answer('archives_debarras')->{1} as $ress => $taux) {
 echo '
 		</tbody>
 	</table>
-	</div>
+	</div>';
 
+$mon_debarras = $paquet->get_answer('mon_debarras')->{1};
+
+if(sizeof($mon_debarras) > 0) {
+       echo '<div class="ligne">
+       <h2 class="centrer">Mon débarras</h2>';
+
+       echo '<table><thead><tr class="centrer">
+       <td></td>
+       <td>Taux</td>
+       <td>Quantité</td>
+       <td class="none"></td>
+       </tr></thead><tfoot></tfoot><tbody>';
+
+       foreach($mon_debarras as $lot) {
+               echo '<tr>
+                     <td onclick="set_ress('.$i.', '.$lot->restant.')"
+                         class="cursor">'.nbf($lot->restant).' '.imress($lot->ressource).'</td>
+                     <td>'.nbf($lot->taux,6).'</td>
+                     <td><input type="text"
+                                name="lot_'.$lot->ressource.'"
+                                placeholder="0"
+                                id="lot_'.$i.'" /></td>
+                     <td><img alt="'._('Reprendre').'"
+                              title="'._('Reprendre').'"
+                              src="images/com/cart_add.png"
+                              class="cursor"
+                              onclick="debarras_racheter('.$i.', '.$lot->debarras_depot_id.')"></td>
+                     </tr>';
+               $i++;
+       }
+       echo '</tbody></table>';
+       echo '</div>
+           </div>';
+}
+
+echo '
 <script type="text/javascript">
 function debarras_acheter(ress, id, taux) {
 		
@@ -164,6 +201,23 @@ function debarras_acheter(ress, id, taux) {
 	        debarras_reload();
 	     }
 	   });
+   }
+}
+
+function debarras_racheter(id, id_lot) {
+
+   var qtt = $("#lot_"+id).val();
+
+   if(qtt > 0) {
+          $.ajax({
+            type: "GET",
+            url: "form/debarras_racheter.php",
+            data: "id_lot="+id_lot+"&qtt="+qtt,
+            success: function(msg){
+                       $("#error").html(msg);
+               debarras_reload();
+            }
+          });
    }
 }
 
