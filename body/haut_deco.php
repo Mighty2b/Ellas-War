@@ -40,6 +40,7 @@ echo '<section id="banniere"></section>
 				       class="form"
 				       data-minlength="4"
 				       placeholder="<?php echo _('Nom de joueur'); ?>"
+				       title="<?php echo _('Nom de joueur'); ?>"
 				       required="required" />
 				<br/>
 				<input type="password" 
@@ -47,6 +48,7 @@ echo '<section id="banniere"></section>
 				       value="" 
 				       class="form"
 				       placeholder="<?php echo _('Mot de passe'); ?>"
+				       title="<?php echo _('Mot de passe'); ?>"
 				       required="required" />
 				<br/>
 				<input type="email" 
@@ -54,6 +56,7 @@ echo '<section id="banniere"></section>
 				       value="" 
 				       class="form"
 				       placeholder="<?php echo _('Adresse e-mail'); ?>"
+				       title="<?php echo _('Adresse e-mail'); ?>"
 				       required="required" />
 				<br/>
 				<div class="bouton_classique"><input type="submit" 
@@ -98,6 +101,7 @@ echo '<section id="banniere"></section>
 					       value="" 
 					       class="form"
 					       placeholder="<?php echo _('Nom de joueur'); ?>"
+					       title="<?php echo _('Nom de joueur'); ?>"
 				           required="required" />
 					<br/>
 					<input type="password" 
@@ -105,6 +109,7 @@ echo '<section id="banniere"></section>
 					       value="" 
 					       class="form"
 					       placeholder="<?php echo _('Mot de passe'); ?>"
+					       title="<?php echo _('Mot de passe'); ?>"
 				           required="required" />
 					<br/>
 					<div class="bouton_classique"><input type="submit" 
