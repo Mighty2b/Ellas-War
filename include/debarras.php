@@ -18,10 +18,7 @@ echo '<div class="ligne_80 justify">'._(
 'une semaine. Les ' .
 'ressources au même taux sont rassemblée en un seul gros lot et seul le lot '.
 'ayant le taux le plus faible est affiché. Lors d\'un achat, Vous pouvez '.
-'choisir la quantité de ressources que vous désirez.').
-' '._(
-'Les invendus reviennent sur les comptes des joueurs '.
-'avec un malus de 5%').'</div>';
+'choisir la quantité de ressources que vous désirez.').'</div>';
 
 echo '<div id="error"></div>';
 
