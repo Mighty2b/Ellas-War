@@ -160,6 +160,7 @@ if(sizeof($mon_debarras) > 0) {
        <td></td>
        <td>Taux</td>
        <td>Quantité</td>
+       <td>Retour</td>
        <td class="none"></td>
        </tr></thead><tfoot></tfoot><tbody>';
 
@@ -172,6 +173,7 @@ if(sizeof($mon_debarras) > 0) {
                                 name="lot_'.$lot->ressource.'"
                                 placeholder="0"
                                 id="lot_'.$i.'" /></td>
+                     <td>'.display_date($lot->temps, 4).'</td>
                      <td><img alt="'._('Reprendre').'"
                               title="'._('Reprendre').'"
                               src="images/com/cart_add.png"
