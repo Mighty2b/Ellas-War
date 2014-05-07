@@ -1,13 +1,6 @@
 <?php
 
 include('header.php');
-
-/*
-$my_name = 'tyty';
-
-printf(_("My name is %s.\n"), $my_name);
-*/
-
 include('autorise/pubautorise.php');
 
 if(!empty($_GET['page']) && preg_match("/^[a-zA-Z0-9_]+$/", $_GET['page'])) {
@@ -18,7 +11,7 @@ echo '<!DOCTYPE html>
 <html lang="'.PAGE_LANG.'">
 	<head>
 		<meta charset="utf-8" />';
-		
+
 $paquet =  new EwPaquet();
 
 if(empty($page) or !file_exists('header/'.$page.'.php')) {
@@ -67,9 +60,11 @@ else {
 echo '
 <link rel="stylesheet" href="design/'.DESIGN.'/'.$prefix.'/design.css" />
 <!-- <link rel="icon" href="design/'.DESIGN.'/favicon.ico" /> -->';
-echo '<!–[if lt IE 9]>
+echo '
+<!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]–>';
+<![endif]–->
+';
 
 if(!empty($_GET['page']) && ($_GET['page'] == _('partie'))) {
   echo '<script type="text/javascript"
