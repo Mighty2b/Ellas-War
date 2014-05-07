@@ -80,7 +80,7 @@ echo '
 			echo '
 			<img src="images/alliance/adept_reinstall.png"
 			     class="cursor"
-			     onClick="if (window.confirm(\''._('Valider la période d\'essai').' ?\')) { valider_periode('.$do->id.') } else { return false; }"
+			     onClick="if (window.confirm(\''.addslashes(_('Valider la période d\'essai')).' ?\')) { valider_periode('.$do->id.') } else { return false; }"
 			     id="periode_'.$do->id.'"
 			     alt="'._('Valider la période d\'essai').'"
 			     title="'._('Valider la période d\'essai').'"  />';			
