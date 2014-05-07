@@ -54,7 +54,7 @@ echo '
 	$i++;
 }
 
-echo '</tbody></table>';
+echo '</tbody></table><br/>';
 
 if($paquet->get_infoj('statu') == 1) {
 echo '
