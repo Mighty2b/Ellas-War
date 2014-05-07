@@ -15,10 +15,16 @@ echo '<table>
 		<td>'._('N°').'</td>
 		<td>'._('Pseudo').'</td>
 		<td>'._('Niveau').'</td>
-		<td>'._('XP').'</td>
+		<td>'._('XP').'</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+echo '
 		<td>'._('Victoires').'</td>
 		<td>'._('Défaites').'</td>
-		<td>'._('Terrain').'</td>
+		<td>'._('Terrain').'</td>';
+}
+
+echo '
 		<td>'._('Alliance').'</td>
 		<td>'._('Honneur').'</td>
 	</tr>
@@ -31,10 +37,16 @@ echo '
 	<td>&nbsp;<a href=\''._('profilsjoueur').'-'.$j->id.'\'>'.
 	$j->login.'</a>&nbsp;</td>
 	<td class="centrer">&nbsp;'.($j->lvl).'&nbsp;</td>
-	<td class="centrer">&nbsp;'.nbf(round($j->points)).'&nbsp;</td>
+	<td class="centrer">&nbsp;'.nbf(round($j->points)).'&nbsp;</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+echo '
 	<td class="centrer">&nbsp;'.nbf($j->victoires).'&nbsp;</td>
 	<td class="centrer">&nbsp;'.nbf($j->defaites).'&nbsp;</td>
-	<td class="centrer">&nbsp;'.nbf($j->terrain).'&nbsp;</td>
+	<td class="centrer">&nbsp;'.nbf($j->terrain).'&nbsp;</td>';
+}
+
+echo '
 	<td>&nbsp;<a href=\''._('profilsalliance').'-'.$j->alliance.'\'>'.
 	ucfirst(stripslashes($j->nom)).'</a>&nbsp;</td>
 	<td class="centrer">&nbsp;'.nbf($j->honneur).'&nbsp;</td>
@@ -42,10 +54,13 @@ echo '
 	$i++;
 }
 
-echo '</tbody></table>
+echo '</tbody></table>';
 
-<div class="centrer gras"><br/>
-<a href=\''._('honneur').'\'>'._('Classement de l\'honneur').'</a><br/><br/>
-</div>';
+if($paquet->get_infoj('statu') == 1) {
+echo '
+	<div class="centrer gras"><br/>
+	<a href=\''._('honneur').'\'>'._('Classement de l\'honneur').'</a><br/><br/>
+	</div>';
+}
 
 ?>
