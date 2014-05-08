@@ -267,13 +267,13 @@ body {
   width:642px;
   height:270px;
   margin:auto;
-  background-image:url('../design/co/contourgrand.png');
+  background-image:url('contourgrand.png');
 }
 
 #cadre_batiment_types {
   width:385px;
   height:28px;
-  background-image:url('../design/co/menu4.png');
+  background-image:url('menu4.png');
   margin:auto;
 }
 
@@ -312,7 +312,7 @@ body {
   height:25px;
   position:relative;
   float:left;
-  background-image:url('../design/co/plaque3.png');
+  background-image:url('plaque3.png');
   z-index:1000;
 }
 
