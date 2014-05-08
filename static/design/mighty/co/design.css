@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "diogenes";
+    src: url('../../diogenes.ttf');
+}
+
+body  * {
+  font-family: "diogenes";
+}
+
+body {
+  margin:auto;
+  padding:0;
+  background-color:skyblue;
+  min-height:800px;
+  font-family: "diogenes";
+}
+
+#header {
+  width:100%;
+  background-color:black;
+  color:white;
+  background: linear-gradient(#CCC6C3 0%, #828C95 24%, #000000 41%, #7F7F7F 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  text-align:center;
+  padding: 0px 0px 3px 0px;
+  font-size:0.8em;
+  float:left;
+}
+
+#header2 {
+  margin:auto;
+  width:800px;
+}
+
+.dropdown {
+  margin:2px 0px 0px 0px;
+}
+
+#header2 ul {
+  list-style: none;
+}
+
+#header2 ul.dropdown {
+  position: relative;
+}
+
+#header2 ul.dropdown li {
+  float: left;
+  zoom: 1;
+  width:12.5%;
+}
+
+#header2 ul.dropdown li.hover, 
+#header2 ul.dropdown li:hover {
+  position: relative;
+}
+
+/* 
+  LEVEL TWO
+*/
+#header2 ul.dropdown ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-left:-90px;
+  padding-top:3px;
+}
+
+#header2 ul.dropdown ul li {
+  background: #f6f6f6;
+  color: #FFF;
+  float: none;
+  background-color:black;
+  width:200px;
+}
+
+#header2 a {
+  color:white;
+  text-decoration:none;
+}
+
+#header_ban {
+  width:100%;
+  font-size:2em;
+  padding:1em 0em 1em 0em;
+  text-align:center;
+  float:left;
+}
+
+#header_menu {
+  width:100%;
+  text-align:center;
+  float:left;
+}
+
+#header_menu a {
+  color:black;
+  text-decoration:none;
+}
+
+#header_ssmenu {
+  margin-top:5px;
+  width:100%;
+  text-align:center;
+  float:left;
+}
+
+#header_ssmenu a {
+  color:grey;
+  text-decoration:none;
+}
+
