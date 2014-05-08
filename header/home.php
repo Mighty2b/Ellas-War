@@ -2,9 +2,8 @@
 
 echo '<title>'._('EllasWar.com Jeu de stratégie en ligne gratuit').'</title>';
 echo '<meta name="description" content="'._(
-     'Inscrivez-vous et partez à l\'assaut des autres cités. 
-      EllasWar est un jeu de stratégie en ligne gratuit au temps de l\'antiquité grecque. 
-      Construisez votre cité et votre armée pour devenir le maître de toute une civilisation.').
+     'Inscrivez-vous et partez à l\'assaut des autres cités sur EllasWar, '.
+     'un jeu de stratégie en ligne gratuit au temps de l\'antiquité grecque.').
       '" />';
 
 $paquet -> add_action('get_news', array(5));
