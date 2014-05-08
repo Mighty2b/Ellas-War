@@ -58,8 +58,8 @@ else {
 }
 
 echo '
-<link rel="stylesheet" href="design/'.DESIGN.'/'.$prefix.'/design.css" />
-<!-- <link rel="icon" href="design/'.DESIGN.'/favicon.ico" /> -->';
+<link rel="stylesheet" href="'.STATIC_LINK.'design/'.DESIGN.'/'.$prefix.'/design.css" />
+<!-- <link rel="icon" href="'.STATIC_LINK.'design/'.DESIGN.'/favicon.ico" /> -->';
 echo '
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -16,6 +16,9 @@ RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2&var2=$3 [L]
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)-([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1&var1=$2 [L]
 RewriteRule ^([a-zA-Z0-9\-\&=\ \_]+)$  index.php?page=$1 [L]
+RewriteRule ^images/(.*) static/images/$1 [L]
+RewriteRule ^design/(.*) static/design/$1 [L]
+RewriteRule ^js/(.*) static/js/$1 [L]
 ExpiresActive On
 ExpiresDefault "access plus 7200 seconds"
 ExpiresByType image/jpg "access plus 2592000 seconds"

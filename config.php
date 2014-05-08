@@ -13,6 +13,7 @@ define('GOOGLE_CHECK', '_byfzLlu56lI2KnkHqRYGN4v6QNjX1i7sVRJXRZgH88');
 define('DESIGN', 'v4');
 define('TEMPS_CO', 31);
 define('ID_ADMIN', 457);
+define('STATIC_LINK', '');
 
 //Social networks
 define('FACEBOOK', 'https://fr-fr.facebook.com/pages/Ellas-War/236755106383392');
