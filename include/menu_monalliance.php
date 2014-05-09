@@ -8,6 +8,7 @@ $liste_attente = $paquet->get_answer('infoalliance')->{4};
 $sortie        = $paquet->get_answer('infoalliance')->{5};
 $demande_ress  = $paquet->get_answer('infoalliance')->{6};
 $depart_urgent = $paquet->get_infoj('depart_urgent');
+$temps_sortie_urgence = $paquet->get_answer('infoalliance')->{7};
 
 if(is_array($liste_guerres) && sizeof($liste_guerres) > 0) {
 	$nombre_guerres = sizeof($liste_guerres);
@@ -40,7 +41,7 @@ if(!empty($depart_urgent)) {
 printf(_('Sortie d\'urgence activée, départ prévu le %s'),
        display_date($depart_urgent,4));
 
-	if($depart_urgent-(TEMPS_SORTIE_URGENCE-86400) > time() && 
+	if($depart_urgent-($temps_sortie_urgence-86400) > time() && 
 	   $paquet->get_infoj('depart_force') == 0) {
 		echo ' (<a href="#" onclick="annuler_depart_urgent()">'._('Annuler').'</a>)';
 	}
