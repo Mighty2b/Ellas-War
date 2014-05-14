@@ -5,6 +5,11 @@ if($paquet->peut_commerce() == false) {
 	echo display_error(95);
 	echo '</div>';
 }
+elseif($paquet->get_answer('mes_ventes')->{3} == true) {
+	echo '<div class="erreur">';
+	echo display_error(228);
+	echo '</div>';
+}
 else {
 
 	echo '﻿<h1>'._('Vendre').'</h1>';

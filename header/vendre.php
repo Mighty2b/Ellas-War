@@ -7,6 +7,7 @@ echo '
 
 $paquet -> add_action('prix_commerce');
 $paquet -> add_action('licence');
+$paquet -> add_action('mes_ventes');
 
 if(!empty($_POST['cle'])) {
 	if(empty($_POST['anonyme'])) {
