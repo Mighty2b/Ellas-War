@@ -52,8 +52,7 @@ printf(_('Sortie d\'urgence activée, départ prévu le %s'),
 if($mon_alliance->dissolution_auto == 1) {
 	echo '<div class="interdit centrer"
 	           id="sortie_urgence">'._(
-	'Votre alliance a fait une demande de dissolution. '.
-	'Celle-ci sera automatiquement dissoute dès que possible.').'</div>';
+	'Votre alliance sera automatiquement dissoute dès que possible.').'</div>';
 }
 
 echo '<div class="centrer ligne80">
