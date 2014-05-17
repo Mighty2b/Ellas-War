@@ -60,11 +60,14 @@ else {
 echo '
 <link rel="stylesheet" href="'.STATIC_LINK.'design/'.DESIGN.'/'.$prefix.'/design.css" />
 <!-- <link rel="icon" href="'.STATIC_LINK.'design/'.DESIGN.'/favicon.ico" /> -->';
-echo '
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-';
+
+if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])) {
+	echo '
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	';
+}
 
 if(!empty($_GET['page']) && ($_GET['page'] == _('partie'))) {
   echo '<script type="text/javascript"
