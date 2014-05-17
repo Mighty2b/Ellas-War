@@ -146,6 +146,7 @@ function refresh_chat(clean) {
    $.ajax({
      type: "GET",
      url: "form/chat_refresh.php?clean="+clean,
+     async: false,
      timeout : 450,
      success: function(msg){
        if(msg != \'\') {
