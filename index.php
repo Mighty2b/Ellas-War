@@ -58,8 +58,9 @@ else {
 }
 
 echo '
-<link rel="stylesheet" href="'.STATIC_LINK.'design/'.DESIGN.'/'.$prefix.'/design.css" />
-<!-- <link rel="icon" href="'.STATIC_LINK.'design/'.DESIGN.'/favicon.ico" /> -->';
+<link rel="stylesheet" href="'.STATIC_LINK.'design/'.DESIGN.'/'.$prefix.'/design.css" />';
+
+//echo '<!-- <link rel="icon" href="'.STATIC_LINK.'design/'.DESIGN.'/favicon.ico" /> -->';
 
 if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])) {
 	echo '
