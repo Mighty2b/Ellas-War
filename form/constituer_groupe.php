@@ -29,7 +29,7 @@ if(!empty($_GET['id'])) {
 		}
 
 		echo '<br/>
-		<table class="none">
+		<table>
 		<tr class="gras">
 		<td>&nbsp;'._('Joueur').'&nbsp;</td>
 		<td>&nbsp;'._('Prêt').'&nbsp;</td>
@@ -44,12 +44,12 @@ if(!empty($_GET['id'])) {
 			}
 
 			if($mb->action == 1) {
-				echo '<img src="/images/joueurs/mb_connecter.png" 
+				echo '<img src="images/utils/mb_connecter.png" 
 				           alt="'._('Joueur prêt').'" 
 				           title="'._('Joueur prêt').'"/>';
 			}
 			else {
-				echo '<img src="/images/joueurs/mb_deconnecter.png" 
+				echo '<img src="images/utils/mb_deconnecter.png" 
 				           alt="'._('Joueur non prêt').'" 
 				           title="'._('Joueur non prêt').'" />';
 			}
@@ -59,7 +59,7 @@ if(!empty($_GET['id'])) {
 			if($info_groupe->etape == 0 &&
 			   ($mb->id_joueur == $paquet->get_infoj('id') or 
 			    $info_groupe->chef == $paquet->get_infoj('id'))) {
-				echo '<img src="/images/joueurs/supprimer_mp.png"
+				echo '<img src="images/utils/supprimer_mp.png"
 				           atl="'._('Sortir du sanctuaire').'"
 				           title="'._('Sortir du sanctuaire').'"
 				           style="width:10px;"
