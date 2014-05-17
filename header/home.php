@@ -1,10 +1,16 @@
 <?php
 
-echo '<title>'._('EllasWar.com Jeu de stratégie en ligne gratuit').'</title>';
-echo '<meta name="description" content="'._(
-     'Inscrivez-vous et partez à l\'assaut des autres cités sur EllasWar, '.
-     'un jeu de stratégie en ligne gratuit au temps de l\'antiquité grecque.').
-      '" />';
+echo '
+<title>'._('EllasWar.com Jeu de stratégie en ligne gratuit').'</title>
+<meta name="description" content="'._(
+'Inscrivez-vous et partez à l\'assaut des autres cités sur EllasWar, '.
+'un jeu de stratégie en ligne gratuit au temps de l\'antiquité grecque.').
+'" />
+<meta property="og:title" 
+      content="'._('EllasWar.com').'" />
+<meta property="og:type" content="Jeu de stratégie en ligne gratuit" />
+<meta property="og:url" content="'.SITE_URL.'" />
+<meta property="og:image" content="'.STATIC_LINK.'images/logo/ban193x135.png" />';
 
 $paquet -> add_action('get_news', array(5));
 
