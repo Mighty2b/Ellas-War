@@ -610,6 +610,8 @@ function display_error($erreur_no, $var='') {
     break;
   case 251: $erreur = 'Erreur dans la déclaration de la guerre';
     break;
+  case 252: $erreur = 'Vous ne pouvez pas effectuer cette action pendant un blocus';
+    break;
 	//case : $erreur = "";break;
 	}
 	

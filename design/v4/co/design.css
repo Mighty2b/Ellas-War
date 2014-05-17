@@ -201,6 +201,10 @@ td.none {
   font-weight:bold;
 }
 
+.italic {
+  font-style:italic;
+}
+
 .sousligne {
   text-decoration:underline;
 }
