@@ -8,7 +8,7 @@
 <div id="home_description_1" class="visible">
 
 <div class="home_description_left">
-<img src="lang/'.LANG.'/images/screen/mini_strategie.png" 
+<img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_strategie.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
      width="120" height="113" >
@@ -36,7 +36,7 @@ _('Prenez la tête d\'une <b>cité</b> au milieu d\'une <b>Grèce</b> à feu et 
 <div class="ligne"><h2>'._('Faites intervenir les dieux').'</h2></div>
 
 <div class="home_description_left">
-<img src="lang/'.LANG.'/images/screen/mini_dieux.png" 
+<img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_dieux.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
      width="120" height="76" >
@@ -62,7 +62,7 @@ _('Honorez les <b>dieux</b>, vivez en les respectant et en les craignant. '.
 <div class="ligne"><h2>'._('Chaque avantage compte').'</h2></div>
 
 <div class="home_description_left">
-<img src="lang/'.LANG.'/images/screen/mini_arbre.png" 
+<img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_arbre.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
      width="120" height="78" >
@@ -86,7 +86,7 @@ _('L\'arbre des <b>dieux</b> vous permettra de spécialiser votre cité. '.
 <div class="ligne"><h2>'._('Prenez des risques').'</h2></div>
 
 <div class="home_description_left">
-<img src="lang/'.LANG.'/images/screen/mini_tresor.png" 
+<img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_tresor.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
      width="120" height="71" >

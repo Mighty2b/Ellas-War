@@ -68,13 +68,13 @@ echo '
 
 if(!empty($_GET['page']) && ($_GET['page'] == _('partie'))) {
   echo '<script type="text/javascript"
-                src="js/jquery-2.js" ></script>';
+                src="'.STATIC_LINK.'js/jquery-2.js" ></script>';
   echo '<script type="text/javascript"
-                src="js/jquery-ui.min.js" ></script>';
+                src="'.STATIC_LINK.'js/jquery-ui.min.js" ></script>';
 
 }
 else {
-  echo '<script type="text/javascript" src="js/jquery.min.js" ></script>';
+  echo '<script type="text/javascript" src="'.STATIC_LINK.'js/jquery.min.js" ></script>';
 }
 
 switch($paquet->get_infoj('statu')) {
@@ -83,15 +83,15 @@ switch($paquet->get_infoj('statu')) {
 	break;
 	
 	case 1:
-echo '<script type="text/javascript" src="js/scripts_'.$prefix.'.js" ></script>';
+echo '<script type="text/javascript" src="'.STATIC_LINK.'js/scripts_'.$prefix.'.js" ></script>';
 	break;
 	
 	default:
-echo '<script type="text/javascript" src="js/scripts_aco.js" ></script>';
+echo '<script type="text/javascript" src="'.STATIC_LINK.'js/scripts_aco.js" ></script>';
 	break;
 }
 
-echo '<link rel="shortcut icon" type="image/png" href="favicon.ico" />
+echo '<link rel="shortcut icon" type="image/png" href="'.STATIC_LINK.'favicon.ico" />
 		<meta name="google-site-verification" 
 	        content="'.GOOGLE_CHECK.'" />
 		<meta name="ROBOTS" content="INDEX, FOLLOW"/>
