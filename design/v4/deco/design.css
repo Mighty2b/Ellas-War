@@ -366,7 +366,7 @@ footer nav a {
 
 #home {
 	margin-top:50px;
-	background-image:url('sous_menu.png'), url('design_bas.png'), url('font_design.png');
+	background-image:url('sous_menu.png'), url('design_bas.jpg'), url('font_design.png');
 	background-position: 0% 0%, bottom, 0% 0%;
 	background-repeat: no-repeat, no-repeat, repeat;
 	padding-bottom: 7px;
