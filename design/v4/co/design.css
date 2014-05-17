@@ -709,26 +709,27 @@ td.none {
 }
 
 #header_ssmenu_poursuites {
-  margin-left:35px;
+  margin-left:60px;
 }
 
 #header_ssmenu_missions {
-  margin-left:35px;
+  margin-left:50px;
 }
 
 #header_ssmenu_quetes {
-  margin-left:35px;
+  margin-left:50px;
 }
 
 #header_ssmenu_events {
-  margin-left:35px;
+  margin-left:50px;
 }
 
 #header_ssmenu_missionsstats {
-  margin-left:150px;
+  margin-left:175px;
 }
 
 #header_ssmenu_sanctuaires {
+  display:none;
   margin-left:35px;
 }
 
