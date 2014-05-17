@@ -14,7 +14,7 @@ if(!empty($_GET['ciblej'])) {
   
 	echo '<div class="centrer">';
 	
-	if(empty() or
+	if(empty($preparer) or
 	   $preparer->{2} == 0) {
 		echo '<div class="erreur">';
 		echo display_error(212);
