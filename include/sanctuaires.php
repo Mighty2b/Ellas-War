@@ -9,6 +9,7 @@ echo '
 	<div id="cadre_centre_petit">
 
 	</div>
+	<div id="sanctuaire_rapport"></div>
 	<div id="cadre_bas_petit"></div>
 </div>
 <div class="ligne_80">
