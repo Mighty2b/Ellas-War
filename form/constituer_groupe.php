@@ -19,7 +19,8 @@ if(!empty($_GET['id'])) {
 	elseif($info_groupe->etape == 0 or !empty($info_groupe->mnom)) {
 		echo '
 		<div id="erreur_sanctuaire"></div>
-		<div id="sanctuaire_menu_gauche">';
+		<div id="sanctuaire_menu_gauche">
+			<div class="centrer"><br/>';
 
 		if(sizeof($membre) >= $nb_membre) {
 			echo '<b>'._('Membres du groupe').' :</b>';
@@ -28,12 +29,14 @@ if(!empty($_GET['id'])) {
 			echo '<b>'._('Membres en attente').' :</b>';
 		}
 
-		echo '<br/>
+		echo '<br/></div>
 		<table>
-		<tr class="gras">
-		<td>&nbsp;'._('Joueur').'&nbsp;</td>
-		<td>&nbsp;'._('Prêt').'&nbsp;</td>
-		</tr>';
+		<thead>
+			<tr class="gras">
+			<td>&nbsp;'._('Joueur').'&nbsp;</td>
+			<td>&nbsp;'._('Prêt').'&nbsp;</td>
+			</tr>
+		</thead><tfoot></tfoot><tbody>';
 
 		foreach($membre as $mb) {
 			
@@ -64,13 +67,13 @@ if(!empty($_GET['id'])) {
 				           title="'._('Sortir du sanctuaire').'"
 				           style="width:10px;"
 				           onclick="sortir_sanctuaire('.$mb->id_joueur.');"
-				           class="chat_signaler" />';
+				           class="cursor" />';
 			}
 
 		echo '&nbsp;</td></tr>';
 	}
 	
-	echo '</table><br/><div class="centrer">';
+	echo '</tbody></table><br/><div class="centrer">';
 
 	if(sizeof($membre) >= $nb_membre) {
 		if($info_groupe->nb_pret >= $nb_membre) {

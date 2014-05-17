@@ -64,7 +64,7 @@ function constituer_groupe(id) {
 function je_suis_pret() {
     $.ajax({
      type: "GET",
-     url: "form/form_je_suis_pret.php",
+     url: "form/je_suis_pret.php",
      success: function(msg){ $("#bouton_je_suis_pret").hide(); }
    });
 }
@@ -86,6 +86,18 @@ function form_constituer_groupe(id) {
      data: "id="+id,
      success: function(msg){ $("#cadre_centre_petit").html(msg); }
    });
+}
+
+function sortir_sanctuaire(joueur) {
+	$.ajax({
+	type: "GET",
+	url: "form/sortir_sanctuaire.php?joueur="+joueur,
+	        success: function(msg){
+	         if(msg == joueur) {
+	        	 $("#cadre_milieu_petit").hide("slow");
+	         }
+	        }
+	   });
 }
 
 </script>
