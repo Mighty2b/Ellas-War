@@ -1,7 +1,9 @@
 <?php
 
-if(!empty($paquet->get_answer('get_parrain'))) {
-	$_SESSION['parrain'] = $paquet->get_answer('get_parrain')->{1};
+$get_parrain = $paquet->get_answer('get_parrain');
+
+if(!empty($get_parrain)) {
+	$_SESSION['parrain'] = $get_parrain->{1};
 }
 
 echo '<h1>'._('Inscription sur Ellàs War').'</h1>';

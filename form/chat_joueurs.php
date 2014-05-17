@@ -6,8 +6,10 @@ $paquet = new EwPaquet();
 $paquet -> add_action('joueurs_chat');
 $paquet -> send_actions();
 
-if(!empty($paquet->get_answer('joueurs_chat'))) {
-	$rep = $paquet->get_answer('joueurs_chat')->{1};
+$joueurs_chat = $paquet->get_answer('joueurs_chat');
+
+if(!empty($joueurs_chat)) {
+	$rep = $joueurs_chat->{1};
 
 	$me  = false;
 	

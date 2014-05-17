@@ -1,14 +1,15 @@
 <?php
 
-$stats = $paquet->get_answer('stats_btn')->{1};
+$stats    = $paquet->get_answer('stats_btn')->{1};
+$info_btn = $paquet->get_answer('info_btn');
 
 echo '
 <div class="ligne_50">
 	<div class="ligne centrer">
 		<h2 class="centrer">Parties en cours</h2>';
 
-if(!empty($paquet->get_answer('info_btn')->{2})) {
-	foreach($paquet->get_answer('info_btn')->{2} as $do) {
+if(!empty($info_btn->{2})) {
+	foreach($info_btn->{2} as $do) {
 		if(empty($do->titre)) {
 			$do->titre=_('Partie publique');
 		}
@@ -30,11 +31,11 @@ else {
 
 echo '<br/>';
 
-if(sizeof($paquet->get_answer('info_btn')->{2}) == 0) {
+if(sizeof($info_btn->{2}) == 0) {
 	echo '<div class="centrer">
-	<br/>Actuellement : '.$paquet->get_answer('info_btn')->{1}.'/4';
+	<br/>Actuellement : '.$info_btn->{1}.'/4';
 	echo '<br/><a href="'._('bataillesnavales').'-'._('rejoindre').'">'._('Rejoindre la partie publique');
-	echo '</a><br/>'._('Prix d\'entrée').' : '.nbf($paquet->get_answer('info_btn')->{3}).' '.imress('drachme');
+	echo '</a><br/>'._('Prix d\'entrée').' : '.nbf($info_btn->{3}).' '.imress('drachme');
 	echo '</div>';
 }
 

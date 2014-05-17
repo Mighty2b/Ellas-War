@@ -1,13 +1,17 @@
 <?php
 
-if(!empty($paquet->get_infoj('alliance')) && !empty($_GET['var3'])) {
+$alli = $paquet->get_infoj('alliance');
+
+if(!empty($alli) && !empty($_GET['var3'])) {
 	include('include/menu_monalliance.php');
 	echo '<br/>';
 }
 
-if(!empty($paquet->get_answer('nouveaux_messages')) &&
-   !empty($paquet->get_answer('nouveaux_messages')->{1})) {
-	$rep = $paquet->get_answer('nouveaux_messages')->{1};
+$nouveaux_messages = $paquet->get_answer('nouveaux_messages');
+
+if(!empty($nouveaux_messages) &&
+   !empty($nouveaux_messages->{1})) {
+	$rep = $nouveaux_messages->{1};
 	
 	if(!empty($rep) && sizeof($rep) >= 1) {
 		echo '<div class="erreur">';
@@ -119,12 +123,14 @@ function ajouter_dest() {
 
 <?php 
 
+$profils_alli = $paquet -> get_answer('profils_alliance');
+
 if(!empty($_GET['var1'])) {
 	echo '$("#destinataire").val('.$_GET['var1'].');
 	      ajouter_dest();';
 }
 elseif(!empty($_GET['var3']) && 
-       !empty($paquet -> get_answer('profils_alliance'))) {
+       !empty($profils_alli)) {
 	$all = $paquet -> get_answer('profils_alliance')->{1};
 	if(!empty($all)) {
 		$liste = $all->membres;

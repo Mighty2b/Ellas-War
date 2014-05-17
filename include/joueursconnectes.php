@@ -1,9 +1,8 @@
 <?php
 
-if(!empty($paquet->get_answer('get_joueurs_co'))) {
-	$liste = $paquet->get_answer('get_joueurs_co')->{1};
-}
-else {
+$liste = $paquet->get_answer('get_joueurs_co')->{1};
+
+if(empty($liste))
 	$liste = array();
 }
 

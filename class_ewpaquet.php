@@ -100,8 +100,9 @@ class Ewpaquet {
 	}
 	
 	function error($action, $num=1, $var='') {
-		if(!empty($this->get_answer($action))) {
-			if($this->get_answer($action)->{$num} != 0) {
+		if(!empty($action)) {
+		  $res_action = $this->get_answer($action);
+			if($res_action->{$num} != 0) {
 				echo '<div class="erreur">';
 				echo display_error($this->get_answer($action)->{$num}, $var);
 				echo '</div>';

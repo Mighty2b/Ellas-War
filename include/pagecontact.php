@@ -2,10 +2,11 @@
 
 $mess  = NULL;
 $liste = $paquet->get_answer('page_contact')->{1};
+$mess_contact = $paquet->get_answer('get_message_contact');
 
-if(!empty($paquet->get_answer('get_message_contact')) && 
-   !empty($paquet->get_answer('get_message_contact')->{1})) {
-	$mess  = $paquet->get_answer('get_message_contact')->{1};
+if(!empty($mess_contact) && 
+   !empty($mess_contact->{1})) {
+	$mess  = $mess_contact->{1};
 }
 
 if(sizeof($liste) > 0) {

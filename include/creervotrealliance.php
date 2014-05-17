@@ -1,6 +1,8 @@
 <?php
 
-if(!empty($paquet->get_infoj('alliance'))) {
+$alli = $paquet->get_infoj('alliance');
+
+if(!empty($alli)) {
 	redirect(_('alliance'));
 }	
 

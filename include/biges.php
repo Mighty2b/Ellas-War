@@ -6,6 +6,8 @@ if($paquet->get_infoj('lvl') <= 1 or ($paquet->get_infoj('drachme') < 1000)) {
 	echo '</div>';
 }
 
+$biges = $paquet->get_answer('biges');
+
 echo '<div class="ligne centrer">
 <br/>
 <img src="images/jeux/biges_200.png"
@@ -14,9 +16,9 @@ echo '<div class="ligne centrer">
 <br/><br/>
 </div>';
 
-if(!empty($paquet->get_answer('biges')) && 
-   !empty($paquet->get_answer('biges')->{2})) {
-	$paquet->error('biges', 1,array($paquet->get_answer('biges')->{2}));
+if(!empty($biges) && 
+   !empty($biges->{2})) {
+	$paquet->error('biges', 1,array($biges->{2}));
 }
 
 echo '<div class="ligne80 centrer">';

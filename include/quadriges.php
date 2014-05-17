@@ -14,9 +14,11 @@ if($paquet->get_infoj('lvl') <= 1 or ($paquet->get_infoj('drachme') < 1000)) {
 	echo '</div>';
 }
 
-if(!empty($paquet->get_answer('quadriges')) && 
-   !empty($paquet->get_answer('quadriges')->{2})) {
-	$paquet->error('quadriges', 1,array($paquet->get_answer('quadriges')->{2}));
+$quadriges = $paquet->get_answer('quadriges');
+
+if(!empty($quadriges) && 
+   !empty($quadriges->{2})) {
+	$paquet->error('quadriges', 1,array($quadriges->{2}));
 }
 
 echo '<div class="ligne80 centrer">';

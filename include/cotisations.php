@@ -29,7 +29,8 @@ else {
 	$max_vin=1000;
 }
 
-$do = $paquet->get_answer('get_cotisation')->{1};
+$greve = $paquet->get_infoj('greve');
+$do    = $paquet->get_answer('get_cotisation')->{1};
 
 echo '<h1>'._('Cotisation actuelle').'</h1>
 <form action="cotisations" method="post">';
@@ -54,7 +55,7 @@ if($mon_alliance -> id_chef != $paquet->get_infoj('id') &&
    $paquet->get_answer('peut_greve')->{1}) {
 	echo '<input type="checkbox"
 	             name="greve"
-	             '.(!empty($paquet->get_infoj('greve'))?'checked="checked"':'').' />';
+	             '.(!empty($greve)?'checked="checked"':'').' />';
 	echo 'Se mettre en grève';
 }
 if(($mon_alliance -> id_chef != $paquet->get_infoj('id') && 
@@ -218,7 +219,7 @@ if($mon_alliance->level >= 4) {
 if($paquet->get_answer('peut_greve')->{1}) {
 	echo '<input type="checkbox"
 	             name="greve"
-	             '.(!empty($paquet->get_infoj('greve'))?'checked="checked"':'').' />';
+	             '.(!empty($greve)?'checked="checked"':'').' />';
 	echo 'Se mettre en grève';
 }
 

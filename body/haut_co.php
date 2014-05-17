@@ -81,8 +81,9 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 </section>
 <section id="header_ban">';
 
-if(!empty($paquet->get_answer('get_missives'))) {
-	$var_missives = $paquet->get_answer('get_missives')->{1};
+$missives = $paquet->get_answer('get_missives');
+if(!empty($missives)) {
+	$var_missives = $missives->{1};
 	
 	echo '
 	<marquee height="18"
@@ -131,7 +132,8 @@ echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div></a>&nbsp;
 &nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'._('Quêtes').'</div></a>&nbsp;
 &nbsp;<a id="menu_alliance" href="';
 
-if(empty($paquet->get_infoj('alliance'))) {
+$all = $paquet->get_infoj('alliance');
+if(empty($all)) {
 	echo _('lesalliances');
 }
 else {

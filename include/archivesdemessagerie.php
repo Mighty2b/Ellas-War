@@ -1,7 +1,9 @@
 <?php
 
-if(!empty($paquet->get_answer('messagerie_archives'))) {
-	$liste = $paquet->get_answer('messagerie_archives')->{1};
+$messagerie_archives = $paquet->get_answer('messagerie_archives');
+
+if(!empty($messagerie_archives)) {
+	$liste = $messagerie_archives->{1};
 }
 
 if(!empty($liste) && sizeof($liste) > 0) {

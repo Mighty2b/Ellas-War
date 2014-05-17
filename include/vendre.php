@@ -30,12 +30,13 @@ else {
 	'Vous pouvez en échange de 5% du prix, vendre de façon anonyme.').'</p>';
 	
 	$paquet -> is_active_bonus_commerce();
+	$licence = $paquet->get_answer('licence');
 	
-	if(!empty($paquet->get_answer('licence')) &&
-	   $paquet->get_answer('licence')->{1} > $paquet->get_infoj('timestamp')) {
+	if(!empty($lience) &&
+	   $lience->{1} > $paquet->get_infoj('timestamp')) {
 		echo '<div class="erreur">';
 		echo _('Votre licence finit').' '.
-		     display_date($paquet->get_answer('licence')->{1},4);
+		     display_date($lience->{1},4);
 		echo '</div>';
 	}
 	  
@@ -45,7 +46,7 @@ else {
 	<table class="none">
 	<tr>';
 	
-	if($paquet->get_answer('licence')->{1} > 0) {
+	if($lience->{1} > 0) {
 		echo '<td colspan="2" class="rouge_goco centrer">'.
 	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
 	}

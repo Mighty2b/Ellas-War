@@ -7,13 +7,15 @@ if(!empty($_GET['id'])) {
 	$paquet -> add_action('check_login', array($_GET['id']));
 	$paquet -> send_actions();
 	
-	if(!empty($paquet->get_answer('check_login'))) {
+	$check = $paquet->get_answer('check_login');
+	
+	if(!empty($check)) {
 		
-		$id = $paquet->get_answer('check_login')->{1};
+		$id = $check->{1};
 		
 		if($id != 0) {
 			
-			$login = $paquet->get_answer('check_login')->{2};
+			$login = $check->{2};
 			
 			echo json_encode(array('id'    => $id,
 			                       'login' => $login));

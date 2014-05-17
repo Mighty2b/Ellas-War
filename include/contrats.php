@@ -4,6 +4,7 @@ include('include/menu_monalliance.php');
 
 $liste_contrats = $paquet->get_answer('info_contrats')->{1};
 $mes_contrats   = $paquet->get_answer('info_contrats')->{2};
+$annul = $paquet->get_answer('annuler_contrat');
 
 if($mon_alliance -> level < 3 or 
    $paquet->get_infoj('droits_alliance')->contrat == 0) {
@@ -12,10 +13,10 @@ if($mon_alliance -> level < 3 or
 
 $paquet -> error('valider_contrat', 1);
 
-if(!empty($paquet->get_answer('annuler_contrat'))) {
-	if($paquet->get_answer('annuler_contrat')->{1} != 0) {
+if(!empty($annul)) {
+	if($annul->{1} != 0) {
 		$paquet->error('annuler_contrat', 1, 
-		array($paquet->get_answer('annuler_contrat')->{2}));
+		array($annul->{2}));
 	}
 }
 

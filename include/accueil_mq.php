@@ -1,10 +1,12 @@
 <?php
 
-if(empty($paquet->get_answer('free_bloque_ress'))) {
+$free_bloque_ress = $paquet->get_answer('free_bloque_ress');
+
+if(empty($free_bloque_ress)) {
 	redirect(_('accueil_mq'));
 }
 
-if($paquet->get_answer('free_bloque_ress')->{1} == 1) {
+if($free_bloque_ress->{1} == 1) {
   echo '<div class="ligne centrer erreur">'.
 _('Promotion : Remettez votre compte en route gratuitement !').
 '<br/><br/>
@@ -24,7 +26,7 @@ echo '<div class="ligne centrer">
 <table class="none" width="80%">
 <tr class="centrer"><td>';
 
-if($paquet->get_answer('free_bloque_ress')->{1} == 1) {
+if($free_bloque_ress->{1} == 1) {
   echo '<h3 class="cursor"
             onclick="javascript:retour_pause();">'._('Revenir sur le jeu').'</h3>';
 }

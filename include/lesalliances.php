@@ -12,6 +12,7 @@ $paquet->error('proposer_contrat');
 $paquet->error('demander_pacte');
 $paquet->error('declarer_guerre');
 $paquet->error('proposer_blocus');
+$alli = $paquet->get_infoj('alliance');
 	
 echo '
 <div id="cadre_milieu_petit">
@@ -60,12 +61,12 @@ img('images/alliance/membrealli.png', _('membre')).'&nbsp;</td>
 <td class="centrer">'._('Effectifs').'</td>
 <td class="centrer">'._('Profils').'</td>';
 
-if(empty($paquet->get_infoj('alliance')) && 
+if(empty($alli) && 
    $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{4}) {
 	echo '<td class="centrer">'._('Postuler').'</td>';
 	$j++;
 }
-elseif(!empty($paquet->get_infoj('alliance'))) {
+elseif(!empty($alli)) {
 	if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 		echo'<td class="centrer">'._('Pacte').'</td>';
 		$j++;
@@ -78,7 +79,7 @@ elseif(!empty($paquet->get_infoj('alliance'))) {
 		echo '<td class="centrer"><font color=\'red\'><b>'._('Contrats').'</b></font></td>';
 		$j++;
 	}
-	if($paquet->get_infoj('id') == $paquet->get_infoj('alliance')->id_chef) {
+	if($paquet->get_infoj('id') == $alli->id_chef) {
 		echo '<td class="centrer"><font color=\'red\'><b>'._('Blocus').'</b></font></td>';
 		$j++;
 	}
@@ -104,7 +105,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 		img('images/alliance/view_text.png',_('profils')).'</a>
 		</td>';
 		
-		if(empty($paquet->get_infoj('alliance')) && 
+		if(empty($alli) && 
 		   $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{4}) {
 			echo '<td class="centrer">&nbsp;';
 			
@@ -115,7 +116,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 			
 			echo '&nbsp;</td>';
 		}
-		elseif(!empty($paquet->get_infoj('alliance'))) {
+		elseif(!empty($alli)) {
 			if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 				echo '<td class="centrer">';
 				if($all->peut_pacte) {
@@ -151,7 +152,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 				echo '</td>';
 			}
 			
-			if($paquet->get_infoj('id') == $paquet->get_infoj('alliance')->id_chef) {
+			if($paquet->get_infoj('id') == $alli->id_chef) {
 				if($all->peut_blocus) {
 					echo '<td class="centrer"><img src="images/alliance/flag_orange.png"
 							 alt="'._('Poser un blocus"
@@ -217,7 +218,7 @@ if($nombreDePages > 1)
 }
 
 
-if(empty($paquet->get_infoj('alliance')) && 
+if(empty($alli) && 
    $paquet->get_infoj('lvl') >= $paquet->get_answer('get_listealliances')->{3}) {
 	echo '<div class="centrer erreur"><br/><a href="'._('creervotrealliance').'"
 	                                     class="centre_armee" >'._('Creer votre alliance').'</a></div>';

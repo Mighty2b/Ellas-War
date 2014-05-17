@@ -7,7 +7,8 @@ if($paquet->get_answer('mes_ventes')->{3} == true) {
 }
 else {
 	
-	$jour = date('N');
+	$jour     = date('N');
+	$licences = $paquet->get_answer('licence');
 	
 	if($jour < 6) {
 		echo '<h2 class="centrer">'._('Débarras fermé').'</h2>';
@@ -35,8 +36,8 @@ else {
 		<h2 class="centrer">'._('Poser des ressources au débarras').'</h2>
 		<br/>';
 	
-	if(!empty($paquet->get_answer('licence')) &&
-	   $paquet->get_answer('licence')->{1} > $paquet->get_infoj('timestamp')) {
+	if(!empty($licences) &&
+	   $licences->{1} > $paquet->get_infoj('timestamp')) {
 		echo '<div class="erreur">';
 		echo _('Votre licence finie').' '.
 		     display_date($paquet->get_infoj('timestamp'),4);

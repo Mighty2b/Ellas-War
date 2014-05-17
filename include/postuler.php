@@ -5,7 +5,8 @@ if($paquet->get_infoj('lvl') < $paquet->get_answer('get_listealliances')->{4}) {
 	redirect();
 }
 
-if(!empty($paquet->get_infoj('alliance'))) {
+$all = $paquet->get_infoj('alliance');
+if(!empty($all)) {
 	redirect();
 }
 

@@ -1,9 +1,12 @@
 <?php
 
+$liste_news = $paquet->get_answer('get_news');
+
 echo '<h1 class="title_faq">'._('Actualités d\'Ellàs War').'</h1><br/>';
 
-if(!empty($paquet->get_answer('get_news'))) {
-	$list_news = $paquet->get_answer('get_news')->{1};
+
+if(!empty($liste_news)) {
+	$list_news = $liste_news->{1};
 	
 	if(sizeof($list_news) > 0) {
 		echo '<div id="new_list" class="ligne">';

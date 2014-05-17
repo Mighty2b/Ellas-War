@@ -10,8 +10,10 @@ $paquet = new EwPaquet();
 $paquet -> add_action('refresh_chat', array($_GET['clean']));
 $paquet -> send_actions();
 
-if(!empty($paquet->get_answer('refresh_chat'))) {
-	$rep   = $paquet->get_answer('refresh_chat')->{1};
+$refresh = $paquet->get_answer('refresh_chat');
+
+if(!empty($refresh)) {
+	$rep   = $refresh->{1};
 }
 
 $moi   = 0;

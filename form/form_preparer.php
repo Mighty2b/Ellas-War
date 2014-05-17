@@ -8,19 +8,21 @@ if(!empty($_GET['ciblej'])) {
   $paquet -> add_action('preparer', array($_GET['ciblej']));
   $paquet -> send_actions();
   
-  $error = $paquet->get_answer('preparer')->{3};
+  $preparer = $paquet->get_answer('preparer');
+  
+  $error = $preparer->{3};
   
 	echo '<div class="centrer">';
 	
-	if(empty($paquet->get_answer('preparer')) or
-	   $paquet->get_answer('preparer')->{2} == 0) {
+	if(empty() or
+	   $preparer->{2} == 0) {
 		echo '<div class="erreur">';
 		echo display_error(212);
 		echo '</div>';
 	}
 	elseif(empty($error)) {
-		$login = $paquet->get_answer('preparer')->{1};
-		$id    = $paquet->get_answer('preparer')->{2};
+		$login = $preparer->{1};
+		$id    = $preparer->{2};
 		
 		echo '<div class="erreur">';
 		echo display_error(121, $login);
