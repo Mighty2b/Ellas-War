@@ -78,7 +78,8 @@ function affiche_tpc($tmp_restant) {
 	elseif($secondes > 0)
 		$restant .= $secondes.' seconde';
 
-	echo '<div class="ligne centrer rouge_goco gras">'.$restant.' avant le blocage de votre compte pour manque de ressources.';
+	echo '<div class="ligne centrer rouge_goco gras"
+	           id="cadre_panneress">'.$restant.' avant le blocage de votre compte pour manque de ressources.';
 
 	if($tmp_restant < 48*3600) {
 		echo ' Vos attaques en guerre sont restreintes, veuillez rétablir vos ressources.';

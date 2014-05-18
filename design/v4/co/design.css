@@ -301,6 +301,10 @@ td.none {
   width:580px;
 }
 
+#cadre_paneress {
+  height: 30px;
+}
+
 /* Barres de chargement */
 
 .progress-bar {
