@@ -46,7 +46,7 @@ else {
 	<table class="none">
 	<tr>';
 	
-	if($lience->{1} > 0) {
+	if(!empty($lience) && $lience->{1} > 0) {
 		echo '<td colspan="2" class="rouge_goco centrer">'.
 	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
 	}
