@@ -111,9 +111,14 @@ echo '
 			{
 				if(($nombre_guerres > 0) && ($do->date > $temps_mois))
 				{
-					echo '<td><a href="javascript:expulser_urgence('.$do->id.');"
-					             onClick="if (window.confirm(\''.addslashes(_('Utiliser l\'expulsion d\'urgence sur').' '.$do->login).' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
-					                                                                                                                                          alt="'._('Expulsion d\'urgence').'"/></a></td></tr>';
+					if(empty($do->temps)) {
+						echo '<td><a href="javascript:expulser_urgence('.$do->id.');"
+						             onClick="if (window.confirm(\''.addslashes(_('Utiliser l\'expulsion d\'urgence sur').' '.$do->login).' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
+						             alt="'._('Expulsion d\'urgence').'"/></a></td></tr>';
+					}
+					else {
+						echo '<td></td>';
+					}
 				}
 				else
 				{
