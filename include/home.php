@@ -128,7 +128,7 @@ if($paquet->get_answer('get_news') != null) {
 <script type="text/javascript">
 function display_cadre(id) {
 	$(".visible").hide();
-	$("#home_description_"+(id)).show('slow');
+	$("#home_description_"+(id)).show();
 	$(".visible").removeClass('visible');
 	$("#home_description_"+(id)).addClass('visible');
 }
