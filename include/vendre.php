@@ -32,11 +32,11 @@ else {
 	$paquet -> is_active_bonus_commerce();
 	$licence = $paquet->get_answer('licence');
 	
-	if(!empty($lience) &&
-	   $lience->{1} > $paquet->get_infoj('timestamp')) {
+	if(!empty($licence) &&
+	   $licence->{1} > $paquet->get_infoj('timestamp')) {
 		echo '<div class="erreur">';
 		echo _('Votre licence finit').' '.
-		     display_date($lience->{1},4);
+		     display_date($licence->{1},4);
 		echo '</div>';
 	}
 	  
@@ -46,12 +46,13 @@ else {
 	<table class="none">
 	<tr>';
 	
-	if(!empty($lience) && $lience->{1} > 0) {
-		echo '<td colspan="2" class="rouge_goco centrer">'.
+	if(empty($licence) or $licence->{1} < $paquet->get_infoj('timestamp')) {
+		echo '<td colspan="2" class="rouge_goco centrer gras">'.
 	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
 	}
 	else {
-echo '<td><b>'._('Vente flash').' (<a href="'._('licences').'">'._('Licences').'</a>)</b></td>
+echo '<td><b>'._('Vente flash').' (<a href="'._('licences').'" 
+                                      class="rouge_goco">'._('Licences').'</a>)</b></td>
 	 	<td><input type="checkbox" name="flash" id="vente_flash">';
 	}
 
@@ -164,7 +165,9 @@ echo '</form>
 	echo '</tbody>
 	</table>
 	</div>
-<div class="ligne"><br/><br/></div>';
+<div class="ligne centrer"><br/><br/>
+	<a class="rouge_goco gras"
+	   href="'._('licences').'">'.ucfirst(_('acheter une licence')).'</a></div>';
 
 }
 
