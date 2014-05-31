@@ -16,6 +16,16 @@
 }
 
 @font-face {
+    font-family: "jancieni";
+    src: url('../../../policy/jancieni.ttf');
+}
+
+@font-face {
+    font-family: "jancient";
+    src: url('../../../policy/jancient.ttf');
+}
+
+@font-face {
     font-family: "dalek";
     src: url('../../../policy/DALEK.ttf');
 }
@@ -23,6 +33,11 @@
 @font-face {
     font-family: "spqr";
     src: url('../../../policy/spqr.ttf');
+}
+
+@font-face {
+    font-family: "old press";
+    src: url('../../../policy/Old Press.ttf');
 }
 
 /* General CSS */
@@ -595,13 +610,13 @@ td.none {
 /* 2nd menu */
 #header_ssmenu {
   float:left;
-  font-family:"poseiaoe", "dalek", "spqr";
+  font-family: "old press", "poseiaoe", "dalek";
 }
 
 #header_ssmenu a {
   position:relative;
   float:left;
-  font-size:1.5em;
+  font-size:1.4em;
 }
 
 #barre_menu_cite {
