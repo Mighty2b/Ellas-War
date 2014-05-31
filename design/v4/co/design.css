@@ -617,6 +617,7 @@ td.none {
   position:relative;
   float:left;
   font-size:1.4em;
+  text-align:center;
 }
 
 #barre_menu_cite {
@@ -628,31 +629,33 @@ td.none {
 }
 
 #header_ssmenu_constructions {
-  margin-left:20px;
+  margin-left:4px;
+  width:95px;
 }
 
 #header_ssmenu_construire {
-  margin-left:25px;
+  width:85px;
 }
 
 #header_ssmenu_armurerie {
-  margin-left:25px;
+  width:75px;
 }
 
 #header_ssmenu_tresor {
-  margin-left:25px;
+  width:60px;
 }
 
 #header_ssmenu_oracle {
-  margin-left:25px;
+  width:55px;
 }
 
 #header_ssmenu_bonus {
-  margin-left:20px;
+  width:90px;
 }
 
 #header_ssmenu_faveurs {
-  margin-left:110px;
+  margin-left: 90px;
+  width: 100px;
 }
 
 #barre_menu_armee {
@@ -664,27 +667,29 @@ td.none {
 }
 
 #header_ssmenu_attaquer {
-  margin-left:30px;
+  margin-left:4px;
+  width:95px;
 }
 
 #header_ssmenu_passerenrevue {
-  margin-left:30px;
+  width:120px;
 }
 
 #header_ssmenu_engager {
-  margin-left:30px;
+  width:90px;
 }
 
 #header_ssmenu_mesattaques {
-  margin-left:30px;
+  width:100px;
 }
 
 #header_ssmenu_strategiedefensive {
-  margin-left:110px;
+  margin-left:85px;
+  width:120px;
 }
 
 #header_ssmenu_strategieoffensive {
-  margin-left:25px;
+  width:120px;
 }
 
 #barre_menu_mythologie {
@@ -696,27 +701,29 @@ td.none {
 }
 
 #header_ssmenu_arbredesdieux {
-  margin-left:35px;
+  margin-left:4px;
+  width:130px;
 }
 
 #header_ssmenu_auteldesdieux {
-  margin-left:25px;
+  width:120px;
 }
 
 #header_ssmenu_temples {
-  margin-left:25px;
+  width:70px;
 }
 
 #header_ssmenu_statues {
-  margin-left:25px;
+  width:70px;
 }
 
 #header_ssmenu_succes {
-  margin-left:25px;
+  width:70px;
 }
 
 #header_ssmenu_prieres {
-  margin-left:155px;
+  margin-left:90px;
+  width:100px;
 }
 
 #barre_menu_quetes {
@@ -728,23 +735,25 @@ td.none {
 }
 
 #header_ssmenu_poursuites {
-  margin-left:60px;
+  margin-left:20px;
+  width:110px;
 }
 
 #header_ssmenu_missions {
-  margin-left:50px;
+  width:110px;
 }
 
 #header_ssmenu_quetes {
-  margin-left:50px;
+  width:105px;
 }
 
 #header_ssmenu_events {
-  margin-left:50px;
+  width:105px;
 }
 
 #header_ssmenu_missionsstats {
-  margin-left:175px;
+  margin-left:105px;
+  width:110px;
 }
 
 #header_ssmenu_sanctuaires {
@@ -789,27 +798,29 @@ td.none {
 }
 
 #header_ssmenu_donnerunefaveur {
-  margin-left:30px;
+  margin-left:4px;
+  width:115px;
 }
 
 #header_ssmenu_commerce {
-  margin-left:30px;
+  width:75px;
 }
 
 #header_ssmenu_vendre {
-  margin-left:30px;
+  width:65px;
 }
 
 #header_ssmenu_mesventes {
-  margin-left:30px;
+  width:90px;
 }
 
 #header_ssmenu_debarras {
-  margin-left:30px;
+  width:80px;
 }
 
 #header_ssmenu_faveurs2 {
-  margin-left:119px;
+  margin-left:104px;
+  width:100px;
 }
 
 #header_ssmenu_donnerunefaveur {
