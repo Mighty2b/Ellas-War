@@ -94,6 +94,16 @@ function afficherPartie() {
            function(data){
            
              if(data != '') {
+               if(data.answer.infopartie.vainqueur_id != 0) {
+                   var txt_vain = '';
+                   txt_vain += '<div class="ligne centrer rouge_goco">';
+                   txt_vain += data.answer.infopartie.vainqueur_login;
+                   txt_vain += ' a remporté la partie, la bataille navale est terminée.';
+                   txt_vain += '</div>';
+                   
+                   $("#partie").html(text_vainqueur);
+               }
+               else {
                 $("#btn_gold").html(data.answer.infopartie.gold+' <img src="images/ress/gold.png" title="Gold" alt="Gold" />');
                 capitale_x = data.answer.infopartie.capitale_x;
                 capitale_y = data.answer.infopartie.capitale_y;
@@ -272,6 +282,7 @@ function afficherPartie() {
                      }
                    }
                  });
+               }
              }
            }
   );
