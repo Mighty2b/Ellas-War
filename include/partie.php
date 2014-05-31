@@ -101,7 +101,7 @@ function afficherPartie() {
                    txt_vain += ' a remporté la partie, la bataille navale est terminée.';
                    txt_vain += '</div>';
                    
-                   $("#partie").html(text_vainqueur);
+                   $("#partie").html(txt_vain);
                }
                else {
                 $("#btn_gold").html(data.answer.infopartie.gold+' <img src="images/ress/gold.png" title="Gold" alt="Gold" />');
