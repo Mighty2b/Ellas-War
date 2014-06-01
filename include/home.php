@@ -9,10 +9,11 @@
 <div id="home_description_1" class="visible">
 
 <div class="home_description_left">
+<a href="'._('decouvertedujeu').'-'._('forces_defensives').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_strategie.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
-     width="120" height="113" >
+     width="120" height="113" ></a>
 <br/>
 <div class="ligne_50 ligne200 centrer cursor gras"
      onclick="display_cadre(4)">&larr;</div>
@@ -37,10 +38,11 @@ _('Prenez la tête d\'une <b>cité</b> au milieu d\'une <b>Grèce</b> à feu et 
 <div class="ligne"><h2>'._('Faites intervenir les dieux').'</h2></div>
 
 <div class="home_description_left">
+<a href="'._('decouvertedujeu').'-'._('dieux').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_dieux.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
-     width="120" height="76" >
+     width="120" height="76" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
      onclick="display_cadre(1)">&larr;</div>
@@ -63,10 +65,11 @@ _('Honorez les <b>dieux</b>, vivez en les respectant et en les craignant. '.
 <div class="ligne"><h2>'._('Chaque avantage compte').'</h2></div>
 
 <div class="home_description_left">
+<a href="'._('decouvertedujeu').'-'._('arbre').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_arbre.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
-     width="120" height="78" >
+     width="120" height="78" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
      onclick="display_cadre(2)">&larr;</div>
@@ -87,10 +90,11 @@ _('L\'arbre des <b>dieux</b> vous permettra de spécialiser votre cité. '.
 <div class="ligne"><h2>'._('Prenez des risques').'</h2></div>
 
 <div class="home_description_left">
+<a href="'._('decouvertedujeu').'-'._('tresor').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_tresor.png" 
      alt="'._('Déployez votre stratégie').'"
      title="'._('Déployez votre stratégie').'"
-     width="120" height="71" >
+     width="120" height="71" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
      onclick="display_cadre(3)">&larr;</div>
