@@ -23,8 +23,8 @@ define('TWITTER', 'http://www.twitter.com/Ellaswar');
 $minimum_lvl_ress = array('pierre' => 1,
 													'marbre' => 1,
 													'raisin' => 3,
-													'vin' => 7,
-													'gold' => 7);
+													'vin' => 8,
+													'gold' => 8);
 $temps_lots = 120; //Temps avant de pouvoir acheter, en secondes
 $prix_commerce = array(
 'fer' => array('nom' => 'Fer', 'qtt' => 1000000, 
