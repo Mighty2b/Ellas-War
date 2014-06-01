@@ -1,6 +1,7 @@
 <?php
 	echo '
 <h1>'._('Venez combattre sur Ellàs War').'</h1>
+<br/>
 <p>'._('Inscrivez-vous <b>gratuitement</b> sur Ellàs War, '.
 'affrontez des milliers de joueurs et '.
 'défendez votre <b>cité</b> face aux ennemis qui l\'entourent. ').'<br/><br/></p>
