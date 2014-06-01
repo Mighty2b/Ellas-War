@@ -28,7 +28,7 @@ switch ($_GET['var1']) {
 	
 	case 'dieux':
 		$title = _('Le temples');
-		$img_src = 'screen_temples.jpg';
+		$img_src = 'screen_dieux.png';
 		$img_title = _('Les temples');
 		$text = _('Chaque temple donne un avantage qui lui est unique. À vous de bien les choisir suivant votre stratégie.');
 		$lien_pre = _('decouvertedujeu').'-'._('tresor');
@@ -37,7 +37,7 @@ switch ($_GET['var1']) {
 	
 	case 'arbre':
 		$title = _('L\'arbre des dieux');
-		$img_src = 'screen_tresor.jpg';
+		$img_src = 'screen_arbre.png';
 		$img_title = _('L\'arbre des dieux');
 		$text = _('L\'arbre des dieux vous permet de personnaliser votre cité. Votre avancée sur le jeu vous donnera des points qui vous permettront d\'affiner votre stratégie.');
 		$lien_pre = _('decouvertedujeu').'-'._('dieux');
