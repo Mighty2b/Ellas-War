@@ -8,20 +8,25 @@ if(!empty($_GET['ciblej'])) {
   $paquet -> add_action('attaquer', array($_GET['ciblej']));
   $paquet -> send_actions();
 	
-	$error = $paquet->get_answer('attaquer')->{2};
-	
-	if(empty($error)) {
-		echo $paquet->get_answer('attaquer')->{1};
-		echo '
-		<script type="text/javascript">
-		$(function(){
-			$("#bouton_attaquer_'.$_GET['ciblej'].'").hide("slow");
-		});
-		</script>';
-	}
-	else {
-		$paquet->error('attaquer', 2);
-	}
+  $attaque = $paquet->get_answer('attaquer');
+  
+  if(!empty($attaque)) {
+  
+		$error = $attaque->{2};
+		
+		if(empty($error)) {
+			echo $attaque->{1};
+			echo '
+			<script type="text/javascript">
+			$(function(){
+				$("#bouton_attaquer_'.$_GET['ciblej'].'").hide("slow");
+			});
+			</script>';
+		}
+		else {
+			$paquet->error('attaquer', 2);
+		}
+  }
 }
 
 ?>
