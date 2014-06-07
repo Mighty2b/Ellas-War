@@ -22,6 +22,9 @@ $("#header_menu").mouseover(function(){
     $('ul:first',this).css('visibility', 'hidden');
   });
 */
+	$("#header_ban").click(function(){
+		window.location.href = "/";
+	});
 });
 
 function deco() {
