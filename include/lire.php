@@ -77,7 +77,7 @@ else {
 		}
 		
 		echo '<br/>'.display_date($mess->temps,3).'</td>
-		<td valign="top"><br/>'.$mess->message.'</td>
+		<td valign="top"><br/>'.nl2br($mess->message).'</td>
 		</tr>';
 		}
 		
