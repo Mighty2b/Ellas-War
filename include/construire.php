@@ -25,22 +25,21 @@ echo '</div>
 
 </div>
 
-<div id="cadre_batiment_types">
-<div id="cadre_batiment_types2">
-&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-1">'._('Production').'</a>&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-2">'._('Militaire').'</a>&nbsp;&nbsp;&nbsp;';
-
-if($paquet->get_infoj('lvl') >= 1) {
-	echo '&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-3">'._('Logement').'</a>&nbsp;&nbsp;&nbsp;';
-}
-
-echo '
-&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-4">'._('Divers').'</a>&nbsp;&nbsp;&nbsp;
-</div>
-</div>
-
-<div id="cadre_batiment_liste">';
-$liste_batiments = $paquet->get_infoj('liste_batiments');
+<div id="cadre_batiment_liste">
+	<div id="cadre_batiment_types">
+	<div id="cadre_batiment_types2">
+	&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-1">'._('Production').'</a>&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-2">'._('Militaire').'</a>&nbsp;&nbsp;&nbsp;';
+	
+	if($paquet->get_infoj('lvl') >= 1) {
+		echo '&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-3">'._('Logement').'</a>&nbsp;&nbsp;&nbsp;';
+	}
+	
+	echo '
+	&nbsp;&nbsp;&nbsp;<a href="'._('construire').'-4">'._('Divers').'</a>&nbsp;&nbsp;&nbsp;
+	</div>
+	</div>';
+	$liste_batiments = $paquet->get_infoj('liste_batiments');
 foreach($batiments as $bat => $details) {
 	if($details['aff'] == $type && !empty($liste_batiments->$bat) && 
 		 $liste_batiments->$bat->lvlmini <= $paquet->get_infoj('lvl')) {

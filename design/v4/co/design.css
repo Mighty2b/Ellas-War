@@ -996,6 +996,7 @@ select {
   height:28px;
   background-image:url('menu.png');
   margin:auto;
+  margin-bottom:10px;
 }
 
 #cadre_batiment_types2 {
@@ -1010,7 +1011,6 @@ select {
 
 #cadre_batiment_liste {
   margin-left:24px;
-  margin-top:10px;
   width:850px;
   position:relative;
   float:left;

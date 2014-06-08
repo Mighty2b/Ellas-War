@@ -48,10 +48,11 @@ echo '
 
 
 </div>
-';
+
+<div id="cadre_batiment_liste">';
 
 if($paquet->get_infoj('lvl') > 0) {
-	
+
 	echo '
 <div id="cadre_batiment_types">
 	<div id="cadre_batiment_types2">
@@ -63,10 +64,6 @@ if($paquet->get_infoj('lvl') > 0) {
 </div>';
 
 }
-
-echo '
-
-<div id="cadre_batiment_liste">';
 
 foreach($unites as $bat => $details) {
 	if($details['aff'] == $type) {
