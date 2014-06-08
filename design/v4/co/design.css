@@ -445,7 +445,7 @@ td.none {
   background-color:#E4DCC2;/*#21160A;*/
   text-align:center;
   padding: 0px 0px 3px 0px;
-  font-size:0.8em;
+  font-size:0.9em;
   position:fixed;
   z-index:100000;
   border-top: 2px solid #21160A;
@@ -460,7 +460,7 @@ td.none {
 
 #header2 {
   margin:auto;
-  width:800px;
+  width:1000px;
 }
 
 .dropdown {
