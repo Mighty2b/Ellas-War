@@ -64,6 +64,11 @@ echo '<br/>
 		<h2 class="centrer">Top 20</h2>
 		
 
+</div>
+<div class="ligne centrer">
+<a href="'._('classementdesbtn').'">
+<img src="lang/'.LANG.'/images/classement-des-btn.png"
+		alt="'._('Classement des batailles navales').'"
+				title="'._('Classement des batailles navales').'" /></a>
 </div>';
-
 ?>
