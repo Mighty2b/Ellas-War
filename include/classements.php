@@ -1,5 +1,9 @@
 <?php
 
+if($paquet->get_infoj('statu') == 1) {
+	echo '<div class="ligne_80">';
+}
+
 echo '<h2 class="centrer">'._('Classements').'</h2>
       <br/><br/>';
 
@@ -28,11 +32,21 @@ echo '<br/>
 
 echo '<br/>
       <br/>
+      <a href="'._('classementghonneur').'"
+         class="gras">'._('Classement de l\'Honneur').'</a><br/>'.
+         _('Classement des courrageuses cités d\'Ellàs War par rapport à leur honneur.');
+/*
+echo '<br/>
+      <br/>
       <a href="'._('classementdesheros').'"
          class="gras">'._('Classement des Héros').'</a><br/>'.
    _('Chaque cité d\'ELlàs War peut engager un héros. Celui-ci '.
      'peut être envoyé faire des quêtes ou attaquer les héros '.
      'des autres cités.');
+*/
 
+if($paquet->get_infoj('statu') == 1) {
+	echo '</div>';
+}
 
 ?>
