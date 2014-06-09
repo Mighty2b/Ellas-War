@@ -1,5 +1,7 @@
 <?php
 
+$noreply = $paquet->get_answer('noreply');
+
 echo '<div class="centrer ligne_80 rouge_goco gras">
 		<br/><br/>';
 
