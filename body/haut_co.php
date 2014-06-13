@@ -349,6 +349,7 @@ switch($page) {
 	case 'adressemail':
 	case 'motdepasse':
 	case 'reset':
+	case 'noreply':
 		echo '<div id="barre_menu_vide"></div>';
 	break;	
 	
