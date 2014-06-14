@@ -32,7 +32,7 @@ function deco() {
     type: "GET",
     url: "../form/form_deconnexion.php",
     success: function(msg) {
-      location.reload();
+    	window.location.href = "/";
     }
   });
 }
