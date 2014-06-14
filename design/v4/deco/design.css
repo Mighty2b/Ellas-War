@@ -644,6 +644,13 @@ footer nav a {
   width:120px;
 }
 
+#inside_deco_ress {
+  margin-top:90px;
+  float:left;
+  text-align:center;
+  width:158px;
+}
+
 /* profilsjoueur */
 
 #cadre_espace_profils {
