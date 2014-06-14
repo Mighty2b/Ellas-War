@@ -82,7 +82,7 @@ if(sizeof($liste_pactes) > 0) {
 				if($paquet->get_infoj('droits_alliance')->pacte > 0) {
 					echo '<td>&nbsp;<a href="javascript:gestion_pacte('.$do->pacte_id.', \'briser\');">'._('Annuler').'</a>&nbsp;';
 
-					if(sizeof($liste_fusion) == 0 && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
+					if((empty($liste_fusion) or sizeof($liste_fusion) == 0) && $paquet->get_infoj('id') == $paquet->get_infoj('idchef') && ($tp > $do->date)) {
 						echo '<a href="javascript:demander_fusion('.$do->id.');">'._('Demander une fusion').'</a>';
 					}
 				
