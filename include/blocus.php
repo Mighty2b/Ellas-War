@@ -6,7 +6,7 @@ $do = $paquet->get_answer('info_blocus')->{1};
 
 if(!empty($do)) {
 	echo '<div class="centrer">';
-	if($do->attaquant == $info->id) {
+	if($do->attaquant == $mon_alliance->id) {
 		$ennemis = $do->defenseur_nom;
 	}
 	else {
