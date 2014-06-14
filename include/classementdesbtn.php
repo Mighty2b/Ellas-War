@@ -1,5 +1,14 @@
 <?php
 
+if (isset($_GET['var1']) && is_numeric($_GET['var1']) ) {
+	$page = $_GET['var1'];
+	$i=25*($page-1)+1;
+}
+else {
+	$page = 1; // On se met sur la page 1 (par défaut)
+	$i=1;// On met dans une variable le nombre de messages qu'on veut par page
+}
+
 $classement    = $paquet->get_answer('get_classementbtn')->{1};
 $nombreDePages = $paquet->get_answer('get_classementbtn')->{2};
 
