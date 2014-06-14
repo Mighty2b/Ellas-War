@@ -62,7 +62,7 @@ echo '
 
 //echo '<!-- <link rel="icon" href="'.STATIC_LINK.'design/'.DESIGN.'/favicon.ico" /> -->';
 
-if(preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])) {
+if(!empty($_SERVER['HTTP_USER_AGENT']) && preg_match('/(?i)msie [1-9]/',$_SERVER['HTTP_USER_AGENT'])) {
 	echo '
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
