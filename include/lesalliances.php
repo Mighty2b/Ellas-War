@@ -75,7 +75,8 @@ elseif(!empty($alli)) {
 		echo '<td class="centrer"><font color=\'red\'><b>'._('Guerre').'</b></font></td>';
 		$j++;
 	}
-	if($paquet->get_infoj('droits_alliance')->contrat > 0) {
+	if($paquet->get_infoj('droits_alliance')->contrat > 0 &&
+	   $alli->level >= 3) {
 		echo '<td class="centrer"><font color=\'red\'><b>'._('Contrats').'</b></font></td>';
 		$j++;
 	}
@@ -140,7 +141,8 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 				echo '</td>';
 			}
 			
-			if($paquet->get_infoj('droits_alliance')->contrat > 0) {
+			if($paquet->get_infoj('droits_alliance')->contrat > 0 &&
+			   $alli >= 3) {
 				echo '<td class="centrer">';
 				if($all->peut_contrat) {
 					echo '<img src="images/alliance/flag_pink.png"
