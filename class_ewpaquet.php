@@ -295,6 +295,15 @@ class Ewpaquet {
 			return false;
 		}
 	}
+	
+	function get_cotise_volontaire() {
+		if(!empty($this->joueur) && !empty($this->joueur->alliance)) {
+			return $this->joueur->cotise_volontaire;
+		}
+		else {
+			return 0;
+		}
+	}
 }
 
 ?>
