@@ -5,7 +5,7 @@ echo '<title>Code non valide</title>
       content="'._('Code non valide').'" />';
 
 if(!empty($_GET['code'])) {
-	$paquet ->add_action('valide_renta', $_GET['code']);
+	$paquet ->add_action('valide_renta', array($_GET['code']));
 }
 
 ?>
