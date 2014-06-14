@@ -5,7 +5,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo',
 //Compte
 'informationspersonnelles',	'bibliotheque', 'pause', 'adressemail', 
 'motdepasse', 'vosobjectifs', 'profilsjoueur', 'tour_de_force',
-'reset', 'obtenirdesfaveurs', 'faveurerreur', 'noreply',
+'reset', 'obtenirdesfaveurs', 'faveurerreur', 'noreply', 'faveurvalide',
 
 //Messagerie
 'nouveaumessage', 'messagerie', 'boiteenvoie', 'archivesdemessagerie', 

@@ -10,6 +10,6 @@ $autorise = array('accueil_mq',
 	'membrealliance', 'tour_de_force', 'noreply',
 	
 	//Special manque
-	'obtenirdesfaveurs', 'parrainage', 'faveurerreur');
+	'obtenirdesfaveurs', 'parrainage', 'faveurerreur', 'faveurvalide');
 
 ?>

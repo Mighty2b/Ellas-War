@@ -10,6 +10,6 @@ $autorise = array('accueil_pause',
 	'membrealliance', 'tour_de_force', 'noreply',
 	
 	//Special pause
-	'obtenirdesfaveurs', 'parrainage', 'faveurerreur');
+	'obtenirdesfaveurs', 'parrainage', 'faveurerreur', 'faveurvalide');
 
 ?>
