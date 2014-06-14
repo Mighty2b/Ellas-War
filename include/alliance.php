@@ -114,7 +114,8 @@ echo '
 					if(empty($do->temps)) {
 						echo '<td><a href="javascript:expulser_urgence('.$do->id.');"
 						             onClick="if (window.confirm(\''.addslashes(_('Utiliser l\'expulsion d\'urgence sur').' '.$do->login).' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
-						             alt="'._('Expulsion d\'urgence').'"/></a></td></tr>';
+						             alt="'._('Expulsion d\'urgence').'"
+						             title="'._('Utiliser l\'expulsion d\'urgence sur').' '.$do->login.'"/></a></td></tr>';
 					}
 					else {
 						echo '<td></td>';
