@@ -163,6 +163,7 @@ switch($page) {
 	case 'faveurs':
 	case 'obtenirdesfaveurs':
 	case 'faveurerreur':
+	case 'faveurvalide':
 	case 'dons':
 		echo '
 		<div id="barre_menu_cite">
