@@ -36,12 +36,24 @@ echo '</td>
 	<td>'.display_date($mess->date,4).'</td>
 	<td><img src="images/messagerie/supprimer.png"
 	         alt="'._('Supprimer').'"
-	         title="'._('Supprimer').'" /></td>
+	         title="'._('Supprimer').'"
+	         class="cursor" 
+	         onclick="messagerie_supprimer('.$mess->id.');"/></td>
 	</tr>';
 }
 
 echo '</tbody>
-	</table>';	
+	</table>
+<script type="text/javascript">
+	function messagerie_supprimer(id) {
+		$.ajax({
+			type: "GET",
+			url: "form/messagerie_supprimer.php",
+			data: "id="+id,
+			success: function(msg){ location.reload(); }
+		});
+	}
+</script>';
 	
 }
 else {
