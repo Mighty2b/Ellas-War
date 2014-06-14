@@ -142,7 +142,7 @@ echo '</tr></thead><tfoot></tfoot><tbody>';
 			}
 			
 			if($paquet->get_infoj('droits_alliance')->contrat > 0 &&
-			   $alli >= 3) {
+			   $alli->level >= 3) {
 				echo '<td class="centrer">';
 				if($all->peut_contrat) {
 					echo '<img src="images/alliance/flag_pink.png"
