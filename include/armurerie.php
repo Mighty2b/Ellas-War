@@ -3,7 +3,6 @@
 echo '<h1>'._('Armurerie').'</h1>';
 
 $paquet->error('acheter_bonus_unites', 2);
-$paquet->error('armurerie');
 
 $bonus_unites = $paquet->get_infoj('bonus_unites');
 
@@ -251,51 +250,55 @@ echo '<div class="ligne">
   }
   echo '</table>';
 
-	if(!empty($_GET['var1'])) {
+
 	  echo '
-	<script type="text/javascript">
-	$(function(){
-	  $(".bloc_armurerie").hide();
-	  $("#bloc_amurerie_'.$_GET['var1'][0].'").show("slow");
-	
-	  $(".minititre_armurerie").click( function() {
-	    $(".bloc_armurerie").hide("slow");
-	  });
+<script type="text/javascript">
+$(function(){
+  $(".bloc_armurerie").hide();
+	';
 	  
-	  $("#h_infanterie_cac").click( function() {
-	    $("#bloc_amurerie_1").show("slow");
-	  });
-	  
-	  $("#h_cavalerie_cac").click( function() {
-	    $("#bloc_amurerie_2").show("slow");
-	  });
-	  
-	  $("#h_infanterie_dis").click( function() {
-	    $("#bloc_amurerie_3").show("slow");
-	  });
-	  
-	  $("#h_cavalerie_dis").click( function() {
-	    $("#bloc_amurerie_4").show("slow");
-	  });
-	  
-	  $("#m_infanterie_cac").click( function() {
-	    $("#bloc_amurerie_5").show("slow");
-	  });
-	  
-	  $("#m_cavalerie_cac").click( function() {
-	    $("#bloc_amurerie_6").show("slow");
-	  });
-	  
-	  $("#m_infanterie_dis").click( function() {
-	    $("#bloc_amurerie_7").show("slow");
-	  });
-	  
-	  $("#m_cavalerie_dis").click( function() {
-	    $("#bloc_amurerie_8").show("slow");
-	  });
-	});
-	</script>
-	  ';
+	if(!empty($_GET['var1'])) {
+  	echo '$("#bloc_amurerie_'.$_GET['var1'][0].'").show("slow");';
 	}
+	
+  echo '
+  $(".minititre_armurerie").click( function() {
+    $(".bloc_armurerie").hide("slow");
+  });
+  
+  $("#h_infanterie_cac").click( function() {
+    $("#bloc_amurerie_1").show("slow");
+  });
+  
+  $("#h_cavalerie_cac").click( function() {
+    $("#bloc_amurerie_2").show("slow");
+  });
+  
+  $("#h_infanterie_dis").click( function() {
+    $("#bloc_amurerie_3").show("slow");
+  });
+  
+  $("#h_cavalerie_dis").click( function() {
+    $("#bloc_amurerie_4").show("slow");
+  });
+  
+  $("#m_infanterie_cac").click( function() {
+    $("#bloc_amurerie_5").show("slow");
+  });
+  
+  $("#m_cavalerie_cac").click( function() {
+    $("#bloc_amurerie_6").show("slow");
+  });
+  
+  $("#m_infanterie_dis").click( function() {
+    $("#bloc_amurerie_7").show("slow");
+  });
+  
+  $("#m_cavalerie_dis").click( function() {
+    $("#bloc_amurerie_8").show("slow");
+  });
+});
+</script>
+  ';
 }
 ?>
