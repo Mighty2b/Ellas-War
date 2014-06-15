@@ -679,16 +679,16 @@ function prix_hall($tab_base, $level=0) {
 	}
 	else {
 	  $tab['prix_drachme']   = $tab_base->prix_drachme*($level);
-	  $tab['prix_or']        = $tab_base->prix_drachme*($level);
-	  $tab['prix_argent']    = $tab_base->prix_drachme*($level);
-	  $tab['prix_bois']      = $tab_base->prix_drachme*($level);
-	  $tab['prix_nourriture']= $tab_base->prix_drachme*($level);
-	  $tab['prix_eau']       = $tab_base->prix_drachme*($level);
-	  $tab['prix_fer']       = $tab_base->prix_drachme*($level);
-	  $tab['prix_raisin']    = $tab_base->prix_drachme*($level);
-	  $tab['prix_vin']       = $tab_base->prix_drachme*($level);
-	  $tab['prix_pierre']    = $tab_base->prix_drachme*($level);
-	  $tab['prix_marbre']    = $tab_base->prix_drachme*($level);
+	  $tab['prix_or']        = $tab_base->prix_or*($level);
+	  $tab['prix_argent']    = $tab_base->prix_argent*($level);
+	  $tab['prix_bois']      = $tab_base->prix_bois*($level);
+	  $tab['prix_nourriture']= $tab_base->prix_nourriture*($level);
+	  $tab['prix_eau']       = $tab_base->prix_eau*($level);
+	  $tab['prix_fer']       = $tab_base->prix_fer*($level);
+	  $tab['prix_raisin']    = $tab_base->prix_raisin*($level);
+	  $tab['prix_vin']       = $tab_base->prix_vin*($level);
+	  $tab['prix_pierre']    = $tab_base->prix_pierre*($level);
+	  $tab['prix_marbre']    = $tab_base->prix_marbre*($level);
 	}
 	
 	if($tab['prix_drachme'] > 0) {
