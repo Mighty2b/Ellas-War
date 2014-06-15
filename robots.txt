@@ -10,3 +10,4 @@ Disallow: /erreur-404
 Disallow: /allianceexistepas
 Disallow: /tour_de_force 
 Disallow: /profilsjoueur-
+Disallow: /404

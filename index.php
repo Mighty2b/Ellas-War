@@ -50,7 +50,7 @@ switch($paquet->get_infoj('statu')) {
 if(!empty($_GET['page'])) {
 	$page = ($_GET['page']);
 	if(!in_array($page,$autorise)) {
-		$page = $autorise[0];
+		redirect('404');
 	}
 }
 else {
