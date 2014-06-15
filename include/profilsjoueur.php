@@ -1,12 +1,19 @@
 <?php
 
-$j = $paquet->get_answer('profils_joueur')->{1};
+$p = $paquet->get_answer('profils_joueur');
+
+if(empty($p)) {
+	redirect();
+}
+
+$j = $p->{1};
+
+if(empty($j)) {
+	redirect();
+}
 
 if(!empty($_GET['var2']) && $_GET['var2'] == _('ajouter')) {
 	redirect(_('amis'));
-}
-elseif(empty($j)) {
-	redirect();
 }
 
 echo '<h1>'.$j->login.'</h1>';
