@@ -52,13 +52,13 @@ echo '
 <h2>'._('Unités humaines').'</h2>
   </div>
   <div class="ligne">
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="h_infanterie_cac">'._('Infanterie de mêlée').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="h_cavalerie_cac">'._('Cavalerie de mêlée').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="h_infanterie_dis">'._('Infanterie à distance').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="h_cavalerie_dis">'._('Cavalerie à distance').'</div>
   </div>';
 
@@ -143,13 +143,13 @@ echo '
   <h2>'._('Unités mythologiques').'</h2>
 </div>
   <div class="ligne">
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="m_infanterie_cac">'._('Infanterie de mêlée').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="m_cavalerie_cac">'._('Cavalerie de mêlée').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="m_infanterie_dis">'._('Infanterie à distance').'</div>
-    <div class="ligne_quart centrer minititre_armurerie"
+    <div class="ligne_quart centrer minititre_armurerie cursor"
          id="m_cavalerie_dis">'._('Cavalerie à distance').'</div>
   </div>';
   
