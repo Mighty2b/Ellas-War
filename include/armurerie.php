@@ -233,12 +233,12 @@ echo '
   </div>';
   }
   
-  if(sizeof($paquet->bonus_unites()) > 0) {
+  if(sizeof($paquet->get_infoj('bonus_unites')) > 0) {
 echo '<div class="ligne">
   <h2>'._('Améliorations en cours').'</h2>
 </div><table class="centrer_tableau">';
 
-    $tab = trans_tab($paquet->bonus_unites());
+    $tab = trans_tab($paquet->get_infoj('bonus_unites'));
     foreach($tab as $type_unite => $tab_bonus) {
       if(sizeof($tab_bonus) > 0) {
         echo '<tr><td><b>'.$noms[$type_unite].' : </b> </td><td>';
