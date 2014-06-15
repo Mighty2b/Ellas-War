@@ -1,6 +1,6 @@
 <?php
 
-$autorise = array('home', 'mdp_perdu', 'retour',
+$autorise = array('home', 'mdp_perdu', 'retour', '404',
 
 	'decouvertedujeu', 'actualites', 'nouscontacter', 
 	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',

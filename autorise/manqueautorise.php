@@ -7,7 +7,7 @@ $autorise = array('accueil_mq',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
 	'profilsjoueur', 'permalien', 'profilsalliance',
-	'membrealliance', 'tour_de_force', 'noreply',
+	'membrealliance', 'tour_de_force', 'noreply', '404',
 	
 	//Special manque
 	'obtenirdesfaveurs', 'parrainage', 'faveurerreur', 'faveurvalide');

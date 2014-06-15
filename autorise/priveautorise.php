@@ -1,6 +1,6 @@
 <?php
 
-$autorise = array('cite', 'breves', 'details', 'gestionmeteo',
+$autorise = array('cite', 'breves', 'details', 'gestionmeteo', '404',
 
 //Compte
 'informationspersonnelles',	'bibliotheque', 'pause', 'adressemail', 

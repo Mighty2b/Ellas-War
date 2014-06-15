@@ -165,6 +165,7 @@ switch($page) {
 	case 'faveurerreur':
 	case 'faveurvalide':
 	case 'dons':
+	case '404':
 		echo '
 		<div id="barre_menu_cite">
 			<a id="header_ssmenu_constructions"
