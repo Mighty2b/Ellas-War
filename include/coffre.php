@@ -77,13 +77,13 @@ echo '<h1>'._('Demander').'</h1><br/>
 
 				if($de->demande != $paquet->get_infoj('id')) {
 					echo ' <a href="javascript:accepter_demande('.$de->id.', 1);">'.
-					     img('images/joueurs/adept_reinstall.png', _('Accepter')).'</a>
+					     img('images/alliance/adept_reinstall.png', _('Accepter')).'</a>
 									<a href="javascript:accepter_demande('.$de->id.', 2);">'.
-					     img('images/joueurs/agt_uninstall-product.png', _('Refuser')).'</a>';
+					     img('images/alliance/agt_uninstall-product.png', _('Refuser')).'</a>';
 				}
 				else {
 					echo ' <a href="javascript:accepter_demande('.$de->id.', 3);">'.
-					img('images/joueurs/agt_uninstall-product.png', _('Annuler')).'</a>';
+					img('images/alliance/agt_uninstall-product.png', _('Annuler')).'</a>';
 				}
 				echo '</div>';
 			}
@@ -99,7 +99,7 @@ echo '<h1>'._('Demander').'</h1><br/>
 			echo '<br/>'.nbf($de->nombre).' '.imress($de->type).' '.
 			display_date($de->date_d,1).
 			' <a href="javascript:accepter_demande('.$de->id.', 3);">'.
-			img('images/joueurs/agt_uninstall-product.png', _('Annuler')).'</a>';
+			img('images/alliance/agt_uninstall-product.png', _('Annuler')).'</a>';
 		}
 	}
 
