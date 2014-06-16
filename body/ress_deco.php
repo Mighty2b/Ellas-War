@@ -36,4 +36,5 @@
 
 <a href="http://www.jeux-alternatifs.com/Ellas-War-jeu601_hit-parade_1_1.html"
    target="_blank"><img src="http://www.jeux-alternatifs.com/im/bandeau/hitP_88x31_v1.gif" 
+                        alt="Voter pour Ellàs War"
                         border="0" /></a>
