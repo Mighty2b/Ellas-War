@@ -321,7 +321,7 @@ function display_error($erreur_no, $var='') {
 	case 120: $erreur = "Vous n'avez pas les drachmes ou le niveau nécessaire pour accéder à cette page.";
 		break;
 	case 121: $erreur = '﻿<div class="titre_page_co">Attaque contre '.$var.'<br/><br/></div></div><div>
-	<b>Vos forces sont prêtes à entrer dans la bataille.<br/>Vérifiez <a href="StrategieOffensive">votre stratégie offensive</a> et remportez la victoire !</b><br/><br/>';
+	<b>Vos forces sont prêtes à entrer dans la bataille.<br/>Vérifiez <a href="strategieoffensive">votre stratégie offensive</a> et remportez la victoire !</b><br/><br/>';
 		break;
 	case 122: $erreur = 'Le nom de votre alliance doit comporter au moins 3 caractères';
 		break;
