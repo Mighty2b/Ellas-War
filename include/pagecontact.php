@@ -11,17 +11,17 @@ if(!empty($mess_contact) &&
 
 if(sizeof($liste) > 0) {
 	echo '<div id="gauche_contact" class="ligne">';
-	echo '<a href="pageContact">'._('Contacter un prophète').'</a>
+	echo '<a href="pagecontact">'._('Contacter un prophète').'</a>
 				<h3>'._('Historique de contact').'</h3>';
 	foreach($liste as $l => $sujet) {
 		if(empty($sujet->regle)) {
-			echo '<p><a href="pageContact-'.$sujet->id.'"
+			echo '<p><a href="pagecontact-'.$sujet->id.'"
 			            class="rouge"><b>'.stripslashes($sujet->titre).
 			     '</b></a><br/><span class="mini_contact">'._('Dernier message').
 			     ' '.display_date('d/m/Y', $sujet->date).'</span></p>';
 		}
 		else {
-			echo '<p><a href="pageContact-'.$sujet->id.'"><b>'.
+			echo '<p><a href="pagecontact-'.$sujet->id.'"><b>'.
 			stripslashes($sujet->titre).'</b></a><br/>'.
 			'<span class="mini_contact">'._('Dernier message').
 			' '.display_date($sujet->date).'</span></p>';
