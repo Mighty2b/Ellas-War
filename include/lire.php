@@ -75,9 +75,12 @@ else {
 			                 unserialize(lcfirst($mess->message)));
 			$mess->message = $m['message'];
 		}
+		else {
+			$mess->message = nl2br($mess->message);
+		}
 		
 		echo '<br/>'.display_date($mess->temps,3).'</td>
-		<td valign="top"><br/>'.nl2br($mess->message).'</td>
+		<td valign="top"><br/>'.$mess->message.'</td>
 		</tr>';
 		}
 		

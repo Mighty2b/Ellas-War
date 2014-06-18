@@ -22,7 +22,7 @@ Cordialement';
 		
 		case 2:
 				$message = 'Un de vos lots de '.$args['lot'].' '.imress($args['ress']).'
-				           viennent d\'être achetés au débarras pour '.nbf($args['prix'], 3).
+				           vient d\'être acheté au débarras pour '.nbf($args['prix'], 3).
 				           ' '.imress('drachme').'.';
 		break;
 	}
