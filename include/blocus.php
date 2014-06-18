@@ -27,12 +27,12 @@ if(!empty($do)) {
 	       'gagnera la moitier de ces 10%.').'<br/><br/>';
 	
 	if($paquet->get_infoj('id') == $mon_alliance->id_chef) {
-		if(!empty($do->vainqueur) && $do->vainqueur != $do->alliance) {
+		if(!empty($do->vainqueur) && $do->vainqueur != $mon_alliance->id) {
 			echo '<a href="'._('blocus').'-accepter">'._('Accepter la paix').'</a> | 
 						<a href="'._('blocus').'-refuser">'._('Refuser la paix').'</a>';
 		}
 		elseif(!empty($do->vainqueur)) {
-			echo '<a href="'._('blocus').'-abdiquer">'._('Abdiquer').'</a>';
+			echo _('Demande de paix en cours').' | <a href="'._('blocus').'-abdiquer">'._('Abdiquer').'</a>';
 		}
 		else {
 			echo '<a href="'._('blocus').'-demander">'._('Demander la paix').'</a> | 
