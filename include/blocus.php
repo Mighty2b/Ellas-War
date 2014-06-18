@@ -32,7 +32,7 @@ if(!empty($do)) {
 						<a href="'._('blocus').'-refuser">'._('Refuser la paix').'</a>';
 		}
 		elseif(!empty($do->vainqueur)) {
-			echo '<a href="'._('blocus').'-abdiquer">'._('Abdiquer').'</a>';
+			echo _('Demande de paix en cours').' | <a href="'._('blocus').'-abdiquer">'._('Abdiquer').'</a>';
 		}
 		else {
 			echo '<a href="'._('blocus').'-demander">'._('Demander la paix').'</a> | 
