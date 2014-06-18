@@ -132,7 +132,10 @@ else {
 	}
 	
 	echo '
-		<div class="ligne_50">
+		<div class="ligne_50">';
+	
+	if(sizeof($paquet->get_answer('archives_debarras')->{1}) > 0) {
+		echo '
 		<h2 class="centrer">'._('La semaine derniere').'</h2>
 		<br/>
 		<table>
@@ -152,8 +155,10 @@ else {
 	
 	echo '
 			</tbody>
-		</table>
-		</div>';
+		</table>';
+	}
+	
+	echo '</div>';
 	
 	$mon_debarras = $paquet->get_answer('mon_debarras')->{1};
 	
