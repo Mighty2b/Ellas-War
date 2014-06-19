@@ -66,9 +66,16 @@ if(!empty($_GET['var2'])) {
 $(function() {
 	var cadre = $("#cadre_batiment_cache");
 	cadre.html(\'\');
-	if(cadre.hasClass(\'affiche\')) {
-			cadre.css("top", "+=500")
+	if(cadre.hasClass(\'affiche\')) {';
+
+	if($paquet->get_infoj('statu') == 1 && $paquet->get_infoj('tpc') > 0) {			
+		echo 'cadre.css("top", "+=470");';
 	}
+	else {
+		echo 'cadre.css("top", "+=500");';
+	}
+	
+echo '}
 	else {
 		cadre.addClass(\'affiche\');
 	}
@@ -80,8 +87,15 @@ $(function() {
 		success: function(msg){ cadre.html(msg); }
 	});
 
-	cadre.animate({
-		top:-500
+	cadre.animate({';
+
+	if($paquet->get_infoj('statu') == 1 && $paquet->get_infoj('tpc') > 0) {			
+				echo 'top:-470';
+	}
+	else {
+				echo 'top:-500';
+	}
+	echo '
 	}, 1000);
 });
 
