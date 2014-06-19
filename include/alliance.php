@@ -76,7 +76,7 @@ echo '
 				echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
 			}
 		}
-		elseif($paquet->get_infoj('droits_alliance')->accepter_joueur > 0) {
+		elseif($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 && $do->periode_essai > $temps) {
 			echo '
 			<img src="images/alliance/adept_reinstall.png"
 			     class="cursor"
@@ -100,8 +100,9 @@ echo '
 		  
 		  if($do->id != $paquet->get_infoj('id') && $do->periode_essai > $temps) {
 					echo '<td><a href="javascript:expulser('.$do->id.');"
-					             onClick="if (window.confirm(\''._('Expulser').' '.$do->login.' ?\')) { this.disabled=\'true\';} else { return false; }"><img src="images/attaques/cross.png"
-					                                                                                                                                          alt="'._('Expulser').'"/></a></td></tr>';    
+					             onClick="if (window.confirm(\''._('Expulser').' '.$do->login.' ?\')) { this.disabled=\'true\';} else { return false; }"
+					             title="'._('Expulser').' '.$do->login.'"><img src="images/attaques/cross.png"
+					                                                           alt="'._('Expulser').'"/></a></td></tr>';    
 		  }
 		  elseif(($do->id == $paquet->get_infoj('id')) or 
 				 (!empty($nombre_futur) && ($mon_alliance -> nb_membre <= 2))) {
