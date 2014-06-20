@@ -2156,3 +2156,9 @@ select {
     width: 380px;
     text-align:center;
 }
+
+/* Jeux */
+#cadre_ticket {
+	margin: auto;
+	width: 150px;
+}
