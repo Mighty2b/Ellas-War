@@ -18,7 +18,7 @@ if(!empty($demande) && sizeof($demande)) {
 <td>';
 
 if($d->joueur == $paquet->get_infoj('id') or 
-   $paquet->get_infoj('id') == $paquet->getidchef()) {
+   $paquet->get_infoj('id') == $mon_alliance->id_chef) {
 	echo '<a href="'._('demande').'-'.$d->id.'"><img src="images/attaques/cross.png"
 	                                                 alt="'._('Annuler').'" 
 	                                                 title="'._('Annuler').'"/></a>';
@@ -42,7 +42,7 @@ if(!empty($offre) && sizeof($offre)) {
 <td>'.display_date($d->date_demande,2).'</td>
 <td>';
 
-if($d->joueur == $paquet->get_infoj('id') or $paquet->get_infoj('id') == $paquet->getidchef()) {
+if($d->joueur == $paquet->get_infoj('id') or $paquet->get_infoj('id') == $mon_alliance->id_chef) {
 echo '<a href="demande-'.$d->id.'"><img src="images/attaques/cross.png"
 	                                      alt="'._('Annuler').'" 
 	                                      title="'._('Annuler').'"/></a>';
