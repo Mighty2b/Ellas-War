@@ -45,7 +45,7 @@ if ($numl > $nombreDePages)
 	$numl = $nombreDePages;
 }
 
-echo '<div class="min_ban3">';
+echo '<div class="centrer">';
 
 if ($num > 1)
 {
