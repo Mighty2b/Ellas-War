@@ -68,7 +68,7 @@ else{
 
 		for($i=1;$i<=$pages;$i++) {
 			if($nb == $i) {
-				echo ' | <a href="'._('archives').'-'.$i.'-'.$type.(!empty($recherche)?'-'.$recherche:'').'" class="centre_armee2">'.$i.'</a> ';
+				echo ' | <a href="'._('archives').'-'.$i.'-'.$type.(!empty($recherche)?'-'.$recherche:'').'" class="gras rouge_goco">'.$i.'</a> ';
 			}
 			else {
 				echo ' | <a href="'._('archives').'-'.$i.'-'.$type.(!empty($recherche)?'-'.$recherche:'').'">'.$i.'</a> ';
