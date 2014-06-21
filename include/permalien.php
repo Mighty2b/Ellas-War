@@ -42,7 +42,7 @@ elseif(is_numeric($res_permalien) && $res_permalien == 1) {
 	echo 'document.title = \'Cette archive n\'existe pas\'';
 }
 else {
-	echo 'document.title = \''.$res_permalien->titre.'\'';
+	echo 'document.title = \''.strip_tags($res_permalien->titre).'\'';
 }
 echo '
     });
