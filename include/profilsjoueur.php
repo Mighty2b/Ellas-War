@@ -167,7 +167,7 @@ echo '</div>
 
 			foreach($j->dedi as $dedi) {
 				echo '<div class="ligne centrer"><b>'._(
-				     'Par').' <a href="'._('profilsjoueur').'-'.$dedi->idj2.' 
+				     'Par').' <a href="'._('profilsjoueur').'-'.$dedi->idj2.'" 
 				                 class="lien">'.$dedi->login.'</a> '.
 				     display_date($dedi->time,3).'</b>';
 					if($paquet->get_infoj('statu') == 1 && 
