@@ -1374,6 +1374,19 @@ select {
   margin-left:20px;
 }
 
+#gauche_contact {
+  position:relative;
+  float:left;
+  width:250px;
+  min-height:1px;
+}
+
+#droite_contact {
+  position:relative;
+  float:right;
+  width:630px;
+}
+
 .cadre_dedi {
   background-color: #F1DE9D;
   border: 1px solid white;
