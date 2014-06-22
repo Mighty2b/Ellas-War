@@ -11,9 +11,9 @@ echo '<h1>'._('Partenaires').'</h1>
 <div class="centrer">
 <img src="banniere.png" alt="Ellàs War" title="Ellàs War" />
 <textarea class="part_banniere"><a href="'.SITE_URL.'" target="_blank"><img src="'.SITE_URL.'/banniere.jpg" alt="Ellàs War" /></a></textarea>
-</div>
+
 <br/>
-<div class="centrer">
+
 <img src="banmini.gif" alt="Ellàs War" title="Ellàs War" /><br/>
 <textarea class="part_banniere"><a href="'.SITE_URL.'" target="_blank"><img src="'.SITE_URL.'/banmini.gif" alt="Ellàs War" /></a></textarea>';
 
@@ -55,3 +55,4 @@ echo '<h1>'._('Partenaires').'</h1>
                         height="31" 
                         alt="siteacados" /></a>
 <br/>
+</div>
