@@ -48,7 +48,7 @@ else {
 echo '<h1>'._('Classement des batailles navales').'</h1>
 
 <div class="min_ban2">
-	<div class="form_rech5">';
+	<div class="ligne centrer">';
 
 if(($nombreDePages > 1) && empty($joueur)) {
 	$pageread = $page;
@@ -67,7 +67,7 @@ if(($nombreDePages > 1) && empty($joueur)) {
 
 	for ($j = $num ; $j <= $numl ; $j++) {
 		if($pageread == $j) {
-			echo '<span class="gras">'.$j.'</span> ';
+			echo '<span class="gras rouge_goco">'.$j.'</span> ';
 		}
 		else {
 			echo '<a href="'._('classementdesbtn').'-' . $j . '-'.$par.'" class="sans_soulign">' . $j . '</a> ';
