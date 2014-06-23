@@ -99,16 +99,16 @@ echo '
      style="height:140px;">
 <div class="cadre_renta centrer">
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="faveurs-eros"><b>'._('Appui d\'Éros').'</b></a>
+       href="faveurs-1-eros"><b>'._('Appui d\'Éros').'</b></a>
     <br><br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="faveurs-eros">'._('Augmentez votre XP pendant une semaine !').'</a>
+       href="faveurs-1-eros">'._('Augmentez votre XP pendant une semaine !').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="faveurs-eros">'._('- 20% de perte d\'XP lors d\'une défaite').'</a>
+       href="faveurs-1-eros">'._('- 20% de perte d\'XP lors d\'une défaite').'</a>
     <br>
     <a onclick="if (window.confirm(\''._('Valider votre achat ?').'\')) { this.disabled=\'true\';} else { return false; }" 
-       href="faveurs-eros">'._('+ 20% d\'XP en cas de victoire').'</a>
+       href="faveurs-1-eros">'._('+ 20% d\'XP en cas de victoire').'</a>
     <br>
     <br><b>'._('Prix').'</b> : 1 '.imress('faveur').' '._('pour une semaine').'
   </div>
