@@ -13,6 +13,21 @@ $i=($page_num-1)*50+1;
 
 $paquet->is_active_bonus_xp();
 
+switch (date('w', $paquet->get_infoj('timestamp'))) {
+	case 4:
+		echo '<div class="centrer rouge_goco">'._(
+		'Demain les gains d\'XP seront augmentés de 20%').
+		'<br/><br/></div>';
+	break;
+	case 5:
+		echo '<div class="centrer rouge_goco">'._(
+		'Aujourd\'hui les gains d\'XP sont augmentés de 20%').
+		'<br/><br/></div>';
+	break;
+
+	//Les gains d'XP des attaques sont augmentés de 20% le vendredi
+}
+
 $writeniveau='<a href="'._('attaquer').'-'.$page_num.'-niveau-'.
                        $recupcible.constr_get('recherche', $recherche).'"
                  class="titre_tab">'._('Niveau').'</a>';
