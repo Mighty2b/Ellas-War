@@ -18,7 +18,8 @@ if($paquet->get_infoj('lvl') <= 1 or
 	echo '</div>';
 }
 
-if(empty($erreur) && !empty($_POST['mise']))	{
+if(empty($erreur) && !empty($_POST['mise']) && 
+   !empty($paquet->get_answer('des')))	{
 	$mise=round(abs(htmlentities(trim(addslashes($_POST['mise'])))));
 
 	$moi  = unserialize($paquet->get_answer('des')->{1});
