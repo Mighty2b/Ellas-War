@@ -26,7 +26,7 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 
 		foreach($bientot as $details) {
 			
-			echo '<fieldset class="cadre_guerre_bientot">
+			echo '<fieldset class="cadre_guerre_bientot centrer">
 					<b>'.stripslashes($details->attaquant).'</b> '._('contre').' <b>'.
 					stripslashes($details->defenseur).'</b>
 						<p> '._('Début de la guerre').' : <b>'.
