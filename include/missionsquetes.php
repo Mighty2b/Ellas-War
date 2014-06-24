@@ -22,6 +22,7 @@ if($paquet->get_infoj('lvl') >= 1) {
 		'Apollon souhaite que vous transmettiez les dernières '.
 		'consultations de l\'oracle aux cités avoisinantes. ').
 		'<br/><i>'._('Récompense').' :</i> distribuée chaque semaine '.nbf(50000).' '.imress('drachme').' par vote. '.
+		'La distribution de la récompense se fait au prorata du nombre de fois que la mission a été réalisée.'.
 		'<br/><i>'._('Cagnotte').' :</i> '.
 		nbf(50000*($stats->jeuxalt_current-$stats->jeuxalt_debut)).' '.imress('drachme').
 		'<br/><i>'._('Missions accomplies').' :</i> '.$stats_j->nb_lapythie.'
