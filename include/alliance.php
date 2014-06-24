@@ -155,12 +155,13 @@ echo '</tbody></table>
 		}
 
 echo '</tr>
-		<tr>
+		<tr>';
+
+if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
+	echo '
 			<td>
 <table class="none">
-	<tr><td>';
-	if($paquet->get_infoj('droits_alliance')->voir_coffre > 0) {
-		echo imress('drachme').' </td>
+	<tr><td>'.imress('drachme').' </td>
 <td class="droite"> '.nbf($mon_alliance -> drachme).'</td></tr>
 <tr><td>'.imress('nourriture').' </td>
 <td class="droite"> '.nbf($mon_alliance -> nourriture).'</td></tr>
@@ -226,6 +227,7 @@ if($nombre_guerres > 0 && !empty($liste_guerres)) {
 			</tr>';
 		}
 	}
+	echo '</table></td>';
 }
 elseif(!empty($liste_pactes) && sizeof($liste_pactes) > 0) {
 	echo '<td valign="top">
@@ -233,11 +235,10 @@ elseif(!empty($liste_pactes) && sizeof($liste_pactes) > 0) {
 		foreach($liste_pactes as $value) {
 			echo '<tr><td>'.$value->nom.'</td></tr>';
 		}
+	echo '</td>';
 }
 
 echo '
-</table>
-</td>
 		</tr>
 </table>
 </div>
