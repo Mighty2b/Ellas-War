@@ -33,7 +33,7 @@ foreach($liste as $mess) {
 	<td class="centrer">';
 	
 	if(!empty($mess->lecture) or empty($mess->last_j) or 
-	   $mess->last_j != $paquet->get_infoj('id')) {
+	   $mess->last_j == $paquet->get_infoj('id')) {
 		echo '<img src="images/messagerie/mp.png"
 		           alt="'._('Ancien Message').'" 
 		           title="'._('Ancien Message').'" />';
