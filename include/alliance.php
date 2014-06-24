@@ -196,7 +196,7 @@ if($nombre_guerres > 0 && !empty($liste_guerres)) {
 			       href="profilsalliance-'.$do->idattaque.'">'.
 			stripslashes($do->at).'</a></td>
 			<td align="center">&nbsp;&nbsp;'.
-			$do->vattaque.'</a> - '.$do->vdefense.
+			$do->vattaque.' - '.$do->vdefense.
 			'&nbsp;&nbsp;</td>
 			<td><a href="profilsalliance-'.$do->idefense.'">'.
 			stripslashes($do->def).'</a></td>
