@@ -1,6 +1,8 @@
 <?php
 if($paquet->peut_commerce() == false) {
-	$paquet->display(95);
+        echo '<div class="erreur">';
+        echo display_error(95);
+        echo '</div>';
 }
 else {
 	
