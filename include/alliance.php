@@ -2,6 +2,11 @@
 
 include('include/menu_monalliance.php');
 
+if($paquet->get_infoj('periode_essai') > 0) {
+	echo '<div class="ligne rouge_goco centrer">'._(
+	'Vous êtes en période d\'essai, vous n\'avez donc pas accès aux attaques en guerre').'</div>';
+}
+
 echo '
 <div>
 	<table>
@@ -71,6 +76,10 @@ echo '
 			echo '<font color=\'purple\' title=\''.date('d/m/y', $do->temps).'\'>*</font>';
 		}
 
+		if(!empty($do->periode_essai)) {
+			echo '<font color=\'lawngreen\' title=\''._('Période d\'essai').'\'>*</font>';
+		}
+		
 		if(empty($do->periode_essai)) {
 			if(!empty($do->greve)) {
 				echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
