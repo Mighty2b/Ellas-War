@@ -4,7 +4,9 @@ include('include/menu_monalliance.php');
 
 if($paquet->get_infoj('periode_essai') > 0) {
 	echo '<div class="ligne rouge_goco centrer">'._(
-	'Vous êtes en période d\'essai, vous n\'avez donc pas accès aux attaques en guerre').'</div>';
+	'Vous êtes en période d\'essai, vous n\'avez donc pas accès aux attaques en guerre').
+	'</div>
+	<div class="clear"></div>';
 }
 
 echo '
