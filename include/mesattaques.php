@@ -78,7 +78,16 @@ echo '<h2 class="centrer">'._('Attaques disponibles').'</h2>
     display_date($temps_attaque_faite_b,4).'&nbsp;</td>
   </tr>
   </tbody>
-</table>
+</table>';
+
+if($paquet->get_infoj('periode_essai') > 0) {
+	echo '<div class="ligne rouge_goco centrer">'._(
+			'Vous êtes en période d\'essai, vous n\'avez donc pas accès aux attaques en guerre').
+			'</div>
+	<div class="clear"></div>';
+}
+
+echo '
 <br/>
 <h2 class="centrer">'._('Attaques reçues').'</h2>
 <table class=\'tableau80 centrer_tableau\'>
