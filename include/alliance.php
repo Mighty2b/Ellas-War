@@ -75,16 +75,16 @@ echo '
 		'.(!empty($classe)?'class="'.$classe.'"':'').'>'.ucfirst($do->login),'</a>';
 
 		if(!empty($do->temps)) {
-			echo '<font color=\'purple\' title=\''.date('d/m/y', $do->temps).'\'>*</font>';
+			echo '<font color="purple" title="'.date('d/m/y', $do->temps).'">*</font>';
 		}
 
 		if(!empty($do->periode_essai)) {
-			echo '<font color=\'lawngreen\' title=\''._('Période d\'essai').'\'>*</font>';
+			echo '<font color="lawngreen" title="'._('Période d\'essai').'">*</font>';
 		}
 		
 		if(empty($do->periode_essai)) {
 			if(!empty($do->greve)) {
-				echo '<font color=\'red\' title=\''._('En grève').'\'>*</font>';
+				echo '<font color="red" title="'._('En grève').'">*</font>';
 			}
 		}
 		elseif($paquet->get_infoj('droits_alliance')->accepter_joueur > 0 && $do->periode_essai > $temps) {
