@@ -12,8 +12,6 @@
     micropolia_echban_width   = 88;
     micropolia_echban_height  = 31;
     micropolia_echban_jeu     = 11221;
-    micropolia_echban_proprio = 342;
-    micropolia_echban_theme   = 2;
 </script>
 <script src="http://www.jeu-gratuit.net/tracking/affiche.js" type="text/javascript"></script>
 
