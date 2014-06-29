@@ -6,7 +6,7 @@ $autorise = array('accueil_pause',
 	'conditionsgeneralesutilisation', 'communaute', 'joueursconnectes',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
-	'profilsjoueur', 'permalien', 'profilsalliance',
+	'profilsjoueur', 'permalien', 'profilsalliance', 'recrutement',
 	'membrealliance', 'tour_de_force', 'noreply', '404',
 	
 	//Special pause
