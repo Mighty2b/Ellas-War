@@ -40,13 +40,17 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 			}
 			
 			if($details->peut_annuler) {
-				echo '<a href="'._('guerres').'-annuler-'.$details->id.'">'._('Annuler la guerre').'</a>';
+				if($paquet->get_infoj('id') == $mon_alliance->id_chef) {
+					echo '<a href="'._('guerres').'-annuler-'.$details->id.'">'._('Annuler la guerre').'</a>';
+				}
 			}
 			elseif($details->peut_payer) {
+				
 				echo '<p>'.$details->attaquant.' '._('demande').' <b>'.$details->drachme.
 				     '</b> '.imress('drachme').' et <b>'.$details->gold.'</b> '.
-				     imress('gold').' '._('contre la paix').'</P>';
-				if($details->peut_payer2) {
+				     imress('gold').' '._('contre la paix').'</p>';
+				
+				if($details->peut_payer2 && $paquet->get_infoj('id') == $mon_alliance->id_chef) {
 					echo '<b>'._('Vous pouvez').' : </b>
 							<p><form action="guerres" method="post" enctype="multipart/form-data">.
 							<input type="radio" name="choix" value="accepte" /> '._('Accepter').'
