@@ -9,9 +9,9 @@ if(sizeof($liste) > 0) {
 	
 		for($i=1;$i<=$nombre_pages;$i++) {
 			if($_GET['var1'] == $i)
-				echo '<a href="messagerie-'.$i.'" class="gras rouge_goco">'.$i.'</a> | ';
+				echo '<a href="boiteenvoie-'.$i.'" class="gras rouge_goco">'.$i.'</a> | ';
 			else
-				echo '<a href="messagerie-'.$i.'">'.$i.'</a> | ';
+				echo '<a href="boiteenvoie-'.$i.'">'.$i.'</a> | ';
 		}
 		echo '</div>';
 	}
