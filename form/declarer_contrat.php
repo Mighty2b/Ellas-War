@@ -11,7 +11,7 @@ $cible = $paquet->get_answer('possible_contrat')->{1};
 echo '<h1>'.ucfirst(stripslashes($cible -> nom)).'</h1>';
 
 echo '<form action="'._('lesalliances').'" method="post">
-<div class="ligne centrer">';
+<div class="ligne justify">';
 printf(_(
 'Vous êtes sur le point de mettre un contrat sur cette alliance. '.
 'La première alliance qui gagnera une guerre<br/>contre %s remportera '.
