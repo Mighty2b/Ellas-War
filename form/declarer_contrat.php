@@ -16,8 +16,8 @@ printf(_(
 'Vous êtes sur le point de mettre un contrat sur cette alliance. '.
 'La première alliance qui gagnera une guerre<br/>contre %s remportera '.
 'la recompense. La taxe de mise sur le marché du contrat et la '.
-'confidentialité vous couteront 5% supplémentaire sur la recompense '.
-'(10% au total), vous pouvez retirer à tout moment votre contrat.'),
+'confidentialité vous couteront 5%% supplémentaire sur la recompense '.
+'(10%% au total), vous pouvez retirer à tout moment votre contrat.'),
 stripslashes($cible->nom));
 
 echo '</div><br>
