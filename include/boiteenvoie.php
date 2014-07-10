@@ -1,8 +1,21 @@
 <?php
 
-$liste = $paquet->get_answer('messagerie_envoi')->{1};
+$liste        = $paquet->get_answer('messagerie_envoi')->{1};
+$nombre_pages = $paquet->get_answer('messagerie_envoi')->{2};
 
 if(sizeof($liste) > 0) {
+	if($nombre_pages > 1) {
+		echo '<div class="centrer">Page | ';
+	
+		for($i=1;$i<=$nombre_pages;$i++) {
+			if($_GET['var1'] == $i)
+				echo '<a href="messagerie-'.$i.'" class="gras rouge_goco">'.$i.'</a> | ';
+			else
+				echo '<a href="messagerie-'.$i.'">'.$i.'</a> | ';
+		}
+		echo '</div>';
+	}
+	
 	echo '
 	<table style="min-width:50%;">
 		<thead><tr>
