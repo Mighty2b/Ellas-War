@@ -116,7 +116,9 @@ else {
 	if(!empty($all->lien)) {
 		echo '<br/>
 		<div class="centrer">
-			<a href="'.$all->lien.'" class="lien_rouge">Lien vers leur forum</a>
+			<a href="'.$all->lien.'"
+		       rel="nofollow"
+		       class="lien_rouge">Lien vers leur forum</a>
 		</div><br/>';
 	}
 	
