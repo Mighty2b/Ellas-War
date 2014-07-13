@@ -40,8 +40,8 @@ _('Prenez la tête d\'une <b>cité</b> au milieu d\'une <b>Grèce</b> à feu et 
 <div class="home_description_left">
 <a href="'._('decouvertedujeu').'-'._('dieux').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_dieux.png" 
-     alt="'._('Déployez votre stratégie').'"
-     title="'._('Déployez votre stratégie').'"
+     alt="'._('Honnorez les dieux de la Grece antique').'"
+     title="'._('Honnorez les dieux de la Grece antique').'"
      width="120" height="76" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
@@ -67,8 +67,8 @@ _('Honorez les <b>dieux</b>, vivez en les respectant et en les craignant. '.
 <div class="home_description_left">
 <a href="'._('decouvertedujeu').'-'._('arbre').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_arbre.png" 
-     alt="'._('Déployez votre stratégie').'"
-     title="'._('Déployez votre stratégie').'"
+     alt="'._('Personnalisez votre cité').'"
+     title="'._('Personnalisez votre cité').'"
      width="120" height="78" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
@@ -92,8 +92,8 @@ _('L\'arbre des <b>dieux</b> vous permettra de spécialiser votre cité. '.
 <div class="home_description_left">
 <a href="'._('decouvertedujeu').'-'._('tresor').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_tresor.png" 
-     alt="'._('Déployez votre stratégie').'"
-     title="'._('Déployez votre stratégie').'"
+     alt="'._('Cachez vos Drachmes').'"
+     title="'._('Cachez vos Drachmes').'"
      width="120" height="71" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"
