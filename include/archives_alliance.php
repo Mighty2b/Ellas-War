@@ -29,7 +29,7 @@ if($nb_archives > 0) {
 
     for($i=1;$i<=$nb_pages;$i++) {
       if($page == $i) {
-        echo ' | <a href="'._('archives_alliance').'-'.$rub.'-'.$i.'" class="centre_armee2">'.$i.'</a> ';
+        echo ' | <a href="'._('archives_alliance').'-'.$rub.'-'.$i.'" class="gras rouge_goco">'.$i.'</a> ';
       }
       else {
         echo ' | <a href="'._('archives_alliance').'-'.$rub.'-'.$i.'">'.$i.'</a> ';
