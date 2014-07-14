@@ -6,10 +6,10 @@ echo '<title>'._('Archive de votre alliance').'</title>
 
 if(empty($_GET['var2']) or !is_numeric($_GET['var2']) or 
 	 (round($_GET['var2']) != abs($_GET['var2']))) {
-	$page = 1;
+	$n_page = 1;
 }
 else {
-	$page = addslashes($_GET['var2']);
+	$n_page = addslashes($_GET['var2']);
 }
 
 if(!empty($_GET['var1']) && ($_GET['var1'] <= 4)) {
@@ -20,6 +20,6 @@ else {
 }
 
 $paquet -> add_action('infoalliance');
-$paquet -> add_action('get_archive_alliance', array($rub, $page));
+$paquet -> add_action('get_archive_alliance', array($rub, $n_page));
 
 ?>

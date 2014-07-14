@@ -28,7 +28,7 @@ if($nb_archives > 0) {
     echo '<b>'._('Page').'</b> ';
 
     for($i=1;$i<=$nb_pages;$i++) {
-      if($page == $i) {
+      if($n_page == $i) {
         echo ' | <a href="'._('archives_alliance').'-'.$rub.'-'.$i.'" class="gras rouge_goco">'.$i.'</a> ';
       }
       else {
