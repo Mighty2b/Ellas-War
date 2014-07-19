@@ -50,7 +50,7 @@ $txt_description_bat = array(
 
 "tourmir"=> 'Cette imposante tour d\'or et de marbre sera l\'une de vos meilleures armes défensives. En contrepartie de son coût énorme, son efficacité n\'est plus à démontrer.',
 
-"armurerie"=> 'L\'armurerie vous permettra d\'améliorer vos unités aussi bien offensivement que défensivement. Vous pourrez aussi agir sur leur solde.',
+"armurerie"=> 'L\'armurerie est un bâtiment spécial. Pour l\'utiliser vous devrez être dans une alliance de niveau 4. Celle-ci vous permettra d\'obtenir des bonus pour vos unités.',
 
 "hall"=> 'Le hall des statues est un lieu mythique où vous pourrez obtenir de fabuleux pouvoirs. Chaque statue vous permettra d\'accéder à de nouvelles possibilités, vous devrez ensuite les orner pour renforcer leurs pouvoirs.'
 );
