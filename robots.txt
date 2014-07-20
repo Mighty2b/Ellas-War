@@ -11,3 +11,4 @@ Disallow: /allianceexistepas
 Disallow: /tour_de_force 
 Disallow: /profilsjoueur-
 Disallow: /404
+Disallow: /index.php?page=classement
