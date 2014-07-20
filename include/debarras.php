@@ -40,7 +40,7 @@ else {
 	   $licences->{1} > $paquet->get_infoj('timestamp')) {
 		echo '<div class="erreur">';
 		echo _('Votre licence finie').' '.
-		     display_date($paquet->get_infoj('timestamp'),4);
+		     display_date($licences->{1},4);
 		echo ' (<a href="'._('licences').'">'._('Licences').'</a>)<br/></div>';
 	}
 	else {
