@@ -77,11 +77,12 @@ echo '
 </head>
 	<body bgcolor="#EAE7E1">';
 
+if(!empty($liste) && sizeof($liste) > 0) {
+	
 echo '<h2 class="centrer">'.
 stripslashes($attaquant).' '._('contre').' '.stripslashes($defenseur).
 '</h2>';
 
-if(!empty($liste) && sizeof($liste) > 0) {
 	echo '<table class="centrer_tableau">';
 	foreach($liste as $h) {
 		echo '<tr style="color:'.$h->color.'">
@@ -92,6 +93,9 @@ if(!empty($liste) && sizeof($liste) > 0) {
 		</tr>';
 	}
 	echo '</table>';
+}
+else {
+	echo _('Vous avez pas accés à ces informations ou cette guerre est déjà terminée');
 }
 
 ?>
