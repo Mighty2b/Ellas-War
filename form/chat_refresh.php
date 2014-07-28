@@ -21,6 +21,9 @@ if(!$rep_refresh) {
 	}
 }
 else {
+	$paquet = new EwPaquet();
+	$paquet -> send_actions();
+	
 	$rep_refresh = unserialize($rep_refresh);
 }
 
