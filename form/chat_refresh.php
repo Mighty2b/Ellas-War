@@ -6,21 +6,29 @@ if(empty($_GET['clean'])) {
 	$_GET['clean'] = 0;
 }
 
-$paquet = new EwPaquet();
-$paquet -> add_action('refresh_chat', array($_GET['clean']));
-$paquet -> send_actions();
+$rep_refresh = apc_fetch('$rep_refresh');
 
-$refresh = $paquet->get_answer('refresh_chat');
-
-if(!empty($refresh)) {
-	$rep   = $refresh->{1};
+if(!$rep_refresh) {
+	$paquet = new EwPaquet();
+	$paquet -> add_action('refresh_chat', array($_GET['clean']));
+	$paquet -> send_actions();
+	
+	$refresh = $paquet->get_answer('refresh_chat');
+	
+	if(!empty($refresh)) {
+		$rep_refresh   = $refresh->{1};
+		apc_store('rep_refresh', serialize($rep_refresh), 5);
+	}
+}
+else {
+	$rep_refresh = unserialize($rep_refresh);
 }
 
 $moi   = 0;
 $autre = 0;
 
-if(!empty($rep)) {
-	foreach($rep as $texte) {
+if(!empty($rep_refresh)) {
+	foreach($rep_refresh as $texte) {
 		if($texte->joueur == $paquet->get_infoj('id')) {
 			$moi++;
 		}

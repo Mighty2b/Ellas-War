@@ -1,9 +1,21 @@
 <?php
 
-$liste = $paquet->get_answer('get_joueurs_co')->{1};
-
-if(empty($liste)) {
-	$liste = array();
+if(!$get_joueurs_co) {
+	$get_joueurs_co = $paquet->get_answer('get_joueurs_co')->{1};
+	
+	if(empty($get_joueurs_co)) {
+		$get_joueurs_co = array();
+	}
+	else {
+		apc_store('get_joueurs_co', serialize($get_joueurs_co), 10);
+	}
+}
+else {
+	$get_joueurs_co = unserialize($get_joueurs_co);
+	
+	if(empty($get_joueurs_co)) {
+		$get_joueurs_co = array();
+	}
 }
 
 echo '<h1>'._('Joueurs connectés').'</h1>
@@ -20,7 +32,7 @@ echo '<h1>'._('Joueurs connectés').'</h1>
 	<tfoot></tfoot>
 	<tbody>';
 
-foreach($liste as $do) {
+foreach($get_joueurs_co as $do) {
 	echo'<tr>
 	<td>&nbsp;<a href=\'/'._('profilsjoueur').'-'.$do->id.'\'>'.$do->login.'</a> ';
 	

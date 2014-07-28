@@ -2,11 +2,20 @@
 
 include('../header.php');
 
-$paquet = new EwPaquet();
-$paquet -> add_action('joueurs_chat');
-$paquet -> send_actions();
+$joueurs_chat = apc_fetch('joueurs_chat');
 
-$joueurs_chat = $paquet->get_answer('joueurs_chat');
+if(!$joueurs_chat) {
+	$paquet = new EwPaquet();
+	$paquet -> add_action('joueurs_chat');
+	$paquet -> send_actions();
+
+	$joueurs_chat = $paquet->get_answer('joueurs_chat');
+
+	apc_store('joueurs_chat', serialize($joueurs_chat), 30);	
+}
+else {
+	$joueurs_chat = unserialize($joueurs_chat);
+}
 
 if(!empty($joueurs_chat)) {
 	$rep = $joueurs_chat->{1};
