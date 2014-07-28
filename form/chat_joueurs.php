@@ -14,6 +14,8 @@ if(!$joueurs_chat) {
 	apc_store('joueurs_chat', serialize($joueurs_chat), 30);	
 }
 else {
+	$paquet = new EwPaquet();
+	$paquet -> send_actions();
 	$joueurs_chat = unserialize($joueurs_chat);
 }
 
