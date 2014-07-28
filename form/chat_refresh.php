@@ -6,7 +6,7 @@ if(empty($_GET['clean'])) {
 	$_GET['clean'] = 0;
 }
 
-$rep_refresh = apc_fetch('$rep_refresh');
+$rep_refresh = apc_fetch('rep_refresh');
 
 if(!$rep_refresh) {
 	$paquet = new EwPaquet();
