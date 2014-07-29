@@ -32,7 +32,7 @@ $autre = 0;
 
 if(!empty($rep_refresh)) {
 	foreach($rep_refresh as $texte) {
-		if($texte->joueur == $paquet->get_infoj('id')) {
+		if($texte->joueur == $_COOKIE['my_id']) {
 			$moi++;
 		}
 		else {
@@ -59,6 +59,7 @@ if(!empty($rep_refresh)) {
 		echo '<br/>';
 	}
 	
+	/*
 	if(empty($_GET['clean'])) {
 		if($paquet->get_answer('refresh_chat')->{3} > 0) {
 			echo '<script type="text/javascript">
@@ -85,7 +86,7 @@ echo '
 			$("#cadre_chat_titre2").css("color", "black");
 			</script>';
 		}
-	}	
+	}	*/
 }
 
 ?>
