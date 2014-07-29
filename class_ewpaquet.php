@@ -79,6 +79,11 @@ class Ewpaquet {
 				}
 			}
 			
+			if(!empty($this->joueur->id)) {
+				setcookie('my_id', $this->joueur->id, $temps, '/',
+				          $_SERVER['HTTP_HOST']);
+			}
+			
 			if(!empty($data->answer)) {
 				$this->answer = $data->answer;
 			}
