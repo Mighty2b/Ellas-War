@@ -20,10 +20,7 @@ if(!$rep_refresh) {
 		apc_store('rep_refresh', serialize($rep_refresh), 5);
 	}
 }
-else {
-	$paquet = new EwPaquet();
-	$paquet -> send_actions();
-	
+else {	
 	$rep_refresh = unserialize($rep_refresh);
 }
 
