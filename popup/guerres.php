@@ -6,9 +6,12 @@ if(!empty($_GET['id'])) {
 	$paquet = new EwPaquet();
 	$paquet -> add_action('historique_guerre', array($_GET['id']));
 	$paquet -> send_actions();
-	$liste     = $paquet -> get_answer('historique_guerre')->{1}->liste;
-	$attaquant = $paquet -> get_answer('historique_guerre')->{1}->attaquant;
-	$defenseur = $paquet -> get_answer('historique_guerre')->{1}->defenseur;
+	
+	if(!empty($paquet -> get_answer('historique_guerre'))) {
+		$liste     = $paquet -> get_answer('historique_guerre')->{1}->liste;
+		$attaquant = $paquet -> get_answer('historique_guerre')->{1}->attaquant;
+		$defenseur = $paquet -> get_answer('historique_guerre')->{1}->defenseur;
+	}
 }
 else {
 	$liste = array();
