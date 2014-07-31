@@ -29,7 +29,7 @@ $autre = 0;
 
 if(!empty($rep_refresh)) {
 	foreach($rep_refresh as $texte) {
-		if($texte->joueur == $_COOKIE['my_id']) {
+		if(!empty($_COOKIE['my_id']) && $texte->joueur == $_COOKIE['my_id']) {
 			$moi++;
 		}
 		else {

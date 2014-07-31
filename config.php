@@ -3,8 +3,8 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-define('SITE_URL', 'http://dev.ellaswar.com');
-define('API_URL',  'http://serverv5.ellaswar.com');
+define('SITE_URL', 'http://v5.ellaswar.com');
+define('API_URL',  'http://serveur.ellaswar.com');
 define('WIKI_URL', 'http://wiki.ellaswar.com');
 define('CGU_URL', 'http://wiki.ellaswar.com');
 define('FORUM_URL', 'http://forums.ellaswar.com');
