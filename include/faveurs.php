@@ -360,6 +360,20 @@ echo '
     <br><b>'._('Prix').'</b> : 1 '.imress('faveur').' '._('pour une semaine').'
   </div>
 </div>';
+
+echo '
+<div class="ligne_50"
+     style="height:140px;">
+<div class="cadre_renta centrer">
+    <a href="donnerunefaveur"><b>'._('Aide de Philios').'</b></a>
+    <br><br>
+    <a href="donnerunefaveur">'._('Permet à un de vos amis de débloquer son compte bloqué pour manque de ressources.').'</a>
+    <br>
+    <a href="donnerunefaveur">'._('seront réduites de 50%').'</a>
+    <br>
+    <br><b>'._('Prix').'</b> : 1 '.imress('faveur').'
+  </div>
+</div>';
 	break;
 	
 	default:
