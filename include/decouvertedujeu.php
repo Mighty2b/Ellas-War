@@ -1,9 +1,5 @@
 <?php
 
-if(empty($_GET['var1'])) {
-	$_GET['var1'] = '';
-}
-
 switch ($_GET['var1']) {
 	
 	case 'constructions':
