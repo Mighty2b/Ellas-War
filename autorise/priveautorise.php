@@ -63,7 +63,8 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo', '404',
 'quadriges', 'bataillesnavales', 'partie',
  
 'decouvertedujeu', 'actualites', 'nouscontacter', 
-	'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
-	'conditionsgeneralesutilisation', 'communaute', 'equipedusite');
+'quelquesmotssurlesite', 'partenaires', 'jeu', 'erreur',
+'conditionsgeneralesutilisation', 'communaute', 'equipedusite',
+'faq');
 
 ?>

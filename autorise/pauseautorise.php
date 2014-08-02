@@ -7,7 +7,7 @@ $autorise = array('accueil_pause',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
 	'profilsjoueur', 'permalien', 'profilsalliance', 'recrutement',
-	'membrealliance', 'tour_de_force', 'noreply', '404',
+	'membrealliance', 'tour_de_force', 'noreply', '404', 'faq',
 	
 	//Special pause
 	'obtenirdesfaveurs', 'parrainage', 'faveurerreur', 'faveurvalide');

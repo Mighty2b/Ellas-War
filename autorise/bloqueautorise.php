@@ -8,6 +8,7 @@ $autorise = array('accueil_bloque',
 	'teamspeak', 'equipedusite', 'classements', 'classementdesalliances',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
 	'sinscrire', 'profilsjoueur', 'permalien', 'profilsalliance',
-	'membrealliance', 'tour_de_force', 'noreply', '404', 'recrutement');
+	'membrealliance', 'tour_de_force', 'noreply', '404', 'recrutement',
+	'faq');
 
 ?>
