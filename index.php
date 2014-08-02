@@ -5,6 +5,42 @@ include('autorise/pubautorise.php');
 
 if(!empty($_GET['page']) && preg_match("/^[a-zA-Z0-9_]+$/", $_GET['page'])) {
 	$page = $_GET['page'];
+	
+	switch ($page) {
+		case 6:
+			header('Status: 301 Moved Permanently', false, 301);
+			header('Location: /decouvertedujeu');
+			exit();
+		break;
+		
+		case 8:
+			header('Status: 301 Moved Permanently', false, 301);
+			header('Location: /faq');
+			exit();
+		break;
+		
+		case 159:
+		case 'classement':
+			if(!empty($_GET['pageclass'])) {
+				$pageclass = round(abs($_GET['pageclass']));
+			}
+
+			if(empty($pageclass)) {
+				$pageclass = 1;
+			}
+
+			if(!empty($_GET['par'])) {
+				$pagepar = addslashes($_GET['par']);
+			}
+			else {
+				$pagepar = 'niveau';
+			}
+			
+			header('Status: 301 Moved Permanently', false, 301);
+			header('Location: /classementdesjoueurs-'.$pageclass.'-'.$pagepar);
+			exit();
+		break;
+	}
 }
 
 echo '<!DOCTYPE html>
