@@ -129,7 +129,7 @@ else {
 echo '"><div class="ssmenu">'.ucfirst(_('mythologie')).'</div></a>&nbsp;
 &nbsp;<a id="menu_heros" href="'._('heros').'"><div class="ssmenu">'._('Héros').'</div></a>&nbsp;
 &nbsp;<a id="menu_forum" href="'.FORUM_URL.'" target="_blank"><div class="ssmenu">'.ucfirst(_('forum')).'</div></a>&nbsp;
-&nbsp;<a id="menu_missions" href="'._('missions').'"><div class="ssmenu">'._('Quêtes').'</div></a>&nbsp;
+&nbsp;<a id="menu_missions" href="'._('missionsquetes').'"><div class="ssmenu">'._('Quêtes').'</div></a>&nbsp;
 &nbsp;<a id="menu_alliance" href="';
 
 $all = $paquet->get_infoj('alliance');
