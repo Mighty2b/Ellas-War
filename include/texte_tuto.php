@@ -265,7 +265,7 @@ if($paquet->get_infoj('lvl') == 0) {
 		
 		echo '<br/>
 		      <b>'._('Récompense').' :</b> '.
-		      nbf(20000).' '.imress('drachme').' '.nbf(20000).' '.imress('bois').'
+		      nbf(20000).' '.imress('drachme').' '.nbf(25000).' '.imress('bois').'
 		      </div>';
 	break;
 
