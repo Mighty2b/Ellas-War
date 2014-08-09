@@ -15,7 +15,13 @@ echo '<br/>
 		<td class="centrer"></td>
 		<td class="centrer">&nbsp;'._('Niveau').'&nbsp;</td>
 		<td class="centrer">&nbsp;'._('XP').'&nbsp;</td>
-		<td class="centrer">&nbsp;'._('Rang').'&nbsp;</td>
+		<td class="centrer">&nbsp;'._('Rang').'&nbsp;</td>';
+
+if($paquet->get_infoj('statu') == 1) {
+	echo '<td>&nbsp;'._('Victoires').'&nbsp;</td>
+	     <td>'._('Défaites').'</td>';
+}
+echo '
 		<td class="centrer">&nbsp;'._('Terrain').'&nbsp;</td>
 	</tr>
 	</thead><tfoot></tfoot><tbody>';
@@ -84,8 +90,14 @@ foreach ($liste as $do) {
 	else {
 		echo stripslashes($do->nom);
 	}
-	echo '&nbsp;</td>
-	      <td class="droite">&nbsp;'.nbf($do->terrain).'&nbsp;</td></tr>';
+	echo '&nbsp;</td>';
+
+	if($paquet->get_infoj('statu') == 1) {
+		echo '<td>&nbsp;'.nb($do->victoires).'&nbsp;</td>
+		     <td>'.nb($do->defaites).'</td>';
+	}
+	
+	echo '<td class="droite">&nbsp;'.nbf($do->terrain).'&nbsp;</td></tr>';
 $i++;
 }
 
