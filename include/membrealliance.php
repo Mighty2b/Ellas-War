@@ -93,8 +93,8 @@ foreach ($liste as $do) {
 	echo '&nbsp;</td>';
 
 	if($paquet->get_infoj('statu') == 1) {
-		echo '<td>&nbsp;'.nb($do->victoires).'&nbsp;</td>
-		     <td>'.nb($do->defaites).'</td>';
+		echo '<td>&nbsp;'.nbf($do->victoires).'&nbsp;</td>
+		     <td>'.nbf($do->defaites).'</td>';
 	}
 	
 	echo '<td class="droite">&nbsp;'.nbf($do->terrain).'&nbsp;</td></tr>';
