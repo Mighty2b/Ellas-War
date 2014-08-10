@@ -6,14 +6,14 @@ if(empty($_GET['clean'])) {
 	$_GET['clean'] = 0;
 }
 
-$rep_refresh = apc_fetch('rep_refresh');
+$rep_refresh = apc_fetch(APC_PREFIX.'rep_refresh');
 
 if(!$rep_refresh) {
 	$paquet = new EwPaquet();
 	$paquet -> add_action('refresh_chat', array($_GET['clean']));
 	$paquet -> send_actions();
 	
-	$refresh = $paquet->get_answer('refresh_chat');
+	$refresh = $paquet->get_answer(APC_PREFIX.'refresh_chat');
 	
 	if(!empty($refresh)) {
 		$rep_refresh   = $refresh->{1};

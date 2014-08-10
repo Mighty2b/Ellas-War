@@ -7,7 +7,7 @@ if(!$get_joueurs_co) {
 		$get_joueurs_co = array();
 	}
 	else {
-		apc_store('get_joueurs_co', serialize($get_joueurs_co), 10);
+		apc_store(APC_PREFIX.'get_joueurs_co', serialize($get_joueurs_co), 10);
 	}
 }
 else {

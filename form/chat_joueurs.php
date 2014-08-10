@@ -2,7 +2,7 @@
 
 include('../header.php');
 
-$joueurs_chat = apc_fetch('joueurs_chat');
+$joueurs_chat = apc_fetch(APC_PREFIX.'joueurs_chat');
 
 if(!$joueurs_chat) {
 	$paquet = new EwPaquet();
@@ -13,7 +13,7 @@ if(!$joueurs_chat) {
 	
 	if(!empty($rep)) {		
 		$joueurs_chat = $rep->{1};
-		apc_store('joueurs_chat', serialize($joueurs_chat), 30);
+		apc_store(APC_PREFIX.'joueurs_chat', serialize($joueurs_chat), 30);
 	}	
 
 	$my_id = $paquet->get_infoj('id');

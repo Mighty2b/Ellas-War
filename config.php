@@ -14,6 +14,7 @@ define('DESIGN', 'v4');
 define('TEMPS_CO', 31);
 define('ID_ADMIN', 457);
 define('STATIC_LINK', '');
+define('APC_PREFIX', 'EWC_COM');
 
 //Social networks
 define('FACEBOOK', 'https://fr-fr.facebook.com/pages/Ellas-War/236755106383392');
