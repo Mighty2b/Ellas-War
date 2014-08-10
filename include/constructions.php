@@ -37,22 +37,22 @@ foreach($constructions as $bat => $value) {
 	if($bat == 'hall') {
 			if(!empty($liste_autels->sacrifice_hera)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('statues').'-'.
-						 _('sacrifice_hera').'" class="normal">'._('Sacrifice d\'Héra').'</a>';
+						 _('sacrifice_hera').'-'._('voir').'" class="normal">'._('Sacrifice d\'Héra').'</a>';
 			}
 			
 			if(!empty($liste_autels->defense_gaia)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('statues').'-'.
-						 _('defense_gaia').'" class="normal">'._('Défense de Gaia').'</a>';
+						 _('defense_gaia').'-'._('voir').'" class="normal">'._('Défense de Gaia').'</a>';
 			}
 			
 			if(!empty($liste_autels->strategie_hippodamos)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('statues').'-'.
-						 _('strategie_hippodamos').'" class="normal">'._('Stratégie d\'Hippodamos').'</a>';
+						 _('strategie_hippodamos').'-'._('voir').'" class="normal">'._('Stratégie d\'Hippodamos').'</a>';
 			}
 			
 			if(!empty($liste_autels->sauvegarde_ombre)) {
 				echo '<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="'._('statues').'-'.
-						 _('sauvegarde_ombre').'" class="normal">'._('Faveur de l\'Érèbe').'</a>';
+						 _('sauvegarde_ombre').'-'._('voir').'" class="normal">'._('Faveur de l\'Érèbe').'</a>';
 			}
 	}
 	

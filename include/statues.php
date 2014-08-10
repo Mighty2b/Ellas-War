@@ -368,7 +368,9 @@ echo '
   </div>
 
 <script type="text/javascript">
-       $(function(){';
+       $(function(){
+ 	$(".liste_autels").hide();
+  		';
 if(!empty($_GET['var1'])) {
 
 	switch($_GET['var1']) {
@@ -387,7 +389,6 @@ if(!empty($_GET['var1'])) {
 	}
 }
 	echo '
-  $(".liste_autels").hide();
 
 	$("#tab_autel_dieux .cadre_33 img").click( function() {
     $(".liste_autels").hide("slow");
