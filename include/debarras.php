@@ -142,6 +142,8 @@ else {
 			<thead><tr>
 				<td></td>
 				<td>Taux moyen</td>
+				<td>Ressources déposées</td>
+				<td>Ressources vendues</td>
 			</tr></thead>
 			<tfoot></tfoot>
 			<tbody>';
@@ -150,6 +152,8 @@ else {
 		echo '<tr>
 		<td>'.imress($ress).'</td>
 		<td class="centrer">'.nbf($taux,4).'</td>
+		<td class="centrer">'.nbf($paquet->get_answer('archives_debarras')->{2}->$ress).'</td>
+		<td class="centrer">'.nbf($paquet->get_answer('archives_debarras')->{3}->$ress).'</td>
 		</tr>';
 	}
 	
