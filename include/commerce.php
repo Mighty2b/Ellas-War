@@ -93,6 +93,15 @@ $debutt = ($nb_page-1)*$nb_par_page;
 
 echo '<center>';
 
+if(!empty($paquet->get_answer('liste_debarras')) &&
+   !empty($paquet->get_answer('liste_debarras')->{1}) &&
+   !empty($paquet->get_answer('liste_debarras')->{1}->$ress)) {
+	echo '<a href="'._('debarras').'" class="gras rouge_goco">'.
+	_('Taux au debarras : ').
+	nbf(round($paquet->get_answer('liste_debarras')->{1}->$ress->taux,2)).
+	'</a><br/>';
+}
+
 if($nb_lot_ress > 1)
 {
 	for($i=1;$i<=$nb_lot_ress;$i++)

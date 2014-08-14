@@ -42,5 +42,6 @@ if(!empty($_GET['var4']))	{
 }
 
 $paquet -> add_action('get_commercem', array($ress, $_GET['var3'], $nb_page));
+$paquet -> add_action('liste_debarras');
 
 ?>
