@@ -147,7 +147,7 @@ if($paquet->get_infoj('lvl') == 0) {
 		echo '<div class="ligne gauche">'._(
 		     'Au niveau 1 vous pourrez accéder au commerce mais pour cela '.
 		     'il vous faudra une agora.').'<br/>'._(
-		     'Allez dans Constructions, Construire, Divers puis construisez '.
+		     'Allez dans Cité, Construire, Divers puis construisez '.
 				 '<b>une agora</b>.');
 	
 		if($paquet->get_infoj('check_etape') == true) {
@@ -229,7 +229,7 @@ if($paquet->get_infoj('lvl') == 0) {
 		echo '<div class="ligne gauche">'._('Pour protéger votre cité, '.
 		     'vous pouvez aussi construire des tours. Celles-ci ont comme '.
 		     'avantage sur les unités de ne pas avoir de solde. Par contre '.
-		     'elles ne peuvent pas attaquer. Allez dans le menu Constructions, '.
+		     'elles ne peuvent pas attaquer. Allez dans le menu Cité, '.
 		     'Construire puis Militaire et construisez <b>cinq tours</b> '.
 		     'afin de protéger votre cité.');
 					
@@ -253,7 +253,7 @@ if($paquet->get_infoj('lvl') == 0) {
 		     'niveau 5 celui-ci sera limité, à partir du niveau 6 vous n\'aurez '.
 		     'plus de limite mais il vous faudra vous acquitter d\'une taxe '.
 		     'pour pouvoir récupérer vos drachmes. '.
-		     'Allez dans construction, puis trésor et déposez <b>'.
+		     'Allez dans Cité, puis trésor et déposez <b>'.
 		     nbf(20000).' Drachmes</b> dans celui-ci.');
 		
 		if($paquet->get_infoj('check_etape') == true) {
@@ -402,7 +402,7 @@ elseif($paquet->get_infoj('lvl') == 1) {
 		     'est de faire remonter plus efficacement les idées des joueurs. '.
 		     'Si vous avez des questions sur le jeu ou des choses à faire '.
 		     'remonter au staff, n\'hésitez pas à le contacter.').'<br/>'._(
-		     'Allez dans Construction puis Oracle et faites votez pour '.
+		     'Allez dans Cité puis Oracle et faites votez pour '.
 		     'le candidat qui vous paraîtra le mieux.');
 
 		if($paquet->get_infoj('check_etape') == true) {
@@ -478,7 +478,7 @@ elseif($paquet->get_infoj('lvl') == 1) {
 		     'que jusqu\'au niveau 5 votre trésor sera limité, à partir '.
 		     'du niveau 6 vous n\'aurez plus de limite mais il vous '.
 		     'faudra vous acquitter d\'une taxe pour pouvoir récupérer '.
-		     'vos drachmes. Allez dans construction, puis trésor '.
+		     'vos drachmes. Allez dans Cité, puis trésor '.
 		     'et déposez un total de '.nbf(200000).' Drachmes dans celui-ci.');
 
 		if($paquet->get_infoj('check_etape') == true) {
