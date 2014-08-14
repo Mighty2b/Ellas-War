@@ -9,6 +9,6 @@ $autorise = array('home', 'mdp_perdu', 'retour', '404', 'faq',
 	'classementdesjoueurs', 'classementdesbtn', 'classementdesheros',
 	'sinscrire', 'profilsjoueur', 'permalien', 'profilsalliance',
 	'membrealliance', 'tour_de_force', 'classementghonneur',
-	'noreply', 'recrutement');
+	'noreply', 'recrutement', 'plandusite');
 
 ?>
