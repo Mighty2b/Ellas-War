@@ -18,8 +18,8 @@ function alerte($message) {
 function set_lang() {
 	putenv('LC_ALL='.LANG);
 	setlocale(LC_ALL, LANG);
-	bindtextdomain('textes', './lang');
-	textdomain('textes');
+	bindtextdomain('messages', './lang');
+	textdomain('messages');
 }
 
 function nbf($n, $nb=2) {
