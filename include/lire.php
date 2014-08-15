@@ -80,7 +80,13 @@ else {
 		}
 		
 		echo '<br/>'.display_date($mess->temps,3).'</td>
-		<td valign="top"><br/>'.$mess->message.'</td>
+		<td valign="top"';
+		
+		if($paquet->get_infoj('id') != $mess->joueur) {
+			echo ' class="messages_recus"';
+		}
+		
+		echo '><br/>'.$mess->message.'</td>
 		</tr>';
 		}
 		

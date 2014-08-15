@@ -1328,6 +1328,10 @@ select {
   float:right;
 }
 
+.messages_recus {
+	background-color:#E4FEE5 !important;
+}
+
 /* profilsjoueur */
 
 #cadre_espace_profils {
