@@ -40,8 +40,8 @@ _('Prenez la tête d\'une <b>cité</b> au milieu d\'une <b>Grèce</b> à feu et 
 <div class="home_description_left">
 <a href="'._('decouvertedujeu').'-'._('dieux').'">
 <img src="'.STATIC_LINK.'lang/'.LANG.'/images/screen/mini_dieux.png" 
-     alt="'._('Honnorez les dieux de la Grece antique').'"
-     title="'._('Honnorez les dieux de la Grece antique').'"
+     alt="'._('Honorez les dieux de la Grece antique').'"
+     title="'._('Honorez les dieux de la Grece antique').'"
      width="120" height="76" ></a>
 <br/>
 <div class="ligne_50 centrer cursor gras"

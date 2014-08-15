@@ -4,7 +4,7 @@ include('header.php');
 include('autorise/pubautorise.php');
 
 if(!empty($_GET['page']) && preg_match("/^[a-zA-Z0-9_]+$/", $_GET['page'])) {
-	$page = $_GET['page'];
+	$page = trad_to_page($_GET['page']);
 	
 	switch ($page) {
 		case 6:
@@ -84,7 +84,7 @@ switch($paquet->get_infoj('statu')) {
 }
 
 if(!empty($_GET['page'])) {
-	$page = ($_GET['page']);
+	$page = trad_to_page($_GET['page']);
 	if(!in_array($page,$autorise)) {
 		redirect('404');
 	}

@@ -107,12 +107,12 @@ echo '&nbsp;
 
 if(!empty($demande_ress) && $demande_ress > 0) {
 	echo '<a href="'._('coffre').'"><img src="images/alliance/coffre2.png"
-	                                     alt="'._('Coffre de l\'Alliance').'" 
+	                                     alt="'._('Coffre de l\'alliance').'" 
 	                                     title="'._('Coffre de l\'alliance').'" /></a>';
 }
 else {
 	echo '<a href="'._('coffre').'"><img src="images/alliance/coffre.png" 
-	                                     alt="'._('Coffre de l\'Alliance').'" 
+	                                     alt="'._('Coffre de l\'alliance').'" 
 	                                     title="'._('Coffre de l\'alliance').'" /></a>';
 }
 

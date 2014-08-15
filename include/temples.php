@@ -641,7 +641,7 @@ elseif(!($paquet -> possible_temple1())) {
 	     'Vous n\'avez pour l\'instant aucun temple. '.
 	     'Vous pourrez bâtir votre premier temple au niveau 2.'.
 	     '<br/>'.
-	     'Les temples vous permettent d\'honnorer les dieux et '.
+	     'Les temples vous permettent d\'honorer les dieux et '.
 	     'd\'obtenir de nombreux avantages.').
 	     '</div>';
 }

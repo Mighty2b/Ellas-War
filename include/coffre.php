@@ -49,7 +49,7 @@ echo '<h1>'._('Demander').'</h1><br/>
 	if($mon_alliance->level >= 2)
 		echo '<option value=\'nourriture\'>'._('Nourriture').'</option>
 	<option value=\'eau\'>'._('Eau').'</option>
-	<option value=\'bois\''._('>Bois').'</option>
+	<option value=\'bois\''._('Bois').'</option>
 	<option value=\'fer\'>'._('Fer').'</option>
 	<option value=\'argent\'>'._('Argent').'</option>
 	<option value=\'pierre\'>'._('Pierre').'</option>
