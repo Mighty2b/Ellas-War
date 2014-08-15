@@ -48,7 +48,7 @@ else {
 	
 	if(empty($licence) or $licence->{1} < $paquet->get_infoj('timestamp')) {
 		echo '<td colspan="2" class="rouge_goco centrer gras">'.
-	_('Vente flash ?').' <a href="'._('licences').'">'._('acheter une licence').'</a>';
+	_('Vente flash').' ? <a href="'._('licences').'">'._('acheter une licence').'</a>';
 	}
 	else {
 echo '<td><b>'._('Vente flash').' (<a href="'._('licences').'" 
