@@ -1,6 +1,6 @@
 <?php
 
-echo '<h1>'._('Partenaires').'</h1>
+echo '<h1>'.ucfirst(_('partenaires')).'</h1>
 <br/>
 <p>'._(
 'Vous désirez obtenir un partenarial avec Ellas War et voir '.

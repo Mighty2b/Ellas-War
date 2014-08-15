@@ -121,7 +121,7 @@ echo '<section id="banniere"></section>
 			<div id="mdp_perdu">
 				<a href="<?php 
 					echo _('mdp_perdu'); 
-				?>"><?php echo _('Mot de passe perdu ?'); ?></a>			
+				?>"><?php echo _('Mot de passe perdu'); ?> ?</a>			
 			</div>
 		</section>
 		<section id="inside">
