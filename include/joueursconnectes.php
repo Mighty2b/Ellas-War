@@ -1,7 +1,10 @@
 <?php
 
 if(!$get_joueurs_co) {
-	$get_joueurs_co = $paquet->get_answer('get_joueurs_co')->{1};
+	
+	if(!empty($paquet->get_answer('get_joueurs_co'))) {
+		$get_joueurs_co = $paquet->get_answer('get_joueurs_co')->{1};
+	}
 	
 	if(empty($get_joueurs_co)) {
 		$get_joueurs_co = array();

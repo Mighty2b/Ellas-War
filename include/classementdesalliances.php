@@ -9,8 +9,14 @@ else {
 	$i=1;// On met dans une variable le nombre de messages qu'on veut par page
 }
 
-$classement   = $paquet->get_answer('get_classementa')->{1};
-$nombreDePages= $paquet->get_answer('get_classementa')->{2};
+if(!empty($paquet->get_answer('get_classementa'))) {
+	$classement   = $paquet->get_answer('get_classementa')->{1};
+	$nombreDePages= $paquet->get_answer('get_classementa')->{2};
+}
+else {
+	$classement = array();
+	$nombreDePages = 0;
+}
 
 $page_nom = '<a href="'._('classementdesalliances').'-1-nom"
                 class="titre_tab">'._('Nom').'</a>';
