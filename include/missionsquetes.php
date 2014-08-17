@@ -13,7 +13,8 @@ echo '<div class="ligne_80 centrer"><br/>'._(
 
 echo '<div class="ligne_80">';
 
-if($paquet->get_infoj('lvl') >= 1) {
+if($paquet->get_answer('quetesmissions_info')->{3} == 1 &&
+   $paquet->get_infoj('lvl') >= 1) {
 	echo '
 	<div class="ligne">
 		<div class="ligne_50">
