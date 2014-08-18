@@ -152,8 +152,28 @@ else {
 		echo '<tr>
 		<td>'.imress($ress).'</td>
 		<td class="centrer">'.nbf($taux,4).'</td>
-		<td class="centrer">'.nbf($paquet->get_answer('archives_debarras')->{2}->$ress).'</td>
-		<td class="centrer">'.nbf($paquet->get_answer('archives_debarras')->{3}->$ress).'</td>
+		<td class="centrer">';
+		
+		if(!empty($paquet->get_answer('archives_debarras')->{2}) && 
+		   !empty($paquet->get_answer('archives_debarras')->{2}->$ress)) {
+		echo nbf($paquet->get_answer('archives_debarras')->{2}->$ress);
+		}
+		else {
+			echo 0;
+		}
+		
+		echo '</td>
+		<td class="centrer">';
+		
+		if(!empty($paquet->get_answer('archives_debarras')->{3}) && 
+		   !empty($paquet->get_answer('archives_debarras')->{3}->$ress)) {
+		echo nbf($paquet->get_answer('archives_debarras')->{3}->$ress);
+		}
+		else {
+			echo 0;
+		}
+		
+		echo '</td>
 		</tr>';
 	}
 	
