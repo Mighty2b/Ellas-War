@@ -246,7 +246,7 @@ elseif(!empty($liste_pactes) && sizeof($liste_pactes) > 0) {
 		foreach($liste_pactes as $value) {
 			echo '<tr><td>'.$value->nom.'</td></tr>';
 		}
-	echo '</td>';
+	echo '</table></td>';
 }
 
 echo '
