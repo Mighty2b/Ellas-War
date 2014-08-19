@@ -56,9 +56,9 @@ Déclarez votre <b>première guerre</b> à une alliances de votre niveau (délai
 <br/>Remplissez votre coffre alliance: l\'argent est le nerf de la guerre !
 <br/>Passez les niveaux alliance, ceux-ci offrent des avantages, mais aussi des inconvénient, sachez les mesurer avec prudence !
 <br/>Posez vos questions sur le forum ou rendez-vous sur le wiki du jeu (aide du jeu).
-<br/>
+<br/><br/>
 <div class="vert_bold sousligne">Astuces:</div>
-<br/><b>Déclarez des guerres:</b> les guerres gênent l\'expulsion des membres mais vous protège des alliances rapaces. Une guerre en cours vous permet de recevoir moins d\'attaques et de lancer plus d\'attaques.
+<b>Déclarez des guerres:</b> les guerres gênent l\'expulsion des membres mais vous protège des alliances rapaces. Une guerre en cours vous permet de recevoir moins d\'attaques et de lancer plus d\'attaques.
 <br/>
 <br/><b>Surveillez vos membres:</b>
 <ul>
