@@ -274,7 +274,7 @@ td.none {
   font-weight:bold;
 }
 
-.joueur_manque {
+.joueur_manque, .vert_bold {
   color:green !important;
   font-weight:bold;
 }

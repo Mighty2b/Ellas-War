@@ -31,27 +31,27 @@ Cordialement';
 			$message = 'Bonjour,
 <br/>Vous venez de créer une alliance: félicitation.
 <br/>Ceci est la première marche vers le succès.
-<br/>
+<br/><br/>
 <div class="vert_bold sousligne">Pérennisation de votre alliance:</div>
-<br/>Tout d\'abord votre objectif est de <b>recruter</b> des membres de niveau 1 minimum.
+Tout d\'abord votre objectif est de <b>recruter</b> des membres de niveau 1 minimum.
 <br/>Vous devez impérativement avoir un joueur pour valider votre alliance.
 <br/>Vous avez <b>une semaine</b> pour recruter un nouveau membre dans l\'alliance.
 <br/>Passé ce délai et sans nouveau membre dans votre alliance, celle-ci sera dissoute.
-<br/>
+<br/><br/>
 <div class="vert_bold sousligne">Développement votre alliance:</div>
-<br/>Remplissez votre description alliance pour mieux capter les joueurs.
+Remplissez votre description alliance pour mieux capter les joueurs.
 <br/>Pensez à laisser ouvert le recrutement pour <b>accueillir de nouveaux joueurs</b>.
 <br/>Postez des missives pour indiquer que votre alliance recrute.
 <br/>Contactez les joueurs via "joueurs connectés" ou les tableaux de l\'honneur.
-<br/>
+<br/><br/>
 <div class="vert_bold sousligne">Expansion de votre alliance:</div>
-<br/>Déclarez votre <b>première guerre</b> à une alliances de votre niveau (délai d\'une semaine après la création de votre alliance).
+Déclarez votre <b>première guerre</b> à une alliances de votre niveau (délai d\'une semaine après la création de votre alliance).
 <br/>Négociez des pactes avec les autres alliances, qu\'ils soient oraux ou écrits.
 <br/><b>Lancez les cotisations</b> (attendez le niveau 2 de l\'alliance pour débloquer les cotisations en négatif).
 <br/>Passez les niveaux alliance pour débloquer de nombreux avantages (retirer des ressources autre que drachmes au niveau 2). Attention: une fois le niveau passé, les ressources demandées sont débitées du coffre alliance.
-<br/>
+<br/><br/>
 <div class="vert_bold sousligne">Conseils:</div>
-<br/><b>Donnez des droits</b> à vos membres pour qu\'ils vous épaulent dans l\'évolution de votre alliance: nommez votre second, vos chefs de guerre, vos diplomates, vos trésoriers, vos recruteurs et vos généraux.
+<b>Donnez des droits</b> à vos membres pour qu\'ils vous épaulent dans l\'évolution de votre alliance: nommez votre second, vos chefs de guerre, vos diplomates, vos trésoriers, vos recruteurs et vos généraux.
 <br/>Formez vos membres et demandez des conseils à d\'autres chefs d\'alliances.
 <br/>Remplissez votre coffre alliance: l\'argent est le nerf de la guerre !
 <br/>Passez les niveaux alliance, ceux-ci offrent des avantages, mais aussi des inconvénient, sachez les mesurer avec prudence !
