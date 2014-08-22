@@ -104,7 +104,7 @@ $i++;
 echo '</tbody></table><br/>
 <div class="centrer">
 	<a href="'._('profilsalliance').'-'.$all -> id.'"
-	   class="lien_rouge">'._('Profil de l\'alliance').'</a>
+	   class="rouge_goco">'._('Profil de l\'alliance').'</a>
 </div>';
 
 echo '
