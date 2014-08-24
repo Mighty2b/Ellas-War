@@ -102,10 +102,36 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 				echo '<p><a href="#"
 				            onclick="window.open(\'popup/guerres.php?id='.$do->id.'\',\''._('Historique attaques').'\',\'toolbar=0, location=0, directories=0, status=0, scrollbars=1, resizable=0, copyhistory=0, menuBar=0, width=800, height=500\');">'._('Voir toutes les attaques').'</a></p></fieldset></fieldset>';
 			}
+			
+			if($do->idattaquant == $paquet->get_infoj('alliance')->id &&
+			   ($paquet->get_infoj('id') == $mon_alliance->id_chef && $do->provocation+24*3600 > $paquet->get_infoj('timestamp')) || 
+			   $paquet->get_infoj('lvl2') >= 3) {
+				echo '
+				<br/>
+				<div class="rouge_goco">Vous pouvez abandonner la guerre jusqu\'à 24 heures après son début. 
+				Il vous en coutera 20% des Drachmes du coffre de votre alliance.</div>
+				<a href="#"
+				   onclick="abandonner('.$do->id.')"
+				   class="rouge_goco gras">Abandonner la guerre</a>';
+			}
 		}
 	}
 }
 else {
 	echo '<div class="ligne erreur centrer"><h2>'._('Vous n\'avez aucune guerre en cours').'</h2></div>';
 }
+
+echo '
+<script type="text/javascript">
+function expulser(id) {
+	if(window.confirm(\''._('Abandonner la guerre ?').'\')) {
+		$.ajax({
+			type: "GET",
+			url: "form/abandonner_guerre.php",
+			data: "id="+id,
+			success: function(msg){ location.reload(); }
+		});
+	}
+}
+</script>';
 ?>
