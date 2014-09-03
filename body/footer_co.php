@@ -151,7 +151,7 @@ function refresh_chat(clean) {
      success: function(msg){
        if(msg != \'\') {
          $("#corps_chat").html(msg);
-         document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
+         //document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
        }
      }
    });

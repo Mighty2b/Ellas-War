@@ -12,4 +12,5 @@ Version 5.1
 - Protection de la récompense de la Pythie
 - Nouveaux messages dans le même MP pour le commerce
 - Le fond des messages du destinataire apparait en vert
-- Lors d'une guerre, il est possible de se rendre pendant 24 heures pour 20% du coffre de l'alliance
+- Lors d'une guerre, il est possible de se rendre pendant 24 heures pour 20% du coffre de l'alliance et 10% de l'XP
+- Lors d'un abandon de guerre, l'aversaire gagne 50% des pertes en drachmes de son adversaire
