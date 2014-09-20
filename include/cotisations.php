@@ -203,7 +203,7 @@ echo '<div class="centrer">'._('Niveau minimal').' : '.$mon_alliance->lvl_mini.'
 
 if($mon_alliance->level >= 4) {
 	echo 'Cotisation volontaire : 
-	<input type="text"
+	<input type="text" name="cotise_volontaire"
 				 maxlength="2" size="2"
 				 value="'.$paquet->get_cotise_volontaire().'"/>% '.
 	imress('drachme').' gagnés (max : 25%)
