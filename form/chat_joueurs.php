@@ -20,7 +20,10 @@ if(!$joueurs_chat) {
 }
 else {
 	$joueurs_chat = unserialize($joueurs_chat);
-	$my_id = $_COOKIE['my_id'];
+	
+	if(!empty($_COOKIE['my_id'])) {
+  	$my_id = $_COOKIE['my_id'];
+  }
 }
 
 if(!empty($joueurs_chat)) {
