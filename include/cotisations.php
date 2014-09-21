@@ -345,7 +345,7 @@ echo '</tr>
 </table></div>';
 }
 
-if($paquet->get_infoj('droits_alliance')->changer_cotise != 0 or $mon_alliance->level >= 4) {
+if($paquet->get_infoj('droits_alliance')->changer_cotise != 0) {
 	echo '<p><div class="bouton_classique"><input type="submit"
 	                                              name="'._('Changer').'" 
 	                                              value="'._('Changer').'"/></div></p></form>';
