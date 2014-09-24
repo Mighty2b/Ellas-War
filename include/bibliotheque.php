@@ -3,7 +3,7 @@
 $biblio= $paquet->get_answer('get_bibliotheque');
 $i = 1;
 
-echo '<h1>'._('Bibliothéque').'</h1>
+echo '<h1>'._('Bibliothèque').'</h1>
 
 <div id="cadre_bibliotheque">';
 
