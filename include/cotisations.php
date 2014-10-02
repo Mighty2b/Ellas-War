@@ -216,14 +216,14 @@ if($mon_alliance->level >= 4) {
 	}
 }
 
-if($paquet->get_answer('peut_greve')->{1}) {
+if($paquet->get_answer('peut_greve')->{1} or !empty($greve)) {
 	echo '<input type="checkbox"
 	             name="greve"
 	             '.(!empty($greve)?'checked="checked"':'').' />';
 	echo 'Se mettre en grève';
 }
 
-if($paquet->get_answer('peut_greve')->{1} or $mon_alliance->level >= 4) {
+if($paquet->get_answer('peut_greve')->{1} or !empty($greve) or $mon_alliance->level >= 4) {
 	echo '<div class="bouton_classique"><input type="submit"
 	           name="changer_cotisation"
 	           value="'._('Changer').'" /></div>';
