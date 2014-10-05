@@ -70,12 +70,29 @@ else {
 		 <option value="eau">&nbsp;'._('Eau').'&nbsp;</option>
 		 <option value="bois">&nbsp;'._('Bois').'&nbsp;</option>
 		 <option value="fer">&nbsp;'._('Fer').'&nbsp;</option>
-		 <option value="argent">&nbsp;'._('Argent').'&nbsp;</option> 
-		 <option value="pierre">&nbsp;'._('Pierre').'&nbsp;</option>
-		 <option value="marbre">&nbsp;'._('Marbre').'&nbsp;</option>
-		 <option value="raisin">&nbsp;'._('Raisin').'&nbsp;</option>
-		 <option value="vin">&nbsp;'._('Vin').'&nbsp;</option>
-		 <option value="gold">&nbsp;'._('Or').'&nbsp;</option>
+		 <option value="argent">&nbsp;'._('Argent').'&nbsp;</option>';
+
+	if($paquet->get_infoj('lvl') >= $minimum_lvl_ress['pierre']) {
+		echo '<option value="pierre">&nbsp;'._('Pierre').'&nbsp;</option>';
+	}
+	
+	if($paquet->get_infoj('lvl') >= $minimum_lvl_ress['marbre']) {
+		echo '<option value="marbre">&nbsp;'._('Marbre').'&nbsp;</option>';
+	}
+	
+	if($paquet->get_infoj('lvl') >= $minimum_lvl_ress['raisin']) {
+		echo '<option value="raisin">&nbsp;'._('Raisin').'&nbsp;</option>';
+	}
+	
+	if($paquet->get_infoj('lvl') >= $minimum_lvl_ress['vin']) {
+		echo '<option value="vin">&nbsp;'._('Vin').'&nbsp;</option>';
+	}
+	
+	if($paquet->get_infoj('lvl') >= $minimum_lvl_ress['gold']) {
+		echo '<option value="gold">&nbsp;'._('Or').'&nbsp;</option>';
+	}
+
+	echo '
 		 </select></td></tr>	 
 		 </table>
 		<br/>';
@@ -108,6 +125,9 @@ else {
 		</tr></thead><tfoot></tfoot><tbody>';
 	
 		foreach($liste as $lot) {
+			if(empty($minimum_lvl_ress[$lot->ressource]) or 
+			   $paquet->get_infoj('lvl') >= $minimum_lvl_ress[$lot->ressource]) {
+			
 			echo '<tr>
 			      <td onclick="set_ress('.$i.', '.$lot->restant.')"
 			          class="cursor">'.nbf($lot->restant).' '.imress($lot->ressource).'</td>
@@ -124,6 +144,7 @@ else {
 			                                         '.$i.', '.$lot->taux.')"></td>
 			      </tr>';
 			$i++;
+			}
 		}
 		echo '</tbody></table>';
 	 
