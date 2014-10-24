@@ -7,9 +7,7 @@ $liste            = $paquet->get_answer('liste_attaque')->{1};
 $temples = $paquet->get_infoj('temples');
 
 // On calcule le nombre de pages à créer
-$nombreDePages  = ceil($totalDesMessages / 20);
-
-$i=($page_num-1)*50+1;
+$nombreDePages  = ceil($totalDesMessages / 15);
 
 $paquet->is_active_bonus_xp();
 
