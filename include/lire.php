@@ -33,10 +33,22 @@ else {
 	echo '
 	<table>
 		<thead><tr class="centrer">
-			<td><div class="bouton_classique"><input type="button" 
+			<td>';
+			if(!empty($_GET['var2']) && is_numeric($_GET['var2'])) {
+			  echo '<a href="lire-'.$_GET['var2'].'"><img title="Flèche Gauche" alt="Flèche Gauche" src="images/utils/fleche_gauche.png" style="float:left;" /></a> ';
+			}
+			
+			echo '
+			    <div class="bouton_classique" style="float:left;margin-left:5px;margin-right:5px;"><input type="button" 
 			                                         value="'._('Répondre').'"
 			                                         id="repondre"
-			                                         onclick="repondre()"/></div></td>
+			                                         onclick="repondre()"/></div>';
+			if(!empty($_GET['var3']) && is_numeric($_GET['var3'])) {
+			  echo ' <a href="lire-'.$_GET['var3'].'"><img title="Flèche Droite" alt="Flèche Droite" src="images/utils/fleche_droite.png" /></a>';
+			}
+			
+			echo '
+			</td>
 			<td style="min-width:75%">'.$message->titre.'</td>
 		</tr></thead>
 		<tfoot></tfoot>

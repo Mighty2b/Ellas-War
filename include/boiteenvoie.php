@@ -27,32 +27,43 @@ if(sizeof($liste) > 0) {
 		</tr></thead>
 		<tfoot></tfoot>
 		<tbody>';
-
+$precedent = 0;
+$text = '';
 foreach($liste as $mess) {
-	echo '<tr>
-	<td class="centrer">';
-	
-	if(!empty($mess->lecture)) {
-		echo '<img src="images/messagerie/mp.png"
-		           alt="'._('Ancien Message').'" 
-		           title="'._('Ancien Message').'" />';
+	if(empty($_GET['var1']) or ($_GET['var1'] == 1) or !empty($precedent)) {
+		echo str_replace('[idsuivant]', $mess->id, $text);
+
+		$text = '<tr>
+  <td class="centrer">';
+
+		if(!empty($mess->lecture)) {
+			$text .=  '<img src="images/messagerie/mp.png"
+	             alt="'._('Ancien Message').'"
+	             title="'._('Ancien Message').'" />';
+		}
+		else {
+			$text .= '<img src="images/messagerie/n_mp.png"
+	             alt="'._('Nouveau Message').'"
+	             title="'._('Nouveau Message').'" />';
+		}
+
+		$text .=
+		'</td>
+  <td>&nbsp;<a href="'._('lire').'-'.$mess->id.'-'.$precedent.'-[idsuivant]">'.$mess->titre.'</a></td>
+  <td>&nbsp;<a href="'._('profilsjoueur').'-'.$mess->destinataire.'">'.$mess->login.'</a></td>
+  <td>'.display_date($mess->date,4).'</td>
+  <td><img src="images/messagerie/supprimer.png"
+           alt="'._('Supprimer').'"
+           title="'._('Supprimer').'"
+           class="cursor"
+           onclick="messagerie_supprimer('.$mess->id.');"/></td>
+  </tr>';
 	}
-	else {
-		echo '<img src="images/messagerie/n_mp.png" 
-		           alt="'._('Nouveau Message').'" 
-		           title="'._('Nouveau Message').'" />';
-	}
-	
-echo '</td>
-	<td>&nbsp;<a href="'._('lire').'-'.$mess->id.'">'.$mess->titre.'</a></td>
-	<td>&nbsp;<a href="'._('profilsjoueur').'-'.$mess->destinataire.'">'.$mess->login.'</a></td>
-	<td>'.display_date($mess->date,4).'</td>
-	<td><img src="images/messagerie/supprimer.png"
-	         alt="'._('Supprimer').'"
-	         title="'._('Supprimer').'"
-	         class="cursor" 
-	         onclick="messagerie_supprimer('.$mess->id.');"/></td>
-	</tr>';
+	$precedent = $mess->id;
+}
+
+if($_GET['var1'] == $nombre_pages) {
+	echo str_replace('[idsuivant]', 0, $text);
 }
 
 echo '</tbody>
