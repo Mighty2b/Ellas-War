@@ -346,6 +346,7 @@ switch($page) {
 		echo '<div id="barre_menu_vide"></div>';
 	break;
 	
+	case 'evenements':
 	case 'informationspersonnelles':
 	case 'bibliotheque':
 	case 'pause':
