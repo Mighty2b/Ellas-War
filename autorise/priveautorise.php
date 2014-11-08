@@ -20,6 +20,7 @@ $autorise = array('cite', 'breves', 'details', 'gestionmeteo', '404',
 
 //Communauté
 'joueursconnectes', 'amis', 'teamspeak', 'sondages', 'chat', 'recrutement',
+'evenements',
 
 //Contact
 'pagecontact', 'archivescontact',

@@ -60,6 +60,7 @@ echo '>'._('Boite de reception').'</a>&nbsp;</li>
 		</ul>
 		<li>&nbsp;<a href="'._('communaute').'">'._('Communauté').'</a>&nbsp;
 		<ul class="sub_menu">
+			<li>&nbsp;<a href="'._('evenements').'">'._('Evenements').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('joueursconnectes').'">'._('Joueur&nbsp;connectés').'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'._('amis').'">'.ucfirst(_('amis')).'</a>&nbsp;</li>
 			<li>&nbsp;<a href="'.FORUM_URL.'"
