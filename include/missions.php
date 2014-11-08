@@ -11,7 +11,7 @@ echo '<div class="ligne_80">
 	<div class="ligne_50">
 	<b>'._('Vendredi 13').'</b><br/>
 	Jouer 100 tickets au loto
-	<br/><i>Récompense :</i> 50 000 '.imress('drachme').'
+	<br/><i>Récompense :</i> 100 000 '.imress('drachme').'
 	<br/><br/></div>
 	<div class="ligne_50 centrer"><br/>';
 
@@ -34,7 +34,7 @@ echo '</div>
 <div class="ligne">
 	<div class="ligne_50"><b>' ._('Combattant du 51').'</b><br/>
 	'._('Effectuer au moins 51 attaques hors guerre').
-	'<br/><i>Récompense :</i> 100 000 '.imress('drachme').'
+	'<br/><i>Récompense :</i> 200 000 '.imress('drachme').'
 	<br/><br/></div>
 	<div class="ligne_50 centrer"><br/>';
 
