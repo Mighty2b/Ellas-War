@@ -12,6 +12,6 @@ if(!empty($_POST['texte'])) {
 	                      array($_GET['var1'], $_POST['texte']));
 }
 
-$paquet -> add_action('messagerie_lire', array($_GET['var1']));
+$paquet -> add_action('messagerie_lire', array($_GET['var1'],$_GET['var2']));
 
 ?>

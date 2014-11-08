@@ -34,8 +34,8 @@ else {
 	<table>
 		<thead><tr class="centrer">
 			<td>';
-			if(!empty($_GET['var2']) && is_numeric($_GET['var2'])) {
-			  echo '<a href="lire-'.$_GET['var2'].'"><img title="Flèche Gauche" alt="Flèche Gauche" src="images/utils/fleche_gauche.png" style="float:left;" /></a> ';
+			if(!empty($message->precedent) && is_numeric($message->precedent)) {
+			  echo '<a href="lire-'.$message->precedent.'"><img title="Flèche Gauche" alt="Flèche Gauche" src="images/utils/fleche_gauche.png" style="float:left;" /></a> ';
 			}
 			
 			echo '
@@ -43,8 +43,8 @@ else {
 			                                         value="'._('Répondre').'"
 			                                         id="repondre"
 			                                         onclick="repondre()"/></div>';
-			if(!empty($_GET['var3']) && is_numeric($_GET['var3'])) {
-			  echo ' <a href="lire-'.$_GET['var3'].'"><img title="Flèche Droite" alt="Flèche Droite" src="images/utils/fleche_droite.png" /></a>';
+			if(!empty($message->suivant) && is_numeric($message->suivant)) {
+			  echo ' <a href="lire-'.$message->suivant.'"><img title="Flèche Droite" alt="Flèche Droite" src="images/utils/fleche_droite.png" /></a>';
 			}
 			
 			echo '

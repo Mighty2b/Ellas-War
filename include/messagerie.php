@@ -27,44 +27,33 @@ if(sizeof($liste) > 0) {
 		</tr></thead>
 		<tfoot></tfoot>
 		<tbody>';
-$precedent = 0;
-$text = '';
+
 foreach($liste as $mess) {
-	if(empty($_GET['var1']) or ($_GET['var1'] == 1) or !empty($precedent)) {
-		echo str_replace('[idsuivant]', $mess->id, $text);
-
-		$text = '<tr>
-  <td class="centrer">';
-
-		if(!empty($mess->lecture) or empty($mess->last_j) or
-		$mess->last_j == $paquet->get_infoj('id')) {
-			$text .=  '<img src="images/messagerie/mp.png"
-	             alt="'._('Ancien Message').'"
-	             title="'._('Ancien Message').'" />';
-		}
-		else {
-			$text .= '<img src="images/messagerie/n_mp.png"
-	             alt="'._('Nouveau Message').'"
-	             title="'._('Nouveau Message').'" />';
-		}
-
-		$text .=
-		'</td>
-  <td>&nbsp;<a href="'._('lire').'-'.$mess->id.'-'.$precedent.'-[idsuivant]">'.$mess->titre.'</a></td>
-  <td>&nbsp;<a href="'._('profilsjoueur').'-'.$mess->destinataire.'">'.$mess->login.'</a></td>
-  <td>'.display_date($mess->date,4).'</td>
-  <td><img src="images/messagerie/supprimer.png"
-           alt="'._('Supprimer').'"
-           title="'._('Supprimer').'"
-           class="cursor"
-           onclick="messagerie_supprimer('.$mess->id.');"/></td>
-  </tr>';
+	echo '<tr>
+	<td class="centrer">';
+	
+	if(!empty($mess->lecture) or empty($mess->last_j) or 
+	   $mess->last_j == $paquet->get_infoj('id')) {
+		echo '<img src="images/messagerie/mp.png"
+		           alt="'._('Ancien Message').'" 
+		           title="'._('Ancien Message').'" />';
 	}
-	$precedent = $mess->id;
-}
-
-if($_GET['var1'] == $nombre_pages) {
-	echo str_replace('[idsuivant]', 0, $text);
+	else {
+		echo '<img src="images/messagerie/n_mp.png" 
+		           alt="'._('Nouveau Message').'" 
+		           title="'._('Nouveau Message').'" />';
+	}
+	
+echo '</td>
+	<td>&nbsp;<a href="'._('lire').'-'.$mess->id.'-1">'.$mess->titre.'</a></td>
+	<td>&nbsp;<a href="'._('profilsjoueur').'-'.$mess->destinataire.'">'.$mess->login.'</a></td>
+	<td>'.display_date($mess->date,4).'</td>
+	<td><img src="images/messagerie/supprimer.png"
+	         alt="'._('Supprimer').'"
+	         title="'._('Supprimer').'"
+	         class="cursor" 
+	         onclick="messagerie_supprimer('.$mess->id.');"/></td>
+	</tr>';
 }
 
 echo '</tbody>
