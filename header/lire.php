@@ -12,6 +12,13 @@ if(!empty($_POST['texte'])) {
 	                      array($_GET['var1'], $_POST['texte']));
 }
 
+if(empty($_GET['var2']) or $_GET['var2'] != 2) {
+	$_GET['var2'] = 1;
+}
+else {
+	$_GET['var2'] = 2;
+}
+
 $paquet -> add_action('messagerie_lire', array($_GET['var1'],$_GET['var2']));
 
 ?>
