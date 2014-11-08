@@ -2179,3 +2179,42 @@ select {
 	margin: auto;
 	width: 150px;
 }
+
+/* Evenements */
+.caseJour {
+  width: calc(100% / 7);
+  text-align:center;
+  float:left;
+  position:relative;
+  font-weight:bold;
+  font-size:1.1em;
+}
+
+.caseEvenements {
+  width: calc(0px - 14px + 100% / 7);
+  float:left;
+  position:relative;
+  margin:5px;
+  background-color: #e4dcc2;
+  border: 2px solid #b8860b;
+  box-shadow: 2px 3px 5px 2px #656565 inset, 0 -3px 5px 0 #656565 inset;
+  padding-bottom:5px;
+}
+
+.caseEvenements .jour {
+  text-align:left;
+  margin:5px 0px 5px 10px;
+  color:white;
+  font-weight:bold;
+}
+
+.caseEvenements .caseList {
+  position:absolute;
+  bottom:5px;
+}
+
+.caseEvenements .evenement {
+  text-align:left;
+  padding-left:3px;
+  padding-right:3px;
+}
