@@ -40,7 +40,8 @@ if(sizeof($bientot) > 0 or sizeof($encours) > 0) {
 			}
 			
 			if($details->peut_annuler) {
-				if($paquet->get_infoj('id') == $mon_alliance->id_chef) {
+				if($paquet->get_infoj('droits_alliance')->annuler_guerre > 0 or 
+				   $paquet->get_infoj('id') == $mon_alliance->id_chef) {
 					echo '<a href="'._('guerres').'-annuler-'.$details->id.'">'._('Annuler la guerre').'</a>';
 				}
 			}
