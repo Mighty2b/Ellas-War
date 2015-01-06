@@ -8,7 +8,7 @@ echo '
 'Ellàr War est un <a href="'.SITE_URL.'">jeu gratuit de stratégie en ligne</a> '.
 'par navigateur. L\'action se déroule environ vers -500 durant l\'age d\'or '.
 'de la Grèce Antique. À sa sortie en avril 2007, il s\'agissait d\'un projet '.
-'personnel, peut à peut l\'équipe du site s\'est renforcée et ses compétences '.
+'personnel, peu à peu l\'équipe du site s\'est renforcée et ses compétences '.
 'se sont étendues. Celui-ci a évolué au cours du temps aussi bien graphiquement '.
 'que techniquement. Le jeu est en développement constant et des mises à jours '.
 'sont ajoutées régulièrement.').
