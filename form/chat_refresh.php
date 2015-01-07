@@ -17,7 +17,9 @@ if(!$rep_refresh) {
 	
 	if(!empty($refresh)) {
 		$rep_refresh   = $refresh->{1};
-		apc_store('rep_refresh', serialize($rep_refresh), 5);
+		if(!empty($rep_refresh)) {
+			apc_store('rep_refresh', serialize($rep_refresh), 5);
+		}
 	}
 }
 else {	

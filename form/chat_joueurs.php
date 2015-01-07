@@ -13,7 +13,9 @@ if(!$joueurs_chat) {
 	
 	if(!empty($rep)) {		
 		$joueurs_chat = $rep->{1};
-		apc_store(APC_PREFIX.'joueurs_chat', serialize($joueurs_chat), 30);
+		if(!empty($joueurs_chat)) {
+			apc_store(APC_PREFIX.'joueurs_chat', serialize($joueurs_chat), 30);
+		}
 	}	
 
 	$my_id = $paquet->get_infoj('id');
