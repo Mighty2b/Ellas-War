@@ -49,19 +49,19 @@ if(!empty($liste_hf)) {
 $defense_tours = 0;
 
 if(!empty($constructions->tourguet)) {
-	$defense_tours += $constructions->tourguet->nb;
+	$defense_tours += $constructions->tourguet->nb*$constructions->tourguet->defense;
 }
 
 if(!empty($constructions->tourobs)) {
-	$defense_tours += $constructions->tourobs->nb;
+	$defense_tours += $constructions->tourobs->nb*$constructions->tourobs->defense;
 }
 
 if(!empty($constructions->tourgarde)) {
-	$defense_tours += $constructions->tourgarde->nb;
+	$defense_tours += $constructions->tourgarde->nb*$constructions->tourgarde->defense;
 }
 
 if(!empty($constructions->tourmir)) {
-	$defense_tours += $constructions->tourmir->nb;
+	$defense_tours += $constructions->tourmir->nb*$constructions->tourmir->defense;
 }
 
 foreach($batiments as $bat => $details) {
