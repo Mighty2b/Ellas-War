@@ -33,11 +33,19 @@ class Ewpaquet {
 	}
 	
 	function send_actions() {
+		if(!empty($_COOKIE['my_id']) && is_numeric($_COOKIE['my_id'])) {
+			$my_id = $_COOKIE['my_id'];
+		}
+		else {
+			$my_id = 0;
+		}
+		
 		$var = array('token'     => $this->token,
 		             'actions'   => $this->actions,
 		             'host'      => @gethostbyaddr($this -> ip),
 		             'navigateur'=> $this->user_agent,
-		             'ip'        => $this->ip);
+		             'ip'        => $this->ip,
+		             'my_id'     => $my_id);
 		
 		$postvar = http_build_query($var);
 		$opts = array('http' =>
