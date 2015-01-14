@@ -40,12 +40,20 @@ class Ewpaquet {
 			$my_id = 0;
 		}
 		
+		if(!empty($_COOKIE['pageTest'])) {
+			$pageTest = $_COOKIE['pageTest'];
+		}
+		else {
+			$pageTest = 0;
+		}
+		
 		$var = array('token'     => $this->token,
 		             'actions'   => $this->actions,
 		             'host'      => @gethostbyaddr($this -> ip),
 		             'navigateur'=> $this->user_agent,
 		             'ip'        => $this->ip,
-		             'my_id'     => $my_id);
+		             'my_id'     => $my_id,
+		             'pageTest'  => $pageTest);
 		
 		$postvar = http_build_query($var);
 		$opts = array('http' =>
