@@ -161,7 +161,13 @@ echo '</footer>
   })(window,document,\'script\',\'//www.google-analytics.com/analytics.js\',\'ga\');
   ga(\'create\', \'UA-8044802-1\', \'ellaswar.com\');
   ga(\'send\', \'pageview\');
-</script>	
+</script>';
+
+if (empty($_SERVER['HTTPS']) or $_SERVER['HTTPS'] != 'on') {
+	echo '<iframe width="0" height="0" src="https://panel.ellaswar.com/page_test.php"></iframe>';
+}
+
+echo '
   </body>
 </html>';
 
