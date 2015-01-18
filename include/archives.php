@@ -18,7 +18,7 @@ echo '</h1>
 <br/>';
 	
 echo'
-<form action="#"
+<form action="/'._('archives').'-1-'.$type.'"
       method="post" 
       name="classement" 
       class="ligne">
