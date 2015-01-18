@@ -36,7 +36,7 @@ else {
 			<td>';
 	
 			if(!empty($message->precedent) && is_numeric($message->precedent)) {
-				echo ' <a href="lire-'.$message->precedent.'-'.$_GET['var2'].'"><img title="'._('Méssage précédent').'" alt="'._('Méssage précédent').'" src="images/utils/fleche_gauche.png" /></a>';
+				echo ' <a href="lire-'.$message->precedent.'-'.$_GET['var2'].'"><img title="'._('Message précédent').'" alt="'._('Message précédent').'" src="images/utils/fleche_gauche.png" style="float:left;" /></a>';
 			}
 			
 			echo '
@@ -46,7 +46,7 @@ else {
 			                                         onclick="repondre()"/></div>';
 
 			if(!empty($message->suivant) && is_numeric($message->suivant)) {
-				echo '<a href="lire-'.$message->suivant.'-'.$_GET['var2'].'"><img title="'._('Méssage suivant').'" alt="'._('Méssage suivant').'" src="images/utils/fleche_droite.png" style="float:left;" /></a> ';
+				echo '<a href="lire-'.$message->suivant.'-'.$_GET['var2'].'"><img title="'._('Message suivant').'" alt="'._('Message suivant').'" src="images/utils/fleche_droite.png" /></a> ';
 			}
 			
 			echo '
