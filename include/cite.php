@@ -383,7 +383,8 @@ echo '
 if(!empty($dernieres_news)) {
 	foreach($dernieres_news as $news) {
 		echo '<div class="news"><a href="'.$news->lien.'" 
-		                           class="titre_news">'.$news->titre.'</a>, <i>'.display_date($news->temps).'</i></div>';
+		                           class="titre_news"
+		                           target="_blank">'.$news->titre.'</a>, <i>'.display_date($news->temps).'</i></div>';
 	}
 }
 
@@ -401,7 +402,9 @@ if(!empty($dernieres_news)) {
 
 if(!empty($dernieres_breves)) {
 	foreach($dernieres_breves as $breves) {
-		echo '<div class="news"><a href="'.$breves->lien.'" class="titre_news">'.$breves->titre.'</a>, <i>'.display_date($breves->temps).'</i></div>';
+		echo '<div class="news"><a href="'.$breves->lien.'"
+		                           class="titre_news"
+		                           target="_blank">'.$breves->titre.'</a>, <i>'.display_date($breves->temps).'</i></div>';
 	}
 }
 
