@@ -13,12 +13,12 @@ if(!$rep_refresh) {
 	$paquet -> add_action('refresh_chat', array($_GET['clean']));
 	$paquet -> send_actions();
 	
-	$refresh = $paquet->get_answer(APC_PREFIX.'refresh_chat');
+	$refresh = $paquet->get_answer('refresh_chat');
 	
 	if(!empty($refresh)) {
 		$rep_refresh   = $refresh->{1};
 		if(!empty($rep_refresh) && sizeof($rep_refresh) > 0) {
-			apc_store('rep_refresh', serialize($rep_refresh), 5);
+			apc_store(APC_PREFIX.'rep_refresh', serialize($rep_refresh), 5);
 		}
 	}
 }
