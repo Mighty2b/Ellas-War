@@ -11,9 +11,9 @@ if(!$joueurs_chat) {
 
 	$rep = $paquet->get_answer('joueurs_chat');
 	
-	if(!empty($rep)) {		
+	if(!empty($rep)) {
 		$joueurs_chat = $rep->{1};
-		if(!empty($joueurs_chat)) {
+		if(!empty($joueurs_chat) && sizeof($joueurs_chat) > 0) {
 			apc_store(APC_PREFIX.'joueurs_chat', serialize($joueurs_chat), 30);
 		}
 	}	
