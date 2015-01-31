@@ -164,10 +164,10 @@ echo '
       <td class="droite">'.$prix[$j].'</td>
       <td class="droite">'.nbf($coef*10000). ' '. imress('raisin').'</td>';
       
-      if(!empty($bonus_unites[$j.'1']))
+      if(!empty($bonus_unites->{$j.'1'}))
 			{
 				echo '<td>'._('Fin').' : </td>
-				      <td class="droite">'.display_date($bonus_unites[$j.'1'], 2);
+				      <td class="droite">'.display_date($bonus_unites->{$j.'1'}, 2);
 			}
 			else
 			{
@@ -182,9 +182,9 @@ echo '
       <td class="droite">'.$prix[$j].'</td>
       <td class="droite">'.nbf($coef*10000). ' '. imress('marbre').'</td>';
       
-      if(!empty($bonus_unites[$j.'2']))
+      if(!empty($bonus_unites->{$j.'2'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'2'], 2);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'2'}, 2);
 			}
 			else
 			{
@@ -198,9 +198,9 @@ echo '
       <td>-5% '._('en solde').'</td>
       <td class="droite">'.$prix[$j].'</td><td class="droite">'.nbf($coef*1000). ' '. imress('vin').'</td>';
       
-      if(!empty($bonus_unites[$j.'3']))
+      if(!empty($bonus_unites->{$j.'3'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'3'], 2);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'3'}, 2);
 			}
 			else
 			{
@@ -215,9 +215,9 @@ echo '
       <td class="droite">'.$prix[$j].'</td>
       <td class="droite">'.nbf($coef*1000). ' '. imress('gold').'</td>';
       
-      if(!empty($bonus_unites[$j.'4']))
+      if(!empty($bonus_unites->{$j.'4'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites[$j.'4'], 2);
+				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'4'}, 2);
 			}
 			else
 			{
