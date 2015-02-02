@@ -33,7 +33,7 @@ if($nb >= 0) {
 			echo '<img src="/images/jeux/grilles/grattez.png"
 			           style="position:absolute;margin-top:'.($i*10).'px;margin-left:'.($j*10).'px;width:10px;height:10px;cursor:hand;" 
 			           onmouseover="this.style.visibility=\'hidden\';" 
-			           onmouseout="this.style.visibility=\'hidden\';gain_ticket();">';
+			           onmouseout="this.style.visibility=\'hidden\';">';
 		}
 	}
 	

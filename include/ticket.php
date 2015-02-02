@@ -66,11 +66,4 @@ function prendre_ticket() {
      }
    });
 }
-
-function gain_ticket() {
-   $.ajax({
-     type: "GET",
-     url: "form/form_gainticket.php"
-   });
-}
 </script>
