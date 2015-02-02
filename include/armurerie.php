@@ -78,7 +78,7 @@ echo '
 				      <td class="droite">'.display_date($bonus_unites->$var, 2);
 			}
 			else {
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'1">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'1">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -91,10 +91,10 @@ echo '
       
       $var = $j.'2';
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->$var, 2);
 			}
 			else {
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'2">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'2">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -108,10 +108,10 @@ echo '
       $var = $j.'3';
       
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->$var, 2);
 			}
 			else {
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'3">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'3">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -124,10 +124,10 @@ echo '
       
       $var = $j.'4';
       if(!empty($bonus_unites->$var)) {
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->$var, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->$var, 2);
 			}
 			else {
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'4">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'4">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -171,7 +171,7 @@ echo '
 			}
 			else
 			{
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'1">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'1">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -184,11 +184,11 @@ echo '
       
       if(!empty($bonus_unites->{$j.'2'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'2'}, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->{$j.'2'}, 2);
 			}
 			else
 			{
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'2">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'2">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -196,15 +196,15 @@ echo '
     </tr>
     <tr>
       <td>-5% '._('en solde').'</td>
-      <td class="droite">'.$prix[$j].'</td><td class="droite">'.nbf($coef*1000). ' '. imress('vin').'</td>';
+      <td class="droite">'.$prix[$j].''.nbf($coef*1000). ' '. imress('vin').'</td>';
       
       if(!empty($bonus_unites->{$j.'3'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'3'}, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->{$j.'3'}, 2);
 			}
 			else
 			{
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'3">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'3">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -217,11 +217,11 @@ echo '
       
       if(!empty($bonus_unites->{$j.'4'}))
 			{
-				echo '<td>'._('Fin').' : </td><td class="droite">'.display_date($bonus_unites->{$j.'4'}, 2);
+				echo '<td>'._('Fin').' : '.display_date($bonus_unites->{$j.'4'}, 2);
 			}
 			else
 			{
-        echo '<td colspan="2"><a href="'._('armurerie').'-'.$j.'4">'._('Obtenir').'</a>';
+        echo '<td><a href="'._('armurerie').'-'.$j.'4">'._('Obtenir').'</a>';
       }
       
       echo '
@@ -234,18 +234,14 @@ echo '
   
   if(sizeof($paquet->get_infoj('bonus_unites')) > 0) {
 echo '<div class="ligne">
-  <h2>'._('Améliorations en cours').'</h2>
+  <h2 class="centrer">'._('Améliorations en cours').'</h2>
 </div><table class="centrer_tableau">';
 
     $tab = trans_tab($paquet->get_infoj('bonus_unites'));
     foreach($tab as $type_unite => $tab_bonus) {
-      if(sizeof($tab_bonus) > 0) {
-        echo '<tr><td><b>'.$noms[$type_unite].' : </b> </td><td>';
-        foreach($tab_bonus as $y => $bon) {
-           echo ' '.$bonus[$bon];
-        }
-        echo '</td></tr>';
-      }
+		if($tab_bonus > 0) {
+			echo '<tr><td><b>'.$noms[$type_unite[0]].' : </b> </td><td>'.$bonus[$type_unite[1]].'</td></tr>';
+		}
     }
   }
   echo '</table>';
