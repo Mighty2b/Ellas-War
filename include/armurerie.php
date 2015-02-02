@@ -237,7 +237,7 @@ echo '<div class="ligne">
   <h2 class="centrer">'._('Améliorations en cours').'</h2>
 </div><table class="centrer_tableau">';
 
-    $tab = trans_tab($paquet->get_infoj('bonus_unites'));
+    $tab = $paquet->get_infoj('bonus_unites');
     foreach($tab as $type_unite => $tab_bonus) {
 		if($tab_bonus > 0) {
 			echo '<tr><td><b>'.$noms[$type_unite[0]].' : </b> </td><td>'.$bonus[$type_unite[1]].'</td></tr>';
