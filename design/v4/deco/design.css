@@ -821,3 +821,42 @@ footer nav a {
   margin-left:5px;
   margin-top:130px;
 }
+
+/*** LANG ***/
+/* FR */
+
+.jeu-gratuit {
+	position:relative;
+	width:88px;
+	height:31px;
+	margin-left:35px;
+	margin-bottom:3px;
+}
+
+.jeu-gratuit2 {
+	position:absolute;
+	top:3px;
+	left:1px;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	line-height:12px;
+	width:86px;
+	text-align:center;
+}
+
+.jeu-gratuit3 {
+	position:absolute;
+	top:8px;
+	left:-1px;
+	font-family:arial;
+	font-size:11px;
+	font-weight:bold;
+	color:#ffffff;
+	text-decoration:none;
+	line-height:12px;
+	width:90px;
+	text-align:center;
+}
