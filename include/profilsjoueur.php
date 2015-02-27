@@ -119,7 +119,7 @@ echo '</div>
 				<b>'._('Âge').' : </b>'.$j->age.' '._('ans');
 
 		if($j->ville != '') {
-			echo '<br/><b>'._('Localication').' : </b>'.$j->ville;
+			echo '<br/><b>'._('Localisation').' : </b>'.$j->ville;
 		}
 
 		if($j->emplois != '') {
