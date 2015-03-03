@@ -54,7 +54,7 @@ echo '
 	
 	if($conditions->sschef >0) {
 		echo '<li>';
-		if($actu->sschef == 1) {
+		if($actu->sschef == 0) {
 			echo '<font color="red">'._('Nommer un sous chef').'</font>';
 		}
 		else {
