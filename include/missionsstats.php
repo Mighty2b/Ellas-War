@@ -8,66 +8,66 @@ echo '<h1>'._('Statistiques').'</h1>
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Victoires offensives').' :</span> '.
-		$paquet->get_infoj('victoires').'
+		nbf($paquet->get_infoj('victoires')).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Victoires défensives').' :</span> '.
-		$stats->vdef.'
+		nbf($stats->vdef).'
 	</div>
 </div>
 
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Espionnages').' :</span> '.
-		$stats->espion.'
+		nbf($stats->espion).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Pactes signés').' :</span> '.
-		$stats->signer.'
+		nbf($stats->signer).'
 	</div>
 </div>
 
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Prières').' :</span> '.
-		$stats->priere.'
+		nbf($stats->priere).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Poursuites').' :</span> '.
-		$stats->poursuites.'
+		nbf($stats->poursuites).'
 	</div>
 </div>
 
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Missions').' :</span> '.
-		$stats->missions.'
+		nbf($stats->missions).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Quêtes').' :</span> '.
-		$stats->quetes.'
+		nbf($stats->quetes).'
 	</div>
 </div>
 
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Guerres déclarées').' :</span> '.
-		$stats->declarer.'
+		nbf($stats->declarer).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Guerres gagnées').' :</span> '.
-		$stats->gagner.'
+		nbf($stats->gagner).'
 	</div>
 </div>
 
 <div class="ligne">
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Batailles navales publiques gagnées').' :</span> '.
-		$stats->btn_pub.'
+		nbf($stats->btn_pub).'
 	</div>
 	<div class="ligne_50">
 		<span class="rouge_goco">'._('Batailles navales privées gagnées').' :</span> '.
-		$stats->btn_priv.'
+		nbf($stats->btn_priv).'
 	</div>
 </div>
 </div>';
