@@ -8,7 +8,7 @@ $stats   = $paquet->get_answer('stats_tmp')->{2};
 echo '<h2 class="centrer">'._('Quêtes').'</h2>';
 
 echo '<div class="ligne_80 centrer"><br/>'._(
-'Les quêtes peuvent êtres quotidienes, hebdomadaires ou mensuelles. '.
+'Les quêtes peuvent êtres quotidiennes, hebdomadaires ou mensuelles. '.
 'Vous ne pouvez réaliser qu\'une seule quête à la fois.').'<br/><br/></div>';
 
 echo '<div class="ligne_80">';
@@ -99,7 +99,7 @@ echo '
 <div class="ligne">
 	<div class="ligne_50">
 	<b>'._('Aidons les Danaïdes').'</b> '.
-	'('._('Mission quotidiene').', '._('durée').' :</i> 6h)<br/>'._(
+	'('._('Mission quotidienne').', '._('durée').' :</i> 6h)<br/>'._(
 	'Les Danaïdes furent condamnées à remplir éternellement d\'eau un '.
 	'tonneau percé. Hadès est connu pour être riches, peut-être '.
 	'tomberez vous sur l\'un de ses coffres.').
@@ -135,7 +135,7 @@ echo '
 <div class="ligne">
 	<div class="ligne_50">
 	<b>'._('Visite en Laurion').'</b> '.
-	'('._('Mission quotidiene').', '._('durée').' :</i> 6h)<br/>'._(
+	'('._('Mission quotidienne').', '._('durée').' :</i> 6h)<br/>'._(
 	'Les mines du Laurion sont pleines d\'argent, '.
 	'une expédition sur ces terres pourrait nous permettre '.
 	'd\'agrandir nos stocks').
