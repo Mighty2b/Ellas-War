@@ -306,9 +306,9 @@ function info_case(x, y) {
              var txt = '';
              if(data.answer.infocase.capitale == 1) {
               //tourdef
-              if(data.answer.infocase.bireme > 0) {
+              if(data.answer.infocase.tourdef > 0) {
                   txt += '<div class="ligne_achat">';
-                  txt += '<br/>' + data.answer.infocase.bireme     + ' Birème ';
+                  txt += '<br/>' + data.answer.infocase.tourdef     + ' Tours ';
                   txt += ' 0 <img src="images/attaques/dague.png" title="Attaque" alt="Attaque" />';
                   txt += ' 250 <img src="images/attaques/bouclier.png" title="Défense" alt="Défense" />';
                   txt += '</div>';
