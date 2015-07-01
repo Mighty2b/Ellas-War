@@ -17,6 +17,8 @@ if(!empty($liste) && sizeof($liste) > 0) {
 	</tr></thead><tfoot></tfoot><tbody>';
 	$i = 1;
 	foreach($liste as $lot) {
+		if(empty($minimum_lvl_ress[$lot->ressource]) or
+		   $paquet->get_infoj('lvl') >= $minimum_lvl_ress[$lot->ressource]) {
 		echo '<tr>
 		      <td onclick="set_ress('.$i.', '.$lot->restant.')"
 		          class="cursor">'.nbf($lot->restant).' '.imress($lot->ressource).'</td>
@@ -32,7 +34,8 @@ if(!empty($liste) && sizeof($liste) > 0) {
 		               onclick="debarras_acheter(\''.$lot->ressource.'\',
 		                                         '.$i.', '.$lot->taux.')"></td>
 		      </tr>';
-		$i++;
+			$i++;
+		}
 	}
 	
 	echo '</tbody></table>';
