@@ -137,7 +137,7 @@ function envoyer_chat() {
     $.ajax({
       type: "GET",
       url: "form/chat_envoyer.php",
-      data: "texte=" + texte
+      data: "texte=" + encodeURI(texte)
     });
   }
 }
