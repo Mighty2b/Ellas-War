@@ -47,6 +47,10 @@ socket.emit(\'ewAuth\', readCookie(\'token\'), myId);
 socket.emit(\'chatUser\');
 socket.emit(\'chatMsg\');
 
+setInterval(function() {
+  socket.emit(\'chatJoin\');
+}, 120000);
+
 $("#texte_chat").keyup(function(e) {
   if(e.keyCode == 13) {
     envoyer_chat();
