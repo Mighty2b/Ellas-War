@@ -1,9 +1,10 @@
 <?php
 
-if(empty($_GET['var1']) or !is_numeric($_GET['var1'])) {
+$infopartie = $paquet->get_answer('infopartie');
+
+if(!empty($infopartie->start) && $infopartie->start < $_SERVER['REQUEST_TIME']) {
 	redirect();
 }
-
 ?>
 
 <script type="text/javascript">

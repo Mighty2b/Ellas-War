@@ -16,7 +16,12 @@ if(!empty($info_btn->{2})) {
 	
 		if($do->places == 4 && 
 		   $do->temps < $paquet->get_infoj('timestamp')) {
-			echo '<a href="'._('partie').'-'.$do->btn_id.'">'.$do->titre.'</a>';
+		   if(!empty($do->start) && $do->start < $_SERVER['REQUEST_TIME']) {
+		   	echo $do->titre.' (En attente)</a>';
+		   }
+		   else {
+				echo '<a href="'._('partie').'-'.$do->btn_id.'">'.$do->titre.'</a>';
+		   }
 		}
 		else  {
 			echo $do->titre.' ('._('En attente').' '.$do->places.'/4)';
