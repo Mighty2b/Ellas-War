@@ -42,8 +42,8 @@ echo '<div id="cadre_chat">
 <script type="text/javascript">
 /*** Node Part ***/
 var socket = io.connect("'.NODE_URL.'");
-socket.emit(\'ewAuth\', readCookie(\'token\'));
 var myId='.$paquet->get_infoj('id').';
+socket.emit(\'ewAuth\', readCookie(\'token\'), myId);
 socket.emit(\'chatUser\');
 socket.emit(\'chatMsg\');
 
