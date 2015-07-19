@@ -40,13 +40,11 @@ echo '<div id="cadre_chat">
 </div>
 
 <script type="text/javascript">
-$(function() {
-	joueurs_chat();
-	
-	setInterval(\'joueurs_chat()\',3000);
-	setInterval(\'refresh_chat(0)\',500);
-});
-
+/*** Node Part ***/
+var socket = io.connect("'.NODE_URL.'");
+socket.emit(\'ewAuth\', readCookie(\'token\'));
+var myId='.$paquet->get_infoj('id').';
+socket.emit(\'chatUser\');
 $("#texte_chat").keyup(function(e) {
   if(e.keyCode == 13) {
     envoyer_chat();
@@ -70,14 +68,9 @@ $("#cadre_chat_iconefermer").click(function() {
 });
 
 $("#cadre_chat_iconedeco").click(function() {
-   $.ajax({
-     type: "GET",
-     url: "form/chat_deconnexion.php",
-     success: function(msg){
-			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
-			$("#cadre_chat_iconedeco").hide();
-     }
-   });
+	socket.emit(\'chatDeco\');
+	$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
+	$("#cadre_chat_iconedeco").hide();
 });
 
 $("#cadre_chat_iconedeco2").click(function() {
@@ -86,30 +79,21 @@ $("#cadre_chat_iconedeco2").click(function() {
 	$("#cadre_chat_interieur").hide(\'slow\');
 	$("#cadre_chat_titre2").css("color", "black");
 	$("#cadre_chat_titre").show();
-   $.ajax({
-     type: "GET",
-     url: "form/chat_deconnexion.php",
-     success: function(msg){
-			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
-			$("#cadre_chat_iconedeco").hide();
-     }
-   });
+	socket.emit(\'chatDeco\');
+	$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
+	$("#cadre_chat_iconedeco").hide();
 });
 
 function display_chat() {
-   $.ajax({
-     type: "GET",
-     url: "form/chat_connexion.php",
-     success: function(msg){
-			$("#cadre_chat_titre").hide();
-			$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
-			$("#cadre_chat_interieur").show(\'slow\');
-			$("#cadre_chat").css(\'height\', \'auto\');
-			$("#cadre_chat").css(\'width\', \'auto\');
-			document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
-			refresh_chat(1);
-     }
-   });
+	socket.emit(\'chatJoin\');
+	$("#cadre_chat_titre").hide();
+	$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
+	$("#cadre_chat_interieur").show(\'slow\');
+	$("#cadre_chat").css(\'height\', \'auto\');
+	$("#cadre_chat").css(\'width\', \'auto\');
+	$("#texte_chat").html(\'\');
+	$("#texte_chat").focus();
+	document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
 }
 
 function close_chat() {
@@ -120,42 +104,56 @@ function close_chat() {
 	$("#cadre_chat_titre").show();
 }
 
-function joueurs_chat() {
-   $.ajax({
-     type: "GET",
-     url: "form/chat_joueurs.php",
-     success: function(msg){
-      $("#joueurs_chat").html(msg);
-     }
-   });
-}
-
 function envoyer_chat() {
-  var texte = $("#texte_chat").val();
-  $("#texte_chat").val(\'\');
-  if(texte != \'\') {
-    $.ajax({
-      type: "GET",
-      url: "form/chat_envoyer.php",
-      data: "texte=" + encodeURI(texte)
-    });
-  }
+	var texte = $("#texte_chat").val();
+	$("#texte_chat").val(\'\');
+	if(texte != \'\') {
+		socket.emit(\'chatSend\', texte);
+	}
 }
 
-function refresh_chat(clean) {
-   $.ajax({
-     type: "GET",
-     url: "form/chat_refresh.php?clean="+clean,
-     async: true,
-     timeout : 450,
-     success: function(msg){
-       if(msg != \'\') {
-         $("#corps_chat").html(msg);
-         //document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
-       }
-     }
-   });
-}
+/*** Events ***/
+socket.on(\'chatJoin\', function() {
+	socket.emit(\'chatUser\');
+});
+
+socket.on(\'chatSend\', function(chat) {
+	$("#corps_chat").html($("#corps_chat").html()+\'<b>\'+chat.login+\' :</b>\'+chat.msg+\'<br/>\');
+	document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
+});
+
+socket.on(\'chatUser\', function(users) {
+	$("#joueurs_chat").html(\'\');
+	var me=0;
+	var txt;
+	for(var i = 0; i < users.length; i++) {
+		if(users[i].level == 3) {
+			txt = \'<b><a href="/'._('profilsjoueur').'-\'+users[i].joueur+\'"\'+
+			              \'target="_blank" class="erreur" >\'+users[i].login+\'</a></b><br/>\';
+		}
+		else {
+			txt = \'<b><a href="/'._('profilsjoueur').'-\'+users[i].joueur+\'"\'+
+			              \'target="_blank" >\'+users[i].login+\'</a></b><br/>\';
+		}
+		$("#joueurs_chat").html($("#joueurs_chat").html()+txt);
+		if(users[i].joueur == myId) {
+			me=1;
+		}
+	}
+	if(me == 1) {
+		$("#cadre_chat_iconeco").attr("src", "images/utils/mb_connecter.png");
+	}
+	else {
+		$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
+	}
+});
+
+socket.on(\'chatMsg\', function(chat) {
+	$("#corps_chat").html(\'\');
+	for(var i = 0; i < chat.length; i++) {
+		$("#corps_chat").html(\'<b>\'+chat[i].login+\' :</b>\'+chat[i].msg+\'<br/>\');
+	}
+});
 </script>';
 
 ?>

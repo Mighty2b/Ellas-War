@@ -757,7 +757,6 @@ td.none {
 }
 
 #header_ssmenu_sanctuaires {
-  display:none;
   margin-left:35px;
 }
 
@@ -1595,7 +1594,7 @@ select {
     float: left;
     position: relative;
     margin-top:2px;
-    width:354px;
+    width:344px;
 }
 
 #joueurs_chat {
@@ -2154,31 +2153,15 @@ select {
   width:25%;
 }
 
-/* Sanctuaires */
-#sanctuaire_menu_gauche {
-  position:relative;
-  float:left;
-  width:200px;
-}
-
-#sanctuaire_menu_droite {
-  position:relative;
-  float:left;
-  width:380px;
-}
-
-#sanctuaire_rapport {
-   float: right;
-    position: relative;
-    width: 380px;
-    text-align:center;
-}
-
 /* Jeux */
 #cadre_ticket {
 	margin: auto;
 	width: 150px;
 }
+
+/* Sanctuaires */
+
+
 
 /* Evenements */
 .caseJour {

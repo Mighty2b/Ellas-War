@@ -124,6 +124,7 @@ switch($paquet->get_infoj('statu')) {
 	
 	case 1:
 echo '<script type="text/javascript" src="'.STATIC_LINK.'js/scripts_'.$prefix.'.js" ></script>';
+echo '<script src="http://'.NODE_URL.'/socket.io/socket.io.js"></script>';
 	break;
 	
 	default:
