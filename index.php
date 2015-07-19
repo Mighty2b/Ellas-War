@@ -142,6 +142,7 @@ echo '<link rel="shortcut icon" type="image/png" href="'.STATIC_LINK.'favicon.ic
 	<noscript>'.
 		_('Vous devez activer le Javascript pour jouer à Ellàs War');
 		redirect('/noscript.php');
+		echo
 	'</noscript>';
 
 include('body/haut_'.$prefix.'.php');
