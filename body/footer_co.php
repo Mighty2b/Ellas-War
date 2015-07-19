@@ -151,7 +151,7 @@ socket.on(\'chatUser\', function(users) {
 socket.on(\'chatMsg\', function(chat) {
 	$("#corps_chat").html(\'\');
 	for(var i = chat.length-1; i >= 0; i--) {
-		$("#corps_chat").html(\'<b>\'+chat[i].login+\' :</b>\'+chat[i].msg+\'<br/>\');
+		$("#corps_chat").html($("#corps_chat").html()+\'<b>\'+chat[i].login+\' :</b>\'+chat[i].msg+\'<br/>\');
 	}
 });
 </script>';
