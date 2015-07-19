@@ -139,7 +139,10 @@ echo '<link rel="shortcut icon" type="image/png" href="'.STATIC_LINK.'favicon.ic
 		<meta name="author" content="Mighty" />
 	</head>
   <body>
-	<noscript>'._('Vous devez activer le Javascript pour jouer à Ellàs War').'</noscript>';
+	<noscript>'.
+		_('Vous devez activer le Javascript pour jouer à Ellàs War');
+		redirect('/noscript.php');
+	'</noscript>';
 
 include('body/haut_'.$prefix.'.php');
 
