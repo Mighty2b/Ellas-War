@@ -73,6 +73,7 @@ $("#cadre_chat_iconedeco").click(function() {
 	socket.emit(\'chatDeco\');
 	$("#cadre_chat_iconeco").attr("src", "images/utils/mb_deconnecter.png");
 	$("#cadre_chat_iconedeco").hide();
+	$("#cadre_chat_titre2").css("color", "black");
 });
 
 $("#cadre_chat_iconedeco2").click(function() {
@@ -96,6 +97,7 @@ function display_chat() {
 	$("#texte_chat").html(\'\');
 	$("#texte_chat").focus();
 	document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
+	$("#cadre_chat_titre2").css("color", "black");
 }
 
 function close_chat() {
@@ -120,6 +122,7 @@ socket.on(\'chatJoin\', function() {
 });
 
 socket.on(\'chatSend\', function(chat) {
+	$("#cadre_chat_titre2").css("color", "red");
 	$("#corps_chat").html($("#corps_chat").html()+\'<b>\'+chat[0].login+\' : </b>\'+chat[0].msg+\'<br/>\');
 	document.getElementById("corps_chat").scrollTop = document.getElementById("corps_chat").scrollHeight;
 });
