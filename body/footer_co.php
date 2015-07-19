@@ -45,6 +45,8 @@ var socket = io.connect("'.NODE_URL.'");
 socket.emit(\'ewAuth\', readCookie(\'token\'));
 var myId='.$paquet->get_infoj('id').';
 socket.emit(\'chatUser\');
+socket.emit(\'chatMsg\');
+
 $("#texte_chat").keyup(function(e) {
   if(e.keyCode == 13) {
     envoyer_chat();
