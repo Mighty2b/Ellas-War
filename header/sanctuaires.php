@@ -1,5 +1,5 @@
 <?php
-
+redirect();
 echo '
 <title>'._('Sanctuaires').'</title>
 <meta name="description"
