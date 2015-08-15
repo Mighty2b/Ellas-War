@@ -16,7 +16,7 @@ if(!empty($info_btn->{2})) {
 	
 		if($do->places == 4 && 
 		   $do->temps < $paquet->get_infoj('timestamp')) {
-		   if(!empty($do->start) && $do->start < $_SERVER['REQUEST_TIME']) {
+		   if(!empty($do->start) && $do->start > $_SERVER['REQUEST_TIME']) {
 		   	echo $do->titre.' (En attente)</a>';
 		   }
 		   else {

@@ -2,7 +2,7 @@
 
 $infopartie = $paquet->get_answer('infopartie');
 
-if(!empty($infopartie->start) && $infopartie->start < $_SERVER['REQUEST_TIME']) {
+if(!empty($infopartie->start) && $infopartie->start > $_SERVER['REQUEST_TIME']) {
 	redirect();
 }
 ?>
