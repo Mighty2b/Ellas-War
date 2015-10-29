@@ -18,7 +18,8 @@ if($paquet->get_infoj('lvl') >= 1) {
 <form action="#" method="POST">
 <input name="message"
        type="text" 
-       size="70" /><br/>';
+       size="70" 
+       maxlength="255" /><br/>';
 
 if($oracle == true) {
   echo '<input type="checkbox"
