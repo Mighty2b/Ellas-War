@@ -109,7 +109,9 @@ nbf($paquet->get_infoj('tresor')).' '.imress('drachme').'</h2>
 			
 			if($paquet->get_infoj('lvl') > 5) {
 				echo '<div class="bouton_classique"><input type="button" 
-				                                           onclick="simuler('.$taux.');" style="cursor : pointer;">'._('SIMULER').'</div></div>';
+				                                           onclick="simuler('.$taux.');" 
+				                                           style="cursor : pointer;"
+				                                           value="'._('SIMULER').'"/></div></div>';
 			}
 			
 			echo '
